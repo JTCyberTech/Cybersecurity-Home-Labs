@@ -1,9 +1,9 @@
-# Week 2 Footprinting and Reconnaissance Task # 2
+# Week 2: Footprinting and Reconnaissance Task # 2
 
 Objective: 
 Research and craft an interactive social media post that highlight the difference between Footprinting and Reconnaissance and share the post on different social media platforms by tagging Senselearner. 
 
-### [LinkedIn Post](https://www.linkedin.com/posts/jeff-tsui177_cybersecurityeducation-infosec-stayprotected-activity-7110379738245820416-VpIX?utm_source=share&utm_medium=member_desktop)
+[LinkedIn Post](https://www.linkedin.com/posts/jeff-tsui177_cybersecurityeducation-infosec-stayprotected-activity-7110379738245820416-VpIX?utm_source=share&utm_medium=member_desktop)
 
 Post:
 
