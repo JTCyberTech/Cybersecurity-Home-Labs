@@ -1,4 +1,4 @@
-<h2>Week 1: Introduction to Cybersecurity & Ethical Hacking Task # 2</h2>
+<h2>Week 1: Task # 2</h2>
 
 Objective: Research and craft an interactive social media post that highlights the importance of cybersecurity in today’s digital landscape and share the post on different social media platforms by tagging Senselearner.
 
@@ -28,7 +28,7 @@ Let's make the digital world safer together! Share your cybersecurity tips and s
 
 <h2></h2>
 
-<h2>Week 1: Introduction to Cybersecurity & Ethical Hacking Task # 3</h2>
+<h2>Week 1 Task # 3</h2>
 
 Objective: Research and craft an interactive social media post that highlights the 5 phases of ethical hacking and share the post on different social media platforms by tagging Senselearner.
 
@@ -57,4 +57,51 @@ Ethical hackers use their skills for good, helping organizations fortify their d
 
 <h2></h2>
 
-<h2>Week 1: Introduction to Cybersecurity & Ethical Hacking Task # 4</h2>
+<h2>Week 1: Task # 4</h2>
+
+Objective: Download VMware Workstation Pro and Kali Linux, and deploy Kali Linux in VMware Workstation.
+
+<p align="left">
+VMware Workstation Pro and Kali Linux Downloaded <br/>
+<img src="https://i.imgur.com/2a02Iwv.png" height="30%" width="30%" alt=""/>
+<br />
+
+<h2></h2>
+
+<h2>Week 1: Task # 5</h2>
+
+Objective: Create an account on TryHackMe inside the Firefox browser of Kali Linux and download OpenVPN.
+
+I already have a TryHackMe account before
+
+<p align="left">
+TryHackMe Account <br/>
+<img src="https://i.imgur.com/Ro0ePWM.png" height="30%" width="30%" alt=""/>
+<br />
+
+<p align="left">
+OpenVPN downloaded on Kali Linux VM <br/>
+<img src="https://i.imgur.com/M0TavTP.png" height="30%" width="30%" alt=""/>
+<br />
+
+<h2></h2>
+
+<h2>Week 1: Task # 6</h2>
+
+Objective: Solve the following labs from TryHackMe
+
+<p align="left">
+Linux Fundamental Part 1 <br/>
+<img src="https://i.imgur.com/9Kuzvzc.png" height="30%" width="30%" alt=""/>
+<br />
+
+<p align="left">
+Linux Fundamental Part 2 <br/>
+<img src="https://i.imgur.com/yI5jNWQ.png" height="30%" width="30%" alt=""/>
+<br />
+
+
+<p align="left">
+Linux Fundamental Part 3 <br/>
+<img src="https://i.imgur.com/PwIa53P.png" height="30%" width="30%" alt=""/>
+<br />
