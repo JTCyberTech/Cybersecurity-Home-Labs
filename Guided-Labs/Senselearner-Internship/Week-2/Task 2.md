@@ -1,4 +1,4 @@
-# Week 2: Footprinting and Reconnaissance Task # 2
+<h1>Week 2: Footprinting and Reconnaissance Task # 2</h1>
 
 Objective: 
 Research and craft an interactive social media post that highlight the difference between Footprinting and Reconnaissance and share the post on different social media platforms by tagging Senselearner. 
