@@ -5,7 +5,7 @@
 - Registrar: [GoDaddy]
 - Registration Date: [2021-07-02]
 - Expiry Date: [2025-07-02]
-- Status: [Status, e.g., Active]
+- Status: [Active]
 
 We can use the dig command to find the IP Address of senselearner.com: 
 - Type in Kali Linux Terminal:
@@ -99,3 +99,20 @@ Wappalyzer Screenshot <br/>
 Meta Data Search <br/>
 <img src="https://i.imgur.com/NoX8rwF.png" height="30%" width="30%" alt=""/>
 <br />
+
+# Network and WHOIS Enumeration
+
+**WHOIS Records:**
+- Using the whois command on Kali Linux
+
+<p align="left">
+WHOIS command <br/>
+<img src="https://i.imgur.com/DQd1njl.png" height="30%" width="30%" alt=""/>
+<br />  
+
+**Using the [hackertarget](https://hackertarget.com/as-ip-lookup/) website to get the ASN data**
+
+<p align="left">
+Hackertarget Website Screenshot <br/>
+<img src="https://i.imgur.com/W6hupdS.png" height="30%" width="30%" alt=""/>
+<br />  
