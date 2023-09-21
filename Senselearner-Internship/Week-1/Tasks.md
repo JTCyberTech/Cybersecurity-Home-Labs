@@ -1,4 +1,4 @@
-<h2>Week 1| Introduction to Cybersecurity & Ethical Hacking</h2>
+<h2>Week 1 - Introduction to Cybersecurity & Ethical Hacking Assignment</h2>
 
 Topics:
 - Overview of Cybersecurity: Importance, challenges, and emerging trends
