@@ -1,4 +1,4 @@
-<h2>Week 2| Footprinting and Reconnaissance</h2>
+<h2>Week 2 - Footprinting and Reconnaissance Assignment</h2>
 
 Topics:
 - Introduction to Footprinting and Reconnaissance
@@ -10,11 +10,11 @@ Topics:
 - Countermeasures and Defensive Strategies
 
 Tasks:
-1. Learn in depth about the above mentioned topics.
+1. Learn in depth about the above-mentioned topics.
 
-2. Research and craft an interactive social media post that highlight the difference between Footprinting and Reconnaissance and share the post on different social media platforms by tagging Senselearner.
+2. Research and craft an interactive social media post that highlights the difference between Footprinting and Reconnaissance and share the post on different social media platforms by tagging Senselearner.
 
-3. Research and craft an interactive social media post that highlight a comprehensive list of information gathering tools and share the post on different social media platforms by tagging Senselearner.
+3. Research and craft an interactive social media post that highlights a comprehensive list of information-gathering tools and share the post on different social media platforms by tagging Senselearner.
 
 4. Perform information gathering on Senselearner.com and generate a comprehensive report of all the findings.
 
