@@ -51,3 +51,10 @@
 <h2></h2>
 
 <h2>Helpful commands</h2>
+
+- sudo = super user do command that allows you to do only super can do
+  - sudo apt-get install python3 = install python3, only superuser can install
+  - sudo service network-manager restart = restart networking services
+- cd / = go to root directory
+- find = find command
+  - find -name Desktop = find all the user's desktop folders 
