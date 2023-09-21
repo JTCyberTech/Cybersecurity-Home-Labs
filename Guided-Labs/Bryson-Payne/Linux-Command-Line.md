@@ -39,3 +39,15 @@
 
 - mkdir [name] = create a directory with the [name]
 - rmdir [name] = remove a directory
+- echo hello > file.txt = create a .txt name file and write hello in the .txt
+- more file.txt = show the contents of the "file.txt", in this case, will only show "hello"
+  - return: hello
+- cp file.txt myfile.txt = copy "file.txt" and create another .txt call "myfile". Will have both .txt afterward
+- mv myfile.txt textfile.txt = rename "myfile.txt" to "textfile.txt"
+- rm file.txt = remove "file.txt"
+- nano textfile.txt = open up text editor
+  - ctrl + O to save, ctrl + x to exit
+
+<h2></h2>
+
+<h2>Helpful commands</h2>
