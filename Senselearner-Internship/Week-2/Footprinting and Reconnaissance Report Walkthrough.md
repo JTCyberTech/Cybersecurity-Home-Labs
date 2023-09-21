@@ -102,11 +102,27 @@ Meta Data Search <br/>
 
 # Network and WHOIS Enumeration
 
-**WHOIS Records:**
-- Using the whois command on Kali Linux
+**Network Range**
+- Using the WHOIS command on Kali Linux
+
+      whois 162.250.126.19
+
+Result
+NetRange: 162.250.120.0 - 162.250.127.255
+CIDR: 162.250.120.0/21
 
 <p align="left">
-WHOIS command <br/>
+WHOIS command for Network Range <br/>
+<img src="https://i.imgur.com/44OTGCO.png" height="30%" width="30%" alt=""/>
+<br />    
+
+**WHOIS Records:**
+- Using the WHOIS command on Kali Linux
+
+      whois senselearner.com
+
+<p align="left">
+WHOIS command for WHOIS records <br/>
 <img src="https://i.imgur.com/DQd1njl.png" height="30%" width="30%" alt=""/>
 <br />  
 
