@@ -1,3 +1,5 @@
+# Week 2 - Footprinting and Reconnaissance Answer
+
 <h2>Week 2: Task # 2</h2>
 
 Objective: 
