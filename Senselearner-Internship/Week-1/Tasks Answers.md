@@ -1,6 +1,6 @@
 # Week 1 - Introduction to Cybersecurity & Ethical Hacking Answers
 
-<h2>Week 1: Task # 2</h2>
+<h2>Task # 2</h2>
 
 Objective: Research and craft an interactive social media post that highlights the importance of cybersecurity in today’s digital landscape and share the post on different social media platforms by tagging Senselearner.
 
@@ -30,7 +30,7 @@ Let's make the digital world safer together! Share your cybersecurity tips and s
 
 <h2></h2>
 
-<h2>Week 1 Task # 3</h2>
+<h2>Task # 3</h2>
 
 Objective: Research and craft an interactive social media post that highlights the 5 phases of ethical hacking and share the post on different social media platforms by tagging Senselearner.
 
@@ -59,7 +59,7 @@ Ethical hackers use their skills for good, helping organizations fortify their d
 
 <h2></h2>
 
-<h2>Week 1: Task # 4</h2>
+<h2>Task # 4</h2>
 
 Objective: Download VMware Workstation Pro and Kali Linux, and deploy Kali Linux in VMware Workstation.
 
@@ -70,7 +70,7 @@ VMware Workstation Pro and Kali Linux Downloaded <br/>
 
 <h2></h2>
 
-<h2>Week 1: Task # 5</h2>
+<h2>Task # 5</h2>
 
 Objective: Create an account on TryHackMe inside the Firefox browser of Kali Linux and download OpenVPN.
 
@@ -88,7 +88,7 @@ OpenVPN downloaded on Kali Linux VM <br/>
 
 <h2></h2>
 
-<h2>Week 1: Task # 6</h2>
+<h2>Task # 6</h2>
 
 Objective: Solve the following labs from TryHackMe
 
