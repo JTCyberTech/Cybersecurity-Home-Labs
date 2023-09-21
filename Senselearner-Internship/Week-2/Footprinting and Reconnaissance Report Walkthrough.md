@@ -59,12 +59,12 @@ Dig command for DNS Footprinting <br/>
 
 # Web Footprinting:
 
-We can identify the web server software by:
-- going to senselearner.com on your browser
-- press f12 to show the developer tool
-- navigate to the network tab
-- refresh the page
-- click on senslearner.com within the developer tool
+**We can identify the web server software by:**
+- Going to senselearner.com on your browser
+- Press f12 to show the developer tool
+- Navigate to the network tab
+- Refresh the page
+- Click on senslearner.com within the developer tool
 - Scroll down the header to find the server
 
 Result: 
@@ -75,4 +75,27 @@ Result:
 <p align="left">
 Developer Tool on Browser to find server software and version <br/>
 <img src="https://i.imgur.com/5k28Qaf.png" height="30%" width="30%" alt=""/>
+<br />
+
+**Directory and File Structure**
+
+**We can use the website [Wappalyzer](https://www.wappalyzer.com/lookup/senselearner.com/) to look up the technologies in use for Senselearner.**
+
+<p align="left">
+Wappalyzer Screenshot <br/>
+<img src="https://i.imgur.com/gjg8W4s.png" height="30%" width="30%" alt=""/>
+<br />
+
+[Full Report](https://drive.google.com/file/d/1wmbcNYv7vAcfRwHm9NlTdqVhhYOGUqbs/view?usp=sharing)
+
+
+**We can find the meta data for senselearner.com by:**
+- Right-click on senselearner.com
+- View page source
+- Press Ctrl + F
+- Search word: Meta
+
+<p align="left">
+Meta Data Search <br/>
+<img src="https://i.imgur.com/NoX8rwF.png" height="30%" width="30%" alt=""/>
 <br />
