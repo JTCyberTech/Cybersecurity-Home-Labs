@@ -70,4 +70,6 @@ These tools are essential for ethical hackers, cybersecurity professionals, and 
 
 <h2>Task # 4</h2>
 
-[Report]()
+[Report](https://docs.google.com/document/d/1Oiio1ZVkHWFJGsLzVDSpgmY6AG7M98o9/edit?usp=sharing&ouid=100181659436036499816&rtpof=true&sd=true)
+
+[Walkthrough](https://github.com/jefftsui1/Cybersecurity-Home-Labs/blob/main/Senselearner-Internship/Week-2/Assignment%20Walkthrough.md)
