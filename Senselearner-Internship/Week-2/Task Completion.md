@@ -1,6 +1,6 @@
 # Week 2 - Footprinting and Reconnaissance Answers
 
-<h2>Week 2: Task # 2</h2>
+<h2>Task # 2</h2>
 
 Objective: 
 Research and craft an interactive social media post that highlights the difference between Footprinting and Reconnaissance and share the post on different social media platforms by tagging Senselearner. 
@@ -29,7 +29,7 @@ Reconnaissance is the active pursuit of those breadcrumbs, uncovering vulnerabil
 
 <h2></h2>
 
-<h2>Week 2: Task # 3</h2>
+<h2>Task # 3</h2>
 
 Objective:
 Research and craft an interactive social media post that highlights a comprehensive list of information-gathering tools and share the post on different social media platforms by tagging Senselearner. 
@@ -68,6 +68,6 @@ These tools are essential for ethical hackers, cybersecurity professionals, and 
 
 <h2></h2>
 
-<h2>Week 2: Task # 4</h2>
+<h2>Task # 4</h2>
 
 [Report]()
