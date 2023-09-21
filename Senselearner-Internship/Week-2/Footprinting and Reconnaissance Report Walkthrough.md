@@ -89,7 +89,7 @@ Wappalyzer Screenshot <br/>
 [Full Report](https://drive.google.com/file/d/1wmbcNYv7vAcfRwHm9NlTdqVhhYOGUqbs/view?usp=sharing)
 
 
-**We can find the meta data for senselearner.com by:**
+**We can find the metadata for senselearner.com by:**
 - Right-click on senselearner.com
 - View page source
 - Press Ctrl + F
@@ -132,3 +132,14 @@ WHOIS command for WHOIS records <br/>
 Hackertarget Website Screenshot <br/>
 <img src="https://i.imgur.com/W6hupdS.png" height="30%" width="30%" alt=""/>
 <br />  
+
+# Open-Source Intelligence (OSINT):
+
+- Using [Domain Dossier](https://centralops.net/co/DomainDossier.aspx), I can find its IP address along with all DNS records. [Full Report](https://github.com/jefftsui1/Cybersecurity-Home-Labs/blob/main/Senselearner-Internship/Week-2/senselearner.com%20-%20Domain%20Dossier%20-%20owner%20and%20registrar%20information%2C%20whois%20and%20DNS%20records.pdf)
+- Using [Domaintools](https://whois.domaintools.com/senselearner.com), I can find the registrar and registrar status. [Full Report](https://github.com/jefftsui1/Cybersecurity-Home-Labs/blob/main/Senselearner-Internship/Week-2/SenseLearner.com%20WHOIS%2C%20DNS%2C%20%26%20Domain%20Info%20-%20DomainTools.pdf)
+- Using [Shodan](https://www.shodan.io/host/162.250.126.19), I also found a lot of Hostnames and Domains that I couldn’t find using Kali Linux.
+
+ <p align="left">
+Shodan Screenshot <br/>
+<img src="https://i.imgur.com/lPE5WgD.png" height="30%" width="30%" alt=""/>
+<br />    
