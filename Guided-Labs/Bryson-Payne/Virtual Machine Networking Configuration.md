@@ -46,4 +46,35 @@ DHCP Server Tab <br/>
 
  <h2> </h2>
 
- <h2>Creating Public NAT Network </h2>
+ <h2>Connecting VMs to Host-Only Network </h2>
+
+1. Open up Oracle VM Application
+
+2. Click on your Kali Linux VM to highlight Kali Linux VM
+
+3. Scroll down and click on the Network tab
+
+<p align="left">
+Network Tab <br/>
+<img src="https://i.imgur.com/ENmRmBL.png" height="35%" width="35%" alt=""/>
+<br />
+
+4. Change Attached to: Host-only Adapter
+
+<p align="left">
+Network Configuration <br/>
+<img src="https://i.imgur.com/6NYkL21.png" height="35%" width="35%" alt=""/>
+<br />
+
+
+5. Name: Put the private network that we created before
+
+6. Do the same to Windows VM too
+
+7. Log in Kali Linux VM and use the CLI
+- type: ip a to check the IP Address if it's on 10.0.3
+
+<p align="left">
+IP Address Check on Kali Linux <br/>
+<img src="https://i.imgur.com/ULPcGsT.png" height="35%" width="35%" alt=""/>
+<br />  
