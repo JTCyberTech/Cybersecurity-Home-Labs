@@ -66,6 +66,7 @@
 - ping [website] = network command, see if you have connectivity to the internet for the website
   - ping www.google.com = check if you can connect to google.com
 - ipconfig = interface config
+  - similar to the ifconfig command in Kali Linux
 - ipconfig /renew = reconnect network adapter
 - set = command to list all your environment variables
   - similar to the env command in Kali Linux
