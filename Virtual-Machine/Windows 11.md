@@ -12,5 +12,5 @@
 
 <p align="left">
 Windows VM on VirtualBox <br/>
-<img src="https://i.imgur.com/EqESyeK.png" height="35%" width="35%" alt=""/>
+<img src="https://i.imgur.com/aGkUw8G.png height="35%" width="35%" alt=""/>
 <br />
