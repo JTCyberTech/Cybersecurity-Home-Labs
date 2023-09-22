@@ -1,4 +1,4 @@
-# Creating Windows 11 VM to Oracle VirtualBox 
+# Creating Windows VM to Oracle VirtualBox 
 
 1. Navigate to the [Microsoft](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) website
 
