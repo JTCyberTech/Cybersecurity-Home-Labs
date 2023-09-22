@@ -160,3 +160,12 @@ Ping Google on Kali Linux VM <br/>
 IP Address Check on Windows VM <br/>
 <img src="https://i.imgur.com/zGcbuQC.png" height="35%" width="35%" alt=""/>
 <br />    
+
+<h2> </h2>
+
+<h2>Update VM</h2>
+
+- Kali Linux: sudo apt update
+- Kali Linux: sudo apt upgrade
+- Windows: Windows Update
+
