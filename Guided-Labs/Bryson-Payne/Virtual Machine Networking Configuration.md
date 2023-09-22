@@ -69,7 +69,7 @@ Network Configuration <br/>
 
 5. Name: Put the private network that we created before
 
-6. Do the same to Windows VM too
+6. Do the same to Windows VM and the BrysonPayne's Metaspolitable2 too
 
 7. Log in Kali Linux VM and use the CLI
 - type: ip a to check the IP Address if it's on 10.0.3
