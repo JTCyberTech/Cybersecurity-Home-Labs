@@ -10,3 +10,7 @@
 
 5. Go to your Oracle VirtualBox and click on File > Import Appliance > The Virtual Machines that you downloaded > Import 
 
+<p align="left">
+Windows VM on VirtualBox <br/>
+<img src="https://i.imgur.com/EqESyeK.png" height="35%" width="35%" alt=""/>
+<br />
