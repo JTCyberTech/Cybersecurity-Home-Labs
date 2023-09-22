@@ -69,4 +69,6 @@
 - ipconfig /renew = reconnect network adapter
 - set = command to list all your environment variables
   - similar to the env command in Kali Linux
-  
+  - can use cd [environment variables] to change directory
+    - cd %USERPROFILE% = change directory to user
+    - echo %USERPROFILE% = return what directory is %USERPROFILE%
