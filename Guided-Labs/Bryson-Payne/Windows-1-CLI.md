@@ -1,4 +1,4 @@
-# Window-Command-Line
+# Windows Command Line
 
 <h2>Beginner Windows Commands</h2>
 
