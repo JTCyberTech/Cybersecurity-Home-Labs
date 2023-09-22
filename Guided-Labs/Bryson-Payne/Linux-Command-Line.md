@@ -59,13 +59,14 @@
 
 <h2>File Linux Commands</h2>
 
-- mkdir [name] = create a directory with the [name]
-- rmdir [name] = remove a directory
-- echo hello > file.txt = create a .txt name file and write hello in the .txt
-- more file.txt = show the contents of the "file.txt", in this case, will only show "hello"
+- mkdir [name] = create a directory with the [name], basically create a folder
+- rmdir [name] = remove a directory, basically delete a folder
+- echo hello > file.txt = create a .txt name file and write "hello" in the .txt
+- more file.txt = show the contents of the [file.txt], in this case, will only show "hello"
   - return: hello
 - cp file.txt myfile.txt = copy "file.txt" and create another .txt call "myfile". Will have both .txt afterward
 - mv myfile.txt textfile.txt = rename "myfile.txt" to "textfile.txt"
+  - can also use this command to move a file into a folder; mv myfile.txt Folder1 = move myfile.txt to Folder1
 - rm file.txt = remove "file.txt"
 - nano textfile.txt = open up text editor
   - Ctrl + O to save, ctrl + X to exit
