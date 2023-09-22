@@ -165,6 +165,6 @@ IP Address Check on Windows VM <br/>
 
 <h2>Update VM</h2>
 
-- Kali Linux: sudo apt update
-- Kali Linux: sudo apt upgrade
-- Windows: Windows Update
+- Kali Linux: in CLI type: sudo apt update
+- Kali Linux: in CLI type: sudo apt upgrade
+- Windows: Windows Update 
