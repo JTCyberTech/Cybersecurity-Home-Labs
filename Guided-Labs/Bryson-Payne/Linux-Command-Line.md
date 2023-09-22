@@ -73,7 +73,7 @@
 
 <h2></h2>
 
-<h2>Helpful Commands</h2>
+<h2>Helpful Linux Commands</h2>
 
 - sudo = super user do command that allows you to do only super can do
   - sudo apt-get install python3 = install python3, only superuser can install
