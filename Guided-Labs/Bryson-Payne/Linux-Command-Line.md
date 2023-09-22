@@ -87,7 +87,7 @@
     - If you create a new file, you have to use **"updatedb"** command to update the database before you can do the locate command in order for the new file to show up.
 - man [command] = manual of the command
   - man locate = show the manual of locate
-  - can also do [command] --help. locate --help
+  - [command] --help = the same; locate --help
 - env = command to list all your environment variables
   - can use echo $[variable from "env] to check stuff
     - echo $USER = check what user you log in to
