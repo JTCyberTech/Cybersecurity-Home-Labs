@@ -1,4 +1,4 @@
-# Virtual Network Configuration
+# Virtual Networking Configuration
 
 <h2>Setting Up Two Networks</h2>
 
@@ -105,3 +105,58 @@ IP Address Check on Metaspolitable2 VM <br/>
 <img src="https://i.imgur.com/6PvIteA.png" height="35%" width="35%" alt=""/>
 <br />  
   
+<h2> </h2>
+
+<h2>Creating Public NAT Network </h2>
+
+1. Open up Oracle VM Application
+
+2. Click on File > Preference > Network
+
+3. Create a new NAT Network
+
+4. Edit the new NAT Network
+- Change Network Name: PublicNAT
+- Change Network CIDR: 10.0.9.0/24
+
+<p align="left">
+PublicNAT Configuration <br/>
+<img src="https://i.imgur.com/NpsqkcC.png" height="35%" width="35%" alt=""/>
+<br />  
+  
+5. Configure Kali Linux VM Network
+- Change Attach to: NAT Network
+
+<p align="left">
+Kali Linux VM PublicNAT Configuration <br/>
+<img src="https://i.imgur.com/9Ag870t.png" height="35%" width="35%" alt=""/>
+<br />  
+  
+
+6.  Log into Kali Linux VM and use the CLI
+- type: ip a to check the IP Address if it's on 10.0.9
+- The IP Address for Kali Linux VM is 10.0.9.4
+
+<p align="left">
+IP Address Check on Kali Linux VM <br/>
+<img src="https://i.imgur.com/paYPLmz.png" height="35%" width="35%" alt=""/>
+<br />  
+
+7. Check if the NAT Network can ping Google
+- type: ping google.com
+
+<p align="left">
+Ping Google on Kali Linux VM <br/>
+<img src="https://i.imgur.com/yy7esfq.png" height="35%" width="35%" alt=""/>
+<br />  
+
+8. Do the same configuration for Windows VM to switch the Network to PublicNAT
+
+9. Log into Windows VM and use the Command Prompt or cmd
+- type: ipconfig to check the IP Address if it's on 10.0.9
+- The IP Address for Kali Linux VM is 10.0.9.5
+
+<p align="left">
+IP Address Check on Windows VM <br/>
+<img src="https://i.imgur.com/zGcbuQC.png" height="35%" width="35%" alt=""/>
+<br />    
