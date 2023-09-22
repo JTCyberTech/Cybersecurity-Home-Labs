@@ -1,6 +1,6 @@
 # Kali Linux Command Line
 
-<h2>Helpful Linux Terminal Commands:</h2>
+<h2>Beginner Linux Terminal Commands:</h2>
 
 - ls [list, ls -al ]
 - cd [chang dir, cd..]
@@ -18,6 +18,27 @@
 - locate [locate after updatedb]
 - ping/ifconfig [network]
 - env [show all environment vars]
+
+<h2>Intermediate Linux Terminal Commands:</h2>
+
+- Display output like a table (| column -t):
+  - mount column -t
+  - cat /etc/passwd | column -t -s
+- Go back to previous directory: cd -
+- Turn on aliases in your .bashrc:
+  -  alias Ll='ls -l'
+  -  alias La='ls -a'
+-  Run multiple commands:
+  -  ; (in order)
+  -  && (if successful)
+-  Reuse last argument: ! $
+-  Reuse last command: ! ! (e.g. sudo !!)
+-  Reverse text (rev): echo hello | rev
+-  Draw banner letters (figlet): figlet hello
+-  clear [also ctrl+L]
+-  cal [calendar] factor 24 [factors...] > filename [empty file]
+-  head [top of file] tail [last few lines] grep [superfind]
+
 
 <h2></h2>
 
@@ -80,5 +101,7 @@
   - tells that the network is set up with the display internet address and always has a loopback address
     - eth0; inet = internet address, lo; inet = loopback address or localhost address
 
+<h2></h2>
 
+<h2>More Commands</h2>
   
