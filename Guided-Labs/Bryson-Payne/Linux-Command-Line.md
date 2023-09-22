@@ -23,7 +23,7 @@
 
 - Display output like a table (| column -t):
   - mount column -t
-  - cat /etc/passwd | column -t -s
+  - cat /etc/passwd | column -t -s :
 - Go back to previous directory: cd -
 - Turn on aliases in your .bashrc:
   -  alias Ll='ls -l'
@@ -68,7 +68,7 @@
 - mv myfile.txt textfile.txt = rename "myfile.txt" to "textfile.txt"
 - rm file.txt = remove "file.txt"
 - nano textfile.txt = open up text editor
-  - Ctrl + O to save, ctrl + x to exit
+  - Ctrl + O to save, ctrl + X to exit
 
 <h2></h2>
 
@@ -103,5 +103,41 @@
 
 <h2></h2>
 
-<h2>More Commands</h2>
+<h2>Intermediate Commands</h2>
   
+- mount = command that tells you all the devices that are connected
+  - mount | column -t = do tab space for our column to make the mount command more readable
+    - | = pipe; will take the output of one command and send it to another
+    - column -t = tab space for column
+- cat /etc/passwd = command that shows all of the users 
+  - cat /etc/passwd | column -t -s : = do tab space for our column more readable and separate each column when it have :
+- cd - = takes you back to one directory that you were at
+- alias [name="command"] = you can rename a command so it will be more convenient to type in the command
+  - alias ll='ls -l' = When you type ll, it will automatically do the command: ls -l
+  - alias will only be stored in each session, if you close kali linux then the alias will not work next time
+    - can use the command "nano .bashrc" to save alias for future use
+      - nano .bashrc then scroll down to the aliases section and customize it
+- ; = separate multiple commands
+  - "command 1" ; "command 2" = will execute command 1 first then do command 2
+  - sleep 5 ; echo "hello" = wait 5 seconds then write hello
+- && = do the first command then do the second command only if the first command does not error out
+- !$ = reuse last argument
+  - column -t
+    - use: column !$; will output; column -t
+- !! = reuse last command
+  - if a command needs sudo to use; "service network-manager restart"; it will not work
+    - can use: sudo !!; this will make !! = last command, so it will become; "sudo service network-manager restart"
+- echo hello | rev = write "hello" in reverse
+  - return: olleh
+- figlet hello = Draw banner for "hello"
+- clear or ctrl+L = clear the whole command line
+- cal = show this month's calendar
+- factor 24 = quickly calculate the prime factor of 24
+- "[command] > filename" = put a command in a file
+  - "echo hello > filename" = write hello in the filename
+- head = read the first 10 lines of a file
+  - head file.txt
+- tail = read the last 10 lines of a file
+  - tail file.txt
+- grep = super find, find one line in a file
+  - grep "hello" file.txt
