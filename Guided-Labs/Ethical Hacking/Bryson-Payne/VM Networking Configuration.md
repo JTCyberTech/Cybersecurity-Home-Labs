@@ -1,0 +1,170 @@
+# Virtual Networking Configuration
+
+<h2>Setting Up Two Networks</h2>
+
+- Establishing a Private (Host-Only Network) on 10.0.3.x
+  - Proactive security measure, effectively isolating our internal network from external internet threats
+  - Safeguarding both our local network and the broader internet from potential vulnerabilities
+    
+- Establishing a Public (NAT Network) on 10.0.9.x
+  - Provisioned to facilitate internet connectivity for essential tasks, including software updates and web browsing
+
+<h2> </h2>
+
+<h2>Creating Private Host-Only Network </h2>
+
+1. Open up Oracle VM Application
+
+2. Click on your Kali Linux VM to highlight Kali Linux VM
+
+3. Click on File in top left corner > Host Network Manager or Ctrl + H
+
+<p align="left">
+Host Network Manager <br/>
+<img src="https://i.imgur.com/3wRWC89.png" height="35%" width="35%" alt=""/>
+<br />
+   
+4. Click on Create and change IPv4 Address: 10.0.3.2 for the Adapter Tab
+
+<p align="left">
+Adapter Tab <br/>
+<img src="https://i.imgur.com/zopenfy.png" height="35%" width="35%" alt=""/>
+<br />
+
+5. Go to the DHCP Server Tab > Enable Server
+  - Change Server Address: 10.0.3.3
+  - Change Lower Address Bound: 10.0.3.4
+  - Change Upper Address Bound: 10.0.3.100
+
+<p align="left">
+DHCP Server Tab <br/>
+<img src="https://i.imgur.com/TlkcHBM.png" height="35%" width="35%" alt=""/>
+<br />
+
+6. Apply and Check the enable box for DHCP Server
+
+
+ <h2> </h2>
+
+ <h2>Connecting VMs to Host-Only Network </h2>
+
+1. Open up Oracle VM Application
+
+2. Click on your Kali Linux VM to highlight Kali Linux VM
+
+3. Scroll down and click on the Network tab
+
+<p align="left">
+Network Tab <br/>
+<img src="https://i.imgur.com/ENmRmBL.png" height="35%" width="35%" alt=""/>
+<br />
+
+4. Change Attached to: Host-only Adapter
+
+<p align="left">
+Network Configuration <br/>
+<img src="https://i.imgur.com/6NYkL21.png" height="35%" width="35%" alt=""/>
+<br />
+
+
+5. Name: Put the private network that we created before
+
+6. Do the same to Windows VM and BrysonPayne's Metaspolitable2 VM 
+
+7. Log into Kali Linux VM and use the CLI
+- type: ip a to check the IP Address if it's on 10.0.3
+- The IP Address for Kali Linux VM is 10.0.3.5
+
+<p align="left">
+IP Address Check on Kali Linux VM <br/>
+<img src="https://i.imgur.com/ULPcGsT.png" height="35%" width="35%" alt=""/>
+<br />  
+
+8. Log into Windows VM and use the Command Prompt or cmd
+- type: ipconfig to check the IP Address if it's on 10.0.3
+- The IP Address for Kali Linux VM is 10.0.3.4
+
+<p align="left">
+IP Address Check on Windows VM <br/>
+<img src="https://i.imgur.com/mdNXWih.png" height="35%" width="35%" alt=""/>
+<br />  
+
+9. On Windows VM command prompt type: ping 10.0.3.5 to see if the Windows VM is connected to the Kali Linux VM
+
+<p align="left">
+Ping Command <br/>
+<img src="https://i.imgur.com/4y1yCjM.png" height="35%" width="35%" alt=""/>
+<br />  
+
+10. Log into BrysonPayne's Metaspolitable2 VM
+- type: ifconfig to check the IP Address if it's on 10.0.3
+- The IP Address for BrysonPayne's Metaspolitable2 VM is 10.0.3.6
+
+<p align="left">
+IP Address Check on Metaspolitable2 VM <br/>
+<img src="https://i.imgur.com/6PvIteA.png" height="35%" width="35%" alt=""/>
+<br />  
+  
+<h2> </h2>
+
+<h2>Creating Public NAT Network </h2>
+
+1. Open up Oracle VM Application
+
+2. Click on File > Preference > Network
+
+3. Create a new NAT Network
+
+4. Edit the new NAT Network
+- Change Network Name: PublicNAT
+- Change Network CIDR: 10.0.9.0/24
+
+<p align="left">
+PublicNAT Configuration <br/>
+<img src="https://i.imgur.com/NpsqkcC.png" height="35%" width="35%" alt=""/>
+<br />  
+  
+5. Configure Kali Linux VM Network
+- Change Attach to: NAT Network
+
+<p align="left">
+Kali Linux VM PublicNAT Configuration <br/>
+<img src="https://i.imgur.com/9Ag870t.png" height="35%" width="35%" alt=""/>
+<br />  
+  
+
+6.  Log into Kali Linux VM and use the CLI
+- type: ip a to check the IP Address if it's on 10.0.9
+- The IP Address for Kali Linux VM is 10.0.9.4
+
+<p align="left">
+IP Address Check on Kali Linux VM <br/>
+<img src="https://i.imgur.com/paYPLmz.png" height="35%" width="35%" alt=""/>
+<br />  
+
+7. Check if the NAT Network can ping Google
+- type: ping google.com
+
+<p align="left">
+Ping Google on Kali Linux VM <br/>
+<img src="https://i.imgur.com/yy7esfq.png" height="35%" width="35%" alt=""/>
+<br />  
+
+8. Do the same configuration for Windows VM to switch the Network to PublicNAT
+
+9. Log into Windows VM and use the Command Prompt or cmd
+- type: ipconfig to check the IP Address if it's on 10.0.9
+- The IP Address for Kali Linux VM is 10.0.9.5
+
+<p align="left">
+IP Address Check on Windows VM <br/>
+<img src="https://i.imgur.com/zGcbuQC.png" height="35%" width="35%" alt=""/>
+<br />    
+
+<h2> </h2>
+
+<h2>Update VM</h2>
+
+- Kali Linux: sudo apt update
+- Kali Linux: sudo apt upgrade
+- Windows: Windows Update
