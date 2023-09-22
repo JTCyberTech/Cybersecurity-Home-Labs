@@ -6,7 +6,6 @@
 - cd [chang dir, cd ..]
 - ver [OS info]
 - doskey /h [also up arrow]
-- **NO** sudo [run cmd as administrator]
 - mkdir/rmdir [also md/rd]
 - copy/move/del [copy files]
 - help [help or cmd /?]
@@ -14,10 +13,11 @@
 - echo [print to screen, > to file]
 - notepad [text editor]
 - more [show contents of file]
-- **NO** find [no exact equivalent]
 - ping [ping an address/host]
 - ipconfig [network info]
 - set [show all environment vars]
+- **NO** sudo [run cmd as administrator]
+- **NO** find [no exact equivalent]
 
 <h2></h2>
 
