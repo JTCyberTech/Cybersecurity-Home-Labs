@@ -69,12 +69,39 @@ Network Configuration <br/>
 
 5. Name: Put the private network that we created before
 
-6. Do the same to Windows VM and the BrysonPayne's Metaspolitable2 too
+6. Do the same to Windows VM and BrysonPayne's Metaspolitable2 VM 
 
-7. Log in Kali Linux VM and use the CLI
+7. Log into Kali Linux VM and use the CLI
 - type: ip a to check the IP Address if it's on 10.0.3
+- The IP Address for Kali Linux VM is 10.0.3.5
 
 <p align="left">
-IP Address Check on Kali Linux <br/>
+IP Address Check on Kali Linux VM <br/>
 <img src="https://i.imgur.com/ULPcGsT.png" height="35%" width="35%" alt=""/>
 <br />  
+
+8. Log into Windows VM and use the Command Prompt or cmd
+- type: ipconfig to check the IP Address if it's on 10.0.3
+- The IP Address for Kali Linux VM is 10.0.3.4
+
+<p align="left">
+IP Address Check on Windows VM <br/>
+<img src="https://i.imgur.com/mdNXWih.png" height="35%" width="35%" alt=""/>
+<br />  
+
+9. On Windows VM command prompt type: ping 10.0.3.5 to see if the Windows VM is connected to the Kali Linux VM
+
+<p align="left">
+Ping Command <br/>
+<img src="https://i.imgur.com/4y1yCjM.png" height="35%" width="35%" alt=""/>
+<br />  
+
+10. Log into BrysonPayne's Metaspolitable2 VM
+- type: ifconfig to check the IP Address if it's on 10.0.3
+- The IP Address for BrysonPayne's Metaspolitable2 VM is 10.0.3.6
+
+<p align="left">
+IP Address Check on Metaspolitable2 VM <br/>
+<img src="https://i.imgur.com/6PvIteA.png" height="35%" width="35%" alt=""/>
+<br />  
+  
