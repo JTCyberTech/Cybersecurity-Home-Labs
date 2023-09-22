@@ -8,5 +8,5 @@
 
 <p align="left">
 Metaspolitable2 VM on VirtualBox <br/>
-<img src="https://i.imgur.com/hCMmdnD.png" height="35%" width="35%" alt=""/>
+<img src="https://i.imgur.com/22MwfYD.png" height="35%" width="35%" alt=""/>
 <br />
