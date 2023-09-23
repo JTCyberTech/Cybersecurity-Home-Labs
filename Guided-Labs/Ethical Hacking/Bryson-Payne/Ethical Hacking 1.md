@@ -152,4 +152,17 @@ For Example: Google.com
 - We can combine both techniques above and will give the same result
   - Browser URL Type: https://www.facebook.com@142.250.80.46 will bring you to google.com as well
 - We can modify the IP address into a singular integer format to enhance obfuscation and deter detection by the victims
-  - We can use this tool: [IP Address to Integer Converter](https://www.browserling.com/tools/ip-to-dec)
+  - We can use this website tool: [IP Address to Integer Converter](https://www.browserling.com/tools/ip-to-dec)
+  - Put in Google's IP Address in the website tool and convert it.
+    - 142.250.80.46 = 2398769198
+    - 2398769198 = (142 * 16777216) + (250 * 65536) + (80 * 256) + (46)
+  -  Browser URL Type: https://www.facebook.com@2398769198
+
+Using IP Address Masking to our Phishing Email:
+- Convert 10.0.9.4 into an integer using [IP Address to Integer Converter](https://www.browserling.com/tools/ip-to-dec)
+- 10.0.9.4 = 167774468
+- Replace all the hyperlinks on the phishing email with:
+  - http://www.Facebook.com@167774468
+  - This will be harder to spot for individuals than just 10.0.9.4 on the hyperlink
+
+
