@@ -137,5 +137,19 @@ Setoolkit Hacked Login Credentials<br/>
 <br />   
 
     
+<h2></h2>
 
+<h2>IP Address Masking</h2>
 
+We can hide our real URL with IP Address Masking
+
+For Example: Google.com
+- We can find out what IP Address is google and put its IP address on a Browser URL and it will go to Google
+  - Google.com; IP Address = 142.250.80.46
+  - Browser URL Type: 142.250.80.46
+- We can also put another website in between "https://" and "@" and will also bring you to the website after @
+  - Browser URL Type: https://www.facebook.com@google.com will bring you to google.com
+- We can combine both techniques above and will give the same result
+  - Browser URL Type: https://www.facebook.com@142.250.80.46 will bring you to google.com as well
+- We can modify the IP address into a singular integer format to enhance obfuscation and deter detection by the victims
+  - We can use this tool: [IP Address to Integer Converter](https://www.browserling.com/tools/ip-to-dec)
