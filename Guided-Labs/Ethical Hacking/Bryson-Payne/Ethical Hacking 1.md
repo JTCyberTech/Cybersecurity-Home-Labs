@@ -169,4 +169,12 @@ Using IP Address Masking to our Phishing Email:
   - http://www.Facebook.com@167774468
   - This will be harder to spot for individuals than just 10.0.9.4 on the hyperlink
 
+<h2></h2>
 
+<h2>Conclusion</h2>
+
+- Always hover over the clickable links to see if it's malicious
+- Always make sure we are using HTTPS instead of HTTP
+- Can bookmark the websites that you often use to avoid type squatters
+- Emails that have any type of urgent needs from the content or giving something for free should be taken with highly cautious
+- Can download the Netcraft extension to detect malicious email and website links
