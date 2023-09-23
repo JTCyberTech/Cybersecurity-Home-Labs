@@ -2,16 +2,20 @@
 
 <h2>Description:</h2>
 
-- Using Kali Linux and Windows VM to create a Phishing Email by using the Social Engineering Toolkit.
+- Using Kali Linux VM to get familiar with the Social Engineering Toolkit.
+- Using legit email to create a Phishing Email
+- Using IP Address Masking to enhance our Phishing Email
 
 
 <h2>Environment Used</h2>
 
 Navigate to [VM Network Configuration](https://github.com/jefftsui1/Cybersecurity-Home-Labs/blob/main/Guided-Labs/Ethical%20Hacking/Bryson-Payne/VM%20Networking%20Configuration.md) to set up the Networks
-- Kali Linux VM and Windows VM: 
+- Kali Linux VM: 
   - Network Attached to: NAT Network
   - Name: PublicNAT
   - IP Address = 10.0.9 Network; 10.0.9.4
+ 
+- Tool Used: Setoolkit from Kali Linux
  
 <h2></h2>
 
@@ -93,7 +97,7 @@ Terminal Username and Password <br/>
    
 <h2></h2>
 
-<h2>Using legit email to create a phishing email</h2>
+<h2>Using Legit Email to create a Phishing Email</h2>
 
 1. For this example: I used my LinkedIn email but altered their names and titles
 
