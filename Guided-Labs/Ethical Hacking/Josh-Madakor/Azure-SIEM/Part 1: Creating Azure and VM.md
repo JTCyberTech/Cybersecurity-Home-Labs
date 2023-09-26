@@ -40,7 +40,7 @@ Create a new resource group <br/>
 <img src="https://i.imgur.com/uWVk9zv.png" height="35%" width="35%" alt=""/>
 <br />
 
-4. Change instance details:
+4. In the Basic tab - Change instance details:
    - Virtual machine name: honeypot-vm
    - Region: (US) West US 3
    - Availability options: No infrastructure redundancy required
@@ -53,3 +53,34 @@ Create a new resource group <br/>
 Instance Details <br/>
 <img src="https://i.imgur.com/V8grONm.png" height="35%" width="35%" alt=""/>
 <br />   
+
+5. Leave Disks tab as it is > Next Networking
+
+6. In the Networking tab:
+    - Change NIC network security group: Advanced
+    - Configure network security group: create new
+        - Delete the default inbound rule
+        - Add an inbound rule:
+            - Destination port ranges: * (meaning everything)
+            - Priority: 100
+            - Name: DANGER
+
+<p align="left">
+Create a new inbound rule <br/>
+<img src="https://i.imgur.com/8aVsRNB.png" height="35%" width="35%" alt=""/>
+<br />
+
+
+7. Click Review + create at the bottom left corner > create
+
+<p align="left">
+Review + create <br/>
+<img src="https://i.imgur.com/RHRZIcw.png" height="35%" width="35%" alt=""/>
+<br />
+
+8. Successfully deploy a honeypot machine
+
+<p align="left">
+Honeypot Machine Created <br/>
+<img src="https://i.imgur.com/9wgVAfM.png" height="35%" width="35%" alt=""/>
+<br /> 
