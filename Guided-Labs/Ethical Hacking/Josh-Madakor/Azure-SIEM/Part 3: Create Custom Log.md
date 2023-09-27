@@ -11,8 +11,8 @@ In this project phase, I will establish a tailored log configuration within our 
 <h2>Creating Custom Log in L-A-W</h2>
 
 1. In our VM, copy all contents on failed_rdp - Notepad   
-  - Go back to our desktop > create a Notepad document, and paste all content there
-  - Save it, name: failed_rdp.log
+    - Go back to our desktop > create a Notepad document, and paste all content there
+    - Save it, name: failed_rdp.log
 
 
 2. In our own Desktop, [Azure Portal](https://portal.azure.com/?quickstart=true#home) search bar, search: Log Analytic workspaces
@@ -39,8 +39,8 @@ Selecting the File<br/>
 <br />
 
 5. In Collection paths:
-  - Type: Windows
-  - Path: C:\ProgramData\failed_rdp.log
+    - Type: Windows
+    - Path: C:\ProgramData\failed_rdp.log
 
 <p align="left">
 Collection Paths<br/>
@@ -48,7 +48,7 @@ Collection Paths<br/>
 <br />
 
 6. Details: > Create
-  - Custom log name: FAILED_RDP_WITH_GEO
+    - Custom log name: FAILED_RDP_WITH_GEO
 
 <p align="left">
 Create Custom Log Overview<br/>
@@ -56,11 +56,19 @@ Create Custom Log Overview<br/>
 <br />
 
 7. Test Logs:
-  - Go to Logs in Log Analytics Workspace
-  - Type in: SecurityEvent | where EventID == 4625 > Run
-  - Result will give all the failed attempts login for our honeypot
+    - Go to Logs in Log Analytics Workspace
+    - Type in: SecurityEvent | where EventID == 4625 > Run
+    - Result will give all the failed attempts login for our honeypot
 
 <p align="left">
 Testing Logs<br/>
 <img src="https://i.imgur.com/bifwot2.png" height="35%" width="35%" alt=""/>
 <br />
+
+8. Wait until you can run FAILED_RDP_WITH_GEO_CL in Logs
+
+<p align="left">
+Wait For Logs<br/>
+<img src="https://i.imgur.com/zR952Cl.png" height="35%" width="35%" alt=""/>
+<br />   
+
