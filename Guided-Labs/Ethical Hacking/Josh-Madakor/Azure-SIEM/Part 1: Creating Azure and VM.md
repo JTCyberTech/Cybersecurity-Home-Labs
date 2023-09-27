@@ -1,6 +1,6 @@
 <h2>Description:</h2>
 
-The first step of this project is to create a SIEM with Azure and configure a Virtual Machine.
+The project's initial phase entails the establishment of an Azure account, coupled with the activation of a free subscription. Subsequently, we proceed with the configuration of a Virtual Machine to fulfill the project's objectives.
 
 <h2></h2>
 
