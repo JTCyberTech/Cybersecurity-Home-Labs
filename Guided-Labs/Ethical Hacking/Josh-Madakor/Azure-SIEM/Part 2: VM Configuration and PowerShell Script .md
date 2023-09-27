@@ -138,4 +138,13 @@ Navigate to logfile <br/>
 <img src="https://i.imgur.com/eCcTv6a.png" height="35%" width="35%" alt=""/>
 <br />
   
-3. 
+3. Test if the Log will update
+  - Go back to your Desktop > Start menu search: Remote Desktop Connect
+  - Attempt to fail to log to the VM with
+    - Username: Testing
+   
+<p align="left">
+Log is working<br/>
+<img src="https://i.imgur.com/OUHZZUu.png" height="35%" width="35%" alt=""/>
+<br />
+
