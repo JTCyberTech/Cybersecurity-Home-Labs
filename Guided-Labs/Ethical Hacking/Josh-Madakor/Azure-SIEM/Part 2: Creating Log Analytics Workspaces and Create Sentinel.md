@@ -1,95 +1,83 @@
 <h2>Description:</h2>
 
-In this part of the project, I will provide a comprehensive demonstration, elucidating each of the following four key points in detail.
 
-- Create a Log Analytics Workspace
-- Enable Log Gathering with Microsoft Defender for Cloud
-- Connect Log Analytics Workspace to the Virtual Machine
-- Setup Microsoft Sentinel
 
-<h2></h2>
-    
-<h2>Creating a Log Analytics Workspace</h2>
-
-1. In [Azure Portal](https://portal.azure.com/?quickstart=true#home) search bar, search: Log Analytics workspaces and click it > Create 
-
-2. In the Basic tab - Select Resource group and Change instance details:
-    - Resource group: Lab-Honeypot
-    - Name: law-honeypot
-    - Region: West US 2
-
-<p align="left">
-Create Log Analytics Workspace <br/>
-<img src="https://i.imgur.com/CyZPBvN.png" height="35%" width="35%" alt=""/>
-<br />
-
-3. Click Review + create at the bottom left corner > create
-
-4. Successfully created a Log Analytics Workspace
-
-<p align="left">
-Successfully created Log Analytics Workspace <br/>
-<img src="https://i.imgur.com/W0BBymq.png" height="35%" width="35%" alt=""/>
-<br />
+- Logging into the VM with Remote Desktop Application
+- Observe Event Viewer on VM
+- Turn off the firewall in the VM
+- Download PowerShell Script
+- Get the API Key from Gelocation.io
+- Run the Script to get Geolocation Data from Attackers
 
 <h2></h2>
 
-<h2>Enable Log Gathering with Microsoft Defender for Cloud</h2>
+<h2>Logging In the Virtual Machine</h2>
 
-1. In [Azure Portal](https://portal.azure.com/?quickstart=true#home) search bar, search: Microsoft Defender for Cloud
+1. In [Azure Portal](https://portal.azure.com/?quickstart=true#home) search bar, search: Virtual Machine
 
-2. On the left side, Click on Environment settings under Management > click on Azure subscription 1 > law-honeypot
+2. Click on honeypot > copy the Public IP Address
+
+3. Go on our own Desktop > click on start menu > open up Remote Desktop Connection Application
+
+4. Paste the Public IP Address to the Remote Desktop Connection Application and use the account information that you sign up the subscription with
 
 <p align="left">
-Navigating in Microsoft Defender for Cloud <br/>
-<img src="https://i.imgur.com/uih1pdY.png" height="35%" width="35%" alt=""/>
+Remote Desktop Connection<br/>
+<img src="https://i.imgur.com/WHRlnQp.png" height="35%" width="35%" alt=""/>
 <br />
 
-
-3. Turn on Servers and leave SQL servers on the machine off > save
-
-<p align="left">
-Settings | Defender Plans<br/>
-<img src="https://i.imgur.com/ch8Vm9P.png" height="35%" width="35%" alt=""/>
-<br />
-
-4. Click on Data Collection on the left > Click on All events> save
+5. Once finished loading up the VM, apply No to all the setting
 
 <p align="left">
-Settings | Defender Collection<br/>
-<img src="https://i.imgur.com/WgsozCY.png" height="35%" width="35%" alt=""/>
+VM Startup Settings<br/>
+<img src="https://i.imgur.com/4tnLZkG.png" height="35%" width="35%" alt=""/>
 <br />
 
 <h2></h2>
 
-<h2>Connecting Log Analytics Workspace to the Virtual Machine</h2>
 
-1. In [Azure Portal](https://portal.azure.com/?quickstart=true#home) search bar, search: Log Analytics workspaces
+<h2>Obesrve Event Viewer on VM</h2>
 
-2. Click on law-honeypot > Scroll down on the left bar > click on Virtual machine (deprecated) under Classic
+1. In the Virtual Machine > click start menu > type in Event Viewer and start it up
 
-<p align="left">
-law-honeypot | Virtual machines (deprecated)<br/>
-<img src="https://i.imgur.com/fTv6hBf.png" height="35%" width="35%" alt=""/>
-<br />
-
-3. Click on connect
+2. Inside the Event Viewer > Windows Logs > Security > Audit Failure are the ones that we will be gathering.
 
 <p align="left">
-Successfully Connected our Log Analytics Workspace and VM (deprecated)<br/>
-<img src="https://i.imgur.com/Ajz0aju.png" height="35%" width="35%" alt=""/>
+Event Viewer<br/>
+<img src="https://i.imgur.com/d5BGoft.png" height="35%" width="35%" alt=""/>
 <br />
 
+3. The Audit Failure contains:
+  - Account Name, Workstation Name, IP Address
+
+<p align="left">
+Audit Failure<br/>
+<img src="https://i.imgur.com/j7BZFvg.png" height="35%" width="35%" alt=""/>
+<br />
 
 <h2></h2>
 
-<h2>Setup Microsoft Sentinel</h2>
+<h2>Turning off the Firewall in VM</h2>
 
-1. In [Azure Portal](https://portal.azure.com/?quickstart=true#home) search bar, search: Microsoft Sentinel > Create
-
-2. Pick law-honeypot to add Microsoft Sentinel to a workspace > add
+1. In the Virtual Machine > click start menu > type in wf.msc and open it
 
 <p align="left">
-Successfully Added Sentinel to our Workspace (deprecated)<br/>
-<img src="https://i.imgur.com/nbFrxiQ.png" height="35%" width="35%" alt=""/>
+wf.msc <br/>
+<img src="https://i.imgur.com/frth2Ph.png" height="35%" width="35%" alt=""/>
+<br />
+
+2. Click on Windows Defender Firewall Properties
+
+<p align="left">
+Windows Defender Firewall <br/>
+<img src="https://i.imgur.com/Kk6ofUe.png" height="35%" width="35%" alt=""/>
+<br />
+
+3. Turn the Firewall state: Off, for Domain Profile, Private Profile, and Public Profile > Apply
+
+4. This will allow my Desktop Device to ping the VM which doesn't allow before turning off the firewall.
+
+<p align="left">
+Desktop Ping VM <br/>
+<img src="https://i.imgur.com/jEho9CL.png" height="35%" width="35%" alt=""/>
 <br />
