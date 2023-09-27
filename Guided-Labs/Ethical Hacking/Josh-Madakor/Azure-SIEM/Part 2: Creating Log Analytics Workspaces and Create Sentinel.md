@@ -66,4 +66,23 @@ law-honeypot | Virtual machines (deprecated)<br/>
 <img src="https://i.imgur.com/fTv6hBf.png" height="35%" width="35%" alt=""/>
 <br />
 
-3. 
+3. Click on connect
+
+<p align="left">
+Successfully Connected our Log Analytics Workspace and VM (deprecated)<br/>
+<img src="https://i.imgur.com/Ajz0aju.png" height="35%" width="35%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h2>Setup Microsoft Sentinel</h2>
+
+1. In [Azure Portal](https://portal.azure.com/?quickstart=true#home) search bar, search: Microsoft Sentinel > Create
+
+2. Pick law-honeypot to add Microsoft Sentinel to a workspace > add
+
+<p align="left">
+Successfully Added Sentinel to our Workspace (deprecated)<br/>
+<img src="https://i.imgur.com/nbFrxiQ.png" height="35%" width="35%" alt=""/>
+<br />
