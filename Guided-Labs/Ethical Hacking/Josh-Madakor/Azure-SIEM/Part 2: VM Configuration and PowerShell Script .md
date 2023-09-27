@@ -1,6 +1,6 @@
 <h2>Description:</h2>
 
-
+In this project phase, I will illustrate the procedure for accessing the virtual machine and demonstrate how to monitor the Event Viewer within it. Subsequently, as part of a controlled experiment, I will disable the firewall to entice potential attackers to target our virtual machine. Following this, I will acquire an online PowerShell script designed to extract the longitude and latitude of the attackers' location. To execute this script, it will be necessary to establish an account on Geolocation.io in order to obtain the requisite API Key. Lastly, we will execute the script to test if we can obtain precise geolocation data pertaining to the attackers' origin.
 
 - Logging into the VM with Remote Desktop Application
 - Observe Event Viewer on VM
@@ -81,3 +81,7 @@ Windows Defender Firewall <br/>
 Desktop Ping VM <br/>
 <img src="https://i.imgur.com/jEho9CL.png" height="35%" width="35%" alt=""/>
 <br />
+
+<h2></h2>
+
+<h2>Download PowerShell Script</h2>
