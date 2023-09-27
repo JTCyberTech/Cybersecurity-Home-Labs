@@ -98,7 +98,7 @@ API Key Obtained <br/>
 
 <h2></h2>
 
-<h2>Download PowerShell Script</h2>
+<h2>Fetching PowerShell Script</h2>
 
 1. [PowerShell Script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) by Josh Madakor
 
@@ -108,11 +108,34 @@ API Key Obtained <br/>
 
 4. Windows PowerShell ISE > File > New
 
-5. Paste the whole code into PowerShell ISE > Save it on Desktop > name: Log_Exporter
+5. Paste the whole code into PowerShell ISE
+
+6. Change the API KEY to your own that you got from Geolocation.io
 
 <p align="left">
 PowerShell ISE <br/>
-<img src="https://i.imgur.com/0kIIVf2.png" height="35%" width="35%" alt=""/>
+<img src="https://i.imgur.com/DMQIBdY.png" height="35%" width="35%" alt=""/>
 <br />
 
+7. Save it on Desktop > name: Log_Exporter
 
+<h2></h2>
+
+<h2>Running and TestingPowerShell Script</h2>
+
+1. PwerShell ISE > Click Run
+
+<p align="left">
+PowerShell ISE Run Script <br/>
+<img src="https://i.imgur.com/jNfut1T.png" height="35%" width="35%" alt=""/>
+<br />
+
+2. Check if the log file is created
+  - VM start menu > search: run > Run program: C:\ProgramData\
+
+<p align="left">
+Navigate to logfile <br/>
+<img src="https://i.imgur.com/eCcTv6a.png" height="35%" width="35%" alt=""/>
+<br />
+  
+3. 
