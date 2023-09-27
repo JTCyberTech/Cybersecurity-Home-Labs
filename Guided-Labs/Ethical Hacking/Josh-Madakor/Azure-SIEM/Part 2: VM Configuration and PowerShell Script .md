@@ -5,8 +5,8 @@ In this project phase, I will illustrate the procedure for accessing the virtual
 - Logging into the VM with Remote Desktop Application
 - Observe Event Viewer on VM
 - Turn off the firewall in the VM
-- Download PowerShell Script
 - Get the API Key from Gelocation.io
+- Download PowerShell Script
 - Run the Script to get Geolocation Data from Attackers
 
 <h2></h2>
@@ -84,4 +84,35 @@ Desktop Ping VM <br/>
 
 <h2></h2>
 
+<h2>Get API Key from Geolocation.io</h2>
+
+1. Sign up on [Geolocation.io](https://ipgeolocation.io/signup.html)
+
+2. Verify Email and login to get the API Key
+
+<p align="left">
+API Key Obtained <br/>
+<img src="https://i.imgur.com/kuIVe04.png" height="35%" width="35%" alt=""/>
+<br />
+
+
+<h2></h2>
+
 <h2>Download PowerShell Script</h2>
+
+1. [PowerShell Script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) by Josh Madakor
+
+2. Copy the whole code on the GitHub website
+
+3. Go back to the VM > Start menu > Search: Windows PowerShell ISE and run it as administrator
+
+4. Windows PowerShell ISE > File > New
+
+5. Paste the whole code into PowerShell ISE > Save it on Desktop > name: Log_Exporter
+
+<p align="left">
+PowerShell ISE <br/>
+<img src="https://i.imgur.com/0kIIVf2.png" height="35%" width="35%" alt=""/>
+<br />
+
+
