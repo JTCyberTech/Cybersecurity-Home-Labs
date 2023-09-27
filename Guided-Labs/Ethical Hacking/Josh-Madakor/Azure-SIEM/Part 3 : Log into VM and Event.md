@@ -22,4 +22,26 @@ VM Startup Settings<br/>
 <img src="https://i.imgur.com/4tnLZkG.png" height="35%" width="35%" alt=""/>
 <br />
 
-6. 
+<h2></h2>
+
+
+<h2>Obesrve Event Viewer on VM</h2>
+
+1. In the Virtual Machine > click start menu > type in Event Viewer and start it up
+
+2. Inside the Event Viewer > Windows Logs > Security > Audit Failure are the ones that we will be gathering.
+
+<p align="left">
+Event Viewer<br/>
+<img src="https://i.imgur.com/d5BGoft.png" height="35%" width="35%" alt=""/>
+<br />
+
+3. The Audit Failure contains:
+  - Account Name, Workstation Name, IP Address
+
+<p align="left">
+Audit Failure<br/>
+<img src="https://i.imgur.com/j7BZFvg.png" height="35%" width="35%" alt=""/>
+<br />
+
+4. 
