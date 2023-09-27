@@ -2,7 +2,9 @@
 
 Create a log analytics workspace with a log repository in Azure to process and analyze our logs from the virtual machine.
 
-<h2>Creating an Log Analytics Workspace</h2>
+he process begins with the establishment of a log analytic workspace as the initial step. Following that, we proceed to activate log collection for Microsoft Defender for the Cloud. Next, we establish a connection between the log analytic workspace and the virtual machine. Finally, we conclude by deploying Microsoft Sentinel and seamlessly integrating it within our workspace, thus forming a comprehensive and cohesive security monitoring infrastructure.
+
+<h2>Creating a Log Analytics Workspace</h2>
 
 1. In [Azure Portal](https://portal.azure.com/?quickstart=true#home) search bar, search: Log Analytics workspaces and click it > Create 
 
