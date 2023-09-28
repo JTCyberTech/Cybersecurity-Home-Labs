@@ -9,7 +9,7 @@ In this project phase, I will establish a tailored log configuration within our 
 
 <h2></h2>
 
-<h2>Creating Custom Log in L-A-W</h2>
+<h2>Creating Custom Log in Log Analytics Workspace</h2>
 
 1. In our VM, copy all contents on failed_rdp - Notepad   
     - Go back to our desktop > create a Notepad document, and paste all content there
