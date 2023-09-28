@@ -1,9 +1,10 @@
 <h2>Description:</h2>
 
 
-In this project phase, I will establish a tailored log configuration within our log analytics workspace, facilitating the integration of geospatial data into our analytical framework. To accomplish this, I will employ the "failed_rdp.log" format, training our log analytics system to effectively identify and interpret the relevant information. Then, we will create a custom extract field from the raw custom log data. Finally, we will add a world map to display the attackers. 
+In this project phase, I will establish a tailored log configuration within our log analytics workspace, facilitating the integration of geospatial data into our analytical framework. To accomplish this, I will employ the "failed_rdp.log" format, training our log analytics system to effectively identify and interpret the relevant information. Then,  we will proceed to generate a specialized extraction field from the unprocessed custom log data. Ultimately, we will incorporate a world map visualization to showcase the locations of the attackers.
 
 - Create a custom log in Log Analytics Workspace to extract our custom log
+- Create a World Map in our Microsoft Sentinel Workbook
 
 
 <h2></h2>
