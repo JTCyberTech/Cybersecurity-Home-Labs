@@ -1,5 +1,6 @@
 
-![honeypot-email-addresses_1200x630-1](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a77729b7-d08b-466a-9f62-badf056b4b35)
+![honeypot-email-addresses_1200x630-1](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5125f0f7-be69-4355-af4d-a0a665a0c3a2)
+
 
 
 <h2>Description:</h2>
