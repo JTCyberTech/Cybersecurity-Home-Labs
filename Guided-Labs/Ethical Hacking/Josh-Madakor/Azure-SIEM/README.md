@@ -1,7 +1,6 @@
-<p align="left">
-<br/>
-<img src="https://i.imgur.com/iOs8wPS.gifv" height="100%" width="100%" alt=""/>
-<br />
+
+![honeypot-email-addresses_1200x630-1](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a77729b7-d08b-466a-9f62-badf056b4b35)
+
 
 <h2>Description:</h2>
 
