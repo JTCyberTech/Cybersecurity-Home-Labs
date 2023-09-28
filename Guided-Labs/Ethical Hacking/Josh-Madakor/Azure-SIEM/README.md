@@ -27,7 +27,7 @@ I will closely monitor the logs of attempted intrusions on the honeypot, particu
 
 <h2></h2>
 
-<h2>Key Reasons of Implementing SIEM</h2>
+<h2>Key Reasons for Implementing SIEM</h2>
 
 - Log Management: SIEM centralizes log management, making it easier to collect, store, and analyze logs from various sources across an organization's IT infrastructure.
 
