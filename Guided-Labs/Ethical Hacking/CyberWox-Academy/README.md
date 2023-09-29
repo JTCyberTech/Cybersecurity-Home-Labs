@@ -1,5 +1,6 @@
 # Building a Cybersecurity Homelab for Detection & Monitoring
 
+<h2>Description:</h2>
 
 In the field of Cybersecurity, the practical application and implementation of security concepts can present significant challenges when a suitable, secure infrastructure is not readily available.
 
@@ -22,3 +23,10 @@ As the term suggests, a Homelab is like having your very own tech playground rig
 - Fine-Tuning Windows Desktop Environments
 - Customizing and Configuring Splunk for Comprehensive Log Analysis
 - Ubuntu, CentOS, Metasploitable, DVWA, and Vulnhub machines are viable Linux options for network utilization, encompassing exploitation, detection, and monitoring objectives.
+
+<h2></h2>
+
+<p align="left">
+HomeLab Network Design by CyberWox Academy<br/>
+<img src="https://i.imgur.com/vVdN5ud.png" height="100%" width="100%" alt=""/>
+<br />
