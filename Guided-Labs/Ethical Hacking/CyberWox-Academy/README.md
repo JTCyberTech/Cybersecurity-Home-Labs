@@ -14,7 +14,7 @@ As the term suggests, a Homelab is like having your very own tech playground rig
 
 <h2>Content of this Project</h2> 
 
-- Building Host PC
+- Host PC Specifications 
 - Deploying VMware Workstation as a Hypervisor
 - Implementing pfSense Firewall for Network Segmentation and Enhanced Security
 - Setting Up Security Onion as an Integrated Solution for Intrusion Detection, Security Monitoring, and Log Management
