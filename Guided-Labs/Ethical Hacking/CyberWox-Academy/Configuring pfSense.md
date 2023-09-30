@@ -60,7 +60,7 @@ Should End Up With This Screen After Rebooting <br/>
 <img src="https://i.imgur.com/Z8m8ert.png" height="40%" width="40%" alt=""/>
 <br />
 
-3. Type 1 > y > enter >
+3. Type 1 (Assign Interfaces) > y > enter >
     - em0 for WAN
     - em1 for Firewalling /NAT
     - em2 for optional 1
@@ -70,5 +70,38 @@ Should End Up With This Screen After Rebooting <br/>
   
 <p align="left">
 Should End Up With This Screen<br/>
-<img src="https://i.imgur.com/DrZGh18.png" height="40%" width="40%" alt=""/>
+<img src="https://i.imgur.com/XVPJUr4.png" height="40%" width="40%" alt=""/>
+<br />
+
+4. Type 2 (Set interface(s) IP address > 2 [LAN (em1 -static)] > n
+    - 192.168.1.1 > 24 > Enter
+    - n > Enter > y > 192.168.1.11 > 192.168.1.200
+      
+<p align="left">
+Should End Up With This Screen<br/>
+<img src="https://i.imgur.com/JP4XMGH.png" height="40%" width="40%" alt=""/>
+<br />
+
+<p align="left">
+br/>
+<img src="https://i.imgur.com/5YqRJJm.png" height="40%" width="40%" alt=""/>
+<br />
+    
+5. Type 2 (Set interface(s) IP address > 3 [OPT1(em2)] > n
+    - 192.168.2.1 > 24 > Enter
+    - n > Enter > n > Enter
+
+6. Type 2 (Set interface(s) IP address > 4 [OPT2(em3)] > n
+    - 192.168.3.1 > 24 > Enter
+    - n > Enter > n > Enter
+     
+7. Leave OPT3(em4) alone without an IP because it is going to have the span port with traffic that Security Onion will be monitoring
+
+8. Type 2 (Set interface(s) IP address > 6 [OPT2(em5)] > n
+    - 192.168.4.1 > 24 > Enter
+    - n > Enter > n > Enter
+
+<p align="left">
+Should End Up With This Screen<br/>
+<img src="https://i.imgur.com/92JkJhL.png" height="40%" width="40%" alt=""/>
 <br />
