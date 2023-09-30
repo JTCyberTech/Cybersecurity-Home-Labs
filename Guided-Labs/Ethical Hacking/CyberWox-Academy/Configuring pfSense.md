@@ -13,9 +13,18 @@ PfSense will be meticulously configured as a robust firewall solution to establi
 
 3. Download and Unzip the file
 
-4. Open VMware Workstation > home tab > click on Create a new Virtual Machine
+4. Open VMware Workstation > Edit > Virtual Network Editor
+    - Add Network > Select network to add: VMnet 2 - 6 (add 5 VMnets)
+    - In Virtual Network Editor > Uncheck the box: Connect a host virtual adapter to this network for all 5 VMnets
 
-5. Configuration for new virtual Machine
+<p align="left">
+Adding 5 VMnets <br/>
+<img src="https://i.imgur.com/4blDJVG.png" height="40%" width="40%" alt=""/>
+<br />
+
+5. VMware Workstation > Home tab > click on Create a new Virtual Machine
+
+6. Configuration for new virtual Machine
     - Typical (recommended)
     - Install disc image file (iso) and select the pfsense
     - Virtual machine name: pfsense
@@ -23,11 +32,11 @@ PfSense will be meticulously configured as a robust firewall solution to establi
     - Customize Hardware
       - Memory > 2048 GB
       - Add 5 more Network Adapters [6 in total]
-      - Configure each Network Adapter to their custom specific virtual network
+      - Configure each Network Adapter to their custom VMnets
 
 <p align="left">
 Adding 5 more Network Adapters to Hardware <br/>
-<img src="https://i.imgur.com/cTtE2EV.png" height="40%" width="40%" alt=""/>
+<img src="https://i.imgur.com/5gLMkWC.png" height="40%" width="40%" alt=""/>
 <br />
 
-6. 
+7. Remove the Sound Card and USB Controller > OK > Finish
