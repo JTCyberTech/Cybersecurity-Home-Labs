@@ -40,3 +40,35 @@ Adding 5 more Network Adapters to Hardware <br/>
 <br />
 
 7. Remove the Sound Card and USB Controller > OK > Finish
+
+
+<h2></h2>
+
+<h2>Configurate pfsense on VMware Workstation</h2>
+
+1. Run pfsense on VMware Workstation
+
+<p align="left">
+Should End Up With This Screen <br/>
+<img src="https://i.imgur.com/Mx9XyWc.png" height="40%" width="40%" alt=""/>
+<br />
+
+2. Accept > Install pfSense > Auto (ZFS) > Install > Stripe > Press **Space** and OK > YES > Reboot
+
+<p align="left">
+Should End Up With This Screen After Rebooting <br/>
+<img src="https://i.imgur.com/Z8m8ert.png" height="40%" width="40%" alt=""/>
+<br />
+
+3. Type 1 > y > enter >
+    - em0 for WAN
+    - em1 for Firewalling /NAT
+    - em2 for optional 1
+    - em3 for optional 2
+    - em4 for optional 3
+    - em5 for optional 4 > y
+  
+<p align="left">
+Should End Up With This Screen<br/>
+<img src="https://i.imgur.com/DrZGh18.png" height="40%" width="40%" alt=""/>
+<br />
