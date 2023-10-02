@@ -1,0 +1,7 @@
+# Configuring Kali Linux as a Penetration Testing Platform
+
+Kali Linux will serve as the primary tool for executing various offensive actions targeting the Domain Controller and the connected machines.
+
+<h2>Download and install Kali Linux to VMware Workstation</h2>
+
+1. Download the ISO file for Kali Linux [Here](https://www.kali.org/get-kali/#kali-installer-images)
