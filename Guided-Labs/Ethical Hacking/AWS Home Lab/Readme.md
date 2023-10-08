@@ -12,16 +12,12 @@
 
 <h2>Steps To Build AWS Home Lab</h2>
 
-1. Create an AWS account
+1. Create an AWS account and Secure The AWS Account with MFA Authentication
 
-2. Secure The AWS Account with MFA Authentication
+2. Configure a Billing Alarm system and Create Non Root User to enhance the security
 
-3. Configure a Billing Alarm system
+3. Create a Virtual Private Cloud (VPC)
 
-4. Create Non Root User to enhance the security
+4. Launch Elastic Compute Cloud Instance (EC2)
 
-5. Create a Virtual Private Cloud (VPC)
-
-6. Launch Elastic Compute Cloud Instance (EC2)
-
-7. Terminate the EC2 to Avoid Piling Up Bills
+5. Terminate the EC2 to Avoid Piling Up Bills
