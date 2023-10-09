@@ -18,6 +18,5 @@
 
 3. Create a Virtual Private Cloud (VPC)
 
-4. Launch Elastic Compute Cloud Instance (EC2)
+4. Launch Elastic Compute Cloud Instance (EC2) and Terminate the EC2 to Avoid Piling Up Bills
 
-5. Terminate the EC2 to Avoid Piling Up Bills
