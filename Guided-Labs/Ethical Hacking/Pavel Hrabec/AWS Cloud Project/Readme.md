@@ -6,7 +6,7 @@ This project will acquire me with practical experience by constructing a Self-Ho
 
 Here are the steps I will be taking to complete this project:
 
-1. Requirement for Password Manager in AWS Cloud
+1. Requirement for This Project
 
 2. Password Manager in AWS Cloud
 
