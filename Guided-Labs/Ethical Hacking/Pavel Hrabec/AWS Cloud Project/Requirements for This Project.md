@@ -107,4 +107,28 @@ Refer to [Vulnerability Scanner Deployment Project Part 2](https://github.com/je
 <img src="https://i.imgur.com/6uWSApD.png" height="60%" width="60%" alt=""/>
 <br />
 
-- 
+- Kali Linux have successfully installed.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/bfyB6Up.png" height="60%" width="60%" alt=""/>
+<br />
+
+<h2></h2>
+
+<h2>Domain Registry</h2>
+
+For Domain registry, you can skip it if you don't plan on using it after because it will cost money.
+
+I recommend using hostinger and using their web hosting plan for a year. It will provide you a domain for free that is included in their web hosting plan, you can showcase your project on the project at the same time. This is my domain: [https://jeffcybercheck.tech/](https://jeffcybercheck.tech/).
+
+Here are some alternative options:
+
+- GoDaddy
+- Wix
+- IONOS
+- Domain.com
+- Bluehost
+- HostGator
+- Squarespace
+- DreamHost
