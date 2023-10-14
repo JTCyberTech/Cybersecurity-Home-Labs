@@ -63,8 +63,8 @@ Refer to [Vulnerability Scanner Deployment Project Part 2](https://github.com/je
 <br />
 
 - Under Hardware:
-  - Base Memory: Put around 8000 MB. (Depends how powerful is your PC, you can put less)
-  - Processor: Put 2 CPUs. (Depends how powerful is your PC, you can put less)
+  - Base Memory: Put around 8000 MB. (Depends how powerful is your PC, you can put less).
+  - Processor: Put 2 CPUs. (Depends how powerful is your PC, you can put less).
     - The more you put the faster the VM will be.
 
 <p align="center">
@@ -73,9 +73,38 @@ Refer to [Vulnerability Scanner Deployment Project Part 2](https://github.com/je
 <br />
 
 - Under Hard Disk:
-  - Should keep everything default, Size should be at least 25 GB but I will keep it as 50 GB. Then click on Finish
+  - Should keep everything default, Size should be at least 25 GB but I will keep it as 50 GB. Then click on Finish.
  
 <p align="center">
 <br/>
 <img src="https://i.imgur.com/gC616si.png" height="60%" width="60%" alt=""/>
 <br />
+
+- Linux VM will start Installing.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/GNC4CP8.png" height="60%" width="60%" alt=""/>
+<br />
+
+- On the Install, put in:
+  - Your name: Admin.
+  - Your computer's name: Linux.virtualbox.org.
+  - Pick a username: jeff (put in your own username).
+  - Choose a password: (put in your own password).
+  - Confirm your password: (retype your own password).
+  - Click on continue. 
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/XscruUU.png" height="60%" width="60%" alt=""/>
+<br />
+
+- Wait until the installation is finish.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/6uWSApD.png" height="60%" width="60%" alt=""/>
+<br />
+
+- 
