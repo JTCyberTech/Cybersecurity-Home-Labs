@@ -8,10 +8,8 @@ Here are the steps I will be taking to complete this project:
 
 1. Requirements for This Project
 
-2. Password Manager in AWS Cloud
+2. Setting up Password Manager in AWS Cloud
 
-3. Setting up Password Manager in AWS Cloud
+3. HTTPS Configuration for Password Manager
 
-4. HTTPS Configuration for Password Manager
-
-5. AWS Password Manager Configuration
+4. AWS Password Manager Configuration
