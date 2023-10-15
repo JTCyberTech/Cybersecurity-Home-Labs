@@ -1,6 +1,6 @@
 # Password Manager Hosted in AWS Cloud
 
-This project will acquire me with practical experience by constructing a Self-Hosted Password Manager, thereby highlighting my competence in crafting and executing secure solutions for overseeing confidential data. Exhibit my adeptness in harnessing AWS Cloud services, a skill that is greatly coveted in the contemporary cloud-centric landscape. In addition, I will illustrate my proficiency in implementing HTTPS encryption, underscoring my dedication to safeguarding data during transit and preserving sensitive information. This will be substantiated by concrete demonstrations of my capability to reinforce data protection through the secure storage of intricate passwords.
+This project acquired me with practical experience by constructing a cloud-based and self-hosted Password Manager. It highlighted my competence in crafting and executing secure solutions for confidential data. AWS EC2 instance was used in this project to showcase cloud-based landscape. In addition, I illustrated my proficiency in implementing HTTPS encryption, showcasing my dedication to safeguarding data during transit and preserving sensitive information. 
 
 <h2></h2>
 
