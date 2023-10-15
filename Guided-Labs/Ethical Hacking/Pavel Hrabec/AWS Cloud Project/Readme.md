@@ -13,3 +13,5 @@ Here are the steps I will be taking to complete this project:
 3. Password Manager Configuration for HTTPS
 
 4. Password Manager Configuration on Passbolt
+
+5. Delete and Clean up
