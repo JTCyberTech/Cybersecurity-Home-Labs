@@ -10,6 +10,6 @@ Here are the steps I will be taking to complete this project:
 
 2. Setting up Password Manager in AWS Cloud
 
-3. Configuration for Password Manager
+3. Password Manager Configuration for HTTPS
 
-4. AWS Password Manager Configuration
+4. Password Manager Configuration on Passbolt
