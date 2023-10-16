@@ -57,5 +57,5 @@ During a 10-hour monitoring period of my Honeypot VM, it recorded an excess of 1
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/QKbhiEi.png" height="60%" width="60%" alt=""/>
+<img src="https://i.imgur.com/QKbhiEi.png" height="120%" width="120%" alt=""/>
 <br />
