@@ -32,5 +32,5 @@ CMD System Type <br/>
 
 <p align="center">
 CMD System Type <br/>
-<img src="https://i.imgur.com/lCjrSyi.png" height="60%" width="60%" alt=""/>
+<img src="https://i.imgur.com/pEj49Z9.png" height="60%" width="60%" alt=""/>
 <br />
