@@ -25,7 +25,12 @@
 
 <p align="center">
 CMD System Type <br/>
-<img src="https://i.imgur.com/jqN0kt8.png" height="60%" width="60%" alt=""/>
+<img src="https://i.imgur.com/lVwEDfu.png" height="60%" width="60%" alt=""/>
 <br />
 
 - Click the version under MSI (Windows Installer)
+
+<p align="center">
+CMD System Type <br/>
+<img src="https://i.imgur.com/lCjrSyi.png" height="60%" width="60%" alt=""/>
+<br />
