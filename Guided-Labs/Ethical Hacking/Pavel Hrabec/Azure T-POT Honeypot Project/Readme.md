@@ -45,7 +45,7 @@ Here are the steps I will be taking to complete this project:
 
 2. Installation and Configuration of Honeypot in Azure
 
-3. Honeypot Web Interface to Track Cyber Threats
+3. Honeypot Web Interface
 
 4. Discover Cyber threats with HoneyPot in Real Time
 
