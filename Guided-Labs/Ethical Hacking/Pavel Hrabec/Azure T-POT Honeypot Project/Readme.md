@@ -47,5 +47,5 @@ Here are the steps I will be taking to complete this project:
 
 3. Honeypot Web Interface
 
-4. Discover Cyber threats with HoneyPot in Real Time
+4. Discover threats with HoneyPot in Real Time
 
