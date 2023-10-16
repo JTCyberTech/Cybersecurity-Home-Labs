@@ -49,3 +49,13 @@ Here are the steps I will be taking to complete this project:
 
 4. Discover Threats with HoneyPot in Real-Time
 
+<h2></h2>
+
+<h2>Conclusion</h2>
+
+During a 10-hour monitoring period of my Honeypot VM, it recorded an excess of 10,000 attempted attacks. 
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/QKbhiEi.png" height="60%" width="60%" alt=""/>
+<br />
