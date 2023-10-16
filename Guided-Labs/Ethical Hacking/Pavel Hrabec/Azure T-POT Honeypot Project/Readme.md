@@ -36,3 +36,16 @@ CMD System Type <br/>
 <br/>
 <img src="https://i.imgur.com/pEj49Z9.png" height="60%" width="60%" alt=""/>
 <br />
+
+<h2></h2>
+
+Here are the steps I will be taking to complete this project:
+
+1. Create VM in Azure for Honeypot
+
+2. Installation and Configuration of Honeypot in Azure
+
+3. Honeypot Web Interface to Track Cyber Threats
+
+4. Discover Cyber threats with HoneyPot in Real Time
+
