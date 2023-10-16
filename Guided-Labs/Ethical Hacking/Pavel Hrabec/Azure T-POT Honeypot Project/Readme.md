@@ -3,6 +3,8 @@
 - Create a free Azure account
 - Download PuTTY (remote connection program) to access our VM
 
+In this project, I have successfully implemented T-POT on the Azure Cloud infrastructure. T-POT, a sophisticated honeypot, emulates 23 distinct vulnerable systems. This project has helped me gain valuable insights into Linux configuration and network settings within a cloud environment, augmenting my technical proficiency. Furthermore, it has enriched my skill set in threat detection, acquired through vigilant monitoring and in-depth analysis of honeypot-generated data. This hands-on experience provided me with firsthand exposure to the methodologies employed by threat actors as they seek to exploit various vulnerabilities and compromise system security.
+
 <h2></h2>
 
 <h2>Creating an Azure Account</h2>
