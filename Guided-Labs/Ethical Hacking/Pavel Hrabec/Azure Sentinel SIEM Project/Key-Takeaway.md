@@ -1,4 +1,4 @@
-# Key Takaway
+# Key-Takaway
 
 - Learned what is Sentinel All in One.
 
