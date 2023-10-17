@@ -24,18 +24,16 @@ Here are the steps I will be taking to complete this project:
 
 3. Explore Cloud SIEM: Sentinel
 
-4. Enable AI in Cloud SIEM: Sentinel
+4. Create Watchlist to Detect Threats
 
-5. Create Watchlist to Detect Threats
+5. Create Detection Rule for Threats
 
-6. Create Detection Rule for Threats
+6. Create User Account in Azure for SIEM Investigation
 
-7. Create User Account in Azure for SIEM Investigation
+7. Infiltrate User Account to Generate Incidents in SIEM
 
-8. Infiltrate User Account to Generate Incidents in SIEM
+8. Explore Created Incidents in SIEM
 
-9. Explore Created Incidents in SIEM
+9. Investigate Incident in SIEM
 
-10. Investigate Incident in SIEM
-
-11. Remediate Incident in SIEM
+10. Remediate Incident in SIEM
