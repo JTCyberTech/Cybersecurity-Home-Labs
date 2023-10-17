@@ -1,35 +1,35 @@
 # Key-Takaway
 
-- Learned what is Sentinel All in One.
+- Gained insight into the features and capabilities of Sentinel All in One.
 
-- Learned how to deploy Sentinel using Sentinel All in One.
+- Acquired the knowledge to effectively deploy Microsoft Sentinel using the Sentinel All in One solution.
 
-- Learned how to configure the Diagnostic Settings in Log Analytics Workspace.
+- Mastered the process of configuring Diagnostic Settings within the Log Analytics Workspace.
 
-- Expored how "Logs, Data Connectors, and Analytics works on Microsoft Sentinel.
+- Explored the functionality of Logs, Data Connectors, and Analytics within Microsoft Sentinel.
 
-- Learned how to enable the UEBA settings for Sentinel.
+- Attained proficiency in enabling User and Entity Behavior Analytics (UEBA) settings for Microsoft Sentinel.
 
-- Learned how to configurate Sentinel's Automation Playbook.
+- Developed the skills to configure automation playbooks within Microsoft Sentinel.
 
-- Learned how to create a Watchlist to detect threat.
+- Learned the process of creating a Watchlist for threat detection purposes.
 
-- Learned how to create Detection rules for threat.
+- Gained expertise in crafting detection rules to identify potential threats.
 
-- Learned how to create an User Account in SIEM.
+- Acquired the ability to create and manage user accounts within a Security Information and Event Management (SIEM) system.
 
-- Learned how to turn off Security Default setting in Azure AD.
+- Demonstrated the competence to disable the Security Default setting in Azure Active Directory.
 
-- Learned how to add role to the User.
+- Mastered the process of adding roles to user accounts for enhanced access management.
 
-- Learned brave browser can open a private window with Tor.
+- Discovered that the Brave browser can open a private window with Tor for enhanced privacy.
 
-- Learned how to investigate multiple incidents at the same time.
+- Gained the ability to investigate and manage multiple incidents concurrently.
 
-- Learned how Microsoft Sentinel | Incidents works.
+- Obtained a comprehensive understanding of how Microsoft Sentinel manages and responds to incidents.
+  
+- Familiarized oneself with the functions and utility of the abuseipdb website.
 
-- Learned what does the abuseipdb website do.
+- Leveraged the power of Sentinel Entity Behavior to track and analyze user account timeline activities.
 
-- Learned how to use Sentinel Entity Behavior to pinpoint user account timeline activities.
-
-- Learned how to close an incident with proper remediation.
+- Learned the proper incident resolution and remediation procedures within Microsoft Sentinel.
