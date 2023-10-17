@@ -29,3 +29,5 @@
 - Learned how Microsoft Sentinel | Incidents works.
 
 - Learned what does the abuseipdb website do.
+
+- Learned how to use Sentinel Entity Behavior to pinpoint user account timeline activities.
