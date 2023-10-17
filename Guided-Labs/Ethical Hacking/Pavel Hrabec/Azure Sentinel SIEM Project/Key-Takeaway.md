@@ -22,4 +22,6 @@
 
 - Learned how to add role to the User.
 
-- 
+- Learned brave browser can open a private window with Tor.
+
+- Learned how to investigate multiple incidents at the same time.
