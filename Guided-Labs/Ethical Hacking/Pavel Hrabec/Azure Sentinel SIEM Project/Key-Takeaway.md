@@ -25,3 +25,7 @@
 - Learned brave browser can open a private window with Tor.
 
 - Learned how to investigate multiple incidents at the same time.
+
+- Learned how Microsoft Sentinel | Incidents works.
+
+- Learned what does the abuseipdb website do.
