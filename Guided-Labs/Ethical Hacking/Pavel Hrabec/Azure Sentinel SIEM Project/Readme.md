@@ -24,7 +24,7 @@ Here are the steps I will be taking to complete this project:
 
 3. Explore Cloud SIEM: Sentinel
 
-4. Enable AI in SIEM
+4. Enable AI in Cloud SIEM: Sentinel
 
 5. Create Watchlist to Detect Threats
 
