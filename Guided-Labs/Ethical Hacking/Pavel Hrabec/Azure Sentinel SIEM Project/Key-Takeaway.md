@@ -1,4 +1,4 @@
-# Key-Takaway
+# Key-Takeaway
 
 - Gained insight into the features and capabilities of Sentinel All in One.
 
