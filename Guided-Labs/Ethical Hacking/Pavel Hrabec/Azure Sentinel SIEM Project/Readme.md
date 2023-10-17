@@ -20,7 +20,7 @@ Here are the steps I will be taking to complete this project:
 
 1. Create SIEM in Azure Cloud
 
-2. Explore Deployed Cybersecurity Artifacts
+2. Configuration of Sentinel Diagnostic Settings
 
 3. Explore Created Cloud SIEM solution
 
