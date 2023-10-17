@@ -22,7 +22,7 @@ Here are the steps I will be taking to complete this project:
 
 2. Configuration of Sentinel Diagnostic Settings
 
-3. Explore Created Cloud SIEM solution
+3. Explore Cloud SIEM: Sentinel
 
 4. Enable AI in SIEM
 
