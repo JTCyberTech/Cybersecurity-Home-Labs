@@ -12,4 +12,6 @@
 
 - Learned how to fix ChatGPT to display the whole comment for the playbook.
 
+- Learned how to create an Automation Rule in SIEM with ChatGPT that run when there is a new incident.
+
 - 
