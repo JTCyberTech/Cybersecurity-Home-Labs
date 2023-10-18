@@ -35,7 +35,7 @@ Here are the steps I will be taking to complete this project:
 
 1. Create Playbook for ChatGPT from Scratch in Azure Cloud
 
-2. Assign Appropriate Permissions to ChatGPT
+2. Assign Appropriate Permissions to the Playbook
 
 3. Demonstrate How to Run ChatGPT on Incidents
 
