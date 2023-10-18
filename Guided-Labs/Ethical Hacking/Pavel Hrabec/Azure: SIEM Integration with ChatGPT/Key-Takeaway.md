@@ -9,3 +9,7 @@
 - Learned how to assign appropriate permissions to the Playbook.
 
 - Learned how to run ChatGPT on an incident.
+
+- Learned how to fix ChatGPT to display the whole comment for the playbook.
+
+- 
