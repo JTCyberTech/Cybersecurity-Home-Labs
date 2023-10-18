@@ -14,4 +14,6 @@
 
 - Learned how to create an Automation Rule in SIEM with ChatGPT that run when there is a new incident.
 
+- Learned how to manually create a new incident on Microsoft Sentinel.
+
 - 
