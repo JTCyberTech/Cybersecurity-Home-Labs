@@ -6,7 +6,7 @@ In this project, I will initiate a cloud-hosted cybersecurity endeavor, enhanced
 
 Here are the steps I will be taking to complete this project:
 
-1. Create Play for ChatGPT from Scratch in Azure Cloud
+1. Create Playbook for ChatGPT from Scratch in Azure Cloud
 
 2. Assign Appropriate Permissions to ChatGPT
 
