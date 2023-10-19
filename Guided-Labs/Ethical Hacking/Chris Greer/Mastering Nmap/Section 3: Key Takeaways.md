@@ -6,9 +6,17 @@
 - ```nmap -h```, this is the help command, it shows different instruction and different options that nmap have for types of scans.
 - ```nmap -sS [IP]```, this is a stealth scan command.
 - ```nmap -p [IP]```, this is the port ranges, only scan specified ports.
-- ```nmap -sU [IP]```, this is scan for UDP.
-- ```nmap -F [IP]```, this is scan for the common ports. (Top 100 ports)
-- 
+- ```nmap -sU [IP]```, this scan for UDP.
+- ```nmap -F [IP]```, this scan for the common ports. (Top 100 ports)
+
+<h3>Top 5 Nmap Commands</h3>
+
+- ```nmap -sn [IP]```, this is ping scan. (Identify all of the IP addresses that are current;y online without sending any packets to the hosts.
+- ```nmap --top-ports 20 [IP]```, this scan for the top 20 ports.
+- ```nmap -O [IP]```, this scan for the operating system version for the IP Address. (target for TCP stack, different OS have different TCP stack)
+- ```nmap -A [IP]```, this is almost like - all, run port scan, OS fingerprint, version, traceroute to the device. (Super noisy)
+- ```nmap -p [IP]```, this is the port ranges, only scan specified ports.
+
 
 <h2></h2>
 
