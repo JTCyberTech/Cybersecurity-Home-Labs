@@ -5,7 +5,6 @@
 - ```nmap [Scan Type(s)] [Options] {target specification}```, this is the basic structure of what a scan command looks like.
 - ```nmap -h```, this is the help command, it shows different instruction and different options that nmap have for types of scans.
 - ```nmap -sS [IP]```, this is a stealth scan command.
-- ```nmap -p [IP]```, this is the port ranges, only scan specified ports.
 - ```nmap -sU [IP]```, this scan for UDP.
 - ```nmap -F [IP]```, this scan for the common ports. (Top 100 ports)
 
