@@ -1,19 +1,21 @@
 # Key-Takeaway
 
-- Learned how to deploy a "playbook with incident trigger".
+- Acquired proficiency in deploying an incident-triggered playbook.
 
-- Learned how to obtain an API Key for ChatGPT.
+- Gained the knowledge required to obtain an API Key for ChatGPT.
 
-- Learned how to build a playbook from scratch.
+- Mastered the art of constructing playbooks from scratch.
 
-- Learned how to assign appropriate permissions to the Playbook.
+- Demonstrated competence in assigning appropriate permissions to playbooks.
 
-- Learned how to run ChatGPT on an incident.
+- Learned the process of running ChatGPT within an incident.
 
-- Learned how to fix ChatGPT to display the whole comment for the playbook.
+- Successfully resolved issues related to ChatGPT to ensure complete comment display within the playbook.
 
-- Learned how to create an Automation Rule in SIEM with ChatGPT that run when there is a new incident.
+- Gained expertise in creating Automation Rules in SIEM, specifically for ChatGPT, triggered by new incidents.
 
-- Learned how to manually create a new incident on Microsoft Sentinel.
+- Mastered the manual creation of new incidents within Microsoft Sentinel.
 
-- 
+- Developed skills in deploying playbooks with more intricate ChatGPT integrations.
+
+- Demonstrated the ability to effectively delete and perform cleanup operations on unwanted Microsoft Sentinel incidents and resource groups to prevent additional charges.
