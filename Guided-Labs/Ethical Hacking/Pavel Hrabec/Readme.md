@@ -1,4 +1,14 @@
-# Questions for Acquiring Knowledge
+# Five Cybersecurity Project
+
+- AWS Password Manager
+- Azure SIEM Integration with ChatGPT
+- Azure Sentinel SIEM
+- Azure T-POT HoneyPot
+- Nessus Vulnerability Scanner Deployment
+
+<h2></h2>
+
+<h2>Questions for Acquiring Knowledge</h2>
 
 Inquiry for the purpose of acquiring knowledge and for the retention of information
 
