@@ -1,5 +1,8 @@
 # Key-Takeaway
 
+Key takeaways that I learned throughout the project:
+
+
 - Acquired proficiency in deploying an incident-triggered playbook.
 
 - Gained the knowledge required to obtain an API Key for ChatGPT.
