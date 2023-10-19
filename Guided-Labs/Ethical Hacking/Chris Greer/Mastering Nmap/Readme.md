@@ -37,3 +37,14 @@ Open-Source Scanning website:
 - [Scanme.nmap.org](http://scanme.nmap.org/)
 - [ginandjuice.shop](https://ginandjuice.shop/)
 
+<h2></h2>
+
+<h3>Legal Considerations</h3>
+
+Read on [Nmap.org](https://nmap.org/book/legal-issues.html) about legal issues.
+
+- We want to be scanning our own stuff as much as possible.
+
+- We want to ensure that we have permission to scans.
+
+- Always have a legitimate reason for performing scans.
