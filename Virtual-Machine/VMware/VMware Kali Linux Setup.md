@@ -1,0 +1,29 @@
+# Configuring Kali Linux as a Penetration Testing Platform
+
+Kali Linux will serve as the primary tool for executing various offensive actions targeting the Domain Controller and the connected machines.
+
+<h2>Download and install Kali Linux to VMware Workstation</h2>
+
+1. Download the ISO file for Kali Linux [Here](https://www.kali.org/get-kali/#kali-virtual-machines)
+
+2. VMware Workstation > Click on the vmx file that you downloaded
+
+3. Add a Network Adapter 2 > Custom > VMnet2
+
+<p align="left">
+Adding Network Adapter <br/>
+<img src="https://i.imgur.com/7Dn3t2V.png" height="90%" width="90%" alt=""/>
+<br />
+
+<h2></h2>
+
+<h2>Configurate Kali Linux on VMware Workstation</h2>
+
+1. Run Kali Linux on VMware Workstation
+
+2. Log in with username: kali, password: kali
+
+3. On Kali Linux > Terminal > Type in: passwd
+    - This command will let you change the password 
+
+4. Make up your own password
