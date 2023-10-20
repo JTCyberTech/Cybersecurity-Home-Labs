@@ -39,6 +39,10 @@
 <img src="https://i.imgur.com/Sa088XR.png" height="90%" width="90%" alt=""/>
 <br />
 
+<h2></h2>
+
+<h3>Visual Studio Code Downloads</h3>
+
 - Open up Visual Studio Code. Import the 2 files below to Visual Studio Code.
   - Click on "Download raw file".
     - [notes.txt](https://github.com/rkhal101/Web-Security-Academy-Series/blob/main/command-injection/lab-01/notes.txt)
