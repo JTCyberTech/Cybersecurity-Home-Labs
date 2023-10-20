@@ -171,10 +171,10 @@
 
 We are going to test each parameter for potential injection vulnerabilities.
 
-ProductID:
+<h3>ProductID:</h3>
 
 - Adding "&" for chainning command. Then "whoami" to run Who Am I command.
-  - Add in: productId=1``` & whoami```&storeI=1
+  - Add in: productId=1``` & whoami```&storeI=1 .
 
 <p align="center">
 <br/>
@@ -182,11 +182,59 @@ ProductID:
 <br />
 
 - Since we don't have the source code for this application, we are going to tweak our command injection based on the response of the application.
-  - Highlight ``` & whoami``` and press "Ctrl + U" on keyboard to encoded it. Then, Click "Send".
+  - Highlight ``` & whoami``` and press "Ctrl + U" on keyboard to encode it. Then, Click on "Send".
+  - The command turns into: ```productId=1+%26+whoami&storeId=1```.
 
 <p align="center">
 <br/>
 <img src="https://i.imgur.com/eAtUcMq.png" height="90%" width="90%" alt=""/>
 <br />
 
-- 
+- Ran into an error while running the "Whoami" Command.
+  - On line 5, it says it's unbound variable.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/k9SoXnf.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Add a "#" to comment out the rest of the command.
+  - Add in: productId=1+%26+whoami``` #```&storeId=1 .
+  - highlight ``` #``` and press "Ctrl + U" on keyboard to encode it. Then, Click on "Send".
+  - The command turns into: ```productId=1+%26+whoami+%23&storeId=1```.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/Bqb9wgu.png" height="90%" width="90%" alt=""/>
+<br />
+ 
+- We no longer got an error.
+  - Got the value of: "peter-noZB5X".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/xplQKTe.png" height="90%" width="90%" alt=""/>
+<br />
+
+- On the top of the page on the browser will say: "Congratulations, you solved the lab!"
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/6VjWy3G.png" height="90%" width="90%" alt=""/>
+<br />
+
+<h3>StoreID: </h3>
+
+- We can also do it for StoreID side:
+  - Adding "&" for chainning command. Then "whoami" to run Who Am I command.
+  - Add in: productId=1&storeI=1 ``` & whoami```.
+  - Highlight ``` & whoami``` and press "Ctrl + U" on keyboard to encode it. Then, Click on "Send".
+  - The command turns into: ```productId=1&storeId=1 %26+whoami```.
+
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/wF76Z3x.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Output also is "peter-noZB5X".
