@@ -162,6 +162,8 @@
 <img src="https://i.imgur.com/za4PZiC.png" height="90%" width="90%" alt=""/>
 <br />
 
+<h2></h2>
+
 <h2>Testing for Potential Injection Vulnerabilities</h2>
 
 We are going to test each parameter for potential injection vulnerabilities.
