@@ -157,11 +157,11 @@
 <img src="https://i.imgur.com/ku8AmLI.png" height="90%" width="90%" alt=""/>
 <br />
  
-- Notice a "post request" for "feedback/submit" have generated on Burp Suite.
+- Notice a "post request" for "feedback/submit" have generated on Burp Suite on the HTTP history tab.
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/VYw6eDQ.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/8Xvx7xY.png" height="90%" width="90%" alt=""/>
 <br />
  
 - Click on the post request. Right-click on the request on the bottom and select "Send to Repeater". 
