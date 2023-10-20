@@ -117,3 +117,76 @@
 
 <h2>Lab Solution</h2>
 
+- Turn Intercept on clicking on "Intercept is off".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/3tkeGZY.png" height="90%" width="90%" alt=""/>
+<br />
+
+- After turning on Intercept. Click on "View details" on the first item.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/DwAVaXJ.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Set "Intercept" off. Navigate to HTTP history.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/aIermKp.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Scroll down on the browser, and click on "Check stock".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/yBUdpeu.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Notice a "post request" have generated on Burp Suite.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/G2PcVo8.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click on the post request. Right-click on the request on the bottom and select "Send to Repeater".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/5iN0fu8.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click on "Repeater".
+  - From the repeater, we can see it takes two parameters in the "product ID" and "store ID".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/za4PZiC.png" height="90%" width="90%" alt=""/>
+<br />
+
+<h2>Testing for Potential Injection Vulnerabilities</h2>
+
+We are going to test each parameter for potential injection vulnerabilities.
+
+ProductID:
+
+- Adding "&" for chainning command. Then "whoami" to run Who Am I command.
+  - Add in: productId=1``` & whoami```&storeI=1
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/LfHO8Pk.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Since we don't have the source code for this application, we are going to tweak our command injection based on the response of the application.
+  - Highlight ``` & whoami``` and press "Ctrl + U" on keyboard to encoded it. Then, Click "Send".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/eAtUcMq.png" height="90%" width="90%" alt=""/>
+<br />
+
+- 
