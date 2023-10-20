@@ -46,7 +46,7 @@ Port Swinger Web Security Academy Labs
 
 <h2></h2>
 
-<h3>Tools for the Lab:</h3>
+<h3>Tools Needed for The Labs:</h3>
 
 - Burp Suite Community Edition (Pre-installed in Kali Linux)
 
