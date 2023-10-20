@@ -110,14 +110,9 @@
 
 <h2></h2>
 
-
-
-
-<H2></H2>
-
 <h2>Lab Solution</h2>
 
-- Turn Intercept on clicking on "Intercept is off".
+- Turn Intercept by clicking on "Intercept is off".
 
 <p align="center">
 <br/>
