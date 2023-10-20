@@ -112,4 +112,75 @@
 
 <h2>Lab Solution</h2>
 
-- Turn Intercept on clicking on "Intercept is off".
+
+- Navigate to Burp Suite turn Intercept On by clicking on "Intercept is off".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/YzGDBNL.png" height="90%" width="90%" alt=""/>
+<br />
+
+
+- Navigate to the Intercept Browser, click on "Submit feedback".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/Guu4sL6.png" height="90%" width="90%" alt=""/>
+<br />
+
+
+- Navigate back to Burp Suite turn Intercept On by clicking on "Intercept is on".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/ysjlWSa.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Navigate back to the Intercept Browser, fill in the "Submit feedback".
+  - Name: "test".
+  - Email: "test@test.ca".
+  - Subject: "test".
+  - Message: "test".
+- Click on "Submit feedback".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/NC4g5Og.png" height="90%" width="90%" alt=""/>
+<br />
+
+- The response from the form is just "Thank you for submitting feedback!
+  - Doesn't give you the response of the request that you performed.
+  - If any of the field is vulnerable to command injection, it could be "Blind command injection" instead of "In-band command injection".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/ku8AmLI.png" height="90%" width="90%" alt=""/>
+<br />
+ 
+- Notice a "post request" for "feedback/submit" have generated on Burp Suite.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/VYw6eDQ.png" height="90%" width="90%" alt=""/>
+<br />
+ 
+- Click on the post request. Right-click on the request on the bottom and select "Send to Repeater". 
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/923w5PN.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click on "Repeater".
+  - From the repeater, we can see it takes parameters in CSF, name, email, subject, and email.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/tP15upe.png" height="90%" width="90%" alt=""/>
+<br />
+ 
+<h2></h2>
+
+<h2>Testing for Potential Injection Vulnerabilities</h2>
+
+We are going to test each parameter for potential injection vulnerabilities.
