@@ -56,7 +56,14 @@ Port Swinger Web Security Academy Labs
 
 <h3>Visual Studio Installation:</h3>
 
+Install Visual Studio in your Kali Linux VM
 
+- Tutorial [Here](https://www.ceos3c.com/security/install-vscode-on-kali-linux-easiest-way/?expand_article=1)
 
-- 
+<h2></h2>
 
+<h3>Portswinger Web Security Academy Access:</h3>
+
+- Register an Account: [Here](https://portswigger.net/users/register)
+
+- Log onto the Academy: [Here](https://portswigger.net/users)
