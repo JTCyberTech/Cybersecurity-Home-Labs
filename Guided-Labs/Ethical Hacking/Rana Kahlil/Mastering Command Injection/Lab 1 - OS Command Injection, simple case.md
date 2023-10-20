@@ -237,4 +237,30 @@ We are going to test each parameter for potential injection vulnerabilities.
 <img src="https://i.imgur.com/wF76Z3x.png" height="90%" width="90%" alt=""/>
 <br />
 
-- Output also is "peter-noZB5X".
+- Output also is "peter-noZB5X" and "62".
+
+<h2></h2>
+
+<h2>Command Injection with Script</h2>
+
+- Open up Visual Studio Code
+
+- Import the command-injection-lab-01.py into Visual Studio Code.
+  - Click on "Terminal". Then, "New Terminal".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/nOsaolk.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Change Directory to the folder that have command-injection-lab-01.py .
+  - Type in: ```cd Lab \ 1```
+
+- Run the "Whoami" command on the lab website URL.
+  - Type in: ```python3 Command-Injection-Lab1.py "https://0afe00a2031cccb983a360ce00f200a8.web-security-academy.net" whoami ```
+  - Result:
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/mBopduE.png" height="90%" width="90%" alt=""/>
+<br />
