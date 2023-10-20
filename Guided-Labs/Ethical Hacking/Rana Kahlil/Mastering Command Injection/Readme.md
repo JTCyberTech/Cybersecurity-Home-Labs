@@ -28,6 +28,35 @@ Port Swinger Web Security Academy Labs
 
 <h2></h2>
 
-<h3>Prerequisites:</h3>
+<h2>Prerequisites:</h2>
 
+<h3>VirtualBox or VMware Setup:</h3>
+
+- VirtualBox: Tutorial [Here](https://github.com/jefftsui1/Cybersecurity-Home-Labs/blob/main/Virtual-Machine/Oracle%20VirtualBox/Kali%20Linux.md)
+
+- VMware: Tutorial [Here](https://github.com/jefftsui1/Cybersecurity-Home-Labs/blob/main/Virtual-Machine/VMware/Building%20Home-Lab.md)
+
+<h2></h2>
+
+<h3>Kali Linux VM Installation:</h3>
+
+- VirtualBox: Tutorial [Here](https://github.com/jefftsui1/Cybersecurity-Home-Labs/blob/main/Virtual-Machine/Oracle%20VirtualBox/Kali%20Linux.md)
+
+- VMware: Tutorial [Here](https://github.com/jefftsui1/Cybersecurity-Home-Labs/blob/main/Virtual-Machine/VMware/VMware%20Kali%20Linux%20Setup.md)
+
+<h2></h2>
+
+<h3>Tools for the Lab:</h3>
+
+- Burp Suite Community Edition (Pre-installed in Kali Linux)
+
+- Visual Studio (Free: Require to be install in Kali Linux)
+
+<h2></h2>
+
+<h3>Visual Studio Installation:</h3>
+
+
+
+- 
 
