@@ -172,7 +172,7 @@
 <br />
 
 - Click on "Repeater".
-  - From the repeater, we can see it takes parameters in CSF, name, email, subject, and email.
+  - From the repeater, we can see it takes parameters in csrf, name, email, subject, and email.
 
 <p align="center">
 <br/>
@@ -183,4 +183,6 @@
 
 <h2>Testing for Potential Injection Vulnerabilities</h2>
 
-We are going to test each parameter for potential injection vulnerabilities.
+We are going to test each parameter that is visable on the website for potential injection vulnerabilities with the sleep command. (Excluding csrf)
+
+
