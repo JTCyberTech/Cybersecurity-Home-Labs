@@ -10,7 +10,7 @@
 
 <h3>Example: A vulnerable web application with no server side validation and the web server is running the application. </h3>
 
-How a Normal User will use the web application: [ping IP Address: ```127.0.0.1```]
+**How a Normal User will use the web application**: [ping IP Address: ```127.0.0.1```]
 
 - Use the web application to ping the IP address that they want to check if it's up and running.
 
@@ -26,7 +26,7 @@ How a Normal User will use the web application: [ping IP Address: ```127.0.0.1``
 <img src="https://i.imgur.com/c1sv8Ep.png" height="90%" width="90%" alt=""/>
 <br />
 
-If a Malicious Attacker gain access to the web application: [ping IP Address with command injection: ```120.0.0.1 && cat /etc/passwd```]
+**If a Malicious Attacker gain access to the web application**: [ping IP Address with command injection: ```120.0.0.1 && cat /etc/passwd```]
 
 - The attacker can run a "cat command" to output the contents of the /etc/passwd file.
   - /etc/passwd is a world readable file. Regardless of the user context in which the web application operates, it would have the capability to access the file in the event it is susceptible to command injection.
@@ -42,4 +42,26 @@ If a Malicious Attacker gain access to the web application: [ping IP Address wit
 <img src="https://i.imgur.com/UIVIyoS.png" height="90%" width="90%" alt=""/>
 <br />
 
-- 
+<h2></h2>
+
+<h3>Types of Command Injection</h3>
+
+**In-band Command Injection**
+
+- Attacker execute the commands on the host OS through a vulnerability application <ins> and receiving the response of the command in the applcation. </ins>
+
+**Blind Command Injection**
+
+- Attacker execute the commands on the host OS through a vulnerability application <ins> that does not return the outpit from the command within its HTTP response. </ins>
+
+<h2></h2>
+
+<h3>Impact of Command Injection Attacks</h3>
+
+Unauthorized access to the application and host OS.
+
+- Confidentiality: Command Injection can be used to view sensitive information.
+- Integrity: Command Injection can be used to alter contect in the application.
+- Availability: Command Injection can be used to delete content in the application.
+
+With Command Injection attacks, the attacker could run arbitrary commands. The attacker will gain remote cove exeecution the OS. This would affect the CIA triad at the highest level.
