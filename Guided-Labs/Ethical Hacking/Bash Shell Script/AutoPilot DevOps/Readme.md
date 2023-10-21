@@ -34,7 +34,7 @@ Bash scripting plays a crucial role in cybersecurity due to its versatility and 
 
 - Useful: It can be quite challenging to locate a particular "term" within extensive log files.
 
-- Use: Easily find out some specific keywords to the huge files. 
+- Uses: Easily find out some specific keywords to the huge files. 
 
 Example:
 
@@ -85,7 +85,7 @@ To ignore lowercase or uppercase within the "error" keyword. Use ```-i```.
 - Type in: ```grep -i "error" /var/log/dnf.log```.
 - Output: Display all the line that contains the keyword "error" (coded in red) within the "dnf.log" file without case sensitive.
 
-Count
+Count with ```-i```. 
 
 - Type in: ```grep -c -i "error" /var/log/dnf.log```.
 - Output: 18. Two more lines than without "-i".
@@ -103,15 +103,15 @@ Count
 
 - Useful: When doing a lot of changing within a file without doing it manually.
 
-- Use: Substitution, find, replace the content within the files.
+- Uses: Substitution, find, replace the content within the files.
 
 Example:
 
 On PuTTY in order to create a new txt file named "dummy":
 
 - Type in: ```vi dummy.txt``` and Enter.
-  - vi: visual editor, can edit an existing file or create a new file from scratch.
-  - dummy.txt: using visual editor to create a txt file named "dummy".
+  - ```vi```: visual editor, can edit an existing file or create a new file from scratch.
+  - ```dummy.txt```: using visual editor to create a txt file named "dummy".
 
 <p align="center">
 <br/>
@@ -119,7 +119,7 @@ On PuTTY in order to create a new txt file named "dummy":
 <br />
 
 - Type in random words inside the dummy.txt
-- To save type in: ```:wq!``` and Enter.
+- To save press "ESC" and type in: ```:wq!``` and Enter.
 
 <p align="center">
 <br/>
@@ -138,13 +138,13 @@ To view the content of the "dummy.txt" Use ```cat```.
 To replace "bash" with "bashscripting" in dummy.txt using sed command.
 
 - Type in: ```sed 's/bash/bashscripting/g' dummy.txt```.
-  - sed: Stream EDitor command.
-  - s: substitute.
-  - /bash: the string you want it to be replace.
-  - /bashscript: the string you want to replace with.
-  - /g: global, string that match in the .txt file will be replaced.
-    - 's/bash/bashscripting/g' must be in ' '.
-  - dummy.txt: the file you want to modify.
+  - ```sed```: Stream EDitor command.
+  - ```s```: substitute.
+  - ```/bash```: the string you want it to be replace.
+  - ```/bashscript```: the string you want to replace with.
+  - ```/g```: global, string that match in the .txt file will be replaced.
+    - ```'s/bash/bashscripting/g'``` must be in between ' '.
+  - ```dummy.txt```: the file you want to modify.
 
 <p align="center">
 <br/>
@@ -162,7 +162,7 @@ To replace "bash" with "bashscripting" in dummy.txt using sed command.
 In order to save with sed command. Use ``` -i```.
 
 - Type in: ```sed -i 's/bash/bashscripting/g' dummy.txt```.
-  - -i: edit file in place.
+  - ```-i```: edit file in place.
  
 <p align="center">
 <br/>
@@ -172,7 +172,7 @@ In order to save with sed command. Use ``` -i```.
 To replace the first occurence of each line. (Changing from bashscripting back to bash for the first occurence)
 
 - Type in: ```sed -i 's/bashscripting/bash/1' dummy.txt```.
-  - 1: first occurence of each line.
+  - ```1```: first occurence of each line.
 
 <p align="center">
 <br/>
@@ -187,5 +187,96 @@ Can use it with the any occurance.
 <img src="https://i.imgur.com/x1xFcUw.png" height="60%" width="60%" alt=""/>
 <br />
 
+
+<h2></h2>
+
+<h3>Awk Command</h3>
  
-- 
+- Awk Command: Versatile text processing tool used for extracting and manipulating data from text files or streams using specified patterns and actions.
+
+- Useful: Texting scripting, help you to search, replace, sort, and validation on the basis of text that you filtered
+
+- Uses: Text processing, scan files line by line to split the file into multiple fields, format output lines. Apply conditions and loops onto basis of output text or input files.
+
+Example:
+
+On PuTTY in order to create a new txt file named "dummy2":
+
+- Type in: ```vi dummy2.txt``` and Enter.
+  - ```vi```: visual editor, can edit an existing file or create a new file from scratch.
+  - ```dummy.txt```: using visual editor to create a txt file named "dummy".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/0iHuqAC.png" height="60%" width="60%" alt=""/>
+<br />
+
+- Type in random columns inside the dummy2.txt
+- To save press "ESC" and type in: ```:wq!``` and Enter.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/TuvLP4L.png" height="60%" width="60%" alt=""/>
+<br />
+
+To view the contents of dummy2.txt. Use ```cat```.
+
+- Type in: ```cat dummy2.txt```.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/JutKZrU.png" height="60%" width="60%" alt=""/>
+<br />
+
+To only print the "Name" column (first column) from dummy2.txt:
+
+- Type in: ```awk '{print $1}' dummy2.txt```
+  - ```awk```: command used to process and manipulate data and produce formatted reports.
+  - ```{print $1"}```: print the first column.
+    - ```'{print $1}'``` must be in between ' '.
+  -  ```dummy.txt```: the file you want to modify.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/8O0e2iq.png" height="60%" width="60%" alt=""/>
+<br />
+
+To print the "Name" and "Email" columns (first and third columns) from dummy2.txt:
+
+- Type in: ```awk '{print $1,$3}' dummy2.txt```
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/RJ0Q3zA.png" height="60%" width="60%" alt=""/>
+<br />
+
+Changing dummy2.txt content into column with ":" instead of spaces. 
+
+- Type in: ```vi dummy2.txt```.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/NA2nHNG.png" height="60%" width="60%" alt=""/>
+<br />
+
+View the new dummy2.txt, Use ```cat```.
+
+- Type in: ```cat dummy2.txt```.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/8L0cLdl.png" height="60%" width="60%" alt=""/>
+<br />
+
+To print "Name" and "Email" columns (first and third columns) from dummy2.txt in this case. Use ```-F:```
+
+- Type in: ```awk -F: '{print $1,$3}' dummy2.txt```
+  - ```-F```: define for the eliminators.
+  - ```:```: the column is define by ":".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/8Ay0gbi.png" height="60%" width="60%" alt=""/>
+<br />
+
+- Using ``awk '{print $1,$3}' dummy2.txt``` after modifying dummy2.txt will not work.
