@@ -236,3 +236,29 @@ On the top of the page on the intercept browser will say: "Congratulations, you 
 <br/>
 <img src="https://i.imgur.com/wzkRlzC.png" height="90%" width="90%" alt=""/>
 <br />
+
+<h2></h2>
+
+<h2>Command Injection with Script</h2>
+
+- Open up Visual Studio Code
+
+- Import the command-injection-lab-02.py into Visual Studio Code.
+  - Click on "Terminal". Then, "New Terminal".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/ohuFT4b.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Change Directory to the folder that have command-injection-lab-02.py .
+  - Type in: ```cd Lab\ 2```
+
+- Run command on the lab website URL.
+  - Type in: ```command-injection-lab-02.py "https://0afe00a2031cccb983a360ce00f200a8.web-security-academy.net" ```
+  - Result:
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/I6EaSd6.png" height="90%" width="90%" alt=""/>
+<br />
