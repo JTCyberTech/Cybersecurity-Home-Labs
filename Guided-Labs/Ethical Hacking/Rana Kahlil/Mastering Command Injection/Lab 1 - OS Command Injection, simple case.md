@@ -213,13 +213,6 @@ We are going to test each parameter for potential injection vulnerabilities.
 <img src="https://i.imgur.com/xplQKTe.png" height="90%" width="90%" alt=""/>
 <br />
 
-- On the top of the page on the browser will say: "Congratulations, you solved the lab!"
-
-<p align="center">
-<br/>
-<img src="https://i.imgur.com/6VjWy3G.png" height="90%" width="90%" alt=""/>
-<br />
-
 <h3>StoreID: </h3>
 
 - We can also do it for StoreID side:
@@ -228,13 +221,19 @@ We are going to test each parameter for potential injection vulnerabilities.
   - Highlight ``` & whoami``` and press "Ctrl + U" on keyboard to encode it. Then, Click on "Send".
   - The command turns into: ```productId=1&storeId=1 %26+whoami```.
 
-
 <p align="center">
 <br/>
 <img src="https://i.imgur.com/wF76Z3x.png" height="90%" width="90%" alt=""/>
 <br />
 
 - Output also is "peter-noZB5X" and "62".
+
+- On the top of the page on the browser will say: "Congratulations, you solved the lab!"
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/6VjWy3G.png" height="90%" width="90%" alt=""/>
+<br />
 
 <h2></h2>
 
