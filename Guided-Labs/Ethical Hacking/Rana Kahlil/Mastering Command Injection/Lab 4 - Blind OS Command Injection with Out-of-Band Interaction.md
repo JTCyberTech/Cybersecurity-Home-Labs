@@ -4,6 +4,8 @@
 
 <h3>Burp Suite Startup</h3>
 
+**Disclaimer: This lab needs Burp Suite Professional version, which I don't have so part of the lab is from video - https://www.youtube.com/watch?v=GUT03VBj7Vc**
+
 - Open up Burp Suite by clicking on the Kali Linux icon on the left upper corner to expand the menu.
   - Type in: "Burp Suite" on the search bar.
 
