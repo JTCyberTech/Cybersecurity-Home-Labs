@@ -122,7 +122,7 @@ Steps:
 
 3. Redirect output to file
 
-4. Check if file was create
+4. Check if file was created
 
 <h2></h2>
 
@@ -295,6 +295,10 @@ We got the result back in 10 seconds, so the email field is vulnerable to the "s
 <img src="https://i.imgur.com/8CXKLQA.png" height="90%" width="90%" alt=""/>
 <br />
 
+<h2></h2>
+
+<h3>Redirect Output to File</h3>
+
 - Go back to the Repeater with the ```csrf=``` command.
   - Instead of asking to sleep, run "whoami" command but redirect the output of the "whoami" command into a file in "/var/www/images/output.txt".
   - Add in: "csrf=MQ7FaDJ140t92gTvPUwztnBH5F6pL1AE&name=test&email=test%40test.ca``` & whoami > /var/www/images/output.txt #```&subject=test&message=test".
@@ -313,6 +317,10 @@ We got the result back in 10 seconds, so the email field is vulnerable to the "s
 <br/>
 <img src="https://i.imgur.com/Vj0zsVL.png" height="90%" width="90%" alt=""/>
 <br />
+
+<h2></h2>
+
+<h3>Check If File was Created</h3>
 
 - Navigate back to the image repeater.
   - change: "Get /image?filename=```36.jpg```" into "Get /image?filename=```output.txt```".
