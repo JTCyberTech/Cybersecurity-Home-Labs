@@ -227,6 +227,10 @@ We are going to test each parameter for potential injection vulnerabilities.
 <img src="https://i.imgur.com/wF76Z3x.png" height="90%" width="90%" alt=""/>
 <br />
 
+<h2></h2>
+
+<h3>Congratulations</h3>
+
 - On the top of the page on the browser will say: "Congratulations, you solved the lab!"
 
 <p align="center">
