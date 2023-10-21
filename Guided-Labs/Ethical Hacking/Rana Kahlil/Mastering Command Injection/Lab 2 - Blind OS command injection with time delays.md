@@ -59,7 +59,7 @@
 
 - Log in to [PortSwigger](https://portswigger.net/) Website.
 
-- Click on the three line under "MY ACCOUNT" on PortSwigger Website. Then, click on "Academy".
+- Click on the three line under "MY ACCOUNT" on Portswigger Website. Then, click on "Academy".
 
 <p align="center">
 <br/>
@@ -107,6 +107,12 @@
 <img src="https://i.imgur.com/kvE9jA0.png" height="90%" width="90%" alt=""/>
 <br />
 
+
+<h2></h2>
+
+<h2>Lab Description</h2>
+
+This lab features a blind OS command injection vulnerability within the feedback function, where the application executes a user-supplied shell command without providing command output in the response. To complete the lab, exploit this vulnerability to introduce a 10-second delay.
 
 <h2></h2>
 
