@@ -297,7 +297,7 @@ We got the result back in 10 seconds, so the email field is vulnerable to the "s
 
 <h2></h2>
 
-<h3>Redirect Output to File</h3>
+<h2>Redirect Output to File</h2>
 
 - Go back to the Repeater with the ```csrf=``` command.
   - Instead of asking to sleep, run "whoami" command but redirect the output of the "whoami" command into a file in "/var/www/images/output.txt".
@@ -320,7 +320,7 @@ We got the result back in 10 seconds, so the email field is vulnerable to the "s
 
 <h2></h2>
 
-<h3>Check If File was Created</h3>
+<h2>Check If File was Created</h2>
 
 - Navigate back to the image repeater.
   - change: "Get /image?filename=```36.jpg```" into "Get /image?filename=```output.txt```".
