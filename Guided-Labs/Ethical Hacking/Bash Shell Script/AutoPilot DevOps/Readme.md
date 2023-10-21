@@ -270,7 +270,7 @@ View the new dummy2.txt, Use ```cat```.
 
 To print "Name" and "Email" columns (first and third columns) from dummy2.txt in this case. Use ```-F:```
 
-- Type in: ```awk -F: '{print $1,$3}' dummy2.txt```
+- Type in: ```awk -F: '{print $1,$3}' dummy2.txt```.
   - ```-F```: define for the eliminators.
   - ```:```: the column is define by ":".
 
@@ -279,4 +279,4 @@ To print "Name" and "Email" columns (first and third columns) from dummy2.txt in
 <img src="https://i.imgur.com/8Ay0gbi.png" height="60%" width="60%" alt=""/>
 <br />
 
-- Using ``awk '{print $1,$3}' dummy2.txt``` after modifying dummy2.txt will not work.
+- Using ```awk '{print $1,$3}' dummy2.txt``` after modifying dummy2.txt will not work.
