@@ -215,7 +215,7 @@ We got the result back right away, so the name field not vulnerable to the "slee
 
 <p align="center">
 <br/>
-<img src="" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/3BZBAfY.png" height="90%" width="90%" alt=""/>
 <br />
 
 We got the result back in 10 seconds, so the email field is vulnerable to the "sleep" command.
