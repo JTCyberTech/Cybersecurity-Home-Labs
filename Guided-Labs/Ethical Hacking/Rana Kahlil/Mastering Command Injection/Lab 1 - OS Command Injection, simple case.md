@@ -220,13 +220,12 @@ We are going to test each parameter for potential injection vulnerabilities.
   - Add in: productId=1&storeI=1 ``` & whoami```.
   - Highlight ``` & whoami``` and press "Ctrl + U" on keyboard to encode it. Then, Click on "Send".
   - The command turns into: ```productId=1&storeId=1 %26+whoami```.
+- Output also is "peter-noZB5X" and "62".
 
 <p align="center">
 <br/>
 <img src="https://i.imgur.com/wF76Z3x.png" height="90%" width="90%" alt=""/>
 <br />
-
-- Output also is "peter-noZB5X" and "62".
 
 - On the top of the page on the browser will say: "Congratulations, you solved the lab!"
 
