@@ -100,9 +100,11 @@
 
 <h2>Lab Description:</h2>
 
-This lab contains a blind OS command injection vulnerability in the feedback function.
+This lab features a blind OS command injection vulnerability within the feedback function.
 
-The application executes a shell command containing the user-supplied details. The command is executed asynchronously and has no effect on the application's response. It is not possible to redirect output into a location that you can access. However, you can trigger out-of-band interactions with an external domain.
+The application runs a user-supplied shell command in an asynchronous manner, without affecting its response. While it's impossible to redirect output to an accessible location, you can initiate out-of-band interactions with an external domain.
+
+To complete the lab, exploit the blind OS command injection to perform a DNS lookup using Burp Collaborator.
 
 
 <h2>Lab Solution</h2>
