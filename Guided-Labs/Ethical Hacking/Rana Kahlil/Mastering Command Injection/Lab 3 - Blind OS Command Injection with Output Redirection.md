@@ -140,7 +140,7 @@ Steps:
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/Guu4sL6.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/UtNu6mG.png" height="90%" width="90%" alt=""/>
 <br />
 
 
@@ -160,7 +160,7 @@ Steps:
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/NC4g5Og.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/t23Mf8B.png" height="90%" width="90%" alt=""/>
 <br />
 
 - The response from the form is just "Thank you for submitting feedback!
@@ -169,7 +169,7 @@ Steps:
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/ku8AmLI.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/7kBxYN4.png" height="90%" width="90%" alt=""/>
 <br />
  
 - Notice a "post request" for "feedback/submit" have generated on Burp Suite on the HTTP history tab.
