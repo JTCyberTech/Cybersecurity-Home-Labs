@@ -229,9 +229,9 @@ We are going to test each parameter for potential injection vulnerabilities.
 
 <h2></h2>
 
-<h3>Congratulations</h3>
+<h3>Congratulations: Lab Solved</h3>
 
-- On the top of the page on the browser will say: "Congratulations, you solved the lab!"
+On the top of the page on the browser will say: "Congratulations, you solved the lab!"
 
 <p align="center">
 <br/>
