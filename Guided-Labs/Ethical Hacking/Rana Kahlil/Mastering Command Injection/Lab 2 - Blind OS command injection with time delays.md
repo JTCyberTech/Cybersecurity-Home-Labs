@@ -183,7 +183,7 @@
 
 <h2>Testing for Potential Injection Vulnerabilities</h2>
 
-We are going to test each parameter that is visable on the website for potential injection vulnerabilities with the "sleep" command. (Excluding csrf)
+We are going to test each parameter that is visible on the website for potential injection vulnerabilities with the "sleep" command. (Excluding csrf)
 
 <h3>Name Field:</h3> 
 
