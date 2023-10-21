@@ -152,14 +152,14 @@ To replace "bash" with "bashscripting" in dummy.txt using sed command.
 <br />
 
 - But using ```sed 's/bash/bashscripting/g' dummy.txt``` will not be saved.
-- ```cat dummy.txt``` to check.
+- Using: ```cat dummy.txt``` to check.
 
 <p align="center">
 <br/>
 <img src="https://i.imgur.com/GaL9KI6.png" height="60%" width="60%" alt=""/>
 <br />
 
-In order to save with sed command
+In order to save with sed command. Use ``` -i```.
 
 - Type in: ```sed -i 's/bash/bashscripting/g' dummy.txt```.
   - -i: edit file in place.
