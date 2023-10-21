@@ -161,14 +161,14 @@
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/8Xvx7xY.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/W3fzeUh.png" height="90%" width="90%" alt=""/>
 <br />
  
 - Click on the post request. Right-click on the request on the bottom and select "Send to Repeater". 
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/923w5PN.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/yI22mva.png" height="90%" width="90%" alt=""/>
 <br />
 
 - Click on "Repeater".
@@ -176,13 +176,63 @@
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/tP15upe.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/65WBtRs.png" height="90%" width="90%" alt=""/>
 <br />
  
 <h2></h2>
 
 <h2>Testing for Potential Injection Vulnerabilities</h2>
 
-We are going to test each parameter that is visable on the website for potential injection vulnerabilities with the sleep command. (Excluding csrf)
+We are going to test each parameter that is visable on the website for potential injection vulnerabilities with the "sleep" command. (Excluding csrf)
 
+<h3>Name Field:</h3> 
 
+- Adding "&" for chainning command. Then "sleep 10" to run "sleep" command. Then add "#" for making the rest of the command a comment.
+  - Add in: "csrf=W7KsRxyQSmSzYXrHORkztKR6e68lW2YB&name=test``` & sleep 10 #```&email=test%40test.ca&subject=test&message=test".
+  - Highlight ``` & sleep 10 #```. Then, press "Ctrl + U" to encode it.
+  - The command turns into: "```csrf=W7KsRxyQSmSzYXrHORkztKR6e68lW2YB&name=test+%26+sleep+10+%23&email=test%40test.ca&subject=test&message=test```".
+- Click on "Send".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/WaQ0UFo.png" height="90%" width="90%" alt=""/>
+<br />
+
+We got the result back right away, so the name field not vulnerable to the "sleep" command.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/IoPXg7Q.png" height="90%" width="90%" alt=""/>
+<br />
+
+<h2></h2>
+
+<h3>Email Field:</h3>
+
+- Delete: ```+%26+sleep+10+%23```. Then Repeat the same thing for email field on the command.
+  - The command turns into: "```csrf=Ay1VbxDEsOHvNQi1pi9fLLFpmFdwJGmd&name=test&email=test%40test.ca+%26+sleep+10+%23&subject=test&message=test```".
+- Click on "Send".
+
+<p align="center">
+<br/>
+<img src="" height="90%" width="90%" alt=""/>
+<br />
+
+We got the result back in 10 seconds, so the email field is vulnerable to the "sleep" command.
+
+<h2></h2>
+
+<h3>Repeat for Both Subject Field and Message Field</h3>
+
+We got the result back right away for both of them, so the Subject and Message field are not vulnerable to the sleep command.
+
+<h2></h2>
+
+<h2>Congratulations</h2>
+
+On the top of the page on the intercept browser will say: "Congratulations, you solved the lab!"
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/wzkRlzC.png" height="90%" width="90%" alt=""/>
+<br />
