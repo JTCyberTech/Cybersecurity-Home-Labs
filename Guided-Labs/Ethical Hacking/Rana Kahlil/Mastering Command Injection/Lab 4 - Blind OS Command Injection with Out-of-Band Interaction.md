@@ -61,7 +61,7 @@
 
 - Log in to [PortSwigger](https://portswigger.net/) Website.
 
-- Click on the three line under "MY ACCOUNT" on PortSwigger Website. Then, click on "Academy".
+- Click on the three line under "MY ACCOUNT" on Portswigger Website. Then, click on "Academy".
 
 <p align="center">
 <br/>
@@ -210,4 +210,3 @@ Analysis: "& nslookup zorh37nyfzjbsg1nog7j9ml6zx5ntc.burpcollaborator.net #".
 <br/>
 <img src="https://i.imgur.com/3dz7WqH.png" height="90%" width="90%" alt=""/>
 <br />
-
