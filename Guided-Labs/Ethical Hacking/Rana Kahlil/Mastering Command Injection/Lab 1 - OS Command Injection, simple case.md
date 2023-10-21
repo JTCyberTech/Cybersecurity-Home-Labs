@@ -170,7 +170,7 @@ We are going to test each parameter for potential injection vulnerabilities.
 
 <h3>ProductID:</h3>
 
-- Adding "&" for chainning command. Then "whoami" to run Who Am I command.
+- Adding "&" for chaining command. Then "whoami" to run Who Am I command.
   - Add in: productId=1``` & whoami```&storeI=1 .
 
 <p align="center">
@@ -187,7 +187,7 @@ We are going to test each parameter for potential injection vulnerabilities.
 <img src="https://i.imgur.com/eAtUcMq.png" height="90%" width="90%" alt=""/>
 <br />
 
-- Ran into an error while running the "Whoami" Command.
+- Ran into an error while running the "whoami" Command.
   - On line 5, it says it's unbound variable.
 
 <p align="center">
@@ -255,7 +255,7 @@ On the top of the page on the browser will say: "Congratulations, you solved the
 - Change Directory to the folder that have command-injection-lab-01.py .
   - Type in: ```cd Lab \ 1```
 
-- Run the "Whoami" command on the lab website URL.
+- Run the "whoami" command on the lab website URL.
   - Type in: ```python3 Command-Injection-Lab1.py "https://0afe00a2031cccb983a360ce00f200a8.web-security-academy.net" whoami ```
   - Result:
 
