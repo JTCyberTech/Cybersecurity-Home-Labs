@@ -24,7 +24,7 @@ List "/etc" directory files and directories.
 - Command used: ```ls /etc```.
 
 - Description:
-  - ```ls```: list command, will list files and directories under given directory. [Command]
+  - ```ls```: "list command", will list files and directories under given directory. [Command]
   - ```/etc```: the directory used for the list command. [Directory]
  
 <p align="center">
@@ -42,8 +42,8 @@ List ".conf" files only under "/etc" directory.
 - Command: ```ls -l /etc/*.conf```.
 
 - Description:
-  - ```ls```: list command, will list files and directories under given directory. [Command]
-  - ```-l```: provide a long listing. [Argument for ls]
+  - ```ls```: "list command", will list files and directories under given directory. [Command]
+  - ```-l```: provide a "long listing". [Argument for ls]
   - ```/etc```: the directory used for the list command. [Directory]
   - ```/*.conf```: * = wildcard, look for all the files having matching string at the end of every file name. [Directory with wildcard]
 
@@ -63,12 +63,37 @@ Print total number of ".conf" files only under "/etc" directory.
 
 - Description:
   - ```|```: combining two or more commands and output them as one command. [Pipe]
-  - ```wc```: command for word count. [Command]
+  - ```wc```: command for "word count". [Command]
   - ```-l```: count lines. [Argument for wc]
 
 <p align="center">
 <br/>
 <img src="https://i.imgur.com/oiEDRpp.png" height="60%" width="60%" alt=""/>
 <br />
+
+
+<h2></h2>
+
+<h3>Task 5: </h3>
+
+Create an empty directory with name "autopilot" under "/tmp" directory.
+
+- Command: ```mkdir /tmp/autopilot```.
+
+- Description:
+  - ```mkdir```: command for make directory. [Command]
+  - ```/tmp```: parent directory where you want to create "autopilot". [Directory]
+  - ```/autopilot```: name of the directory you are creating with directory "/tmp". [Directory]
  
-- 
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/SFHuAAB.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 6: </h3>
+
+Create an empty file with name "devops.txt" under "/tmp/autopilot/" directory.
+
