@@ -228,7 +228,7 @@ We got the result back right away for both of them, so the Subject and Message f
 
 <h2></h2>
 
-<h2>Congratulations</h2>
+<h2>Congratulations: Lab Solved<</h2>
 
 On the top of the page on the intercept browser will say: "Congratulations, you solved the lab!"
 
