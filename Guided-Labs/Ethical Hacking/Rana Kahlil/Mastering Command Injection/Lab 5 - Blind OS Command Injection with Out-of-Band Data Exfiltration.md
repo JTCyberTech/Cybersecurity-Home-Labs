@@ -1,6 +1,6 @@
 # Lab 5 - Blind OS Command Injection with Out-of-Band Data Exfiltration
 
-<h2>Lab 4: Setup</h2>
+<h2>Lab 5: Setup</h2>
 
 <h3>Burp Suite Startup</h3>
 
@@ -61,7 +61,7 @@
 
 - Log in to [PortSwigger](https://portswigger.net/) Website.
 
-- Click on the three line under "MY ACCOUNT" on PortSwigger Website. Then, click on "Academy".
+- Click on the three line under "MY ACCOUNT" on Portswigger Website. Then, click on "Academy".
 
 <p align="center">
 <br/>
@@ -104,7 +104,7 @@ This lab contains a blind OS command injection vulnerability in the feedback fun
 
 The application executes a shell command containing the user-supplied details. The command is executed asynchronously and has no effect on the application's response. It is not possible to redirect output into a location that you can access. However, you can trigger out-of-band interactions with an external domain.
 
-To solve the lab, execute the whoami command and exfiltrate the output via a DNS query to Burp Collaborator. You will need to enter the name of the current user to complete the lab. 
+To solve the lab, execute the "whoami" command and exfiltrate the output via a DNS query to Burp Collaborator. You will need to enter the name of the current user to complete the lab. 
 
 <h2>Lab Solution</h2>
 
