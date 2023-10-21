@@ -50,6 +50,8 @@ Port Swinger Web Security Academy Labs
 
 - Burp Suite Community Edition (Pre-installed in Kali Linux)
 
+- Burp Suit Professional Edition (Not Free - Needed for Lab 4 and 5)
+
 - Visual Studio (Free: Require to be install in Kali Linux)
 
 <h2></h2>
