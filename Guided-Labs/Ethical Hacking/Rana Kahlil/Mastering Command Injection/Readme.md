@@ -1,6 +1,6 @@
 # Mastering Command Injection
 
-<h3> Theory: </h3>
+<h3> Key-Takeaways: </h3>
 
 - What are Command Injection vulnerabilities?
 
