@@ -120,7 +120,7 @@ This lab is basically Lab 4 but adding "whoami" command. So picking up from wher
 
 - Remember to Highlight the command and press "Ctrl + U" to encode it.
 
-- Navigate to "Burp Collabrator client". Click on "Poll now".
+- Navigate to "Burp Collaborator client". Click on "Poll now".
 
 <p align="center">
 <br/>
