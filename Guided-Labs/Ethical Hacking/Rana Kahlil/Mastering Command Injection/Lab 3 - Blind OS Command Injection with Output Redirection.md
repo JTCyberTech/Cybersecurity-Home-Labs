@@ -338,7 +338,7 @@ We got the result back in 10 seconds, so the email field is vulnerable to the "s
 <img src="https://i.imgur.com/q4PwJUX.png" height="90%" width="90%" alt=""/>
 <br />
 
-<h2>Congratulations: Lab Solved<</h2>
+<h2>Congratulations: Lab Solved</h2>
 
 On the top of the page on the intercept browser will say: "Congratulations, you solved the lab!"
 
