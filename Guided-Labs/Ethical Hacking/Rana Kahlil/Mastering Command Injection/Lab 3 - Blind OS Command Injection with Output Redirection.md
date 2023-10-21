@@ -196,7 +196,7 @@ Steps:
  
 <h2></h2>
 
-<h2>Testing for Potential Injection Vulnerabilities</h2>
+<h3>Testing for Potential Injection Vulnerabilities</h3>
 
 We are going to test each parameter that is visable on the website for potential injection vulnerabilities with the "sleep" command. (Excluding csrf)
 
