@@ -14,7 +14,7 @@
 
 <h3>Labs: </h3>
 
-Port Swinger Web Security Academy Labs
+Port Swigger Web Security Academy Labs
 
 - Lab 1: OS Command Injection, Simple Case
 
@@ -64,7 +64,7 @@ Install Visual Studio in your Kali Linux VM
 
 <h2></h2>
 
-<h3>Portswinger Web Security Academy Access:</h3>
+<h3>Portswigger Web Security Academy Access:</h3>
 
 - Register an Account: [Here](https://portswigger.net/users/register)
 
