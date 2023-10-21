@@ -110,6 +110,12 @@
 
 <h2></h2>
 
+<h2>Lab Description</h2>
+
+The lab features an OS command injection vulnerability in the product stock checker, where the application processes user-provided product and store IDs, executing shell commands and displaying their raw output in the response. To complete the lab, execute the "whoami" command to identify the current user.
+
+<h2></h2>
+
 <h2>Lab Solution</h2>
 
 - Turn Intercept by clicking on "Intercept is off".
