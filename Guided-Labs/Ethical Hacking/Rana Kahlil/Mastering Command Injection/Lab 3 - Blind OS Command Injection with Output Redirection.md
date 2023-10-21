@@ -59,7 +59,7 @@
 
 - Log in to [PortSwigger](https://portswigger.net/) Website.
 
-- Click on the three line under "MY ACCOUNT" on PortSwigger Website. Then, click on "Academy".
+- Click on the three line under "MY ACCOUNT" on Portswigger Website. Then, click on "Academy".
 
 <p align="center">
 <br/>
@@ -107,6 +107,20 @@
 <img src="https://i.imgur.com/ulfaHrl.png" height="90%" width="90%" alt=""/>
 <br />
 
+
+<h2></h2>
+
+<h2>Lab Description</h2>
+
+This lab features a blind OS command injection vulnerability within the feedback function. 
+
+The application runs a shell command with user-supplied input, but it does not display the command's output. However, you can employ output redirection to capture the command's output. Additionally, there is a writable folder located at:
+
+```/var/www/images```
+
+The application hosts product catalog images at this location. Redirect the injected command output to a file in this folder, then access the file's content via the image loading URL.
+
+To complete the lab, execute the 'whoami' command and obtain the result.
 
 <h2></h2>
 
