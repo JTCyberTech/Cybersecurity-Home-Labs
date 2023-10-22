@@ -249,7 +249,7 @@ Remove the file "/tmp/autopilot/devops.txt" forcefully with "rm" command.
 
 Switch your directory to "/etc" and then display top 10 rows of "group" file.
  
-- Command: ```cd /etc``` Then, ```head group```
+- Command: ```cd /etc``` Then, ```head group```.
 
 - Description:
   - ```cd /etc```: change directory to "/etc". [Command]
@@ -267,7 +267,7 @@ Switch your directory to "/etc" and then display top 10 rows of "group" file.
 
 Switch your directory to "/etc" and then display top 5 rows of group file.  
 
-- Command: ```cd /etc``` Then, ```head -5 group```
+- Command: ```cd /etc``` Then, ```head -5 group```.
 
 - Description:
   - ```cd /etc```: change directory to "/etc". [Command]
@@ -286,7 +286,7 @@ Switch your directory to "/etc" and then display top 5 rows of group file.
 
 Switch your directory to "/etc" and then display last 10 rows of "group" file
 
-- Command: ```cd /etc``` Then, ```tail -5 group```
+- Command: ```cd /etc``` Then, ```tail -5 group```.
 
 - Description:
   - ```cd /etc```: change directory to "/etc". [Command]
@@ -305,7 +305,7 @@ Switch your directory to "/etc" and then display last 10 rows of "group" file
 
 Switch your directory to "/etc" and then display last 2 rows of "group" file.
 
-- Command: ```cd /etc``` Then, ```tail -2 group```
+- Command: ```cd /etc``` Then, ```tail -2 group```.
 
 - Description:
   - ```cd /etc```: change directory to "/etc". [Command]
@@ -324,7 +324,7 @@ Switch your directory to "/etc" and then display last 2 rows of "group" file.
 
 Print the current date and time on screen. 
 
-- Command: ```date```
+- Command: ```date```.
 
 - Description:
   - ```date```: date command, used to print the the current system's date and time. [Command]
@@ -341,10 +341,10 @@ Print the current date and time on screen.
 
 Print current date in the format "DD/MM/YYYY".
 
-- Command: ```date +'%d/%m/%Y'```
+- Command: ```date +'%d/%m/%Y'```.
 
 - Description:
-  - ```date +'%d/%m/%Y'```: date command, used to print the current system in "DD/MM/YYY".
+  - ```date +'%d/%m/%Y'```: date command, used to print the current system in "DD/MM/YYY" format. [Command] 
  
 <p align="center">
 <br/>
@@ -352,3 +352,105 @@ Print current date in the format "DD/MM/YYYY".
 <br />
 
 
+<h2></h2>
+
+<h3>Task 20: </h3>
+
+Print current time in the format "HH:SS"
+
+- Command: ```date +'%H:%S'```.
+
+- Description:
+  - ```date +'%H:%S'```: time command, used to print the current system in "HH:SS" format. [Command]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/jkgodLj.png" height="60%" width="60%" alt=""/>
+<br />
+  
+
+<h2></h2>
+
+<h3>Task 21: </h3>
+
+Display current month calendar on screen.
+
+- Command: ```cal```.
+
+- Description:
+  - ```cal```: calendar command, used to display current month and date in calendar of the current machine. [Command]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/EpPh5hq.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 22: </h3>
+
+Display the hostname of your current server. 
+
+- Command: ```hostname```.
+
+- Description:
+  - ```hostname```: hostname command, used to display the hostname of the current machine. [Command] 
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/Acrs3Ry.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 23: </h3>
+
+Display the current logged in username.
+
+- Command: ```whoami```
+
+- Description:
+  - ```whoami```: whoami command, used to display the logged in user of the current machine. [Command]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/zbLF1cn.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 24: </h3>
+
+Ping "udemy.com" 5 times from your terminal.
+ 
+- Command: ```ping -c5 udemy.com```
+
+- Description:
+  - ```ping```: ping command, used to test connectivity. [Command]
+  - ```-c5```: option for ping command 5 times, used to specify the number of ICMP echo request packets to send to the destination host. [Option]
+  - ```udemy.com```: hostname or IP address of the host you want to ping. [destination hostname]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/m7kqd3Q.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 25: </h3>
+
+Print recently triggered commands on your Linux system.
+
+- Command: ```history```
+
+- Description:
+  - ```history```: history command, used to view the list of commands that use triggered on the terminal. [Command]
+ 
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/n0Lwmc5.png" height="60%" width="60%" alt=""/>
+<br />
