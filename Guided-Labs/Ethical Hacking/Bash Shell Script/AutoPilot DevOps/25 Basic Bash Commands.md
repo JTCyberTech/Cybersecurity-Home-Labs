@@ -241,5 +241,114 @@ Remove the file "/tmp/autopilot/devops.txt" forcefully with "rm" command.
 <br/>
 <img src="https://i.imgur.com/kb55Mcc.png" height="60%" width="60%" alt=""/>
 <br />
+
+
+<h2></h2>
+
+<h3>Task 14: </h3>
+
+Switch your directory to "/etc" and then display top 10 rows of "group" file.
  
-- 
+- Command: ```cd /etc``` Then, ```head group```
+
+- Description:
+  - ```cd /etc```: change directory to "/etc". [Command]
+  - ```head```: Command to display the top 10 rows of the following file. [Command]
+  - ```group```: the following file of the command. [Argument]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/I87xHoz.png" height="60%" width="60%" alt=""/>
+<br />
+
+<h2></h2>
+
+<h3>Task 15: </h3>
+
+Switch your directory to "/etc" and then display top 5 rows of group file.  
+
+- Command: ```cd /etc``` Then, ```head -5 group```
+
+- Description:
+  - ```cd /etc```: change directory to "/etc". [Command]
+  - ```head -5 ```: Command to display the top 10 rows of the following file. [Command]
+  - ```group```: the following file of the command. [Argument]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/WStxKEq.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 16: </h3>
+
+Switch your directory to "/etc" and then display last 10 rows of "group" file
+
+- Command: ```cd /etc``` Then, ```tail -5 group```
+
+- Description:
+  - ```cd /etc```: change directory to "/etc". [Command]
+  - ```tail```: Command to display the last 10 rows of the following file. [Command]
+  - ```group```: the following file of the command. [Argument]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/zfq60W7.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 17: </h3>
+
+Switch your directory to "/etc" and then display last 2 rows of "group" file.
+
+- Command: ```cd /etc``` Then, ```tail -2 group```
+
+- Description:
+  - ```cd /etc```: change directory to "/etc". [Command]
+  - ```tail -2```: Command to display the last 2 rows of the following file. [Command]
+  - ```group```: the following file of the command. [Argument]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/G7z9mTq.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 18: </h3>
+
+Print the current date and time on screen. 
+
+- Command: ```date```
+
+- Description:
+  - ```date```: date command, used to print the the current system's date and time. [Command]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/OyGqlM6.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 19: </h3>
+
+Print current date in the format "DD/MM/YYYY".
+
+- Command: ```date +'%d/%m/%Y'```
+
+- Description:
+  - ```date +'%d/%m/%Y'```: date command, used to print the current system in "DD/MM/YYY".
+ 
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/pyFmCve.png" height="60%" width="60%" alt=""/>
+<br />
+
+
