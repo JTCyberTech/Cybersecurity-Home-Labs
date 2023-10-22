@@ -7,7 +7,7 @@ Verify your current working directory.
 - Command used: ```pwd```.
 
 - Decription:
-  - ```pwd``` will print the current working directory. [Command]
+  - ```pwd``` "print working directory" command, will print the current working directory. [Command]
 
 <p align="center">
 <br/>
@@ -40,12 +40,13 @@ List "/etc" directory files and directories.
 List ".conf" files only under "/etc" directory.
 
 - Command: ```ls -l /etc/*.conf```.
+  - ```*```= wildcard character that matches any characters and any number of characters.
 
 - Description:
   - ```ls```: "list command", will list files and directories under given directory. [Command]
-  - ```-l```: provide a "long listing". [Argument for ls]
+  - ```-l```: provide a "long listing". [Option]
   - ```/etc```: the directory used for the list command. [Directory]
-  - ```/*.conf```: * = wildcard, look for all the files having matching string at the end of every file name. [Directory with wildcard]
+  - ```/*.conf```: look for all the files having matching string at the end of every file name. [Argument provided to ls with wildcard]
 
 <p align="center">
 <br/>
@@ -62,9 +63,10 @@ Print total number of ".conf" files only under "/etc" directory.
 - Command: ```ls -l /etc/*.conf | wc -l```.
 
 - Description:
+  - ```ls -l /etc/*.conf```: list ".conf" files only under "/etc" directory. [Command]
   - ```|```: combining two or more commands and output them as one command. [Pipe]
   - ```wc```: command for "word count". [Command]
-  - ```-l```: count lines. [Argument for wc]
+  - ```-l```: count lines. [Option for wc]
 
 <p align="center">
 <br/>
@@ -120,7 +122,7 @@ Change (Switch) your directory to "/tmp/autopilot/".
 
 - Description:
   - ```cd```: command for change directory. [Command]
-  - ```/tmp/autopilot```: directory that you want to change into. [Directory]
+  - ```/tmp/autopilot```: directory that you want to change into. [Directory Path]
  
 <p align="center">
 <br/>
@@ -134,9 +136,10 @@ Change (Switch) your directory to "/tmp/autopilot/".
 
 Switch your directory to /tmp/autopilot and then print "Hello Devops" into the "devops.txt" file in the "/tmp/autopilot" directory.
 
-- Command: ```cd /tmp/autopilot | echo "Hello Devops" > devops.txt```.
+- Command: ```cd /tmp/autopilot```. Then, ```echo "Hello Devops" > devops.txt```.
 
 - Description:
+  - ```cd /tmp/autopilot```: change directionary to autopilot. [Command to change Directory]
   - ```echo```: command for writing something in a text file. [Command]
   - ```"Hello Devops"```: message you want to write to the file. [Text]
   - ```>```: redirection operator, redirect the output to a file. [Redirection Operator]
@@ -171,3 +174,72 @@ Display the content of "/tmp/autopilot/devops.txt" file on screen.
 <h3>Task 10: </h3>
 
 Switch your directory to /tmp/autopilot then Create a copy of "devops.txt" file and name the copy as "pilot.txt".
+
+- Command: ```cd /tmp/autopilot```. Then, ```cp devops.txt pilot.txt```.
+
+- Description:
+  - ```cd /tmp/autopilot```: change directionary to autopilot. [Command to change Directory]
+  - ```cp```: command for create a copy of. [Command]
+  - ```devop.txt pilot.txt```: create a new copy of devop.txt into pilot.txt. [Arguement]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/WVqZJjc.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 11: </h3>
+
+Move "/tmp/autopilot/pilot.txt" file to "/etc" directory.
+
+- Command: ```mv /tmp/autopilot/pilot.txt /etc```.
+
+- Description:
+  - ```mv```: move command, can move files or directory. [Command]
+  - ```/tmp/autopilot/pilot.txt```: what you are moving. [File or Directory Path]
+  - ```/etc```: what directory you moving into. [Directory]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/tR51K7h.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 12: </h3>
+
+Delete the file "/etc/pilot.txt".
+ 
+- Command: ```rm /etc/pilot.txt```.
+  - rm command will ask for confirmation before deleting the file.
+
+- Description:
+  - ```rm```: remove command, can remove file(s) or directory. [Command]
+  - ```/etc/pilot.txt```: what you want to delete. [Path]
+ 
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/CJmljui.png" height="60%" width="60%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>Task 13: </h3>
+
+Remove the file "/tmp/autopilot/devops.txt" forcefully with "rm" command.
+
+- Command: ```rm -f /tmp/autopilot/devops.txt```.
+
+- Description:
+  - ```-f```: force the removal of file(s) without prompting for confirmation. [Option]
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/kb55Mcc.png" height="60%" width="60%" alt=""/>
+<br />
+ 
+- 
