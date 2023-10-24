@@ -167,17 +167,17 @@ In order to save with sed command. Use ``` -i```.
 <img src="https://i.imgur.com/NWATSk9.png" height="60%" width="60%" alt=""/>
 <br />
 
-To replace the first occurence of each line. (Changing from bashscripting back to bash for the first occurence)
+To replace the first occurrence of each line. (Changing from bashscripting back to bash for the first occurrence)
 
 - Type in: ```sed -i 's/bashscripting/bash/1' dummy.txt```.
-  - ```1```: first occurence of each line.
+  - ```1```: first occurrence of each line.
 
 <p align="center">
 <br/>
 <img src="https://i.imgur.com/JxTzH8G.png" height="60%" width="60%" alt=""/>
 <br />
 
-Can use it with the any occurance.
+Can use it with the any occurrence.
 - Type in: ```sed -i 's/bashscripting/jeff/2' dummy.txt```.
 
 <p align="center">
