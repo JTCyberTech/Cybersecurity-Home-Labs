@@ -26,7 +26,7 @@ Upon completing the course, I had achieved the capability to establish an S3 buc
 Upon completing this task, I had attained a fundamental comprehension of the entire project's scope. Additionally, I successfully generated an S3 Bucket, achieving the following objectives:
 
 - Gained insight into the workings of an S3 Bucket.
-- Created my inaugural S3 Bucket.
+- Created my first S3 Bucket.
 
 
 <h2></h2>
