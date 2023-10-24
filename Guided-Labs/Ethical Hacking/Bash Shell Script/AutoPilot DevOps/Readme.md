@@ -12,7 +12,7 @@ Bash scripting plays a crucial role in cybersecurity due to its versatility and 
 
 <h2></h2>
 
-<h2>Solve 100 Hands-On Tasks and 13 Hand-Ons Mini Projects</h2>
+<h2>Solve 100 Hands-On Tasks Projects</h2>
 
 - 25 Basic Bash Commands Hands-On Tasks.
 
@@ -21,8 +21,6 @@ Bash scripting plays a crucial role in cybersecurity due to its versatility and 
 - 25 Basic Bash Scripting Hands-On Tasks.
 
 - 25 Intermediate Bash Scripting Hands-On Tasks.
-
-- 13 Bash Scripting Hands-On Projects.
 
 <h2></h2>
 
