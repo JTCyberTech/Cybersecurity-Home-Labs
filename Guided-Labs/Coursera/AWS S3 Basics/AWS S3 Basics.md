@@ -109,7 +109,70 @@
 <h3>Key Takeaways</h3>
 
 - Upload objects to the S3 bucket.
-- manage S3 bucket using policy and ACL.
+- Manage S3 bucket using policy and ACL.
 
 <h2></h2>
 
+<h3>Creating Two Folders in the Bucket</h3>
+
+- Navigate into the bucket by clicking on the name.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/NBzY5z7.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click on "Create folder". Create two folders. One for images and other one for text file.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/xDb1phR.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Name the first folder "Images". "Do not specify an encryption key" for Server-side encryption. Then, click on "Create folder".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/ZlXCNBr.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click on "Create folder" to create the text file.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/jOMcDa1.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Name the second folder "Text". "Do not specify an encryption key" for Server-side encryption. Then, click on "Create folder".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/EHlADlK.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Both folders are created successfully.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/paPyYNf.png" height="90%" width="90%" alt=""/>
+<br />
+
+<h2></h2>
+
+<h3>Upload Images in the Images Folder</h3>
+
+- Click on the "Images Folder".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/T1OlLnd.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click on "Upload".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/ZtWqS1j.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click on "Add files".
