@@ -80,3 +80,17 @@ At the conclusion of this task, I had successfully created a static website usin
 - Established an S3 bucket.
 - Successfully uploaded an HTML file to the designated bucket.
 - Created Static website.
+
+
+<h2></h2>
+
+<h2>Downloadable Content For Project</h2>
+
+- AWS logo.png
+- AWS S3 Bucket.jpg
+- AWS S3 Class Detail.jpg
+- error.html
+- index.html
+- S3 Classes.jpg
+- Text File1.txt
+- Text File2.txt
