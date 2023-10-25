@@ -4,7 +4,7 @@ To complete the questions below, navigate to http://10.10.152.247/evilshell.php.
 
 <h2></h2>
 
-What strange text file is in the website root directory?
+1. What strange text file is in the website root directory?
 
 - Command used: `ls`
 
@@ -17,7 +17,7 @@ What strange text file is in the website root directory?
 
 <h2></h2>
 
-How many non-root/non-service/non-daemon users are there?
+2. How many non-root/non-service/non-daemon users are there?
 
 - Command Used: `cat /etc/passwd`
 
@@ -32,7 +32,7 @@ How many non-root/non-service/non-daemon users are there?
 <h2></h2>
 
 
-What user is this app running as?
+3. What user is this app running as?
 
 - Command Used: `whoami`
 
@@ -46,7 +46,7 @@ What user is this app running as?
 
 <h2></h2>
 
-What is the user's shell set as?
+4. What is the user's shell set as?
 
 - Commands Used: `id` > `cat /etc/passwd`
   - `id`: to find the use ID = 33.
@@ -62,7 +62,7 @@ What is the user's shell set as?
 
 <h2></h2>
 
-What version of Ubuntu is running?
+5. What version of Ubuntu is running?
 
 - Commands Used: `lsb_release -a`
   - `lsb_release -a`:  a Linux command that is used to display information about the Linux distribution and release on the system.
@@ -77,7 +77,7 @@ What version of Ubuntu is running?
 
 <h2></h2>
 
-Print out the MOTD.  What favorite beverage is shown?
+6. Print out the MOTD.  What favorite beverage is shown?
 
 - Commands Used: `ls /etc/*motd*` > `ls /etc/*motd*/00-header` > `cat /etc/update-motd.d/00-header`
   - Used `ls /etc/*motd*` to find out the list of files inside `ls /etc/*motd*`. Found out there is a `00-header` file in it.
