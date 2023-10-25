@@ -113,8 +113,8 @@ Answer: `6eea9b7ef19179a06954edd0f6c05ceb`
 <h2></h2>
 
 
-Crack the hash.
-What is the admin's plaintext password?
+4. Crack the hash.
+    What is the admin's plaintext password?
 
 - Copy the hash for admin and to go Crackstation and paste it there and try to crack the hash.
 
@@ -137,7 +137,7 @@ Answer: `qwertyuiop`
 
 <h2></h2>
 
-Login as the admin. What is the flag?
+5. Login as the admin. What is the flag?
 
 - Head back to the login page for http://10.10.220.142/
   - Enter in: Username: `admin`; Password: `qwertyuiop`
