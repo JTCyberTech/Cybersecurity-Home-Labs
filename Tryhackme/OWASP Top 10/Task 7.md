@@ -4,7 +4,7 @@ To complete the questions below, navigate to http://10.10.152.247:8888
 
 <h2></h2>
 
-What is the flag that you found in darren's account?
+1. What is the flag that you found in darren's account?
 
 - Navigate to http://10.10.152.247:8888
 
@@ -53,7 +53,7 @@ Answer: `fe86079416a21a3c99937fea8874b667`
 <h2></h2>
 
 
-What is the flag that you found in arthur's account?
+2. What is the flag that you found in arthur's account?
 
 - Do exactly the same for arthur.
 
