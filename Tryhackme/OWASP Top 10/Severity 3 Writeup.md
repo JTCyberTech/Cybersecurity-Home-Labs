@@ -113,8 +113,7 @@ Answer: `6eea9b7ef19179a06954edd0f6c05ceb`
 <h2></h2>
 
 
-4. Crack the hash.
-    What is the admin's plaintext password?
+4. Crack the hash. What is the admin's plaintext password?
 
 - Copy the hash for admin and to go Crackstation and paste it there and try to crack the hash.
 
