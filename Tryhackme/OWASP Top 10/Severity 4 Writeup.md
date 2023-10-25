@@ -141,7 +141,7 @@ Answer: `falcon`
 
 4. Where is falcon's SSH key located?
 
-- SSH Key location is usually stored: `/home/[yourusername]/.ssh/id_rsa`
+- SSH Key location is usually stored: "/home/[yourusername]/.ssh/id_rsa"
 
 Answer: `/home/falcon/.ssh/id_rsa`
 
@@ -149,7 +149,7 @@ Answer: `/home/falcon/.ssh/id_rsa`
 
 5. What are the first 18 characters for falcon's private key
 
-- Enter: `/home/falcon/.ssh/id_rsa` in the payload.
+- Enter: "/home/falcon/.ssh/id_rsa" in the payload.
 
 <p align="center">
 <br/>
