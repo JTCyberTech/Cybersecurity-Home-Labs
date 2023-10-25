@@ -84,7 +84,7 @@ To complete the questions below, navigate to http://10.10.152.247/evilshell.php.
   - Used `ls /etc/*motd*/00-header` to find out the full directory to be `/etc/update-motd.d/00-header`.
   - Used `cat /etc/update-motd.d/00-header` to look what is inside of the file. Found out at the end it said "**DR PEPPER** MAKES THE WORLD TASTE BETTER!"
  
-- Answer: Dr Pepper
+- Answer: `Dr Pepper`
 
 <p align="center">
 <br/>
