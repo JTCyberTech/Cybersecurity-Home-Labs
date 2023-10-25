@@ -126,3 +126,59 @@ Answer: `THM{heres_the_admin_flag}`
 
 <h2></h2>
 
+# Task 26  [Severity 8] Insecure Deserialization - Code Execution
+
+- Change back the "userType" cookie from "admin" to "user".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/rJU5FSc.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click on "vim".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/KjJtxEK.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click on "feedback".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/hZ0375u.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Open up the Terminal:
+  - Type in: `nc -lvnp 4444`
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/FfzSH4Y.png" height="90%" width="90%" alt=""/>
+<br />
+ 
+- Download the picklelme.py then open another Terminal.
+  - Type in: sudo gedit pickelme.py
+  - New window will pop up.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/qhlUKqR.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Open another Terminal:
+  - Type in: ifconfig to get tryhackme IP Address.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/M5l30VC.png" height="90%" width="90%" alt=""/>
+<br />
+ 
+- Copy and paste the IP into:
+  - save it
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/WItzBD7.png" height="90%" width="90%" alt=""/>
+<br />
+
+Answer: `4a69a7ff9fd68`
