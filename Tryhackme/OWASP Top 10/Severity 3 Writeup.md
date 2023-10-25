@@ -153,4 +153,4 @@ Answer: `qwertyuiop`
 <img src="https://i.imgur.com/cdyocnH.png" height="90%" width="90%" alt=""/>
 <br />
 
-Answer: THM{Yzc2YjdkMjE5N2VjMzNhOTE3NjdiMjdl}
+Answer: `THM{Yzc2YjdkMjE5N2VjMzNhOTE3NjdiMjdl}`
