@@ -1,5 +1,9 @@
 #  Task 5 [Severity 1] Command Injection Practical
 
+To complete the questions below, navigate to http://10.10.152.247/evilshell.php.
+
+<h2></h2>
+
 What strange text file is in the website root directory?
 
 - Command used: `ls`
