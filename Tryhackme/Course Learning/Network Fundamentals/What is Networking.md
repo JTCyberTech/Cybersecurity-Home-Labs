@@ -115,7 +115,7 @@ Answer: `THM{YOU_GOT_ON_TRYHACKME}`
 
 # Ping (ICMP)
 
-Ping is a basic tool for checking how well devices in a network can talk to each other. It uses special packets called `ICMP` to do this. For example, it can tell us if a connection between devices is working properly.
+Ping is a basic tool for checking how well devices in a network can talk to each other. It uses special packets called `ICMP` or  `(Internet Control Message Protocol`) to do this. For example, it can tell us if a connection between devices is working properly.
 
 Ping also measures how long it takes for these special packets to go from one device to another and back. It does this by sending an `"echo" packet` and waiting for the target device to reply. This helps us understand how fast or reliable the connection is.
 
