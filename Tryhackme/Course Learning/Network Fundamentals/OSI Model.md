@@ -124,6 +124,23 @@ TCP (`Transmission Control Protocol`).
 
 - TCP built `error checking` into its design. This "error checking" `guarantee` that data sent from the small chunks in the session layer (layer 5) has then been received and `reassembled in the same order`.
 
-- 
+<h2></h2>
 
+<h3>Advantage of TCP </h3>
+
+- Guarantees the accuracy of data.
+- Capable of synchronising two devices to prevent each other from being flooded with data.
+- Performs a lot more processes for reliability.
+
+<h2></h2>
+
+<h3>Disadvantages of TCP</h3>
+
+- Requires a reliable connection between the two devices. If one small chunk of data is not received, then the entire chunk of data cannot be used.
+  - Example: When downloading a big file, you must have a strong and uninterrupted internet connection. If a small part is missing or mixed up during the download, the whole file won't work, and you have to begin again. A reliable connection is crucial for a complete file.
+ 
+- A slow connection can bottleneck another device as the connection will be reserved on the receiving computer the whole time.
+  - Example: Sharing a walkie-talkie with a friend who talks slowly can be frustrating. You have to wait for them to finish before you can speak, even if you only have a quick message. This delay can cause communication to slow down for everyone. In OSI Layer 4, it's like a slow connection can slow down the whole process because it's hogging the communication line for too long.
+ 
+- TCP is significantly slower than UDP because more work has to be done by the devices using this protocol.
 - 
