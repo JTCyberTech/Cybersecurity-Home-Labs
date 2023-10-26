@@ -242,8 +242,64 @@ When an `initial device` `sends` an `ARP request`, it's like shouting out to eve
 <img src="https://i.imgur.com/0bNGMUY.png" height="90%" width="90%" alt=""/>
 <br />
 
+<h2></h2>
+
+Question 1: What does ARP stand for?
+
+Answer: `Address Resolution Protocol`
+
+Question 2: What category of ARP Packet asks a device whether or not it has a specific IP address?
+
+Answer: `Request`
+
+Question 3: What address is used as a physical identifier for a device on a network?
+
+Answer: `MAC Address`
+
+Question 4: What address is used as a logical identifier for a device on a network?
+
+Answer: `IP Address`
 
 
+#  The DHCP Protocol
 
+`IP addresses` can be `given` to devices in `two ways`:
 
+- Someone typing them in
+- more commonly, by a `DHCP (Dynamic Host Configuration Protocol) server`
+
+When a `new device joins` a `network` and `doesn't have an IP address` yet, it `sends out` a `request (DHCP Discover)` to `see` if any `DHCP servers` are `on the network`.
+
+-  New device asks if there is any server that can give it an IP address.
+
+The `DHCP server` then `replies back` with an `IP address the device could use` `(DHCP Offer)`.
+
+- The server says, "Sure, here's an IP address you can use." 
+
+The `device` then `sends a reply` confirming it `wants` the offered `IP Address` `(DHCP Request)`
+
+- The device then says, "Okay, I'll take it!"
+
+Lastly, the `DHCP server sends` a `reply acknowledging` this has been completed. The device can start using the IP Address `(DHCP ACK)`.
+
+- The server says, "Great, you're all set!". The device can use that IP address to connect to the network.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/M9rLhee.png" height="90%" width="90%" alt=""/>
+<br />
+
+<h2></h2>
+
+Question 1: What type of DHCP packet is used by a device to retrieve an IP address?
+
+Answer: `DHCP Discover`
+
+Question 2: What type of DHCP packet does a device send once it has been offered an IP address by the DHCP server?
+
+Answer: `DHCP Request`
+
+Question 3: Finally, what is the last DHCP packet that is sent to a device from a DHCP server?
+
+Answer: `DHCP ACK`
 
