@@ -132,3 +132,48 @@ Aims to achieve integrity by using the following concepts:
 
 <h2></h2>
 
+# Defence-In Depth
+
+Create a security system that have multiple layers or level. `Multi-Level Secuirty`
+
+Imagine you have a special drawer with important things inside, and you want to protect them from burglars. It's not enough to just lock the drawer. You'd also want to lock the room where the drawer is, lock the main door to your place, and even have security cameras. By adding these layers of security, you make it harder for thieves to get to your stuff. While it might not stop every thief, it will definitely make most of them give up and slow down the rest.
+
+<h2></h2>
+
+# ISO/IEC 19249
+
+ISO: International Organization for Standardization 
+IEC: International Electrotechnical Commission
+
+Both came up with the ISO/IEC 19249::2017 Information technology - Security techniques - Catalogue of architectural and design principles for secure products, systems and applications.
+
+<h2></h2>
+
+<h3>ISO/IEC 19249 lists five architectural principles:</h3>
+
+- Domain Separation, Layering, Encapsulation, Redundancy, and Virtualization.
+
+<h3>ISO/IEC 19249 teaches five design principles:</h3>
+
+- Least Privilege, Attack Surface Minimisation, Centralized Parameter Validation, Centralized General Security Services, and Preparing for Error and Exception Handling.
+
+<h2></h2>
+
+# Zero Trust versus Trust but Verify
+
+- Trust but Verify: This idea means you should always double-check, even if you trust someone or something. For example, imagine you trust a friend to look after your pet. You should still ask for updates or check the security camera to make sure everything is okay. It's not always possible to check everything by hand, like monitoring every website visited by a user. So, you use automated security tools like a home security system.
+
+- Zero Trust: This principle treats trust as a weakness, especially when dealing with inside jobs. Instead of trusting right away, it suggests you should never trust anyone or anything until they prove themselves. It's like saying, "Show me you're trustworthy." Unlike old models that trusted things based on their location or owner (like letting people in your house because they're family), zero trust requires checking who or what it is every time. You need proof (authentication and authorization) before letting anyone or anything access your stuff. If there's ever a security breach, using the zero trust approach means the damage will be limited because you didn't trust blindly in the first place.
+
+<h3></h3>
+
+#  Threat versus Risk
+
+- Vulnerability: having a weak spot that could be attacked or harmed. In information security, it's a point of weakness that needs protection.
+  - Example: An unlocked door is a vulnerability in home security. It's a weak spot that could allow a thief to enter.
+
+- Threat: the danger that comes with a vulnerability. It's like the bad thing that could happen because of the weak spot.
+  - Example: In the case of the unlocked door, the threat is a potential burglary. The danger is the thief getting inside.
+  
+- Risk: about how likely it is that the threat will actually take advantage of the vulnerability and what the consequences will be.
+  -  Example: If you live in a very safe neighborhood, the risk of a burglary due to the unlocked door might be low. But if you're in a high-crime area, the risk is higher, and the impact (consequences) of a break-in could be significant, like loss of valuable items or property damage.
