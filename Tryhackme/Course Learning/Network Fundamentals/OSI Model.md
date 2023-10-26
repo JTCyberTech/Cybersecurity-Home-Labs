@@ -116,7 +116,7 @@ Plays a `super important` part in `transmitting data across network`. When data 
 
 <h3>TCP</h3>
 
-TCP (`Transmission Control Protocol`). 
+TCP (`Transmission Control Protocol`)
 
 - Designed with `reliability` and `guarantee`.
 
@@ -124,13 +124,26 @@ TCP (`Transmission Control Protocol`).
 
 - TCP built `error checking` into its design. This "error checking" `guarantee` that data sent from the small chunks in the session layer (layer 5) has then been received and `reassembled in the same order`.
 
+- TCP is used for situations such as file sharing, internet browsing or sending an email. This usage is because these services require the data to be accurate and complete (no good having half a file!).
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/6KkTht5.png" height="90%" width="90%" alt=""/>
+<br />
+We can see how a picture of a cat is broken down into small pieces of data (known as packets) from the "webserver", where the "computer" re-constructs the picture of the cat into the correct order.
+
 <h2></h2>
 
 <h3>Advantage of TCP </h3>
 
 - Guarantees the accuracy of data.
+  - OSI Layer 4 ensures that data is sent accurately and reliably between two devices. It does this by setting up a secure connection and keeping track of the data to make sure it arrives intact. It's like a supervisor making sure that a message you send to a friend is delivered correctly without any parts missing or mixed up.
+
 - Capable of synchronising two devices to prevent each other from being flooded with data.
+  - OSI Layer 4 ensures devices cooperate smoothly to avoid data overload, much like traffic lights maintain orderly traffic flow to prevent gridlock. It prevents data flooding between devices.
+ 
 - Performs a lot more processes for reliability.
+  - OSI Layer 4 ensures accurate and orderly data transmission by managing error detection, flow control, and data packet sequencing, minimizing the risk of communication errors or data loss.
 
 <h2></h2>
 
@@ -143,4 +156,11 @@ TCP (`Transmission Control Protocol`).
   - Example: Sharing a walkie-talkie with a friend who talks slowly can be frustrating. You have to wait for them to finish before you can speak, even if you only have a quick message. This delay can cause communication to slow down for everyone. In OSI Layer 4, it's like a slow connection can slow down the whole process because it's hogging the communication line for too long.
  
 - TCP is significantly slower than UDP because more work has to be done by the devices using this protocol.
-- 
+
+
+<h2></h2>
+
+<h3>UDP</h3>
+
+UDP (`User Datagram Protocol`)
+
