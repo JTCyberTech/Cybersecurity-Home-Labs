@@ -54,7 +54,7 @@ Answer: `Tim Berners-Lee`
 
 For a network to work smoothly, devices need to have names and unique identifiers, just like people. It's important to know who you're communicating with on the network, so names and identifiers help with that, much like how humans have `names` and `fingerprints` for identification.
 
-People can change their names, but they can't change their fingerprints. Similarly, devices have two ways to identify themselves: an `IP address` and a `MAC address, which is like a serial number`. Just like our fingerprints, these identifiers help distinguish each device and maintain its unique identity.
+People can change their names, but they can't change their fingerprints. Similarly, devices have two ways to identify themselves: an `IP address` and a `MAC address`, which is like a `serial number`. Just like our fingerprints, these identifiers help distinguish each device and maintain its unique identity.
 
 <h2></h2>
 
@@ -62,7 +62,7 @@ People can change their names, but they can't change their fingerprints. Similar
 
 IP address is like a label used to identify a device on a network. This label can stick with the device for a while, and then it can be given to a different device without changing the label. It's a way to keep track of things on a network.
 
-An IP address is a set of numbers that are divided into `four octets`. The value of each `octet"` will summarize to be the IP address of the device on the network. This number is calculated through a technique known as `IP addressing & subnetting`. The key thing to remember is that each device on a network has a unique IP address, and you can't have the same address for two devices at the same time on the same network.
+An IP address is a set of numbers that are divided into `four octets`. The value of each `octet` will summarize to be the IP address of the device on the network. This number is calculated through a technique known as `IP addressing & subnetting`. The key thing to remember is that each device on a network has a unique IP address, and you can't have the same address for two devices at the same time on the same network.
 
 IP Addresses follow certain rules, called `protocols`, which help `devices talk` to each other in a `common language`. These rules are like the foundation of networking. Devices can be on either a `private or public network`, and this decides the kind of IP address they get: public or private.
 
