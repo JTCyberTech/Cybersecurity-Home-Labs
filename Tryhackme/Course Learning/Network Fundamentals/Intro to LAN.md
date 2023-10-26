@@ -90,3 +90,61 @@ Disadvantages:
 <br/>
 <img src="https://i.imgur.com/wQjRk3H.png" height="90%" width="90%" alt=""/>
 <br />
+
+
+<h2></h2>
+
+<h3>What is a Switch?</h3>
+
+`Switches` are like `traffic controllers for a network`. They collect lots of gadgets like computers, printers, and other network stuff and `plug them into their special slots`. These switches are often used in big networks like at companies, schools, or large places with many gadgets. They have different slots (4, 8, 16, 24, 32, 64, etc.) where all these gadgets can connect.
+
+`Switches` are way `smarter` than hubs or repeaters. They `know which device is plugged into which connection`. So, when they get a message, they `don't shout it to everyone` like a hub would. Instead, they `send it directly to the right person`. This makes the network `faster and less crowded`.
+
+Switches and routers can link up with each other, which makes the network `more dependable` because it gives data more than one way to go. If one path has a problem, `data can use a different route`. It `might slow things down` a bit, but the `network keeps working`, which is better than it not working at all,  `increases the redundancy` (the reliability).
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/SoFIRCQ.png" height="90%" width="90%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+<h3>What is a Router?</h3>
+
+A router links different networks and shares information between them. It's like a traffic cop for data, deciding where it should go.
+
+
+Routing is like giving directions to data so it can find its way across networks. It's all about making a `road for data to trave`l on and reach its destination safely.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/3Jsl2Hg.png" height="90%" width="90%" alt=""/>
+<br />
+
+
+<h2></h2>
+
+Question 1: What does LAN stand for?
+
+Answer: `Local Area Network`
+
+Question 2: What is the verb given to the job that Routers perform?
+
+Answer: `Routing`
+
+Question 3: What device is used to centrally connect multiple devices on the local network and transmit data to the correct location?
+
+Answer: `Switch`
+
+Question 4: What topology is cost-efficient to set up?
+
+Answer: `Bus Topology`
+
+Question 5: What topology is expensive to set up and maintain?
+
+Answer: `Star Topology`
+
+Question 6: Complete the interactive lab attached to this task. What is the flag given at the end?
+
+Answer: `THM{TOPOLOGY_FLAWS}`
