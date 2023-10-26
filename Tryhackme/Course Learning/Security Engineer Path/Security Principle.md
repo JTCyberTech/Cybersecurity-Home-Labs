@@ -15,7 +15,7 @@ The Security Traid: confidentiality, integrity, and availability (CIA).
 
 <h3>CIA in Case of Placing an Order for Online Shopping:</h3>
 
-- Confidentiality: You expect that your credit card info stays a secret, known only to the payment processor. If you think someone shady might get your credit card number, you won't want to buy anything. And if there's a data breach, and your personal info gets out, the company will suffer big losses.
+- Confidentiality: You expect that your credit card info stays a secret, known only to the payment processor. If you think someone shady might get your credit card number on the site, you won't want to buy anything. And if there's a data breach, and your personal info gets out, the company will suffer big losses.
 
 - Integrity: Let's say you fill in your order and an intruder messes with the shipping address. Your package goes to the wrong place. If the information isn't trustworthy, you won't want to shop there.
 
@@ -33,7 +33,43 @@ The Security Traid: confidentiality, integrity, and availability (CIA).
 
 <h2></h2>
 
+<h3>Authenticity and Nonrepudiation</h3>
+
+- Authenitcity: means making sure something is real and not fake.
+  - Example: imagine you're buying a fancy watch online. You want to be sure it's a real, genuine watch and not a cheap imitation. Authenticity in this case means being confident that the watch you're buying is indeed from the official company that makes it.
+ 
+- Nonrepudiation: preventing someone from denying they did something. In things like online shopping, medical records, or banking transactions, nonrepudiation makes sure people can't later deny they made a purchase, received a diagnosis, or conducted a transaction.
+  - Example: when you sign for a package delivery. The delivery person needs a record that you received it. Nonrepudiation ensures that you can't later say, "I didn't get the package," because your signature proves you did.
+
+<h2></h2>
+
 # DAD
+
+Security of a system can be attacked through disclosure of secret data, alteration of data, or destruction of data.
+
+- Disclosure: This is like spilling the beans, sharing a secret that should be kept. When confidential information is disclosed, it means someone has let out a secret they shouldn't have.
+  - Example: Imagine if your friend tells everyone your surprise birthday party plans before the big day. Your surprise is ruined because the secret was disclosed.
+ 
+- Alteration: This is like tampering with something to make it wrong or broken.
+  - Example: If you draw a mustache on a picture, you've altered it. Now, the picture doesn't look the same, and it's not in its original, unaltered state.
+ 
+- Destruction/Denial: making something disappear or preventing it from being available. When something is destroyed or denied, it means it's no longer there or not accessible when you need it.
+  - Example: Think of your favorite toy. If it gets broken and you can't play with it anymore, it's like a form of destruction. If someone won't let you have your toy when you want to play with it, that's a kind of denial.
+ 
+<h2></h2>
+
+<h3>DAD with example of patient record and related system:</h3>
+
+- Disclosure: It's like keeping a secret. Healthcare providers must keep your medical info private. If someone breaks in and shows your medical records to the world, it's a problem for the healthcare provider because they've lost control of the secret.
+
+- Alteration: Think of this like changing a recipe in a cookbook. If a bad person tweaks your medical records, it's like giving the chef the wrong recipe. This could lead to the wrong treatment, and that's really bad, possibly even life-threatening.
+
+- Destruction/Denial: Imagine a hospital going digital, like replacing paper with computers. If a troublemaker messes with the computers, it's like turning off all the lights in the hospital. They can't work properly, even if they go back to using paper. It's a big problem because the patient info won't be available, and everything comes to a halt.
+
+Protection against disclosure, alteration, destruction/denial is equivalent to working to maintain the CIA.
+
+Too much protection on confidentiality and integrity can restrict availability. Too much avaialability can result in losing confidentiality and integrity. Need to find a good balance between the three CIA.
+
 
 <h2></h2>
 
