@@ -148,3 +148,102 @@ Answer: `Star Topology`
 Question 6: Complete the interactive lab attached to this task. What is the flag given at the end?
 
 Answer: `THM{TOPOLOGY_FLAWS}`
+
+<h2></h2>
+
+# A Primer on Subnetting
+
+`Networks` come in `all sizes`, from `small to big`. `Subnetting` is like `cutting a big cake` into smaller pieces. Imagine you have a limited cake, and lots of people want a slice. `Subnetting` is `how you decide who gets how much cake`, making sure everyone gets their fair share of this "cake."
+
+Network admins use something called `subnetting` to `organize and designate` specific sections of a `network` for this purpose.
+
+`Subnetting` is like `dividing` a big group of friends into smaller groups. The number of friends in each group is decided by something called a `"subnet mask."` This mask tells us how many friends can be in each group.
+
+An `IP address` is made up `4 sections` called `"octets"`. The same goes for a `subnet mask` which is also represented as a `number of 4 bytes (32 bits)`, ranging from `0 to 255` (0-255).
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/V3xihxM.png" height="90%" width="90%" alt=""/>
+<br />
+
+Subnets use IP addresses in three different ways:
+
+- Identify the network address
+- Identify the host address
+- Identify the default gateway
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/rLXEdSZ.png" height="90%" width="90%" alt=""/>
+<br />
+
+Subnetting provides a range of benefits, including:
+
+- Efficiency
+- Security
+- Full control
+
+
+<h2></h2>
+
+Question 1: What is the technical term for dividing a network up into smaller pieces?
+
+Answer: `Subnetting`
+
+Question 2: How many bits are in a subnet mask?
+
+Answer: `32`
+
+Question 3: What is the range of a section (octet) of a subnet mask?
+
+Answer: `0-255`
+
+Question 4: What address is used to identify the start of a network?
+
+Answer: `Network Address`
+
+Question 5: What address is used to identify devices within a network?
+
+Answer: `Host Address`
+
+Question 6: What is the name used to identify the device responsible for sending data to another network?
+
+Answer: `Default Gateway`
+
+
+<h2></h2>
+
+#  The ARP Protocol
+
+Devices can have two identifiers: A `MAC address` and an `IP address`.
+
+`ARP protocol (Address Resolution Protocol)`, is the technology that is responsible for allowing devices to identify themselves on a network.
+
+`ARP protocol` `allows` a `device to associate its MAC address with an IP address` on the network. Each device on a network will `keep a log` of the MAC addresses associated with other devices.
+
+When devices want to talk to each other, they shout out to devices in the network to find the device that it wants to talk to. They use the ARP protocol to get the MAC address (like a digital fingerprint) for the conversation.
+
+<h2></h2>
+
+<h3>How does ARP Work?</h3>
+
+Every device in a network `keeps` a kind of `memory` called a `cache`. In the `ARP protocol`, this memory `stores` the `names of other devices` in the network.
+
+In order to map these two identifiers together (IP address and MAC address), the ARP protocol sends two types of messages:
+
+- ARP Request
+- ARP Reply
+
+
+When an `initial device` `sends` an `ARP request`, it's like shouting out to everyone on the network, `asking` if anyone has a `specific address`. If another device has that address, it replies to it with an `ARP reply` to the initial device to acknowledge this. The `initial device` will now `remember` this and `store` it within its `cache (an ARP entry)`. 
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/0bNGMUY.png" height="90%" width="90%" alt=""/>
+<br />
+
+
+
+
+
+
