@@ -98,7 +98,7 @@ Aims to achieve "Confidentiality" with 3 rules:
 <img src="https://i.imgur.com/00QTLit.png" height="90%" width="90%" alt=""/>
 <br />
   
-Summarized: First two properties > "Write up, read down". Share confidential info with user with higher security clearance (write up), receive confidential information from user with lower security clearance (read down).
+Summarized: First two properties > "Read down, Write up". Share confidential info with user with higher security clearance (write up), receive confidential information from user with lower security clearance (read down).
 
 Limitation: `Not designed to handle file-sharing.`
 
@@ -112,7 +112,7 @@ Aims to achieve "Integrity" with 2 rules:
 
 - Star Integrity Property: Referred as `"no write up"`. If you're just a regular agent with lower-level access (lower integrity), you can't mess with or "write" important stuff held by the big shots (higher integrity).
 
-Summarized: "read up, write down". Biba is all about keeping information safe from tampering. Contrast with Bell-LaPadula Model.
+Summarized: "Read up, Write down". Biba is all about keeping information safe from tampering. Contrast with Bell-LaPadula Model.
 
 Limitation: `Does not handle insider threat.`
 
