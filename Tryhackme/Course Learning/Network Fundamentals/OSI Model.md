@@ -139,7 +139,7 @@ We can see how a picture of a cat is broken down into small pieces of data (know
 - `Guarantees` the `accuracy` of data.
   - OSI Layer 4 ensures that data is sent accurately and reliably between two devices. It does this by setting up a secure connection and keeping track of the data to make sure it arrives intact. It's like a supervisor making sure that a message you send to a friend is delivered correctly without any parts missing or mixed up.
 
--` Capable of synchronising two devices` to prevent each other from being flooded with data.
+- `Capable of synchronising two devices` to prevent each other from being flooded with data.
   - OSI Layer 4 ensures devices cooperate smoothly to avoid data overload, much like traffic lights maintain orderly traffic flow to prevent gridlock. It prevents data flooding between devices.
  
 - Performs a lot more processes for `reliability`.
