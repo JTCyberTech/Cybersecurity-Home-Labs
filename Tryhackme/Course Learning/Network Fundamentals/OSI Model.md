@@ -107,7 +107,7 @@ Answer: `Packets`
 
 # Layer 4 - Transport
 
-Plays a `super important` part in `transmitting data across network`. When data is sent between devices, it follows `2 different protocol`s:
+Plays a `super important` part in `transmitting data across network`. When data is sent between devices, it follows `2 different protocols`:
 
 - TCP
 - UDP
