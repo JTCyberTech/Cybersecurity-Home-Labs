@@ -66,3 +66,19 @@ Answer: `/staff-portal`
 
 <h2></h2>
 
+# Manual Discovery - Favicon
+
+Favicon is a small icon for website branding. It appears in the browser's address bar or tab
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/5LVvRnQ.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Frameworks used to build websites may include default favicons as part of their installation.
+- Failure to replace the default favicon with a custom one can reveal the framework being used.
+- Website developers should ensure they replace default favicons to maintain a professional and customized appearance.
+- OWASP host a database of common framework icons that you can use to check against the targets favicon [Wiki](https://wiki.owasp.org/index.php/OWASP_favicon_database)
+- Once we know the framework stack, we can use external resources to discover more about it.
+
+
