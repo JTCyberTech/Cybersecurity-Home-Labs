@@ -137,4 +137,157 @@ Answer: `THM{INVALID_DIRECTORY_PERMISSIONS}`
 <img src="https://i.imgur.com/8bdyd9E.png" height="90%" width="90%" alt=""/>
 <br />
 
-- 
+- Click on the "Change Log" and we found a new path "/tmp.zip.
+  - Add `/tmp.zip` to the URL and access the new webpage.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/bS9k5kq.png" height="90%" width="90%" alt=""/>
+<br />
+
+- A new zip file will be downloaded.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/dAi0p6x.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Open the "flag.txt" in the zip file.
+  - Got the answer for question 4.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/5swswoi.png" height="90%" width="90%" alt=""/>
+<br />
+
+Answer: `THM{KEEP_YOUR_SOFTWARE_UPDATED}`
+
+<h2></h2>
+
+# Developer Tools - Inspector
+
+<h3>Question: What is the flag behind the paywall?</h3>
+
+- Navigate to the "News" page for the Acme IT website.
+  - Click on the third News "⭐ 3 Tips for keeping your printer working"
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/J6tgH7b.png" height="90%" width="90%" alt=""/>
+<br />
+
+- A popup box will block the content.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/MaXBoCd.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Right-click the popup box and select "Inspect".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/erAKYGI.png" height="90%" width="90%" alt=""/>
+<br />
+
+- There will be a section for "This Element".
+  - Change `display: block;` to `display: none;`
+  - Found the answer for the question.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/aNC8PnQ.png" height="90%" width="90%" alt=""/>
+<br />
+
+Answer: `THM{NOT_SO_HIDDEN}`
+
+<h2></h2>
+
+# Developer Tools - Debugger
+
+<h3>Question: What is the flag in the red box?</h3>
+
+- Navigate to the "Contact" page for the Acme IT website.
+  - You will notice when you refresh the page, there will be a red block that flashes for a second with contents on it.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/MBb3Mpd.png" height="90%" width="90%" alt=""/>
+<br />
+ 
+- Right-click the page and select "Inspect". Then go to the Debugger tab.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/2BHP8Ho.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click and expand the "assets" under "sources". Select "flash.min.js". Then click on the `{ }` at the bottom of the page.
+  - `{ }` will make the make the .js file more readable.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/2BHP8Ho.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Scroll down and click on the "number" for `flash['remove']();`.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/FxXEoon.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Refresh the page after you click on the "number". (for me it was `108`)
+  - Got the answer for the question.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/wtkCEyx.png" height="90%" width="90%" alt=""/>
+<br />
+
+Answer: `THM{CATCH_ME_IF_YOU_CAN}`
+
+<h2></h2>
+
+# Developer Tools - Network 
+
+<h3>Question: What is the flag shown on the contact-msg network request?</h3>
+
+- Navigate to the "Contact" page for the Acme IT website.
+  - Right-click and select "Inspect". Then go to the "Network" tab.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/4QFxREj.png" height="90%" width="90%" alt=""/>
+<br />
+ 
+- Put random message on the "Contact Us" form. Then click on the "Send Message" button.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/jIB4WN8.png" height="90%" width="90%" alt=""/>
+<br />
+
+- A New event will appear. Click on it.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/mUBMEb0.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Inside the event. There will be a URL. Copy and paste the URL to access to new webpage.
+  - `https://10-10-203-66.p.thmlabs.com/contact-msg`
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/w5AP2mQ.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Found the Answer to the question.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/4BTrxSA.png" height="90%" width="90%" alt=""/>
+<br />
+
+Answer: `THM{GOT_AJAX_FLAG}`
