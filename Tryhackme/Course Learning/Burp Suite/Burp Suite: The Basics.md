@@ -351,3 +351,51 @@ If we have uploaded Client-Side TLS certificates, can we override these on a per
 
 - The "Match and Replace" section in Proxy settings allows the use of regular expressions (regex) to modify incoming and outgoing requests.
 - This feature enables dynamic changes, such as modifying the user agent or manipulating cookies, for testing and analysis.
+
+
+<h2></h2>
+
+# Connecting through the Proxy (FoxyProxy)
+
+<h3>Configuring Burp Suite Proxy with FoxyProxy:</h3>
+
+- Start the machine by clicking the "Start Machine" button in the upper right corner of the task.
+
+- To use the Burp Suite Proxy, configure your local web browser to redirect traffic through Burp Suite. This guide focuses on configuring the proxy using the FoxyProxy extension in Firefox.
+
+- Note that these instructions are specific to Firefox; if you're using a different browser, you may need to find alternative methods or use the TryHackMe AttackBox.
+
+<h3>Steps to Configure the Burp Suite Proxy with FoxyProxy:</h3>
+
+1. Install FoxyProxy: Download and install the FoxyProxy Basic extension. (Note: FoxyProxy is pre-installed on the AttackBox.)
+
+2. Access FoxyProxy Options: After installation, a button appears at the top right of the Firefox browser. Click this button to access the FoxyProxy options pop-up.
+
+3. Create Burp Proxy Configuration: In the FoxyProxy options pop-up, click the "Options" button, which opens a new browser tab with FoxyProxy configurations. Click "Add" to create a new proxy configuration.
+
+4. Add Proxy Details: Fill in the following values on the "Add Proxy" page:
+
+  - Title: Burp (or any preferred name)
+  - Proxy IP: 127.0.0.1
+  - Port: 8080
+
+5. Save Configuration: Click "Save" to save the Burp Proxy configuration.
+
+6. Activate Proxy Configuration: Click the FoxyProxy icon at the top-right of the Firefox browser and select the Burp configuration. This redirects your browser traffic through 127.0.0.1:8080. Note that Burp Suite must be running for this configuration to work.
+
+7. Enable Proxy Intercept in Burp Suite: Switch to Burp Suite and ensure that the "Intercept" feature is turned on in the Proxy tab.
+
+8. Test the Proxy: Open Firefox and try accessing a website, like the homepage for http://10.10.72.49/. Your browser will hang, and the proxy will populate with the HTTP request, indicating successful interception.
+
+<h3>Important Notes:</h3>
+
+- When the proxy configuration is active and the intercept is switched on in Burp Suite, your browser will hang when making a request.
+
+- Be cautious not to leave the intercept switched on unintentionally, as it can prevent your browser from making requests.
+
+- In Burp Suite, right-click on a request to perform various actions, such as forwarding, dropping, sending to other tools, or selecting options from the right-click menu.
+
+- Keep these details in mind as you start using the Burp Suite Proxy.
+
+- Consider closing other tabs in the AttackBox browser before enabling interception, as you may receive WebSocket requests instead of requests from the target VM.
+
