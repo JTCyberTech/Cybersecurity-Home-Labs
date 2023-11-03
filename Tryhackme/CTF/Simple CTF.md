@@ -1,6 +1,6 @@
 # Simple CTF
 
-Make a directory with the room name on the Desktop:
+Make a directory with the room name in the Desktop:
 
 - Change directory to /Desktop.
 
@@ -12,7 +12,7 @@ Make a directory with the room name on the Desktop:
 
 - Change directory into SimpleCTF.
 
-`cd SimpleCTF`
+`cd SimpleCTF/`
 
 <p align="center">
 <br/>
