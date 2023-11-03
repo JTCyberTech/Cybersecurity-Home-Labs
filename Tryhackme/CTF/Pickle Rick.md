@@ -37,7 +37,7 @@ Find the open ports for the given IP for the room. And save the output into a tx
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/mRzT3gV.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/maOxuWr.png" height="90%" width="90%" alt=""/>
 <br />
 
 From the nmap scan, we can see port 22 and port 80 is open.
