@@ -284,7 +284,7 @@ When you run this command, grep will search through the contents of the file "Su
 
 If we just use `grep -R .`
 
-- It will return the whole source code. Which tells us what is in both of the `Sup3rS3cretPickl3Ingred.txt` and `clue.txt`. Also what command we can't use.
+- It will return the whole source code (you can Right-click and select "View Page Source" to have a better view). Which tells us what is in both of the `Sup3rS3cretPickl3Ingred.txt` and `clue.txt`. Also what command we can't use.
 
 <p align="center">
 <br/>
