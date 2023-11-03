@@ -29,7 +29,7 @@ In order to find open ports, we will use **nmap**.
 - `-oN` (output normal).
 - Use format: `nmap -p 1-1000 -sC -sV -oN nmap_initial.txt IP`.
 
-On terminal: `nmap -p 1-1000 -sC -sV -oN nmap_initial.txt 10.10.165.66`
+On Terminal: `nmap -p 1-1000 -sC -sV -oN nmap_initial.txt 10.10.165.66`
 
 <p align="center">
 <br/>
@@ -42,3 +42,25 @@ Answer: `2`
 
 <h2></h2>
 
+Question 2: What is running on the higher port?
+
+TCP did not work so, I assume there is another port that is open above port 1000.
+
+On Terminal: `nmap -sC -sV -oN nmap_all.txt 10.10.165.66`
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/lFQnou8.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Found the third port, 2222 open SSH.
+
+Answer: `SSH`
+
+<h2></h2>
+
+Question 3: What's the CVE you're using against the application? 
+
+We will use Gobuster Directory Brute Force.
+
+`gobuster dir -u http://10.10.165.66/ -w ../wordlists/dirb/common.txt`
