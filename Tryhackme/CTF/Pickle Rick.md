@@ -1,4 +1,4 @@
-# Pickle Rick Easy Way
+# Pickle Rick
 
 Make a directory with the room name in the Tryhackme Folder.
 
@@ -248,7 +248,7 @@ Answer: `fleeb juice`
 
 <h2></h2>
 
-# Pickle Rick Hard Way
+# Pickle Rick Extra
 
 After logged into Rick Portal. We can use these commands instead.
 
