@@ -94,7 +94,7 @@ Investigate each directory by navigating to each of them.
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/EMjRrgr.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/sptfxZY.png" height="90%" width="90%" alt=""/>
 <br />
 
 - `/assets` is the Index of /assets.
@@ -247,3 +247,67 @@ Question 3: What is the last and final ingredient?
 Answer: `fleeb juice`
 
 <h2></h2>
+
+# Pickle Rick Hard Way
+
+After logged into Rick Portal. We can use these commands instead.
+
+Commands: `while read line; do echo $line; done < Sup3rS3cretPickl3Ingred.txt`
+
+- `while read line; do`: This part initiates a while loop in the shell script. The loop reads lines from a specified source (in this case, from a file) and performs a set of actions for each line.
+
+- `echo $line;`: Within the loop, the echo command is used to print the value of the variable line. The variable line contains the current line read from the source file.
+
+- `done`: This keyword marks the end of the loop. The loop will continue to execute until there are no more lines to read from the source file.
+
+- `< Sup3rS3cretPickl3Ingred.txt`: This part of the command specifies the source from which the while loop reads lines. In this case, it's reading lines from a file named "Sup3rS3cretPickl3Ingred.txt." The < character is used for input redirection, indicating that the lines should be read from this file.
+
+In summary, this command reads lines one by one from the file "Sup3rS3cretPickl3Ingred.txt" and echoes (prints) each line to the standard output (usually the terminal). The while loop continues until all lines in the file have been processed.
+
+Output: `mr. meeseek hair`
+
+<h2></h2>
+
+Can also use grep.
+
+Commands: `grep . Sup3rS3cretPickl3Ingred.txt`
+
+- `grep`: This is the command itself, used for searching text.
+
+- `.` (period): In this context, the period is the pattern being searched for. When a period is used as a pattern with grep, it matches any single character. So, it effectively searches for lines in the target file that contain any character.
+
+- `Sup3rS3cretPickl3Ingred.txt`: This is the target file in which you want to search for the specified pattern (in this case, a single character).
+
+When you run this command, grep will search through the contents of the file "Sup3rS3cretPickl3Ingred.txt" and return all the lines that contain at least one character. Since a period . matches any character, this command effectively returns all lines in the file that are not empty. It's a way to display all the non-empty lines in the file.
+
+<h2></h2>
+
+If we just use `grep -R .`
+
+- It will return the whole source code. Which tells us what is in both of the `Sup3rS3cretPickl3Ingred.txt` and `clue.txt`. Also what command we can't use.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/ySh0wzV.png" height="90%" width="90%" alt=""/>
+<br />
+
+<h2></h2>
+
+At the bottom of the page, it has base64 string.
+
+`Vm1wR1UxTnRWa2RUV0d4VFlrZFNjRlV3V2t0alJsWnlWbXQwVkUxV1duaFZNakExVkcxS1NHVkliRmhoTVhCb1ZsWmFWMVpWTVVWaGVqQT0==`
+
+- We can use Terminal to figure it out. Try keep adding `| base64 -d`.
+
+On Terminal: 
+- `echo Vm1wR1UxTnRWa2RUV0d4VFlrZFNjRlV3V2t0alJsWnlWbXQwVkUxV1duaFZNakExVkcxS1NHVkliRmhoTVhCb1ZsWmFWMVpWTVVWaGVqQT0== | base64 -d`
+- `echo Vm1wR1UxTnRWa2RUV0d4VFlrZFNjRlV3V2t0alJsWnlWbXQwVkUxV1duaFZNakExVkcxS1NHVkliRmhoTVhCb1ZsWmFWMVpWTVVWaGVqQT0== | base64 -d | base64 -d `
+- `echo Vm1wR1UxTnRWa2RUV0d4VFlrZFNjRlV3V2t0alJsWnlWbXQwVkUxV1duaFZNakExVkcxS1NHVkliRmhoTVhCb1ZsWmFWMVpWTVVWaGVqQT0== | base64 -d | base64 -d |..|..|..|..|..`
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/Uz0vOkd.png" height="90%" width="90%" alt=""/>
+<br />
+
+Finally got the output: `rabbit hole`. But means nothing.
+
