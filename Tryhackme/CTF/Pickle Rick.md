@@ -94,7 +94,7 @@ Investigate each directory by navigating to each of them.
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/sptfxZY.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/8lVVRVL.png" height="90%" width="90%" alt=""/>
 <br />
 
 - `/assets` is the Index of /assets.
