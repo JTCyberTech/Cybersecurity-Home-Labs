@@ -104,7 +104,84 @@ Answer: `/panel/`. From the GoBuster tool command, we found a few hidden directo
 
 <h2></h2>
 
+Visting the different directory on the target machine.
+
+`http://10.10.233.63/`: Main webpage.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/wXudqDo.png" height="90%" width="90%" alt=""/>
+<br />
+
+`http://10.10.233.63/panel/`: This directory let us upload file.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/mM8L2Bo.png" height="90%" width="90%" alt=""/>
+<br />
+
+`http://10.10.233.63/index.php`: Nothing special, direct back to the main webpage.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/04TVafg.png" height="90%" width="90%" alt=""/>
+<br />
+
+`http://10.10.233.63/uploads/`: This page shows the index of /uploads.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/ppsMPCg.png" height="90%" width="90%" alt=""/>
+<br />
+
+`http://10.10.233.63/css/`: This page shows the index of /css.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/Q4aqHIJ.png" height="90%" width="90%" alt=""/>
+<br />
+
+`http://10.10.233.63/js/`: This page shows the index of /js.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/yRQNxn5.png" height="90%" width="90%" alt=""/>
+<br />
+
+<h2></h2>
+
 <h3>Task 3: Getting a shell</h3> 
 
 Find a form to upload and get a reverse shell, and find the flag in user.txt.
 
+In order to get reverse shell payload, we will google "reverse shell upload file github".
+
+- Click on the first link "pentestmonkey/php-reverse-shell".
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/JEDzXs7.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Click on the Green button that said `Code`. Then select `Download ZIP`.
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/ofiShff.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Move the downloaded ZIP file to the RootMe folder using the `mv` command.
+  - `└─$ mv Downloads/php-reverse-shell-master.zip Desktop/Tryhackme/RootMe`
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/kQUXdkY.png" height="90%" width="90%" alt=""/>
+<br />
+
+- Unzip the ZIP file with `unzip` command.
+  - `└─$ unzip php-reverse-shell-master.zip`
+
+<p align="center">
+<br/>
+<img src="https://i.imgur.com/eYoHrij.png" height="90%" width="90%" alt=""/>
+<br />
