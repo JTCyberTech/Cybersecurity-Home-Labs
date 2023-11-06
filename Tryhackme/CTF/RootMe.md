@@ -1,6 +1,6 @@
 # RootMe
 
-Room [RootMe](https://tryhackme.com/room/rrootme#) at TryHackMe
+Room [RootMe](https://tryhackme.com/room/rrootme#) on TryHackMe
 
 <h2></h2>
 
