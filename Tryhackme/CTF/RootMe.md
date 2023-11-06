@@ -1,4 +1,4 @@
-<img width="587" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d3d1dbfa-efb9-4c55-a7ba-38b8701f26d4"># RootMe
+# RootMe
 
 Room [RootMe](https://tryhackme.com/room/rrootme#) at TryHackMe
 
