@@ -93,7 +93,7 @@ On terminal: `gobuster dir -u http://10.10.233.63/ -w ../../wordlists/dirbuster/
 
 <p align="center">
 <br/>
-<img src="https://i.imgur.com/CGELHcv.png" height="90%" width="90%" alt=""/>
+<img src="https://i.imgur.com/r0pkikC.png" height="90%" width="90%" alt=""/>
 <br />
 
 <h2></h2>
