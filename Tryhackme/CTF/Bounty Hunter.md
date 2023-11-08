@@ -1,4 +1,4 @@
-# RootMe
+# Bounty Hunter
 
 Room [Bounty Hunter](https://tryhackme.com/room/cowboyhacker) on TryHackMe
 
