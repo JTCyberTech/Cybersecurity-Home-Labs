@@ -513,5 +513,10 @@ Answer: `b53a02f55b57d4439e3341834d70c062`
 
 Answer: `Deskel`
 
+<h2></h2>
 
+<h3>Bonus Technique to Use on Changing "User-Agent"</h3>
 
+You can use Burp Suite to intercept the webpage, then send it to "Repeater" to change the "User-Agent".
+
+<p align="center"> <img src="https://i.imgur.com/vWZZ6pp.png" height="90%" width="90%" alt=""/>
