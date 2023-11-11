@@ -26,7 +26,7 @@ Room [Agent Sudo](https://tryhackme.com/room/agentsudoctf) on TryHackMe
 
 Deploy the machine by connecting to TryHackMe network. 
 
-Temporary IP Address: [10.10.147.5] Then [10.10.122.93](because ran out of time)
+Temporary IP Address: [10.10.147.5]. Then [10.10.122.93](because ran out of time)
 
 <h2></h2>
 
