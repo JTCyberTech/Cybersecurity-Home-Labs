@@ -202,4 +202,6 @@ On Terminal: `smbclient //10.10.120.154/milesdyson -U milesdyson`
 
 Enter in )s{A&2Z=F^n_E.B` as password.
 
+- Successfully got into Miles's folder.
 
+<p align="center"> <img src="https://i.imgur.com/ycJaYEl.png" height="90%" width="90%" alt=""/>
