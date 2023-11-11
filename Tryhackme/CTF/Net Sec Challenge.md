@@ -32,7 +32,7 @@ Introduction: Use this challenge to test your mastery of the skills you have acq
 
 <h2></h2>
 
-<h3>Taske 2: Challenge Questions</h3>
+<h3>Task 2: Challenge Questions</h3>
 
 Question 1: What is the highest port number being open less than 10,000?
 
