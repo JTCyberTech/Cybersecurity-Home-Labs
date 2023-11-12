@@ -91,3 +91,34 @@
 - Alerts: Set up to triage outages and planned maintenance.
 - Drill Down: Detailed information on affected services, regions, and updates.
 - Reboot Management: Choose when to perform maintenance to minimize downtime.
+
+<h2></h2>
+
+# Analyze the decision criteria
+
+1. Criteria for Choosing Azure Monitoring Service:
+
+- Experts consider specific criteria when choosing an Azure monitoring service for a business need.
+- Understanding these criteria helps assess nuanced differences among products.
+
+2. Azure Advisor:
+
+- Useful for projects where cost reduction, improving resilience, or enhancing security are important considerations.
+- Analyzes deployed resources, configurations, and usage.
+- Provides suggestions for optimization based on best practices in reliability, security, performance, costs, and operations.
+
+3. Azure Service Health:
+
+- Monitors Azure itself, focusing on the services and regions critical to your project.
+- Displays the current status of Azure services, upcoming planned outages, and services scheduled for sunset.
+- Allows setting up alerts for instances and upcoming downtime without regular dashboard visits.
+
+4. Azure Monitor:
+
+- Tracks performance or issues related to specific VM or container instances, databases, and applications.
+- Enables the creation of reports and notifications to understand service performance or diagnose Azure-related issues.
+- Suitable for measuring custom events alongside other usage metrics.
+- Enables setting up alerts for outages or autoscaling events, specifically tailored to your resources.
+- Ideal for measuring custom events added in the source code of software applications to identify and diagnose application behavior.
+
+
