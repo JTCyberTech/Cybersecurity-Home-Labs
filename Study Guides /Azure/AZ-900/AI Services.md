@@ -80,6 +80,7 @@ Bot Service Solutions:
 - Reliance on other AI services, such as natural language understanding and translation.
 - Prebuilt, no-code solutions like QnA Maker available for common scenarios.
 - Power Virtual Agents integration with Microsoft Power Platform, providing prebuilt connectors for data input.
+- Azure Bot Service creates virtual agent solutions that utilize natural language and is a cost-effective option. 
 
 Power Virtual Agents:
 
@@ -108,3 +109,48 @@ Azure Machine Learning:
 Flexibility with Azure Machine Learning:
 
 - Allows data scientists and AI engineers to use familiar tools on provided data for developing deep learning and machine learning models tailored to specific requirements.
+
+<h2></h2>
+
+# Use Machine Learning for decision support systems
+
+1. Tailwind Traders E-Commerce Overview:
+
+- E-commerce website allowing customers to browse and purchase items for delivery or pickup.
+- Focus on suggesting add-on products at checkout to increase sales.
+- Preference for an organic approach using years of sales data and new shopping trends for suggestions.
+
+2. Marketing Team's Approach:
+
+- Considering data-driven suggestions influenced by product availability, profitability, and other factors.
+- Initial analysis suggests a potentially lengthy prototyping process (months) and testing period (possibly a year).
+
+3. Decision Criteria Application:
+
+- Virtual Agent Requirement:
+  - No need for a virtual agent interfacing with humans via natural language.
+  - Azure Bot Service not considered suitable.
+- Content Understanding Requirement:
+  - No need for a service to understand content and meaning of images, video, audio, or translation.
+  - Relevant cognitive services not applicable.
+
+- User Behavior Prediction and Recommendations Requirement:
+  - Yes, Tailwind Traders needs to predict user behavior and provide personalized recommendations.
+  - Complex model required, incorporating historical and trending sales data, inventory, etc.
+- Prediction of Future Outcomes Based on Private Historical Data:
+  - Yes, Tailwind Traders requires predicting future outcomes based on private historical data.
+
+4. Decision on Suitable Option:
+
+- Azure Cognitive Services Personalizer:
+  - May play a role but cannot handle the entire breadth of the project alone.
+- Azure Machine Learning:
+  - Likely the best choice for Tailwind Traders in this scenario.
+  - Success depends on the ability of the model to precisely select the right upsell products.  
+  - Off-the-shelf model not sufficient; requires a custom-tailored model.
+  - Marketing team willing to commit at least a year to building, testing, and tweaking the models.
+
+5. Key Focus:
+
+- Success of the effort hinges on the precision of the model in suggesting the right upsell products.
+- Marketing team's commitment to a year-long process of building, testing, and refining the models.
