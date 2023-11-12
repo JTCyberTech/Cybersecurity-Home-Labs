@@ -154,3 +154,49 @@ Flexibility with Azure Machine Learning:
 
 - Success of the effort hinges on the precision of the model in suggesting the right upsell products.
 - Marketing team's commitment to a year-long process of building, testing, and refining the models.
+
+<h2></h2>
+
+# Use Cognitive Services for data analysis
+
+1. Background of Tailwind Traders eCommerce Website:
+
+- Initial version available exclusively in English.
+- Demographic study reveals varying levels of English proficiency among potential customers.
+
+2. Language Expansion Opportunity:
+
+- Marketing team identifies the opportunity to serve non-English speakers by adding multiple languages.
+- Aim to provide the same eCommerce experience to non-English speakers.
+
+3.Decision Criteria Application:
+
+- Decision criteria previously learned is applied to find the right option.
+
+4. Virtual Agent Implementation Decision:
+
+- Tailwind Traders is not implementing a virtual agent currently.
+- Focus on adding multiple languages for a broader user base.
+
+5. Azure Cognitive Services Translator:
+
+- Translator, part of Azure Cognitive Services, is considered.
+- Easy integration into applications, websites, tools, and solutions.
+- Supports multi-language user experiences in over 60 languages.
+- Compatible with any hardware platform and operating system for text-to-text language translation.
+
+6. Exclusion of Azure Cognitive Services Personalizer:
+
+- Decision excludes Azure Cognitive Services Personalizer.
+- Tailwind Traders does not need to predict user behavior or provide personalized recommendations at the moment.
+- Azure Cognitive Service Personalizer is used to need to predict user behavior or provide personalized recommendations.
+
+7.Challenge of Building Translation Models:
+
+- Although possible to create machine learning models for multi-language translation, it's deemed expensive and time-consuming.
+- Tailwind Traders lacks the deep learning competency and linguistic data required for model training.
+
+8.Selection of Azure Cognitive Services:
+
+- After examining all the expert criteria, Azure Cognitive Services is confidently selected as the best product option for Tailwind Traders' case study.
+- Emphasizes the practicality, ease of integration, and wide language support provided by Azure Cognitive Services Translator.
