@@ -203,6 +203,8 @@ Flexibility with Azure Machine Learning:
 
 <h2></h2>
 
+# Use Bot Service for Interactive chat experiences
+
 1. Customer Service Team's Need for Virtual Agent:
 
 - Long-standing request for a virtual agent to handle common customer queries.
