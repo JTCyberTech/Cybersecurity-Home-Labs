@@ -37,8 +37,7 @@
 2. Visual Tools:
 
 - Provide visually friendly access to all Azure functionalities.
-- Suitable for smaller deployments, but may be less useful for large deployments with interdependencies and
-- configuration options.
+- Suitable for smaller deployments, but may be less useful for large deployments with interdependencies and configuration options.
 
 3. Code-Based Tools:
 
@@ -58,8 +57,8 @@
 - Azure Portal: Web-based user interface for accessing all Azure features.
 - Azure Mobile App: iOS and Android access to Azure resources for monitoring, issue diagnosis, and management.
 - Azure CLI and Azure PowerShell: Command-line tools for managing Azure resources.
-- Azure PowerShell uses commandlets and calls the Azure REST API.
-- Available on Windows, Linux, Mac, and via a web browser in Azure Cloud Shell.
+  - Azure PowerShell uses commandlets and calls the Azure REST API.
+  - Available on Windows, Linux, Mac, and via a web browser in Azure Cloud Shell.
 
 6. Azure PowerShell:
 
@@ -75,8 +74,63 @@
 
 8. Azure Resource Manager Templates:
 
-- eclarative JSON format to describe resources.
+- Declarative JSON format to describe resources.
 - Verified before execution to ensure correct creation and connection of resources.
 - Orchestrates creation of resources in parallel.
 - Defines desired state and configuration, automating resource setup.
 - Can execute PowerShell and Bash scripts before or after resource setup.
+
+<h2></h2>
+
+# Analyze the decision criteria
+
+Analyzing Azure Management Tools Criteria:
+
+- Understanding criteria used by experts to choose Azure management tools for business needs.
+- Nuanced differences among products to be considered.
+
+One-Off Management Actions:
+
+- Use Azure PowerShell or Azure CLI for one-off management, administrative, or reporting actions.
+- Azure Resource Manager (ARM) templates are not intended for one-off scenarios.
+
+ARM Templates:
+
+- Express infrastructure requirements for repeatable deployments.
+- Can include PowerShell or Azure CLI scripts for flexibility.
+- Suited for scenarios requiring repeatable setups and dependency management.
+
+Azure Portal:
+
+- Visual interface for management and administrative actions.
+- Suitable for learning Azure, frequent resource setup, and visual reporting.
+- Less efficient for cloud management or administrative roles.
+
+Efficiency Considerations:
+
+- Azure CLI or PowerShell more efficient for cloud management or administrative roles.
+- Visual scanning and clicking in Azure Portal less efficient for such roles.
+
+Azure Mobile App:
+
+- Accessible via iOS or Android devices.
+- Full-featured, suitable when a laptop is not readily available for immediate issue viewing and triage.
+
+Repeatable Resource Setup:
+
+- Use ARM templates for repeated resource setups with proper dependencies.
+- ARM templates provide validation steps, item potency, and parallel resource creation.
+
+Scripting Considerations:
+
+- PowerShell preferred if coming from a Windows administration background.
+- Azure CLI preferred if coming from a Linux administration background.
+- Either tool can be used for most one-off administration tasks.
+
+Deployment Considerations:
+
+- PowerShell or Azure CLI can set up all resources for a deployment.
+- ARM templates provide validation steps and item potency, ensuring proper dependency management.
+
+
+
