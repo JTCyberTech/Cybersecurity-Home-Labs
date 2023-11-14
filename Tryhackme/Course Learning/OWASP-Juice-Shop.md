@@ -414,3 +414,51 @@ Successfully captured the flag.
 
 Question #2: Perform a persistent XSS!
 
+`149aa8ce13d7a4a8a931472308e269c94dc5f156`
+
+Log out > Login to the admin account to refresh the cache.
+
+Turn on interception on Burp Suite > Log out.
+
+<p align="center"> <img src="https://i.imgur.com/g0AqzRx.png" height="90%" width="90%" alt=""/>
+
+Click on "+" > Name: "True-Client-IP" > Value: "<iframe src="javascript:alert(`xss`)">" > Add > Forward
+
+<p align="center"> <img src="https://i.imgur.com/acBSSdH.png" height="90%" width="90%" alt=""/>
+
+Turn off interception on Burp Suite > Refresh the webpage. Successfully captured the flag.
+
+<p align="center"> <img src="https://i.imgur.com/Xbn7O2M.png" height="90%" width="90%" alt=""/>
+
+<h2></h2>
+
+Question #3: Perform a reflected XSS!
+
+`23cefee1527bde039295b2616eeb29e1edc660a0`
+
+Login the admin account > Click on the three line on the top left corner > Click on "Order & Payment" > Select "Order History".
+
+<p align="center"> <img src="https://i.imgur.com/WsFdowo.png" height="90%" width="90%" alt=""/>
+
+From there you will see a "Truck" icon, clicking on that will bring you to the track result page. You will also see that there is an id paired with the order.   
+
+`http://10.10.236.183/#/track-result?id=5267-11d7516875e64656`
+
+We will replace `5267-11d7516875e64656` with "<iframe src="javascript:alert(`xss`)">"
+
+<p align="center"> <img src="https://i.imgur.com/NDK0x8m.png" height="90%" width="90%" alt=""/>
+
+After submitting the URL, refresh the page and you will then get an alert saying XSS!
+
+<p align="center"> <img src="https://i.imgur.com/IVKrW1L.png" height="90%" width="90%" alt=""/>
+
+Successfully captured the flag.
+
+<p align="center"> <img src="https://i.imgur.com/butPQFt.png" height="90%" width="90%" alt=""/>
+
+Why does this work?
+
+The server will have a lookup table or database (depending on the type of server) for each tracking ID. As the 'id' parameter is not sanitised before it is sent to the server, we are able to perform an XSS attack.  
+
+
+
