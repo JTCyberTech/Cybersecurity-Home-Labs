@@ -42,6 +42,8 @@ Question #3: What show does Jim reference in his review?
 
 # Inject the juice
 
+<h3>Injection </h3>
+
 Focus on Injection Vulnerabilities: The task centers around injection vulnerabilities, which pose a significant threat to companies, potentially leading to downtime and data loss.
 
 Danger of Injection Vulnerabilities: Injection vulnerabilities can have severe consequences, including the potential for unauthorized access, data manipulation, and account compromise.
@@ -123,6 +125,8 @@ Refresh the webpage
 
 # Who broke my lock?!
 
+<h3>Broken Autherntication</h3>
+
 Task Objective: Exploiting authentication vulnerabilities through various flaws.
 
 Focus Area: Flaws within authentication mechanisms that are susceptible to manipulation.
@@ -180,7 +184,7 @@ Successfully capture the flag.
 
 Question #2: Reset Jim's password!
 
-``
+`094fbc9b48e525150ba97d05b942bbf114987257`
 
 - Surprising Fact: Even the password reset process can be vulnerable!
 - Example Scenario: Jim's security question is "Your eldest sibling's middle name?" on the Forgot Password page.
@@ -189,4 +193,224 @@ Question #2: Reset Jim's password!
 
 Log out the Admin account > Navigate to the login page > Click on "Forgot your password?`
 
-<p align="center"> <img src="https://i.imgur.com/hlQgccJ.png" height="90%" width="90%" alt=""/>
+<p align="center"> <img src="https://i.imgur.com/Vs4LtIL.png" height="90%" width="90%" alt=""/>
+
+Put in Jim's Email: `jim@juice-sh.op` > Security question asked "Your eldest silbings middle name?" > Go on wiki search "jim star trek" > Found `Samuel` to be the answer > Create New Password > Change.
+
+<p align="center"> <img src="https://i.imgur.com/MRChoYc.png" height="90%" width="90%" alt=""/>
+
+Successfully capture the flag.
+
+<p align="center"> <img src="https://i.imgur.com/3FJJW49.png" height="90%" width="90%" alt=""/>
+
+<h2></h2>
+
+# AH! Don't look!
+
+<h3>Sensitive Data Exposure</h3>
+
+A good web application needs to keep sensitive information safe. Unfortunately, sometimes developers don't do this properly, and it leaves the data open to potential risks.
+
+Often, the protection of data is not the same throughout the whole web application, which means some pages might be accessible to anyone. Additionally, there are cases where information is accidentally shared with the public without the developer knowing, making the web application more prone to attacks.
+
+<h2></h2>
+
+Question #1: Access the Confidential Document!
+
+`edf9281222395a1c5fee9b89e32175f1ccf50c5b`
+
+Click on the three lines on the upper left corner of the webpage > Click on "About Us".
+
+<p align="center"> <img src="https://i.imgur.com/lDhQnEs.png" height="90%" width="90%" alt=""/>
+
+Click on the green text.
+
+<p align="center"> <img src="https://i.imgur.com/qv2yRFC.png" height="90%" width="90%" alt=""/>
+
+Edit the URL: `http://10.10.236.183/ftp`
+
+<p align="center"> <img src="https://i.imgur.com/ntmRl1E.png" height="90%" width="90%" alt=""/>
+
+Download "acquisitions.md" and save it > Navigate to the home page.
+
+<p align="center"> <img src="https://i.imgur.com/868ALTn.png" height="90%" width="90%" alt=""/>
+
+Successfully capture the flag.
+
+<p align="center"> <img src="https://i.imgur.com/Lz7pHEf.png" height="90%" width="90%" alt=""/>
+
+<h2></h2>
+
+Question #2: Log into MC SafeSearch's account!
+
+`66bdcffad9e698fd534003fbb3cc7e2b7b55d7f0`
+
+https://youtu.be/v59CX2DiX0Y?si=Yq9tXpMyxcSXzkvm&t=38
+
+He notes that his password is "Mr. Noodles" but he has replaced some "vowels into zeros", meaning that he just replaced the o's into 0's.
+
+We now know the password to the mc.safesearch@juice-sh.op account is "Mr. N00dles"
+
+Login with the Email and Password.
+
+<p align="center"> <img src="https://i.imgur.com/TnZlBDg.png" height="90%" width="90%" alt=""/>
+
+Successfully captured the flag.
+
+<p align="center"> <img src="https://i.imgur.com/xBhdqlo.png" height="90%" width="90%" alt=""/>
+
+<h2></h2>
+
+Question #3: Download the Backup file!
+
+``
+
+We will now go back to the  http://10.10.236.183/ftp/ folder and try to download package.json.bak. But it seems we are met with a 403 which says that only .md and .pdf files can be downloaded. 
+
+<p align="center"> <img src="https://i.imgur.com/KcL6BPE.png" height="90%" width="90%" alt=""/>
+
+To get around this, we will use a character bypass called "Poison Null Byte". A Poison Null Byte looks like this: %00. 
+
+Note: as we can download it using the url, we will need to encode this into a url encoded format.
+
+The Poison Null Byte will now look like this: %2500. Adding this and then a .md to the end will bypass the 403 error!
+
+<p align="center"> <img src="https://i.imgur.com/8IFUOcP.png" height="90%" width="90%" alt=""/>
+
+Navigate back to the home page > Successfully captured the flag.
+
+<p align="center"> <img src="https://i.imgur.com/bJMC421.png" height="90%" width="90%" alt=""/>
+
+<h2></h2>
+
+# Who's flying this thing?
+
+<h3>Broken Access Control</h3>
+
+In modern systems, several users can access various pages. Typically, administrators use a special page to change, add, or delete elements on a website. This is common when using website-building tools like Weebly or Wix.
+
+If there are issues or bugs related to Broken Access Control, they fall into two categories:
+
+Horizontal Privilege Escalation:
+- When a user can do something or see data of another user with the same level of permissions.
+
+Vertical Privilege Escalation:
+- When a user can do something or see data of another user with higher permissions.
+
+<p align="center"> <img src="https://i.imgur.com/yRkU3uk.png" height="90%" width="90%" alt=""/>
+
+<h2></h2>
+
+Question #1: Access the administration page!
+
+`946a799363226a24822008503f5d1324536629a0`
+
+On the website's home page > Right click "Inspect" > Select "Sources" > Go to "main-es2015.js" > Press "ctrl + F" to search for `administration`.
+
+<p align="center"> <img src="https://i.imgur.com/ieOn60j.png" height="90%" width="90%" alt=""/>
+
+Found there is a path administration > navigate to that path by putting on the URL.
+
+<p align="center"> <img src="https://i.imgur.com/DuWJnoz.png" height="90%" width="90%" alt=""/>
+
+We will login admin account then try again > Successfully capture the flag.
+
+<p align="center"> <img src="https://i.imgur.com/mWTcNpX.png" height="90%" width="90%" alt=""/>
+
+
+<h2></h2>
+
+Question #2: View another user's shopping basket!
+
+`41b997a36cc33fbe4f0ba018474e19ae5ce52121`
+
+Turn on Intercept with Burp Suite > Click on the basket icon on the top 
+
+<p align="center"> <img src="https://i.imgur.com/djqfSNg.png" height="90%" width="90%" alt=""/>
+
+Click on Forward > Burp Suite "GET" request will change
+
+<p align="center"> <img src="https://i.imgur.com/0asKi4b.png" height="90%" width="90%" alt=""/>
+
+Change "/basket/1" into `/basket/2` > Click Forward > Successfully captured the flag.
+
+This changed to UserID 2's basket.
+
+<p align="center"> <img src="https://i.imgur.com/jAU3aVi.png" height="90%" width="90%" alt=""/>
+
+<h2></h2>
+
+Question #3: Remove all 5-star reviews!
+
+`50c97bcce0b895e446d61c83a21df371ac2266ef`
+
+Navigate to the `http://10.10.236.183/#/administration` page > Click the bin icon next to the review with 5 stars!
+
+<p align="center"> <img src="https://i.imgur.com/SVrMBFk.png" height="90%" width="90%" alt=""/>
+
+Successfully capture the flag.
+
+<p align="center"> <img src="https://i.imgur.com/ZjNA4lq.png" height="90%" width="90%" alt=""/>
+
+<h2></h2>
+
+# Where did that come from?
+
+<h3>Cross-Site Scripting XSS</h3>
+
+<p align="center"> <img src="https://i.imgur.com/unMzrgj.png" height="90%" width="90%" alt=""/>
+
+Simplified Explanation of XSS (Cross-site Scripting):
+
+XSS, or Cross-site scripting, is a security problem that allows bad actors to run JavaScript in web applications. These issues are quite common in web apps and can be easy or really tricky to fix because each app handles queries differently.
+
+Three Main Types of XSS Attacks:
+
+- DOM XSS (Special):
+
+  - Uses the HTML environment to run harmful JavaScript.
+  - Often involves the <script></script> HTML tag.
+  
+- Persistent XSS (Server-side):
+
+  - JavaScript runs when the server loads a page.
+  - Happens when the server doesn't properly clean up user data before displaying it on a page.
+  - Frequently seen in blog posts.
+
+- Reflected XSS (Client-side):
+
+  - JavaScript runs on the user's side of the web app.
+  - Often occurs when the server doesn't properly clean search data.
+ 
+In simpler terms, XSS is like a sneaky way bad actors use to make a website do things it shouldn't, and there are different types depending on where the tricky code shows up.
+
+<h2></h2>
+
+Question #1: Perform a DOM XSS!
+
+`9aaf4bbea5c30d00a1f5bbcfce4db6d4b0efe0bf`
+
+We will be using the iframe element with a javascript alert tag: <iframe src="javascript:alert(`xss`)"> 
+
+Inputting this into the search bar will trigger the alert.
+
+<p align="center"> <img src="https://i.imgur.com/fLfMQkz.png" height="90%" width="90%" alt=""/>
+
+Keep in mind that we're using an "iframe," which is a common building block in web applications. There are similar elements that achieve the same outcome.
+
+This kind of XSS is known as XFS, or Cross-Frame Scripting. It's a common way to identify XSS in web applications.
+
+If a website lets users change the iframe or other parts of the webpage (DOM elements), it's probably at risk for XSS.
+
+Why does this work?
+
+It is common practice that the search bar will send a request to the server in which it will then send back the related information, but this is where the flaw lies. Without correct input sanitation, we are able to perform an XSS attack against the search bar. 
+
+Successfully captured the flag.
+
+<p align="center"> <img src="https://i.imgur.com/dtEXGIt.png" height="90%" width="90%" alt=""/>
+
+<h2></h2>
+
+Question #2: Perform a persistent XSS!
+
