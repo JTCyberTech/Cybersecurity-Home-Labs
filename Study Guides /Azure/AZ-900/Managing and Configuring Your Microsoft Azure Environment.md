@@ -289,3 +289,83 @@ Conclusion:
 
 # Use ARM Templates to deploy an entire cloud Infrastructure
 
+Operationalizing Cloud Deployments for Tailwind Traders:
+
+- Goal: Achieve a repeatable, reliable way to scale operations during peak sales periods.
+- Requirement: Efficient scaling, creating resources in parallel, handling dependencies correctly, and ensuring no interruptions in provisioning infrastructure.
+
+Decision Criteria:
+
+- Need for one-off management, administrative, or reporting actions? No, the focus is on automating the deployment of the entire infrastructure.
+- Requirement for a repeatable and reliable way to deploy the entire infrastructure? Yes, this is the exact need.
+
+Chosen Solution: Azure Resource Manager (ARM) Templates:
+
+- Selected for automating the deployment of the entire infrastructure.
+- Declarative definition using JSON code, avoiding the need for imperative scripting in many cases.
+- Implies efficiency, parallel resource creation, correct dependency handling, and reliability.
+- ARM templates offer a scalable solution for Tailwind Traders to achieve their operationalization goals.
+
+Execution of Scripts:
+
+- In cases where imperative code is still needed for configuration or cleanup tasks, Azure PowerShell or Azure CLI can be used.
+- ARM templates remain the primary choice for scaling the production environment in this scenario.
+
+Overall:
+
+- The decision to use ARM templates aligns with the need for a repeatable, reliable, and efficient process for scaling operations during peak sales periods.
+- Declarative definition simplifies infrastructure deployment, ensuring correct order of dependencies and minimal chances of failure during provisioning.
+
+#
+
+# Knowledge Check
+
+1. Your company has recently moved to Azure cloud services from an on-premises Windows environment and the Chief Financial Officer (CFO) wants to gain insights into how Azure resources are being used and costed. He wants to see the data displayed visually and be able to run reports on an ongoing basis in real-time. Which tool would you recommend using in this scenario?
+
+`Azure Portal`: Given the requirement to view data visually and create custom reports the Azure portal is the best choice. You can quickly find answers to questions using a range of reporting options.
+
+2. Your company runs a successful ecommerce business. Typically, at certain times of the year resource usage spikes and it becomes necessary for some staff members to be onsite to monitor the services and deal with any issues these surges may cause. Having moved to Azure, the IT (Information Technology) manager is now hoping to provide a solution that will allow employees to monitor the services remotely.
+
+Which service Azure Cloud services do you think is best to use in this scenario?
+
+`Azure mobile app`: The Azure mobile app running on a phone or tablet could help key employees keep an eye on the health of the cloud environment. The Azure mobile app is a good compromise in this scenario, it allows employees the freedom to be away from the office while still being able to perform one-off management and administrative tasks.
+
+3. True or False
+
+Azure PowerShell is available for Windows, Linux, and Mac.
+
+`True`: Azure PowerShell is available for Windows, Linux, and Mac, and can be accessed in a web browser via the Cloud Shell.
+
+4. True or False
+
+The Azure CLI (Command Line Interface) is an executable program that allows developers, DevOps, and IT professionals to execute commands using bash.
+
+`True`: The Azure CLI (Command Line Interface) is an executable program that allows developers, DevOps, and IT professionals execute commands using bash.
+
+# 
+
+# Test prep
+
+1. Which of Azure’s monitoring offerings would be most beneficial for evaluating your Azure resources and making recommendations to help you improve reliability, security, and performance?
+
+`Azure Advisor`: Azure Advisor evaluates your Azure resources and makes recommendations to help you improve reliability, security, and performance, achieve operational excellence, and reduce costs.
+
+2. Tailwind Traders have recently migrated to Azure cloud services. 
+Management wants to ensure that their current implementation is optimized for security and performance in line with industry best practices. Which monitoring tool would you recommend using for this?
+
+`Azure Advisor`: Azure Advisor evaluates your Azure resources and makes recommendations to help you improve reliability, security, and performance, achieve operational excellence, and reduce costs
+
+3. Your company runs a successful eCommerce business. The company has multiple offices which require IT staff to travel between them on a regular basis. Having recently migrated to Azure, the IT (Information Technology) manager is now hoping to provide a solution that will allow employees to monitor the services remotely. Which service Azure Cloud services do you think is best to use in this scenario?
+
+`Azure Mobile App`: The Azure mobile app running on a phone or tablet could help key employees keep an eye on the health of the cloud environment. The Azure mobile app is a good compromise in this scenario, it allows employees the freedom to be away from the office while still being able to perform one-off management and administrative tasks.
+
+4. Your company has recently moved to Azure cloud services from a Linux based on-premises environment. Which tool would you recommend using in this scenario?
+
+`Azure CLI`: Azure CLI is more beneficial to those with a Linux administration and scripting background who wish to perform one-off management or administrative actions.
+
+# 
+
+# Summary
+
+
+In this module, we aimed to assist Tailwind traders in selecting the right Microsoft Cloud management tools for their technical needs. We explored various options like the Azure portal, mobile app, PowerShell, CLI, and Resource Manager templates, analyzing when to use each. Applying these criteria, we recommended specific tools for three Tailwind traders initiatives. Without these tools, the company's interaction with Azure would be limited, but Azure offers a robust set of visual, scripting, and infrastructure as code tools.
