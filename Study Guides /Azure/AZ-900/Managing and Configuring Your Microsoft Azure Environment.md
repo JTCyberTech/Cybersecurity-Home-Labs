@@ -132,5 +132,160 @@ Deployment Considerations:
 - PowerShell or Azure CLI can set up all resources for a deployment.
 - ARM templates provide validation steps and item potency, ensuring proper dependency management.
 
+<h2></h2>
 
+# Visually understand and manage your cloud environment
+
+Azure Usage at Tailwind Traders:
+
+- Tailwind Traders extensively uses Azure across the organization.
+
+Cloud Spending Awareness:
+
+- Director of Cloud Operations and Chief Financial Officer meet weekly to discuss Cloud spending.
+
+Meeting Goals:
+
+- Discussion starts at a high level but may involve deep dives for insights into Azure resource usage.
+
+Data Visualization and Real-time Reporting:
+
+- Ideal scenario includes visualizing data and running custom reports in real-time during the meeting.
+
+Tool Selection Criteria:
+
+- Decision criteria include the need for one-off management, administrative actions, or reporting.
+- Azure portal is chosen based on the requirement to view data visually and create custom reports during the meeting.
+
+Azure Portal Advantages:
+
+- Provides a wealth of reporting options.
+- Enables meeting attendees to quickly find answers to their questions.
+
+Relevance of Scripting Background:
+
+- Questions about repeatedly setting up resources and scripting background are deemed irrelevant for this scenario.
+- The director of Cloud operations and the CFO won't be deploying or configuring any resources.
+
+Conclusion:
+
+- Azure portal is the correct product option for this scenario, meeting the needs of visual data presentation and real-time reporting without the need for resource deployment or configuration.
+
+<h2></h2>
+
+# Use Azure for one-off administrative tasks
+
+Tailwind Traders Scenario:
+
+- Team with diverse technologists.
+- Strong backgrounds in Windows development and network administration.
+- Applications moved to the cloud, requiring one-off testing, management, and administrative tasks.
+
+Issue with Azure Portal:
+
+- Managing Azure from the portal is time-consuming and not repeatable.
+
+Decision Criteria:
+
+- Need for one-off management, administrative, or reporting tasks: Yes.
+- Requirement for a repeatable and reliable means of deploying the entire infrastructure: No.
+- Scripting background: Windows administration.
+
+Tool Options:
+
+- Azure PowerShell and Azure CLI are both suitable.
+- Azure Resource Manager templates are not the right choice for this scenario.
+
+Choice:
+
+- Azure PowerShell is the best choice.
+- Comfortable syntax for a team with a Windows administration background.
+- Allows the team to perform one-off administration tasks efficiently and with familiarity.
+
+<h2></h2>
+
+# Use the Azure CLI for one-off administrative tasks
+
+Tailwind Traders' Technologists:
+
+- Employs technologists with diverse skills.
+
+DevOps Team Focus:
+
+- DevOps team primarily concerned with keeping external systems, like the e-commerce site, operational.
+- Possesses a Linux administration background.
+
+Challenges in Azure Management:
+
+- Managing Azure from the portal is time-consuming and non-repeatable.
+
+Tool Selection Criteria:
+
+- Need a tool for administrative tasks related to the health of the cloud environment.
+
+Decision Criteria Application:
+
+- Skip Azure Resource Manager templates and Azure portal based on decision criteria.
+
+Third Decision Criterion:
+
+- Choose the option based on the team's background.
+
+Preferred Option for Linux Administration Background:
+
+- Due to a Linux administration background, the team would be most comfortable using the Azure CLI.
+
+Azure CLI Benefits:
+
+- Allows the use of the bash shell and its syntax.
+- Enables efficient performance of administrative tasks.
+
+Conclusion:
+
+- Azure CLI is identified as the best choice for this scenario based on the team's background and the need for effective administration tasks in the Azure environment.
+
+#
+
+# Manage Azure on the go
+
+Tailwind Traders Situation:
+
+- Experiences surges in e-commerce traffic during national holidays and weekends.
+- Historically, critical system managers had to convene at the director of cloud operations' office during important periods.
+
+Operational Improvement:
+
+- Tailwind Traders has successfully operationalized most critical systems.
+
+Director's Intention:
+
+- Director wants to relax the requirement for managers to be physically present during peak periods.
+- Aims to allow employees to spend holidays and weekends with their families.
+
+Need for Remote Monitoring:
+
+- Question: Does Tailwind Traders need to remotely monitor and administer services?
+- Answer: Yes.
+
+Solution Suggested:
+
+- Proposed solution involves using a phone or tablet for remote monitoring.
+- Azure mobile app is recommended as a suitable compromise.
+- Allows key employees to monitor the health of the cloud environment while away from the office.
+
+Benefits of Azure Mobile App:
+
+- Enables employees to be away from work while still performing essential management and administrative tasks.
+
+Decision Criteria:
+
+- In this unique scenario, the text suggests that the decision criteria beyond the Azure mobile app can be skipped.
+
+Conclusion:
+
+- The Azure mobile app is identified as the right choice for Tailwind Traders in this scenario.
+
+#
+
+# Use ARM Templates to deploy an entire cloud Infrastructure
 
