@@ -173,4 +173,112 @@ In order to bruteforce we will first check out the webpage. I will be using burp
 
 Navigate to the IP Address [10.10.212.196].
 
-https://i.imgur.com/Peqbglg.png
+<p align="center"> <img src="https://i.imgur.com/Peqbglg.png" height="90%" width="90%" alt=""/>
+
+Put in random things for username and password to login on the webpage > Turn Intercept on > Click on "Login".
+
+<p align="center"> <img src="https://i.imgur.com/ccTCCTl.png" height="90%" width="90%" alt=""/>
+
+We got the interception. We got the <login_credentials>: `username=a&password=a` which is `username=^USER^&password=^PASS^`.
+
+<p align="center"> <img src="https://i.imgur.com/moBTpY7.png" height="90%" width="90%" alt=""/>
+
+We will now click on the "Forward" button to see the <invalid_response>: `Your username or password is incorrect.`
+
+<p align="center"> <img src="https://i.imgur.com/JWJjzuP.png" height="90%" width="90%" alt=""/>
+
+We came up with the full command to bruteforce: hydra -l molly -P rockyou.txt  10.10.212.196 http-post-form "/login:username=^USER^&password=^PASS^:Your username or password is incorrect." -V
+
+- `hydra`: The command itself, invoking the Hydra tool.
+
+- `-l molly`: Specifies the login username to be "molly."
+
+- `-P rockyou.txt`: Specifies the path to a file containing a list of passwords (rockyou.txt in this case).
+
+- `10.10.212.196`: The IP address of the target system.
+
+- `http-post-form`: Indicates the type of attack, in this case, it's an HTTP POST form-based attack.
+
+- `"/login:username=^USER^&password=^PASS^:Your username or password is incorrect."`:
+
+  -Specifies the login form details:
+    - `/login`: The URL of the login page.
+    - `username=^USER^&password=^PASS^`: The form data to be sent, where ^USER^ and ^PASS^ will be replaced by Hydra during the brute-force attack.
+    - `Your username or password is incorrect`.: The failure message indicating an unsuccessful login attempt.
+- `-V`: Enables verbose mode. It provides more detailed output during the attack, showing the progress and results.
+
+In summary, this command uses Hydra to perform a brute-force attack on an HTTP login form located at /login on the target IP address (10.10.212.196). The attack uses the username "molly" and a list of passwords from rockyou.txt. The results of the attack are displayed with additional details due to the -V flag. Always ensure you have proper authorization before attempting any form of password brute-force or penetration testing, as unauthorized access attempts may be illegal.
+
+Successfully got molly's password to be `sunshine`.
+
+<p align="center"> <img src="https://i.imgur.com/WV2RQLI.png" height="90%" width="90%" alt=""/>
+
+Put in the username and password on the webpage > Click on "login".
+
+<p align="center"> <img src="https://i.imgur.com/j2DUlhE.png" height="90%" width="90%" alt=""/>
+
+Successfully captured the flag for flag1.
+
+<p align="center"> <img src="https://i.imgur.com/3zO1Azy.png" height="90%" width="90%" alt=""/>
+
+`THM{2673a7dd116de68e85c48ec0b1f2612e}`
+
+#
+
+# Use Hydra to bruteforce molly's SSH password
+
+We will just use this command:
+
+`hydra -l molly -P rockyou.txt 10.10.212.196 -t 4 ssh`
+
+- `hydra`: The command itself, invoking the Hydra tool.
+
+- `-l molly`: Specifies the login username to be "molly."
+
+- `-P rockyou.txt`: Specifies the path to a file containing a list of passwords (rockyou.txt in this case).
+
+- `10.10.212.196`: The IP address of the target system.
+
+- `-t 4`: Specifies the number of parallel tasks or threads to use during the attack. In this case, it's set to 4 threads.
+
+- `ssh`: Specifies the target service as SSH. Hydra supports various protocols, and in this case, it's attempting to perform a brute-force attack on an SSH service.
+
+When you run this command, Hydra will use the provided username "molly" and passwords from the "rockyou.txt" wordlist to attempt to log in to the SSH service on the target system (IP address 10.10.212.196). The -t 4 option allows Hydra to perform the attack using multiple threads, making the process more efficient.
+
+Please note that attempting to gain unauthorized access to systems is unethical and likely illegal. Always ensure you have proper authorization before conducting any security testing.
+
+- Successfully capture molly's password for ssh
+
+<p align="center"> <img src="https://i.imgur.com/sBf3wz2.png" height="90%" width="90%" alt=""/>
+
+Login to molly's ssh:
+
+`ssh molly@10.10.212.196`
+
+- `ssh`: This is the command-line tool used to establish a secure shell connection to a remote server.
+
+- `molly`: This is the username used to log in to the remote server. Replace it with the appropriate username for your situation.
+
+- `@`: The "@" symbol is used to separate the username from the host IP address.
+
+- `10.10.212.196`: This is the IP address of the remote server. Replace it with the actual IP address or hostname of the server you want to connect to.
+
+When you run this command, it prompts you for the password associated with the specified username on the remote server. If the password is correct and the user has the necessary permissions, an SSH session is established, allowing you to interact with the remote server's command-line interface.
+
+Keep in mind that for security reasons, using SSH keys for authentication is recommended over password-based authentication. Also, ensure that you have the proper authorization to access the remote server. Unauthorized access attempts are unethical and may be illegal.
+
+<p align="center"> <img src="https://i.imgur.com/yKX6QEv.png" height="90%" width="90%" alt=""/>
+
+Type in: `yes` > Put in the password: `butterfly`.
+
+- Successfully login to molly's ssh.
+
+<p align="center"> <img src="https://i.imgur.com/AziJ1hq.png" height="90%" width="90%" alt=""/>
+
+Use `ls` command to list all files in the current directory > Use `cat` command to read the flag2.txt.
+
+- Successfully capture the flag for flag2.
+
+<p align="center"> <img src="https://i.imgur.com/JzVrrmj.png" height="90%" width="90%" alt=""/>
+
+`THM{c8eeb0468febbadea859baeb33b2541b}`
