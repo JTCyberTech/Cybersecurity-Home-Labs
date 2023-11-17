@@ -445,3 +445,6 @@ Question 5: What is the root flag?
 Question: Using winPeas, what was the Original Install time? (This is date and time)
 
 `8/3/2019, 10:43:23 AM`
+
+<p align="center"> <img src="https://i.imgur.com/WXvzAEh.png" height="90%" width="90%" alt=""/>
+
