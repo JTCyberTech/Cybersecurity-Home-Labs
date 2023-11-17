@@ -1,4 +1,4 @@
-![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/ec4a42d7-712d-4ea2-8b80-239d530432a7)# HackPark
+# HackPark
 
 Room [HackPark](https://tryhackme.com/room/hackpark)
 
