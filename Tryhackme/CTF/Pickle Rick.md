@@ -2,6 +2,8 @@
 
 Room [Pickle Rick](https://tryhackme.com/room/picklerick) on TryHackMe
 
+#
+
 Make a directory with the room name in the Tryhackme Folder.
 
 - Change directory to /Desktop/Tryhackme.
