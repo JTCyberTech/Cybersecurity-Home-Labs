@@ -68,7 +68,155 @@ On Terminal: `gobuster dir -u 10.10.62.253 -w ../../wordlists/dirbuster/director
 
 <p align="center"> <img src="https://i.imgur.com/PpuujVu.png" height="90%" width="90%" alt=""/>
 
+#
+
+# Obtain user and root
+
+The webpage's [10.10.62.253] CMS is Joomla. In order to find the version of Joomla, we will use the command: `joomscan`. Can be downloaded on linux terminal.
+
+<p align="center"> <img src="https://i.imgur.com/V7shmVf.png" height="90%" width="90%" alt=""/>
+
+We will find out the version of Joomla with this command:
+
+`joomscan -u 10.10.62.253`
+
+<p align="center"> <img src="https://i.imgur.com/HkdWHXc.png" height="90%" width="90%" alt=""/>
+
+Question: What is the Joomla version?
+
+`3.7.0`
 
 #
 
-# 
+Now we will use python script to crack Jonah's password.
+
+First we need to find out the vulnerability of Joomla 3.7.0 by Googling.
+
+
+On the hint, it says: "SQLi and JohnTheRipper", we will google: "Joomla 3.7.0 exploit db SQLi".
+
+<p align="center"> <img src="https://i.imgur.com/p9OClHE.png" height="90%" width="90%" alt=""/>
+
+We found the CVE to be CVE-2017-8917. 
+
+<p align="center"> <img src="https://i.imgur.com/kkoOwwT.png" height="90%" width="90%" alt=""/>
+
+We will now search on google: "CVE-2017-8917 python script". You can choose any of them but I chose the second one.
+
+<p align="center"> <img src="https://i.imgur.com/HKwtd4A.png" height="90%" width="90%" alt=""/>
+
+Click on "joomblah.py" > Raw
+
+<p align="center"> <img src="https://i.imgur.com/LhGdjeV.png" height="90%" width="90%" alt=""/>
+
+To grab the script into our machine, we copy the URL of the [Raw] and use this command on the terminal:
+
+`wget https://raw.githubusercontent.com/stefanlucas/Exploit-Joomla/master/joomblah.py`
+
+<p align="center"> <img src="https://i.imgur.com/j7ItSNH.png" height="90%" width="90%" alt=""/>
+
+Now we have the script in our project folder.
+
+<p align="center"> <img src="https://i.imgur.com/oMVGc4s.png" height="90%" width="90%" alt=""/>
+
+We will now run the new script with the webpage IP Address.
+
+`python3 joomblah.py http://10.10.62.253/`
+
+- We found the username: "jonah", email: "jonah@tryhackme.com", password in hash: `$2y$10$0veO/JSFh4389Lluc4Xya.dfy2MF.bZhz0jVMw.V.d3p12kBtZutm`
+
+<p align="center"> <img src="https://i.imgur.com/TSE87E8.png" height="90%" width="90%" alt=""/>
+
+We will look into the hash and find out what type of hash it is by using hashcat example(https://hashcat.net/wiki/doku.php?id=example_hashes).
+
+Press "Ctrl + F" and enter "$2" to find what type of hash is the password.
+
+- Found the hash to be "bcrypt" Hash mode: 3200
+
+<p align="center"> <img src="https://i.imgur.com/lwCwVLj.png" height="90%" width="90%" alt=""/>
+
+We will now use Johntheripper to crack the password but first we will need to put the hash value into a txt file.
+
+<p align="center"> <img src="https://i.imgur.com/tGN1F9v.png" height="90%" width="90%" alt=""/>
+
+Then we will use `john` command to crack the hash.
+
+`john --format=bcrypt --wordlist=../../wordlists/rockyou.txt hash.txt`
+
+- We got the password to be "spiderman123"
+
+<p align="center"> <img src="https://i.imgur.com/SHFxTkT.png" height="90%" width="90%" alt=""/>
+
+Question 2: What is Jonah's cracked password?
+
+`spiderman123`
+
+#
+
+Now we are going to login to the webpage with this password.
+
+Logging into the default page didn't see anything special. 
+
+<p align="center"> <img src="https://i.imgur.com/SHFxTkT.png" height="90%" width="90%" alt=""/>
+
+So I look into my gobuster.txt and found the directory: /administrator
+
+<p align="center"> <img src="https://i.imgur.com/5866KJU.png" height="90%" width="90%" alt=""/>
+
+Login with the same user:password jonah:spiderman123.
+
+<p align="center"> <img src="https://i.imgur.com/FdZS63y.png" height="90%" width="90%" alt=""/>
+
+We will need to upload a reverse shell on the webpage and exploit it.
+
+To do this, we will need to click on "Extensions" > "Templates" > "Templates".
+
+<p align="center"> <img src="https://i.imgur.com/1zAxQIl.png" height="90%" width="90%" alt=""/>
+
+Click on "Protostar".
+
+<p align="center"> <img src="https://i.imgur.com/WwEqDAH.png" height="90%" width="90%" alt=""/>
+
+Click on "New File".
+
+<p align="center"> <img src="https://i.imgur.com/dNm47PB.png" height="90%" width="90%" alt=""/>
+
+Call the new file "Shell" and file type ".php" > Create.
+
+<p align="center"> <img src="https://i.imgur.com/SmXfbE3.png" height="90%" width="90%" alt=""/>
+
+Now find a reverse php shell on google and paste it into the file.
+
+<p align="center"> <img src="https://i.imgur.com/jj6nozp.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/FyKWIxw.png" height="90%" width="90%" alt=""/>
+
+After pasting the shell into the file, we need to change the IP into **our** own IP address.
+- In my case: "10.6.106.187"
+
+Change the port into anything that you want.
+- In my case: "1202"
+
+<p align="center"> <img src="https://i.imgur.com/P3eQlqS.png" height="90%" width="90%" alt=""/>
+
+Save the file.
+
+<p align="center"> <img src="https://i.imgur.com/w8PI3XM.png" height="90%" width="90%" alt=""/>
+
+Now we will go to the terminal and use `ncat` to listen.
+
+`ncat -nlvp 1202`
+
+<p align="center"> <img src="https://i.imgur.com/2TszRtr.png" height="90%" width="90%" alt=""/>
+
+Since the webpage said the file is in /template, we will navigate to /templates to open "shell.php".
+
+- `http://10.10.62.253/templates/protostar/shell.php`
+
+<p align="center"> <img src="https://i.imgur.com/NXwxkQA.png" height="90%" width="90%" alt=""/>
+
+We have successfully got in using ncat.
+
+<p align="center"> <img src="https://i.imgur.com/F6Inlyp.png" height="90%" width="90%" alt=""/>
+
+
