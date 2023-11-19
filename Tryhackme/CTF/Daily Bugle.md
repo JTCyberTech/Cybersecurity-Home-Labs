@@ -219,4 +219,62 @@ We have successfully got in using ncat.
 
 <p align="center"> <img src="https://i.imgur.com/F6Inlyp.png" height="90%" width="90%" alt=""/>
 
+#
 
+We will try to get some information with the "configuration.php" file in `/var/www/html` to see if there something interesting.
+
+- See there is some sort of a $password = `nv5uz9r3ZEDzVjNu`
+
+<p align="center"> <img src="https://i.imgur.com/nRvJEop.png" height="90%" width="90%" alt=""/>
+
+We will change the directory to `/home` to see the users in the system
+
+- Found user: "jjameson`.
+
+<p align="center"> <img src="https://i.imgur.com/qPA6Gs2.png" height="90%" width="90%" alt=""/>
+
+Now we will try to use ssh to login with jjameson:nv5uz9r3ZEDzVjNu.
+
+On new Terminal: `ssh jjameson@10.10.62.253`
+
+- Successfully login to jjameson's ssh.
+
+<p align="center"> <img src="https://i.imgur.com/XAZj1Wt.png" height="90%" width="90%" alt=""/>
+
+Successsully capture the user flag.
+
+<p align="center"> <img src="https://i.imgur.com/x8zOimm.png" height="90%" width="90%" alt=""/>
+
+Question 3: What is the user flag?
+
+`27a260fe3cba712cfdedb1c86d80442e`
+
+#
+
+We will now try to gain root access.
+
+First we will run: `sudo -l` to see if we can exploit anything.
+
+- It said we can exploit with `yum`.
+
+<p align="center"> <img src="https://i.imgur.com/FBhW6Xp.png" height="90%" width="90%" alt=""/>
+
+Go to Gtfobins(https://gtfobins.github.io/gtfobins/yum/#sudo) and search for yum, sudo.
+
+<p align="center"> <img src="https://i.imgur.com/78CjuZ5.png" height="90%" width="90%" alt=""/>
+
+We will copy and paste part B into the ssh.
+
+<p align="center"> <img src="https://i.imgur.com/IYxA3Xa.png" height="90%" width="90%" alt=""/>
+
+Successfully gain root privilege.
+
+<p align="center"> <img src="https://i.imgur.com/9P9Ys9w.png" height="90%" width="90%" alt=""/>
+
+Successfully captured the root flag.
+
+<p align="center"> <img src="https://i.imgur.com/ylSCwuC.png" height="90%" width="90%" alt=""/>
+
+Question 4: What is the root flag?
+
+`eec3d53292b1821868266858d7fa6f79`
