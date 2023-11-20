@@ -207,13 +207,82 @@ Next we need to find out what hash-mode to use with hashcat [https://hashcat.net
 
 <p align="center"> <img src="https://i.imgur.com/th0T1Sj.png" height="90%" width="90%" alt=""/>
 
-We will use john to crack it again. But first we will need to save the hash into a txt file name "hash2.txt".
+We will use hashcat to crack the password. But first we will need to save the hash into a txt file name "hash2.txt".
 - We will follow the format of the sha512, starting with the hash then :salt, "hash:salt".
 
 <p align="center"> <img src="https://i.imgur.com/E8aOtMW.png" height="90%" width="90%" alt=""/>
 
-Then using `john` command to crack the password:
+Then using `hashcat` command to crack the password:
 
-`john -m 1710 hash2.txt ../../wordlists/rockyou.txt`
+`hashcat -m 1710 hash2.txt ../../wordlists/rockyou.txt`
+
+<p align="center"> <img src="https://i.imgur.com/IwH6kKV.png" height="90%" width="90%" alt=""/>
+
+Successfully cracked the password to be "november16"
+
+`november16`
+
+#
+
+# Task 3: Attack - Get back in!
+
+Question 1: The attacker defaced the website. What message did they leave as a heading?
+
+Navigate to the IP address [10.10.80.166]
+
+<p align="center"> <img src="https://i.imgur.com/7GHsNXq.png" height="90%" width="90%" alt=""/>
+
+`H4ck3d by CooctusClan`
+
+# 
+
+Question 2: What is the user flag?
+
+On our nmap scan in the beginning we found port 2222 is open and it's ssh port. We will use it to get into the machine.
+
+We will be using the username: "james" since it's the first username on the TCP Stream.
+
+<p align="center"> <img src="https://i.imgur.com/Ong0rBV.png" height="90%" width="90%" alt=""/>
+<p align="center"> <img src="https://i.imgur.com/7JiJ53v.png" height="90%" width="90%" alt=""/>
+
+We will just the ssh command: 
+
+`ssh james@10.10.80.166 -p 2222`, didn't work so i will add `-oHostKeyAlgorithms=+ssh-rsa`.
+
+Command: `ssh james@10.10.80.166 -p 2222 -oHostKeyAlgorithms=+ssh-rsa` <-- "-oHostKeyAlgorithms=+ssh-rsa" important note.
+
+Successfully got in the ssh with james account.
+
+<p align="center"> <img src="https://i.imgur.com/ZPEsC7E.png" height="90%" width="90%" alt=""/>
+
+Successfully capture the user flag.
+
+<p align="center"> <img src="https://i.imgur.com/6lF4st4.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 3: What is the root flag?
+
+In James's directory, we can use `ls -al` command to long list with detail for all the files and directories in it.
+
+We found a root file ".suid_bash". 
+
+<p align="center"> <img src="https://i.imgur.com/tnaRqqD.png" height="90%" width="90%" alt=""/>
+
+We can go to gtfobins to search for exploit. In gtfobins, search for bash > "SUID".
+
+<p align="center"> <img src="https://i.imgur.com/8QatDr7.png" height="90%" width="90%" alt=""/>
+
+We will change the `./bash -p` into `./.suid_bash -p` and run it.
+- Successfully gain root privilege.
+
+<p align="center"> <img src="https://i.imgur.com/75Cvbfs.png" height="90%" width="90%" alt=""/>
+
+Change directory to root then get the root flag.
+- Successfully captured the root flag.
+
+<p align="center"> <img src="https://i.imgur.com/KbfWAsg.png" height="90%" width="90%" alt=""/>
+
+`thm{d53b2684f169360bb9606c333873144d}`
 
 
