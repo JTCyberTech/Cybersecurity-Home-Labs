@@ -59,7 +59,7 @@ On Terminal: `gobuster dir -u 10.10.80.166 -w ../../wordlists/dirbuster/director
 
 #
 
-# Forensics - Analyse the PCAP
+# Task 1: Forensics - Analyse the PCAP
 
 We will download the task files on the webpage and move it into our project directory.
 
@@ -150,3 +150,70 @@ We found 4 out of 5 password using john.
 Question 5: Using the fasttrack wordlist, how many of the system passwords were crackable?
 
 `4`
+
+#
+
+# Task 2: Research - Analyse the code
+
+Question 1: What's the default hash for the backdoor?
+
+First we want to navigate to the github website we found on question 4 on Task 1. "https://github.com/NinjaJc01/ssh-backdoor".
+
+<p align="center"> <img src="https://i.imgur.com/8PTO6QW.png" height="90%" width="90%" alt=""/>
+
+We will click on "main.go" on the webpage.
+
+<p align="center"> <img src="https://i.imgur.com/WRU5iI0.png" height="90%" width="90%" alt=""/>
+
+We found the default hash value of the backdoor.
+
+<p align="center"> <img src="https://i.imgur.com/8wYxMN7.png" height="90%" width="90%" alt=""/>
+
+`bdd04d9bb7621687f5df9001f5098eb22bf19eac4c2c30b6f23efed4d24807277d0f8bfccb9e77659103d78c56e66d2d7d8391dfc885d0e9b68acd01fc2170e3`
+
+# 
+
+Question 2: What's the hardcoded salt for the backdoor?
+
+On the "main.go" page, scroll all the way down, click on verifyPass and it tells us the value is set to be (hash, salt, password string).
+
+<p align="center"> <img src="https://i.imgur.com/qw6MuNd.png" height="90%" width="90%" alt=""/>
+
+`1c362db832f3f864c8c2fe05f2002a05`
+
+# 
+
+Question 3: What was the hash that the attacker used? - go back to the PCAP for this!
+
+We will go back to the PCAP TCP Stream and examine it.
+
+Scroll all the way down on the TCP Stream, the hash is stated after `./backdoor -a`.
+
+<p align="center"> <img src="https://i.imgur.com/pbe26sF.png" height="90%" width="90%" alt=""/>
+
+`6d05358f090eea56a238af02e47d44ee5489d234810ef6240280857ec69712a3e5e370b8a41899d0196ade16c0d54327c5654019292cbfe0b5e98ad1fec71bed`
+
+#
+
+Question 4: Crack the hash using rockyou and a cracking tool of your choice. What's the password?
+
+First we need to find out what hash type it is by using: [https://hashes.com/en/tools/hash_identifier].
+- Found to be "SHA512".
+
+<p align="center"> <img src="https://i.imgur.com/HeneuTq.png" height="90%" width="90%" alt=""/>
+  
+Next we need to find out what hash-mode to use with hashcat [https://hashcat.net/wiki/doku.php?id=example_hashes]. 
+- We will use 1710 because we have the $pass and $salt.
+
+<p align="center"> <img src="https://i.imgur.com/th0T1Sj.png" height="90%" width="90%" alt=""/>
+
+We will use john to crack it again. But first we will need to save the hash into a txt file name "hash2.txt".
+- We will follow the format of the sha512, starting with the hash then :salt, "hash:salt".
+
+<p align="center"> <img src="https://i.imgur.com/E8aOtMW.png" height="90%" width="90%" alt=""/>
+
+Then using `john` command to crack the password:
+
+`john -m 1710 hash2.txt ../../wordlists/rockyou.txt`
+
+
