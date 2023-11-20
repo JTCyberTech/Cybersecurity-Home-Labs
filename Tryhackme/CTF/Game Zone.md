@@ -1,6 +1,6 @@
-# Game Zone on TryHackMe
+# Game Zone
 
-Room [Game Zone](https://tryhackme.com/room/gamezone)
+Room [Game Zone](https://tryhackme.com/room/gamezone) on TryHackMe
 
 #
 
