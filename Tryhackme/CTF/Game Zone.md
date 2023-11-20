@@ -1,4 +1,4 @@
-# Game Zone
+# Game Zone on TryHackMe
 
 Room [Game Zone](https://tryhackme.com/room/gamezone)
 
