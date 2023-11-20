@@ -1,6 +1,6 @@
-# Alfred on TryHackMe
+# Alfred
 
-Room [Alfred](https://tryhackme.com/room/alfred)
+Room [Alfred](https://tryhackme.com/room/alfred) on TryHackMe 
 
 #
 
