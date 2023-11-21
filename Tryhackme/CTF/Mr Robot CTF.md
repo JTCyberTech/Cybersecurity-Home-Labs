@@ -279,3 +279,29 @@ We will try to get in the root account by looking for suid binaries to bypass.
 - We see that `/usr/local/bin/nmap` is there and it's very suspicious.
 
 <p align="center"> <img src="https://i.imgur.com/STvc4Hl.png" height="90%" width="90%" alt=""/>
+
+Now we will go to Gtfobins [https://gtfobins.github.io/gtfobins/nmap/#suid] to search for an exploit for nmap shell.
+
+<p align="center"> <img src="https://i.imgur.com/BW4pgD0.png" height="90%" width="90%" alt=""/>
+
+We will navigate to the directory: `/usr/local/bin`
+
+<p align="center"> <img src="https://i.imgur.com/kR6QTlu.png" height="90%" width="90%" alt=""/>
+
+We now copy the command `nmap --interactive` that we found for nmap shell on Gtfobins. And run it on the shell.
+
+<p align="center"> <img src="https://i.imgur.com/V4fBctY.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/HEjoxTY.png" height="90%" width="90%" alt=""/>
+
+Now we just have to type in: `!sh`
+
+<p align="center"> <img src="https://i.imgur.com/tGAmAuW.png" height="90%" width="90%" alt=""/>
+
+Successfully captured the last flag.
+
+<p align="center"> <img src="https://i.imgur.com/y2kyhjW.png" height="90%" width="90%" alt=""/>
+
+Question 3: What is key 3?
+
+`04787ddef27c3dee1ee161b21670b4e4`
