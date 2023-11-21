@@ -26,7 +26,7 @@ Make a directory with the room name in the Tryhackme Folder.
 
 Deploy the machine by connecting to TryHackMe network. 
 
-Temporary IP Address: [10.10.64.31]
+Temporary IP Address: [10.10.64.31], then [10.10.255.40]
 
 #
 
@@ -171,3 +171,111 @@ Command: `hydra -l Elliot -P fsocity.dic 10.10.64.31 http-post-form "/wp-login.p
   - `The password you entered for the username"`: The failure message indicating an unsuccessful login attempt.
   - `-t 30`: Limits the number of tasks to 30. This is the number of parallel connections Hydra will use to perform the attack.
  
+Successfully found the password for `Elliot` to be `ER28-0652`
+
+<p align="center"> <img src="https://i.imgur.com/z7L0i7K.png" height="90%" width="90%" alt=""/>
+
+#
+
+# Login and Examine
+
+Login with `Elliot:ER28-0652`
+
+<p align="center"> <img src="https://i.imgur.com/VJT0D75.png" height="90%" width="90%" alt=""/>
+
+Found that we can use the editor to update the file.
+
+<p align="center"> <img src="https://i.imgur.com/wVrBS5v.png" height="90%" width="90%" alt=""/>
+
+We will navigate to the `archives.php` to update and upload a reverse shell into the machine.
+
+<p align="center"> <img src="https://i.imgur.com/41uVJX8.png" height="90%" width="90%" alt=""/>
+
+#
+
+# Upload Reverse Shell.
+
+First we will use `ncat` command to listen on port 1202.
+
+<p align="center"> <img src="https://i.imgur.com/Zj9snlU.png" height="90%" width="90%" alt=""/>
+
+Now we will google: "Reverse shell upload file github" > Click on the first one.
+
+<p align="center"> <img src="https://i.imgur.com/jsv0YQs.png" height="90%" width="90%" alt=""/>
+
+Go to `php-reverse-shell.php` > copy the whole thing and paste onto the editor.
+
+<p align="center"> <img src="https://i.imgur.com/ct9fSIg.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/0AXAwL1.png" height="90%" width="90%" alt=""/>
+
+Now change the IP Address on the reverse shell into our own machine `10.6.106.187`, change the port into `1202`.
+
+Press "Update File".
+
+<p align="center"> <img src="https://i.imgur.com/fFkK2V1.png" height="90%" width="90%" alt=""/>
+
+We will now navigate to `http://10.10.64.31/wp-content/themes/twentyfifteen/archive.php` to exploit the shell.
+
+- Successfully got in with the reverse shell in `ncat`.
+
+<p align="center"> <img src="https://i.imgur.com/YTW44JQ.png" height="90%" width="90%" alt=""/>
+
+#
+
+# Exploit the Shell
+
+Sidenote: Machine Expired, new machine IP Address: [10.10.255.40]
+
+We change the directory into "Robot". Found key-2.txt, but can't read. There is another file that we can read: "password.raw-md5".
+
+<p align="center"> <img src="https://i.imgur.com/8FWLUqt.png" height="90%" width="90%" alt=""/>
+
+The file "password.raw-md5" contain a password hash: `c3fcd3d76192e4007dfb496cca67e13b`.  We will use John the Ripper to crack it.
+
+#
+
+# John the Ripper
+
+We will first create a new txt file and put the hash value in it, name it "hash.txt".
+ 
+<p align="center"> <img src="https://i.imgur.com/pxxJH8J.png" height="90%" width="90%" alt=""/>
+
+Now we will use the command `john` to crack the hash.
+
+`john hash.txt --wordlist=../../wordlists/rockyou.txt --format=Raw-MD5`
+- Successfully cracked the hash: `abcdefghijklmnopqrstuvwxyz`
+
+<p align="center"> <img src="" height="90%" width="90%" alt=""/>
+
+#
+
+# Change Shell User to Robot
+
+To upgrade our shell we have to type in: `python -c 'import pty;pty.spawn("/bin/bash")'`
+
+<p align="center"> <img src="https://i.imgur.com/P7xAlg3.png" height="90%" width="90%" alt=""/>
+
+Now we will need to change directory into robot file and change user to robot using `su robot`.
+- Successfully changed to robot account.
+
+<p align="center"> <img src="https://i.imgur.com/fXaXqvP.png" height="90%" width="90%" alt=""/>
+
+Now we can read the key-2-of-3.txt
+
+<p align="center"> <img src="https://i.imgur.com/FEX2OEa.png" height="90%" width="90%" alt=""/>
+
+Question 2: What is key 2?
+
+`822c73956184f694993bede3eb39f959`
+
+#
+
+# Root Privilege Escalation
+
+We will try to get in the root account by looking for suid binaries to bypass.
+
+`find / -perm -4000 2>/dev/null`
+- We see that `/usr/local/bin/nmap` is there and it's very suspicious.
+
+<p align="center"> <img src="https://i.imgur.com/STvc4Hl.png" height="90%" width="90%" alt=""/>
