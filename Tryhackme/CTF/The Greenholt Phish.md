@@ -26,7 +26,7 @@ Tip: Open the EML file with Thunderbird. To do so, right-click on the `challenge
 
 # Questions
 
-What date was the email received? (answer format: M/DD/YY)
+Question 1: What date was the email received? (answer format: M/DD/YY)
 
 `6/10/20`
 
@@ -34,7 +34,7 @@ What date was the email received? (answer format: M/DD/YY)
 
 #
 
-Who is the email from?
+Question 2: Who is the email from?
 
 `Mr. James Jackson`
 
@@ -42,7 +42,7 @@ Who is the email from?
 
 #
 
-What is his email address?
+Question 3: What is his email address?
 
 `info@mutawamarine.com`
 
@@ -50,7 +50,7 @@ What is his email address?
 
 #
 
-What email address will receive a reply to this email? 
+Question 4: What email address will receive a reply to this email? 
 
 `info.mutawamarine@mail.com`
 
@@ -58,7 +58,7 @@ What email address will receive a reply to this email?
 
 #
 
-What is the Originating IP?
+Question 5: What is the Originating IP?
 
 First we click on "More" > "View Source".
 
@@ -72,7 +72,7 @@ Scroll down a little.
 
 #
 
-Who is the owner of the Originating IP? (Do not include the "." in your answer.)
+Question 6: Who is the owner of the Originating IP? (Do not include the "." in your answer.)
 
 We will use https://lookup.icann.org/en/lookup to find the owner.
 
@@ -86,4 +86,77 @@ Found the Registrant:
 
 <p align="center"> <img src="https://i.imgur.com/kZ65OzF.png" height="90%" width="90%" alt=""/>
 
+#
 
+Question 7: What is the SPF record for the Return-Path domain?
+
+In order to find the SPF record, we have to use [https://dmarcian.com/domain-checker/].
+
+In the source of our email, we will press "Ctrl + F" to search for return.
+- Found the Return-Path domain to be "mutawamarine.com".
+
+<p align="center"> <img src="https://i.imgur.com/JiLmcMv.png" height="90%" width="90%" alt=""/>
+
+We will enter "mutawamarine.com" into "dmarcian.com".
+
+<p align="center"> <img src="https://i.imgur.com/zO0Ouha.png" height="90%" width="90%" alt=""/>
+
+From this search we found the SPF.
+
+`v=spf1 include:spf.protection.outlook.com -all`
+
+<p align="center"> <img src="https://i.imgur.com/RK8MaPs.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 8: What is the DMARC record for the Return-Path domain?
+
+From the previous search we also found the DMARC record.
+
+`v=DMARC1; p=quarantine; fo=1`
+
+<p align="center"> <img src="https://i.imgur.com/aSP3rYc.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 9: What is the name of the attachment?
+
+The Attachment name can be found at the bottom of the email.
+
+`SWT_#09674321____PDF__.CAB`
+
+<p align="center"> <img src="https://i.imgur.com/jWX4pYd.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 10: What is the SHA256 hash of the file attachment?
+
+In order to find the SHA256 hash, we have to use Terminal.
+
+`2e91c533615a9bb8929ac4bb76707b2444597ce063d84a4b33525e25074fff3f`
+
+<p align="center"> <img src="https://i.imgur.com/8BdcAG4.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 11: What is the attachments file size? (Don't forget to add "KB" to your answer, NUM KB)
+
+We will use Virustotal to search for the attachment file size. [https://www.virustotal.com/gui/home/search]
+
+Put in the hash on search bar.
+
+<p align="center"> <img src="https://i.imgur.com/bSw1K8I.png" height="90%" width="90%" alt=""/>
+
+Found the size.
+
+`400.26 KB`
+
+<p align="center"> <img src="https://i.imgur.com/cO6LcXM.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 12: What is the actual file extension of the attachment?
+
+`rar`
+
+<p align="center"> <img src="https://i.imgur.com/CVZXIZ5.png" height="90%" width="90%" alt=""/>
