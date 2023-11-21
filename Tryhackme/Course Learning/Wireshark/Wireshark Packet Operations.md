@@ -146,6 +146,8 @@ On wireshark, click on "Statistics" > "IPv4 Statistics" > "Destinations and Port
 
 <p align="center"> <img src="https://i.imgur.com/92Uc8ss.png" height="90%" width="90%" alt=""/>
 
+#
+
 Question 2: What is the max service request-response time of the DNS packets?
 
 On wireshark, click on "Statistics" > "DNS". Then scroll to find "Service Stats: Request-response time(secs)".
@@ -153,6 +155,8 @@ On wireshark, click on "Statistics" > "DNS". Then scroll to find "Service Stats:
 `0.467897`
 
 <p align="center"> <img src="https://i.imgur.com/ftKwFB2.png" height="90%" width="90%" alt=""/>
+
+#
 
 Question 3: What is the number of HTTP Requests accomplished by "rad[.]msn[.]com?
 
@@ -162,4 +166,241 @@ On wireshark, click on "Statistics" > "HTTP" > "Requests". Then scroll to find "
 
 <p align="center"> <img src="https://i.imgur.com/I1sNXOE.png" height="90%" width="90%" alt=""/>
 
+#
 
+# Packet Filtering | Principles
+
+<h3>Packet Filtering</h3>
+
+In the previous room (Wireshark | The Basics), we covered packet filtering and how to filter packets without using queries. In this room, we will use queries to filter packets. As mentioned earlier, there are two types of filters in Wireshark. While both use similar syntax, they are used for different purposes. Let's remember the difference between these two categories.
+
+<p align="center"> <img src="https://i.imgur.com/V3jNGF9.png" height="90%" width="90%" alt=""/>
+
+<h3>Capture Filter Syntax</h3>
+
+These filters use byte offsets hex values and masks with boolean operators, and it is not easy to understand/predict the filter's purpose at first glance. The base syntax is explained below:
+
+- Scope: host, net, port and portrange.
+- Direction: src, dst, src or dst, src and dst,
+- Protocol: ether, wlan, ip, ip6, arp, rarp, tcp and udp.
+- Sample filter to capture port 80 traffic: tcp port 80
+
+You can read more on capture filter syntax from here and here. A quick reference is available under the "Capture --> Capture Filters" menu.
+
+<p align="center"> <img src="https://i.imgur.com/RIJyw3T.png" height="90%" width="90%" alt=""/>
+
+<h3>Display Filter Syntax</h3>
+
+This is Wireshark's most powerful feature. It supports 3000 protocols and allows conducting packet-level searches under the protocol breakdown. The official "Display Filter Reference" provides all supported protocols breakdown for filtering.
+
+- Sample filter to capture port 80 traffic: `tcp.port == 80`
+
+Wireshark has a built-in option (Display Filter Expression) that stores all supported protocol structures to help analysts create display filters. We will cover the "Display Filter Expression" menu later. Now let's understand the fundamentals of the display filter operations. A quick reference is available under the "Analyse --> Display Filters" menu.
+
+<p align="center"> <img src="https://i.imgur.com/VGkLWpz.png" height="90%" width="90%" alt=""/>
+
+<h3>Comparison Operators</h3>
+
+<p align="center"> <img src="https://i.imgur.com/tmQGOOn.png" height="90%" width="90%" alt=""/>
+
+<h3>Logical Expressions</h3>
+
+<p align="center"> <img src="https://i.imgur.com/UAGpkCh.png" height="90%" width="90%" alt=""/>
+
+<h3>Packet Filter Toolbar</h3>
+
+The filter toolbar is where you create and apply your display filters. It is a smart toolbar that helps you create valid display filters with ease. Before starting to filter packets, here are a few tips:
+
+- Packet filters are defined in lowercase.
+- Packet filters have an autocomplete feature to break down protocol details, and each detail is represented by a "dot".
+- Packet filters have a three-colour representation explained below.
+
+<p align="center"> <img src="https://i.imgur.com/swE9aIG.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/swE9aIG.png" height="90%" width="90%" alt=""/>
+
+#
+
+# Packet Filtering | Protocol Filters
+
+<h3>Protocol Filters</h3>
+
+As mentioned in the previous task, Wireshark supports 3000 protocols and allows packet-level investigation by filtering the protocol fields. This task shows the creation and usage of filters against different protocol fields. 
+
+<h3>IP Filters</h3>
+
+IP filters help analysts filter the traffic according to the IP level information from the packets (Network layer of the OSI model). This is one of the most commonly used filters in Wireshark. These filters filter network-level information like IP addresses, version, time to live, type of service, flags, and checksum values.
+
+<p align="center"> <img src="https://i.imgur.com/MckIlxy.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/Ft3RV1Q.png" height="90%" width="90%" alt=""/>
+
+<h3>TCP and UDP Filters</h3>
+
+TCP filters help analysts filter the traffic according to protocol-level information from the packets (Transport layer of the OSI model). These filters filter transport protocol level information like source and destination ports, sequence number, acknowledgement number, windows size, timestamps, flags, length and protocol errors.
+
+<p align="center"> <img src="https://i.imgur.com/4U64kw6.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/BsIypP0.png" height="90%" width="90%" alt=""/>
+
+<h3>Application Level Protocol Filters | HTTP and DNS</h3>
+
+Application-level protocol filters help analysts filter the traffic according to application protocol level information from the packets (Application layer of the OSI model ). These filters filter application-specific information, like payload and linked data, depending on the protocol type.
+
+<p align="center"> <img src="https://i.imgur.com/BsIypP0.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/DQ834kK.png" height="90%" width="90%" alt=""/>
+
+<h3>Display Filter Expressions</h3>
+
+As mentioned earlier, Wireshark has a built-in option (Display Filter Expression) that stores all supported protocol structures to help analysts create display filters. When an analyst can't recall the required filter for a specific protocol or is unsure about the assignable values for a filter, the Display Filter Expressions menu provides an easy-to-use display filter builder guide. It is available under the "Analyse --> Display Filter Expression" menu.
+
+It is impossible to memorise all details of the display filters for each protocol. Each protocol can have different fields and can accept various types of values. The Display Filter Expressions menu shows all protocol fields, accepted value types (integer or string) and predefined values (if any). Note that it will take time and require practice to master creating filters and learning the protocol filter fields.
+
+<p align="center"> <img src="https://i.imgur.com/8UOrBpI.png" height="90%" width="90%" alt=""/>
+
+#
+
+<h3>Questions</h3>
+
+Question 1: What is the number of IP packets?
+
+`81420`
+
+<p align="center"> <img src="https://i.imgur.com/W2aEpLt.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 2: What is the number of packets with a "TTL value less than 10"?
+
+`66`
+
+<p align="center"> <img src="https://i.imgur.com/PD2zBGE.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 3: What is the number of packets which uses "TCP port 4444"?
+
+`632`
+
+<p align="center"> <img src="https://i.imgur.com/RERTxi1.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 4: What is the number of "HTTP GET" requests sent to port "80"?
+
+`527`
+
+<p align="center"> <img src="https://i.imgur.com/T0UMvOP.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 5: What is the number of "type A DNS Queries"?
+
+`51`
+
+<p align="center"> <img src="https://i.imgur.com/UVMr3LY.png" height="90%" width="90%" alt=""/>
+
+#
+
+# Advanced Filtering
+
+<h3>Advanced Filtering</h3>
+
+So far, you have learned the basics of packet filtering operations. Now it is time to focus on specific packet details for the event of interest. Besides the operators and expressions covered in the previous room, Wireshark has advanced operators and functions. These advanced filtering options help the analyst conduct an in-depth analysis of an event of interest.
+
+<p align="center"> <img src="https://i.imgur.com/bhGttcw.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/xNWqYzT.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/Xq6o22Z.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/lPba4BI.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/2xyWROi.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/e6NHZSJ.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/4gvsymQ.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/hJs1N5Z.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/hJs1N5Z.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/zIsgQvu.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/cehKZKm.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/OUzJJzN.png" height="90%" width="90%" alt=""/>
+
+<h3>Bookmarks and Filtering Buttons</h3>
+
+We've covered different types of filtering options, operators and functions. It is time to create filters and save them as bookmarks and buttons for later usage. As mentioned in the previous task, the filter toolbar has a filter bookmark section to save user-created filters, which helps analysts re-use favourite/complex filters with a couple of clicks. Similar to bookmarks, you can create filter buttons ready to apply with a single click. 
+
+Creating and using bookmarks.
+
+<p align="center"> <img src="https://i.imgur.com/IgtJQW5.png" height="90%" width="90%" alt=""/>
+
+Creating and using display filter buttons.
+
+<p align="center"> <img src="https://i.imgur.com/nzHuPBg.png" height="90%" width="90%" alt=""/>
+
+<h3>Profiles</h3>
+
+Wireshark is a multifunctional tool that helps analysts to accomplish in-depth packet analysis. As we covered during the room, multiple preferences need to be configured to analyse a specific event of interest. It is cumbersome to re-change the configuration for each investigation case, which requires a different set of colouring rules and filtering buttons. This is where Wireshark profiles come into play. You can create multiple profiles for different investigation cases and use them accordingly. You can use the "Edit --> Configuration Profiles" menu or the "lower right bottom of the status bar --> Profile" section to create, modify and change the profile configuration.
+
+<p align="center"> <img src="https://i.imgur.com/y00BA1R.png" height="90%" width="90%" alt=""/>
+
+#
+
+<h3>Questions</h3>
+
+Question 1: Find all Microsoft IIS servers. What is the number of packets that did not originate from "port 80"?
+
+`21`
+
+<p align="center"> <img src="https://i.imgur.com/Z4RuMIP.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 2: Find all Microsoft IIS servers. What is the number of packets that have "version 7.5"?
+
+`71`
+
+<p align="center"> <img src="https://i.imgur.com/5v24T8V.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 3: What is the total number of packets that use ports 3333, 4444 or 9999?
+
+`2235`
+
+<p align="center"> <img src="https://i.imgur.com/zuYLiEz.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 4: What is the number of packets with "even TTL numbers"?
+
+`77289`
+
+<p align="center"> <img src="https://i.imgur.com/IpCh7oc.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 5: Change the profile to "Checksum Control". What is the number of "Bad TCP Checksum" packets?
+
+Click bottom right corner > Change to "Checksum Control. Then Click on the red circle bottom left corner.
+
+<p align="center"> <img src="https://i.imgur.com/Mib8dPn.png" height="90%" width="90%" alt=""/>
+
+`34185`
+
+<p align="center"> <img src="https://i.imgur.com/5wiP3FR.png" height="90%" width="90%" alt=""/>
+
+#
+
+Question 6: Use the existing filtering button to filter the traffic. What is the number of displayed packets?
+
+`261`
+
+<p align="center"> <img src="https://i.imgur.com/CTlGavP.png" height="90%" width="90%" alt=""/>
