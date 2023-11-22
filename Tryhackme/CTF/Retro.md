@@ -109,9 +109,7 @@ Successfully login to RDP with Wade:parzival.
 
 We will open the user.txt file.
 
-<p align="center"> <img src="https://i.imgur.com/lTh1jSm.png" height="90%" width="90%" alt=""/>
-
-Successfully capture the user flag.
+- Successfully capture the user flag.
 
 <p align="center"> <img src="https://i.imgur.com/lJPQmW6.png" height="90%" width="90%" alt=""/>
 
