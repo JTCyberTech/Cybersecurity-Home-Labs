@@ -129,11 +129,68 @@ Inside the Remote Desktop, we can see that there is a program: "hhupd" in the re
 
 We will drag it out of the recycle bin and put on the desktop.
 
-<p align="center"> <img src="https://i.imgur.com/TfI70nh.pngg" height="90%" width="90%" alt=""/>
+<p align="center"> <img src="https://i.imgur.com/TfI70nh.png" height="90%" width="90%" alt=""/>
 
 Now we will follow this video to exploit: [https://www.youtube.com/watch?v=3BQKpPNlTSo]
 
+#
 
+<h3>Use hhupd to exploit</h3>
 
+1. Right-Click the program "hhupd" > Run as administrator.
 
+<p align="center"> <img src="https://i.imgur.com/IhG1CtU.png" height="90%" width="90%" alt=""/>
 
+2. Click on "Show more details
+
+<p align="center"> <img src="https://i.imgur.com/eWLJW6H.png" height="90%" width="90%" alt=""/>
+
+3. Click on "Show informatin about the publisher's certificate".
+
+<p align="center"> <img src="https://i.imgur.com/s4uVRwg.png" height="90%" width="90%" alt=""/>
+
+4. Click on "VeriSign Commerical Software Publisher CA".
+
+<p align="center"> <img src="https://i.imgur.com/OVFSJj0.png" height="90%" width="90%" alt=""/>
+
+5. Close out of the program.
+
+<p align="center"> <img src="https://i.imgur.com/AoZchEh.png" height="90%" width="90%" alt=""/>
+
+6. Chrome or Edge will open with the website: "https://www.verisign.com/repository/CPS"
+
+<p align="center"> <img src="https://i.imgur.com/6jyzQdv.png" height="90%" width="90%" alt=""/>
+
+7. On Chrome > Right-click the site > Select "Save as" 
+
+<p align="center"> <img src="https://i.imgur.com/ZL2kJMI.png" height="90%" width="90%" alt=""/>
+
+8. If this message shown up, you did it right > Click on "OK".
+
+<p align="center"> <img src="https://i.imgur.com/FvyAMcx.png" height="90%" width="90%" alt=""/>
+
+9. On File name search: `C:\Windows\System32\*.*` > Press "Enter".
+
+<p align="center"> <img src="https://i.imgur.com/DEHW5nK.png" height="90%" width="90%" alt=""/>
+
+10. Scroll down and find "cmd".
+
+<p align="center"> <img src="https://i.imgur.com/Uy6vN5h.png" height="90%" width="90%" alt=""/>
+
+11. Right-click on cmd and open it.
+
+<p align="center"> <img src="https://i.imgur.com/G61BFau.png" height="90%" width="90%" alt=""/>
+
+12. Successfully got into cmd with root privilege.
+
+<p align="center"> <img src="https://i.imgur.com/3NSBa5R.png" height="90%" width="90%" alt=""/>
+
+#
+
+Now we just have to find the root flag.
+
+<p align="center"> <img src="https://i.imgur.com/xbdDNQB.png" height="90%" width="90%" alt=""/>
+
+Question 3: root.txt
+
+`7958b569565d7bd88d10c6f22d1c4063`
