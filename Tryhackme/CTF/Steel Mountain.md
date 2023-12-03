@@ -1,6 +1,6 @@
-# Steel Moutain.md
+# Steel Mountain.md
 
-Room [Steel Moutain](https://tryhackme.com/room/steelmountain) on TryHackMe
+Room [Steel Mountain](https://tryhackme.com/room/steelmountain) on TryHackMe
 
 <h2></h2>
 
