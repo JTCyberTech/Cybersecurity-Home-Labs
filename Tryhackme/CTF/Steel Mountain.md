@@ -1,4 +1,4 @@
-# Steel Mountain.md
+# Steel Mountain
 
 Room [Steel Mountain](https://tryhackme.com/room/steelmountain) on TryHackMe
 
