@@ -66,3 +66,31 @@ Azure China is operated by 21Vianet and is a physically separated instance of cl
 
 `4.38 hours`: An SLA percentage of 99.95 will give an annual cumulative downtime of 4.38 hours.
 
+#
+
+1. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. The company has asked you to research Azure AD. What types of resources can Azure AD help secure?
+
+`Both External and Internal Resources`: Azure AD helps users access both external and internal resources. External resources might include Microsoft Office 365, the Azure portal, and thousands of other software as a service (SaaS) applications. Internal resources might include apps on your corporate network and intranet, along with any cloud applications developed within your organization.
+
+2. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. As part of this migration, you have been asked to research the purpose of Azure Advisor. Based on this research, which of the following can be performed by using Azure Advisor?
+
+`Estimate the costs of an Azure solution.`: Azure Advisor analyses your configurations and usage telemetry and offers personalized, actionable recommendations to help you optimize your Azure resources for reliability, security, operational excellence, performance, and cost.
+
+3. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. The company has asked you to research the differences between Authorisation and Authentication in Azure. Based on your research, which of the following is the process of establishing the identity of a person or service that wants to access a resource known as?
+
+`Authentication`: Authentication is the process of establishing the identity of a person or service that wants to access a resource. It involves the act of challenging a party for legitimate credentials and provides the basis for creating a security principle for identity and access control. It establishes whether the user is who they say they are.
+
+4. Tradewind Traders has recently migrated to Azure cloud services. The company has just completed a review of its current configuration and has discovered that there is a selection of unused resources currently in existence including multiple AD accounts, multiple groups, multiple public IP addresses, and multiple network interfaces. The company wants to reduce costs to a minimum. You recommend removing the unused user accounts. Will this reduce the monthly costs?
+
+`No`: You are not charged for user accounts. Therefore, deleting unused user accounts will not reduce the Azure costs for the company.
+
+5. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. The company has many independent departments and as part of this migration, the company wants to allow each department to use different payment options for the resources allocated to them. Which of the following will allow you to configure different payment options for each department?
+
+
+
+
+
+
+
+
+
