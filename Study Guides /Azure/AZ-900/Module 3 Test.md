@@ -86,11 +86,45 @@ Azure China is operated by 21Vianet and is a physically separated instance of cl
 
 5. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. The company has many independent departments and as part of this migration, the company wants to allow each department to use different payment options for the resources allocated to them. Which of the following will allow you to configure different payment options for each department?
 
+`Multiple Subscriptions`: There are different payment options in Azure including pay-as-you-go (PAYG), Enterprise Agreement (EA), and Microsoft Customer Agreement (MCA) accounts. Your Azure costs are per subscription. You are charged monthly for all resources in a subscription. Therefore, to use different payment options per department, you will need to create a separate subscription per department. 
 
+6. Tradewind Traders is planning to migrate its data and resources to Azure cloud services. The company has multiple offices around the world. Management wants to be able to generate multiple billing reports from the Azure Portal that will contain the resource utilization from each office. Which feature should you use before you generate the reports?
 
+`Tags`: You can use resource tags to label Azure resources. Tags are metadata elements attached to resources made up of key/value pairs. strings. When all Azure resources are tagged, you can generate reports to list all resources based on the value of the tag.
 
+7. Tradewind Traders has recently migrated to Azure cloud services and management wishes to chargeback some of the resource costs to various departments every month. Which is the best solution to meet these requirements with the least amount of administrative effort?
 
+`Tags`: Tags provide extra information, or metadata, about your resources. You might create a tag that's named Sales whose value is the name of the billing department. You can use Azure Policy to ensure that the proper tags are assigned when resources are provisioned.
 
+8. Tradewind Traders has recently migrated to Azure cloud services. Management wants access to in-depth information about security, privacy, compliance offerings, policies, features, and practices across Microsoft cloud products. Which tool should you recommend for them to use?
 
+`Microsoft Trust Center`: The Trust Center provides in-depth information about security, privacy, compliance offerings, policies, features, and practices across Microsoft cloud products including links to the security, privacy, and compliance blogs.
 
+9. Which of the following define performance targets such as uptime?
+
+`Service Level Agreements`: Service Level Agreements or SLAs define performance targets for an Azure product or service.
+
+10. Tradewind Traders has recently migrated to Azure cloud services. The company’s development team creates virtual machines for testing regularly. These test machines are only used during certain times. In your opinion what is the most efficient way to save costs on virtual machines when they are not in use?
+
+`Deallocate the virtual machines when they are not in use.`: When you deallocate virtual machines, the associated hard disks and data are kept in Azure. But you don't pay for CPU or network consumption, which can help save costs.
+
+11. Tradewind Traders has recently migrated to Azure cloud services. The company is reviewing its support plans. You have been asked to determine which support plan will provide best practice information, health status and notifications, and 24/7 access to billing information at the lowest possible cost. Which support plan should you choose?
+
+`Basic`: A basic support plan provides 24x7 access to billing and subscription support, online self-help, documentation, whitepapers, and supports forums. Access to the full set of Azure Advisor recommendations and access to personalized Service Health Dashboard & Health APIs.
+
+12. If you have a free trial subscription to Azure and you reach your credit limit during the trial period, what will happen to your resources?
+
+`Your existing Azure resources are removed from production and your Azure virtual machines are stopped and deallocated.`: When you spend all the credit included with your Azure free account, Azure resources that you deployed are removed from production, and your Azure virtual machines are stopped and deallocated. The data in your storage accounts are available as read-only. At this point, you can upgrade your subscription to a pay-as-you-go subscription. Try going back and Managing Costs and SLA Service Cycles.
+
+13. Tradewind Traders has recently migrated to Azure cloud services. The company is reviewing its support plans. The company requires their users to be able to open new support requests and you have been asked to determine which support plan will provide this feature. Which of the following statements is correct?
+
+`Premier, Professional Direct, Standard, and Developer only`: You can open support cases in the following plans: Premier, Professional Direct, Standard, and Developer only. You cannot open support cases in the Basic support plan. Try going back and Managing Costs and SLA Service Cycles.
+
+14. Tradewind Traders has recently migrated to Azure cloud services. The company is reviewing its support plans. Management has asked you to determine what is guaranteed in an Azure Service Level Agreement (SLA) for virtual machines? Select the appropriate option.
+
+`Performance`: The SLA for virtual machines guarantees "uptime". The amount of uptime guaranteed depends on factors such as whether the VMs are in an availability set or availability zone. Try going back and Managing Costs and SLA Service Cycles.
+
+15. Tradewind Traders is planning to migrate to Azure cloud services. However, before this happens management requires some comparisons of the costs involved in using cloud services as opposed to an on-premises solution. What would be the first step you could take to provide this comparison information?
+
+`Run the Total Cost of Ownership Calculator.`: Running the Total Cost of Ownership Calculator is a great first step because it can provide an accurate comparison of running workloads in the datacenter versus on Azure and is certified by an independent research company.
 
