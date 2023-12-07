@@ -128,3 +128,4 @@ Azure China is operated by 21Vianet and is a physically separated instance of cl
 
 `Run the Total Cost of Ownership Calculator.`: Running the Total Cost of Ownership Calculator is a great first step because it can provide an accurate comparison of running workloads in the datacenter versus on Azure and is certified by an independent research company.
 
+#
