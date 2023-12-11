@@ -349,6 +349,77 @@ Hence, Management Groups is the correct answer as it directly allows for the man
 
 #
 
+Question 12: Incorrect
+Which Azure Service contains pre-built machine learning models that you can use in your own code, using an API?
+
+Cognitive Services
+Azure Blueprints
+App Services
+Azure Functions
+
+#
+
+Question 16: Incorrect
+In Microsoft Azure, what is the maximum number of virtual machines that can be included in a single Virtual Machine Scale Set, as per Azure's standard guidelines and capabilities?
+
+1000
+10000
+500
+Unlimited
+
+#
+
+Question 22: Incorrect
+In the context of Azure's high availability solutions, what is the primary purpose of Azure Availability Zones?
+
+They are synonymous with an Azure region.
+They serve as a folder structure in Azure used for organizing resources such as databases, virtual machines, and virtual networks.
+They represent certain server racks within individual data centers, specifically designed by Azure for higher uptime.
+They allow manual selection of data centers for virtual machine placement to achieve superior availability compared to other options.
+
+#
+
+Answer:
+
+Question 12: Incorrect
+Which Azure Service contains pre-built machine learning models that you can use in your own code, using an API?
+
+- Cognitive Services
+
+Explanation
+Cognitive Services is an API that Azure provides, that gives access to a set of pre-built machine learning models including vision services, speech services, knowledge management and chat bots.
+
+#
+
+Question 16: Incorrect
+In Microsoft Azure, what is the maximum number of virtual machines that can be included in a single Virtual Machine Scale Set, as per Azure's standard guidelines and capabilities?
+
+- 1000
+
+Explanation
+The correct answer is 1000.
+
+Azure Virtual Machine Scale Sets are a service provided by Azure that allows you to manage, scale, and distribute large numbers of identical virtual machines. As per the limitations set by Microsoft Azure, a single Virtual Machine Scale Set can support up to 1000 VM instances.
+
+This capacity allows for high availability and network load balancing across a large number of virtual machines, providing a robust and efficient solution for applications that require heavy compute resources. However, if you are using custom VM images, this limit decreases to 600 instances.
+
+This functionality is part of Azure's Infrastructure as a Service (IaaS) offerings, providing flexibility and scalability to businesses and developers.
+
+#
+
+Question 22: Incorrect
+In the context of Azure's high availability solutions, what is the primary purpose of Azure Availability Zones?
+
+- They allow manual selection of data centers for virtual machine placement to achieve superior availability compared to other options.
+
+Explanation
+The correct answer is: "They allow manual selection of data centers for virtual machine placement to achieve superior availability compared to other options."
+
+Azure Availability Zones are a high availability offering that protects applications and data from datacenter failures. Each Azure region is composed of multiple datacenters, and each datacenter is essentially an Availability Zone. They are unique physical locations within a region, equipped with their own independent power, cooling, and networking.
+
+By placing your resources across different Availability Zones within a region, you can protect your apps and data from the failure of a single datacenter. If one datacenter goes down, the resources in the other datacenters (Availability Zones) can continue to operate, providing redundancy and increasing the overall availability of your applications.
+
+It's important to note that these zones are not the same as Azure regions (which are geographical areas containing one or more datacenters), nor are they equivalent to resource groups (which are logical containers for resources deployed on Azure). They are also not isolated to specific racks within a datacenter, but rather spread across different datacenters in a region, offering a broader scope of protection.
 
 
 
