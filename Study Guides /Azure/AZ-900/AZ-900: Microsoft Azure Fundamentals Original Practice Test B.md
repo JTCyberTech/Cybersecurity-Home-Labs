@@ -153,6 +153,8 @@ You need to either control access to the RDP and SSH ports to a very specific ra
 Explanation
 Virtual Machine Scale Sets - these are a set of identical virtual machines (from 1 to 1000 instances) that are designed to auto-scale up and down based on user demand; IaaS
 
+#
+
 10. What is the concept of Big Data?
 
 - An extremely large set of data that you want to ingest and do analysis on; traditional software like SQL Server cannot handle Big Data as efficiently as specialized products
