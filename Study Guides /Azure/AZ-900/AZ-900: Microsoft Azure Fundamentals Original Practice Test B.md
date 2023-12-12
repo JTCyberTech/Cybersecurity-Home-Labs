@@ -161,3 +161,38 @@ Virtual Machine Scale Sets - these are a set of identical virtual machines (from
 
 Explanation
 Big Data - a set of open source (Apache Hadoop) products that can do analysis on millions and billions of rows of data; current tools like SQL Server are not good for this scale
+
+
+#
+
+1. Which Azure service is the recommended Identity-as-a-Service offering inside Azure?
+
+- Azure Active Directory (AD)
+
+Azure AD is the identity service designed for web protocols, that you can use for your applications.
+
+2. What would be a good reason to have multiple Azure subscriptions?
+
+- There is one person/credit card paying for resources, but many people who have accounts in Azure, and you need to separate out resources between clients so that there is absolutely no chance of resources being exposed between them.
+
+Explanation
+Having multiple subscriptions can technically be done for any reason, but it only makes sense if you have to separate billing directly, or have actual clients logging into the Portal to manage their resources.
+
+3. Which of the following is not a feature of Azure Functions?
+
+- Designed for backend batch applications that are continuously running
+
+Functions are designed for short pieces of code that start and end quickly.
+
+For more info: https://docs.microsoft.com/en-us/azure/azure-functions/
+
+#
+
+
+
+
+
+
+
+
+
