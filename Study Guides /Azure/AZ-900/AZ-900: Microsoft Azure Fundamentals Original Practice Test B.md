@@ -318,3 +318,10 @@ There is 1 region in Brazil.
 
 #
 
+1. Which of the following scenarios would Azure Policy be a recommended method for enforcement?
+
+- Prevent certain Azure Virtual Machine instance types from being used in a resource group
+
+Explanation
+
+Azure Policy can add restrictions on storage account SKUs, virtual machine instance types, and rules relating to tagging of resources and groups. It cannot prompt a user to ask them if they are sure.
