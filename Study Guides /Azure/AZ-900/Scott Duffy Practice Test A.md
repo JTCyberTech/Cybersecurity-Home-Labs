@@ -421,6 +421,21 @@ By placing your resources across different Availability Zones within a region, y
 
 It's important to note that these zones are not the same as Azure regions (which are geographical areas containing one or more datacenters), nor are they equivalent to resource groups (which are logical containers for resources deployed on Azure). They are also not isolated to specific racks within a datacenter, but rather spread across different datacenters in a region, offering a broader scope of protection.
 
+#
+
+1. When establishing a Site-to-Site VPN connection with Azure, what kind of network device needs to be present or installed in your company's on-premises network infrastructure?
+
+- A compatible VPN Gateway device
+
+Explanation
+
+The correct answer is a compatible VPN Gateway device.
+
+In order to establish a site-to-site VPN connection with Azure, a VPN Gateway is required on your company's internal network. A VPN Gateway is a specific type of virtual network gateway that sends encrypted traffic across a public network, like the Internet.
+
+While the name might suggest it's a purely virtual entity, in practice, the term "VPN Gateway" often refers to a hardware device that's installed on-premises in your data center. This device uses Internet Protocol security (IPsec) to establish a secure, encrypted connection to the Azure VPN Gateway, which resides in the Azure virtual network.
+
+This setup allows your local network and Azure to interact as if they're directly connected. In contrast, virtual machines, virtual networks, and application gateways are other types of Azure resources, but they do not facilitate creating a site-to-site VPN connection. It's important to note that your company's internal network hardware and settings must meet specific requirements to support a VPN Gateway.
 
 
 
