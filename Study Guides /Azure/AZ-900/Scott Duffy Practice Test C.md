@@ -58,3 +58,34 @@ Explanation
 Private Preview means you have to apply to use a service, and you may or may not be selected
 
 #
+
+1. If you have an Azure free account, with a $200 credit for the first month, what happens when you reach the $200 limit?
+
+- All services are stopped and you must decide whether you want to convert to a paid account or not.
+
+Explanation
+
+Using up the free credits causes all your resources to be stopped until you decide to get a paid account.
+
+2. What is the significance of the Azure region? Why is it important?
+
+- You must select a region when creating most resources, and the region is the area of the world where those resources will be physically located.
+
+Explanation
+
+The region is the area of the world where resources get created. You can create resources in any region that you have access to. But there are sometimes restrictions when creating a resource in one region that related resources like networks must also be in the same region for logical reasons.
+
+3. What is the service level agreement for two or more Azure Virtual Machines that have been placed into the same Availability Set in the same region?
+
+- 99.95%
+
+4. How many hours are available free when using the Azure B1S General Purpose Virtual Machines under a Azure free account in the first 12 months?
+
+- 750 hrs
+
+Explanation
+
+Each Azure free account includes 750 hours free for Azure B1S General Purpose Virtual Machines for the first 12 months.
+
+
+
