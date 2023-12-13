@@ -87,5 +87,40 @@ Explanation
 
 Each Azure free account includes 750 hours free for Azure B1S General Purpose Virtual Machines for the first 12 months.
 
+#
 
+1. Which feature within Azure alerts you to service issues that happen in Azure itself, not specifically related to your own resources?
 
+- Azure Service Health
+
+Explanation
+
+Azure Service Health - lets you know about any Azure-related service issues including region-wide downtime
+
+2. Which tool within the Azure Portal will make specific recommendations based on your actual usage for how you can improve your use of Azure?
+
+- Azure Advisor
+
+Explanation
+
+Azure Advisor - a tool that will analyze your use of Azure and make you specific recommendations based on your usage across availability, security, performance and cost categories
+
+3. What are resource groups?
+
+- A folder structure in Azure in which you organize resources like databases, virtual machines, virtual networks, or almost any resource
+
+Explanation
+
+Resource Groups - a folder structure in Azure in which you organize resources like databases, virtual machines, virtual networks, or almost any resource
+
+4. What are groups of subscriptions called?
+
+- Management Groups
+
+Explanation
+
+Subscriptions can be nested and placed into management groups to make managing them easier.
+
+5. What is a policy initiative in Azure?
+
+- The ability to group policies together
