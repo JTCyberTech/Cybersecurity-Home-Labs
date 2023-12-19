@@ -294,4 +294,42 @@
 
 #
 
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2d470709-b35d-4fbc-bcfb-71e67d387022">
+
+- You can track your company's regulatory standards and regulations with Trust Center.
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d3000398-f5b0-4f0e-a111-32efbab0ec28">
+
+- ExpressRoute = extend on-premises network into M.S cloud over a private connection with the help of  connectivity provider.
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/49c02f4f-621e-4684-8af4-793da2e75651">
+
+- Site-to-Site VPN = connection between on-premises VPN device and Azure VPN Gateway that is deployed in a virtual network.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/317b490c-6fc8-474c-865c-0e76bbea335f">
+
+- Point-to-Site VPN = connections to your virtual network from an individual client computer.
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8a7bf9ec-c1ab-4752-8789-9350c01c45d5">
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b9132295-0cb6-4f6d-9d94-0a1358a8b026">
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d4372a3b-de56-44bb-b715-eceb0ac1689b">
+
+- Microsoft Purview Compliance Portal = Compliance Manager.
+
+#
+
 
