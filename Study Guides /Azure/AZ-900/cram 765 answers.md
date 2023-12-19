@@ -182,4 +182,116 @@
 
 #
 
+<img width="1278" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7c4483cc-17be-4732-899d-c2b87c39c6fe">
+
+- Azure Cost Management = helps analyze the cost create and manage budgets export data, cost optimiztation.
+- Helps you understand your Azure invoice (bills), manage your biling account and subscriptions.
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/cd05364a-bb80-46f4-a6e2-46cc74a44273">
+
+- Total Cost of Ownership (TCO) Calculator = service gives idea on the cost that incurred if you move your resources to Azure.
+- Used to estimate the ost saving you can achieve by migrating your application workload to M.S.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/16aaced3-152c-4a38-ac06-0b9387af560c">
+
+- Azure AD can save log in Azure Monitors.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/4f1cc686-6c66-41b9-9011-04a3607f9984">
+
+- Azure Firewall allows you to limit all outbound traffic from VMs to host.
+- Azure Firewall allows you to implement deny by default policy.
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e34f1484-8ab9-44ce-a630-7def9a0f5e69">
+
+- Management Groups = manage compliance of Azure resources across **Multiple Subscriptions**.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/64d45098-f1c3-482b-9754-cd6cc87d36d0">
+
+- Azure AD = SSO
+
+#
+
+<img width="1281" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/eca20aea-679b-44dd-ae5a-9cd3506d2f1e">
+
+- Azure Information Protection = enables organizations to discover classify and documents and emails by applying labels to the content.
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1f0acd8e-f457-48da-872a-404c5dc073cc">
+
+- Azure AD Privilege Identity Management = Service in Azure AD enables for manage control and monitor access to important resources in your organization.
+
+#
+
+<img width="1278" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/07b38593-4b99-4d75-8d10-110c78c6b81c">
+
+- Azure AD Identity Protection = can encourage to change password.
+
+#
+
+<img width="1263" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/82895a62-2065-4523-ae9b-ebf349ccc575">
+
+- Azure Blueprints = standards and requirements for configuring the implementation of Azure Services by establishing specific sets of rules, conventions or designs that can be reused.
+- Patterns; management.
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5a2082af-af8f-4e93-9a7b-b4a0d6441636">
+
+- Azure Blueprints = ARM Template; Azure Role Assignment; Azure Resource Groups; Azure Policy Assignement.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e4cf7fbc-e8a0-47a3-80bf-367e5dcbaae9">
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d0fe2c02-5d07-455f-b776-a679d91f38ca">
+
+- Blueprint Contributor = manage blueprint definitiens but not assign them.
+
+#
+
+<img width="1279" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/ee0bfde5-6077-4302-943b-0604851e4099">
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/acc6f0e1-5792-4c07-89cf-54d95c6c67e1">
+
+- Techique to segment Azure for the departments = multiple Subscriptions; multiple resource groups.
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a5875820-a5db-4e65-b4f8-26fbe1e36dfd">
+
+- Trust Center = Work on Security; Privacy; Compliance.
+
+#
+
+<img width="1278" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/ba462287-3941-4231-84eb-57214f328b2e">
+
+- Microsoft Privacy Statement = Provides info that is relevant to a specific service including Contana.
+
+#
+
+<img width="1278" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9b8269af-9d52-4cc5-9adb-bcbc46784ce2">
+
+- Cassandra API and MangoDB API = key value pair and NoSQL Datebase type.
+
+#
+
+<img width="1281" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2ae64f63-2b8d-44cd-904b-6b6cb65cfe2d">
+
+#
+
 
