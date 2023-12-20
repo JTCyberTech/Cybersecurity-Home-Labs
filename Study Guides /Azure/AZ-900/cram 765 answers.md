@@ -609,3 +609,164 @@
 
 #
 
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/781e91ea-5996-4df0-a022-4e14e6fec7e2">
+
+- Composite SLA = SLA1 * SLA2
+
+#
+
+<img width="1266" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/bd8eeee4-2177-450f-bff7-c2d66adc4ef5">
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8bfb5ffe-c7dd-4195-85cc-559fbe66cbe5">
+
+- Azure Maps = 99.9% SLA.
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/4fa7fec3-d124-4362-bd90-22632bf4656f">
+
+- Azure paid services = at least 99.9% SLA.
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1a8fcf6e-682d-4cbb-8eba-6acecd64d7c6">
+
+- Primer Support Plan = Enterprise Agreement (EA)
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/c9f3277f-679b-43d9-9e4d-f028d0c039de">
+
+#
+
+<img width="1278" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8adea7d9-24c2-41dd-90f0-ac623a12d29f">
+
+- One Azure Account per Microsoft Account.
+
+#
+
+<img width="1267" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a6a0ad36-2ec0-4443-9520-6fd91985368f">
+
+- Azure Cost Manager = monitoring, allocating, optimizing Azure cost.
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/14928ca8-25a3-40a8-bb98-363a7819b3f3">
+
+#
+
+<img width="1277" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a612d20a-73f6-44d8-afd5-bbfb143a2210">
+
+- Total Cost of Ownership Calculator = Cost of On-premises vs Azure Platform.
+
+#
+
+<img width="1266" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/970c7b52-1904-4c6a-9af5-ff3349ae1c4c">
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/74bad1e7-bcbb-4202-b1ed-f476cf23e8cb">
+
+- Azure Cost Manager = View Cost of Management Groups.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/fcf07e5e-110d-477f-9581-9ed1f2658433">
+
+- Azure Cost Manager = View Cost of Resource Groups.
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5b81135f-6f29-4dfa-ad26-741e1acdbc05">
+
+- Azure Advisor = Estimate cost of Azure Solution.
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9a17d60f-7276-4ce0-ad1b-ac69361a28a4">
+
+- There can only be one administrator in a subscrition.
+- There can be co-administrator.
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/71c71f6a-d453-4d54-b222-8bbea63f9c94">
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/938753ea-526e-455c-ad07-0a572f33ea5b">
+
+- Azure Security Center = environment meets regulatory requirements.
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2b675b39-4627-4938-8327-69f2dd6f3d94">
+
+- Azure TCO calculator = Free for anyone.
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/16f06f5c-703c-4c37-9a6f-610992d58c52">
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d7a202d5-0a01-47ab-882b-c793eb1d8e62">
+
+- Azure Hybrid Benefit = Minimize Licensing costs for Windows Server, SQL Sevcer, Linux Sub.
+
+#
+
+<img width="1266" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/69049e17-f4c9-4b17-8ac6-412179c4637d">
+
+- M.S Service Trust Portal can be access with M.S Cloud Service Account.
+
+#
+
+<img width="1259" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9a033117-8749-4cbc-9b39-e82cbfdfe2ba">
+
+#
+
+<img width="1264" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/62417987-8c0b-4eb9-9567-798a187997c9">
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/91937b55-66f7-4bb4-8a58-e3716e7df6b5">
+
+- Azure DevOps = Git Repository too.
+
+#
+
+<img width="1264" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9c6c41c0-55cc-45ac-928e-d8065d88a3ce">
+
+- Azure DevOps = used as Git Repository to build the CICD pipelines. Not build host web apps.
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/cf617772-c10c-470d-89de-9ed5708da82f">
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/325a02eb-cfbb-42ba-8acb-b6e44f1329b5">
+
+- Spot VM instance = unused Azure compute capacity.
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9c93a4e5-8d70-4fdb-9579-a6cc35996bf9">
+
+- Microsoft Defender = check secure score.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/0e37abd9-9530-4b47-bc28-ba206f692c30">
+
+- Azure Arc = allows to manage On-premises servers as a resources as part of Azure hybrid environment.
+
+#
+
+<img width="1265" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2a212416-80e8-4554-89a0-eddbe994d678">
+
+#
+
