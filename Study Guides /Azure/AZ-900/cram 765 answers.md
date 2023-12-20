@@ -770,3 +770,30 @@
 
 #
 
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/98dbc3a4-0206-46f7-98b7-558eb8f4d059">
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a7a7e71a-73ed-4da0-b1f1-b96bb50951e0">
+
+- Azure Synapse SQL architecture = Scalability.
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/4ef996d6-f292-435a-95e2-f5e52e40bdcb">
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5f36144f-aaa9-4229-8e15-6461a7adc789">
+
+- Azure Monitor = collecting, analyzing, telemetry.
+
+#
+
+<img width="1265" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b53bc193-8da5-4469-96bb-1ca5670dbfe6">
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a09d4587-b89b-498d-ac06-99d6e05b3b3c">
+
+#
