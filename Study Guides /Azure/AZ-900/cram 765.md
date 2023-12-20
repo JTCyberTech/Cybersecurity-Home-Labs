@@ -250,10 +250,49 @@
 
 #
 
+<img width="1232" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3c82cf4e-b119-4359-8271-b8d33aba241d">
 
+#
 
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/32ea2ad9-7f18-4565-9d77-527ce45806be">
 
+#
 
-<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5acfbd94-9d1b-439c-809a-89d266e03afc">
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b3e005f9-f9ef-4871-9c45-dee08bb0cd21">
 
-<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a516aca8-aec4-4dbd-b398-8595efdbf8c9">
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/52f83499-54c6-4a38-9b1a-3a49d7cbd294">
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5c15bc0d-8cdd-4c48-8dda-e6dabe074281">
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/c32ef4eb-d232-4b88-852c-300e6f669d41">
+
+#
+
+<img width="1277" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7d81af83-5e47-483d-b654-bd6bf97fb4d9">
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a57dccfb-8ec4-4829-88f0-af73cb15d07f">
+
+- Pick 2.
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b14d1774-b38b-4c77-a55e-907b0c8ce07d">
+
+#
+
+<img width="1267" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/bd551acf-f480-4251-ae8f-1002ab0f5cd5">
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/4acd8136-ea1e-4e10-a6fc-7b1ee7f4d27c">
+
+#
+
