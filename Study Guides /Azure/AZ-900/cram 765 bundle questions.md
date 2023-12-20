@@ -1,4 +1,4 @@
-Trust Center, Secuity Trust Portal, Defender for Cloud, Security Center 
+# Trust Center, Secuity Trust Portal, Defender for Cloud, Security Center 
 
 <img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d3a40c14-5605-45d3-97e4-0a220345eb6e">
 
@@ -54,13 +54,13 @@ Trust Center, Secuity Trust Portal, Defender for Cloud, Security Center
 
 #
 
-
-
-#
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9b5339c3-aaf3-4501-8854-d8b6ecbe6f7d">
 
 #
 
-Azure Active Directory Questions
+
+
+# Azure Active Directory Questions
 
 <img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e43d5195-4dff-467f-9f84-27bb8dc0eb77">
 
@@ -94,3 +94,64 @@ Azure Active Directory Questions
 
 #
 
+# Azure Cost
+
+<img width="1267" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/15fea8b8-aa73-46f3-a4f5-6653c9dca31b">
+
+#
+
+<img width="1265" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9d0aeaba-7572-4550-902b-ec42a715f604">
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9cbdc7a4-4994-4521-a462-2c8f109966df">
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/863c57f9-05ce-4044-a145-557bbc5e3844">
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d3ac673a-b028-4083-b457-fb0ba1b03e84">
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e4c44d72-06c1-4dea-8f5f-3b18008de213">
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/dea58587-285c-4199-8a48-b98dee62a0ca">
+
+- Yes.
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/36ddf4ab-edab-40e3-aa1b-684240f35fbc">
+
+#
+
+<img width="1262" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/05ee82ac-9e16-4feb-ab95-7d7ac2b5b4aa">
+
+#
+
+<img width="1263" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/4b9238cb-6ef2-4d03-ab29-ec7bd4c58585">
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/609b7395-673a-42d2-90df-631cc192e99d">
+
+- Azure Advisor
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/37bd37fe-35fd-45e6-9022-363672f1a1df">
+
+- Azure Advisor
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7d460e39-6888-47f0-8cfa-66875b1a7a59">
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/6a94d2a2-1f66-4825-844c-a4befb4ccd24">
