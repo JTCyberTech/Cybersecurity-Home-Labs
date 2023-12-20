@@ -332,4 +332,57 @@
 
 #
 
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/17783b0e-f41b-4352-8903-3ba9e8e93a31">
+
+#
+
+<img width="1280" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1e316acc-0b66-4630-bc97-e4bb37467d59">
+
+- Azure Logic Apps = without any code.
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/afbd77fd-1b92-4aa3-bcb0-11c7e1f9c13d">
+
+- Azure Logic Apps also is a serverless computing. Orchestrate and integrate different services.
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/fbe04f96-7dd7-4ddc-afec-92fd58fe6d1f">
+
+- M.S Privacy Statement = what personal data Microsoft processes, how Microsoft processes it and for what purposes.
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1c6e46b9-fb12-46b9-8051-4298195ebb30">
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/6a1479fe-5061-4642-8ef2-41c6ba4b088c">
+
+- Azure SQL Data Warehouse = high availability.
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/47f669c4-0f33-4c5b-b737-d9aee87fc1c0">
+
+- Azure Batch = enable scale 1000s of VM for high performance computing.
+
+#
+
+<img width="1278" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/73b72e26-700e-438d-b887-1b5e645385fc">
+
+- Azure Government = operated by M.S.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/23faf327-9c06-4312-a8a5-d5e6721c8309">
+
+- Azure China = operated by 21Vianet.
+
+#
+
+
+
+
 
