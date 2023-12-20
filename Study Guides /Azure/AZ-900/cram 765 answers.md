@@ -445,5 +445,167 @@
 
 #
 
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d58bf998-c2d4-43c3-868d-c53404bc3865">
 
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1c95b93a-6463-49f1-971c-48c5227df6f0">
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3441cb14-9518-41ef-a886-f5895a748522">
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5ff4ad0b-f8a9-45fc-8da9-324bc04dc68a">
+
+- Azure AD doesn't require domain controller.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1bf0f0a6-7fdb-4d98-8a1d-f0704b1b187c">
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e6b3e386-5b98-4b43-9b8b-61b9d8ed4839">
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/38d01590-b979-4134-aeb5-0cfa374ab611">
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/0d142b5e-fe42-43a6-8b86-66398c4a62a7">
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/64489e0d-2d43-4641-a6f4-373f2b483bc3">
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/413d157b-4078-48ce-8751-b0bf34c51760">
+
+- Azure Germany can be used globally who intend to do business in the EU/EFTA, UK.
+
+#
+
+<img width="1278" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/778098e7-a83c-4b3c-baad-c6ad21543ef7">
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/ba469fe0-0bec-4db0-8730-c484a325750a">
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/ca2234fe-7395-4485-a135-544dd733f017">
+
+- Azure JIT = Azure Security Center
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2e682495-9b94-4c90-acaf-936f8e44f409">
+
+- Azure Advanced Threat Protection (ATP) = monitor threats by using sensors.
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/eaf33071-5bab-4d1c-ba7f-44fe2db2af00">
+
+- Azure Active Directory Identity Protection = Enforce MFA.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3b9db3fa-728c-4b4f-8262-82b60dfafb79">
+
+- DDoS protection = Secure websites attacks; Generate reports of the attack.
+
+#
+
+<img width="1261" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e3dadc8b-c430-43e2-8e12-d251f7b6dd7e">
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/fa5cc4e3-20c8-4c2b-80c4-ddc18c772a0a">
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/c19e22cc-fd53-43f8-8119-cc63f179ca70">
+
+- Removing unused groups/ network interfaces will not reduce costs.
+- Removing public IP Addresses wil reduce cost.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9b325e28-17dd-448c-9132-24c8ad93aab9">
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7031b5ad-995d-455a-b1fa-e041e901c8c8">
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/cc3f0815-1fb6-41c8-a77c-bb4946693ffa">
+
+- Azure AD Identity Protection = prompts to change password.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b80d6bab-80e7-4c40-a008-7281916ef772">
+
+#
+
+<img width="1267" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/965a13f0-cbdc-40a5-9c07-49f0241c9a8f">
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e6433d72-71e0-4088-87d2-8960ebfb0268">
+
+#
+
+<img width="1266" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8b4bf73d-ad61-4ced-8a8d-ee9262b50696">
+
+- MFA = Azure AD
+
+#
+
+<img width="1258" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9bf346e6-38f6-4bb4-87f1-0aaf46817a87">
+
+- Azure Container Instances = Docker container.
+
+#
+
+<img width="1259" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/69cd8cfb-3cb6-47c5-8c77-102e998c8845">
+
+- Site Recovery = Disaster Recovery as a Service (DRaaS); Does not provide fault tolerance.
+
+#
+
+<img width="1256" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/f7a061d7-c7cc-4109-8aef-9342f674e477">
+
+- Standard support up to 50 GB; Basic only 10 GB.
+- Premium support up to 250 GB.
+
+#
+
+<img width="1267" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/488e0173-53da-43b1-99e6-57b062e9bf7c">
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7769b60c-0245-4d18-9199-40668f1190ef">
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/fe4ab236-5325-49df-af25-281ad153e86f">
+
+- PaaS does not do so by changing pricing tier.
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3aa89cfc-ef18-4658-a67b-430508230d68">
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/535bbcf2-1387-4f1d-9a9c-9dffe8abcf6d">
+
+#
 
