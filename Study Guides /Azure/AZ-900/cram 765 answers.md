@@ -382,7 +382,68 @@
 
 #
 
+<img width="1251" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/feffbb4b-c74a-4a91-ac1b-f6379738a1d9">
 
+- IoT Central = SaaS solution.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/44bfe8d7-e21d-42d5-a26d-849837ef2cf0">
+
+- Azure Advisor = doesn't provide recommendations on how to improve the security of an Azure AD environment.
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1238b760-4a5d-42f4-a9dd-8f46053b8dab">
+
+- Azure Advisor = doesn't recommend how to configure network settings on Azure VMs.
+- Azure Advisor does provide recommendation to Azure VM but not configuration.
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/bd64bea4-3886-4431-9501-d052696347a1">
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/37845f27-2fc7-4b49-a4fc-6b7b02da8238">
+
+- Azure Cost Management = View costs of Management Groups.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8f9b1f45-bb05-4743-bf4c-622c90d419c3">
+
+- Azure Cost Management = View costs of Resource Groups too.
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/12affd91-8603-4157-82bb-646228cff0b3">
+
+- Azure Cost Maangement = View usage of VM during last 3 months.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b546a866-dcd7-481e-be30-77803a1750fc">
+
+- Need both M.S Customer Agreement and Azure plan.
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7a40104d-5963-427a-810c-38d742b9b6c7">
+
+- Azure Policy not used to download the published audit reports.
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/536d5b72-cee8-470f-a40f-6db022bdf54b">
+
+- Service Trust Portal = used for download published audit reports.
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/45019533-9287-4e8c-afcd-68986bbdc8f0">
+
+#
 
 
 
