@@ -946,3 +946,143 @@ Labs/assets/46698661/347036c2-e116-4959-9941-6b2f10c5f0f0">
 
 #
 
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/f66dd10f-e2ca-4805-a808-2ad81721e82b">
+
+- Microsoft Defender for Cloud = Download Regulatory Compliance Report.
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/528b3b40-af1b-48b8-84f6-9c4b3c5ba73a">
+
+- General purpose v2 Storage account = Charge for read and write.
+
+#
+
+<img width="1281" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/327157d5-efc0-4edd-b0e8-8f93da842624">
+
+- Charge read operation from the source storage account and write operations in the destination storage account.
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/061d6c7d-362c-4407-a99f-6c1df1125797">
+
+#
+
+<img width="1279" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5076e9a5-c29a-473a-b240-4ebad78c204b">
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/fa251d20-9cba-4c59-80dd-d74824a671d6">
+
+- 3 year = longest term for Reserved VM instances.
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e50d7ded-1e12-48dd-bcf1-00ce4c1f8378">
+
+- Azure Storage Encryption = Enable by default; Cannot disable.
+
+#
+
+<img width="1264" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/013713ae-deca-4995-8935-ca1198a84e5c">
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/358f1ca9-3b73-4ce0-b4ca-5698337c017e">
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/6a148685-7687-4efd-b411-110d8a0dabe8">
+
+- API account type.
+- Encryption for data at rest.
+
+#
+
+<img width="784" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8f3a8c97-c12e-4e89-92dd-06c876152290">
+
+- Blob not blog. 
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/53440554-89d1-4d17-9ed6-670f16db8cd9">
+
+- Azure Cognitive Services = 2 keys.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2cb1795b-4b32-4af4-bb66-a554837da6aa">
+
+- Network Security Group doesn't configure network security as application's structure.
+- Application Security Group configure network security for application's structure.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/73f853a9-0f00-4122-aab5-6be8d98f34ab">
+
+- 2 keys beacuse safe keeping.
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b6b9c352-ee64-4d19-80cb-5f97c5c71e3a">
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/22448ec3-d86f-4114-b73c-b977ae8518ce">
+
+- Microsoft Defender for Cloud = CNAPP cloud native application protection platform.
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e6a52c96-2e0e-4609-90d9-a530e6cbe8c9">
+
+- Microsoft Defender for Cloud = secure score.
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/42490c60-faab-4558-ba37-26c8960b6c4a">
+
+#
+
+<img width="1273" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/53a6c471-0068-40ae-9759-7e0fcafb96a3">
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1e671f03-956a-4dcd-9980-1718d6a23115">
+
+- Azure Firewall = Stateful.
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3a92d904-6b5d-4eb6-a3a1-34af19a61949">
+
+- Azure Firewall = Scalable.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a23b4df7-aa3a-47d1-a576-48719b5b3547">
+
+- Azure Firewall = block all traffic by default; default rule = deny; rule must be asdded to enable traffic flow.
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/95fe0ecb-e365-4db1-8e9e-dc774db19c75">
+
+- NSG = Basic network level. Source, destination, port, protocol.
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a161d504-146d-406f-a27e-b13533797b3c">
+
+- JIT (Just In Time) = Microsoft Defender.
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/75612d11-93ab-4b43-a9b7-866790c5d57c">
+
+- CORS = Give permission for accessing each other's resource. Cross Origin Resource Sharing.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b9bb6435-32a0-49b3-aeb2-c5ee3129d3a0">
+
+- Microsoft Authenticator = MFA that works in M.S Azure AD and M.S account.
+
