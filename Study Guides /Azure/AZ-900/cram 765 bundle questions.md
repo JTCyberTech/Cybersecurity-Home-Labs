@@ -58,6 +58,18 @@
 
 #
 
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/c5ceb328-7c9a-4373-8403-6d75f986b834">
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a81351fd-4e6c-47fc-ada4-e401303579fe">
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a414ce3d-ad8a-4794-8493-4bb19dd2034c">
+
+#
+
 
 
 # Azure Active Directory Questions
