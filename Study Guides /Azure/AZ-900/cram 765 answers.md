@@ -796,4 +796,153 @@
 
 <img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a09d4587-b89b-498d-ac06-99d6e05b3b3c">
 
+- Azure Hybrid Benefit is paid; not in free account.
+
 #
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/859bee59-09ce-4931-8a28-51d641c61e77">
+
+- IoT Hub = Monitor millions of IoT assets.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/ab54444a-76f5-4da7-bc33-fdc6ad01367a">
+
+- IoT Edge = Analyze data on end user devices.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b6a8ec81-bb9b-4a5d-8f57-e9202e5f3723">
+
+- IoT Central = aPaaS (Application Platform as a Service).
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/c04c459e-404d-4de6-8909-4a90b04ffa64">
+
+- ExpressRoute = Private connection to Azure; No Internet.
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a2fc28f5-16af-4be3-968d-ac67ac42f0c4">
+
+- Point to Site VPN = Connection between Computer on public network with corporate network.
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2d336976-438a-4748-ab7e-03852c627a96">
+
+- Azure App Service has nothing to do with hosting tables.
+- Azure App Service = build and host web apps.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/19f10597-ba6d-4f37-80fa-0ee12219e06f">
+
+- SQL Database service = host tables in Microsoft Azure.
+- It will be wrong it says SQL Database on IaaS or SQL database on VM.
+
+#
+
+<img width="1274" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1462a912-c925-454e-b046-04565e414eec">
+
+- Cosmos DB service = host table in Microsoft Azure.
+
+#
+
+<img width="1271" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/fb62d48a-ded1-48bc-a687-7124e2fd8d11">
+
+- DDoS Protection Standard = real time attack metrics.
+- Only Basic and Standard plans.
+
+#
+
+<img width="1266" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a46d8b0c-6b1b-46cf-bba0-e6c18b476974">
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9e035220-b90e-46f3-8ad8-8e897525a821">
+
+- 10000 Management Groups = single directory.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/43d97ac6-ff15-4494-8860-721d4103729f">
+
+- Azure Kubernetes = Container based applications.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/382c4b66-a1be-4f5c-8bc1-757b12a4e36c">
+
+- Azure VM needs Network; NIC Card.
+
+#
+
+<img width="1275" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/4a7e9ba9-8b53-4c54-91ec-003a70e1f34c">
+
+- Azure VM is not serverless.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/979843e9-ed91-4de1-9f19-f7dec97e41b9">
+
+- Azure Function service = serverless feature.
+
+#
+
+<img width="1276" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a3e181e0-fd54-4017-86ad-d741b363417f">
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-
+Labs/assets/46698661/347036c2-e116-4959-9941-6b2f10c5f0f0">
+
+- Azure Storage capacity limits = account level.
+
+#
+
+<img width="1272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5b9d04f6-50ac-44c6-91da-928a4eda6550">
+
+#
+
+<img width="1278" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/297e9224-abc9-4288-87dc-ba0cc32a94fb">
+
+#
+
+<img width="1251" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d620667f-1fa4-42d3-84f0-bf3d09136d12">
+
+- Azure Active Directory = create new user for Azure Subscription.
+
+#
+
+<img width="1263" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/31f366a9-f5b0-4425-9781-d7ad59bd3d51">
+
+- Scaling up and down is concept of Vertical and Horizontal Scaling.
+
+#
+
+<img width="1269" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/131ad8fb-d9c4-467c-8282-9cd22e206f45">
+
+- Unmanaged data disks for VM = Blobs.
+
+#
+
+<img width="1266" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8baa6f4e-130e-4be5-a88b-9b318d3cfac1">
+
+- Advisor doesn't improve security in Azure AD.
+
+#
+
+<img width="1270" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e79e6703-8bc0-4ce6-ad90-753e1d939b51">
+
+- Azure AD activity logs = Azure Monitor.
+
+#
+
+<img width="1268" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/034e9cd7-0dad-488f-862c-d4f8249be249">
+
+- Azure monitor = montiors log entries from multiple: Azure resources, subscriptions, tenants.
+
+#
+
