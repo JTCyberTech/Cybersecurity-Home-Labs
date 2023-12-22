@@ -19,7 +19,6 @@
 - Provides authenication service for Azure and Microsoft 365.
 - No need Domain controller.
 - User Account in Azure AD can be assign to multiple license.
-- 
 
 #
 
