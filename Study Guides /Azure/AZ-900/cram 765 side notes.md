@@ -4,7 +4,7 @@
 - Can be enabled in ARM virtual network.
 - Cannot invite guest user to use.
 - Cannot be pause once deployed; have to delete it to stop.
-- Includes High availability options; have have 2 doamin controllers.
+- Includes High availability options; have have 2 domain controllers.
 
 #
 
