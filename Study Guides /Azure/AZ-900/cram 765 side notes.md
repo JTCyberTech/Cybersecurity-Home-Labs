@@ -73,6 +73,7 @@
 - Can trigger alerts -> data in Azure Log Analytic Workspace.
 - Can monitor on-premises computers performance.
 - Can help Azure AD save logs.
+- Data can be used to trigger autoscaling.
 
 #
 
