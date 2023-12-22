@@ -90,6 +90,9 @@
 
 - Service Trust Portal = Download published audit reports.
 - Microsoft Defender for Cloud = Download regulatory Compliance Report.
+- Microsoft Defender = Cloud-native application protection platform (CNAPP).
+- Microsoft Defender = check your secure score.
+- Microsoft Defender = JIT
 
 # 
 
@@ -131,6 +134,8 @@
 - Azure Files;
 - Azure Backup;
 - Microsoft SQL Database.
+- Doesn't change pricing tier by additional memory.
+- Can automatically scale number of Instances.
 
 #
 
@@ -139,13 +144,16 @@
 - Azure Cost Mangement = helps analyze cost create and manage budge export data; cost optimization; Azure invoice (bills); Manage billing account and subscription.
 - Azure Cost Management = Use to view cost associated to management groups and resource groups, and usage of VM during last 3 months.
 - Azure Cost Management Requirement = Microsoft Customer Agreement and Azure Plan.
+- Azure Cost Management features = Cost and Billing information, budgets, alerts, automated exports, cost recommendations.
 - Azure Total Cost of Ownship (TCO) Calculator = help you calculate on-premise cost vs moving to Azure.
+- Azure Pricing Calculator = allow customer to review and estimate cost of their running service before making a purchase.
 
 #
 
 # Azure Firewall
 
 - Deny by default.
+- Stateful and scalable.
 
 #
 
@@ -182,6 +190,26 @@
 - Azure Batch = enable scale 1000s of VM for high-performance computing and large scale parallel job.
 - JIT VM = Azure Security Center.
 - Azure Advanced Threat Protection (ATP) = Monitor threat by using sensors.
-- DDoS protection = generates reports on the attacks; secure website.
+- DDoS protection = generates reports on the attacks; secure website; Basic or Standard plan
 - Azure Databrick = Apache Spark-bazed analytics service.
+- Azure Continer Instances = application using Docker.
+- Microsoft Cloud Adoption Framework = SPRA-GMS; Strategy, Plan, Ready, Adopt - Govern, Manage, Secure.
+- Azure Log Analytics = tool for correlate events from multiple resources into central repository.
+- Azure Advisor = Estimate the costs of Azure solution.
+- Azure Security Center = Azure environment meets regulatory requirement.
+- Azure Hybrid Benefit = Minimize licensing cost; Can't be use within the Azure free account.
+- Microsoft Defender = check your secure score.
+- Azure Arc = Manage on-premises Windows server as an Azure resource. Hybrid environment.
+- Azure Kubernetes = manage and scale continer based application.
 
+
+#
+
+# Random Facts
+
+- Each Azure subscription can only have one account administrator; Can have multiple service administrator and co-admin.
+- Each Azure subscription can be managed by using Microsoft account and other ways.
+- Azure VM must have = Azure Virtual Network, NIC Card, OS Disks, resource group to function.
+- Azure CDN = Not Serverless computing.
+- Azure Storage capacity = Account level.
+- Cosmos DB = API select on account type; encryption data at rest.
