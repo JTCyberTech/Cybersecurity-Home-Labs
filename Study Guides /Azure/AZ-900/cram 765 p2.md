@@ -279,3 +279,25 @@ Question 43: Yes you can
 443: JIT VM can be access by Azure Security Center.
 
 #
+
+506: Azure Site Recovery doesn't provide fault tolerance for VM.
+
+#
+
+513: Microsoft Cloud Aoption Framework 1st stage = Define strategy.
+
+#
+
+516: Azure Log Analytics = tool correlate events from multiple resources into a central repository.
+
+#
+
+518: PaaS doesn't change pricing tier by additional memory; host web apps does.
+
+#
+
+527: SLA of Azure Map = 99.9%.
+
+#
+
+744: NSG is not for configurating network security for **application's** sturcture.
