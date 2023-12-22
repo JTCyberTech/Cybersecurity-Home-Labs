@@ -63,7 +63,6 @@
 # Azure Resource Manger Templates
 
 - Identical
-- 
 
 #
 
