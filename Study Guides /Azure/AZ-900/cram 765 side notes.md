@@ -24,7 +24,7 @@
 
 # Azure AD service
 
-- Azure AD Privileged Identity Maangement (PIM) = enable for manage control and monitor access to important resource.
+- Azure AD Privileged Identity Mangement (PIM) = enable for manage control and monitor access to important resource.
 - Azure AD Identity Protection = have function to encourage password change.
 - Azure AD Identity Protection = Can enforce Azure MFA based on condition.
 
