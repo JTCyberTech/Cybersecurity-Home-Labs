@@ -14,6 +14,9 @@
 
 - Do; Some; People; Fear; Birthdays
 - Data; Segments; Packets; Frames; Bits
+
+#
+
 - Data = Layer 5,6,7 or Sessions, Presentation, Application layer.
 - Segments = Layer 4 or Transport layer.
 - Packets = Layer 3 or Network layer.
@@ -37,6 +40,16 @@ Ethernet Frame
 #
 
 MAC Address = Unique 48 bits values in **network card**, wired or wireless
+
+#
+
+Layer 7: Application - Your Eyes
+Layer 6: Presentation - Application Encryption (SSL/TLS)
+Layer 5: Session - Control Protocols, Tunneling Protocols
+Layer 4: Transport - TCP Segment, UDP Datagram
+Layer 3: Network - IP Address, Router, Packet
+Layer 2: Data Link - Frame, MAC address, Extended Unique Identifier (EUI-48, EUI-64), Switch
+Layer 1: Physical - Cables, Fiber, Signal
 
 #
 
@@ -120,6 +133,12 @@ Dion
 Messer
 - Routing Layer: Layer associated with IP Addresses
 - Layer where frames is broken into smaller pieces to move between different types of networks.
+
+Meyers
+- MAC Address is good for moving data between local area network.
+- IP Address is good for moving data between internet.
+- Layer 3 looks at the incoming packets' IP addresses and make sure it's going to the right place.
+- Strip away: the Source and Destination IP Address.
 
 #
 
