@@ -210,6 +210,27 @@ Messer
 - Communication management between devices (Start, Stop, Restart).
 - Use Control Protocols, Tunneling Protocols.
 
+Meyers
+- Makes the connection to the remote host. Establishing connection to web servers if web browser.
+- Once established, data can move back and forth between the two individual systems.
+- If IP address gets the data to the right computer, it is the port numbers which are part of the packet that get the data to the right application.
+- Strips away: Source and Destination Ports.
+
+Dion
+- Think of a session as a conversation that must be kept separate from other to prevent intermingling of the data.
+- Set up a Session, Maintaining a Session, Tearing Down a Session.
+  - Set up a Session: Check user credentials, assign number to session to identify them, negotiate services needed for session, negotiate who begins sending data.
+  - Maintain a Session: Transfer data back and forth across the network.
+    - If there is a break in the connection, have to reestablish connection.
+    - Acknowledge receipt of data.
+  - Tearing Down a Session: Ending a session after the transfer is done or when the other party d/c.
+    - Due to mutual agreement/ After the transfer is done.
+- Example of Layer 5: H.323 and NetBIOS.
+  - H.323: Used to set up, maintain, tear down a voice/ video connection.
+    - H.323/ H.264 = Streaming Audio or Steaming Video. (Real Time Protocol RTP).
+  - NetBIOS: used by computer to share files over a network.
+
+
 #
 
 # Layer 6 - Presentation Layer
@@ -220,9 +241,49 @@ Messer
 - Application encryption.
 - Often combined with Layer 7 Application Layer.
 
+Meyers
+- Job: Make sure data not only get to the right application but gets it in a format that application can view.
+
+Dion
+- Responsible for formatting data and securing data with proper encryption.
+- Data Formatting and Encryption.
+  - Data Formatting: formatted by computer so it has compatibility between different types of devices.
+    - ASCII, GIF, JPG, PNG.
+    - ASCII: Ensures data is readableby recieving system. Provides proper data structures. Allows negotiate data transfer syntax for Layer 7 application layer.
+  - Encryption: Use scramable the data in transit to keep it secure from prying eyes and provide data confidentiality.
+- Example of Layer 6:
+  - Scripting Languages - HTML, XML, PHP, JavaScript.
+  - Standard Text - ASCII, Unicode, EBCDIC.
+  - Pictures - GIF, JPG, TIF, SVG, PNG.
+  - Movie Files - MP4, MPG, MOV.
+  - Encryption Algorithms - TLS, SSL.
+
 #
 
 # Layer 7 - Application Layer
 
+Messer
 - A layer that we get to see.
 - HTTP, FTP, DNS, POP3
+
+Meyers
+- Smarts built into applications, so when data comes up from lower layers, application can actually read this thing.
+
+Dion
+- Provides all application level services.
+- Application like file transfer or network transfer.
+  - Not Chrome, Word, PowerPoint, or Notepad.
+- Layer where users communicate with computer.
+  - Function like application services and service advertisement.
+  - Application Services: unites communicating components from more than one network application.
+    - Example: File transfer, file sharing, E-mail, Remote Access, Network Management Activities, Client/server processes.
+    - Email = POP3, SMTP, IMAP.
+  - Service Advertisement: Where application can send out announcements to other devices on the network.
+    - Example: Printers, File Servers. 
+- Example of Layer 7:
+  - Email Applications (POP3, IMAP, SMTP).
+  - Web Browsing (HTTP, HTTPS).
+  - Domain Name Service (DNS)
+  - File Transfer Protocol (FTP, FTPS)
+  - Remote Access (TELNET, SSH)
+  - Simple Network Management Protocol (SNMP)
