@@ -140,6 +140,24 @@ Meyers
 - Layer 3 looks at the incoming packets' IP addresses and make sure it's going to the right place.
 - Strip away: the Source and Destination IP Address.
 
+Dion
+- Forward Traffic (Routing) with logical address. With (IPv4 or IPv6).
+- Logical Addressing: IP is most common.
+- How should data be forwarded or routed? 3 ways
+  - Packet Switching: Known as "Routing", Data is divided into packets and forwarded based on IP Address.
+  - Circuit Switching: Dedicated communication link is established between two devices. (Same path every time during the session)
+  - Message Switching: Data is divided into messages, similar to packet switching but these messages may be stored then forwarded.
+- Route Discovery And Selection
+  - Decide which path to take to send the message.
+  - Routers maintain a routing table to understand how to forward a packet based on destination IP address.
+  - Routing protocols helps decide how data is going to flow across the network/ how routers communication the information.
+- Connection Services
+  - Flow Control: Prevents sender from sending data faster than receiver can get it.
+  - Packet Reordering: Allow packets to be sent over multiple link and across multiple route for faster services.
+- ICMP (Internet Control Message Protocol): Used to send error messages and opertional information to an IP destination.
+  - PING and traceroute.
+- Example of Layer 3: Routers, MUltilayer Switches, IPv4 and IPv6 Protocol, Internet Control Message Protocol (ICMP)
+
 #
 
 # Layer 4 - Transport Layer
@@ -149,7 +167,41 @@ Messer
 - Protocol used: TCP and UDP (Transmission Control Protocol and User Datagram Protocol).
   - Used when accessing a webpage.
   - Webpage too large have to chop it up into seperate frames to send multiple parts and put back together on the other side.
- 
+
+Meyers
+- Job: To assemble and disassemble different pieces of data as they come in.
+- Chop it up into byte chunks so individual frame can send it out.
+
+Dion
+- Dividing line between the upper layers and lower layers of OSI model.
+  - Lower Layers = Physical, Data Link, Network Layers.
+  - Upper Layers = Transport, Session, Presentation, Application Layers.
+- Focused on TCP and UDP Protocols.
+  - TCP: Transmission Control Protocol: connection oriented protocol, reliable transport of segments.
+    - If segments dropped, protocol detects it and resents segment.
+    - Acknowledgements received for successful communications.
+    - Used for all network data that needs to be assured to get to its destination.
+    - 3 Ways Handshake: SYN, SYN/ACK, ACK.
+  - UDP: User Datagram Protocol: Connectionless Protocolm unreliable transport of segments.
+    - If segment dropped, sender is not aware.
+    - Good for audio and visual streaming.
+    - Lower overhead for increased performance.
+
+<img width="384" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/ebc4fe03-33d4-4bf1-9766-dd0348b5a246">
+
+- Windowing: Allows the clients to adjust the amount of data in each segment.
+  - Continually adjusts to send more or less data per segment transmitted.
+  - Adjusts lower as number of retransmissions occur.
+  - Adjusts upwards as retransmissions are eliminated.
+  - Want to be able to send as much information as quickly as possible with the least amount of retransmissions but still getting the maximum throughput.
+- Buffering: Occurs when devices (routers) allocate memory to store segment if bandwidth isn't readily available.
+  - When available, it transmits the contents of the buffer.
+  - If the buffer overflows, segments will be dropped.
+  - We want to buffer things and hold it and then as we have room, we can send that information out, clear the bufferm and keep on moving.
+  - Can keep costs down by knowing utilization is over our network for long period of time.
+- Example of Layer 4: TCP and UDP, WAN accelerators, Load Balancer and Firewalls.
+
+
 #
 
 # Layer 5 - Session Layer
