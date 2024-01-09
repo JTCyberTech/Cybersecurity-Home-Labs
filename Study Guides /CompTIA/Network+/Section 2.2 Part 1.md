@@ -139,3 +139,19 @@ Messer
   - IoT devices
   - Ad Hoc Devices work together to form a mesh cloud.
   - Can self heal, if you turn off one IoT devices, the remaining devices will self heal and redesign themselves into a mesh network that will allow them to continue the communication.
+
+
+Dion
+- Three different modes
+  - Infrastructure Mode: Uses a wireless access point as a centralized point and supports wireless security controls.
+    - Most common type of wireless network.
+  - Ad Hoc Mode: Decentralized wireless network which creates P2P connections and does not require a router or access point.
+    - Operates like peer-to-peer network.
+    - No routers, no access point.
+    - Allow people to jump in and out of the network as much as they want.
+  - Wireless Mesh: Interconnection of different types of nodes, devices, or radios.
+    - Mesh all different type of commuication together.
+    - Can use different radio frequencies like bluetooth and WiFi and microwave and cellular and satellite.
+    - Gives redundany and reliable connections.
+    - Combining different technologies to create a mesh network that can be used by anyone.
+    - Can use during a disaster or humanitarian assistance type mission.
