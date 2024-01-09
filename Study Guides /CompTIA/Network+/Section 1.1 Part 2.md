@@ -89,3 +89,56 @@ Can test by using the Ping command:
   - 1500 bytes - 8 bytes ICMP Header - 20 bytes IP Address.
   - Windows: ping -f -l 1472 8.8.8.8
   - Linux: ping -D -s 1472 8.8.8.8
+ 
+
+#
+
+## Dion
+
+### Encapsulation and Decapsulation
+- Process of putting header and trailer around data.
+- Example: Finish writing a letter for parents, putting the letter in an envelope = encapsulation.
+- Example: Parents gets the letter, taking the letter out of the envelope = decapsulation.
+- Move from layer 7 to 1 on OSI model = Encapsulation. Application -> Physical.
+- Move from layer 1 to 7 on OSI Model = Decapsulation. Physical -> Application.
+
+#
+
+### Protocol Data Unit (PDU)
+- A single unit of information transmitted in computer network.
+- On the OSI layer we have special names for PDUs
+  - Layer 1 = Bits
+  - Layer 2 = Frames
+  - Layer 3 = Packets
+  - Layer 4 = Segments (if TCP) Datagram (if UDP)
+  - Layer 5,6,7 = Data
+
+#
+
+### TCP Header (20 bytes)
+- Source Port, Destination Port
+- Sequence Number: Used to ensure all data is properly received by destination when its sent by the original transmitter.
+- Acknowledgement Number: Used to ensure all data is properly received by destination when its sent by the original transmitter.
+- Offset, Reserved, TCP Flags, Windows
+  - 6 TCP Control Flags to manage data flow.
+  - SYN, SYN;ACK, ACK = 3 ways handshake.
+    - SYN; Synchronization: used to synchronize connection during the 3 way handshake.
+    - ACK; Acknowledgement: Used during the 3 way handshake, but also used to acknowledge the successful receipt of packets.
+    - FIN; Finished: Used to tear down the virtual connections created using the 3 way handshake and the SYN flag.
+    - RST; Reset: Used when a client or server receives a packet that it was not expecting during the current connection.
+      - Sent when a server didn't want to accept any new connections.
+    - PSH; Push: Used to ensure data is given priority and is processed at the sending or receiving end.
+    - URG; Urgent: Similar to PSH and identifies incoming data as urgent. Tell the recipient to process immediately.
+- Checksum, Urgent Pointer
+- mTCP (Optional)
+
+
+
+#
+
+### UDP Header (8 bytes)
+- Source Port
+- Destination Port
+- Length: Indicates how many bytes the total UDP packet is, including header and its data.
+- Checksum: Not mandatory; used to provide some validation that the UDP data being sent was actually recieved.
+
