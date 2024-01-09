@@ -26,5 +26,61 @@ Cyclic Redundancy Check (CRC)
 - FCS: Frame Check Sequence = 32 bits cyclic redundancy check, check the value if it's not correct, resend.
   - Used for error detection.
 
+#
 
+# TCP/IP Model
 
+- Only have 4 layers.
+- Application, Presentation, Session layers in OSI Model = Application Layer in TCP/IP Model.
+- Transport Layer in OSI Model = Transport Layer in TCP/IP Model. (Everything Same)
+- Network Layer in OSI Model = Internet Layer in TCP/IP Model. (Everything Same just name changed)
+- Data Link, Physical Layer in OSI Model = Network Interface Layer in TCP/IP Model.
+
+## Layer 1 - Network Interface TCP/IP Model
+
+- Physical and electrical characterstics.
+- Describe how to transmit bits across a network and determines how the network medium is going to be used.
+  - Twisted pair copper cabling, coaxial cable, fiber optic cable?
+  - Wireless? TCP over ethernet? Token Ring, Serial?
+
+#
+ 
+## Layer 2 - Internet TCP/IP Model
+
+- Where data is taken and packaged into IP Datagrams.
+- Contains source, destination IPs. Forward those datagrams between different hosts across networks with routers.
+- Where internet is going to get connected to intranet.
+  - IP, ICMP, ARP, Reverse ARP.
+
+#
+
+## Layer 3 - Transport TCP/IP Model
+
+- Defines the level of service and the status of the connection being used by TCP, UDP, or RTP.
+  - TCP = Connection full; UDP = Connectionless; RTP = Real-time.
+ 
+#
+
+## Layer 4 - Application TCP/IP Model
+
+- Dictates how programs are going to interface with the transport layer by conducting session management.
+- HTTP for web browsing
+- Telnet for remote control
+- FTP for file transfer
+- SSH for remote shell
+- SNMP for network management
+- DNS for domain name resolution
+- SMTP for sending mail
+- SSL or TLS for secure web browsing and encryption
+
+#
+
+# Ports
+
+- 0 to 65535
+  - 0 to 1023 = Well-known/ Reserved Ports
+  - 1024 to 65535 = Ephemeral Ports
+ 
+## IPv4 Packet
+
+- Consists of a source address, destination address, IP flags, and protocol.
