@@ -115,7 +115,7 @@ Can test by using the Ping command:
 
 #
 
-### TCP Header (20 bytes)
+### TCP Header (20 bytes) Layer 4
 - Source Port, Destination Port
 - Sequence Number: Used to ensure all data is properly received by destination when its sent by the original transmitter.
 - Acknowledgement Number: Used to ensure all data is properly received by destination when its sent by the original transmitter.
@@ -132,13 +132,33 @@ Can test by using the Ping command:
 - Checksum, Urgent Pointer
 - mTCP (Optional)
 
-
+<img width="639" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3f1cb1a2-9a41-4dae-a7e6-61e9b68e004e">
 
 #
 
-### UDP Header (8 bytes)
+### UDP Header (8 bytes) Layer 4
 - Source Port
 - Destination Port
 - Length: Indicates how many bytes the total UDP packet is, including header and its data.
 - Checksum: Not mandatory; used to provide some validation that the UDP data being sent was actually recieved.
 
+<img width="637" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/0ad997db-d243-4044-9299-c56aac91af81">
+
+#
+
+### IP Header Layer 3
+
+<img width="637" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/c5f1c7f5-48e4-4698-8518-ac058ecd31be">
+
+#
+
+### Ethernet Header Layer 2
+- MAC Address: physical address used to identify network card on local area network.
+- EtherType: indicate which protocol is encapsulated in the payload event frame. (IPv4 or IPv6)
+<img width="637" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/13fa3d4b-f080-475c-b92e-d88871d2dace">
+
+#
+
+### Encapsulation with PDU
+
+<img width="641" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/41cf4760-b46d-4706-be84-cc3ed0e58fbb">
