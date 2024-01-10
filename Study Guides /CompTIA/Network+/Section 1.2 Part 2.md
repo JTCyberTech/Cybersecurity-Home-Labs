@@ -93,3 +93,71 @@ Messer
 - Limited geographical area: Group of buildings.
 - LAN Techonologies: Fiber Connect and High Speed Ethernet.
 - Own Fiber: No Third-party Provider.
+
+
+#
+
+## NAS vs SAN
+
+Messer 
+- NAS = Network Attached Storage
+  - Connect to a shared storage device across the network.
+  - File-level access: Any changes you make to this file have to be done to the entire file located on the device.
+    - If you need to change a byte on the file, and the file have 1 GB, you have overwrite the whole GB.
+- SAN = Storage Area Network
+  - Block level access: Can change what it just needed to be changed.
+  - Very efficient reading and writing.
+- NAS and SAN requires a lot of bandwidth.
+  - May use an isolated network and high speed network technologies.
+ 
+
+#
+
+## MPLS
+
+Messer
+- MPLS = Multiprotocol Label Switching
+  - Learning from ATM and Frame Relay
+    - Keep the advantages, remove the disadvantages.
+  - Communication through the WAN but uses label to determine how routing and forwarding traffic thru WAN.
+  - Advantage:
+    - Can almost use any type of connection for MPLS.
+    - Put almost any type of data inside of MPLS.
+    - Meaning: we could send IP Traffic, Ethernet frames thru MPLS network.
+    - Makes MPLS easy to get up and running and have data transfer between 2 locations.
+   
+
+#
+
+## MPLS pushing and Popping
+
+Messer 
+- Labels are "pushed" onto packets as they enter the MPLS cloud.
+- Labels are "popped" off on the way out
+
+
+#
+
+## mGRE
+
+Messer 
+- mGRE = Multipoint Generic Router Encapsulation
+  - Used extensively for Dyanmic Multipoint VPN (DMVPN)
+  - Common on Cisco Routers.
+- Your VPN builds itself
+  - Remote sites communicate to each other.
+- Tunnels are built dynamically, on demand: Dynamic Mesh.
+
+
+#
+
+## SD-WAN
+
+Messer
+- SD-WAN = Software Defined - Wide Area Network
+  - Meaning: the WAN can be defined however we would like to laid it out.
+  - Good for cloud based applications and needed to know where networks are going.
+  - Cloud-based applications communicate directly to the cloud, No need to hop thru a central point.
+ 
+
+<img width="396" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7eff155b-9904-4fd2-a108-0d209f814ca8">
