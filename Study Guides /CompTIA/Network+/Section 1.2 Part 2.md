@@ -10,6 +10,11 @@ Messer
 
 <img width="412" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/eb42915c-3417-49dd-a8d1-7b625d081658">
 
+Dion
+- Peers shares resources (files/printers) direcrtly with others.
+- Advantages: Lower Cost, No dedicated resources, No specialized OS.
+- Disadvantages: Decentralized management, inefficient for large networks, horrible scalability.
+
 #
 
 ## Client Server 
@@ -26,6 +31,16 @@ Messer
  
 <img width="342" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/4732fee8-0195-4d00-b728-27d70ec23e81">
 
+Dion
+- Client: A device used by an end user to access the network.
+  - Can be: Workstation, laptop, tablet, smartphone, smart TV, server, other terminal devices.
+- Server: A device that provides resources to the rest of the network.
+  - Different servers provides different functions.
+- Client/Server Model: Uses a dedicated server to provide access to files, scanners, printers and other resources.
+- Makes this model one of the main choices for business network.
+- Advantages: Centralized administration, easy management, better scalability.
+- Disadvantages: Higher Cost, Requires dedicated resources, Specialized in Different OS.
+
 
 #
 
@@ -37,6 +52,14 @@ Messer
 - A building or group of building (High speed connectivity)
 - Uses Ethernet or 802.11 Wireless
   - Any slower is not local.
+
+Dion
+- Connects components within a limited distance. (100 meters/ 300 ft)
+  - Each segement can go about 100m with CAT 5 cabling.
+- Think: Small office or one floor of an office building.
+
+Ethernet = IEEE 802.3
+Wi-Fi = IEEE 802.11
  
 #
 
@@ -50,6 +73,11 @@ Messer
 - Common to see government ownership
   - They own the right of way.
  
+Dion
+- Connects scattered locations across a city or metro area.
+- Cover up to about 25 miles.
+- Example: Police departments, could have a lot of locations across cities, but all connected together to form a MAN.
+ 
 #
 
 ## WAN
@@ -61,6 +89,13 @@ Messer
   - Generally much slower than the LAN.
 - Point-to-point serial, MPLs, Satellite
 - Terrestrial (Earth bound) and Non-Terrestrial (Space).
+
+Dion
+- Connects grographically disparate internal networks and consists of leasesd line or VPN.
+- Cover across your states, country, or even across the world.
+- Example: Internet is WAN, Connecting an office at CA and NY can use WAN.
+
+<img width="346" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2475f29c-1ba7-4b79-9577-055a26b04e79">
 
 #
 
@@ -83,6 +118,11 @@ Messer
   - Your private network, Bluetooth, IR, NFC.
 - Automobile: Audio output, integrate with phone.
 
+Dion
+- Smallest type of wired or wireless network
+  - Covers the least amount of area. (10 feet or less)
+  - Example: Bluetooth and USB. USB connecting to a laptop = serial connection.
+
 #
 
 ## CAN
@@ -94,6 +134,9 @@ Messer
 - LAN Techonologies: Fiber Connect and High Speed Ethernet.
 - Own Fiber: No Third-party Provider.
 
+Dion
+- Connects LANs that are building-centric across a university, industrial park or business park.
+- Can go up to few miles across many different buildings.
 
 #
 
