@@ -27,3 +27,35 @@ Packet-Switched Connection:
 - Cheap line for customers to use.
 - SLA or Service Level Agree is provided.
 - More like a virtual network instead of dedicated circuit.
+
+#
+
+## Types of  WAN Connections
+
+First Type - Copper Wires Forms:
+- Unshielded Twisted Pairs (UTP)
+- Shielded Twisted Pair (STP)
+- Coaxial Cable (Coax)
+
+Using UTP and STP:
+- Cables used in LAN: CAT5 or CAT6.
+- Dial-up, ISDN, E1, T1 Connections
+
+Using Coaxial Cable:
+- Cover more distance than UTP and STP cable.
+- Used with Cable Modems.
+
+All Three Copper Cables:
+- Support both analog or digital connections
+
+#
+
+Second Type - Fiber Connection:
+- More expensive, Fios Verizon, Support more than 1 GB per second.
+
+#
+
+Third Type - Power lines:
+- Using BPL or Broadband over Power Line.
+- Supports 2.7 Mbps connections.
+- Good for Rural Areas.
