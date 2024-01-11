@@ -80,3 +80,31 @@ Color of T568B:
 
 <img width="759" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/011c9b74-d3ee-4502-98fd-e95d3f265167">
 
+#
+
+## Optical Fiber
+
+- If you are physically connected to network but not using Copper. Then you probably using Fiber optics.
+  - Network Communication using light instead of electical signals.
+- No Radio Frequences signals.
+  - Difficult to monitor or tap.
+- Signal slow to degrade and can transmission long distances.
+- Immune to radio interference.
+
+### Multimode Fiber
+
+- Short-range communication
+- Up to 2 km
+- Inexpensive light source; LED light.
+- Multimode: the core of the fiber itself is larger than the wavelength of light being sent thru it.
+  - Different code as they pass thru the fiber.
+
+<img width="593" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9ca97454-ecbc-42b6-9232-bc0a2290c018">
+
+### Single-mode Fiber
+
+- Long-range communication
+- Up to 100 km without processing
+- Expensive light source; Laser beams
+
+<img width="548" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/68728a72-8c2a-4306-9185-b4f00ce739b9">
