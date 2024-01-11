@@ -108,3 +108,58 @@ Color of T568B:
 - Expensive light source; Laser beams
 
 <img width="548" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/68728a72-8c2a-4306-9185-b4f00ce739b9">
+
+#
+
+## Connector Types
+
+### Local Connector (LC)
+
+- Have 2 different fibers inside, Usually send and reciever.
+- Have locks that you have to push down.
+- Small, so it's on the most recent routers and switches.
+
+<img width="371" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d8aec08d-33d6-4c3c-ab91-6af07b7e2046">
+
+#
+
+### Straight Tip (ST)
+
+- Slightly larger than LC.
+- Old, slightly twist them to lock in place.
+
+<img width="354" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/f908fecb-518d-47a4-99dd-e0830bcb06d0">
+
+#
+
+### Subscriber Connector (SC)
+
+- Square connectors
+
+<img width="304" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b7201ec3-3377-4028-a01c-06fc3d3df21b">
+
+#
+
+### Mechanical Transfer Registered Jack (MT-RJ)
+
+- Very small connector.
+- 2 tiny fiber connectors at the end.
+- Good for small available space.
+- Similar to LC connector, locking mechanism on top.
+
+<img width="393" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d98c26c9-577a-4f33-b241-0c07ab195193">
+
+
+#
+
+### UPC and APC
+
+- Fiber connection = light; laws of physics apply
+- Return loss: Light reflected back to the source, creating inefficiency from sending light to the other end.
+- We can use UPC or APC to minimize the return loss.
+
+UPC = Ultra-Polished Connectors)
+- Ferrule end-face radius polished at a zero degree angle.
+- High return loss
+
+APC = An
