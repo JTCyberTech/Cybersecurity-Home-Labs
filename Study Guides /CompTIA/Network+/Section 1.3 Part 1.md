@@ -78,5 +78,5 @@ Color of T568B:
 - White and and Brown
 - Brown
 
-<img width="730" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7108f345-9568-45bb-87c7-cb7b8e29310d">
+<img width="759" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/011c9b74-d3ee-4502-98fd-e95d3f265167">
 
