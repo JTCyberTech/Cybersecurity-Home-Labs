@@ -39,7 +39,7 @@
 ### Twinaxial Cable
 
 - Two inner conductors; Twins
-- Common on: 10 GB Ethernet SFP cables,
+- Common on: 10 GB Ethernet SFP+ cables,
   - Full duplex, Five metere, low cost, low latency compared to twisted pair.
  
 #
@@ -113,7 +113,7 @@ Color of T568B:
 
 ## Connector Types
 
-### Local Connector (LC)
+### Local Connector (LC) - Fiber
 
 - Have 2 different fibers inside, Usually send and reciever.
 - Have locks that you have to push down.
@@ -123,7 +123,7 @@ Color of T568B:
 
 #
 
-### Straight Tip (ST)
+### Straight Tip (ST) - Fiber
 
 - Slightly larger than LC.
 - Old, slightly twist them to lock in place.
@@ -132,7 +132,7 @@ Color of T568B:
 
 #
 
-### Subscriber Connector (SC)
+### Subscriber Connector (SC) - Fiber
 
 - Square connectors
 
@@ -140,7 +140,7 @@ Color of T568B:
 
 #
 
-### Mechanical Transfer Registered Jack (MT-RJ)
+### Mechanical Transfer Registered Jack (MT-RJ) - Fiber
 
 - Very small connector.
 - 2 tiny fiber connectors at the end.
@@ -152,14 +152,51 @@ Color of T568B:
 
 #
 
-### UPC and APC
+### UPC and APC - Fiber
 
 - Fiber connection = light; laws of physics apply
 - Return loss: Light reflected back to the source, creating inefficiency from sending light to the other end.
 - We can use UPC or APC to minimize the return loss.
 
-UPC = Ultra-Polished Connectors)
-- Ferrule end-face radius polished at a zero degree angle.
+UPC = (Ultra Physical Contact)
+- Polished at a zero degree angle.
 - High return loss
 
-APC = An
+<img width="294" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/36018e2a-24dd-4e8e-b63e-44dce5e91b27">
+
+APC = (Angle Physical Contact)
+- Polished at an eight degree angle.
+- Lower Return loss, generally higher insertion loss than UPC.
+
+<img width="307" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/c03adc43-8cb6-4c70-acb2-a6a01779f7e4">
+
+
+#
+
+### RJ11 Connector - Copper Connections
+
+- Use: voice communication; Telephone & DSL Connection
+- Registered Jack Type 11
+  - 6 position, 2 conductor (6P2C)
+  - RJ14 uses 6P4C for dual line use.
+
+<img width="243" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/82e55798-1dd7-4ee4-9e2b-848b1b27ec34">
+
+#
+
+### RJ45 Connector - Copper Connetions
+
+- Registered Jack Type 45
+- Use: Ethernet Connection, Modular Connector
+- 8 position, 8 conductor (8P8C)
+
+<img width="272" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/f6e07e15-0839-4d2e-9f77-d1b3c9206d13">
+
+#
+
+### F-Connector
+
+- Use: Cable Television; cable modem; DOCSIS (Data Over Cable Service Interface Specification)
+- RG-6 type of coax cable, Commonly Threaded connector.
+
+<img width="192" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/87f65bd8-8a19-411c-b314-8ec9568888f7">
