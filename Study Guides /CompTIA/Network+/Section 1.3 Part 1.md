@@ -2,7 +2,7 @@
 
 ## Copper
 
-- Copper Cabling =Foundation of Ethernet networks.
+- Copper Cabling = Foundation of Ethernet networks.
 
 #
 
