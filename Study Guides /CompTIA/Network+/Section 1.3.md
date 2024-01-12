@@ -200,3 +200,71 @@ APC = (Angle Physical Contact)
 - RG-6 type of coax cable, Commonly Threaded connector.
 
 <img width="192" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/87f65bd8-8a19-411c-b314-8ec9568888f7">
+
+#
+
+### Transceivers/ Media Converters
+
+Media Converters
+- OSI Layer 1 device; physical layer signal conversion.
+- Example: Convert a fiber connection to a copper connection; vice versa.
+- Extend a copper wire over a long distance; convert it to fiber and back again.
+- You only have fiber connection but the switch only has copper ports. Can convert temporary to fiber.
+
+Transceivers
+- Transmitter and receiver; usually in a single component.
+- Provides a modular interface; add the transceiver that matches your network.
+- Adding a thing that you can switch type of converters.
+
+<img width="439" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5072cc50-7859-4e3c-9fe3-7651fbc127c7">
+
+#
+
+### Duplex Communication
+- Two fibers; Transmit and recieve.
+
+<img width="715" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d397a381-5e3d-4404-a46c-d816bb9744ce">
+
+
+### Bi-Directional (BiDi) Transceivers
+- Traffic in both directions with a single fiber; use two different wavelengths.
+  - You can transfer and receive traffic over a single strand of fiber.
+- Reduce number of fiber runs by half.
+
+<img width="695" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d11340de-cad7-44cb-a39c-6b5049a4b8bf">
+
+
+#
+
+### SFP and SFP+
+
+Small Form-factor Pluggable (SFP)
+- Commonly used to provide 1 Gbits/s fiber
+- 1 Gbit/s RJ46 SFPs also available.
+
+Enhanaced Small Form-factors Pluggable (SFP+)
+- Exactly the same phyysical size as SFPs.
+- Support: up to 16Gbit/s
+- Common use with 10 Gigabit Ethernet.
+
+#
+
+### QSFP and QSFP+
+
+Quad Small Form-factor Pluggable
+- 4 Channel SFP = Four 1 Gbit/s = 4 Gbit/s
+
+Enhanced Quad Small Form-factor Pluggable
+- QSFP+ = four channel SFP+, Four 10 Gbit/s = 40 Gbit/s
+
+Efficiency: 
+- Combine four SFPs into a  single transceiver
+  - Cost Savings in fiber and equipment.
+- Use bi-directional QSFPs/QSFP+
+  - Additional efficiency over a single fiber.
+ 
+<img width="181" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/101305b3-1dfc-4ed2-b469-409ed8120769">
+
+#
+
+## Cable Management
