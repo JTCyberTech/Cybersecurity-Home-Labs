@@ -356,3 +356,127 @@ Building Industry Cross-Connect)
 ### Ethernet 
 
 - The most popular networking technology in the world.
+- There are many different types of Ethernet.
+  - Speeds, Cabling, Connectors, Equipments.
+- Modern Ethernet uses:
+  - Twisted Pair Copper or Fiber.
+- Baseband Technologies
+  - Single frequency using the entire medium.
+  - Broadband = uses many frequencies, sharing the medium.
+ 
+#
+
+### Copper Ethernet 
+
+10BASE-T (Twisted Pair)
+- 2 pairs of wires within cable
+- Minimum: Cat3 Cable 
+- Max Distance: 100 Meters
+
+#
+
+100BASE-TX
+- 2 Pairs of wires within cable
+- Minimum: Cat5 cable
+- Max Distance: 100 Meters
+- Fast Ethernet, twisted pair copper wires.
+
+#
+
+1000BASE-T
+- 4 pairs balanced twisted pair in the single cable.
+- Minimum: Cat5e cable
+- Max Distance: 100 Meters
+- Use all four pair of wires wthin the cable
+- GB speed.
+
+#
+
+10GBASE-T
+- 4 pairs balanced twisted pair.
+- Minimum: Cat6 cable
+  - Max Distance:
+  - Unshielded: 55 meters
+  - Shielded: 100 meters
+- Minimum: Cat6A cable
+  - Max Distance: Unshielded or Shielded: 100 metere 
+- Use frequency of 500 MHz
+  - Above the 125 MHz for gigabit Ethernet.
+  - Increased frequency rate = more data being sent across the connection.
+
+#
+
+40GBASE-T
+- 4 pairs balanced twisted pair.
+- Minimum: Cat8 cable
+- Max Distance: 30 meters
+- 40 GB per second Ethernet
+
+#
+
+### Fiber
+
+100BASE-FX
+- Pair of multimode fiber
+- Laser Components
+- Max Distance:
+  - 400 meters (half duplex)
+  - 2 kilometers (full duplex)
+ 
+<img width="342" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5a67435f-9bd7-4c14-9956-19444f6fcbc1">
+
+#
+
+100BASE-SX
+- Pair of multimode fiber
+- LED optics
+- Max Distance: 300 meters
+- Less expensive version of 100BASE-FX
+
+#
+
+1000BASE-SX
+- Usually over multi-mode fiber
+- Short wavelength laser
+- Max Distane: 220 meters to 550 meters, depends on fiber type.
+
+#
+
+1000BASE-LX
+- Multi-mode/Single-mode fiber
+- Long wavelength laser
+- Multi-mode fiber Max Distance: 550 meters
+- Single-mode fiber Max Distance: 5 Kilometers.
+
+#
+
+10GBASE-SR (Short Range)
+- Multi-mode Fiber
+- Max Distance: 26 to 400 meters depending on the fiber
+
+#
+
+10GBASE-LR (Long Range)
+- Single-mode Fiber
+- Max Distance: 10 kilometers.
+
+#
+
+### Wavelengths
+
+WDM
+- Wavelength-Division Multiplexing
+- Sends multiple types of signals over the same strand of fiber.
+- Bi-directional communication over a single strand of fiber.
+- Uses different wavelengths for each carriers, different colors.
+
+CWDM
+- Coarse Wavelength-Division Multiplexing
+- 10GBASE-LX4 uses four 3.125 Gbit/sec carriers at four different wavelengths.
+
+DWDM
+- Dense Wavelength-Division Multiplexing
+- Multiplex multiple OC carriers into a single fiber.
+- Add 160 signals, increase to 1.6 Tbit/s
+
+<img width="783" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/30006811-c631-4e95-8a28-0ddd35a835df">
