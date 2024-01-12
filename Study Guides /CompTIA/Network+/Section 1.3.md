@@ -268,3 +268,88 @@ Efficiency:
 #
 
 ## Cable Management
+
+### Patch Panel/ Patch Bay
+
+- Direct cable connection, usually under the floor or over the ceiling back to a closet for a large office desk computers.
+  - Inside the closet, usually a Patch Panel.
+  - Wire from the desks are usually punch down into that patch panel.
+  - The other side of the patch panel usually have a RJ45 connectors that allow the desks computer to switches.
+- Once punched into the patch panel from the desk, you usually only configurate the other side of the connection/ the RJ45 side.
+
+<img width="777" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/f1608402-0e0d-4017-ab62-9bdfc66ab4ad">
+
+Copper Patch Panel
+- Patch panel can have punch-down block on one side and RJ45 connector on the other side.
+- Patch panel can also have punch-down connections on both sides.
+  - Allows to make moves, adds, and changes to the network by plugging in the front of those patch panels. Rather than changing any of the wires that go back to the desk.
+
+
+#
+
+### Fiber Distribution Panel
+
+- Don't usually run fiber from someone's desk on a large office.
+  - Expensive by installation.
+- Common run fiber between floors of a building or between separate buildings.
+- Both sides of the fiber connection, often install a fiber distribution panel.
+  - Generally run more than one fiber connection at a time using the fiber distribution panel because we are already going thru the cost and expense of running fiber.
+- Design: Fiber bend radius
+  - Bending loops on the inside because there is a maximum bend radius associated with fiber optics.
+  - Often includes extra loops for extra service.
+    - Extra fiber for future changes for extension if needed. Inexpensive insurance.
+   
+<img width="444" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/103fdc17-3288-4f77-bc16-77d58c61c6bb">
+
+#
+
+### Punchdown block type - 66 Blocks
+
+- Early type of common blocks
+- Usually used for analog voice communication; Telephones
+  - Some digital links
+- Connect one side of the connection on the left side and the other side of the connection on the right in order to extend.
+- Wire and punch down tool, No additional connector required.
+  - Wire-to-wire patch panel.
+- Replaced by 110 blocks.
+
+<img width="344" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3796d9da-3c53-4aac-bd2c-50ba639fa4cf">
+
+#
+
+### Punchdown block type - 110 Blocks
+
+- Usually for digital/ high speed ethernet connections.
+- Wire-to-wire patch panel.
+- Patch Cat5 and Cat6 cables.
+- Wires are punched into the block; connecting block is on top.
+- Additional wires punched into connecting block, patch the top to the bottom.
+
+<img width="365" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/490e9dbf-039e-47c7-b8ef-4a3992b08436">
+
+#
+
+### Punchdown block type - Krone Block
+
+- An alternative to the 110 block.
+  - Common in Europe
+- Used for: Analog and digital communication, different model can support higher frequencies.
+
+<img width="331" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/f365a166-e976-43b1-8576-f842e8f3120e">
+
+#
+
+### BIX 
+
+Building Industry Cross-Connect)
+
+- Created in 1970s by Nothern Telecom.
+- Modern BIX = GigaBIX performance is better than Cat6 cable standard. 
+  - Support Cat6 and better connection allowing to run fast ethernet over a BIX block.
+ 
+<img width="730" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/0488b229-11b7-4666-a0d3-54263cd724de">
+
+#
+
+## Ethernet Standards
+
