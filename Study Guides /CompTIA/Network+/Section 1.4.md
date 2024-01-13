@@ -243,3 +243,6 @@ Use:
 - Packets sent to anycast address are delivered to the closest inerface.
   - Example: Announce the same route out of multiple data centers. clients use the data center closest to them.
   - Anycast DNS.
+
+<img width="279" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5a70bc82-7c75-4ae7-b5f1-1ed19b0a5077">
+
