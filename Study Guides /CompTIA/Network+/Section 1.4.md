@@ -518,3 +518,240 @@ Eaxmple: IP Address = 172.16.55.0/21
 - Number of Host = (2 ^ 11 bits) - 2 = 2048 - 2 = 2046
 
 <img width="763" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7c745e96-8e6b-4f27-a732-f3bf7466e185">
+
+#
+
+## Magic Number Subnetting
+
+Example for Long way: 192.168.1.0/24
+- We need an IP addressing scheme with more than one network address that can support 40 devices per subnet.
+  - This means it need more than 40 for number of host.
+
+<img width="763" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/03508a45-cca1-4c73-8490-0447ebbd3d34">
+
+<img width="793" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3df1d727-7f4c-47f0-a805-7f287eb0a87b">
+
+#
+
+### Four important Addresses
+
+1. Network Address / Subnet ID
+  - The first address in the subnet.
+2. Broadcast Address
+  - The last address in the subnet.
+3. First available host address
+  - One more than the network address.
+4. Last available host address
+  - One less than the broadcase address.
+
+<img width="593" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/81a3f6b5-1829-4968-bec2-8c054a1962f0">
+
+- This is way too much calculation and conversion.
+- Need a shortcut.
+
+#
+
+### Magic Number Subnetting
+- Very Straightforward method: Can often perform the math in your head.
+- Subnet with minimal math: Still some counting involved.
+
+#
+
+### Some helpful Charts
+
+CIDR to Decimal Charts
+- Memorization will increase Speed
+
+<img width="266" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/9b95dac7-cc86-4993-9482-1c95a78d1b35">
+
+#
+
+Complete CIDR to Decimal Charts
+
+<img width="716" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/643267da-3c82-4acd-9d5e-5e3cdaca93a4">
+
+#
+
+Host Ranges
+- Larger block are easier to remember
+- Multiply quickly for smaller blocks
+
+
+<img width="775" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5e1164a8-a681-4862-b908-6e5011062069">
+
+#
+
+The magic number process
+- Convert the subnet mask to decimal (if necessary)
+  - If only given CIDR Block Notation:
+    - Convert it to the decimal notation.
+    - Identify: interesting Octet
+    - Calculate the "magic number": 256 - the intesting octet.
+    - Calculate the host range.
+    - Identify the network address; first address in the range.
+    - Identify the broadcast address; last address in the range.
+   
+# 
+
+### Find the Subnet ID
+
+Example: 
+- IP Address = 165.245.77.14
+- Subnet Mask: 255.255.240.0
+
+Need to determine these 4:
+- Subnet Mask: 255.255.240.0
+- Action Perform: Copy, Copy, Substruct from 256; Get magic number , Zero
+- IP Address: 165.245.77.14
+- Subnet ID: 165.245.64.0
+
+To determine the Subnet ID and Action:
+- If the subnet mask is 255, copy the IP Address to Subnet ID
+  - Since Subnet mask for 165.245 for IP Address are both 255, we copy both.
+- If the subnet mask is 0, we put 0 to the Subnet ID.
+- If there is a value that is not 255 or 0. Then that is the "Interesting Octet"
+
+Calculating the Interesting Octet for Subnet ID:
+- Subtract the interesting Octet Subnet Mask from 256.
+- 256 - 240 = 16.
+- 16 = the Magic Number.
+- Look at the host chart, and find the host that is multiply by 16. Then closest smallest divisible by 77 on the IP Address 165.245."77".14 is the Subnet ID.
+    - In this case = 64; Since 16,32,48,64,80. "77" is between 64 and 80 and 64 is smaller.
+   
+<img width="791" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7a18cf7c-e3d2-41e5-9ac1-1ff52d810e19">
+
+#
+
+#### Find the Broadcast Address Using Subnet ID
+
+Example: 
+- IP Address = 165.245.77.14
+- Subnet Mask: 255.255.240.0
+- Subnet ID: 165.245.64.0
+
+Need to determine these 4:
+- Subnet Mask: 255.255.240.0
+- Action Perform: Copy, Copy, Substruct from 256; Get magic number , Zero
+- Subnet ID: 165.245.64.0
+- Broadcast Address: 165.245.79.255
+
+To determine the Broadcast Address and Action:
+- If the subnet mask is 255, copy the Subnet ID to the Broadcast Address
+  - Since Subnet mask for 165.245 for Subnet ID are both 255, we copy both.
+- If the subnet mask is 0, we put 255 to the Broadcast Address.
+- If there is a value that is not 255 or 0. Then that is the "Interesting Octet"
+
+Calculating the Interesting Octet for Broadcast Address:
+- Subtract the interesting Octet Subnet Mask from 256.
+- 256 - 240 = 16.
+- 16 = Magic Number.
+- Calculate Subnet ID + Magic Number - 1
+  - 64 + 16 - 1 = 79.
+  Broadcast Address = 165.245."79".255
+
+<img width="775" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1cad98ae-5b17-40fe-9a30-f38230590cca">
+
+#
+
+### Find the Host Range
+
+Example: 
+- IP Address = 165.245.77.14
+- Subnet Mask: 255.255.240.0
+- Subnet ID: 165.245.64.0
+- Broadcast Address: 165.245.79.255
+
+First host is Subnet ID + 1
+- First available host address = 165.245.64.1
+
+Last host is broadcast address - 1
+- Last available host Address = 165.245.79.254
+
+#
+
+### Find the Subnet ID Example 2
+
+Example 2: 
+- IP Address = 10.180.122.244
+- Subnet Mask: 255.248.0.0
+
+Need to determine these 4:
+Subnet Mask: 255.248.0.0
+Action Perform: Copy, Get interesting Octet; 256 - 248 , Zero, Zero
+IP Address: 10.180.122.244
+Subnet ID: 10.176.0.0
+
+Calculation:
+- Interest Octet = 256 - 248 = 8
+  - 256 - Subnet Mask of Intesting Octet.
+  - 8 = Magic Number
+  - Look at IP Address position of the Interestin Octet. 180.
+  - 180; closest divisible by 8 = 176
+- Subnet ID = 255.176.0.0
+
+#
+
+### Find the Broadcast Address Example 2 
+
+Example 2: 
+- IP Address = 10.180.122.244
+- Subnet Mask: 255.248.0.0
+- Subnet ID: 10.176.0.0
+
+Need to determine these 4:
+Subnet Mask: 255.248.0.0
+Action Perform: Copy, Get interesting Octet; 256 - 248 , If 0 put 255, If 0 put 255
+Subnet ID: 10.176.0.0
+Broadcast Address: 10.183.255.255
+
+Calculating the Interesting Octet for Broadcast Address:
+- Subtract the interesting Octet Subnet Mask from 256.
+- 256 - 248 = 8.
+- 8 = Magic Number.
+- Calculate Subnet ID + Magic Number - 1
+  - 176 + 8 - 1 = 183.
+  Broadcast Address = 165."183".255.255
+
+#
+
+### Find the Host Range
+
+First Available Host Address:
+- Subnet ID + 1 = 10.176.0.1
+
+Last Available Host Address:
+- Broadcast Address - 1 = 10.183.255.254
+
+#
+
+### Speed up with Charts 
+
+If the example have /27 at the end.
+- Example:
+  - IP Address = 172.16.242.133/27
+- We can look at the chart:
+
+<img width="680" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/0de88394-ed0c-42ed-bba3-7e188a17d438">
+
+Found /27: 
+- Magic number = 32
+- Interesting Octet = 224
+
+- Found: Subnet Mask = 255.255.255.224
+
+Calculate Subnet ID: Copy, Copy, Copy, magic number = 32 (256 - 224 = 32); 
+- Closest number from IP "133" divisible by 32; "128" (32 x 4 = 128)
+- Subnet ID = 172.16.242.128
+
+Calculate Broadcast Address: Copy, Copy, Copy, magic number + Subnet ID - 1
+- 32 + 128 - 1 = 159
+- Broadcast Address = 172.16.242.159
+
+Calculate Host Range: 
+- First Availble Host: Subnet ID + 1 = (172.16.242.128 + 1) 172.16.242.129
+- Last Available Host: Broadcast Address - 1 = (172.16.242.159 - 1) = 172.16.242.158
+
+<img width="435" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d93503e8-1cc3-4efb-98a3-cd7f2ad17404">
+
+
+
