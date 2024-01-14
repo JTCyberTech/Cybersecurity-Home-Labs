@@ -246,3 +246,105 @@ Use:
 
 <img width="279" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5a70bc82-7c75-4ae7-b5f1-1ed19b0a5077">
 
+
+#
+
+## Classful Subnetting
+
+- 3 classes that are not used since 1993 but still relative
+  - Class A: 255.0.0.0
+  - Class B: 255.255.0.0
+  - Class C: 255.255.255.0
+- Used as a starting point when subnetting; standard values.
+
+Technically have 5 classes, Class A - E
+- Class A to C = assign to work stations.
+- Class D = IPv4 and multicast.
+- Class E = Reserved range, you will never use these IP Address on your production network.
+
+Most important 3 columns:
+- Class; Leading Bits; Default subnet mask.
+
+<img width="764" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3c6ab483-852a-4788-9b7e-be98cff4593d">
+
+# 
+
+### What is the IP Class?
+
+<img width="416" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/75193724-fda6-4020-934e-0bd57427ffeb">
+
+#
+
+### The Construction of a Subnet
+
+Network Address
+- When working with IP Subnetting there are 4 separate values you need to know how to calculate.
+  1. Network Address
+     - The first IP Address of a subnet.
+     - Set all host bits to 0 (0 decimal)
+  2. First Usable Host Address
+     - One number higher than the network address.
+  3. Network Broadcast Address
+     - The last IP Address of a subnet
+     - Set all host bits to 1 (255 decimal)
+  4. Last Usable Host Address
+     - One number lower than the broadcast address.
+    
+#
+
+### Subnet Calculations
+
+IP Address: 10.74.222.11
+- Class: A address (the first octet = 10)
+- Subnet Mask: 255.0.0.0 (Class A subnet mask = 255.0.0.0)
+- Since the Subnet Mask is 255.0.0.0 for 10.74.222.11
+  - Network = 10.
+  - Host = 74.222.11
+  
+To calculate the Network Address (Set all Host bits to 0)
+- Network = 10.
+- Host = 0.0.0
+
+<img width="730" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/f056f825-2af6-4a42-8aea-cbd7e640ffa8">
+
+To Caluculate the First host Address (add one decimal to the end of Network Address's Host side)
+- Network = 10.
+- Host = 0.0.1
+
+<img width="735" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/6e7aa2b9-5b79-4a3c-85be-43bd5b03f976">
+
+To Calculate the Network Broadcast Address (Set all host bits to 1 or 255 in decimal value)
+- Network = 10.
+- Host = 255.255.255
+
+<img width="734" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/c1efface-c7a1-4229-9f91-27e9382d1885">
+
+To Calculate the Last Host Address (Subtract one decimal at the end of the Network Broadcast Address's Host side)
+- Network - 10.
+- Host = 255.255.254
+
+<img width="730" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/48efc226-d977-4251-b07e-83397a709fef">
+
+#
+
+IP Address = 172.16.88.200
+- Class: B
+- Subnet Mask: 255.255.0.0
+- Network Address: 172.16.0.0
+- First Host Address: 172.16.0.1
+- Broadcast Address: 172.16.255.255
+- Last Host Address: 172.16.255.254
+
+<img width="779" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/fd3cbe1f-01ca-4762-852e-afb2a4556649">
+
+#
+
+IP Address = 192.168.4.77
+- Class: C
+- Subnet Mask = 255.255.255.0
+- Network Address: 192.168.4.0
+- First Host Address: 192.168.4.1
+- Broadcast Address: 192.168.4.255
+- Last Host Address: 192.168.4.254
+
+<img width="730" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/f62386cd-e759-4253-8b0e-9d7bcabb03b5">
