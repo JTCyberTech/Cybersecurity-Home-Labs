@@ -352,3 +352,169 @@ IP Address = 192.168.4.77
 #
 
 ## IPv4 Subnet Masks
+
+- Ones on the rleft side and Zeros on the right side.
+- Example:
+  - Binary Value = 11111111.11111111.11111111.00000000 
+  - Decimal Value = 255.255.255.0
+- Shortcut: counting up the number of 1s and putting it right after the slash value.
+  - The subnet mask example is also: /24
+  - /24 = CIDR block notation. CIDR = Classless Inter-Domain Routing.
+  - Other names: slash notation, prefix notation.
+
+#
+ 
+### Binary to CIDR Block Notation
+
+Example: 11111111.11111111.00000000.00000000 
+- In bits: 8 + 8 + 0 + 0 = 16 bits
+- CIDR Block: /16
+
+<img width="772" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/664e46a9-48d7-4bf3-902a-bdd1fc2d848a">
+
+#
+
+Example: 11111111.11111111.11111111.11000000 
+- In bits: 8 + 8 + 8 + 2 = 26 bits
+- CIDR Block: /26
+
+<img width="771" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/17fd85e4-a8bf-45b8-8e33-e9849aaa7e57">
+
+#
+
+Example: 11111111.11110000.00000000.00000000 
+- In bits: 8 + 4 + 0 + 0 = 12 bits
+- CIDR Block: /12
+
+<img width="774" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/c96eaaed-43f5-4f18-87c6-1ea38a2dc40b">
+
+#
+
+### Subnet Masks - Binary to Decimal
+
+<img width="164" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/596f00ce-3b2f-4355-b9af-f9fc8509c181">
+
+#
+
+### Binary to CIDR Block Notation
+
+Example: 11111111.11110000.00000000.00000000 
+- Decimal value: 255 . 240 . 0 . 0
+- CIDR Blcok: /12
+
+<img width="779" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/81f1d228-0052-4efc-b315-da899ffb15d8">
+
+#
+
+Example: 11111111.11111111.11100000.00000000 
+- Decimal Value: 255 . 255. 224 . 0
+- CIDR Block: /19
+
+<img width="774" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/ec55170d-5df8-4bdf-80a8-76405aa32afc">
+
+
+#
+
+Example: /26
+- Binary value: 11111111.11111111.11111111.11000000
+- Decmail Value: 255 . 255 . 255 . 192
+
+<img width="864" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2cd804a6-ec3d-48d5-9456-1920d581aac5">
+
+#
+
+Example: /20
+- Binary value: 11111111.11111111.11110000.00000000
+- Decimal value: 255. 255 . 240 . 0
+
+<img width="840" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/22aa8271-de7f-432a-bbf4-5c926bf5881b">
+
+#
+
+## Calculating IPv4 Subnets and Hosts
+
+Class-based Network are inefficient
+- The subnet mask is based on the network class
+
+Classless
+- Variable Length Subnet Masks (VLSM)
+- Allow network Admin to define their own masks
+- Customize the subnet mask to specific network requirements.
+- Use different subnet masks in the same classful network.
+  - 10.0.0.0/8 is the class A network.
+  - 10.0.1.0/24 and 10.0.8.0/26 would be VLSM.
+ 
+#
+
+### Defining Subnets
+
+IP Address: 10.0.0.0
+- Class A: Subnet mask: 255.0.0.0
+- "Classful" Addressing
+
+<img width="790" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/17a4a32c-dfb6-4543-8537-85edb52170b8">
+
+Placing the subenet
+
+<img width="786" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8ebeaffb-7248-464b-a49e-1ee9313f70a3">
+
+- Challenge that network admin have to face
+  - Detemine where to draw that line.
+  - Deteremination on number of subnet bits and host bits that is left over.
+  - Determine how they should best engineer the subnetting for their network.
+ 
+#
+
+### Calculating Subnets and Hosts
+
+- Power of 2
+
+<img width="733" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2d01f6a6-6967-4300-864c-b9d3889d2300">
+
+- Number of Subnet = 2 ^ subnet bits
+- Hosts per Subnet = 2 ^ host bits - 2
+
+# 
+
+Example: IP Address = 10.1.1.0/24
+
+- Binary value: 11111111.11111111.11111111.00000000
+- Class: A; because it starts with 10 on the first octet.
+  - So we know that the default is 8 bits for Network Address.
+- Network: 8 bits
+- Subnet: 24 bits - 8 bits = 16 bits.
+- Host: 8 bits.
+- Number of subnets = 2 ^ 16 bits = 65536
+- Host per subnet = (2 ^ 8 bits) - 2 = 256 - 2 = 254
+
+<img width="765" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/2bcc1cf7-8e8f-4779-b036-54a8a70f943c">
+
+#
+
+Example: IP Address = 192.168.11.0/26
+
+- Binary value: 11111111.11111111.11111111.11000000
+- Class: C; because it starts with 192 on the first octet.
+  - So we know that the default is 24 bits for the Network Address.
+- Network: 24 bits
+- Subnets: 2 bits; 26 bits - 24 bits = 2 bits.
+- Hosts: 6 bits
+- Number of subnet = 2 ^ 2 bits = 4
+- Host per subnet = (2 ^ 6 bits) - 2 = 64 - 2 = 62
+
+<img width="769" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/16d80c42-cd65-4271-a662-d1343f5f6f4d">
+
+#
+
+Eaxmple: IP Address = 172.16.55.0/21
+
+- Binary value: 11111111.11111111.11111000.00000000
+- Class B; Because it starts with 172 on the first octet.
+  - So we know that the default is 16 bits for the Network Address.
+- Network: 16 bits
+- Subnets: 5 bits; 21 bits - 16 bits = 5 bits
+- Hosts: 11 bits
+- Number of Subnet = 2 ^ 5 bits = 32
+- Number of Host = (2 ^ 11 bits) - 2 = 2048 - 2 = 2046
+
+<img width="763" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7c745e96-8e6b-4f27-a732-f3bf7466e185">
