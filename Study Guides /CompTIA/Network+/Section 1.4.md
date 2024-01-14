@@ -347,4 +347,8 @@ IP Address = 192.168.4.77
 - Broadcast Address: 192.168.4.255
 - Last Host Address: 192.168.4.254
 
-<img width="730" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/f62386cd-e759-4253-8b0e-9d7bcabb03b5">
+<img width="750" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3fce2722-b828-4e27-b452-9dcebee1c3d6">
+
+#
+
+## IPv4 Subnet Masks
