@@ -958,3 +958,110 @@ Example: IP Address = 18.172.200.77/17
   - Last Usable IP Address = 18.172.255.254
 
 <img width="635" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7896e800-0ed8-41e6-8c25-89fa11a9655e">
+
+#
+
+## IPv6 Addressing
+
+- IPv4 Addresses = 32-bit Addresses
+- IPv6 Addresses = 128-bit Addresses
+  - Use of DNS to be able to reference these IP Addresses.
+
+<img width="721" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/ba01d39e-44db-46d2-8b12-7a5036c34cf8">
+
+#
+
+### IPv6 Address Compression
+
+- Groups of Zeros can be abbreviated with a double colon. (::)
+- Only one of these abbreviations allowed per address.
+- Can also remove any leading zeros but are optional.
+
+<img width="744" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1182223e-7446-42b2-85cd-13c7c788050e">
+
+<img width="734" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d923de86-5fa1-41b2-964a-97e22a43dc3b">
+
+#
+
+### Configuring IPv6 with modified EUI-64
+
+Static Addressing can be useful
+- IP Address never changes.
+
+Modifying the MAC Address of our device to create EUI-64.
+- MAC Address never changes.
+
+EUI = Extended Unique Identifier (64-bit)
+
+Combined a 64-bit IPv6 perfix and the MAC address
+- But the MAC Address is only 48 bits long.
+
+Going to need to add extra bits at the middle of the Address.
+- Minor change to the MAC Address.
+
+#
+
+### MAC Address
+
+Ethernet Media Access Control Address
+- Physical Address of a network Adapter
+
+EUI-48 Address
+- Extended Unique Identifier (48-bit)
+
+<img width="556" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/600035d9-f1de-44bf-b743-221c8d399830">
+
+#
+
+### Converting EUI-48 to EUI-64
+
+Split the MAC to 3 bytes (24-bit) Halves.
+
+Put the "FFFE" in the middle
+- The missing 16 bits.
+
+Invery the seventh bit
+- Change the address from globally unique/universal
+- Turns the burned0in Address (BIA) into a locally administered Address.
+- This is the Universal/Local (U/L) bit.
+
+# 
+
+Modifying the MAC
+
+- 7th bit.
+
+<img width="739" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/870793ed-3df1-4854-b2a1-5d029918706f">
+
+#
+
+### Building the IPv6 Address
+
+- The 64-bit IPv6 subnet prefix.
+
+- The EUI-64 address
+
+<img width="751" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d83a27cb-67a1-45c2-924c-2282fc602233">
+
+#
+
+### Flipping the 7th bit
+
+- Quickly convery MAC address
+  - Create a chart
+ 
+- Count from 0 ti F in hex
+  - Two columns, groups of four.
+ 
+- Quickly convert the second character of the first hex byte.
+  - Change it to the other value.
+ 
+<img width="335" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/35b4089c-0f7a-450c-a6d9-9106f57e2281">
+
+<img width="405" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/a7861ec3-21c2-473f-8eaa-d97716f326aa">
+
+#
+
+### Quick Conversions
+
+<img width="791" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8f737014-dead-4280-9e67-e3834fdc7c24">
