@@ -753,5 +753,208 @@ Calculate Host Range:
 
 <img width="435" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d93503e8-1cc3-4efb-98a3-cd7f2ad17404">
 
+#
 
+## Seven Second Subnetting
 
+### Subnet Masks and Subnets
+
+The Network First Chart
+
+<img width="791" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3a58e89e-7aba-4925-b1ef-42905f2f3308">
+
+#
+
+The Networks Second Chart
+
+<img width="420" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/fb1372cf-be67-481f-8319-d1dd396990ab">
+
+#
+
+### The Seven Second Subnetting Process
+
+Convert IP Address and Subnet Mask to decimal
+- Use chart to convery between CIDR block notation and decimal.
+- Same Chart also shows the number of devices per subnet.
+
+Determine network/subnet Adddress
+- Second Chart Shows the Starting Subnet Boundary.
+
+Determine Broadcast Address
+- Second Chart Shows the Ending Subnet Boundary.
+
+Calculate First and Last Usable IP Address
+- Add one from network Address, Subtract one from Broadcast Address.
+
+#
+
+### Seven Second Subnetting Example 1
+
+Example: IP Address = 165.245.12.88/24
+
+1. Convert the Address and mask to decimal.
+  - IP Address: 165.245.12.88
+  - Subnet Mask: 255.255.255.0 (Since /24 is on the 3rd octet)
+
+2. Calculate the Network Address:
+  - If Subnet mask = 255, bring down the address
+  - If Subnet mask = 0, write 0.
+    - IP Address: 165.245.12.88
+    - Subnet Mask: 255.255.255.0
+    - Network Address: 165.245.12.0 (Copy from IP Address if 255 on Subnet Mask)
+
+3. Calculate the Broadcast Address:
+  - If Subnet Mask = 255, bring down the address.
+  - If Subnet Mask = 0, Write 255.
+    - IP Address: 165.245.12.88
+    - Subnet Mask: 255.255.255.0
+    - Broadcast Address: 165.245.12.255
+
+4. Calculate the First/Last Usable IP Address:
+  - First IP = Network Address + 1.
+    - Network Address = 165.245.12.0
+    - First IP = 165.245.12.1
+  - Last IP = Broadcast Address - 1.
+    - Broadcast Address = 165.245.12.255
+    - Last IP = 165.245.12.254
+
+5. Put Everything Together:
+  - IP Address: 165.245.12.88
+  - Subnet Mask: 255.255.255.0
+  - Network Address: 165.245.12.0
+  - Broadcast Address: 165.245.12.255
+  - First Usable IP Address = 165.245.12.1
+  - Last Usable IP Address = 165.245.12.254
+
+<img width="782" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/bdee1a1b-63b3-4467-8770-b7f917f6f0c5">
+
+#
+
+### Seven Second Subnetting Example 2
+
+Example: IP Address = 165.245.12.88/26
+
+1. Convert the Address and mask to decimal:
+  - IP Address: 165.245.12.88
+  - Subnet Mask: 255.255.255.192 (192 because /26 is 192 on the fourth octet)
+    - Look at the first chart: /26 = 192 decimal.
+
+2. Calculate the Network Address:
+  - IP Address: 165.245.12.88
+  - Subnet Mask: 255.255.255.192 
+  - Network Address: 165.245.12.64
+    - Look at the first chart: /26 = 192 for decimal and 64 for address.
+    - Look at the second chart: 64 address; Then look at the IP Address = 88 for interest octet.
+      - 88 is between 64 and 128, for Network Address; we pick the lower one, so it's 64.
+
+3. Calculate the Broadcast Address:
+  - IP Address: 165.245.12.88
+  - Subnet Mask: 255.255.255.192
+  - Broadcast Address: 165.245.12.127
+    - Look at the first chart: /26 = 192 for decimal and 64 for address.
+    - Look at the second chart: 64 address; Then look at the IP Address = 88 for interest octet.
+      - 88 is between 64 and 128, for Broadcast Address; we pick the higher one and substruct it by 1.
+      - 128 - 1 = 127
+
+4. Calculate the First/Last Usable IP Address:
+  - Add one to Network Address for First.
+    - First Usable IP Address = 165.245.12.65
+  - Substract one to the Broadcast Address for Last.
+    - Last Usable IP Address = 165.245.12.126
+
+5. Put Everything Together:
+  - IP Address: 165.245.12.88
+  - Subnet Mask: 255.255.255.192 
+  - Network Address: 165.245.12.64
+  - Broadcast Address: 165.245.12.127
+  - First Usable IP Address = 165.245.12.65
+  - Last Usable IP Address = 165.245.12.126
+
+<img width="788" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7978c6c5-58db-4c43-8b9b-d0e0dbdcbe16">
+
+#
+
+### Seven Second Subnetting Example 3
+
+Example: IP Address = 165.245.12.88/20
+
+1. Convert the Address and mask to decimal:
+  - Subnet Mask: 255.255.240.0
+
+2. Caculate the Network Address:
+  - Network Address: 165.245.0.0
+
+3. Calculate the Broadcast Address:
+  - Broadcast Address: 165.245.15.255
+
+4. Calculate the First/Last IP Address:
+  - First Usable IP Address = 165.245.0.1
+  - Last Usable IP Address = 165.245.15.254
+
+5. Put Everything Together:
+  - IP Address: 165.245.12.88
+  - Subnet Mask: 255.255.240.0
+  - Network Address: 165.245.0.0
+  - Broadcast Address: 165.245.15.255
+  - First Usable IP Address = 165.245.0.1
+  - Last Usable IP Address = 165.245.15.254
+
+<img width="638" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8804d1c1-8d0c-4ee7-bb11-b785bc78c436">
+
+#
+
+### Seven Second Subnetting Example 4
+
+Example: IP Address = 18.172.200.77/11
+
+1. Convert the Address and Mask to Decimal:
+  - Subnet Mask: 255.224.0.0
+
+2. Calculate the Network Address:
+  - Network Address: 18.160.0.0
+
+3. Calculate the Broadcast Address:
+  - Broadcast Address: 18.191.255.255
+
+4. Calculate the First/Last IP Address:
+  - First Usable IP Address = 18.160.0.1
+  - Last Usable IP Address = 18.160.255.254 
+
+5. Put Everything Together:
+  - IP Address: 18.172.200.77
+  - Subnet Mask: 255.224.0.0
+  - Network Address: 18.160.0.0
+  - Broadcast Address: 18.191.255.255
+  - First Usable IP Address = 18.160.0.1
+  - Last Usable IP Address = 18.191.255.254 
+
+<img width="634" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1b3ef4e9-ca63-4b0d-b5eb-90122b10a602">
+
+# 
+
+### Seven Second Subnetting Example 5
+
+Example: IP Address = 18.172.200.77/17
+
+1. Find Subnet Mask by converting IP into decimal:
+  - 255.255.128.0
+
+2. Calculate Network Address:
+  - 18.172.128.0
+
+3. Calculte Broadcast Address:
+  - 18.172.255.255
+
+4. Calculate the First/Last IP Address:
+  - First Usable IP Address = 18.172.128.1
+  - Last Usable IP Address = 18.172.255.254
+
+5. Put Everything Together:
+  - IP Address: 18.172.200.77
+  - Subnet Mask: 255.255.128.0
+  - Network Address: 18.172.128.0
+  - Broadcast Address: 18.172.255.255
+  - First Usable IP Address = 18.172.128.1
+  - Last Usable IP Address = 18.172.255.254
+
+<img width="635" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/7896e800-0ed8-41e6-8c25-89fa11a9655e">
