@@ -1050,7 +1050,7 @@ Modifying the MAC
 - Quickly convery MAC address
   - Create a chart
  
-- Count from 0 ti F in hex
+- Count from 0 to F in hex
   - Two columns, groups of four.
  
 - Quickly convert the second character of the first hex byte.
@@ -1070,5 +1070,122 @@ Modifying the MAC
 
 ## IPv6 Subnet Masks
 
+Internet Assigned Number Authority (IANA)
+Regional Internet Registries (RIR) [Usually European]
+Internet Service Providers (ISP)
+American Registary for Internet Numbers (ARIN)
 
+- IANA provides address blocks to RIRs.
+- RIRs assigns smaller subnet blocks to ISPs.
+- Then the ISPs assign a /48 subnet (IPv6) to customer.
 
+<img width="615" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/84286113-2c3c-44ed-a0a0-efc00478e14a">
+
+#
+
+### Subnetting the IPv6 Address
+
+- 2600:DDDD:1111
+
+<img width="708" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/db712b9c-76d1-4f50-8e5b-d8341310a1a4">
+
+- 16 subnet bits can create 65356 total subnets.
+- 2 ^ 64 hosts set aside, about 18 million trillion hosts per subnet.
+
+<img width="712" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/45079b12-fb7c-425a-b470-5b16eb96b580">
+
+#
+
+## Tunneling IPv6
+
+6 to 4 Addressing
+- Send IPv6 over an existing IPv4 network.
+- Creates an IPv6 address based on the IPv4 address.
+- Requires Relay Routers.
+- Does not support NAT. (limit to send traffic across internet)
+
+4 in 6 Tunneling
+- Tunnel IPv4 traffic on an IPv6 network.
+
+#
+
+### Teredo/Miredo
+
+Tunnel IPv6 thru NATed IPv4
+- End-to-End IPv6 thru an IPv4 network.
+- No special IPv6 router needed.
+- Temporary use.
+  - Until we have IPv6 native networks soon?
+ 
+Miredo
+- Open source Teredo for Linux, BSD Unix and MAC OS X
+- Full functionally.
+
+#
+
+### Dual-stack Routing
+
+Dual Stack IPv4 and IPv6
+- Run both at the same time.
+- Interfaces will be assigned multiple address types.
+
+IPv4
+- Configured with IPv4 Addresses.
+- Maintains an IPv4 Routing Table.
+- Uses IPv4 dynamic routing protocols.
+
+IPv6 
+- Configurated with IPv6 Addresses.
+- Maintains a separate IPv6 Routing Table.
+- Uses IPv6 dynamic routing protocols.
+
+#
+
+### Howdy Neighbor.
+
+There is no broadcasts in IPv6.
+- How do we find out the MAC Address of the Device?
+- We can't use ARP to find other devices.
+
+Neighbor Solicitation (NS) is used instead for finding other devices.
+- Sent as a multicast
+
+1. One device will send a Neighbor Solication to a multicast address.
+2. Any device on the network that matches the request will send the response back as a Neighbor Advertisement (NA).
+   - This replace: ARP in IPv4 an updates it for the multicast capabilities for IPv6.
+
+<img width="771" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/99d761df-156e-4148-a699-2c1675c78e31">
+
+#
+
+### Neighbor Discovery Protocol (NDP)
+
+- No Broadcasts: Operates using multicast with ICMPv6.
+- Neighbor MAC Discovery: Replaces rhe IPv4 ARP.
+
+Stateless Address Autoconfiguration (SLAAC)
+- Automatically configure an IP Address without a DHCP Server.
+- We can have an entire network configured with SLAAC based IP Address without having to build a separate DHCP Server to assign Addresses.
+
+Duplicate Addresss Detection
+- No Duplicate IPs.
+
+Discover Routers 
+- Routers Solicitation (RS) and Router Advertisement (RA).
+- This router will send a RS packet and listen for a RA
+  - Allow the local devices to automatically configure themselves and identify where the routers are on their local subnet.
+ 
+#
+
+### Finding Router
+
+User the Neighbor Discovery Protocol to find these routers.
+1. A RS is sent to an IPv6 router mutlicast address
+2. any local routers on that subnet will respond back with a RA.
+
+Routers may also be configured to send Unsolicited RA over the multicast Address.
+- So all the device on the subnet will be able to identify where the router happened to be.
+- Can transfer information such as:
+  - IPv6 Address information of the router.
+  - Prefix information for the network.
+  - Prefix length: that allow the local devices to automatically configure themselves with the appropriate IP Addresses.
