@@ -414,6 +414,11 @@ Building Industry Cross-Connect)
 
 #
 
+<img width="640" alt="image" src="https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8e7302bc-eecc-4629-8072-40208bf1a131">
+
+
+#
+
 ### Fiber
 
 100BASE-FX
