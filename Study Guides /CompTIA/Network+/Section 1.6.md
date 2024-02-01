@@ -212,3 +212,122 @@ Forward Lookup
 Reverse DNS
 - Provide the DNS server with an IP Address
 - The DNS Server provides an FQDN
+
+#
+
+## DNS Record Types
+
+Resource Record (RR)
+- Database Records of domain name services
+
+Over 30 record types
+- IP Addresses, certificates, host alias names, etc
+
+#
+
+### SOA 
+
+Start of Authority
+- Describes the DNS Zone details
+
+Structure
+- In SOA (Internet Zone, Start of Authority) with name of zone
+- Serial number
+- Refresh, retrym and expiry timeframes
+- Caching Duration/ TTL (Time To Live)
+
+#
+
+### Address Records
+
+A vs AAAA
+- Defines the IP Address of a host
+- Most popular query
+
+- AAAA = IPv6
+
+A records = IPv4 Addresses
+- Modify the A record to change the host name to IP Address resolution
+
+AAAA records = IPv6 Addresses
+- Same DNS server, different records
+
+#
+
+### Canonical Name Records (CNAME)
+
+A name is an alias of another, canonical name
+- One Physical server, multiple services
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/95b62dea-595b-48aa-b6c0-8eefc2149069)
+
+#
+
+### Service Records (SRV)
+
+Find a specific service
+- Where is the Windows Domain Controller?
+- Where is the instant message server?
+- Where is the VoIP controller?
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/6fe5d44d-7eb2-441e-87cc-126a39ad42a8)
+
+#
+
+### Mail Exchanger Record (MX)
+
+Determines the host name for the mail server 
+- This isn't an IP Address; it's a name
+
+#
+
+### Name Server Records (NS)
+
+List the name server for a domain
+- NS records point to the name of the server 
+
+
+#
+
+### Pointer Record (PTR)
+
+The reverse of an A or AAAA record
+- Added to a reverse map zone file
+- Provide an IP Address, spit back FQDN
+
+#
+
+### Text Records (TXT)
+
+Human readable text information
+- Useful Public Information
+
+SPF Protocol (Sender Policy Framework)
+- Prevent mail spoofing
+- Mail servers check that incoming mail really did come from an authorized host
+
+DKIM (Domain Key Identified Mail)
+- Digitally sign your outgoing mail
+- Validated by the mail server, not usually seen by the end user
+- Put your public key in the DKIM TXT record
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/8c202c68-911a-4b67-9047-69dcac11e8f5)
+
+- The SPF TXT describes the outgoing mail server for the domain.
+- The DKIM TXT has the public key, so that someone receiving mail from the server can verify that it really did originate on my email server.
+
+#
+
+### Zone Transfers
+
+Replicate a DNS database
+- The primary DNS server has the primary copy of the zone information
+
+Synchronize to a secondary server
+- Provide redundancy
+
+Triggered by referencing the serial number
+- If the serial number increases, ther must have been a change
+
+Full Zone Transfers can be a security risk
+- Attackers can use the data as reconnaissance
