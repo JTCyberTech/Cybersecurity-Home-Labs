@@ -131,12 +131,31 @@
 ![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3f6c1674-26e3-4dd3-bf50-aae4e53f5b50)
 
 41.
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/0fc84f0c-6930-41ae-8cc7-5259cea83986)
+
 42.
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/e61246b0-d71d-44bd-b4f1-3e74d3136b86)
+
 43.
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/51814adc-4bcc-4b0c-bf7c-f16ca93af4da)
+
 44.
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/d685e3b1-2d7f-4d83-b44a-624c3b6a1dad)
+
 45.
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/35269efc-b575-4bcb-afaa-cac62fa79b3f)
+
 46.
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/71ab375a-25b2-4845-9b07-96bbf49640f1)
+
 47.
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/fd372af3-b07d-4f6b-9a79-a76f36b2f1eb)
+
 48.
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/dfc5ae0f-3552-411e-a75b-033a81facee9)
+
 49.
-50. z
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/071c0b06-94d6-43ad-80b6-3a70a6dee9af)
+
+50. 
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/6fb0781f-eddb-4888-a6ff-7a9432800213)
