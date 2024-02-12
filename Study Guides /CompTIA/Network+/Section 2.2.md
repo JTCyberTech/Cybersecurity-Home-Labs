@@ -156,6 +156,67 @@ Route used when nothing else in the routing table match
 
 Remote site may have only one route
 - Go that way -> rest of the world
+- Destination of 0.0.0.0/0
+
+Can dramatcially simplify the routing process
+- Works in conjunction with all other routing methods.
+  - Router might be configured with dynamic routing but might also manually adding a default route to cover any of the instance where specific route can't reach.
+ 
+#
+
+## Routing Metrics
+
+Each routing protocol has its own way of calculating the best route
+- RIPv2, OSPF, EIGRP
+
+Metric values are assigned by the routing protocol
+- RIPv2 metrics aren't useful to OSPF or EIGRP
+
+Use metrics to choose between redundant links
+- Choose the lowest metric, 1 is better 2.
+
+#
+
+## Administrative Distances
+
+What if you have two routing protocols and both know about a route to a subnet?
+- Two routing protocols, two completely different metric calculations
+- You can't compare metrics across routing protocols
+- Which one do you choose?
+
+Administrative Distances = Tie breaker
+- Used by the router to determine which routing protocol has priority
+
+#
+
+## Managing network Utilization
+
+Many different devices
+- Desktop, laptop, VoIP Phone, mobile devices
+
+Many different applications
+- Mission crticial applications, streaming video, steaming audio
+
+Different apps have different network requirements
+- Voice is real time
+- REcorded streaming video has a buffer
+- Database application is interactive
+
+Some application are more important than others
+- Voice Traffics needs to have priority over YouTube
+
+#
+
+## Bandwidth Management - Traffic Shaping
+
+- Traffic Shaping, packet shaping
+- Control by bandwidth usage or data rates
+- Set important applications to have higher priorities than other apps.
+- Manages the Quality of Service (QoS)
+  - Can configurate inside Routers, Switches, firewalls, QoS devices.
+
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/4672ceca-f464-4775-b5e8-56044c6dadc7)
 
 
 
@@ -169,4 +230,9 @@ Key takeway:
   - Example: OSPF (Open Short Path First)
 - Hybrid = Taking both Distance Vector and Link State advantage and combining them.
   - Example: BGP (Border Gateway Protocol)
-- 
+- Static Routing = You set your own route for your router.
+- Default Route = The last resort for routing if the router can't route to its destination.
+- Administrative distance = used by router to determine which routing protocol have more priorty
+- Time to Live = to prevent routing to be stuck on a routing loop.
+- Traffic shaping = set bandwidth to the applications that needs high priorities
+- Quality of Service = The service you are using to prioritize the rule list and can be configured inside a router, switches, firewalls, QoS device.
