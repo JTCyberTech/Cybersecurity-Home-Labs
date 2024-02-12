@@ -90,6 +90,74 @@ Good Example of Hybrid Routing Protocols:
 - Determines route based on:
   - Paths, network policies or configured rule-set.
  
+#
+
+# Routing Techonologies
+
+## Routing Table
+
+A list of directions for your packets 
+- A table with many routes to your destination
+- Packets stop at every router and ask for directions, the direction on where the packet go is depends on a routing table.
+
+Every router has a list of directions:
+- When packet is inbound, the router evaluates the destinatoin IP Address and determines the best route based on the list of routes.
+- Packet makes to next router and performs the same lookup to its routing table and determine the best route.
+
+Routing table in routers, workstations and other devices
+- Every device need directions
+
+#
+
+## Hop
+
+Hop
+- A packet passes thru router.
+
+Next hop
+- Destination address of the next Gateway.
+
+A Router doesn't need to know how to get everywhere
+- Just needs to know how to get out of here
+- **Default route** handles everything not specifically listed
+  - If no path work, it will look at the default route to get to the destination.
+
+Time to live in IPv4, Hop limit in IPv6
+- Avoids a packet looping forever: Routing loop
+- A counter inside IPv4 packet, everytime it hits a router, number decreases by one.
+  - Once number gets to zero, the packet is discarded by the router to aviod routing loop forever.
+
+#
+
+## Configuring Next Hop
+
+Every router needs to know where traffic should be sent
+- Your packet is always asking for directions.
+
+Router with incorrect next hop will result in a routing problem:
+- data will go the wrong direction
+- A routing loop is easy to create
+
+Dynamic Routing Protocol 
+- The router determines the best route
+
+Static Routes
+- Configuring manually by telling the router where the destination should be
+
+#
+
+## Default Routes
+
+A route when no other route matches 
+- The gateway of last resort
+
+Route used when nothing else in the routing table match
+- Instead of simply dropping that packet because no destination for the route, you will instead send it out this default connection.
+
+Remote site may have only one route
+- Go that way -> rest of the world
+
+
 
 Key takeway:
 
