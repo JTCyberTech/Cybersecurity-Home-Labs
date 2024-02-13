@@ -210,3 +210,125 @@ PoE+: IEEE 802.3at-2009
 - Also part of the 802.3 standard now.
 - 25.5 watts DC power
 - Max current of 600 mA
+
+#
+
+# VLANs and Trunking
+
+## LANs
+
+Local Area Networks
+  - A group of device in the same broadcast domain
+
+Separate Switches can create separate broadcast domain.
+- Physically separate switches there is no way for anyone on the red network to communicate to the blue network and vice versa.
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/fffa2510-770d-4748-a443-82ceb1677433)
+
+#
+
+## VLANs
+
+Virtual Local Area Networks
+- A group of devices in the same broadcast domain
+- Separated logically instead of physically
+  - Provides segmentation within the switch:
+    - We have interface that are configured for red VLAN
+    - Have other interfaces that are configured for the blue VLAN.
+- Stil maintain separation of the broadcast domains
+  - The red devices can't communicate to the blue devices, vice versa.
+  - But separation is done logically inside of the switch rather than physically across multiple switches.
+ 
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/5e3159c8-b72a-4fd7-b420-7f6c62602ccd)
+
+#
+
+## Configuring VLANs
+
+VLAN 1,2,3 can't communicate with each other.
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/442f8d26-273d-4ade-893b-65b0942f7922)
+
+Connecting VLAN 100 on one switch to VLAN 100 on the other and VLAN 200 on one switch to VLAN 200 on the other.
+- One way to accomplish = extend an ethernet cable from VLAN 100 on one switch to VLAN 100 interface on the other switch.
+  - This won't scale very well. Beacuse it will get messy if there are more VLANs.
+- Another way to accomplish = use VLAN trunking
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b8b8188c-0ec6-411e-bbe6-d504fff553a0)
+
+#
+
+## VLAN Trunking
+
+Instead of extending separate ethernet links for each individual VLAN, we can extend a single connection for each individual VLAN.
+- Communicate all VLANs across that single connection = VLAN Trunking/ IEEE 802.1Q/.1Q
+- .1Q trunk = can send multiple VLANs across that trunk and then break them out into the appropriate VLAN on the other side.
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/1d3c724a-09cd-4bb3-95b6-2c1e54c0063b)
+
+#
+
+## 802.1Q Trunking
+
+- Take a normal Ethernet Frame
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/c205fc5f-5eaf-42fc-bc85-8953a759dae4)
+
+- Add a VLAN header in the Frame
+  - VLAN header = information about which VLAN is associated with this data.
+- VLAN IDs - 12 bits long, allow to have 4094 VLANs inside of that trunk connection.
+  - Normal range = 1 thru 1005
+  - Extended range = 1006 thru 4094
+  - 0 and 4095 are reserved VLAN numbers.
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/b42c42dd-0662-4b60-99e1-446eedaf6393)
+
+- Before 802.1Q, there was ISL (Inter-Switch Link)
+  - ISL is no longer used, everyone now uses 802.1Q standard
+ 
+#
+
+## Trunking between Switches
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/6821565c-14cd-4352-9bea-efc98f494f23)
+
+#
+
+## Working with data and voice
+
+Old school: Connect computer to switch, connect phone to PBX (Private Branch Exchange)
+- Two physical cables, two different technologies
+
+Now: Voice over IP 
+- Connect all devices to the Ethernet switch
+- One network cable for both
+
+Data and voice cabling 
+- Computer connects to phone
+- Phone connects to switch that's located inside of a closet nearby
+- One cable, one run
+
+One problem:
+- Voice and data don't like each other
+- Voice is very sensitive to congestion
+- Data loves to congest the network
+
+Resolve this problem:
+- Put the computer on one VLAN and the phone on another
+- But the switch interface is not a trunk
+- How does that work?
+
+Each switch interface has a data VLAN and a voice VLAN
+- Configure each of them separately
+
+#
+
+## Configuring voice and data VLANs
+
+- Data passes as a normal untagged access VLAN
+- Voice is tagged with an 802.1Q header
+
+Computer = VLAN 100, VoIP = VLAN 200
+- When we send information from our computer, it sent across the ethernet link as a normal access ethernet frame with any type of VLAN trunking.
+- But if we communicating from our phone/ VoIP, we will tag all of the communication between our phone and the switch with an 802.1Q header that designates that it came from VLAN 200.
+- This allows us to set priorities in the switch and assure that the quality of service is maintained for all of out voice communication. 
