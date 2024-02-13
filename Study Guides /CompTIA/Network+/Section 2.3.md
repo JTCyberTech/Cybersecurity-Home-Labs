@@ -161,3 +161,52 @@ IPv6 doesn't have broadcasts so can't use ARP
 
 Neighbor MAC Discovery
 - Replaces the IPv4 ARP
+
+Can also be used in conjunction with SLAAC (Stateless Address Autoconfiguration)
+- Automatically configure an IP Address without DHCP server
+
+NDP also used to identify any duplicate addresses using DAD (Duplicate Address Detection)
+- No duplicate IPs
+
+#
+
+## NDP in action
+
+There is no ARP in IPv6
+- Sent Neighbor Solicitation (NS) as a multicast
+- Neighbot Advertisement (NA)
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/32c1f255-51df-49b6-90e3-ed07ec43735b)
+
+#
+
+## Power over Ethernet (PoE)
+
+Power provided on an Ethernet cable
+- One wire for both network and electricity
+- Phones, cameras, wireless access points
+- Useful in difficult to power areas.
+
+Power provided at the switch
+- Built in power = Endspans: Power that is coming from the switch
+- In line power injector = Midspans: Power that is coming from an injector
+
+Power Modes
+- Mode A: Sending Power on the data pairs; If you are using gigabit connections, you are using all of those wires for your gigabit ethernet data. These cases, we using Mode A, sending power and data over same wire.
+- Mode B: Sending Power on the spare pairs; If your ethernet network is a 10 or 100 megabit per second connection, then you have some extra wire inside of that cable that you could use for power.
+
+#
+
+## PoE and PoE+
+
+PoE: IEEE 802.3af-2003
+- Original PoE specification
+- Now part of the 802.3 standard
+- 15.4 watts DC power
+- Max current of 350 mA
+
+PoE+: IEEE 802.3at-2009
+- Updated PoE specification
+- Also part of the 802.3 standard now.
+- 25.5 watts DC power
+- Max current of 600 mA
