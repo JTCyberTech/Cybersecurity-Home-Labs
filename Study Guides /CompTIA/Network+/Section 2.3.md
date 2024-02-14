@@ -332,3 +332,19 @@ Computer = VLAN 100, VoIP = VLAN 200
 - When we send information from our computer, it sent across the ethernet link as a normal access ethernet frame with any type of VLAN trunking.
 - But if we communicating from our phone/ VoIP, we will tag all of the communication between our phone and the switch with an 802.1Q header that designates that it came from VLAN 200.
 - This allows us to set priorities in the switch and assure that the quality of service is maintained for all of out voice communication. 
+
+#
+
+## Spanning Tree Protocol
+
+IPv4 has a TTL field where will identify when a packet is looping thru separate routers and eventually drop the packet from the network.
+- With layer 2 ethernet, there is not a TTL function.
+- If a loop is created in the network and frame is introduced into that loop, there is no function to drop or remove the frame from the network
+- Only way to stop the loop is to physcial unplug the cable so the loop no longer exist.
+
+Key with ethernet and switching is to make sure that loop doesn't occur in the first place
+- We
+
+Loop Protection 
+- Connect two switch to each other
+- 
