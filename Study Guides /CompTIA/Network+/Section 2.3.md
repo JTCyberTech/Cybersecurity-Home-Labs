@@ -347,4 +347,4 @@ Key with ethernet and switching is to make sure that loop doesn't occur in the f
 
 Loop Protection 
 - Connect two switch to each other
-- 
+- w
