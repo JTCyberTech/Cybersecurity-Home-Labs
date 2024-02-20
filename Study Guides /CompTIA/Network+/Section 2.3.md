@@ -343,7 +343,7 @@ IPv4 has a TTL field where will identify when a packet is looping thru separate 
 - Only way to stop the loop is to physcial unplug the cable so the loop no longer exist.
 
 Key with ethernet and switching is to make sure that loop doesn't occur in the first place
-- We a
+- We 
 
 Loop Protection 
 - Connect two switch to each other
