@@ -340,11 +340,14 @@ Computer = VLAN 100, VoIP = VLAN 200
 IPv4 has a TTL field where will identify when a packet is looping thru separate routers and eventually drop the packet from the network.
 - With layer 2 ethernet, there is not a TTL function.
 - If a loop is created in the network and frame is introduced into that loop, there is no function to drop or remove the frame from the network
-- Only way to stop the loop is to physcial unplug the cable so the loop no longer exist.
+- Only way to stop the loop is to physically unplug the cable so the loop no longer exist.
 
 Key with ethernet and switching is to make sure that loop doesn't occur in the first place
-- We 
+- We do that by using **Loop Protection**
+
+Creating a Loop is easy:
+- Just connect two switches to each other
 
 Loop Protection 
 - Connect two switch to each other
--  
+- 
