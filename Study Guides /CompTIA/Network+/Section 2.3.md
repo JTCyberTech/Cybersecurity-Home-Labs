@@ -347,7 +347,81 @@ Key with ethernet and switching is to make sure that loop doesn't occur in the f
 
 Creating a Loop is easy:
 - Just connect two switches to each other
+- beacuse there are not counting mechanism at MAC Address, frame will go back and forth
 
-Loop Protection 
-- Connect two switch to each other
-- 
+Resolve:
+- Unplug one of the cables, remove the loop
+
+IEEE standard 802.1D to prevent loops in bridged (switched) networks (1990)
+- By Radia Perlman
+- This is the Spanning Tree Protocol
+
+
+#
+
+### STP port States
+
+When interface is connected to a network, STP begins process of identifying if a loop would be created with the interface.
+- There number of modes that interface will placed in.
+- Mode: 
+  - Blocking port state.
+  - Listening port state.
+  - Learning port state.
+
+Blocking
+- If STP identifies that loop would be created by turning on this interface.
+  - Will administratively block all traffic from going in or out of that interface to prevent loop.
+- Not forwarding to prevent a loop.
+
+Listening
+- Not forwarding and cleaning the MAC table.
+- Determine block/not block traffic, it needs to listen for a certain amount of time to be able to know what devices and switches may already be the network.
+
+Learning
+- Not forwarding and adding to the MAC table.
+- Process of building its own internal topology, so that it understands whether a loop may be occurring or not. 
+
+Forwarding 
+- Data passes thru and is fully operational,
+- Once comfortable that no loop would be created, begins forwarding traffic.
+
+Disabled
+- Administrator has turned off the port.
+
+#
+
+### Spanning Tree Protocol
+
+Root Port =  Root of the network.
+Designated Port = all other operational ports on every other bridge.
+Block Port = identify potenital loops and it will disable or block individual ports.
+- For example: Network C wants to talk to Network Y, have to go thru Bridge 21, 1, 6, 5 then network Y.
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/3dce8084-6805-44aa-a892-fe73f1b6b4e4)
+
+If there is a cut off to the bridge, STP will recreate a whole another mapping network based on the change. Bridge 5 will change, Network A will no longer communicate with the Root bridge of the network.
+- Bridge 5 will change, RP and DP.
+
+![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/0f95c519-6437-49eb-a352-14e14bf557bd)
+
+
+#
+
+### RSTP (802.1w)
+
+Rapid Spanning Tree Protocol (802.1w)
+- Much needed updated of STP
+- Latest standard.
+
+Faster convergence
+- From 30 to 60 seconds for STP to 6 seconds for RSTP.
+
+Backward compatible with 802.1D STP
+- You can mix both in your network.
+
+Very similar process
+- An update, not a wholesale change.
+
+#
+
+## Interface Configurations
