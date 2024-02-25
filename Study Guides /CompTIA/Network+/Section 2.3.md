@@ -426,11 +426,129 @@ Very similar process
 
 ## Interface Configurations
 
-Basic Interface Configuration
+### Basic Interface Configuration
 
+Ethernet 
 - Speed and Duplex
-- Speed = 10/ 100/ 1000/ 10 Gig
-- Duplex = half / Full
-- Automatic and manual
-- Needs tomatch on both sides
+  - Speed = 10/ 100/ 1000/ 10 Gig
+  - Duplex = half / Full
+  - Automatic and manual
+  - Needs tomatch on both sides
 
+- IP Address Management
+  - Layer 3 interfaces
+  - VLAN interfaces
+  - Management interfaces
+  - IP Address, subnet mask/ CIDR blocks, default gateway, DNS (optional)
+
+#
+
+## VLANs
+
+VLAN assignment
+- Each device port should be assigned a VLAN
+
+Trunking
+- Connecting switches together
+- Multiple VLANs in single link
+
+Tagged and untagged VLANs
+- A non-tagged frame is on the default VLAN
+  - Also called the native VLAN
+- Trunk ports will tag the outgoing frames
+  - And remove the tag on incoming frames.
+ 
+#
+
+## LAG and mirroring
+
+Port bonding/ **Link Aggregation (LAG)**
+- Multiple interfaces acts like one big interface
+- **LACP** (Link Aggregation Control Protocol)
+  - Adds additional automation and management
+ 
+Port mirroring 
+
+- Copy traffic from one interface
+- Used for packet capture, IDS
+- Mirror traffic on the same switch
+- Mirror traffic from one switch to another
+
+
+#
+
+## Port Mirroring
+
+Examine a copy of the traffic
+- Port Mirror (SPAN) network tap
+
+No way to block (prevent) traffic
+
+
+#
+
+## Jumbo Frames
+
+Ethernet frames with more than 1500 bytes of payload
+- up to 9216 bytes (9000 is the accepted norm)
+
+Increase transfer efficiency
+- Per-packet size
+- Fewer packets to switch/route
+
+Ethernet devices must support jumbo frames
+- Switches interfaces cards
+- Not all devices are compatible with others.
+
+#
+
+## Ethernet Flow Control
+
+Ethernet is non deterministic
+- You never know just how fast or slow traffic will flow
+
+If file transfer get too busy (overloaded), tell the other device to slow down commuciation to be better
+- Switches is other devices only have so much buffer, easy to overwhelm from large file transfer.
+
+One popular resolution: manage flow control by using
+- IEEE 802.3x
+- The pause frame: sends message to other device telling it to pause a moment before sending more traffic
+
+Enhancements have been made thru years
+- Incorporates (CoS) Class of Service
+
+
+#
+
+## Port Security
+
+
+One concern for using Ethernet:
+- Someone could walk in from the outside, plug in their own devices and gain access to internal network
+- Prevent: by configuring an interface on switch to have port security.
+- Prevents unauthorized users from gaining access to the network on any interface that has port security enabled.
+
+Prevent unauthorized users from connecting to a switch interface
+- Alert or disable the port
+
+Security is Based on the source MAC address
+- Even if forwarded from elsewhere
+
+Each port has its own config
+- Unique rules for every interface.
+- Can make it only the MAC address on the organization can access.
+
+#
+
+### Port Security Operation
+
+Configure a max number of source MAC addresses on an interface on a switch
+- You decide how many is too many
+- You can also configure specific MAC addresses
+
+Switch monitors all incoming traffic to the interfaces 
+- Keep a list: number of unique MAC addresses
+- Maintain a list of every source MAC address
+
+Once you exceed the max port security activates
+- Default is to disable the interface and message send to the network administrator.
