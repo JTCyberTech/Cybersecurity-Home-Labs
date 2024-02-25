@@ -425,3 +425,11 @@ Very similar process
 #
 
 ## Interface Configurations
+
+Basic Interface Configuration
+
+- Speed and Duplex
+- Speed = 10/ 100/ 1000/ 10 Gig
+- Duplex = half / Full
+- Automatic and manual
+- Needs tomatch on both sides
