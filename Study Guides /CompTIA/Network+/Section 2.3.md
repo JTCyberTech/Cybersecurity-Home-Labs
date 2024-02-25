@@ -433,3 +433,4 @@ Basic Interface Configuration
 - Duplex = half / Full
 - Automatic and manual
 - Needs tomatch on both sides
+
