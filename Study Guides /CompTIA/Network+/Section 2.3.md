@@ -552,3 +552,36 @@ Switch monitors all incoming traffic to the interfaces
 
 Once you exceed the max port security activates
 - Default is to disable the interface and message send to the network administrator.
+
+
+#
+
+## Straight through and Crossover Cables
+
+Straight Thru cables 
+- Sometimes refers to Patch cables; patch panel into an ethernet switch
+- The most common Ethernet cable
+- Connect workstations to network devices
+- Connecting pin 1 from one side to pin 1 to another side. 2 to 2, 3 to 3, so on
+
+
+Ethernet cross over cables
+- Connect MDI to MDI (Medium dependent interface crossover)
+- Connect MDI-X to MDI-X
+- Auto MDI-X is on most modern Ethernet devices
+  - Automatically decides to cross over.
+ 
+When to use straight thru or Crossover?
+- Workstation to Switch
+  - MDI devices connecting to MDI-X: Use Straight thru cable
+- Router to Switch
+  - Similar conifiguration with Straight thru cable.
+- Switch to Switch
+  - Like devices, use crossover cable
+- Router to Router
+  - Crossover cable
+- Workstation to Workstation
+  - Crossover Cable
+- Workstation to router
+  - Both workstation and a router are both MDI Device, so Crossover Cable. 
+  
