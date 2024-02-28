@@ -53,7 +53,7 @@ Incorrect:
 
 #
 
-## Second
+## Second Attempt
 
 1. What is used to measure the relative signal strength coming out of a directional antenna, comparing the “strong” end signal with an omnidirectional antenna?
 
@@ -68,6 +68,8 @@ Incorrect:
 Incorrect:
 - IP Addresses mut be assigned by IANA, Only uses static IP Addresses, Exposed to the internet are all Public Network.
 
+#
+
 3. Which of the following Ethernet standards use UTP cable? (Select two.)
 
 - 100BaseTX and 1000BaseT: Both uses UTP cable
@@ -75,4 +77,11 @@ Incorrect:
 Incorrect:
 10GBaseLW, 10GBaseSW, 10GBaseER are all Fiber Optic Cabling.
 
+#
+
 4. A school decides to issue Chromebooks to all of its students, but allows the option of students using their own laptop for schoolwork. However, a very watered-down plan is put in place for the students that use their own laptop. One day, you notice several students with their own device are trying to access inappropriate Web sites. What category does this fall under?
+
+- BYOD Challenge; Bring Your Own Device: need to be addressed before allowing students or employees to connect to the network with their device.
+
+Incorrect:
+- AUP challenge (A
