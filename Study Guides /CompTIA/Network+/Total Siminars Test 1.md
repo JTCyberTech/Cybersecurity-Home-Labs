@@ -142,6 +142,8 @@ Incorrect:
 - 127.0.0.1: Address used for loopback test
 - 255.255.255.255: not valid subnet mask.
 
+#
+
 10. Your network administrator has decided to remove WINS from the network and replace it with DNS. Your WINS server resolves requests to 20 address locations on your network segment. What's the BEST way to ensure that users can reach those addresses by host name automatically?
 
 - Request that the hostnames and addresses be added into DNS: best way = add entries to the DNS server.
