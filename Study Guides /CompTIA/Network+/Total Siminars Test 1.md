@@ -84,4 +84,69 @@ Incorrect:
 - BYOD Challenge; Bring Your Own Device: need to be addressed before allowing students or employees to connect to the network with their device.
 
 Incorrect:
-- AUP challenge (A
+- AUP challenge (Acceptable Use Policy): Agreement that needs to be signed whether students/employees bring their device or not.
+- Licensed feature issues: happens when company decides to use features from a licensed vendor without obtaining proper authorization.
+- Network Performance issues: plain wrong.
+
+#
+
+5. Which Cisco IOS command shhows the statistics for network interfaces?
+
+- Show interface command provide the status of all network interface
+
+Incorrect:
+- show route command display every known connected and destination network
+- show config command display current configuration
+- show IP is not a command
+
+#
+
+6. Which technology is an authentication solution that uses TCP and also provides AAA?
+
+- TACAS+ uses TCP to perform AAA functions
+
+Incorrect:
+- Radius uses UDP to perform AAA
+- RAS provides authentication
+- Kerberos doesn't provide authorization
+
+#
+
+7. Which technique would be used to test the network security of a particular network by allowing it to accept security attacks?
+
+- Honeynet: Draws attackers so their method and location can be determined and subsequently protect against without jeopardizing vital information
+
+Incorrect:
+- Honeypot: single machine
+- Vulnerability scanner and Network Based IDS: Very Helpful but don't want them to receive security attacks
+
+#
+
+8. Which command will show you the name of the current system you are working on?
+
+- hostname: will show current name of the system. Useful for running a script on many systems that needs access to each system's hostname.
+
+Incorrect:
+- netstat: utility display information on the current state of all the running IP processes on system
+- route: utility display and edit the local system's routing table
+- showhost: does not exist
+
+#
+
+9. In order to broadcast to all nodes on a LAN, which MAC address will be used?
+
+- FF:FF:FF:FF:FF:FF : When a packet needs to be sent to all the nodes on LAN = Broadcast, MAC address used as the destination MAC address in packet is FF:FF:FF:FF:FF:FF (Broadcast address)
+
+Incorrect:
+- 00:00:00:00:00:00 : is a valid MAC address but not broadcast.
+- 127.0.0.1: Address used for loopback test
+- 255.255.255.255: not valid subnet mask.
+
+10. Your network administrator has decided to remove WINS from the network and replace it with DNS. Your WINS server resolves requests to 20 address locations on your network segment. What's the BEST way to ensure that users can reach those addresses by host name automatically?
+
+- Request that the hostnames and addresses be added into DNS: best way = add entries to the DNS server.
+
+Incorrect:
+- Adding entries to the HOSTS files would work but this would need to be done on every workstation.
+- Adding WINS proxy is not an option since the WINS server is being taken out of the network.
+- Entering hostnames into the LMHOSTS file wouldn't do much because LMHOSTS is for NetBIOS resolution, not DNS.
