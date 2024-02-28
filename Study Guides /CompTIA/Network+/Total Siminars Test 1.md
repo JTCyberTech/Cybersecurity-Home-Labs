@@ -152,3 +152,224 @@ Incorrect:
 - Adding entries to the HOSTS files would work but this would need to be done on every workstation.
 - Adding WINS proxy is not an option since the WINS server is being taken out of the network.
 - Entering hostnames into the LMHOSTS file wouldn't do much because LMHOSTS is for NetBIOS resolution, not DNS.
+
+#
+
+## Attempt 3
+
+1. Which of the following would fall under licensed feature issues?
+
+- Ensuring that you can use OSPF on a non-Cisco router: OSPF is a Cisco routing protocol. OSPF needs licensing.
+
+Incorrect:
+- Ensuring that you can install more than a certain amount of Cisco Switches in your equipment rack: As long as you have the funds, you can purchase as many Cisco switch as you want.
+- Ensuring that you are paying the correct monthly fees for using DNS and DHCP within Microsoft Windows Server: There are no fees for DNS and DHCP, built in tools for Windows Servers.
+- Encuring that you when implementing BYOD policy, all employees sign the AUP (Acceptance User Policy): BYOD policy, employee must sign AUP but have nothing to do with licensing.
+
+#
+
+2. MU-MIMO is a feature of the 802.11ac wireless standard. What does it provide?
+
+- Simultaneous transmission to multiple users: MU in MU-MIMO stands for multiple users.
+
+Incorrect:
+- Maximum Unified signal is not real term
+- Multiple Antennas on the workstation wireless card: Multiple Antennas are required to achieve MU at the Access Point. Not Workstation.
+
+#
+
+3. Which layer of the OSI model ensures packets are delivered in sequence, error free, and without losses?
+
+- Transport Layer: Layer 4 handles the sequencing and error detection of the packet.
+
+#
+
+4. Which type of backup data contains customized settings for a router or switch?
+
+- Configuration: Configuration data is stored in a text file so settings can be quickly recovered.
+
+Incorrect:
+- State: State data would be convergence for a router, or Active Directory on a server.
+- Standard and System do not apply in this scenerio.
+
+#
+
+5. Which technique would be used to test the network security of a particular network by allowing it to accept security attacks?
+
+- Honeynet
+
+#
+
+6. Governments strictly regulate which bands, and which channels within each band, that Wi-Fi systems can use. What is this called?
+
+- Regulatory Impact: applies rather specifically to the channels in 2.4 GHz range and more generally to the other ranges.
+
+#
+
+7. Which table maps a destination MAC address to a port within a switch?
+
+- MAC address lookup table: maps destination MAC addresses to ports within a switch.
+
+Incorrect:
+- ARP cache table is found within a host, not a switch.
+- Nslookup is a tulity that maps DNS name against IP address.
+- DNS cache table hold DNS-to-IP mapping within a Windows host.
+
+#
+
+8. What kind of malicious attack creates a buffer overflow to prevent regular users from accessing a system?
+
+- DoS: Denial of Service attack typically involves overwhelming a system with low-level requests (like pings) so that the system doesn't have time or resources to respond to real user requests.  
+
+Incorrect:
+- Blue Jacking: involves sending unsolicited messages over Bluetooth to device (mobile phone, laptop)
+- Man in the Middle: involves intercepting network traffic between 2 or more systems.
+- Netstat: What we use to tell us about the current sessions we have running on our computer.
+
+#
+
+9. Which type of contingency plan will detail risks to critical systems, cost to replace or repair such systems, and how to make those replacements or repairs happen in a timely fashion?
+
+- Business Continuity Plan: (BCP) helps organization to stay afloat by assessing the risk and cost.
+
+Incorrect:
+- Disaster recovery plan: plan in place in case a disaster occurs.
+- Recovery point objective: (RPO) sets a upper limit to how much lost data the organization can tolerant if it must restore from a backup.
+- Backup plan: General term.
+
+#
+
+10. What is the purpose of the MAC address table?
+
+- Table that stores all MAC addresses of each connected computer on the switch.
+
+#
+
+11. You just installed some new cable segments in the network. Which document would you update?
+
+- Wiring diagram: Show any number of types of wiring, to a detailed layout of the physical space with drops to each workstation and full cable runs.
+
+Incorrect:
+- Baseline: shows how a netowrk operates at optimum potential
+- Site survey: Used for wireless networks
+- Statement of work: Understanding of the work to be performed.
+
+#
+
+12. Which of the following is a valid IPv6 address?
+
+- FEDC:BA98:7654:3210:FEDC:BA98:7654:3210 : IPv6 each group is a hexadecimal between 0000 and FFFF.
+
+#
+
+13. Which routing protocol allows a gateway host to send its entire routing table to the next closest host?
+
+- RIP v2: Routing Information Protocol is oldest routing method used for dynamic routing. It said entire routing table would be sent indicates that it is a Distance Vector Routing Protocol not Link State Routing Protocol.
+
+Incorrect:
+- OSPF, IS-IS, EIGRP is all Link-State or Hybrid Routing Protocols.
+
+**Need to Remember what is the Routing protocols**
+
+# 
+
+14. Which of the following Ethernet standards use UTP cable? (Select two.)
+
+- 100BASETX and 1000BASET
+
+#
+
+15. What is used to measure the relative signal strength coming out of a directional antenna, comparing the “strong” end signal with an omnidirectional antenna?
+
+- EIRP (Effective Isotropic Radiated Power)
+
+
+#
+
+16. You are looking to switch to a cloud-based storage service for the files in your organization. That means getting rid of the outdated storage server in your telecommunications room. What is the FIRST step to take when disposing of the hard drives in the old server?
+
+- Take the necessary steps to perform a full factory wipe on the drives: Factory wipe using the proper tools/services will ensure that all data is removed.
+
+Incorrect:
+- A simple format in Windows can leave remnants on the hard drives that can be recovered.
+- Hard drives should never just be thrown in the trash.
+- Dumpster divers can get them and find ways to recover them.  You should research local ordinances, but not until you perform a factory wipe on the drives.
+
+#
+
+17. Which technology enables data to be transported over wiring that carries cable television signals?
+
+- DOCSIS (Data Over Cable Service Interface Specification)
+
+#
+
+18. A router sends a packet down a particular path that it thinks is correct, but the packet ends up back at a router that it already passed through. What is this called?
+
+- Routing loop
+
+#
+
+19. What technology passes IP data over home-entertainment-device interconnect cables?
+
+- Ethernet over HDMI: enable devices like televisions and video player to communicate using standard network protocols.
+
+Incorrect:
+- 10Base2: not an entertainment device interconnection cable.
+- Power lines are not entertainment device interconnection cable.
+- IEEE 1901 refers to Ethernet over home electrical wiring.
+
+#
+
+20. A private network has which of the following traits?
+
+- IP Addresses are not exposed to the Internet.
+
+#
+
+21. Which command will show you the name of the current system you are working on?
+
+- hostname
+
+#
+
+22. You have 20 new employees that need e-mail accounts. Which of the following protocols do you need to set up the e-mail accounts? (Select two.)
+
+- POP3 and SMTP: Post Office Protocol version 3 (POP3) for incoming e-mail and Simple Mail Transfer Protocol (SMTP) for outgoing e-mail are the two most common protocols you need to set up an e-mail account. 
+
+Incorrect: 
+- SNMP: enables communication with network devices such as a hub or router.
+- FTP: is for uploading and downloading files.
+- ICMP: is for error reporting. It is used in utilities such as ping.
+
+#
+
+23. Which command will display the current configuration for a switch?
+
+- Show Config: will provide status of all configuration.
+
+Incorrect:
+- show route: command displays every known connected and destination network.
+- show IP: command doesn't exist.
+- show interface: command displays the status of all network interfaces.
+
+#
+
+24. A router has not been configured properly, and as a result, packets are not reaching their destination. What could be the cause of this?
+
+- Missing Route: cause packets to not reach their destination.
+
+Incorrect:
+- route mismatch: is not the proper term for this.
+- Asymmetric routing: is when a packet takes one path to the destination but the response packet takes a different path.
+- routing loop: occurs when a packet takes a path that leads to a router it already visited.
+
+#
+
+25. Sherman has configured his network hosts to use DHCP. Now he wants to ensure that his users can use names like www.totalsem.com instead of IP addresses when using their Web browsers. He needs to install what kind of server?
+
+- DNS Server: (Domain Name Service) resolves domain names such as www.totalsem.com into IP addresses.
+
+Incorrect:
+- WINS (Windows Internet Name Service) provides a similar function, but only for NetBIOS names like SERVER1.
+- A DHCP server provides automatic TCP/IP configuration for nodes.
+- An FTP server provides remote uploading and downloading of files.
