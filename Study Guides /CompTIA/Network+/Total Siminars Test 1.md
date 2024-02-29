@@ -373,3 +373,60 @@ Incorrect:
 - WINS (Windows Internet Name Service) provides a similar function, but only for NetBIOS names like SERVER1.
 - A DHCP server provides automatic TCP/IP configuration for nodes.
 - An FTP server provides remote uploading and downloading of files.
+
+#
+
+#
+
+1. Which of the following are benefits of patch panels? (Select two.)'
+
+- Organizes the horizontal cabling
+- Protects the horizontal cabling from over handling
+
+Explaination:
+- A patch panel allows the horizontal cabling to be organized while also protecting the horizontal cabling from over handling that can lead t ocable breakage.
+- Patch panel do not offer any surge or ESD protection.
+
+#
+
+2. Theo must send highly sensitive data over his PPTP connection. What feature of PPTP will give him confidence that his data won't be stolen in route? PPTP = Point to Point Tunnel Protocol
+
+- Encryption: PPTP's encrytion scrambles the data, making it unreadable to anyone but the client and server.
+
+#
+
+3. A chain-of-custody document includes what information? (Select three.)
+
+- When was evidence taken into custody
+- What was taken into custody
+- To whom was evidence passed and when
+
+Explaination: 
+
+- Chain of custody is concerned with tracking evidence to avoid loss or tampering documents
+  - what evidence was taken into custody
+  - when it was collected
+  - who was it passed on to
+
+#
+
+4. A router sends a packet down a particular path that it thinks is correct, but the packet ends up back at a router that it already passed through. What is this called?
+
+- Routing loop
+
+#
+
+5. What is the technical term for an uplink port and the auto-sensing feature of ports in modern switches?
+
+- MDI-X = new term for an auto sensing port
+
+Incorrect:
+- Trunk port is used to send data within the same VLAN across multiple switches.
+- No shutdown port = used to enable a port as active.
+- Native VLAN port = used as VLAN 1 by default and doesn't have t obe an uplink port.
+
+#
+
+## Attempt 4
+
+1. 
