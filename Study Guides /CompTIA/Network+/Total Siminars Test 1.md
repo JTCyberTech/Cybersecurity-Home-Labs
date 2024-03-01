@@ -429,4 +429,369 @@ Incorrect:
 
 ## Attempt 4
 
-1. 
+1. E-mail programs and FTP work on which layer of the OSI 7-layer model?
+
+- Application Layer: FTP and e-mail programs work on Layer 7, or the Application layer
+
+#
+
+2. Which command will show you the name of the current system you are working on?
+
+- hostname: hostname = show surrent name of the system
+
+#
+
+3. As a network administrator, you notice that many employees have fallen victim to social engineering tactics. What is the BEST way to prevent more of these instances from happening?
+
+- Employee Training: best way to mitigate social engineering threat.
+
+#
+
+4. Current versions of Windows Server can provide a secure tunnel via HTTPS for a Remote Desktop Connection (RDC) session. What does the server run to accomplish this?
+
+- Remote Desktop Gateway (RDG): Uses TLS for security
+
+Incorrect:
+- Remote Desktop Protocol (RDP): Protocol used to remote into a computer and it is the predecessor of RDC.
+- Border Gateway Protocol (BGP): routing protocol.
+- Independent Computing Architecture (ICA): defined how terminal information was passed between the server and client.
+
+#
+
+5. What is the purpose of the MAC address table?
+
+- Table that store all MAC address of each connected computer on a switch
+
+#
+
+6. While setting up your wireless network, you want to have certain users access the Internet, but block them from accessing other wireless clients or wired network itself. What do you need to setup?
+
+- Wireless Client Isolation: Also called Guest Network Isolation, allows users to benefit of the internet without intruding on your network.
+
+Incorrect:
+- Wireless client separation: not a term
+- MAC Address filtering: blocking hosts from the wireless network based on MAC Address
+- Disabling SSID (Service Set IDentifier) broadcast: Will not let anyone see the wireless network unless they know the SSID name.
+
+#
+
+7. A standard user in a company receives an e-mail from what looks like her bank. It requests that she click on a link to fix her account information. What type of social engineering is this?
+
+- Phising
+
+#
+
+8. Which layer of the OSI model ensures packets are delivered in sequence, error free, and without losses?
+
+- Transport Layer
+
+#
+
+9. A router has not been configured properly, and as a result, packets are not reaching their destination. What could be the cause of this?
+
+- Missing Route
+
+#
+
+10. Which term describes the orientation of radio waves of a Wi-Fi signal?
+
+- Polarization: Polarization of Wi-Fi signals depends on the antenna.
+
+Incorrect: 
+- Gain = the ratio of increase in antenna strength
+- Frequency hopping = method of transmitting radio signals by rapidly changing the carrier frequency among many distinct frequencies
+- Geofencing = uses various wireless methods to create a perimeter around a certain area.
+
+#
+
+11. Which type of backup data contains customized settings for a router or switch?
+
+- Configuration: Configuration data is stored in a text file so settings can be quickly recovered.
+
+#
+
+12. Theo must send highly sensitive data over his PPTP connection. What feature of PPTP will give him confidence that his data won't be stolen in route? PPTP = Point-To-Point Tunnel Protocol.
+
+- Encrpytion
+
+#
+
+13. What type of sensor would show rising humidity levels in your equipment rack?
+
+- Environmental Sensor: gauges temperature, humidity, electrical load.
+
+Incorrect:
+- Temperature sensor: falls under the job of an environmental sensor.
+- Chassis Sensor: report any temperature changes to an individual system.
+- Baseline: document that shows how the network is performing at optimal time.
+
+#
+
+14. What is the IPv6 version of ARP?
+
+- Neighbor Discovery Protocol: NDP performs many of the same function as IPv4 ARP, but does more.
+
+Incorrect:
+- NTP: used to synchronize time for all devices on the network.
+- DNS: resolves host name to IP address
+- ARPv6: is not a term.
+
+#
+
+15. In order to broadcast to all nodes on a LAN, which MAC address will be used?
+
+FF:FF:FF:FF:FF:FF : Broadcast address of all node on LAN.
+
+#
+
+16. Which of the following Ethernet standards use UTP cable? (Select two.)
+
+- 1000BaseT, 100BaseTX
+
+#
+
+17. Which of the following are benefits of patch panels? (Select two.)
+
+- Organize the horizontal cabling
+- Protects the horizontal cabling from over handling
+
+#
+
+18. Governments strictly regulate which bands, and which channels within each band, that Wi-Fi systems can use. What is this called?
+
+- Regulatory Impact: applies rather specifically to the chhannels in the 2.4 GHz range and more generally to the other ranges.
+
+#
+
+19. HTTP can be used to transfer files, but it is not as reliable or as fast as what protocol?
+
+- FTP: can transfer files more quickly than HTTP.
+
+#
+
+20. You have 20 new employees that need e-mail accounts. Which of the following protocols do you need to set up the e-mail accounts? (Select two.)
+
+- SMTP, POP3
+
+#
+
+21. Which of the following is good copper cabling for environments with heavy electrical interference?
+
+- STP: Shield Twisted Pairs help reduce electrical interference which makes it the best choice of copper cabling.
+
+Incorrect: 
+- Fiber: might be better but not copper.
+- UTP: lack of shielding make it susceptible to interference.
+- Wireless networks rely on radio waves which are easily interfered with.
+
+#
+
+22. Which OSI layer adds unique identifiers to the packets, enabling the packets to be routed to the correct system?
+
+- Network Layer: The Network layer (Layer 3) adds addresses (such as an IP address) to the packets.  These addresses uniquely identify devices on the network and are used by routers to make sure the packets are delivered to the correct systems. 
+
+#
+
+23. Something has changed and now no one within the organization can access the Internet. The ISP has checked everything beyond the demark and found no problems. Which are likely culprits for the outage? (Select three.)
+
+- Throttling policy: The organization may have instituted a throttling policy that shuts down access to the internet after a certain amount of trafic has been exceeded.
+- Customer premises equipment: ISP reported everything beyond demark is okay meaning it must involve CPE or Customer premises equipement.
+- router Configuration: Something changed - default gateway router,  the whole organization could lose access to the internet.
+
+Incorrect:
+-  Misconfigured Wi-Fi Channel: usually automatically negotated and self resolved.
+-  Local Loop: part of the ISP/Telco equipment and it has been reported as okay.
+-  Satellite latency would cause slowdown but not complete disconnect from the internet.
+
+#
+
+24. A technician needs to manage a multi-layer switch with a secure connection. Which protocol should she use?
+
+- SSH: This protocol uses encryption to make a secure connection as either client or server.
+
+Incorrect:
+- HTTP, SMTP, Telnet -  all unsecuremeans of communication.
+
+#
+
+25. What is the purpose of a VPN concentrator?
+
+- Secure Network Access: The Concentrator is what you connect to when you are away from your network and want to VPN in.
+
+Incorrect:
+- MAC/ Content filtering: Restricting techniques, not connection tools.
+- Connectivity troubleshooting: process to find out why host or device cannont comunicate with a network.
+
+#
+
+26. Which UDP protocol allows you to transfer files from one computer to another?
+
+- TFTP: allows for data transfer between computers, but it provides no protection.
+
+Incorrect: 
+- FTP: 20,21 TCP not UDP.
+- HTTP: protocol used for internet.
+- Telnet: TCP 23
+
+#
+
+27. Which standard is commonly used to control thin-client wireless access points?
+
+- LWAPP: Light Weight Acess Point Protocol: the most common protocol to control thin client wireless access point.
+
+Incorrect:
+- Wi-Fi: trademarked term to describe 802.11x wireless networking.
+- 802.11n: Wi-Fi signaling standard
+- MIMO (Multiple In Multiple Out): A way to use multiple antennas on a WAP to achieve maximum bandwidth utilization.
+
+#
+
+28. What is the technical term for an uplink port and the auto-sensing feature of ports in modern switches?
+
+- MDI-X (Auto-medium-dependent-Interface-Crossover): new term for an auto sensing port.
+
+#
+
+29. What is the scale manufacturers use to show the signal between a WAP and a receiver?
+
+- Received signal strength Indication (RSSI): Scale manufacturer uses to show the signal between Wireless Access Point and Receiver, the closer to 0 dB, the stronger the signal.
+
+Incorrect:
+- Signal Strength Readout: not a term
+- Heat map: shows signal strength in specific areas.
+- Effective Radiated Power (ERP): measure of signal strength coming from an antenna.
+
+#
+
+30. You are setting up a wireless network for a rather large, open floor plan, one-floor office. There are only about 8 employees that need to connect to the wireless access point. Where would be the best place to install the access point and with which type of antenna?
+
+- Omnidirectional antenna in the center of the office on the ceiling: An omnidirectional antenna will send the signal out in all directions so it is best to place one in the center of the office since it is an open floor plan.
+
+#
+
+31. Which table maps a destination MAC address to a port within a switch?
+
+- MAC Address lookup table: The MAC address lookup table maps destination MAC addresses to ports within a switch.
+
+#
+
+32. You just finished installing the last WAP in your building. However, you notice that several users in the area are not recognizing it as an available network. You decide this is a wireless coverage issue, but users are in offices and cannot move closer to the access point. What would be the MOST efficient step to take next?
+
+- Turn up the power on the WAP: turning up the power takes the least amount of time and effort and it can help with insufficient coverage.
+
+Incorrect: 
+- Replacing antenna works, but it more time consuming and money.
+- Upgrading to a newer 802.11 standard would require all new wireless NIC and WAPs, exetremely costly.
+- Users cannot simply move to another location.
+
+#
+
+33. What is the term for the scenario where packets take one path to a destination but the response packet takes a different path?
+
+- Asymmetric routing: The term is called asymmetric because the paths are different. 
+
+#
+
+34. What kind of malicious attack creates a buffer overflow to prevent regular users from accessing a system?
+
+- DoS: A denial of service attack typically involves overwhelming a system with low-level requests (like pings) so that the system doesn't have time or resources to respond to real user requests.
+
+#
+
+35. You are installing fiber-optic cable, and you need to combine two fiber-optic cables without losing quality. What would you need to do this?
+
+- Fusion Splicer: Used to combine two fiber cables without losing quiality.
+
+Incorrect:
+- Fusion emitter, Fiber Coupler, Fiber combiner are not valid fiber optic tools.
+
+#
+
+36. Which technique would be used to test the network security of a particular network by allowing it to accept security attacks?
+
+- Honeynet: A Honeynet draws in attackers so their methods and location can be determined and subsequently protected against without jeopardizing vital information.
+
+#
+
+37. Janet is entering sensitive information into a database. Tom passes by and notices what she is typing and decides to ask Janet a question about the company party coming up over the weekend. What social engineering tactic is Tom using?
+
+- Shoulder Surfing: act of looking over another user's shoulder to see what they are entering into their computer in order to gain access to sensitive information
+
+Incorrect: 
+- Masquerading: pretending to be a figure of authority and creating urgency so a user gives up sensitive information.
+- Eavesdropping: listening in on a conversation in an attempt to gain sensitive information.
+- Tailgating: following an authorized person into a building or room.
+
+38. A school decides to issue Chromebooks to all of its students, but allows the option of students using their own laptop for schoolwork. However, a very watered-down plan is put in place for the students that use their own laptop. One day, you notice several students with their own device are trying to access inappropriate Web sites. What category does this fall under?
+
+- BYOD Challenge: need to be addressed before allowing students or employees to connect to the network with their device. 
+
+#
+
+39. You notice that there has been heavier traffic than usual this week. Network utilization has slowed down the network significantly. Which document would you refer to in order to see how the network normally operates?
+
+- Network Performance Baseline: show how the network should be operating under normal conditions.
+
+Incorrect: 
+- Performance Monitor Output: Tool to show what is happening. So, the output would be the reason to check the baseline.
+- Network Monitoring Log: not really a term
+- Syslog: tool used to listen to traffic and create various type of logs.
+
+#
+
+40. Which technology encompasses video conferencing, real-time video, fax, messaging, and collaboration/workflow tools?
+
+- Unified Communication Technology: Combines and manages a collection of otherwise independent communication tasks.
+
+Incorrect: 
+- Medianets: Optimized iterations of video teleconferencing but this is only one small aspect of unified communications technology.
+- VoIP: just one of many aspects of unified communication technology.
+- Border Gateway Protocol (BGP): large scale routing protocol that is not directly related to unified communication.
+
+#
+
+41. You notice that your server experiences severe slowdown when many different services and applications are running. What Performance Monitor metric would indicate this?
+
+- Memory Usage: Memory stores all open applications and services running in the background. Odds are the slowdown is due to low memory.
+
+Incorrect: 
+- CPU usage: would show if certain processes are hogging CPU time.
+- Network usage: show bandwidth issues such as jitter and latency.
+- Disk usage: show read/write activity.
+
+#
+
+42. To accommodate a growing department, a new switch was installed with little configuration. Hosts attached to the new switch sometimes connect to the network and sometimes they don’t. There is no discernable pattern to whether a node will successfully connect to the network. Which selection is the most likely cause of the problem?
+
+- DHCP server misconfigured: Many times, an enterprise-grade switch comes with a built-in DHCP server.  Unless it is configured correctly or disabled altogether, it can generate conflicting or non-conforming IP addresses. 
+
+#
+
+43. Which would be the most effective solution when disaster planning?
+
+- Cloud Site: ost effective because it is the fastest to get up and running again
+
+Incorrect: 
+- hot site: has everything a warm site does, but includes recent backups.
+- warm site: is like a cold site, but has computers with software and functioning servers
+- cold site: is a location that consists of everything that a business needs...except computers. A cold site generally takes more than a few days to bring online.
+
+# 
+
+44. Which would be the MOST secure way for an administrator establish a connection to a remote UNIX server?
+
+- SSH: Secure shell, as the name implies, is an encrypted connection similar in function to Telnet.
+
+Incorrect: 
+- FTP, Telnet, and PPP are all sent in the clear, and therefore are not secure.
+
+#
+
+45. Before an Ethernet NIC may transmit data onto a medium, it must check to see if another NIC is transmitting data. What is this checking process called?
+
+- Carrier Sense: Also known: Carrier detect, test that NIC perform prior to transmitting on a network medium.
+
+Incorrect:
+- Multiple Access: When the station transmit, all station on the segment will hear the transmission.
+- Collision Detection: A station sending data can tell when another station transmits at the same time.
+- Collision Avoidance: technique used by a network interface to recover from or prevent a collision.
