@@ -1,3 +1,5 @@
+# Attempt 1
+
 1. Router that sends a packet down a particular path that think is correct but the packet ends up back at a router that it already passed thru
 
 - Routing Loop: Generally misconfiguration problem between routers, and different routing protocol have different feature that attempt to keep these loops from developing in the first place.
