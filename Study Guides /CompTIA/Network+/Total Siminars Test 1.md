@@ -797,3 +797,589 @@ Incorrect:
 - Multiple Access: When the station transmit, all station on the segment will hear the transmission.
 - Collision Detection: A station sending data can tell when another station transmits at the same time.
 - Collision Avoidance: technique used by a network interface to recover from or prevent a collision.
+
+#
+
+## Attempt 5
+
+1. Which technology is an authentication solution that uses TCP and also provides AAA?
+
+- TACACS+ = TCP and AAA
+
+#
+
+2. A chain-of-custody document includes what information? (Select three.)
+
+- What was taken into custody
+- When was evidence taken into custody
+- To Whom was the evidence passed and when
+
+#
+
+3. Current versions of Windows Server can provide a secure tunnel via HTTPS for a Remote Desktop Connection (RDC) session. What does the server run to accomplish this?
+
+- Remote Desktop Gateway (RDG)
+
+#
+
+4. Which technology encompasses video conferencing, real-time video, fax, messaging, and collaboration/workflow tools?
+
+- Unified Communication Technology
+
+#
+
+5. What kind of malicious attack creates a buffer overflow to prevent regular users from accessing a system?
+
+- DoS
+
+# 
+
+6. A school decides to issue Chromebooks to all of its students, but allows the option of students using their own laptop for schoolwork. However, a very watered-down plan is put in place for the students that use their own laptop. One day, you notice several students with their own device are trying to access inappropriate Web sites. What category does this fall under?
+
+- BYOD Challenge
+
+#
+
+7. SNMP uses management information bases (MIBs) to categorize the data that can be queried. What is used to uniquely number individual data pieces within a MIB?
+
+- Object Identifier (OID): Makes queries much more efficient.
+
+Incorrect:
+- VLAN ID: Identifies a specific VLAN
+- SNMAP Manager: request and processs information from agent software
+- MIB Labeler: No a term
+
+#
+
+8. Which type of logs would show any bottlenecks in your network?
+
+- Traffic Logs: Display any bandwidth issues and bottlenecks
+
+Incorrect:
+- Audit logs: record any events or change occurred.
+- Baseline: document to refer to when your network is working at optimum level.
+- SIEM: overall approach to monitor and manage network
+
+9. Which port(s) are used by the Media Gateway Control Protocol (MGCP)?
+
+- 2427/2727: MGCP uses UDP or TCP on port 2427 and 2727
+
+Incorret:
+- 445: SMB Server Message Block
+- 5060/5061: SIP
+- 5004/5006: RTP
+
+#
+
+10. Which of the following would fall under licensed feature issues?
+
+- Ensure can use OSPF on non Cisco router
+
+#
+
+11. What is the maximum speed of 802.11ax?
+
+- 10 Gbps
+
+#
+
+12. You are looking to switch to a cloud-based storage service for the files in your organization. That means getting rid of the outdated storage server in your telecommunications room. What is the FIRST step to take when disposing of the hard drives in the old server?
+
+- Take the nessary step to perform a full factory wipe on the drives.
+
+#
+
+13. A standard user in a company receives an e-mail from what looks like her bank. It requests that she click on a link to fix her account information. What type of social engineering is this?
+
+- Phising
+
+#
+
+14. What is the IPv6 version of ARP?
+
+- NDP Neighbor Discovery Protocol
+
+#
+
+15. You just finished installing the last WAP in your building. However, you notice that several users in the area are not recognizing it as an available network. You decide this is a wireless coverage issue, but users are in offices and cannot move closer to the access point. What would be the MOST efficient step to take next?
+
+- Turn Up the power of the Wireless Access Point
+
+#
+
+16. MU-MIMO is a feature of the 802.11ac wireless standard. What does it provide?
+
+- Simulataneous Transmission to multiple users: MU = Multiple Users, MIMO = Multiple input/Multiple Output
+
+Incorrect:
+- Maximum unified signal: Not a real term
+- Multiple antennas are required to achieve MU at the access point but not workstation.
+
+#
+
+17. As a network administrator, you notice that many employees have fallen victim to social engineering tactics. What is the BEST way to prevent more of these instances from happening?
+
+- Employee Training
+
+#
+
+18. Which 802.11 wireless standard is marketed as Wi-Fi 6?
+
+- 802.11ax = Wi-Fi 6
+
+Incorrect:
+- 802.11i = enchances IEEE 802.11-1999 byproviding more robust security
+- 802.11ac = Wi-Fi 5, improved encryption
+- 802.11z not a term
+
+#
+
+19. You are setting up a wireless network. Which would be the strongest encryption method to use to prevent against attacks?
+
+- SAE: Simultaneous Authentication of Equal or WPA3, key exachange based on Diffie-Hellman. Generates unique encryption keys between each client and WAP. This makes it difficult for an attacker to break the encryption key and capture Wi-Fi traffic.
+
+#
+
+20. Which of the following is a valid IPv6 address?
+
+- FEDC:BA98:7654:3210:FEDC:BA98:7654:3210: between 0000 and FFFF
+
+#
+
+21. Which layer of the OSI model ensures packets are delivered in sequence, error free, and without losses?
+
+- Transport Layer
+
+#
+
+22. Every 100 ms, a frame is sent out on a wireless network. This frame contains important information about your wireless network, such as your SSID and your bandwidth speed. What is this frame called?
+
+- Beacon: Frame that sent out on a wireless network. Contains import important information about wireless network: SSID and bandwidth speed
+
+#
+
+23. Which technique would be used to test the network security of a particular network by allowing it to accept security attacks?
+
+- Honeynet
+
+# 
+
+24. While setting up your wireless network, you want to have certain users access the Internet, but block them from accessing other wireless clients or wired network itself. What do you need to setup?
+
+- Wireless Client Isolation
+
+#
+
+25. You notice that your server experiences severe slowdown when many different services and applications are running. What Performance Monitor metric would indicate this?
+
+
+- Memory Usage
+
+#
+
+26. Which type of backup data contains customized settings for a router or switch?
+
+- Configuration
+
+#
+
+27. What is the technical term for an uplink port and the auto-sensing feature of ports in modern switches?
+
+- MDI-X (Auto Medium Dependent Interface Crossover)
+
+#
+
+28. Which Cisco IOS command shows the statistics for network interfaces?
+
+- Show Interface
+
+#
+
+29. What type of sensor would show rising humidity levels in your equipment rack?
+
+- Environmental Sensor
+
+#
+
+30. Which of the following are benefits of patch panels? (Select two.)
+
+- Protects the horizontal cabling from over handling
+- Organizes the horizontal cabling
+
+#
+
+31. Which table maps a destination MAC address to a port within a switch?
+
+- MAC address lookup table
+
+#
+
+32. You have 20 new employees that need e-mail accounts. Which of the following protocols do you need to set up the e-mail accounts? (Select two.)
+
+- SMTP, POP3
+
+#
+
+33. Your network administrator has decided to remove WINS from the network and replace it with DNS. Your WINS server resolves requests to 20 address locations on your network segment. What's the BEST way to ensure that users can reach those addresses by host name automatically?
+
+- Request that the hostnames and addresses be added into DNS.
+
+#
+
+34. Something has changed and now no one within the organization can access the Internet. The ISP has checked everything beyond the demark and found no problems. Which are likely culprits for the outage? (Select three.)
+
+- Throttling policy
+- Router configurations
+- Customer premises equipment
+
+#
+
+35. A private network has which of the following traits?
+
+- IP address are not exposed to the internet.
+
+#
+
+36. Which IPv6 address is the loopback address (using the :: rule)?
+
+- ::1 = Loopback address for IPv6. Short for  0:0:0:0:0:0:0:1
+
+Incorrect:
+- 127:0:0:1 is the IPv4 loopback address'
+
+37. Which would be the MOST secure way for an administrator establish a connection to a remote UNIX server?
+
+- SSH
+
+#
+
+38. Which routing protocol allows a gateway host to send its entire routing table to the next closest host?
+
+- RIPv2
+
+#
+
+39. Which of the following Ethernet standards use UTP cable? (Select two.)
+
+- 100BaseTX
+- 1000BaseT
+
+#
+
+40. Which type of VLAN is used for communication and can use VLAN-based tags in the frame to prioritize traffic?
+
+- Voice VLAN: voice traffic
+
+#
+
+41. What is another name for a protocol analyzer?
+
+- NetFlow Analyzer: shows netflow data. Also called packet sniffer, packet analyzer, network analyzer.
+
+Incorrect:
+- Protocol Sniffer and NetFlow sniffer are not a term
+- Tone Probe: Test cables.
+
+#
+
+42. Which term describes the orientation of radio waves of a Wi-Fi signal?
+
+- Polarization
+
+#
+
+43. What is the term for the scenario where packets take one path to a destination but the response packet takes a different path?
+
+- Asymmetric Routing
+
+#
+
+44. 4F:AC:13:34:AA:54 is most likely a(n) _____________ address.
+
+- MAC
+
+#
+
+45. Before an Ethernet NIC may transmit data onto a medium, it must check to see if another NIC is transmitting data. What is this checking process called?
+
+- Carrier Sense
+
+#
+
+46. A router sends a packet down a particular path that it thinks is correct, but the packet ends up back at a router that it already passed through. What is this called?
+
+- Routing Loop
+
+#
+
+47. Which standard is commonly used to control thin-client wireless access points?
+
+- LWAPP
+
+#
+
+48. A network technician needs to check the configuration of a port on a switch. Which tool is he MOST likely to use to verify the configuration?
+
+- SNMP Monitor: The simple network messaging protocol is used to, among other things, remotely administer SNMP-enabled devices.
+
+#
+
+49. A technician needs to manage a multi-layer switch with a secure connection. Which protocol should she use?
+
+- SSH
+
+#
+
+50. Which command will show you the name of the current system you are working on?
+
+- hostname
+
+# 
+
+51. HTTP can be used to transfer files, but it is not as reliable or as fast as what protocol?
+
+- FTP
+
+#
+
+52. What is the purpose of a VPN concentrator?
+
+- Secure Network Access
+
+#
+
+53. You are setting up a network in a very large building. You have a server that is 1 kilometer away from the client machines. You don't want to use a repeater. What is the best type of cabling for you to use?
+
+- Fiber Optic Cable
+
+#
+
+54. What is the purpose of the MAC address table?
+
+- Table that stores all MAC Address of each connected computer on the switch
+
+#
+
+55. Which command will display the current configuration for a switch?
+
+- Show config
+
+#
+
+56. Janet is entering sensitive information into a database. Tom passes by and notices what she is typing and decides to ask Janet a question about the company party coming up over the weekend. What social engineering tactic is Tom using?
+
+- Shoulder Surfing
+
+#
+
+57. Which would be a useful tool to monitor the bandwidth on your network, especially for TCP, UDP, and SCTP?
+
+- iPerf: Utility with TCP, UDP, SCTP. fucntion in IPv4 and IPv6 network.
+
+#
+
+58. A router has not been configured properly, and as a result, packets are not reaching their destination. What could be the cause of this?
+
+- Missing Route: cause packets to not reach their destination
+
+#
+
+59. You just installed some new cable segments in the network. Which document would you update?
+
+- Wiring Diagram
+
+# 
+
+60. E-mail programs and FTP work on which layer of the OSI 7-layer model?
+
+- Application Layer
+
+#
+
+61. Governments strictly regulate which bands, and which channels within each band, that Wi-Fi systems can use. What is this called?
+
+- Regulatory Impact
+
+#
+
+62. To accommodate a growing department, a new switch was installed with little configuration. Hosts attached to the new switch sometimes connect to the network and sometimes they don’t. There is no discernable pattern to whether a node will successfully connect to the network. Which selection is the most likely cause of the problem?
+
+- Misconfigured DHCP server
+
+#
+
+63. Which part of the IP address does the router use to determine where to send data packets?
+
+- Network ID: Enables the router to determin which network a particular host resides on. Contained in the routing table within the router.
+
+#
+
+64. In order to broadcast to all nodes on a LAN, which MAC address will be used?
+
+- FF:FF:FF:FF:FF:FF
+
+#
+
+65. You are installing fiber-optic cable, and you need to combine two fiber-optic cables without losing quality. What would you need to do this?
+
+- Fusion Splicer
+
+#
+
+66. Which of the following is good copper cabling for environments with heavy electrical interference?
+
+- STP
+
+#
+
+67. You notice that there has been heavier traffic than usual this week. Network utilization has slowed down the network significantly. Which document would you refer to in order to see how the network normally operates?
+
+- Network Performance Baseline
+
+#
+
+68. A person who is new to the hacking world decides to try and impress his friends by attempting to hack into an FBI database. What would this person be described as?
+
+- Script Kiddie
+
+#
+
+69. Theo must send highly sensitive data over his PPTP connection. What feature of PPTP will give him confidence that his data won't be stolen in route?
+
+- Encryption
+
+#
+
+70. Which type of contingency plan will detail risks to critical systems, cost to replace or repair such systems, and how to make those replacements or repairs happen in a timely fashion?
+
+- Business Continunity Plan
+
+#
+
+71. What is the scale manufacturers use to show the signal between a WAP and a receiver?
+
+- RSSI: Received Signal Strength Indication
+
+#
+
+72. What would be an effective way to prevent multicast flooding?
+
+- Place the multicast system in a separate VLAN: Multicaast flooding is only a problem for high bandwidth actions: streaming videom so best to place the system in the multicast group in their own VLAN
+
+Incorrect: 
+- Spanning Tree Protocol: used to prevent Switching loops
+
+#
+
+73. Which OSI layer adds unique identifiers to the packets, enabling the packets to be routed to the correct system?
+
+- Network Layer
+
+#
+
+74. What technology passes IP data over home-entertainment-device interconnect cables?
+
+- Ethernet over HDMI
+
+#
+
+75. What is the term for a frame that exceeds the maximum size?
+
+- Giant: Giant frame = exceed 1514 byte and usually dropped
+
+Incorrect:
+- Jumbo: carry up to 9000 bytes
+- Runt: frame smaller than 64 bytes minimum size
+
+#
+
+76. What would be the BEST example of a posture assessment?
+
+- Accessing possible threat from threat actors: Posture assessment examines any security threat. Looking at threat from actors.
+
+#
+
+77. A view of performance metrics show that your server has been running at high temperatures. What is something that can indicate and notify you of this?
+
+- Chasis Sensor: usually a connector to the motherboard and will notify you of temperature change.
+
+#
+
+78. What are common reasons for a poor or non-working fiber-optic link? (Select three.)
+
+- Wavelength mismatch
+- Distaince Limitation
+- Dirty Connectors
+
+#
+
+79. You are setting up a wireless network for a rather large, open floor plan, one-floor office. There are only about 8 employees that need to connect to the wireless access point. Where would be the best place to install the access point and with which type of antenna?
+
+- Omnidirectional antenna in the center of the office on the ceiling.
+
+#
+
+80. What is used to measure the relative signal strength coming out of a directional antenna, comparing the “strong” end signal with an omnidirectional antenna?
+
+- EIRP: Effiective Isotropic Radiated Power
+
+#
+
+81. Which UDP protocol allows you to transfer files from one computer to another?
+
+- TFTP
+
+#
+
+82. Which would be the most effective solution when disaster planning?
+
+- Cloud Site
+
+#
+
+83. You have been asked to provide employee training to users to better protect the network and their accounts. Which topic would be the BEST one to focus on?
+
+- Social Engineering Threats
+
+#
+
+84. FTP uses ports ____ and ____ for transferring data and control signals. (Select two.)
+
+- 20,21
+
+#
+
+85. Which type of external threat seeks to obtain sensitive information, such as government secrets?
+
+- Nation-State: Most funded and organized, usually target organizations with government contracts.
+
+#
+
+86. Which technology enables data to be transported over wiring that carries cable television signals?
+
+- DOCSIS
+
+#
+
+87. Which would be the BEST example of an on-path attack?
+
+- Connecting a laptop to an access point to sniff packet and intercept them: On path attack also called man in the middle and it focuses on conneting a device in between two nodes in an attempt to intercept and sniff packets.
+
+#
+
+88. When setting up security for a wireless network, you decide to use WPA2. Which encryption method should you use for the strongest security method?
+
+- AES: WPA2 = AES. SAE = WPA3
+
+#
+
+89. Which two of the following settings must be set correctly before a TCP/IP host can communicate with another host on the same network? (Select two.)
+
+- Subnet Mask
+- IP Address
+
+#
+
+90. Sherman has configured his network hosts to use DHCP. Now he wants to ensure that his users can use names like www.totalsem.com instead of IP addresses when using their Web browsers. He needs to install what kind of server?
+
+- DNS Server 
