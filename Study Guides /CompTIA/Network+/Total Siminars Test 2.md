@@ -79,3 +79,83 @@ Incorrect:
 #
 
 # Attempt 3
+
+3. Mike wants to connect two hubs. Which of the following will work? (Select two.)
+
+- Use a crossover cable between two normal ports
+- Use a patch cable from an MDIX port to a normal port
+
+Explanation: 
+- When connecting two hubs, the send and receive wires must be reversed.
+- This is what MDIX (uplink) ports and crossover cables do:
+  - If using a straight-through cable (patch cable), it must be connected to an MDIX port on one hub and normal port on the other hub.
+  - If using a crossover cable, it must be connected to normal ports on both hubs.
+ 
+#
+
+7. What Windows utility enables you to query information from the DNS server and change how your system uses DNS?
+
+- Nslookup: utility that runs from the command line, used to both query various information from a DNS server and change how your system uses DNS
+
+#
+
+8. ![image](https://github.com/jefftsui1/Cybersecurity-Home-Labs/assets/46698661/45117c92-c47c-48cb-9827-acf03cbd447d)
+
+- Netstat -r: route print = netstat -r
+
+#
+
+12. While working on your LAN, you notice that you cannot access your file server. Which of the following utilities would you use FIRST to troubleshoot the problem?
+
+- ipconfig: assume a workstation will have problem before server, run ipconfig on system to make sure you have a good IP Address.
+
+# 
+
+16. Jim is about to install a wireless network. A fellow network administrator warned him about war drivers. What should Jim do to reduce the chance of exposing the wireless signals to war drivers?
+
+- WAP placement: placement of your WAP means everything in war driving. To be a war driver you have to drive around in your car looking for free Wi-Fi Signals.
+
+Incorrect: 
+- Fitering Mac Address won't stop people from detecting your Wi-Fi
+- Authentication and encryption won't help from detecting your Wi-Fi.
+
+#
+
+20. What can a network administrator configure to control specific IP addresses and ports access to the internal network? (Select TWO.)
+
+- Firewall and ACL (Access Control List): Both can be configured to allow/restrict specific port or IP addresses from accessing the network.
+
+Incorrect:
+- MAC filtering and Switches = Layer 2
+- IIS server = Hosting web pages
+- Port scanner = detecting open ports for security
+
+#
+
+22. A user is using a PKI authentication method. Which of the following will the user need to implement PKI?
+
+- Certificate Service: PKI = Public Key Infrastructure, a methodology for using various pieces to manage and distribute certificate.
+
+#
+
+29. You want to go implement Wi-Fi in your office. What device do you need to connect your clients to the network?
+
+- Access Point: To connect a Wireless device to a wired network, a wireless access point is required. Infrastructure Mode.
+
+Incorrect:
+- Router, bridge, hub is not necessary to implement a WiFi network.
+
+#
+
+33. Given a network problem scenario, a technician should identify the problem, then establish a theory for the cause of the problem. What is the next logical troubleshooting step?
+
+- Test the theory to determine the cause: Once you established the symptoms and isolated the scope of the problem, next step should be test out any theory as to what caused the issue.
+
+Incorrect:
+- Implementing an action plan or solution is good but we need to find out what caused the issue first.
+- Documenting is the last step.
+
+#
+
+# Attempt 4 
+
