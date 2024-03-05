@@ -159,3 +159,197 @@ Incorrect:
 
 # Attempt 4 
 
+11. Rebecca needs to spec the equipment for the installation of a complete network system: cables, switches, PCs… everything. The network only needs to be 100BaseT but must be easy to upgrade to 1000BaseT in the future. Which one of the following, although good to have, would be the least important element for Rebecca to buy now?
+
+- 100/1000 Mbps Switch: She should install CAT 5e horizontal cables and CAT 5e patch panel. reinstalling cabling later would be expensive, she should also use 100/1000 Mbps NICs too
+- 100/1000 Mbps switch would be good to have but simple 10/100 mbps switch would be fine at this point. Upgrading switch to 100/1000 mbps in the future would be simple process usually not cost a lot.
+
+#
+
+15. What is the loopback address for IPv6? (Select two.)
+
+- ::1 and 0:0:0:0:0:0:0:1
+
+#
+
+22. Which of the following are dynamic routing protocols? (Select two.)
+
+- RIP (Router Information Protocol): meains the oldest dynamic routing protocol
+- OSPF (Open Shortest Path First): newer and better dynamic routing protocolm how navigate the best shortest router pathways as per its name.
+
+Incorrect:
+- DNS: handle name resolution in TCP/IP network but does not involve routing protocol
+- HTTP: involves application level of Web servers/client
+
+#
+
+29. Brienne, an administrator, attempts to connect a laptop to a server with a length of CAT5 cable that has RJ-45 connectors on each end. She verified the IP settings as correct, but the two computers still cannot connect. Which of the following would MOST likely fix the connectivity problem?
+
+- Wire pairs 1/2 and 3/6 need to be swapped on one end of the connection cables.:  When connecting similar device (2 computers) direcly with a network cable, you need a crossover cable instead of a straight thru cable. In other word, the calbe needs both a TIA/EIA 569A configuration and a TIA/EIA 568B configuration, each of which have different wire pairs at 1/2 and 3/6.
+
+#
+
+34. What routing algorithm does OSPF use?
+
+- Link state: OSPF = Link state, RIP = Distance Vector, EIGRP = Hybrid
+
+# 
+
+36. Your company has to move the heavily-used intranet Web server from one computer to a new, faster system. You make the changeover and send out an e-mail to let everyone know. You then start getting a number of e-mails back saying users cannot access the new Web site by DNS name, even though you updated the "A" record in the DNS server. What's the most likely problem?
+
+- THe user DNS cache still holds the old IP address: User needs to flush their DNS cache. Your system will always look first in the cache to see if they have already resolve this query.
+
+#
+
+38. You recently installed a keypad lock on the door to the telecom room. You only give the code to authorized network administrators. What type of prevention is this?
+
+- Access Control Hardware: Controlling who has access to hardware involves locks on doors, key management, code access, etc.
+
+Incorrect:
+- Principle of Least Privilege: comes close but this has more to do with ACLs right and permissions
+- Separation of Duties: Assigning different roles to different people in the organization regarding specific tasks.
+
+# 
+
+62. When data arrives at the entrance to a network, what device determines the next network point to send the data to?
+
+- Router: Able to analyze the destination address and deteremines where to send the data next.
+
+Incorrect:
+- Hub: forward all packets to all the segments connected to it within the local network
+- switch: only forward packet to the segment on the local network containing the node with the recipient MAC address contained in the packet.
+- NIC card: only send the data in or out of the node in which the NIC is installed.
+
+#
+
+73. A home user is experiencing performance issues with her wireless network. She has checked the following issues: - Checked to make sure the laptop is within the appropriate wireless network range - Checked the connected SSID and wireless channel - Checked that the laptop is the only device connected to the wireless network Which is the MOST likely cause for the performance issues?
+
+- There are other wireless device in the area that operate on the wireless band and on the same wireless channel.: The user's WAP may be on the right channel, but if other WAPs are on the same channel, their signals can interfere with other, causing slowdowns.
+
+Incorrect:
+- Wrong TKIP password: would prevent a conntectionm not poor performance
+- IP addresses won't affect performance.
+
+#
+
+86. Which of the following is most likely to effect your company's IP-based surveillance cameras?
+
+- Man in the middle attack: could happen because these are IP based cameras. An attacker could eaves drop on a connection and start seeingwhat you are seeing.
+
+Incorrect:
+- FTP bounce: legacy man in the middle style attack used on FTP servers where an attacker uses the port command to request access to ports indirectly gaining access to a vitcim's FTP server.
+
+#
+
+87. Which of the following methods of authentication will also provide AAA and uses UDP?
+
+- RADIUS: runs at Appliation layer (7), uses UDP port number 1812 and 1813 to transport packets, Centralize AAA.
+
+Incorrect:
+- TACACS+ = TCP and AAA port 49 to transport packet.
+- RAS = authentication service primarily used dial up services. Not AAA
+- Kerberos = authentication protocol used in Microsoft base network. Separate method of authentication altogether and no AAA.
+
+#
+
+4. What would you use to create a direct connection between two client 10/100 network workstations?
+
+- Crossover Cable: To directly connect two workstations, you must use a crossover cable. This type of UTP cable crosses the transmit and receive wires so each workstation receives on the other workstation's transmit wire.
+
+#
+
+10. Which series of Windows commands would an administrator use to reset the TCP/IP configuration of a system in order to ensure the system changes its configuration for a new DHCP server?
+
+- ipconfig / release, then ipconfig /renew
+
+#
+
+19. Which of the following is the oldest routing protocol, rarely used anymore?
+
+- RIP (Router Information Protocol)
+
+#
+
+21. Which IT changes should be documented by the change-management team? (Select three.)
+
+- Additions to the network
+- NEtwork Configuration
+- Physical location changes
+
+#
+
+25. Ripley is a corporate network tech. She receives a report in the morning about Internet service being down at the site. Ripley got an e-mail yesterday that there was a water main break in front of the site, and repair work was going to be performed. On arrival at the site, she sees that there are workers performing repairs to the water system. She performs a test to make sure there are no internal network issues. The internal network is functional, but the laptop fails to connect to the Internet. Which of the following should be performed according to the network troubleshooting methodology?
+
+- Notify employees of the outage and contact the service provider of the demarc: We know the problem, now we have to get help from someone with expertise to fix it.
+
+#
+
+30. If John's boss asks him to install the networking technology defined by IEEE 802.3, what is he asking him to install?
+
+- Ethernet: IEEE 802.3 = Ethernet
+
+#
+
+48. Which of the following attacks enables a malicious person to view network traffic if the attacker is on the same network as the users?
+
+- Man in the middle
+
+Incorrect: 
+- DoS, Smurf, and Xmas attacks are denial of service attacks designed to disrupt services.
+
+#
+
+58. What elements would be found in a change request? (Select three.)
+
+- Notification, Rollback process, Configuration procedures: affected users should be included in a change request.
+
+Incorrect:
+Funding Mechanisms and Change team members = change mangement team/senior management.
+
+#
+
+59. You are concerned with security at your company and want to implement a technology that requires no configuring on the user's side and will filter out specified port ranges. Which technology will enable this?
+
+- Network based firewall: you can block or allow all the port under the rainbow without your users having to notice or configuring a single thing.
+
+Incorrect:
+- Network based IDS: something great that the user will never have to mess with, but since it is only a detection system, you wont have much protection going on.
+- Host base: instantly rules out beause we want network based.
+
+#
+
+64. Which of the following ports are MOST commonly used by communications applications to interactively manage network devices? (Select TWO.)
+
+- 22 and 23: SSH and Telnet respectively are typically used to remotely configure device.
+
+#
+
+67. A network administrator for a small Internet café has one switch, but wants the public computers to be separated from the back office machines. What feature would help her achieve her goal?
+
+- VLAN: use VLAN to splot her single switch into multiple switches and keep everything separate.
+
+#
+
+72. Which is the best description of a VLAN?
+
+- Group of port that behaves as an independent switch
+
+#
+
+78. Connie has a typical home network that consists of a Linksys WRT54G wireless router and two systems: one is wirelessly connected, and the other is wired. The internal network ID is 192.168.16.0/24. Both systems can access the Internet. While trying to determine why she cannot access a known Web site, Connie decides to run a tracert. The tracert stops at a particular router: 14.21.343.6. She tries to ping the router but gets no response. Which of the following is the most likely problem?
+
+- Router is down
+
+# 
+
+83. Network administrator Kwan suspects that one of the copper network cables is faulty. When examining the suspect cable, Kwan notices that some of the pairs are untwisted too much. This is MOST likely causing which of the following?
+
+- Cross Talk: Twisting wires around each other helps prevent the signal from bleeding between wires.
+
+#
+
+85. Which elements would you expect in an acceptable-use policy? (Select three.)
+
+- Network Access
+- Equipment ownership
+- illegal use
