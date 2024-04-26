@@ -137,3 +137,31 @@ The time column can be set to show a lot more detail:
 Result: 
 
 <p align="center"> <img src="https://i.imgur.com/dpHYea7.png" height="90%" width="90%" alt=""/>
+
+#
+
+## Statistic Tabs: Conversations
+
+- Conversations is a summary of what is contained within the capture.
+- Under the IPv4, TCP, UDP section will show all of the conversations occurred specifically for IPv4, TCP, or UDP along with basic statistics in this capture.
+- Good to see without needing to filter.
+
+<p align="center"> <img src="https://i.imgur.com/1tLyeS4.png" height="90%" width="90%" alt=""/>
+
+#
+
+## Statistic Tabs: I/O Graphs
+
+- Default: generic packets over time and TCP errors.
+- Can also add graphs filter display into the graph.
+- Visual tool, displaying packet increase along with errors over time.
+
+<p align="center"> <img src="https://i.imgur.com/zkOZXxF.png" height="90%" width="90%" alt=""/>
+
+#
+
+## Statistics Tabs: Flow Graph
+
+- Good visualize traffic flow; management graph where you can see packet is flowing from which directions.
+
+<p align="center"> <img src="https://i.imgur.com/M19YHxi.png" height="90%" width="90%" alt=""/>
