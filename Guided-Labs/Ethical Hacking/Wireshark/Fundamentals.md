@@ -48,3 +48,19 @@ Combine filter with OR operator
 - Filter 1 = ip.addr==10.0.0.10; Filter 2 = dns
 - Display can have either filter 1 or filter 2
   - ip.addr==10.0.0.10||dns
+
+#
+
+## Customize Color Schemes
+
+To change any default color schemes:
+
+- Click on View on the top bar menu > Coloring Rules
+
+<p align="center"> <img src="https://i.imgur.com/yyOB331.png" height="90%" width="90%" alt=""/>
+
+To quickly to on or off the coloring schemes:
+
+- Click on this icon on the icon bar menu
+
+<p align="center"> <img src="https://i.imgur.com/pJTo0eT.png" height="90%" width="90%" alt=""/>
