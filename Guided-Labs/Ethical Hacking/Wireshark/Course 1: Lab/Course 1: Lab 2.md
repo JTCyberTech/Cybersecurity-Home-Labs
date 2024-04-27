@@ -30,10 +30,10 @@ Questions for this assignment
 
 4. Add the TCP Errors filter as a button in this profile. Enter "done" below when finished.
 
-<p align="center"> <img src=c"https://i.imgur.com/cw00IYE.png" height="90%" width="90%" alt=""/>
+<p align="center"> <img src="https://i.imgur.com/cw00IYE.png" height="90%" width="90%" alt=""/>
 
 5. It can be a little overkill to see timestamps all the way to the nanosecond. Using the View | Time Display Format menu option, can you see how to configure Wireshark to only display to the microsecond? Make this change in this profile and type "done" below.
 
 - View > Time Display Format > Microseconds
 
-<p align="center"> <img src=c"https://i.imgur.com/Loqkv1O.png" height="90%" width="90%" alt=""/>
+<p align="center"> <img src="https://i.imgur.com/Loqkv1O.png" height="90%" width="90%" alt=""/>
