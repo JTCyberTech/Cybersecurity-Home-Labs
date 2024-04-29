@@ -8,4 +8,14 @@
 - TCP Port: tcp.port==80
 - TCP SYNs: tcp.flags.syn==1
 
-- 
+#
+
+## Operators in Filters
+
+- ==: eq
+- !: not
+- ||: or
+- &&: and
+- ">": gt
+- "<": lt
+
