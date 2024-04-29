@@ -3,7 +3,7 @@
 ## Assignment 2: Lab 2 - Configuring the Wireshark Interface
 
 - Name of the file downloaded from Udemy: udemy-wiresharkintro.pcapng
-  - Uploaded both csv and pcapng files to GitHub: [Guided-Labs/Ethical Hacking/Wireshark/Course 1: Lab/Downloadable Lab Files/Lab 1 and 2](https://github.com/jefftsui1/Cybersecurity-Home-Labs/tree/55ae5010c2124d91987733ef5c13f06afdcb6f4b/Guided-Labs/Ethical%20Hacking/Wireshark/Course%201%3A%20Lab/Downloadable%20Lab%20Files/Lab%201%20and%202)
+  - Uploaded both csv and pcapng files to GitHub: [Lab 1 and 2](https://github.com/jefftsui1/Cybersecurity-Home-Labs/tree/55ae5010c2124d91987733ef5c13f06afdcb6f4b/Guided-Labs/Ethical%20Hacking/Wireshark/Course%201%3A%20Lab/Downloadable%20Lab%20Files/Lab%201%20and%202)
  
 Questions for this assignment
 
