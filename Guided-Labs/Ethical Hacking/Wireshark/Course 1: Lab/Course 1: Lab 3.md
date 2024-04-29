@@ -42,6 +42,21 @@ Questions for this assignment
 
 5. How many packets are in the top IP conversation? Set a filter for this conversation.
 
+- In order to find the top IP Conversation:
+  - Statistics > Conversations
+  - IPv4 > Click on Bytes to sort by largest Conversation
+ 
+- Answer: 406 packets
+ 
+<p align="center"> <img src="https://i.imgur.com/M6MQTP5.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/fDakHnb.png" height="90%" width="90%" alt=""/>
+
+- In order to set a filter for the conversation:
+  - Right click on the packet > Apply as Filter > Selected > A <-> B
+  - Display Filter: ip.addr==10.0.2.15 && ip.addr==104.16.65.85
+
+<p align="center"> <img src="https://i.imgur.com/NvWjfmb.png" height="90%" width="90%" alt=""/>
 
 6. In the top IP conversation, how many packets have the word "Udemy", regardless of case?
 
