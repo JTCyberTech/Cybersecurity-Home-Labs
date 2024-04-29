@@ -3,7 +3,6 @@
 ## Assignment 1: Lab 1 - Hands-On with Wireshark
 
 - Name of the file downloaded from Udemy: udemy-wiresharkintro.pcapng
-- Renamed: **Course 1 Lab.csv** and **Course 1 Lab.pcapng**
   - Uploaded both files to GitHub
 
 Questions for this assignment
