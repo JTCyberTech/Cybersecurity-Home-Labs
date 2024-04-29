@@ -3,7 +3,6 @@
 ## Assignment 2: Lab 2 - Configuring the Wireshark Interface
 
 - Name of the file downloaded from Udemy: udemy-wiresharkintro.pcapng
-- Renamed: **Course 1 Lab.csv** and **Course 1 Lab.pcapng**
   - Uploaded both files to GitHub
  
 Questions for this assignment
