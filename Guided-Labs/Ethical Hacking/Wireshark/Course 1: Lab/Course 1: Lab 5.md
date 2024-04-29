@@ -1,6 +1,6 @@
 # Getting Started with Wireshark: The Ultimate Hands-On Course
 
-## Assignment 2: Lab 2 - Configuring the Wireshark Interface
+## Assignment 5: Lab 5 - Configuring the Wireshark Interface
 
 - Name of the file downloaded from Udemy: udemy-wiresharkintro.pcapng
   - Uploaded both csv and pcapng files to GitHub
