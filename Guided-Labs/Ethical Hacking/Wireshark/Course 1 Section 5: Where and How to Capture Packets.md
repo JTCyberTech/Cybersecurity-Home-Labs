@@ -35,8 +35,34 @@
 
 - Open Command Prompt > Get to the directory that Wireshark is installed on
 
+<p align="center"> <img src="https://i.imgur.com/MdWUzRN.png" height="90%" width="90%" alt=""/>
 
+- type in "dir" > dumpcap.exe is installed in this directory.
 
+<p align="center"> <img src="https://i.imgur.com/ivjLefr.png" height="90%" width="90%" alt=""/>
 
+- dumpcap -D: show all the interface that dumpcap can capture traffic with.
+- dumpcap -i (#): capture the  interface # that you want dumpcap to capture.
+- dumpcap -i (#) -w ("filename.pcapng") -b filesize: 500000 -b files: 100:
+  - Save in "filename.pcapng" with filesize of 500 MB and ring buffer of 100 files.
+  - Ring-buffer = after 100 files, will go back and override the first file with 101,102,103.
+ 
+#
 
-- 
+## Quiz
+
+<p align="center"> <img src="https://i.imgur.com/1rlgx6K.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/8uMuSqJ.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/t1IYEye.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/x0o14JF.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/3OY1HSz.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/DnrWQ4k.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/u2kRiOK.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/Oyt9eGg.png" height="90%" width="90%" alt=""/>
