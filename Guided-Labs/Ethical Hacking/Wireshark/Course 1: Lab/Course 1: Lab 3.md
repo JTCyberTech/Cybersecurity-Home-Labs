@@ -60,6 +60,12 @@ Questions for this assignment
 
 6. In the top IP conversation, how many packets have the word "Udemy", regardless of case?
 
+- In order to filter packet with the word Udemy, we have to take the filter from last question: ip.addr==10.0.2.15 && ip.addr==104.16.65.85
+  - (ip.addr==10.0.2.15 && ip.addr==104.16.65.85) && frame matches "Udemy"
+ 
+- Answer: 3 packets
+
+<p align="center"> <img src="https://i.imgur.com/8BrBw5S.png" height="90%" width="90%" alt=""/>
 
 7. How many packets have the SYN bit set?
 
