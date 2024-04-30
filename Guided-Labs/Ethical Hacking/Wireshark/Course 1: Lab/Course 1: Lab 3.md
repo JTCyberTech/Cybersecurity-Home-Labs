@@ -69,12 +69,36 @@ Questions for this assignment
 
 7. How many packets have the SYN bit set?
 
+- SYN bit packets = packets that have the flag SYN
+  - Display Filter: tcp.flags.syn == 1
+
+- Answer: 146 packets 
+
+<p align="center"> <img src="https://i.imgur.com/Yb6xkGm.png" height="90%" width="90%" alt=""/>
 
 8. How many TCP Resets are in the pcap?
 
+- Display Filter: tcp.flags.reset == 1
+- Answer: 9 packets
+
+<p align="center"> <img src="https://i.imgur.com/1H9xgtC.png" height="90%" width="90%" alt=""/>
 
 9. How many TCP SYN/ACKs are in the pcap?
 
+- Display Filter: tcp.flags.syn == 1 && tcp.flags.ack == 1
+  - We can also do: tcp.flags == 0x012
+- Answer: 73 packets
+
+<p align="center"> <img src="https://i.imgur.com/Jv5ROzm.png" height="90%" width="90%" alt=""/>
+
+<p align="center"> <img src="https://i.imgur.com/3yoUs0c.png" height="90%" width="90%" alt=""/>
 
 10. Are any SYN/ACKs coming from the 10.0.2.15 station? Y/N?
+
+- Coming from 10.0.2.15 meaning ip.src == 10.0.2.15
+  - Display Filter: tcp.flags == 0x012 && ip.src == 10.0.2.15
+ 
+- Answer: No
+
+<p align="center"> <img src="https://i.imgur.com/ZUMiwnY.png" height="90%" width="90%" alt=""/>
 
