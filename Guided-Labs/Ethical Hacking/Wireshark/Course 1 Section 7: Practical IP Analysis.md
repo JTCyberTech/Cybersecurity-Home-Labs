@@ -95,3 +95,21 @@ If the packet is larger than MTU and Don't fragment bit is Set:
 
 ## Investigating Suspect Scan Activity
 
+Lesson Downloadable File: [udemy-ip_frag_nmap_scan.pcapng](https://github.com/jefftsui1/Cybersecurity-Home-Labs/tree/main/Guided-Labs/Ethical%20Hacking/Wireshark/Course%201:%20Lab/Downloadable%20Lab%20Files/Lesson%20Downloadable%20Files)
+
+- Packets 4, 5, 6: Fragmented with 8 bytes each in the payload.
+  - Packet 4: 0 - 7
+  - Packet 5: 8 - 15
+  - Packet 6: 16 - 23
+
+<p align="center"> <img src="https://i.imgur.com/4wFSGUX.png" height="90%" width="90%" alt=""/>
+<p align="center"> <img src="https://i.imgur.com/400CozM.png" height="90%" width="90%" alt=""/>
+<p align="center"> <img src="https://i.imgur.com/pKwp1iz.png" height="90%" width="90%" alt=""/>
+
+- The final packet, 6 shows as the complete packet: glue all 3 packets together and show the TCP header
+
+<p align="center"> <img src="https://i.imgur.com/JhdAR6N.png" height="90%" width="90%" alt=""/>
+
+This might be how an attacker tries to enumerate the system/ sneak by IDS or firewall by fragmenting data.
+- Sometimes the system doesn't check for fragments or allow fragments to slip by.
+- Good for investigating if this kind of behavior is shown.
