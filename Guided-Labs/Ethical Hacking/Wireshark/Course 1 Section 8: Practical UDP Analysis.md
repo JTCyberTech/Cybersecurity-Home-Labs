@@ -5,6 +5,7 @@
 - Connectionless Protocol
 - Unreliable Delivery
 - Throw it out there and hope that it gets there type delivery
+- 8 bytes
 
 #
 
