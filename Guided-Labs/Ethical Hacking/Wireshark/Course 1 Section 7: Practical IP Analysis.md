@@ -113,3 +113,53 @@ Lesson Downloadable File: [udemy-ip_frag_nmap_scan.pcapng](https://github.com/je
 This might be how an attacker tries to enumerate the system/ sneak by IDS or firewall by fragmenting data.
 - Sometimes the system doesn't check for fragments or allow fragments to slip by.
 - Good for investigating if this kind of behavior is shown.
+
+#
+
+## Look at IPv6
+
+Lesson Downloadable File: [udemy-ipv6-peek.pcapng](https://github.com/jefftsui1/Cybersecurity-Home-Labs/tree/main/Guided-Labs/Ethical%20Hacking/Wireshark/Course%201:%20Lab/Downloadable%20Lab%20Files/Lesson%20Downloadable%20Files)
+
+- IPv6 header is 40 bytes.
+- Traffic Class: DiffServ Tag, how should this data be handled; does it have high priority; how should this be treated on the wire.
+- Flow Label: Allow the sender to denote if a stream of packets is in the same flow
+- Payload Length: How much data are we actually encompassing within the IPv6 packet.
+- Next Header: What is coming next as a protocol
+- Hop Limit: Same as TTL
+
+<p align="center"> <img src="https://i.imgur.com/TnKLBwm.png" height="90%" width="90%" alt=""/>
+
+#
+
+## Analyzing DDoS Attack with GeoIP
+
+Lesson Downloadable File: [udemy-strangescan.pcapng](https://github.com/jefftsui1/Cybersecurity-Home-Labs/tree/main/Guided-Labs/Ethical%20Hacking/Wireshark/Course%201:%20Lab/Downloadable%20Lab%20Files/Lesson%20Downloadable%20Files)
+
+- Login to [Maxmind Website](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data?lang=en)
+- Download all three GZIP folder: GeoLite2 ASN, GeoLite2 City, GeoLite2 Country
+- Put all three .mmdb folder into one folder
+- On Wireshark: go to Preferences > Name Resolution > MaxMind datebase directories (Edit) > Add the folder of the .mmdb files.
+
+<p align="center"> <img src="https://i.imgur.com/tOOkt7j.png" height="90%" width="90%" alt=""/>
+
+Now Wireshark will have the Source GeoIP when you expand: Internet Protocol Version 4:
+- Let's check out Frame Packet 38: Source GeoIP said the IP came from Canada
+- Also shows the Autonomous System number: 808
+
+<p align="center"> <img src="https://i.imgur.com/oizzkeH.png" height="90%" width="90%" alt=""/>
+
+To see all of the IP address in a list:
+- On Wireshark > Statistics > Endpoints > IPv4
+- All Public Address should have a GeoIP lookup
+
+<p align="center"> <img src="https://i.imgur.com/PUMwvNr.png" height="90%" width="90%" alt=""/>
+
+To open a heatmap of the GeoIP lookup:
+- Click on Map > Open in browser
+
+<p align="center"> <img src="https://i.imgur.com/6UVnm81.png" height="90%" width="90%" alt=""/>
+
+Result: 
+
+<p align="center"> <img src="https://i.imgur.com/WfAwfaB.png" height="90%" width="90%" alt=""/>
+
