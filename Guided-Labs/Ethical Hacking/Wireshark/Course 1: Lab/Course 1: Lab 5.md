@@ -2,8 +2,8 @@
 
 ## Assignment 5: Lab 5 - Configuring the Wireshark Interface
 
-- Name of the file downloaded from Udemy: udemy-wiresharkintro.pcapng
-  - Uploaded both csv and pcapng files to GitHub
+- Name of the file downloaded from Udemy: udemy-strangescan.pcapng
+  - Uploaded both csv and pcapng files to [GitHub](https://github.com/jefftsui1/Cybersecurity-Home-Labs/tree/main/Guided-Labs/Ethical%20Hacking/Wireshark/Course%201%3A%20Lab/Downloadable%20Lab%20Files/Lab%205)
  
 Questions for this assignment
 
