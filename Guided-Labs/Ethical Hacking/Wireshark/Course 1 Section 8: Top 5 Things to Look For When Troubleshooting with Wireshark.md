@@ -131,4 +131,50 @@ We see that there are 4 packets that has "TCP Previous segment not captured"; pa
 
 Lesson Downloadable File: [udemy-displayfilters.pcapng](https://github.com/jefftsui1/Cybersecurity-Home-Labs/tree/main/Guided-Labs/Ethical%20Hacking/Wireshark/Course%201:%20Lab/Downloadable%20Lab%20Files/Lesson%20Downloadable%20Files)
 
-Problem at the TCP layer
+Click on the jump to packet icon on the icon bar > Go to packet 1234.
+
+<p align="center"> <img src="https://i.imgur.com/QOOkauu.png" height="90%" width="90%" alt=""/>
+
+On packet 1234: Conversation filter > TCP
+- Expand Transmission Control Protocol > Add Calculated Window size as column.
+
+<p align="center"> <img src="https://i.imgur.com/ky4Np6B.png" height="90%" width="90%" alt=""/>
+
+On packet 1600:
+- TCP Window Full: the server has filled the client window.
+
+On packet 1599:
+- 11680, amount of space that client has in its buffer.
+
+On packet 1600:
+- Server says alright 11680 here you go. Filled the buffer, can't send anymore.
+
+On packet 1601: 
+- Client come back and says I got room for 2920.
+
+On packet 1602: 
+- Server sends 2920 in 1 packet (probably send in 2 packets by segmenting into 1460s)
+
+On packet 1603:
+- Client come back and say I am full; ZeroWindow. Telling server it can't send anything else.
+- The application is not scooping the data out fast enough or TCP is not able to push it to the application.
+
+On packet 1605:
+- .8 second later, window update where the client says: okay application. Here is a new window, just cleared out some data, now i have enough space to receive more data.
+
+<p align="center"> <img src="https://i.imgur.com/LcjoT3J.png" height="90%" width="90%" alt=""/>
+
+This is not a network, application, or server problem at all.
+- This is a client problem: Client ran out of a TCP window.
+  - TCP buffer started pooling data. More data was coming in and it started pooling until client had to stop it with ZeroWindow, no more space for server to send more data.
+
+Large file transfers:
+- Moving data from one point to another: important that each TCP endpoint is able to keep up with the ingress traffic
+  - You will be able to see that by keeping an eye on window size.
+- Make sure to catch the TCP handshakes: possible that this window size is actually multiplied to much higher value.
+- Keep eyes out for low TCP recieve windows.
+
+
+#
+
+## 
