@@ -177,4 +177,70 @@ Large file transfers:
 
 #
 
-## 
+## 5. Network/Application Disconnects - TCP Resets
+
+Lesson Downloadable File: [udemy-63-connectivityproblems.pcapng](https://github.com/jefftsui1/Cybersecurity-Home-Labs/tree/main/Guided-Labs/Ethical%20Hacking/Wireshark/Course%201:%20Lab/Downloadable%20Lab%20Files/Lesson%20Downloadable%20Files)
+
+Connectivity Problems: Reset problems
+- Where a client can't connect to a server.
+- Open VPN an can't VPN to another device.
+- Mid-stream and my application just drops.
+
+There is a lot of reset on the pcap.
+
+Let's look at Packet 18: Conversation filter > TCP
+- SYN > RST/ ACK > RST / ACK > RST / ACK then it works fine.
+
+<p align="center"> <img src="https://i.imgur.com/MFAHm65.png" height="90%" width="90%" alt=""/>
+
+Why does it do that?
+- Port is down on a server or firewall blocking it: will never work.
+- Wonder where is the resets coming from? - Coming from endpoints or somewhere closer?
+
+We will look at all the reset flags:
+- Display Filter: tcp.flags.reset == 1
+- Look at the source IP sending resets back to clients
+  - A lot of different IPs: This tells us it can't be that all websites are resets at the similar time.
+ 
+<p align="center"> <img src="https://i.imgur.com/Nd8NFxK.png" height="90%" width="90%" alt=""/>
+
+Let's look back at the first SYN.
+- Packet 18: Conversation Filter > TCP
+- Look at the reset packet 19.
+  - See how far away is this coming from: IP TTL
+  - Expand Internet Protocol Version 4 > Add Time to Live as Column.
+ 
+<p align="center"> <img src="https://i.imgur.com/E1EW1ok.png" height="90%" width="90%" alt=""/>
+
+Inspecting TTL:
+- Packet 18: SYN with 128 TTL goes out; 64 TTL = unrouted
+- Packet 19: 64 hop count for reset; 128 TTL = unrouted
+- Packet 108: 128 TTL = unrouted
+- Packet 109: 64 TTL = unrouted
+- Packet 179: 128 TTL = unrouted
+- Packet 183: 244 TTL = 11 hops away.
+
+<p align="center"> <img src="https://i.imgur.com/OqsluiS.png" height="90%" width="90%" alt=""/>
+
+The resets are coming from unrouted devices.
+- MAC address matters:
+- Packet 19: Expand Ethernet II > Look at MAC Addresses: True sender of the reset.
+  - Sonic Wall Firewall.
+- SYN (18) > Firewall resets (19) > SYN (108) > Firewall resets (109) > SYN (179) > no problem
+
+<p align="center"> <img src="https://i.imgur.com/3rKsCKC.png" height="90%" width="90%" alt=""/>
+
+Story:
+
+Looked at the Sonic Wall Firewall; found out that the company had grown much larger than the firewall can handle.
+- Outgrew the capabilities of the Firewall
+- Turn out there is a setting on the firewall: number of connections per user; gave a ceiling to the number of TCP connections that each user was able to have
+  - Set to 100.
+- Once you burned up your 100 TCP connections and you tried to start a new one, the firewall would reset you.
+- So maybe one of your old connection would time out and you would get some space in your count.
+- So eventually you will be able to send out SYN then establish the connection.
+
+Tips:
+- Pay attention to resets and see where are they coming from.
+- Look at TTLs on your resets:
+  - Possible that is sending that reset back to you; could be a middleware box, proxy, load balancer, firewall.
