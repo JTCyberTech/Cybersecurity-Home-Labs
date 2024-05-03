@@ -210,3 +210,38 @@ Should ask them question everytime, you answer their question.
   - Answer then ask: how would you describe their?
   - Question - Why did you choose to interview with us?
   - Answer then ask: Why are you optimistic about where the company will be in five year?
+
+#
+
+3.1 Practice to Overcome Interview Nervousness
+
+Three ways to overcome nervousness
+- Record yourself practicing
+- Practice answering interview questions out loud in public place
+- Practice with someone you know
+
+#
+
+3.2 Calm Your Nervous System
+
+Three ways to calm yourself
+- Take a cold shower
+- EFT (Emotional Freedom Technique), tapping sepcific points on your body with your fingertips
+  - Top of head, eyebrow, under eyes, under mouth, collarbone
+  - Tap each point 5 - 7 times
+- Breathing exercises
+  - Box breathing exercises: inhale for 3 seconds, hold for 3 seconds, exhale for 3 seconds, hold for 3 seconds; repeat.
+ 
+#
+
+3.3 What to Do If You Freeze in an Interview
+
+- Ask for time to think about your answer;
+  - That's a good question, let me have a moment to think about the answer
+ 
+- Use the glass of water trick.
+  - Reach for glass of water and take a sip.
+ 
+- Use the rule of threes.
+  - Three is the smallest number that creates a pattern, which is why information delivered in threes is easy to understand and remebmer for the listener; gives you a simple framework.
+  - What are the three most important things or steps to cover?
