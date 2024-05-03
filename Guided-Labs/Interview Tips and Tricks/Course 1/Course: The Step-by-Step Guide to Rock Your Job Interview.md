@@ -243,5 +243,70 @@ Three ways to calm yourself
   - Reach for glass of water and take a sip.
  
 - Use the rule of threes.
-  - Three is the smallest number that creates a pattern, which is why information delivered in threes is easy to understand and remebmer for the listener; gives you a simple framework.
+  - Three is the smallest number that creates a pattern, which is why information delivered in threes is easy to understand and remember for the listener; gives you a simple framework.
   - What are the three most important things or steps to cover?
+
+#
+
+3.4 What to Do If You Made a Mistake in an Interview
+
+- Say "I just made this very awkward, didn't I?"
+  - Show you are aware that you made a mistake and lighten up the mood.
+  - Then correct yourself and say what you meant to say. Don't linger on it too long.
+- Forgot to mention an important key detail: try to circle back to it.
+  - "I've used (tool) quite a bit. In fact, I used it in those scenarios we covered earlier. But let me share how I used it on this particular project"
+- Goal: show that you can recover gracefully and it doesn't affect the rest of the meeting.
+
+#
+
+4.1 Master Nonverbal Cues in Your Interview
+
+- Open body language: occupying space, open torso, straight back, smiling.
+- Show your hands: people subconsciously don't trust you as much if you don't show your hands.
+
+#
+
+4.2 Manage Eye Contact in Virtual and In Person Interviews
+
+- Practice taking breaks from looking at someone in the eye. (Balanced eye contact)
+  - Look in the interviewer;s eyes for a few seconds, then look away for a moment, then back to their eyes.
+ 
+- In virtual interview, look at your camera.
+  - Minimize the window, bring it close to the top of the screen and look at the camera.
+ 
+#
+
+4.3 Master Small Talk in Interviews
+
+- If they ask How are you? ; Answer back with something meaningful.
+  - "I am doing well, thank you! On the way here I was reading about the new regulations that came out this morning. It's going to be a multi year project for our inducstry to address them."
+  - "I am well, thank you! I am looking forward to our conversation. I met Maria on your team for coffee a couple of weeks ago andshe shared what types of projects your team has been working on."
+ 
+- Next interview: Plan how to answer: How are you?
+
+#
+
+4.4 Close the Interview Strong
+
+- Reiterate your interest:
+  - I really enjoyed our conversation and loved what I heard about your customer first approach to sales.
+  - I approach sale as relationship building so this really resonated and made me even more excited for the role.
+ 
+- Remind them of your top three qualifications:
+  - This made me even more excited for the role, and now that I have a better understanding of your challenges and the goals for this role, I can see that this is a mutual fit as I have been shown to grow sales in even the most competitive environments.
+  - My strength is in working with top level executives, and in developing data driven sales strategies.
+ 
+- Ask about the next steps:
+  - What would the next steps be and the timeline? I am currently in the final stages for a different opportunity. This role is my number one choice and I want to ensure we explore the next stages.
+ 
+Think what you could've talked about your interest, top qualifications, and next steps at the end of interview.
+
+
+After Interview:
+
+- Send a thank you note the same day to each interviewer.
+  - Add one sentence of what I enjoyed in the interview and what made me excited for the role.
+ 
+Reflect on the interview:
+
+-Write down 3 things on What I did Well on the interview and 3 things on What I can improve on:
