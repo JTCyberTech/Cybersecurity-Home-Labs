@@ -10,6 +10,7 @@
 # Glossary
 
 New terms and their definitions: Course 1 Module 1
+
 Abstraction: To take a relatively complex system and simplify it for our use
 
 Algorithm: A series of steps that solves specific problems
