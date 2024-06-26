@@ -43,4 +43,17 @@
 - Video games demonstrating the entertainment potential of computers
 
 ## Open-Source Movement
-- Richard Stallman's GNU and the creation of Linux by Linus
+- Richard Stallman's GNU and the creation of Linux by Linus Torvalds
+- Importance of open-source software in IT
+
+## Mobile Computing
+- Development of PDAs and smartphones
+- Nokia’s introduction of mobile phones with PDA functionality
+
+## Modern Computing
+- Evolution from room-sized machines to pocket-sized smartphones
+- Increasing complexity and the need for IT support
+
+## Future of IT Support
+- Possible future developments like virtual reality support
+- Importance of understanding and supporting evolving technology
