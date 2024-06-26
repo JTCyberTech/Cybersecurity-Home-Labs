@@ -24,7 +24,4 @@
   - Importance of user interaction: Responding to emails, fixing computers, etc.
   - Goal: Apply knowledge to fix real-world issues using problem-solving tactics.
 
-- **Course Preview**
-  - Meet Devin, the next instructor, who will teach about hardware.
-  - Learn to build a computer from its component parts.
-  - Exciting and practical lessons ahead.
+
