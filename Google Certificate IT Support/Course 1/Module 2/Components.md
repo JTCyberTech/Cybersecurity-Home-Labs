@@ -104,3 +104,78 @@
 #
 
 # Physical Storage: Hard Drives
+
+- **Understanding Data Sizes**
+  - **Bit**: Smallest unit of data storage, can store a 1 or 0.
+  - **Byte**: Comprised of 8 bits, can hold a letter, number, or symbol.
+  - **Kilobyte (KB)**: 1,024 bytes.
+  - **Example**: 500 gigabytes can store approximately 165,000 music files (average music file is 3 MB).
+
+- **Computer Storage**
+  - Stores data on hard drives (programs, music, pictures, etc.).
+  - **Data Backup**: Essential to avoid data loss in case of hard drive failure.
+
+- **Hard Drive Types**
+  - **Hard Disk Drives (HDDs)**
+    - Uses a spinning platter and mechanical arm to read/write data.
+    - **RPM (Revolutions Per Minute)**: Higher RPM means faster read/write speed.
+    - Prone to damage due to moving parts.
+  - **Solid State Drives (SSDs)**
+    - No moving parts, stores data on microchips.
+    - Faster data transfer than HDDs.
+    - Slimmer form factor.
+    - More expensive than HDDs but less prone to data loss.
+  - **Hybrid Drives**
+    - Combine SSD performance for system tasks with HDD for basic file storage.
+
+- **Hard Drive Interfaces**
+  - **ATA Interfaces**: Most common for connecting hard drives to systems.
+  - **Serial ATA (SATA)**
+    - Uses one cable for data transfer.
+    - **Hot Swappable**: Can plug in without turning off the machine.
+    - Efficient and fast data transfer for HDDs.
+  - **NVMe (NVM Express)**
+    - Designed for fast SSDs.
+    - Uses an expansion slot instead of a cable for greater data throughput and efficiency.
+
+#
+
+# Power Supplies 
+
+- **Powering the Computer**
+  - **Power Supply**: Converts electricity from the wall to usable power for the computer.
+  - **Types of Electricity**
+    - **DC (Direct Current)**: Flows in one direction.
+    - **AC (Alternating Current)**: Changes direction constantly.
+  - Computers use DC voltage; power supply converts AC to low voltage DC.
+
+- **Power Supply Components**
+  - **Fan**: For cooling.
+  - **Voltage Information**: Listed on the unit.
+  - **Cables**: To power the motherboard and other components.
+
+- **Understanding Electricity with Water Pipes Analogy**
+  - **Voltage**: Pressure of electricity (like water pressure).
+    - High voltage: More electricity flow.
+    - Example: Plugging a 120V appliance into a 220V outlet can fry the device.
+  - **Current (Amperage)**: Amount of electricity flowing, measured in amps.
+    - Amps pull electricity as needed.
+    - Example: A 2.1A charger charges faster than a 1A charger.
+  - **Wattage**: Combination of volts and amps.
+    - Determines how much power the device needs.
+    - Ensure your power supply has sufficient wattage for your computer's needs.
+    - Example: Basic desktops can be powered with a 500W power supply; high-demand tasks need more power.
+
+- **Choosing the Right Power Supply**
+  - Err on the side of larger power supplies to ensure adequate power.
+  - Power supplies only give the amount of power your system needs.
+  - Consider your computer’s usage (basic tasks vs. high-demand tasks).
+
+- **Issues with Power Supplies**
+  - Can cause the computer not to turn on.
+  - Can fail due to burnouts, power surges, lightning strikes, etc.
+  - Diagnosing and replacing a failed power supply is a key skill for IT support specialists.
+
+#
+
+#
