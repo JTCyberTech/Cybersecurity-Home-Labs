@@ -29,6 +29,8 @@
   - 32-bit and 64-bit refer to the number of bits the CPU can process.
   - Compatibility and performance with other components are crucial for optimal CPU function.
 
+#
+
 # RAM
 
 - **RAM Overview**
@@ -61,3 +63,7 @@
 - **Key Points**
   - More RAM enables faster program execution and multitasking.
   - RAM compatibility with the motherboard is essential for proper function.
+
+#
+
+# Motherboard
