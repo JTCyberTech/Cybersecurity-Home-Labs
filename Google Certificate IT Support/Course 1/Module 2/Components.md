@@ -67,3 +67,40 @@
 #
 
 # Motherboard
+
+- **Motherboard Overview**
+  - Foundation that holds the computer together.
+  - Allows expansion of functionality through expansion cards.
+  - Routes power from the power supply.
+  - Facilitates communication between different computer parts.
+
+- **Key Characteristics**
+  - **Chipset**
+    - Determines how components communicate.
+    - Made up of two chips: Northbridge and Southbridge.
+      - **Northbridge:** Interconnects RAM and video cards.
+      - **Southbridge:** Manages input-output controllers like hard drives and USB devices.
+    - In some modern CPUs, the Northbridge is integrated into the CPU.
+  - **Expansion Slots**
+    - Allow the addition of expansion cards to increase functionality.
+    - **PCI Express (PCIe):** Standard for expansion buses, looks like a slot on the motherboard, and the expansion card looks like a small circuit board.
+  - **Form Factor**
+    - Determines the size and capacity of the motherboard.
+    - Most common form factor: **ATX (Advanced Technology Extended)**
+      - Available in different sizes, commonly full-sized ATX in desktops.
+    - Smaller alternative: **ITX (Information Technology Extended)**
+      - Includes sizes like mini ITX, nano ITX, and pico ITX.
+      - Example: Intel NUC uses variations of the ITX board.
+    - Choice of form factor affects workload capacity and expansion slot availability.
+
+- **Considerations for Building a Computer**
+  - Decide on the form factor based on desired workload capacity and functionality.
+  - Ensure compatibility with components like RAM modules and processor sockets.
+
+- **Practical Application**
+  - Understanding motherboards helps in fixing hardware issues.
+  - Compatibility checks are essential when replacing components like graphics cards to avoid mismatches.
+
+#
+
+# Physical Storage: Hard Drives
