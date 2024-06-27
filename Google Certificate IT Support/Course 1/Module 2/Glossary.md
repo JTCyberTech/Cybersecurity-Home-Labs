@@ -1,4 +1,5 @@
 **Module 2 Glossary**
+
 New terms and their definitions: Course 1 Module 2
 
 - Address bus: Connects the CPU to the MCC and sends over the location of the data, but not the data itself
