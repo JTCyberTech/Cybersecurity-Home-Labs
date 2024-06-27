@@ -205,4 +205,42 @@
 
 # Batteries and Charging Systems
 
+- **Mobile Device Power and Batteries:**
+  - Mobile technology utilizes rechargeable batteries for portability.
+  - Devices may use external chargers, cradle stands, or wireless chargers for recharging.
+  - Rechargeable batteries have a limited lifespan measured in charge cycles.
+  - As batteries age, they may take longer to charge and hold less charge.
+  - External power sources (e.g., wall outlets, batteries, solar panels) are needed to charge batteries.
+  - Charging circuits manage power transfer from external sources to rechargeable batteries.
+  - Correct chargers and adapters must be used to avoid damaging batteries, devices, or chargers.
+  - Temperature extremes (very cold or hot environments) can damage rechargeable batteries.
+  - Damaged batteries can swell, rupture, or pose fire hazards, requiring careful handling.
+  - Some devices adjust performance to prolong battery life as batteries age.
+  - IT support specialists may need training to replace batteries in various devices.
+  - Troubleshooting battery life and charging issues is a common task for IT support.
+  - Educating end-users on optimizing battery life for iOS and Android devices is important.
 
+#
+
+# Peripherals and Ports 
+
+- **Peripheral Devices and Connectors:**
+  - **Peripherals Overview:**
+    - Peripherals are external devices that add functionality to a computer.
+    - Common peripherals include mice, keyboards, and monitors.
+  - **USB (Universal Serial Bus) Devices:**
+    - USB is a popular connection standard for gadgets.
+    - Versions include USB 2.0, USB 3.0, and USB 3.1, each with different transfer speeds.
+    - Transfer speed is measured in megabits per second (Mb/s), not megabytes (MB).
+    - Compatibility: USB ports are backward compatible (older devices work with newer ports).
+    - Ports Identification: USB 2.0 (black), USB 3.0 (blue), USB 3.1 (teal, may vary by manufacturer).
+  - **USB Connectors:**
+    - USB Type C is a modern connector replacing many peripheral connections.
+    - It supports data transfer, power delivery, and is becoming a universal standard.
+  - **Display Peripherals:**
+    - Common interface standards include HDMI and DisplayPort.
+    - HDMI supports both audio and video, widely used in TVs and computers.
+    - DisplayPort also supports audio and video, gaining popularity among manufacturers.
+  - **IT Support Specialist Role:**
+    - IT specialists frequently work with USB and display peripherals.
+    - Understanding connector types helps in troubleshooting and setup.
