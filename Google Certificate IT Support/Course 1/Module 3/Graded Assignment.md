@@ -163,7 +163,7 @@
 
     **0 / 1 point**
 
-    - Data blocks
+    - **Data blocks**
     - File extensions
     - Files
     - Data fragments
