@@ -181,4 +181,19 @@ In order to get the password in the human-readable file in the inhere directory:
   - Result: Found "maybehere00 to maybehere19"
 - Use command `file ./* to see what are the file types or directory for "maybehere00 to maybehere19"
   - Result: They are all directory.
-- 
+- Since it's all directory it's not help.
+
+Using the `find` command to find 1033 bytes in size in the inhere directory:
+- Use command: "`find` . -type f -size 1033c" to find a file within the inhere directory that is 1033 bytes in size.
+  - `find`: main command used to search for files and directories in a directory hierarchy.
+  - `.`: specifies the starting point for the search. This case means the current directory (inhere/).
+  - `-type f`: restricts the search to files only (not directories). [f: stands for "files"].
+  - `-size 1033c`: [`-size`: specifies the size of the files to search for] [`1033c`: the exact size in bytes, `c`: character or bytes].
+- Result: ./maybehere07/.file2
+
+Using the `find` command to find a not executable file in the inhere directory:
+- Use Command "`find` . -type f ! executable
+  -   - `find`: main command used to search for files and directories in a directory hierarchy.
+  - `.`: specifies the starting point for the search. This case means the current directory (inhere/).
+  - `-type f`: restricts the search to files only (not directories). [f: stands for "files"].
+  - `! executable`: [`!`: negation operator, inverts the test that follows it] [`-executable`: checks if a file is executable] [`! -executable` means "not executable]
