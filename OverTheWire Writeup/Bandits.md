@@ -53,7 +53,7 @@ In order to find, locate, and read the file "-":
 - Use command "```cd``` -" to **try to change directory** into "-"
   - Result: "```cd``` -" cannot be run because cd doesn't have options. (e.g "cd -la", options doesn't exist for cd)
   - In order to read "-" we need to use ```cat``` and add "./" in front of "-". Because "./" in front tells command that "-" is a filename not an option
-  - Command:  ```cat``` ./-
+  - Command:  "```cat``` ./-"
 - Found password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
  
 ![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/3bc61e17-1b96-490e-a263-643aae2f3510)
