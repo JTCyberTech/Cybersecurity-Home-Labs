@@ -22,11 +22,12 @@ In order to login to the ssh of bandit0:
 - ssh into bandit0: ssh bandit0@bandit.labs.overthewire.org -p 2220
 - Using password: bandit0
 
-In order to locate and read the file "readme":
+In order to find, locate, and read the file "readme":
 - Use command "```ls```" to **see what file or directory** is in the bandit0 ssh shell.
   - Found a file called "readme"
-- Use command "```cat``` readme" to **read** the file "readme".
-  - Found password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+- Use command "```cat```" to **read** the file "readme".
+  - Command: "```cat``` readme"
+- Found password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 ![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/4c1c0d1e-2f85-44bf-951a-b8a333023954)
 
@@ -43,16 +44,17 @@ In order to login to the ssh of bandit1:
 - ssh into bandit1: ssh bandit1@bandit.labs.overthewire.org -p 2220
 - Using password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
-In order to find and locate the file "-":
+In order to find, locate, and read the file "-":
 - Use command "```ls```" to see what file or directory is in the bandit1 ssh shell.
   - Found a file called "-"
-- Use command "```cat``` -" to try to read the file "-"
-  - Nothing happened. Press "Ctrl + z" to stop
+- Use command "```cat```" to try to read the file "-"
+  - Command: "```cat``` -"
+  - Nothing happened because "-" is treated as a start of an **option**. Press "Ctrl + z" to stop
 - Use command "```cd``` -" to **try to change directory** into "-"
-  - Result: "-" it's a **bash** script.
-  - In order to read bash script we need to use ```cat``` and add "./" in front of "-"
-  - ```cat``` ./-
-  - Found password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+  - Result: "```cd``` -" cannot be run because cd doesn't have options. (e.g "cd -la", options doesn't exist for cd)
+  - In order to read "-" we need to use ```cat``` and add "./" in front of "-". Because "./" in front tells command that "-" is a filename not an option
+  - Command:  ```cat``` ./-
+- Found password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
  
 ![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/3bc61e17-1b96-490e-a263-643aae2f3510)
 
@@ -66,6 +68,19 @@ In order to find and locate the file "-":
 
 In order to login to the ssh of bandit2:
 - Type in: "exit" to exit bandit1@bandit ssh
-- ssh into bandit2: ssh bandit12@bandit.labs.overthewire.org -p 2220
+- ssh into bandit2: ssh bandit2@bandit.labs.overthewire.org -p 2220
 - Using password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
-- 
+
+In order to find, locate, and read the file "spaces in this filename":
+- Use command "```ls``` to see what file or directory is in the bandit2 ssh shell.
+  - Found the file called "spaces in this filename"
+- Use command "```file``` to see what kind of file is "spaces in this filename":
+  - Command: ```file "spaces in this filename"```
+  - Found: "ASCII text" meaning American Standard Code for Information Interchange; or **Plain Text**.
+- Use command "```cat```" to read the file "spaces in this filename".
+  - Command: "```cat``` "spaces in this filename" "
+  - Note: we have to add " " to my space in this filename to work.
+- Found password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/417e991f-d17e-4fe4-b5c6-e7f9b86a8949)
+
