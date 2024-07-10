@@ -156,3 +156,29 @@ Side note:
 - Other files are unreadable: e.g "-file00 and -file03"
 
 ![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/8077c94d-1f03-4f34-bafc-02f19f552be4)
+
+#
+
+# Level 5 -> 6
+
+![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/24c3c182-624c-4f31-a2f5-ad0d580732a2)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit4:
+- Type in: "exit" to exit bandit4@bandit ssh
+- ssh into bandit2: ssh bandit5@bandit.labs.overthewire.org -p 2220
+- Using password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+In order to change directory into the inhere directory:
+- Use command: `ls`  to list what files or directory is in the shell.
+  - Found there is a "inhere" directory.
+- Use command: `cd` to change directory into "inhere.
+  - Command: "`cd` inhere/
+ 
+In order to get the password in the human-readable file in the inhere directory:
+- Use command: `ls -la`: to list what files or directory is in the inhere directory.
+  - Result: Found "maybehere00 to maybehere19"
+- Use command `file ./* to see what are the file types or directory for "maybehere00 to maybehere19"
+  - Result: They are all directory.
+- 
