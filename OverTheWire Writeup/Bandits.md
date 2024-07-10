@@ -62,7 +62,7 @@ In order to find, locate, and read the file "-":
 
 # Level 2 -> 3
 
-![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/27a3aafd-1790-424c-916a-e18ec9097630)
+![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/a229a796-d02a-4b71-843c-ba9d5c16a261)
 
 ## Command Steps: 
 
