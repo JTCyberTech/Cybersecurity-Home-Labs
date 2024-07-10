@@ -84,3 +84,15 @@ In order to find, locate, and read the file "spaces in this filename":
 
 ![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/417e991f-d17e-4fe4-b5c6-e7f9b86a8949)
 
+#
+
+# Level 3 -> 4
+
+![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/54ca22c7-099d-48b3-93e8-64e66e27d8aa)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit3:
+- Type in: "exit" to exit bandit2@bandit ssh
+- ssh into bandit2: ssh bandit3@bandit.labs.overthewire.org -p 2220
+- Using password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
