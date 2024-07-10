@@ -96,3 +96,63 @@ In order to login to the ssh of bandit3:
 - Type in: "exit" to exit bandit2@bandit ssh
 - ssh into bandit2: ssh bandit3@bandit.labs.overthewire.org -p 2220
 - Using password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+In order to change directory into the inhere directory:
+- Use command: `ls`  to list what files or directory is in the shell.
+  - Found there is a "inhere" directory.
+- Use command: `cd` to change directory into "inhere.
+  - Command: "`cd` inhere/
+
+In order to get the password in the hidden file in the inhere directory:
+- Use command `ls -la`: to list what files or directory is in the inhere directory.
+  - `-l`: long list format.
+  - `-a`: Include hidden file.
+  - `-la`: combine of both.
+  - Result: Found a file "...Hiding-From-You"
+- Use command `file` to see what type of file is "...Hiding-From-You"
+  - Command: `file` "...Hiding-From-You"
+  - Result: ...Hiding-From-You file is a ASCII text file.
+- Use command `cat` to read what is in the ASCII text file.
+  - Command: `cat` "...Hiding-From-You"
+- Found password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/88ce834a-a971-4a11-a464-2c9b42d8dd5e)
+
+#
+
+# Level 4 -> 5
+
+![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/db49c0bd-432a-44ca-81f7-fff46d7a996c)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit4:
+- Type in: "exit" to exit bandit3@bandit ssh
+- ssh into bandit2: ssh bandit4@bandit.labs.overthewire.org -p 2220
+- Using password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+In order to change directory into the inhere directory:
+- Use command: `ls`  to list what files or directory is in the shell.
+  - Found there is a "inhere" directory.
+- Use command: `cd` to change directory into "inhere.
+  - Command: "`cd` inhere/
+ 
+In order to get the password in the human-readable file in the inhere directory:
+- Use command: `ls -la`: to list what files or directory is in the inhere directory.
+  - `-l`: long list format.
+  - `-a`: Include hidden file.
+  - `-la`: combine of both.
+  - Result: Found a file "-file00 to -file09"
+- Use command: `file` to see what type of file are all the files in the inhere directory.
+  - Command: `file` ./*
+    - `./*` : to list all files and directory in the current directory.
+  - Result: -files07 is the only one that is ASCII text, others are not readable.
+- Use command: `cat` to read what is in the ASCII text file.
+  - Command: `cat` ./-file07
+    - Can't just do `cat` -file07 because -file07 will be treated as a unrecogizable option for cat.
+- Found password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+Side note: 
+- Other files are unreadable: e.g "-file00 and -file03"
+
+![image](https://github.com/JTCyberTech/Cybersecurity-Home-Labs/assets/46698661/8077c94d-1f03-4f34-bafc-02f19f552be4)
