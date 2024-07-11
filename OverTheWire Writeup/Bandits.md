@@ -165,7 +165,7 @@ Side note:
 
 ## Command Steps: 
 
-In order to login to the ssh of bandit4:
+In order to login to the ssh of bandit5:
 - Type in: "exit" to exit bandit4@bandit ssh
 - ssh into bandit2: ssh bandit5@bandit.labs.overthewire.org -p 2220
 - Using password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
@@ -240,3 +240,67 @@ Use `cat` command to read the ./maybehere07/.file2
 # Level 6 -> 7
 
 ![image](https://github.com/user-attachments/assets/a0a5d4f3-b9e9-485f-bd9f-4fffbca0435e)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit6:
+- Type in: "exit" to exit bandit5@bandit ssh
+- ssh into bandit2: ssh bandit6@bandit.labs.overthewire.org -p 2220
+- Using password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+Since the password is stored somewhere on the server:
+- We have to use `cd` command to change to the server directory.
+- Command: `cd` /
+
+![image](https://github.com/user-attachments/assets/1b24e642-da6c-46cd-b3fe-03b8c2248dfb)
+
+Since the password have 3 properties:
+- Owned by user bandit7
+- Owned by group bandit6
+- 33 bytes in size
+
+We have to use the `find` command with all three properties:
+- Command: `find` . -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+- Result: ./var/lib/dpkg/info/bandit7.password
+
+
+Explaination: 
+- `find .`: Start searching in the current directory. (in this case is the root directory or / directory)
+- `-type f`: Only include regular files in the search.
+- `-user bandit7`: Matches the properties of "Owned by user bandit7".
+- `-group bandit6`: Matches the properties of "Owned by group bandit6".
+- `-size 33c`: Mataches the properties of "33 bytes in size".
+- `2>/dev/null`: Redirect any error message (e.g. "Permission denied") to `/dev/null` to avoid cluttering the output.
+
+![image](https://github.com/user-attachments/assets/dae7c363-3cf0-44ef-b14c-90bb9cc64e1e)
+
+Read the file by using `cat` command:
+- Command: cat ./var/lib/dpkg/info/bandit7.password
+- Found password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+![image](https://github.com/user-attachments/assets/cec14966-0da3-4335-8abe-2188932ab568)
+
+#
+
+# Level 7 -> 8
+
+![image](https://github.com/user-attachments/assets/bc3a1ceb-6964-47b6-bfbe-9490d3be144b)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit6:
+- Type in: "exit" to exit bandit6@bandit ssh
+- ssh into bandit2: ssh bandit7@bandit.labs.overthewire.org -p 2220
+- Using password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+In order to get the password inside of the data.txt file, we will need to use the `grep` command.
+- Command: `grep` "millionth" data.txt
+- Found password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+Explanation: 
+- `grep`: "Global regular expression print." Used to search plain-text data sets for lines that match a regular expression.
+- `"millionth"`: Search pattern, in this case: the literal string "millionth".
+  - `grep` "millionth": will look for lines that contain this exact string.
+- `data.txt`: File to be search in with the grep comman.
+
+![image](https://github.com/user-attachments/assets/ae73aeec-abff-4bf5-ac19-281ac8bd6349)
