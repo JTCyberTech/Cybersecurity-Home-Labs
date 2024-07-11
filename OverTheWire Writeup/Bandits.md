@@ -221,4 +221,22 @@ We have to do a For loop:
 Explaination of the For loop:
 - `for file in $(...)`: iterates each file name found by the `find` command inside `$(...)`.
 - `do ... done`: Encloses the commands to be executed for each iteration of the loop.
-- `file "$file"`: 
+- `file "$file"`:
+- "$file" = file in $(find . -type f -size 1033c ! -executable)
+
+Result: Found one file "./maybehere07/.file2: ASCII text, with very long lines (1000)"
+
+![image](https://github.com/user-attachments/assets/ef162f61-b647-43c5-ad64-2b4417f58d0d)
+
+Use `cat` command to read the ./maybehere07/.file2
+- Command: `cat` ./maybehere07/.file2
+- Found password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+![image](https://github.com/user-attachments/assets/f39dff12-a045-4cda-b18f-a5890801de60)
+
+
+#
+
+# Level 6 -> 7
+
+![image](https://github.com/user-attachments/assets/a0a5d4f3-b9e9-485f-bd9f-4fffbca0435e)
