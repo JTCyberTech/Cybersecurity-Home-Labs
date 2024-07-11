@@ -206,3 +206,19 @@ Using the `find` command to find 1033 bytes in size in the inhere directory:
 
 Combine all the commands:
 - Command: `find` . -type f ! -executable -size 1033c
+
+In order to have a command that satisfy all three condition:
+- human-readable
+- 1033 bytes in size
+- not executable
+
+We have to do a For loop:
+- Command:
+- > for file in $(find . -type f -size 1033c ! -executable);
+- > do file "$file"
+- > done
+  
+Explaination of the For loop:
+- `for file in $(...)`: iterates each file name found by the `find` command inside `$(...)`.
+- `do ... done`: Encloses the commands to be executed for each iteration of the loop.
+- `file "$file"`: 
