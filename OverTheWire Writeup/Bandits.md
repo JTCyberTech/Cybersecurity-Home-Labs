@@ -371,4 +371,20 @@ In order to get the password from data.txt that contains base64 encoded, we have
 - Found password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 
 Explanation:
-- `base64`
+- `base64 -d data.txt`: `-d` = decodes, decodes the base64 encoded data in "data.txt".
+
+![image](https://github.com/user-attachments/assets/a6ef83f9-7ae0-4f6f-a351-6bd4fad3d06e)
+
+#
+
+# Level 11 -> 12
+
+![image](https://github.com/user-attachments/assets/6cba52d5-23ec-4e5d-a247-3b25b5ab8408)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit11:
+- Type in: "exit" to exit bandit10@bandit ssh
+- ssh into bandit2: ssh bandit11@bandit.labs.overthewire.org -p 2220
+- Using password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
