@@ -94,7 +94,7 @@ In order to find, locate, and read the file "spaces in this filename":
 
 In order to login to the ssh of bandit3:
 - Type in: "exit" to exit bandit2@bandit ssh
-- ssh into bandit2: ssh bandit3@bandit.labs.overthewire.org -p 2220
+- ssh into bandit3: ssh bandit3@bandit.labs.overthewire.org -p 2220
 - Using password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 In order to change directory into the inhere directory:
@@ -128,7 +128,7 @@ In order to get the password in the hidden file in the inhere directory:
 
 In order to login to the ssh of bandit4:
 - Type in: "exit" to exit bandit3@bandit ssh
-- ssh into bandit2: ssh bandit4@bandit.labs.overthewire.org -p 2220
+- ssh into bandit4: ssh bandit4@bandit.labs.overthewire.org -p 2220
 - Using password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
 In order to change directory into the inhere directory:
@@ -167,7 +167,7 @@ Side note:
 
 In order to login to the ssh of bandit5:
 - Type in: "exit" to exit bandit4@bandit ssh
-- ssh into bandit2: ssh bandit5@bandit.labs.overthewire.org -p 2220
+- ssh into bandit5: ssh bandit5@bandit.labs.overthewire.org -p 2220
 - Using password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 
 In order to change directory into the inhere directory:
@@ -245,7 +245,7 @@ Use `cat` command to read the ./maybehere07/.file2
 
 In order to login to the ssh of bandit6:
 - Type in: "exit" to exit bandit5@bandit ssh
-- ssh into bandit2: ssh bandit6@bandit.labs.overthewire.org -p 2220
+- ssh into bandit6: ssh bandit6@bandit.labs.overthewire.org -p 2220
 - Using password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
 Since the password is stored somewhere on the server:
@@ -290,7 +290,7 @@ Read the file by using `cat` command:
 
 In order to login to the ssh of bandit7:
 - Type in: "exit" to exit bandit6@bandit ssh
-- ssh into bandit2: ssh bandit7@bandit.labs.overthewire.org -p 2220
+- ssh into bandit7: ssh bandit7@bandit.labs.overthewire.org -p 2220
 - Using password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 
 In order to get the password inside of the data.txt file, we will need to use the `grep` command.
@@ -315,7 +315,7 @@ Explanation:
 
 In order to login to the ssh of bandit8:
 - Type in: "exit" to exit bandit7@bandit ssh
-- ssh into bandit2: ssh bandit8@bandit.labs.overthewire.org -p 2220
+- ssh into bandit8: ssh bandit8@bandit.labs.overthewire.org -p 2220
 - Using password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 In order to get the only line of text that occurs once in data.txt file, we have to use `sort` and `unqi` commands.
@@ -339,7 +339,7 @@ Explanation:
 
 In order to login to the ssh of bandit9:
 - Type in: "exit" to exit bandit8@bandit ssh
-- ssh into bandit2: ssh bandit9@bandit.labs.overthewire.org -p 2220
+- ssh into bandit9: ssh bandit9@bandit.labs.overthewire.org -p 2220
 - Using password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
 In order to get the password that is human-readable strings and preceded by several "=" characters, we have to use `strings` and `grep` commands.
@@ -363,7 +363,7 @@ Explanation:
 
 In order to login to the ssh of bandit10:
 - Type in: "exit" to exit bandit9@bandit ssh
-- ssh into bandit2: ssh bandit10@bandit.labs.overthewire.org -p 2220
+- ssh into bandit10: ssh bandit10@bandit.labs.overthewire.org -p 2220
 - Using password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 
 In order to get the password from data.txt that contains base64 encoded, we have to use the `base64` command:
@@ -385,7 +385,7 @@ Explanation:
 
 In order to login to the ssh of bandit11:
 - Type in: "exit" to exit bandit10@bandit ssh
-- ssh into bandit2: ssh bandit11@bandit.labs.overthewire.org -p 2220
+- ssh into bandit11: ssh bandit11@bandit.labs.overthewire.org -p 2220
 - Using password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 
 In order to read data.txt with A-Z and a-z letter rotated by 13 position, we have to use `cat` and `tr` commands:
@@ -408,3 +408,14 @@ Explanation:
 # Level 12 -> 13
 
 ![image](https://github.com/user-attachments/assets/529ebe90-39d0-4bd9-8520-473b985791c3)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit11:
+- Type in: "exit" to exit bandit11@bandit ssh
+- ssh into bandit12: ssh bandit12@bandit.labs.overthewire.org -p 2220
+- Using password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+In order to 
+
+FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
