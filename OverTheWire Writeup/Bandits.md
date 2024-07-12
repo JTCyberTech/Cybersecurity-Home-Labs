@@ -416,6 +416,67 @@ In order to login to the ssh of bandit11:
 - ssh into bandit12: ssh bandit12@bandit.labs.overthewire.org -p 2220
 - Using password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 
-In order to 
+In order to repeatly decompresses the hexdump data.txt file, we will need to use `tar`, `gzip`, and `bzip2`.
+
+First we need to create a temporary directory under /tmp because we don't have permission to create anything in the current directory:
+- Command: `newdata=$(mktemp -d)`
+  - `newdata=`: Assigning output of the `mktemp -d` command to variable name "newdata".
+  - `$(...)`: Takes output of the command inside the () and substitutes/save it as "newdata".
+  - `mktemp`: A Command used to create a temporary file or direcotry.
+    - `-d`: Option of `mktemp`, tells `mktemp` to create a directory instead of a file.
+ 
+Next we have to copy the data.txt file in the current directory into the temporary directory that we just created by using the `cp` command:
+- Command: `cp data.txt $newdata`
+  - `cp`: Command used to copy files or directories.
+  - `data.txt`: The source file you want to copy.
+  - `$newdata`: Destination where you want to copy the file to. (In this case: the new temporary directory)
+
+Next we have to change directory into the new temporary directory by using `cd` command:
+- Command: `cd $newdata`
+
+![image](https://github.com/user-attachments/assets/a6c8d7f4-2c82-4a4a-a643-def88fb200e4)
+
+Afterward, we need to use the `xxd` command to convert the Hexdump file (data.txt) into Binary:
+- Command: `xxd -r data.txt data.bin`
+  - `xxd`: Command create a hexdump from given file or input. Or reverse hexdump file back into binary form.
+    - `-r`: Option of `xxd`, stands for "reverse", tells `xxd` to convert hexdump back to binary form.
+  - `data.txt`: The input file that contains the hexdump you want to convert back into binary.
+  - `data.bin`: The output file that will contain the binary result from `xxd -r` command.
+ 
+![image](https://github.com/user-attachments/assets/be2792d0-2bc8-4eff-90e0-c43645c96b4a)
+
+Next we need to check the file type of data.bin by using `file` command:
+- Command: `file data.bin`
+- Result: gzip compressed.
+
+![image](https://github.com/user-attachments/assets/147a10ed-fe5a-42f7-ac4b-4e127ab1a441)
+
+Next since it's gzip compressed data, we need to rename the file into gzip file with `mv` command and decompress it with the `gzip` command:
+- Command: `mv data.bin data.gz`
+  - `mv`: Command used to move or rename files and directories.
+  - `data.bin`: Source file in the current directory that needed to be rename.
+  - `data.gz`: Output file that got rename into, became a different file type (Gzip file).
+- Command: `gzip -d data.gz`
+  - `gzip`: Command used for compression and decompression of Gzip file.
+    - `-d`: Option for `gzip`, stand for decompress.
+  - `data.gz`: Input file that you want to decompress.
+- Result: "data.gz" file became "data" file that is Bzip2.
+
+![image](https://github.com/user-attachments/assets/1d22f157-348f-4855-a3bc-c878d50d2359)
+
+Next since it's bzip2 compressed data, we need to rename the file into bzip2 file with `mv` command and decompress it with the `bzip2` command:
+- Command: `mv data data.bz2`
+  - bzip2's file name = bz2
+- Command: `bzip2 -d data.bz2`
+  - `bzip2`: Command used for compressing or decompressing files using Burrow-Wheeler block-sorting text compression alogrithm and Huffman coding (Bzip2).
+    - `-d`: Option for `bzip2, stand for decompress.
+  - `data.bz2`: Input file that you want to decompress.
+- Result: "data.bz2" file became "data" file that is Gzip.
+
+![image](https://github.com/user-attachments/assets/2c3a5ae4-ab4e-45e2-8372-a7b7e59d6cb1)
+
+**Repeat the Gzip Decompress Again**
+- Result: "data.gz" file became "data" file that is tar.
+
 
 FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
