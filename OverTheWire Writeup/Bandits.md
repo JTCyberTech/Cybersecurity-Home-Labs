@@ -466,7 +466,7 @@ Next since it's gzip compressed data, we need to rename the file into gzip file 
 
 Next since it's bzip2 compressed data, we need to rename the file into bzip2 file with `mv` command and decompress it with the `bzip2` command:
 - Command: `mv data data.bz2`
-  - bzip2's file name = bz2
+  - bzip2's file name = .bz2
 - Command: `bzip2 -d data.bz2`
   - `bzip2`: Command used for compressing or decompressing files using Burrow-Wheeler block-sorting text compression alogrithm and Huffman coding (Bzip2).
     - `-d`: Option for `bzip2, stand for decompress.
@@ -475,8 +475,51 @@ Next since it's bzip2 compressed data, we need to rename the file into bzip2 fil
 
 ![image](https://github.com/user-attachments/assets/2c3a5ae4-ab4e-45e2-8372-a7b7e59d6cb1)
 
-**Repeat the Gzip Decompress Again**
-- Result: "data.gz" file became "data" file that is tar.
+**Repeat the Gzip Decompress Process Again**
+- Result: "data.gz" file became "data" file that is tar archive.
 
+![image](https://github.com/user-attachments/assets/96c397fd-5c62-4982-929f-bd0384941627)
 
-FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+Next since it's a tar archive file, we need to rename the file into tar with `mv` command and extract it with `tar` command:
+- Command: `mv data data.tar`
+  - tar's file name .tar
+- Command: `tar -xf data.tar`
+  - `tar`: Command used for creating and extracting archive files known as "Tape Archive".
+    - `-xf`:
+      - `-x`: Option for tar, stands for "extract".
+      - `-f`: Option for tar, specifies the name of the archive file to be processed. It must be followed by the name of the archive file.
+  - `data.tar`: Name of the archive file you want to extract.
+ - Result: "data5.bin" file was created from extracting from "data.tar" file.
+ - Result: "data5.bin" file is another tar archive file.
+
+![image](https://github.com/user-attachments/assets/e17b3e62-428e-4f74-94de-bca0661b0c08)
+
+**Repeat the Extraction of Tar File Again**
+- Result: "data6.bin" file was created from extracting from "data5.tar" file.
+- Result: "data6.bin" file is a bzip2 file.
+
+![image](https://github.com/user-attachments/assets/0193270c-3ca0-43f5-a7c3-98a7e9165984)
+
+**Repeat the Bzip2 Decompress Process Again**
+- Result: "data6.bz2" became "data6" file.
+- Result: "data6" file is a tar archive file.
+
+![image](https://github.com/user-attachments/assets/67f2161f-f910-4727-9e00-27bf7909bc84)
+
+**Repeat the Extraction of Tar File Again**
+- Result: "data8.bin" file was created from extracting from "data6.tar" file.
+- Result: "data8.bin" file is a Gzip file.
+
+![image](https://github.com/user-attachments/assets/5cd67cbd-c622-4d57-b655-a07423df70fc)
+
+**Repeat the Gzip Decompress Process Again**
+- Result: "data8.gz" became "data8" file.
+- Result: "data8" file is an ASCII text.
+
+![image](https://github.com/user-attachments/assets/ac408ce7-ee4f-4b9c-8046-631aeee9cd2b)
+
+Finally, we will use the `cat` command to read what is inside of the "data8" file.
+- Command: `cat` data8
+- Found password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+
+![image](https://github.com/user-attachments/assets/61a664a1-037b-4f91-8027-df04aa2c1508)
