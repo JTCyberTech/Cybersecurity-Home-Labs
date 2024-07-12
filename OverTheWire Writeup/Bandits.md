@@ -537,3 +537,55 @@ In order to login to the ssh of bandit13:
 - ssh into bandit13: ssh bandit13@bandit.labs.overthewire.org -p 2220
 - Using password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
+After using the command `ls`, there is a file call "sshkey.private" which is a RSA private key.
+
+![image](https://github.com/user-attachments/assets/1e6db8f6-594d-4095-aed1-f9ea71800b6f)
+
+We are going to use the RSA private key to `SSH` into bandit14:
+- Command: `ssh` -i sshkey.private -p 2220 bandit14@bandit
+  - Type in "yes" to continue connecting the ssh.
+- Successfully login bandit14@bandit
+
+Explanation:
+- `ssh`: Command to initate a secure shell (SSH) connection to a remote machine.
+- `-i sshkey.private`:
+  - `-i`: Option specifies the identity file, which is the private key used for authentication.
+  - `sshkey.private`: File containing the private SSH key. This key allows secure login to the remote machine without needing a password.
+- `-p 2220`:
+  - `-p`: option specifies the port number to connect to on the remote host.
+  - `2220`: the port number used by the SSH server on the remote machine.
+- `bandit14@bandit`: This specifies the user and host to connect to. [bandit14] is the username on remote machine [bandit] is the hostname or IP address of the remote machine. 
+
+![image](https://github.com/user-attachments/assets/ae462e8b-2286-400e-bfc1-e3c57c36f6a3)
+
+Now we just have to use the `cat` command with the directory and text file that is provided by the level goal.
+- Command: `cat` /etc/bandit_pass/bandit14
+- Found password: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+
+![image](https://github.com/user-attachments/assets/9a8c2476-8b61-4b29-a801-65d5fd6a4132)
+
+#
+
+# Level 14 -> 15
+
+![image](https://github.com/user-attachments/assets/ef3b5660-8c43-4af3-9021-d10070aebdc2)
+
+We don't have to exit out of the ssh because we are already on bandit14@bandit
+
+In order to get the password for next level, we have to use netcat or `nc`
+- Command: `nc` localhost 30000
+  - `nc`: Netcat, a versatile networking used for reading from and writing to network connection using TCP or UDP.
+  - `localhost`: refers to the local machine (the same machine on which the command is running). [In this case bandit14]
+  - `30000`: the port number on which the connection will be established.
+- We just need to enter in the password we got from last level after doing the netcat command:
+  - Enter:  MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+- Found password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
+![image](https://github.com/user-attachments/assets/27d37004-b376-47a7-a626-9f147d9eefbb)
+
+
+#
+
+# Level 15 -> 16
+
+![image](https://github.com/user-attachments/assets/59f85548-09f0-4380-9485-10be76af20d9)
