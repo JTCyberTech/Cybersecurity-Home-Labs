@@ -522,4 +522,5 @@ Finally, we will use the `cat` command to read what is inside of the "data8" fil
 - Command: `cat` data8
 - Found password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
-![image](https://github.com/user-attachments/assets/61a664a1-037b-4f91-8027-df04aa2c1508)
+![image](https://github.com/user-attachments/assets/b1f5e3b3-47ee-41ca-ba74-9202b5b73d4f)
+
