@@ -388,3 +388,23 @@ In order to login to the ssh of bandit11:
 - ssh into bandit2: ssh bandit11@bandit.labs.overthewire.org -p 2220
 - Using password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 
+In order to read data.txt with A-Z and a-z letter rotated by 13 position, we have to use `cat` and `tr` commands:
+- Command: `cat` data.txt | `tr` 'A-Za-z' 'N-ZA-Mn-za-m'
+- Found password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+Explanation:
+- `cat data.txt`: concatenate, used to display the contents in data.txt file.
+- `|` (Pipe): Shell operator, takes output of the command on left and use it as input command to the right.
+- `tr 'A-Za-z' 'N-ZA-Mn-za-m'`:
+  - `tr`: A command that translates or deletes character from the input it recieves.
+  - `A-Za-z`: First set of characters that we want to translate. Includes all uppercase (A-Z) and all lowercase (a-z).
+  - `N-ZA-Mn-za-m`: Second set of characters that we want to translate to. It represent the alphabet rotated by 13 positions:
+    - ROT13 transmation: each letter is replaced by the letter 13 positions after its position in the alphabet; 'A' = 'N', 'M' = 'Z'.
+   
+![image](https://github.com/user-attachments/assets/a3f1129d-ed57-4464-8a9b-ab6a4681e554)
+
+#
+
+# Level 12 -> 13
+
+![image](https://github.com/user-attachments/assets/529ebe90-39d0-4bd9-8520-473b985791c3)
