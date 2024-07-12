@@ -218,7 +218,7 @@ We have to do a For loop:
 - > do file "$file"
 - > done
   
-Explaination of the For loop:
+Explanation of the For loop:
 - `for file in $(...)`: iterates each file name found by the `find` command inside `$(...)`.
 - `do ... done`: Encloses the commands to be executed for each iteration of the loop.
 - `file "$file"`:
@@ -264,7 +264,7 @@ We have to use the `find` command with all three properties:
 - Result: ./var/lib/dpkg/info/bandit7.password
 
 
-Explaination: 
+Explanation: 
 - `find .`: Start searching in the current directory. (in this case is the root directory or / directory)
 - `-type f`: Only include regular files in the search.
 - `-user bandit7`: Matches the properties of "Owned by user bandit7".
@@ -288,7 +288,7 @@ Read the file by using `cat` command:
 
 ## Command Steps: 
 
-In order to login to the ssh of bandit6:
+In order to login to the ssh of bandit7:
 - Type in: "exit" to exit bandit6@bandit ssh
 - ssh into bandit2: ssh bandit7@bandit.labs.overthewire.org -p 2220
 - Using password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
@@ -304,3 +304,71 @@ Explanation:
 - `data.txt`: File to be search in with the grep comman.
 
 ![image](https://github.com/user-attachments/assets/ae73aeec-abff-4bf5-ac19-281ac8bd6349)
+
+#
+
+# Level 8 -> 9
+
+![image](https://github.com/user-attachments/assets/0b80af7c-b5ce-472b-9f61-260c145de0b3)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit8:
+- Type in: "exit" to exit bandit7@bandit ssh
+- ssh into bandit2: ssh bandit8@bandit.labs.overthewire.org -p 2220
+- Using password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+In order to get the only line of text that occurs once in data.txt file, we have to use `sort` and `unqi` commands.
+- Command: `sort` data.txt | `uniq` -u
+- Found password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+Explanation: 
+- `sort` data.txt: Sorts the lines in "data.txt" file, making identical lines adjacent to each other.
+- `|` (Pipe): Passes the sorted output to the next command.
+- `uniq -u`: Filters out lines that are repeated, leaving only unique lines.
+
+![image](https://github.com/user-attachments/assets/115b7525-f875-4cbc-b7eb-bf59d3af3e36)
+
+#
+
+# Level 9 -> 10
+
+![image](https://github.com/user-attachments/assets/0c1d297f-0c7f-4f44-a16f-d9aad16febcd)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit9:
+- Type in: "exit" to exit bandit8@bandit ssh
+- ssh into bandit2: ssh bandit9@bandit.labs.overthewire.org -p 2220
+- Using password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+In order to get the password that is human-readable strings and preceded by several "=" characters, we have to use `strings` and `grep` commands.
+- Command: `strings` data.txt | grep "==="
+- Found password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+Explanation:
+- `strings data.txt`: Command that extracts human readable strings from binary files or files with non-text content. Output all human readable strings found in "data.txt".
+- `|` (Pipe): Takes the output of command `strings` and passes it as input to `grep` command.
+- `grep "==="`: Searches for lines that contains "===" characters pattern.
+
+![image](https://github.com/user-attachments/assets/4c089920-13ce-48fa-af99-fb0ecd85e71b)
+
+#
+
+# Level 10 -> 11
+
+![image](https://github.com/user-attachments/assets/230c95c9-e141-484e-8e7b-05ba38a8fcc8)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit10:
+- Type in: "exit" to exit bandit9@bandit ssh
+- ssh into bandit2: ssh bandit10@bandit.labs.overthewire.org -p 2220
+- Using password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+In order to get the password from data.txt that contains base64 encoded, we have to use the `base64` command:
+- Command: `base64` -d data.txt
+- Found password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+Explanation:
+- `base64`
