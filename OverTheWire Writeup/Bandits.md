@@ -411,7 +411,7 @@ Explanation:
 
 ## Command Steps: 
 
-In order to login to the ssh of bandit11:
+In order to login to the ssh of bandit12:
 - Type in: "exit" to exit bandit11@bandit ssh
 - ssh into bandit12: ssh bandit12@bandit.labs.overthewire.org -p 2220
 - Using password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
@@ -523,4 +523,17 @@ Finally, we will use the `cat` command to read what is inside of the "data8" fil
 - Found password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
 ![image](https://github.com/user-attachments/assets/b1f5e3b3-47ee-41ca-ba74-9202b5b73d4f)
+
+#
+
+# Level 13 -> 14
+
+![image](https://github.com/user-attachments/assets/3e843edb-6b48-439a-9bac-f7dbbf9e90c3)
+
+## Command Steps: 
+
+In order to login to the ssh of bandit13:
+- Type in: "exit" to exit bandit12@bandit ssh
+- ssh into bandit13: ssh bandit13@bandit.labs.overthewire.org -p 2220
+- Using password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
