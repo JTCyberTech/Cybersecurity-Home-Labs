@@ -570,7 +570,9 @@ Now we just have to use the `cat` command with the directory and text file that 
 
 ![image](https://github.com/user-attachments/assets/ef3b5660-8c43-4af3-9021-d10070aebdc2)
 
-We don't have to exit out of the ssh because we are already on bandit14@bandit
+## Command Steps: 
+
+We don't have to exit out of the ssh because we are already on bandit14@bandit.
 
 In order to get the password for next level, we have to use netcat or `nc`
 - Command: `nc` localhost 30000
@@ -589,3 +591,31 @@ In order to get the password for next level, we have to use netcat or `nc`
 # Level 15 -> 16
 
 ![image](https://github.com/user-attachments/assets/59f85548-09f0-4380-9485-10be76af20d9)
+
+## Command Steps: 
+
+We don't have to exit out of the ssh because we get the password in bandit14@bandit.
+
+In order to get the password foe the next level, we have to use SSL encryption as the level statad by `openssl`:
+- Command: `openssl` s_client -connect localhost:30001
+  - `openssl`: Command for using the various cryptography function of OpenSSL's crypto libraty from shell.
+  - `s_client`: OpenSSL command to simulate a simple SSL/TLS client thatconnect to a remote server. It's useful for debugging SSL/TLS connections.
+  - `-connect localhost:30001`: Option specifies the address and port to connect to. In this case: 'localhost' = hostname refers to local machine, '30001 is the port number.
+- Enter: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+- Found password: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+
+![image](https://github.com/user-attachments/assets/d890a1ed-0368-4962-b5fb-4cd6066c5b6b)
+
+![image](https://github.com/user-attachments/assets/bf0abb87-466e-4776-a5c6-cfd1ecb4360f)
+
+![image](https://github.com/user-attachments/assets/d715ed9a-d4df-4e49-bddd-db4f61e4ed90)
+
+#
+
+# Level 16 -> 17
+
+![image](https://github.com/user-attachments/assets/08261dc7-6603-4a80-8c7c-fa0dcd913672)
+
+
+## Command Steps: 
+
