@@ -23,9 +23,24 @@ For "Inspect (Q)"
 
 Solution: Enter in "`e818f8d1`" into the password and submit.
 
+![image](https://github.com/user-attachments/assets/593acff8-3ba6-4f21-adcd-fba7e1d08b24)
+
 #
 
 # Basic Level 2 
+
+![image](https://github.com/user-attachments/assets/93136c66-df48-4d6d-b5d3-84bf648e597d)
+
+Since the prompt said: Sam neglected to upload the password file. There are several outcomes:
+- No one can login because password file is missing.
+- Everyone can login because password file is missing.
+
+In this case everyone can login. 
+
+Solution: Just click on `submit` without a password and complete the challenge.
+
+![image](https://github.com/user-attachments/assets/faca15ee-56d8-4915-8f12-412f7b132deb)
+
 
 
 # Key Takeaway:
@@ -34,3 +49,4 @@ Solution: Enter in "`e818f8d1`" into the password and submit.
 
 - For html: `<!-- ... -->` is a comment.
 
+## 2. Missing password file can be a very serious vulnerability because if the code is default allow behavior, everyone can login.
