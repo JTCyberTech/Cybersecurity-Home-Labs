@@ -149,6 +149,14 @@ Solution: Enter in `0e4661f8` into password and click on submit.
 
 ![image](https://github.com/user-attachments/assets/aa21c023-2d63-40ec-848c-517be049e9cd)
 
+#
+
+# Level 7
+
+![image](https://github.com/user-attachments/assets/055208f3-298a-48e7-a8a1-478a67288100)
+
+## Steps: 
+
 
 # Key Takeaway:
 
@@ -161,3 +169,7 @@ Solution: Enter in `0e4661f8` into password and click on submit.
 ## 3. Inspect (Q) can show hidden file sometimes.
 
 ## 4 and 5. We can edit value on the hidden input type. 
+
+## 6. This is more like a Bruteforce thing.
+
+## 7. 
