@@ -41,6 +41,11 @@ Solution: Just click on `submit` without a password and complete the challenge.
 
 ![image](https://github.com/user-attachments/assets/faca15ee-56d8-4915-8f12-412f7b132deb)
 
+#
+
+# Basic Level 3
+
+
 
 
 # Key Takeaway:
