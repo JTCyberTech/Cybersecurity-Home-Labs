@@ -23,10 +23,14 @@
 
 Solution: Enter in "`e818f8d1`" into the password and submit.
 
+#
+
+# Basic Level 2 
+
 
 # Key Takeaway:
 
-## 1. View Page Source or Inspect (Q) are important, sometimes there are clues that the coder leave behind, such as comments
+## 1. View Page Source or Inspect (Q) are important, sometimes there are clues that the coder leave behind, such as comments.
 
 - For html: `<!-- ... -->` is a comment.
 
