@@ -180,6 +180,7 @@ Solution: Enter in `7707bc62` into password and click on submit.
 
 # Level 8
 
+![image](https://github.com/user-attachments/assets/93ce15b0-367f-4558-97ce-a9e783051548)
 
 
 # Key Takeaway:
