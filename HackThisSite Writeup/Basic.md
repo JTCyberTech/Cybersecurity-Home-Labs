@@ -157,6 +157,30 @@ Solution: Enter in `0e4661f8` into password and click on submit.
 
 ## Steps: 
 
+Since the prompt said the output is from the UNIX cal command. We can use command like `&&` and `ls` after giving the year.
+- Command: `2024 && ls`
+
+![image](https://github.com/user-attachments/assets/b1ed461b-bbdc-4e62-b933-389deb100910)
+
+- Scroll down to the end and there is a directory called `k1kh31b1n55h.php`
+
+![image](https://github.com/user-attachments/assets/6d868a05-62e8-4913-a755-779b994afced)
+
+- Now we can just go to this directory on the URL.
+
+![image](https://github.com/user-attachments/assets/68786f66-9767-46b5-8828-b3590aef5299)
+
+Result: password = `7707bc62`
+
+Solution: Enter in `7707bc62` into password and click on submit. 
+
+![image](https://github.com/user-attachments/assets/0e66c415-dc18-45bd-bbe4-df4602b6c253)
+
+#
+
+# Level 8
+
+
 
 # Key Takeaway:
 
@@ -172,4 +196,4 @@ Solution: Enter in `0e4661f8` into password and click on submit.
 
 ## 6. This is more like a Bruteforce thing.
 
-## 7. 
+## 7. We can break the command with `&&` and then another command like `ls`
