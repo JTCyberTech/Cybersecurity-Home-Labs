@@ -1,6 +1,6 @@
 # Basic Level 1
 
-[Direct Link](https://www.hackthissite.org/missions/basic/1/)
+Start off on: [Direct Link](https://www.hackthissite.org/missions/basic/1/)
 
 ![image](https://github.com/user-attachments/assets/6ac143ac-5bc6-4645-afa9-63a65a5239f6)
 
@@ -21,7 +21,7 @@ For "Inspect (Q)"
  
 ![image](https://github.com/user-attachments/assets/ff4e08f2-c868-495e-8cf2-0fd395a26447)
 
-Solution: Enter in "`e818f8d1`" into the password and submit.
+Solution: Enter in "`e818f8d1`" into the password and click on submit.
 
 ![image](https://github.com/user-attachments/assets/593acff8-3ba6-4f21-adcd-fba7e1d08b24)
 
@@ -31,9 +31,11 @@ Solution: Enter in "`e818f8d1`" into the password and submit.
 
 ![image](https://github.com/user-attachments/assets/93136c66-df48-4d6d-b5d3-84bf648e597d)
 
+## Steps: 
+
 Since the prompt said: Sam neglected to upload the password file. There are several outcomes:
 - No one can login because password file is missing.
-- Everyone can login because password file is missing.
+- Anyone can login because password file is missing.
 
 In this case everyone can login. 
 
@@ -45,7 +47,107 @@ Solution: Just click on `submit` without a password and complete the challenge.
 
 # Basic Level 3
 
+![image](https://github.com/user-attachments/assets/c36b5529-76c5-421e-b2b8-b883a953aa60)
 
+## Steps: 
+
+Since the prompt said the password file is uploaded. I assume that we have to find the password file somewhere
+- Right click the box where you put password and click on "Inspect (Q)"
+
+![image](https://github.com/user-attachments/assets/5adf0141-1c36-43d3-a98c-e7f47e273a57)
+
+- The line above where it display the box information in the inspector shows a "hidden file" with value = "password.php".
+
+![image](https://github.com/user-attachments/assets/bb9af45c-ff96-45ef-9aef-7113beeff5ac)
+
+- Now we will put that hidden file directory on the URL
+ - https://www.hackthissite.org/missions/basic/3/password.php
+
+Result: Got password = `f19b94c4`
+
+![image](https://github.com/user-attachments/assets/f6bbf096-80db-43ce-939e-42a18dccb159)
+
+
+Solution: Enter in `f19b94c4` into password and click on submit.
+
+![image](https://github.com/user-attachments/assets/d4bf5ecb-35e4-413a-9d6b-84e9033ef556)
+
+#
+
+# Basic Level 4
+
+![image](https://github.com/user-attachments/assets/11c58645-7850-45f0-ae35-5b7f04c34847)
+
+## Steps: 
+
+Since the prompt said there is a script that email password automatically when clicking on the button "Send password to Sam", I assume we can change the email to myself to get the password.
+- Right click the box "Send password to Sam" and click on the Inspect (Q).
+
+![image](https://github.com/user-attachments/assets/8aa23f85-d4ec-4c7b-9a80-4787a0435e79)
+
+- Similar concept on the last challenge, there is a "hidden value" of "sam@hackthissite.org".
+
+![image](https://github.com/user-attachments/assets/435f48e3-e9c0-4039-aec8-d33fd7ce9a14)
+
+- We can change the hidden value to my own email by clicking into it.
+
+![image](https://github.com/user-attachments/assets/21213316-5b21-4156-b2dc-08e9ffffdef4)
+
+- Now click on the box "Send password to Sam".
+
+![image](https://github.com/user-attachments/assets/d55ba293-82d3-4067-8a9c-8a999c49aeb7)
+
+- Go to your own email that you put into the inspector and you will get the password.
+
+![image](https://github.com/user-attachments/assets/a493fd0c-2431-4b41-a23d-106e68a67b6b)
+
+Result: password = `d156d588`
+
+Solution: Enter in `d156d588` into password and click on submit.
+
+![image](https://github.com/user-attachments/assets/6ffc416c-ab66-4c5c-869f-118d0a37386e)
+
+# 
+
+# Level 5
+
+![image](https://github.com/user-attachments/assets/ffe3c383-f3e2-40be-9976-677b62f42e88)
+
+## Steps: 
+
+This is the exact same thing:
+
+- Inspect the the "Same password to Sam" Box
+- Change/Edit the hidden value from "sam@hackthissite.org" to your own email.
+- Click on the "Send password to Sam".
+
+![image](https://github.com/user-attachments/assets/b62f3611-b36f-4b79-94f1-053bbc2083d6)
+
+- Check your own email.
+
+![image](https://github.com/user-attachments/assets/2f2fdd09-10d1-4674-9baf-336e0ca3c491)
+
+Result: password = `a4fbe76b`
+
+Solution: Enter in `a4fbe76b` into password and click on submit.
+
+![image](https://github.com/user-attachments/assets/59bb8f9a-f8a9-498a-91ab-064e9f26f145)
+
+#
+
+# Level 6
+
+![image](https://github.com/user-attachments/assets/0941ed86-f842-4bf4-b6cb-71298d1e331c)
+
+## Steps: 
+
+This level is just encryption, you can test 1 word at a time to get 0f69:6l?
+
+- By trying one by one, I got the password: `0e4661f8`
+
+Solution: Enter in `0e4661f8` into password and click on submit. 
+
+![image](https://github.com/user-attachments/assets/aa21c023-2d63-40ec-848c-517be049e9cd)
 
 
 # Key Takeaway:
@@ -55,3 +157,7 @@ Solution: Just click on `submit` without a password and complete the challenge.
 - For html: `<!-- ... -->` is a comment.
 
 ## 2. Missing password file can be a very serious vulnerability because if the code is default allow behavior, everyone can login.
+
+## 3. Inspect (Q) can show hidden file sometimes.
+
+## 4 and 5. We can edit value on the hidden input type. 
