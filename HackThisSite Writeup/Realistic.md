@@ -16,7 +16,8 @@ We can tamper the element by right clicking the score next to the vote button > 
 
 ![image](https://github.com/user-attachments/assets/e8627a13-6a2e-474b-a3a5-8f919adad3f0)
 
-Expand the "<select name="vote"> == $0
+
+Expand: the `"<select name="vote"> == $0`
 - Change value="5" into value="5000000"
 
 ![image](https://github.com/user-attachments/assets/ccfb3bbf-0cb9-4fc5-9fd1-97e3a0b7fbe9)
