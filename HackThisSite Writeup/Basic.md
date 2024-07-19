@@ -208,7 +208,7 @@ It will display a directory of `au12ha39vc.php`. We will put that into our URL.
 
 ![image](https://github.com/user-attachments/assets/e751f637-f754-442f-aa52-9faa5440e8e5)
 
-Result: Password = `d38ceed3` on the "https://www.hackthissite.org/missions/basic/8/au12ha39vc.php" page
+Result: Password = `d38ceed3` on "https://www.hackthissite.org/missions/basic/8/au12ha39vc.php" page
 
 ![image](https://github.com/user-attachments/assets/cba676c2-637a-46f6-b34d-541d05f346c9)
 
@@ -222,6 +222,65 @@ Solution: Enter in `d38ceed3` into password and click on submit.
 
 ![image](https://github.com/user-attachments/assets/c875d10d-af8f-49cc-885d-ee031792a488)
 
+## Steps: 
+
+Since there is no input box fir Level 9, we have to go back to level 8 and use the same SSI.
+- <!--#exec cmd="ls ../../9"-->
+
+![image](https://github.com/user-attachments/assets/15ae99db-f758-46f9-96f5-f2903b33a374)
+
+With the same step, we got the directory: `p91e283zc3.php`
+
+![image](https://github.com/user-attachments/assets/aa81336b-64d7-4d97-8d81-b12add4f0c6a)
+
+We will then put it into our URL but use `/basic/9/` instead of 8:
+- URL: "https://www.hackthissite.org/missions/basic/9/p91e283zc3.php"
+
+Result: Password = `66007931` on "https://www.hackthissite.org/missions/basic/9/p91e283zc3.php" page
+
+![image](https://github.com/user-attachments/assets/4b07420e-04b5-4327-a02f-27fdb685e17b)
+
+Solution: Enter in `66007931` into password and click on submit. 
+
+![image](https://github.com/user-attachments/assets/a98a5144-f79c-4522-936f-483634fd9472)
+
+#
+
+# Level 10
+
+![image](https://github.com/user-attachments/assets/786761e3-e191-426c-8ca2-258e54b648c1)
+
+## Steps: 
+
+Since this page have not much prompt, we will just try to input anything on the password box to see what it returns.
+
+![image](https://github.com/user-attachments/assets/9654fc3b-9e90-4c07-b1ec-e38f30c6cf72)
+
+It said that we are not authorized to view this page, meaning there we have to get authorization by getting some type of admin status.
+
+To gain access, we will be using techique such as tampering with cookie.
+- Right click on the page then go to "Inspect" > Go to your inspect and click on Network 
+
+![image](https://github.com/user-attachments/assets/9d9b9e0c-b62c-4bb2-8c1f-ef60ec2a89d1)
+
+- Head to "index.php" on the Network tab then scroll down to see `Set-Cookie`
+- The `Set-Cookie` will be set to "level10_authorized=no"
+
+![image](https://github.com/user-attachments/assets/1790092c-8084-461f-a9e6-5a7dacf145f8)
+
+To gain access we will change "level10_authroized=no" into "level10_authroized=yes"
+
+- There are many ways to change it but we will just use Console tab to change it.
+ - Click on the "Console" Tab > Input: `document.cookie="level10_authorized=yes"` > Reload DevTools
+
+![image](https://github.com/user-attachments/assets/33dc8d49-7f69-49fa-b145-36b483787ec3)
+
+Then refresh the page. 
+
+![image](https://github.com/user-attachments/assets/6ceb00ef-f251-44ac-bbe4-00e17a5f3b9c)
+
+
+#
 
 # Key Takeaway:
 
@@ -235,9 +294,14 @@ Solution: Enter in `d38ceed3` into password and click on submit.
 
 ## 4 and 5. We can edit value on the hidden input type. 
 
-## 6. If there is encryption, more like a Bruteforce thing.
+## 6. If there is input box for encryption, more like a Bruteforce thing.
 
 ## 7. We can break the command with `&&` and then another command like `ls`
 
 ## 8. #exec cmd="..." inside a comment <!-- ... --> will execute the command inside the comment on HTML, called SSI or Server Side Include.
 
+## 9. Teaches us that we have to think outside the box sometimes. look back at what we did and use what is available from before.
+
+## 10. We can use inspect > console to tamper many things such as cookie to change into authorized=yes to gain access.
+
+## 11. ".htaccess" directory = Apache can be helpful.
