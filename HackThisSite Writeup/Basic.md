@@ -182,14 +182,52 @@ Solution: Enter in `7707bc62` into password and click on submit.
 
 ![image](https://github.com/user-attachments/assets/93ce15b0-367f-4558-97ce-a9e783051548)
 
+## Steps: 
 
-`<!--#exec cmd="ls ../"-->`
+We can use Serve Side Include (SSI) command to exploit this challenge.
+
+- We can use `<!--#exec cmd="ls ../"-->` as a SSI command.
+ 
+Explanation:
+- `<!-- .. -->`: HTML comment tags, Normally anything inside the tag is treated as a comment and not displayed by the browser.
+ - But when its used in SSI, the tags indicate the beginning and end of the SSI directive.
+- `#exec`: SSI command used to execute a shell command on the server. Tells the server to run specified command and include the output in the HTML page.
+- `cmd="ls ../"`: 
+  - `cmd`: specifies that a command should be executed.
+  - `"ls ../`: Shell command to be executed. `ls`: a Unix/Linux command to list directory and `../`: indicates the parent directory.
+ 
+Put in `<!--#exec cmd="ls ../"-->` into the Enter your name box and submit.
+
+![image](https://github.com/user-attachments/assets/ec2136d5-771a-4d74-9c32-432a95991b9f)
+
+Click on the "here" in "Please click here view the file.
+
+![image](https://github.com/user-attachments/assets/d18c7bac-01d5-445e-a8b9-c3cb871a3274)
+
+It will display a directory of `au12ha39vc.php`. We will put that into our URL. 
+
+![image](https://github.com/user-attachments/assets/e751f637-f754-442f-aa52-9faa5440e8e5)
+
+Result: Password = `d38ceed3` on the "https://www.hackthissite.org/missions/basic/8/au12ha39vc.php" page
+
+![image](https://github.com/user-attachments/assets/cba676c2-637a-46f6-b34d-541d05f346c9)
+
+Solution: Enter in `d38ceed3` into password and click on submit. 
+
+![image](https://github.com/user-attachments/assets/b461e3e3-e56d-4e87-b452-a4b35fc48726)
+
+#
+
+# Level 9
+
+![image](https://github.com/user-attachments/assets/c875d10d-af8f-49cc-885d-ee031792a488)
+
 
 # Key Takeaway:
 
 ## 1. View Page Source or Inspect (Q) are important, sometimes there are clues that the coder leave behind, such as comments.
 
-- For html: `<!-- ... -->` is a comment.
+- For html: `<!-- ... -->` is the comment.
 
 ## 2. Missing password file can be a very serious vulnerability because if the code is default allow behavior, everyone can login.
 
@@ -197,6 +235,9 @@ Solution: Enter in `7707bc62` into password and click on submit.
 
 ## 4 and 5. We can edit value on the hidden input type. 
 
-## 6. This is more like a Bruteforce thing.
+## 6. If there is encryption, more like a Bruteforce thing.
 
 ## 7. We can break the command with `&&` and then another command like `ls`
+
+## 8. #exec cmd="..." inside a comment <!-- ... --> will execute the command inside the comment on HTML, called SSI or Server Side Include.
+
