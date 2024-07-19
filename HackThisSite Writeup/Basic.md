@@ -109,7 +109,7 @@ Solution: Enter in `d156d588` into password and click on submit.
 
 # 
 
-# Level 5
+# Basic Level 5
 
 ![image](https://github.com/user-attachments/assets/ffe3c383-f3e2-40be-9976-677b62f42e88)
 
@@ -135,7 +135,7 @@ Solution: Enter in `a4fbe76b` into password and click on submit.
 
 #
 
-# Level 6
+# Basic Level 6
 
 ![image](https://github.com/user-attachments/assets/0941ed86-f842-4bf4-b6cb-71298d1e331c)
 
@@ -151,7 +151,7 @@ Solution: Enter in `0e4661f8` into password and click on submit.
 
 #
 
-# Level 7
+# Basic Level 7
 
 ![image](https://github.com/user-attachments/assets/055208f3-298a-48e7-a8a1-478a67288100)
 
@@ -178,7 +178,7 @@ Solution: Enter in `7707bc62` into password and click on submit.
 
 #
 
-# Level 8
+# Basic Level 8
 
 ![image](https://github.com/user-attachments/assets/93ce15b0-367f-4558-97ce-a9e783051548)
 
@@ -218,7 +218,7 @@ Solution: Enter in `d38ceed3` into password and click on submit.
 
 #
 
-# Level 9
+# Basic Level 9
 
 ![image](https://github.com/user-attachments/assets/c875d10d-af8f-49cc-885d-ee031792a488)
 
@@ -246,7 +246,7 @@ Solution: Enter in `66007931` into password and click on submit.
 
 #
 
-# Level 10
+# Basic Level 10
 
 ![image](https://github.com/user-attachments/assets/786761e3-e191-426c-8ca2-258e54b648c1)
 
