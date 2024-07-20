@@ -81,7 +81,63 @@ Start on: ![image](https://www.hackthissite.org/playlevel/3/)
 
 ## Steps:
 
+#
 
+# Realistic Level 5
+
+![image](https://github.com/user-attachments/assets/2a0daef6-0e09-4c77-817e-9eaae18ede8c)
+
+Start on: ![image](https://www.hackthissite.org/playlevel/5/)
+
+![image](https://github.com/user-attachments/assets/c9e7c9bd-3b6c-4699-905a-7214c006bcf8)
+
+[Site](https://www.hackthissite.org/missions/realistic/5/)
+
+## Steps:
+
+First thing that I did is check out if there is `robots.txt` page on the website.
+- URL: `https://www.hackthissite.org/missions/realistic/5/robots.txt`
+
+![image](https://github.com/user-attachments/assets/4d356ec8-9e3b-4447-83fa-3fbcc36caa74)
+
+Robot.txt page gave me two clues; pages: `/lib` and `/secret`. I will explore the `/lib` first.
+- I downloaded the hash file but then it's not something that can be readable.
+
+![image](https://github.com/user-attachments/assets/4619ce7d-7f81-4861-abfc-fe1ced78849a)
+
+On the second page `/secret`, there are two .php pages: `admin.bak.php` and `admin.php`:
+
+![image](https://github.com/user-attachments/assets/304b0366-8ae5-4baa-b8f4-2d2fbf1376a2)
+
+Clicking on each of the .php: 
+
+- /admin.bak.php: have a hash value of `ebf7855722651449e5e1e71bf572261d`.
+
+![image](https://github.com/user-attachments/assets/f08a9ef6-668f-42d3-b105-d40d528f262e)
+
+- /admin.php just said "Invalid Password".
+
+![image](https://github.com/user-attachments/assets/5401ab39-f637-44eb-8f27-664a3490e293)
+
+Now, I used John the Ripper on Terminal to crack the hash:
+
+In order to do this I have to save the hash `ebf7855722651449e5e1e71bf572261d` into a Text Editor on Desktop of my Linux VM named "Hash_Value".
+
+![image](https://github.com/user-attachments/assets/14b1e1c0-8932-4a70-a179-359a3f629066)
+
+Next I open up terminal and use the John the Ripper Command:
+- Command: `John --format=RAW-md5 Desktop/Hash_Value`: Didn't work so I will try the md4 version because the prompt said it's 10 years old and outdated.
+- Command: `John --format=RAW-md4 Desktop/Hash_Value`
+
+Found the password to be: `13af6`
+
+![image](https://github.com/user-attachments/assets/987151b7-56d1-444c-ac7a-1fd18a62a07c)
+
+Now we can go back to the main website and click on Database and enter in the password: `13af6`
+
+![image](https://github.com/user-attachments/assets/af16899e-fae4-4c22-aa23-ee16e9455507)
+
+![image](https://github.com/user-attachments/assets/1ca73d77-387c-4e63-b71b-4117b17ded93)
 
 
 # Key Takeaway:
@@ -89,3 +145,5 @@ Start on: ![image](https://www.hackthissite.org/playlevel/3/)
 ## 1. We can tamper the score of an element by going into inspect element.
 
 ## 2. Most basic SQL injection: `' OR 1=1 --`
+
+## 5. /robots.txt; john --format=RAW-md4 [file]; we can use --show on john to show cracked password from before. 
