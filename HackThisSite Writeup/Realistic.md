@@ -139,6 +139,23 @@ Now we can go back to the main website and click on Database and enter in the pa
 
 ![image](https://github.com/user-attachments/assets/1ca73d77-387c-4e63-b71b-4117b17ded93)
 
+#
+
+# Realistic Level 6 
+
+![image](https://github.com/user-attachments/assets/703c8c7a-a630-41c8-9096-9db2e99c6c96)
+
+Start on: [Direct Link](https://www.hackthissite.org/playlevel/6/)
+
+![image](![image](https://github.com/user-attachments/assets/584fd64b-bfa5-4fd0-a579-6d0a8e67592e))
+
+[Site](https://www.hackthissite.org/missions/realistic/6/)
+
+## Steps:
+
+
+
+## Steps:
 
 # Key Takeaway:
 
