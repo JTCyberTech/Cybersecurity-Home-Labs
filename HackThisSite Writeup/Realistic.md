@@ -56,7 +56,19 @@ We will use SQLi to bypass the login page.
 
 
 
+Explanation:
+
+`' OR 1=1 --`
+- `'` (Single Quote): Used to close an open string in SQL. If the input is improperly sanitized, it can terminate the intended SQL string.
+- `OR 1=1`: Logical condition that always evalutes to true. This part of the injection makes the whole condition  true regardless of the actual data in the database.
+- `--` (Double Hyphen): Comment indicator in SQL. Everything after `--` is ignored by SQL engine.
+
+![image](https://github.com/user-attachments/assets/0f5e4bb4-da20-413a-88a7-2d36944924f7)
+
+
 
 # Key Takeaway:
 
 ## 1. We can tamper the score of an element by going into inspect element.
+
+## 2. Most basic SQL injection: `' OR 1=1 --`
