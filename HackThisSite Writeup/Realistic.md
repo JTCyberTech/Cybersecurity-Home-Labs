@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/707e64a4-af3e-4623-85d7-5e31c42f213b)
 
-Start off on: [Direct Link](https://www.hackthissite.org/playlevel/1/)
+Start on: [Direct Link](https://www.hackthissite.org/playlevel/1/)
 
 ![image](https://github.com/user-attachments/assets/b8a49a19-4ede-41b9-88ad-4218f167bf8d)
 
@@ -30,7 +30,7 @@ Select 5 on the webpage and click on vote.
 
 ![image](https://github.com/user-attachments/assets/13dbe64a-1160-4fba-b185-6991bf8470bd)
 
-Start off on: [Direct Link](https://www.hackthissite.org/playlevel/2/)
+Start on: [Direct Link](https://www.hackthissite.org/playlevel/2/)
 
 ![image](https://github.com/user-attachments/assets/62c7d5f7-26af-4cfc-9e7e-c837ddf0f457)
 
@@ -64,6 +64,23 @@ Explanation:
 - `--` (Double Hyphen): Comment indicator in SQL. Everything after `--` is ignored by SQL engine.
 
 ![image](https://github.com/user-attachments/assets/0f5e4bb4-da20-413a-88a7-2d36944924f7)
+
+Since it ignores everything after --, we don't have to put anything on the password box and just hit submit.
+
+#
+
+# Realistic Level 3
+
+![image](https://github.com/user-attachments/assets/90735a53-1f7b-4b53-ad6d-c53f5f3ef1ef)
+
+Start on: ![image](https://www.hackthissite.org/playlevel/3/)
+
+![image](https://github.com/user-attachments/assets/162776be-99bc-48e8-b2aa-0cd2d7ad6f7b)
+
+[Site](https://www.hackthissite.org/missions/realistic/3/)
+
+## Steps:
+
 
 
 
