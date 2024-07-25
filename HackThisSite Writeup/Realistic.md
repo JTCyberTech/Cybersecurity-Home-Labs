@@ -25,6 +25,9 @@ Start on: [Direct Link](https://www.hackthissite.org/playlevel/1/)
 
 3. Select 5 on the webpage and click on vote.
 
+![image](https://github.com/user-attachments/assets/8897ef7f-dee8-4f02-9132-a20bc4b9506f)
+
+
 #
 
 # Realistic Level 2
@@ -39,20 +42,20 @@ Start on: [Direct Link](https://www.hackthissite.org/playlevel/2/)
 
 ## Steps:
 
-First we inspect the page by right-clicking on the page > click on "View page source"
+1. First we inspect the page by right-clicking on the page > click on "View page source"
 
 ![image](https://github.com/user-attachments/assets/47aacc58-88b5-4363-8e41-963649fdeda9)
 
-On the page source, we can see that there is a hidden link called update: /missions/realistic/2/update.php
+2. On the page source, we can see that there is a hidden link called update: /missions/realistic/2/update.php
 - We will click on it.
 
 ![image](https://github.com/user-attachments/assets/c985ce2f-accc-4044-a264-9540877c8f92)
 
-The hidden link bring us to a login page.
+3. The hidden link bring us to a login page.
 
 ![image](https://github.com/user-attachments/assets/0b8dd7b1-e333-479c-aca5-74ce0c999c01)
 
-We will use SQLi to bypass the login page.
+4. We will use SQLi to bypass the login page.
 - Most basic SQLi = `' OR 1=1 --`
 
 Explanation:
@@ -64,7 +67,7 @@ Explanation:
 
 ![image](https://github.com/user-attachments/assets/0f5e4bb4-da20-413a-88a7-2d36944924f7)
 
-Since it ignores everything after --, we don't have to put anything on the password box and just hit submit.
+5. Since it ignores everything after --, we don't have to put anything on the password box and just hit submit and finish the challenge.
 
 #
 
@@ -80,7 +83,7 @@ Start on: [Direct Link](https://www.hackthissite.org/playlevel/3/)
 
 ## Steps:
 
-If we Inspect on the website, we can see the comment: 
+1. If we Inspect on the website, we can see the comment: 
 
 `<!--Note to the webmasterThis website has been hacked, but not totally destroyed. The old website is still up. I simply copied the old index.html file to oldindex.html and remade this one. Sorry about the inconvenience.-->`
 
@@ -94,25 +97,42 @@ If we Inspect on the website, we can see the comment:
 ![image](https://github.com/user-attachments/assets/e5d359f8-3b70-4284-8468-296ae89003b5)
 
 
-We found out that there is a file call "oldindex.html" that is created by copying the original "index.html" file.
+2. We found out that there is a file call "oldindex.html" that is created by copying the original "index.html" file.
 
 - Type in the URL: `https://www.hackthissite.org/missions/realistic/3/oldindex.html`
 
 ![image](https://github.com/user-attachments/assets/c6a36621-615b-44ca-98e9-0d9a8ab2192a)
 
-We will now look at the website to see what kind of stuff we can do with it.
+3. We will now look at the website to see what kind of stuff we can do with it.
 
 - There are two button in the original web page: "Read The Poetry" and "Submit Poetry".
 
-  - Read the Poetry: We can click on the poem and read it.
+4. Looking at Read the Poetry: We can click on the poem and read it.
 
 ![image](https://github.com/user-attachments/assets/34d51647-266a-4cbc-ad3c-4367c65b6b51)
 
-  - Submit Poetry: We can write the name of the poem and the details of the poem then click on the "add poem" button. And it will be uploaded to the website.
+- Clicking on Hacker, we can see the URL: `https://www.hackthissite.org/missions/realistic/3/readpoem.php?name=Hacker`
+
+![image](https://github.com/user-attachments/assets/8a0e099e-894a-4d00-98cf-2e7d7a8b1be7)
+
+- If we play around with the URL like deleting `?name=Hacker`: `https://www.hackthissite.org/missions/realistic/3/readpoem.php`, it will say: "You must enter a file"
+
+![image](https://github.com/user-attachments/assets/42a42d3f-d99d-45d7-9a9a-8bc473fefeac)
+
+URL explanation:
+
+- `https://www.hackthissite.org/`: The domain of the website.
+- `missions/realistic/3/readpoem.php`: The path to the PHP script on the server.
+- `?name`: The query string, where name is a parameter key.
+- `=Hacker`: Name of the parameter or the file: Hacker
+
+
+5. Look at Submit Poetry: We can write the name of the poem and the details of the poem then click on the "add poem" button. And it will be uploaded to the website.
+  - Note: Poems will be stored online immediately but will "not" be listed on the main poetry page until someone look at it.
 
 ![image](https://github.com/user-attachments/assets/3f7df8b7-4fd9-4a69-afbe-31de70a7ffad)
 
-I will try to add a poem to see what it does:
+6. I will try to add a poem to see what it does:
 
 ![image](https://github.com/user-attachments/assets/20d4ee25-99c3-465a-ad0a-aa33e19f4007)
 
@@ -121,7 +141,29 @@ I will try to add a poem to see what it does:
  
 ![image](https://github.com/user-attachments/assets/636f1a16-a875-4911-814f-9f7e5288d097)
 
-Now we need to see if it the website really store
+7. Now we have some clues that we can store a file on the website, which we can use the whole entire "oldindex.html" and replace the new "index.html".
+
+- We will right click and "view page source" on the oldindex.html page.
+
+![image](https://github.com/user-attachments/assets/4640f1c2-88fb-4af8-be3e-2241f8bc2487)
+
+- Check the box for "Line wrap" > Copy the entire code. 
+
+![image](https://github.com/user-attachments/assets/2720bb33-4ffa-4c98-bd11-0d35b5fc2649)
+
+
+8. Go to Submit Poem page in order to replace the new "index.html" with "oldindex.html":
+
+- Paste the entire thing on the Poem:
+
+![image](https://github.com/user-attachments/assets/e319f1a5-9ab4-48b0-b88f-a4bb05f03f30)
+
+- For the Name of the poem we have to put `../index.html` because that's where index.html is stored.
+
+![image](https://github.com/user-attachments/assets/2efef160-134e-4fa2-89c6-ce366a111b61)
+
+
+9. Click on add poem and finish the challenge.
 
 
 #
