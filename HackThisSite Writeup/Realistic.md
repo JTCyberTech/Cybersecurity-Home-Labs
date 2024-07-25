@@ -165,6 +165,53 @@ URL explanation:
 
 9. Click on add poem and finish the challenge.
 
+#
+
+# Realistic Level 4
+
+![image](https://github.com/user-attachments/assets/855eb8ee-b0d2-4b64-ac79-01c023148fac)
+
+Start on: [Direct Link](https://www.hackthissite.org/playlevel/4/)
+
+![image](https://github.com/user-attachments/assets/dd329a6f-e241-46fd-b085-757afb7f6252)
+
+[Realistic 5 - WebSite](https://www.hackthissite.org/missions/realistic/4/)
+
+## Steps:
+
+1. By looking at the website URL of the products, I noticed it's SQL because of `products.php?category=1` at the end.
+
+![image](https://github.com/user-attachments/assets/a3549bd1-f50a-4a5c-b332-5a212d4d37de)
+
+2. I will try to use SQL injection: `UNION ALL SELECT NULL, *, NULL, NULL FROM email;` to get all the email.
+
+Explanation:
+- `UNION ALL`: The UNION ALL operator is used to combine the results of two or more SELECT statements. Unlike UNION, which removes duplicate rows, UNION ALL includes all duplicates. In SQL Injection, UNION ALL is often used to combine the results of the original query with another query specified by the attacker.
+- `SELECT NULL, *, NULL, NULL`: This is the second SELECT statement being combined with the original query. The columns specified in this SELECT statement need to match the number and types of columns in the original query.
+  - NULL is a placeholder that signifies no value.
+  - `*` is a wildcard that selects all columns from the specified table (in this case, email).
+  - The entire statement selects a total of four columns: NULL, all columns from the email table, NULL, and another NULL.
+- FROM email: This specifies the table from which to select the columns. Here, the table is named email.
+
+![image](https://github.com/user-attachments/assets/f1e0c6a0-0350-4b87-8cab-ee169230cb77)
+
+3. We can scroll down and see the list of emails with this SQL injection:
+
+![image](https://github.com/user-attachments/assets/9b2462ba-c3cd-4f40-a46c-29d4bbf2a445)
+
+
+4. Now head to: https://www.hackthissite.org/pages/messages/msys/
+
+- Click on Compose
+
+![image](https://github.com/user-attachments/assets/12ebcbfa-eab4-46c6-a601-03afed110d46)
+
+
+5. Send all the email to SaveTheWhales:
+
+![image](https://github.com/user-attachments/assets/5284d1b8-704a-4c98-b7ef-e13fc27fd6f8)
+
+6. Click on send and finish the challenge.
 
 #
 
@@ -176,7 +223,7 @@ Start on: [Direct Link](https://www.hackthissite.org/playlevel/5/)
 
 ![image](https://github.com/user-attachments/assets/c9e7c9bd-3b6c-4699-905a-7214c006bcf8)
 
-[Site](https://www.hackthissite.org/missions/realistic/5/)
+[Realistic 5 - WebSite](https://www.hackthissite.org/missions/realistic/5/)
 
 ## Steps:
 
@@ -250,5 +297,9 @@ view-source:https://www.hackthissite.org/missions/realistic/7/showimages.php?fil
 ## 1. We can tamper the score of an element by going into inspect element.
 
 ## 2. Most basic SQL injection: `' OR 1=1 --`
+
+## 3. We can take advantage of php paths such as: `?name=Hacker`
+
+## 4. SQLi: `UNION ALL SELECT NULL, *, NULL, NULL FROM email;`
 
 ## 5. /robots.txt; john --format=RAW-md4 [file]; we can use --show on john to show cracked password from before. 
