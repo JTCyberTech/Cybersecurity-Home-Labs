@@ -1,12 +1,12 @@
 # Realistic Level 1
 
-Start on: [Direct Link](https://www.hackthissite.org/playlevel/1/)
-
 ![image](https://github.com/user-attachments/assets/707e64a4-af3e-4623-85d7-5e31c42f213b)
 
-[Site](https://www.hackthissite.org/missions/realistic/1/)
+Start on: [Direct Link](https://www.hackthissite.org/playlevel/1/)
 
-![image](https://github.com/user-attachments/assets/b8a49a19-4ede-41b9-88ad-4218f167bf8d)
+![image](https://github.com/user-attachments/assets/b8a49a19-4ede-41b9-88ad-4218f167bf8d
+
+[Realistic 1 - WebSite](https://www.hackthissite.org/missions/realistic/1/)
 
 ## Steps:
 
@@ -28,13 +28,13 @@ Select 5 on the webpage and click on vote.
 
 # Realistic Level 2
 
-Start on: [Direct Link](https://www.hackthissite.org/playlevel/2/)
-
 ![image](https://github.com/user-attachments/assets/13dbe64a-1160-4fba-b185-6991bf8470bd)
 
-[Site](https://www.hackthissite.org/missions/realistic/2/)
+Start on: [Direct Link](https://www.hackthissite.org/playlevel/2/)
 
 ![image](https://github.com/user-attachments/assets/62c7d5f7-26af-4cfc-9e7e-c837ddf0f457)
+
+[Realistic 2 - WebSite](https://www.hackthissite.org/missions/realistic/2/)
 
 ## Steps:
 
@@ -53,8 +53,6 @@ The hidden link bring us to a login page.
 
 We will use SQLi to bypass the login page.
 - Most basic SQLi = `' OR 1=1 --`
-
-
 
 Explanation:
 
@@ -77,7 +75,7 @@ Start on: [Direct Link](https://www.hackthissite.org/playlevel/3/)
 
 ![image](https://github.com/user-attachments/assets/162776be-99bc-48e8-b2aa-0cd2d7ad6f7b)
 
-[Site](https://www.hackthissite.org/missions/realistic/3/)
+[Realistic 3 - WebSite](https://www.hackthissite.org/missions/realistic/3/)
 
 ## Steps:
 
