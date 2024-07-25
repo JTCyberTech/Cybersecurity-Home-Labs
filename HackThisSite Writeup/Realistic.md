@@ -81,9 +81,46 @@ Start on: [Direct Link](https://www.hackthissite.org/playlevel/3/)
 
 ## Steps:
 
+If we Inspect on the website, we can see the comment: 
+
+`<!--Note to the webmasterThis website has been hacked, but not totally destroyed. The old website is still up. I simply copied the old index.html file to oldindex.html and remade this one. Sorry about the inconvenience.-->`
 
 
+- Right-Click on the website > Click on "Inspect".
 
+![image](https://github.com/user-attachments/assets/da41832f-524b-4719-8866-01cc7f4277cd)
+
+- Inspect element have comment start with: "<!--...-->"
+
+![image](https://github.com/user-attachments/assets/e5d359f8-3b70-4284-8468-296ae89003b5)
+
+
+We found out that there is a file call "oldindex.html" that is created by copying the original "index.html" file.
+
+- Type in the URL: `https://www.hackthissite.org/missions/realistic/3/oldindex.html`
+
+![image](https://github.com/user-attachments/assets/c6a36621-615b-44ca-98e9-0d9a8ab2192a)
+
+We will now look at the website to see what kind of stuff we can do with it.
+
+- There are two button in the original web page: "Read The Poetry" and "Submit Poetry".
+
+  - Read the Poetry: We can click on the poem and read it.
+
+![image](https://github.com/user-attachments/assets/34d51647-266a-4cbc-ad3c-4367c65b6b51)
+
+  - Submit Poetry: We can write the name of the poem and the details of the poem then click on the "add poem" button. And it will be uploaded to the website.
+
+![image](https://github.com/user-attachments/assets/3f7df8b7-4fd9-4a69-afbe-31de70a7ffad)
+
+I will try to add a poem to see what it does:
+
+![image](https://github.com/user-attachments/assets/20d4ee25-99c3-465a-ad0a-aa33e19f4007)
+
+- Result: `Your poem was successfully added. Thank you for your contributions`
+  - URL: https://www.hackthissite.org/missions/realistic/3/submitpoems2.php
+ 
+- 
 
 #
 
