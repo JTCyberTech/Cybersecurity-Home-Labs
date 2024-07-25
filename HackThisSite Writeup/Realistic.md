@@ -279,14 +279,40 @@ Now we can go back to the main website and click on Database and enter in the pa
 
 Start on: [Direct Link](https://www.hackthissite.org/playlevel/6/)
 
-![image](![image](https://github.com/user-attachments/assets/584fd64b-bfa5-4fd0-a579-6d0a8e67592e)
+![image](https://github.com/user-attachments/assets/9fef7dd7-0c5e-467e-80c7-746c814f356d)
 
-[Site](https://www.hackthissite.org/missions/realistic/6/)
+[Realistic 6 - WebSite](https://www.hackthissite.org/missions/realistic/6/)
+
+![image](https://github.com/user-attachments/assets/2e815b1d-f56c-4c74-a6a6-445cc3c0e651)
 
 ## Steps:
 
+1. I used this site to decrypt: https://telmo.pt/xecryption/
 
-## Steps:
+![image](https://github.com/user-attachments/assets/f9a40c01-4f29-4f97-9420-532fdd2fc314)
+
+2. Result: 
+
+- Samuel Smith
+
+Thank you for looking the other way on the increased levels of toxic chemicals in the river running alongside our industrial facilities. You can pick up your payment of $20,000 in the mailbox at the mansion on the corner of 53 and St. Charles tomorrow between the hours of 3:00am and 5:00am.
+
+Thank you,
+
+John Sculley
+ToxiCo Industrial Chemicals
+
+![image](https://github.com/user-attachments/assets/6368394b-0af9-41e8-a993-188acd3ecb76)
+
+3. Send the decrypted message back to ToxiCo_Watch
+
+![image](https://github.com/user-attachments/assets/bd497298-b3d8-4bee-b403-23d84c713dbb)
+
+4. Click on Send and finish the challenge.
+
+#
+
+# Realistic Level 7 
 
 view-source:https://www.hackthissite.org/missions/realistic/7/showimages.php?file=/images/admin/.htpasswd
 
