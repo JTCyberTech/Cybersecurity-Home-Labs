@@ -279,7 +279,7 @@ Now we can go back to the main website and click on Database and enter in the pa
 
 Start on: [Direct Link](https://www.hackthissite.org/playlevel/6/)
 
-![image](![image](https://github.com/user-attachments/assets/584fd64b-bfa5-4fd0-a579-6d0a8e67592e))
+![image](![image](https://github.com/user-attachments/assets/584fd64b-bfa5-4fd0-a579-6d0a8e67592e)
 
 [Site](https://www.hackthissite.org/missions/realistic/6/)
 
