@@ -23,7 +23,7 @@ Start on: [Direct Link](https://www.hackthissite.org/playlevel/1/)
 
 ![image](https://github.com/user-attachments/assets/ccfb3bbf-0cb9-4fc5-9fd1-97e3a0b7fbe9)
 
-3. Select 5 on the webpage and click on vote.
+3. Select 5 on the webpage and click on vote and finish the challenge.
 
 ![image](https://github.com/user-attachments/assets/8897ef7f-dee8-4f02-9132-a20bc4b9506f)
 
