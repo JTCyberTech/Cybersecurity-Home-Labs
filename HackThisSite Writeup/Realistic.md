@@ -4,7 +4,7 @@
 
 Start on: [Direct Link](https://www.hackthissite.org/playlevel/1/)
 
-![image](https://github.com/user-attachments/assets/b8a49a19-4ede-41b9-88ad-4218f167bf8d
+![image](https://github.com/user-attachments/assets/b8a49a19-4ede-41b9-88ad-4218f167bf8d)
 
 [Realistic 1 - WebSite](https://www.hackthissite.org/missions/realistic/1/)
 
