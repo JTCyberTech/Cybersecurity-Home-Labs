@@ -10,19 +10,20 @@ Start on: [Direct Link](https://www.hackthissite.org/playlevel/1/)
 
 ## Steps:
 
-Since the prompt told us to hack the site and make the band "Raging Inferno" to the top.
+1. Since the prompt told us to hack the site and make the band "Raging Inferno" to the top.
 
-We can tamper the element by right clicking the score next to the vote button > click on inspect.
+- We can temper the element by right clicking the score next to the vote button > click on inspect.
 
 ![image](https://github.com/user-attachments/assets/e8627a13-6a2e-474b-a3a5-8f919adad3f0)
 
+2. Tempering the elements:
 
-Expand: the `"<select name="vote"> == $0`
+- Expand: the `"<select name="vote"> == $0`
 - Change value="5" into value="5000000"
 
 ![image](https://github.com/user-attachments/assets/ccfb3bbf-0cb9-4fc5-9fd1-97e3a0b7fbe9)
 
-Select 5 on the webpage and click on vote.
+3. Select 5 on the webpage and click on vote.
 
 #
 
@@ -119,6 +120,8 @@ I will try to add a poem to see what it does:
   - URL: https://www.hackthissite.org/missions/realistic/3/submitpoems2.php
  
 ![image](https://github.com/user-attachments/assets/636f1a16-a875-4911-814f-9f7e5288d097)
+
+Now we need to see if it the website really store
 
 
 #
