@@ -73,7 +73,7 @@ Since it ignores everything after --, we don't have to put anything on the passw
 
 ![image](https://github.com/user-attachments/assets/90735a53-1f7b-4b53-ad6d-c53f5f3ef1ef)
 
-Start on: ![image](https://www.hackthissite.org/playlevel/3/)
+Start on: [Direct Link](https://www.hackthissite.org/playlevel/3/)
 
 ![image](https://github.com/user-attachments/assets/162776be-99bc-48e8-b2aa-0cd2d7ad6f7b)
 
@@ -81,13 +81,17 @@ Start on: ![image](https://www.hackthissite.org/playlevel/3/)
 
 ## Steps:
 
+
+
+
+
 #
 
 # Realistic Level 5
 
 ![image](https://github.com/user-attachments/assets/2a0daef6-0e09-4c77-817e-9eaae18ede8c)
 
-Start on: ![image](https://www.hackthissite.org/playlevel/5/)
+Start on: [Direct Link](https://www.hackthissite.org/playlevel/5/)
 
 ![image](https://github.com/user-attachments/assets/c9e7c9bd-3b6c-4699-905a-7214c006bcf8)
 
