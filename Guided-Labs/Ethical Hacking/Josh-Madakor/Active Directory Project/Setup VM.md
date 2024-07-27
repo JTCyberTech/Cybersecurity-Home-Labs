@@ -20,7 +20,7 @@
   - Thor = Name
   - 10.0.0.101 = IP Address
 
-3. For `Type`, select Microsoft Windows; `Version`, select Other Windows (64-bit)
+3. For `Type`, select "Microsoft Windows"; `Version`, select "Other Windows (64-bit)"
 
 ![image](https://github.com/user-attachments/assets/40321964-f2f7-4f80-b644-0db9d5010fcb)
 
@@ -49,7 +49,7 @@
   - Atlas = Name
   - 10.0.0.102 = IP Address
 
-3. For `Type`, select Microsoft Windows; `Version`, select Other Windows (64-bit)
+3. For `Type`, select "Microsoft Windows"; `Version`, select "Other Windows (64-bit)"
 
 ![image](https://github.com/user-attachments/assets/3b984580-473b-4fc3-97fa-cead9944af51)
 
@@ -74,12 +74,12 @@
 
 ![image](https://github.com/user-attachments/assets/eea599f0-3b41-43e9-862d-74394712ca6e)
 
-2. For `Name` on the second VM to be FileServer - Zeus - 10.0.0.103
+2. For `Name` on the third VM to be FileServer - Zeus - 10.0.0.103
   - FileServer = File Server
   - Zeus = Name
   - 10.0.0.103 = IP Address
 
-3. For `Type`, select Microsoft Windows; `Version`, select Other Windows (64-bit)
+3. For `Type`, select "Microsoft Windows"; `Version`, select "Other Windows (64-bit)"
 
 ![image](https://github.com/user-attachments/assets/2ded0203-106e-4cbf-8a8a-04907700b74c)
 
@@ -93,3 +93,22 @@
   - Make sure it's 20 GB and click on Finish.
 
 ![image](https://github.com/user-attachments/assets/2cca65c4-b3a0-4d9a-8a3b-d30ed1911cd1)
+
+#
+
+## Creating Client # 1 - ALD101-01
+
+![image](https://github.com/user-attachments/assets/6d0f1efd-42f7-4af1-989e-4009d6436c04)
+
+1. Click on New on Virtualbox to create a New Virtual machine.
+
+2. For `Name` on the forth VM to be Client - ALD101-01
+
+3. For `Type`, select "Microsoft Windows"; `Version`, select "Windows 10 (64-bit)"
+
+4. Click on `Hardware`:
+  - Make the `Base Memory` to "2 GB" or "2048 MB".
+  - Make the `Processors` to "4 CPU"
+
+5. Click on `Hard Disk`:
+  - Make sure it's 25 GB and click on Finish.
