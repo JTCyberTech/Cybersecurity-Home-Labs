@@ -78,5 +78,26 @@ Should have:
 
 # Security Control Categories
 
+Security Controls:
+- Migitates Vuln/risk to ensure CIA, nonrepudiation and Authentication of data. --CIA NA
 
+Use Risk Management Framework:
+- Security controls should be selected/developed in structured manner using risk management framework.
 
+Control Types:
+- Technical
+- Operational
+- Managerial
+
+## Technical (Logical) Controls
+
+- Category of Security Control; implement as system (hardware  software  firmware)
+
+Example:
+- Take Firewall, install it in your network. -> Technical control.
+- Take Antivirus, install it on your machine -> Technical Control.
+- Patch OS -> Technical Control.
+
+## Operational Controls
+
+- Category of Security Control; implement primarily by people rather than systems.
