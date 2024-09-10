@@ -198,7 +198,7 @@ Org approach to addressing/managing aftermath of cybersecurity breach or attack.
 
 ## Vulnerability Management
 
-Practice of identifying, classifying, priortizingm, remediating and mitigating software vuln
+Practice of identifying, classifying, priortizing, remediating and mitigating software vuln
 - Identify unrecognized source of vuln that we may not have thought of.
 
 ## Detection and Monitoring
@@ -221,3 +221,26 @@ Practice of Observing activity to identify anomalous patterns for further analys
 3. Which level of intelligence is directly used by Security Operations Center (SOC) staff to make real-time decisions in response to system alerts?
 - Tactical
   - Tactical intelligence refers to the immediate, actionable information necessary for frontline staff, such as SOC analysts, to make decisions about real-time security threats and alerts.
+
+#
+
+# Threat Classification
+
+Known Threat:
+- Can be identified using basic signature or pattern matching
+  - Malware; Documented Exploits
+  - Documented Exploit: software, data, or sequence of commands that takes adv of vuln to cause unintended behavior or gain unauthorized access to sensitive data.
+  - Identify by vuln scanner.
+- Easily detected using: signatures, hash values
+
+Unknown Threat:
+- Cannot be identified using basic signature or pattern matching
+  - Zero day exploits
+  - Obfuscated Malware code: execution malware author has attempted to hide thru various techniques such as compression, encryption, or encoding to avoid detection.
+  - Behavior based detection: malware detection method that evalutes object based on its intended actions before it can actually execute that behavior.
+    - Example: Opening an email on a sandbox to evaluated based on its behavior, see if its malicious.
+    - Look at ports being opened, calls being made in software to determine if its good or bad.
+  - Recycled threats: Process of combining/modifyingp parts of existing exploit code to create new threats thats hard to identify by automate scanning.
+    - Put different pieces and parts of different malware code and put them together, can bypass signature based detection.  
+  - Known unknowns: Classification of malware that contains obfuscation tech to circumvent signature matching and detection.
+  - Unknown unknowns: Classification of malware that  contains cokmpletely new attack vectors and exploits 
