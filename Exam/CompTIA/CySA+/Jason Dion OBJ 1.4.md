@@ -244,3 +244,8 @@ Unknown Threat:
     - Put different pieces and parts of different malware code and put them together, can bypass signature based detection.  
   - Known unknowns: Classification of malware that contains obfuscation tech to circumvent signature matching and detection.
   - Unknown unknowns: Classification of malware that  contains cokmpletely new attack vectors and exploits 
+
+#
+
+# Threat Actors 
+
