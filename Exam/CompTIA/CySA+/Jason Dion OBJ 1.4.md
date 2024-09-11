@@ -380,3 +380,67 @@ Difference:
 - APT: Type of cyber attack that establish long term presencewwwwon given network.
 
 Almost all Nation-State are APTs but NOT all APT are Nation-State Actors.
+
+#
+
+# Threat Research 
+
+- Reputational Threat Research
+- Indicator of Compromise (IoC)
+- Behavioral Threat Research
+
+
+Reputation Data
+- Blacklists of known threat sources; malware signature, IP address ranges, DNS domains
+  - Known things that are bad. See in Talos intelligence.
+ 
+
+Behavioral Threat Research
+- Term refers to correlation of IoCs into attack patterns.
+
+
+## Indicator of Compromise (IoC)
+
+A residual sign that an asset or network has been successfully attacked or is currently under attack.
+- Can be: hash value, IP address, file being left on system.
+  - Anything that gives clue that something has happened on the system.
+- IoC = evidence that attack was successful
+- IoA = Indicator of Attack
+  - Term used for evidence of an ongoing intrusion attempt.
+ 
+Indicator of Compromise Lookout:
+- Unauthorized software and files
+- Suspicious Emails
+- Suspicious registry and file system changes
+- Unknown port and protocol usuage
+- Excessive bandwidth usage
+- Rogue hardware
+- Service Disruption and defacement
+- Suspicious or unauthorized account usage
+
+#
+
+## Tactics, Technique and Procedure (TTP)
+
+Behavior patterns used in historical cyberattacks and adversary actions
+- Knowing this, will understand how adversary thinks and get one step ahead of them on defending.
+
+#
+
+Port Hopping:
+
+APT's C2 application uses any ports to communicate and jumps between different ports.
+- Using port 22, but detected then will jump to port 53 to evade detection.
+
+
+Fast Flux DNS:
+
+Rapidly changes IP address associated with a domain
+- One domain name but multiple IP addresses
+- Even if blacklisting IP addresses, hackers can change backend IP address and still route their communication to C2 server.
+- Detect: look at communication pattern emerge as changes keep happening with proxy logs.
+
+Data Exfiltration:
+
+Unauthorized transfer of data from computer or other device.
+- File types or compression or encryption being used on data.
