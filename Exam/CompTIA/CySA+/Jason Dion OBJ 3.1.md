@@ -133,3 +133,35 @@ Framework for analyzing cybersecurity Incidents and Intrusions by exploring the 
 
 Remember: All Control In Vulnerabilities
 
+#
+
+# Indicator Management
+
+- STIX
+- TAXII
+- OpenIOC
+- MISP
+
+Structured Threat Information eXpression (STIX):
+- Standard terminology for IoCs and ways of indicating relationships between them that is included as part of OASIS Cyber Threat Intelligence (CTI) Framework
+- Sharing info between systems and expressed in JavaScript object notation or JSON format.
+- **JSON format = STIX**
+
+- Observed Data
+- Indicators
+- Attack Pattern
+- Campagin and Threat Actors
+- Course of Action (COA)
+
+Trusted Automated eXchange of Indicator Information (TAXII):
+- Protocol for supplying codified information to automate incident detection an analysis.
+- Transmit data back and forth between servers and clients over secure connection like HTTPS using REST API.
+
+OpenIOC:
+- Framework by Mandiant that uses XML formatted files for supplying codified information and automate incident detection and analysis.
+- Open Source tool: different info for each entry.
+  - metadata: author, category info, confidence level, usage license.
+ 
+Malware Information Sharing Project (MISP):
+- Provides server platform for cyber threa intelligence sharing, proprietary format, supports OpenIOC definitions and can import/export STIX over TAXII
+- Open Source.
