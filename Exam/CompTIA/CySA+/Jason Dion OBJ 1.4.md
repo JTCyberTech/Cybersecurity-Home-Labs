@@ -249,3 +249,134 @@ Unknown Threat:
 
 # Threat Actors 
 
+- Script Kiddie
+- Insider threat
+- Competitor
+- Organized Crime
+- Hacktivist
+- Nation-State
+- APT
+- Supply Chain Threats
+
+#
+
+## Script Kiddle
+
+Use other people's tools to conduct attack as they do not have skills to make their own tools
+- Metasploit, aircrack-ng, John the Ripper
+- For: profit, gain credibility, fun
+- Low Orbit Ion Cannon to DDoS
+
+#
+
+## Insider Threats
+
+People who have authorized access to Org's network, policies, procedures and business practices.
+
+Example:
+- Unskilled insider; copy Org's file onto thumb drive, not authorized to access those file, can post online and cause a data breach.
+- Skilled insider; elevate their own user account permission to access data from across network as admin.
+
+Prevention:
+- Data Loss Prevention
+- Internal Defenses
+- SIEM search
+
+Types of Insider Threats:
+- Intentional
+- Unintentional
+
+Strategies to prevent:
+- Employee Education and Training
+- Access Control
+- Incident Response Plans
+- Regular Monitoring
+
+### Intentional Insider Threat
+
+Deliberately seeks to cause harm
+- Stealing sensitive information
+- Disrupting Operations
+- Launch cyber attack on Org
+
+### Unintentional Insider Threat
+
+Causes harm because of carelessness
+- Lack of knowledge
+- Human Error
+- Falling for Phishing emails
+- Using weak passwords
+- Accidentally sharing sensitive information with outside Org.
+
+#
+
+## Competitor
+
+Rogue business attempint to conduct cyber espionage against Org.
+
+- Focus on stealing proprietary data, disrupting business, damaging reputation.
+- Seek to use employee as insider threat in your Org to steal data
+- Break into your network over internet
+
+#
+
+## Organized Crime
+
+Focus on hacking and computer fraud to achieve financial gains
+
+- Use social engineering, ransomware to steal money.
+- Well funded, use advanced attacks/tools.
+
+#
+
+## Hacktivist
+
+Politically motivated hacker, target gov't or individuals to advance their poliical believes.
+
+- Environmentalist, hack into a logging company because want to see company's stock price fall to drive their business out to save the forest.
+- Can be individual or large group; Anonymous
+- Highly structured, high level of advanced attacks
+- Not well funded because most doing based of their believes.
+
+#
+
+## Nation-State
+
+Group of attackers with exceptional capability  funding  Org  with intent to hack network or system.
+
+- One of most skilled type of threat actors.
+- Group with skilled people, well Funded
+- Do not attack randomly. Determine specific target to achieve their political motives.
+- Almost all Nation State = APT (Advanced Persistent Threat) but,
+  - Not all APT is Nation State.
+  - Inside a system/network 6 to 9 months before network defenders discover them.
+
+
+Nation state actor refers to Gov't or Gov't affiliated group that conducts cyber attacks.
+- Used for: espionage (spyinhg), sabotage, intelligence gathering.
+
+#
+
+## Supply Chain Attack
+
+Normally conducted by Nation state actor.
+- Hacker hacks into a third party software company that Org uses. Creates a backdoor into the software, which compromise all Org that uses the third party software.
+- Attack is directed at the third party company's customers instead of the third party company.
+
+#
+
+## Advanced Persistence Threat  (APT)
+
+An attacker establishes long term presence on a network in order to gather sensitive information.
+- Nation-States, Criminal Organizations, Individual hackers
+- Well-funded, organized, high persistence, determination in achieving their goals.
+- Living off the land: Using tools that already existed in the targeted network to blend in.
+
+Goal: Harvest sensitive data, intellectual property and other sensitive info.
+
+
+Difference:
+- Nationa-State: Affiliated with Gov't
+- APT: Type of cyber attack that establish long term presencewwwwon given network.
+
+Almost all Nation-State are APTs but NOT all APT are Nation-State Actors.
