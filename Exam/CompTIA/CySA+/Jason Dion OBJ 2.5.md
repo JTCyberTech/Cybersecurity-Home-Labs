@@ -214,3 +214,59 @@ Example:
 - Confidentiality can be place:
   - Adding Access control system, can control which users can access backup.
   - Adding encryption, even if lost or stolen, no one can read them.
+
+#
+
+# Threat Modeling
+
+Identifies and assesses the possible threat actors and attack vectors that pose a risk to security of an app  network  systems.
+- Need to consider both defender and attacker's point of view.
+- Can be used against corporate networks in general at large scale.
+
+Three Main Areas for Threat Modeling
+- Adversary Capability
+- Attack Surface
+- Attack Vector
+
+Adversary Capability
+- Formal classification of resources and expertise available to particular threat actor.
+- Example:
+  - Do they use acquired and augmented tools? (Commodity malware/open source tools and techniques)
+  - Do they have developed capability? (Can identify and exploit zero day vulnerabilities/ Deploy significant human and financial resources to attack planning and execution.)
+  - Are they advanced? (Can exploit things like supply chains and introduce vuln in early cycle where you don't know they're inside your system)
+  - Dealing with Integrated approach? (Nation-State, they use integrated approach, cyber and non-cyber methods to achieve their goals)
+
+
+Attack Vector
+
+Specific path by which threat actor gains unauthorized access to system.
+- Three types: Cyber, huamn, physical
+- Cyber: Using hardware or software agianst IT system.
+- Human: using social engineering to conduct your attack thru coercion, impresonation, force.
+- Physcial: Trying to take over local access by being on-premise to do your attack.
+- 
+ 
+#
+
+## Attack Surface
+
+Point at which network or application receives external connections or input/outputs that are potential vectors to be exploited by threat actor.
+- To detemine your attack surface, you have to inventory your assets. (Know what is in your network to defend what is there)
+
+Threat Modeling in terms of attack surface:
+- The holistic Network (switches, routers, computers, all those things make up your corporate data network.)
+- Website or Cloud services (Websites or cloud services you have)
+- Custom software application (Form or control on user interface or you have software that been deployed that uses API or file or data imports.
+
+#
+
+Likelihood:
+
+The Chance of a threat being realized, usually expressd as a percentage. 
+- Example: If nation state going after my Org, 80-90% successful, they have zero day exploits.
+
+
+Impact:
+
+ Cost of security incident or disaster scenario which is usually expressed in cost.
+
