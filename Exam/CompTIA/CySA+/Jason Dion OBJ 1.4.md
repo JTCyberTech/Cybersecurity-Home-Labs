@@ -476,3 +476,14 @@ See similarities between other infected hosts.
 
 What allowed it to start up? Is there a way we can block the attack vector in future?
 - Can use whitelisting system, blacklist that vuln application until patch
+
+#
+
+# Open Source Intelligent (OSINT)
+
+The use of publicly available information, plus tools used to aggregate and search for it.
+- Publicly information
+- Social Media
+- Dating Sites
+- HTML Code
+- Metadata
