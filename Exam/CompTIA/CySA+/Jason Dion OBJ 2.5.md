@@ -270,3 +270,12 @@ Impact:
 
  Cost of security incident or disaster scenario which is usually expressed in cost.
 
+#
+
+# Bug Bounty
+
+A way for companies to crowdsource security testing of their software services and applications to identify and address potential security issues.
+- Can participate in your own company by finding and reporting problem ein your own system.
+- Can use bug bounty to show your skills and gain recognition in cyber security community.
+- Approach testing in responsible and ethwical manner, avoid causing harm/disruption to system.
+- Obtain permissions (NDAs), use robust system for tracking, triaging, remediating vuln.
