@@ -71,6 +71,23 @@
 
 # Quiz 6
 
-1. 
+1. Which tool allows for the creation of graphs to visualize network traffic flows through router and switch interfaces by utilizing SNMP
 
+- MRTG 
+  - A Multi Router Trafic Grapher is used for graphing traffic trends on network links and is particularly useful for spotting unusual traffic patterns.
 
+2. You are a cybersecurity analyst investigating a potential network issue at your company. You suspect there is unusual traffic on your company's network. Which of the following would be most effective command-line for capturing and analyzing network packets in real-time to investigate this issue?
+
+- tcpdump
+  - tcpdump is a powerful command-line tool used for capturing and analyzing network packets in real-time, which would be effective for investigating unusual network traffic.
+
+3. You are a cybersecurity analyst at Dion Training Solutions and have been observing an unusual pattern in the company’s DNS logs. Over the past week, there has been a significant increase in NXDOMAIN responses, which indicates that numerous domain lookups are failing because the domains do not exist. Upon closer inspection, you notice repeated attempts to resolve domain names that follow no logical naming pattern and appear to be randomly generated. There are no signs of unusually high network traffic, and the domains being queried are not matching any known malware signatures in your database. Based on this scenario, which of the following is the MOST likely cause of the increase in NXDOMAIN responses in the organization's DNS logs?
+
+- The network is likely infected with malware using a Domain Generation Algorithm (DGA).
+  - The pattern described in the scenario is a classic behavior of malware that employs DGAs to communicate with command and control servers.
+
+#
+
+# Quiz 7
+
+1.
