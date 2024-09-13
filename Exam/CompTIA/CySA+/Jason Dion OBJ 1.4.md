@@ -487,3 +487,32 @@ The use of publicly available information, plus tools used to aggregate and sear
 - Dating Sites
 - HTML Code
 - Metadata
+
+#
+
+# Deep/Dark Web
+
+Parts of internewwt that are not easily accessible thru traditional search engines.
+
+## Deep Web
+
+Portion of internet can't search by search engines (Google Bing)
+- Looking at private databases, subscription website, not publicly accessible
+- Example: Medical and Scientific Research, University Libraries, Gov't Databases
+- Sensitive info not meant to be searchable by public
+- Majority of its not considered illegal or malicious.
+
+For Cybersecurity Use:
+- Can be used as source of info to gather intelligence on potential threat
+
+#
+
+## Dark Web
+
+Specific part of Deep web that's used for illegal activities: Buying drugs, weapons, stolen personal info (Credit Cards)
+- Criminal haven and high risk area where hacking activities occur.
+
+For Cybersecurity Use:
+- Can be used to monitor stolen data or info related to Org.
+- Track activities of known or suspected Cyber criminal groups, identify any pattern or trends in their methods and techniques.
+- Track prices and availability of tools and services commonly used in cyber attacks.
