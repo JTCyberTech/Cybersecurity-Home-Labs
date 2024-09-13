@@ -48,4 +48,29 @@
 
 # Quiz 5 
 
+1. What is the utilization of insights gained from threat research and threat modeling to proactively discover evidence of adversarial TTPs within a network or system called?
+
+- Threat Hunting
+
+  - Threat hunting is the utilization of insights gained from threat research and threat modeling to proactively discover evidence of adversarial TTPs within a network or system.
+
+2. Which of the following is a characteristic of the Deep Web?
+
+- Has info not indexed by standard search engines
+
+  - The Deep Web contains information that is not indexed by standard search engines, making it invisible to conventional searches.
+
+3. A cybersecurity analyst is reviewing the logs of a proxy server and saw the following URL, https://www.google.com/search?q=*%40diontraining.com. Which of the following is true about the results of this search?
+
+- Returns all webpages containing email addressw affiliated with diontraining.com
+
+  - %40 = @
+  - Google interprets this statement as @diontraining.com and understands that the user is searching for email addresses since %40 is the hex code for the @ symbol. The * is a wild card character meaning that any text could be substituted for the * in the query. This type of search would provide an attacker with a list of email addresses associated with diontraining.com, and therefore could be used as part of a spear-phishing campaign.
+
+#
+
+# Quiz 6
+
 1. 
+
+
