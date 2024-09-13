@@ -21,3 +21,107 @@ Website Harvesting:
 
 Community driven database that keep track of IP addresses reported for abusive behavior.
 - Enables Org to take proactive approach to its cybersecurity.
+
+
+#
+
+# Tcpdump
+
+Data network packet  analyzer that runs under CLI and displays TCP/IP that is transmitted or received on a network.
+
+
+
+#
+
+# Wireshark 
+
+Free/Open Source GUI based packet analyzer used for network troubleshooting, analysis, software and communications protocola development and education.
+
+#
+
+# Flow Analysis
+
+Full Packet Capture (FPC):
+- Captures entire packet, including header, payload for all traffic.
+
+Flow Collector:
+- Means of recording network traffic's metadata and statistics about network traffic, rather than recording every frame.
+- Capture info about flow instead of data itself
+- save a lot of space.
+- Won't have the contents of what was going over network. Just info about it.
+- Can help us to highlight trends and patterns in traffic being generated.
+- Allow us to get alerts based on anomalies, different patterns and triggers.
+
+#
+
+# IP and DNS Analysis
+
+Malware used to be configured to contact specific static IP or DNS name as part of its code.
+
+
+Known bad IP Address
+- IP addresses or range of addresses that appears on one or more block lists.
+- Reputation-based risk intelligence is used to create IP/URL Blocklist.
+
+Bypass:
+- Attacker use domain generation algorithms to overcome blocklist.
+
+Domain Generation Algorithm (DGA)
+- Method used by malware to evade blocklists by dynamically generatingw domain names for C2 network.
+
+1. Attacker sets up one or more Dynamic DNS services
+- Allow attacker to be able to have domain name that can automatically generate anytime.
+- Attacker sign up with service using fake payment/credentials.
+
+2. Malware code implements a DGA to create a list of new domain names.
+- Algorithm that uses some kind of seed or random number or time based.
+- A start date = seed, going to create output of a bunch of cryptic strings that basically have numbers and letters to make up domain names.
+
+
+3. Parallel DGA is used to create name records on the DDNS service
+- Need the  DDNS service to have it so those two can match up.
+- If they both use the same seed, they're going to have same matching names.
+
+4. Malware tries a selection of domains it has created to connect to C2.
+
+5. C2 server communicates with a new seed for DGA to prevent being blocked
+
+DGA: dynamic list that is constantly changing.
+- Constantly chaning architecture, also known as fast flux network.
+
+Fast Flux Network
+- Method used by malware to hide presence of C2 networks by continually changing host IP addresses in domain records using domain generation algorithms.
+
+How can DGA be detected?
+- See a lot of call outs from your systems to random IP addresses that looks: `A1ZWBR93.com` `94ZGYS9.com`
+  - Random series of letters/numbers.com
+- If you get high rate of NXDOMAIN errors when resolving the DNS, it could be an indicator of DGA.
+  - Site error: `DNS_PROBE_FINISHED_NXDOMAIN`
+ 
+Migitation for DGA:
+- Use Secure Recursive DNS Resolver
+
+Secure Recursive DNS Resolver
+- Allow one trusted DNS server to communicate with other trusted DNS server to search for IP address and return it to client.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
