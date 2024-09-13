@@ -430,3 +430,49 @@ Data Exfiltration:
 
 Unauthorized transfer of data from computer or other device.
 - File types or compression or encryption being used on data.
+
+#
+
+# Threat Hunting
+
+Cybersecurity technique designed to detect presence of threat that have not been discovered by normal security monitoring.
+
+- Less disruptive than PenTest.
+- Relies on tools developed for regular security monitoring and incident response.
+- Need to assume existing rules have failed when threat hunting. (Looking for things that is not detected by SIEM)
+
+Establishing a Hypothesis
+- Hypothesis: derived from threat modeling and based on potential events with higher likelihood and higher impact.
+- Think: who might want to harm us? break into our network? How they can do that?
+
+Profiling Threat Actors and Activities
+- Involves creation of scenarios that show how a prospective attacker might attempt an intrusion and what their obj might be.'
+
+Helps:
+- Improve detection capabilities
+- Integrate Intelligence
+- Reduce Attack Surface
+- Block Attack Vectors
+- Identify Critical Assets
+
+#
+
+## Analyze Network Traffic
+
+Determine if there is any outgoing traffic to some sort of suspicious domain or C2 server based on our threat research/reputational databases.
+- Gives a list of diffewrent hosts to investigate.
+
+## Analyze Executable Process list
+
+See what programs/services are running and which ones were opening the network connection.
+- See if it's something that's suspicious that needs to be investigate further.
+
+## Analyze other Infected hosts
+
+See similarities between other infected hosts.
+- Are they running sawme malicious process, using diffewrent things to avoid detection?
+
+## Identify how the malicious process was executed
+
+What allowed it to start up? Is there a way we can block the attack vector in future?
+- Can use whitelisting system, blacklist that vuln application until patch
