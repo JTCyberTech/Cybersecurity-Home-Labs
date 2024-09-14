@@ -140,9 +140,12 @@ Reverse Proxy:
 - Logs from reverse proxy:
   - Can be analyzed for indicators of attack or compromise (malicious code in HTTP request header/URLs)
 
+#
 
+# Web Application Firewall (WAF)
 
-
+- Firewall designed to protect software running on web servers and their backend databases from code injection and DoS attack.
+- Prevent web-based exploits and vulnerabilities like SQLi, XMLi, Cross-site scripting (XSS) attacks.
 
 
 
