@@ -172,6 +172,212 @@ Security Onion:
 
 #
 
+# Endpoint Analysis
+
+Five endpoint protection tools:
+- AntiVirus (AV)
+- HIDS/HIPS
+- EPP (Endpoint Protection Platform)
+- EDR (Endpoint Detection Response Platform)
+- UEBA (User and Entity Behavioral Analytics)
+
+Anti-Virus (AV)
+- Software that detects and removes virus infections and malwares: worms. trojans, rootkits, adware, spyware, password crackers, network, mappers, DoS tools.
+
+Host-Based IDS/IPS:
+- Type of IDS or IPS that monitors a computer system for unexpected behavior or drastic changes to the system's state on an endpoint.
+
+Endpoint Protection Platform (EPP):
+- Software agent and monitoring system that performs multiple security tasks such as anti-virus, HIDS/HIPS, firewall, DLP, file encryption.
+
+User and Entity Behavior Analytics (UEBA):
+- System that can provide automated identification of suspicious activity by user accounts and computer hosts.
+- Heavily dependent on adv computing techni (AI and ML)
+- Microsoft and Splunk
+
+## Endpoint Detection and Respnse (EDR):
+
+- Software agent that collects system adata and logs for anlysis by monitoring system to provide early detection of threats.
+
+#
+
+# Sandboxing
+
+- A computing environment isolated from host system to guarantee the enviornment runs in controlled, secure fashion and that communication links between sandbox and host are usually completely prohibited.
+- Allows quickly test malware in multi environments
+- Should not be used for any other purpose except malware analysis
+
+Flare VM:
+- Allow to run Window binary on system and see what the status is and all the different changes the malware is doing.
+
+## Cuckoo Sandbox
+
+- Allow to automatically run different malware samples and see what they do inside of a Linux, Windows or Mac Environment.
+
+## Joe Sandbox
+
+- Allow a security research or cybersecurity analyst to analyze and understand behavior of malware sample in a safe and controlled environment.
+- Emulate the environment of a real computer and allows malware samples to be run and analyzed in a safe and isolated environment.
+- Provides a user-friendly interface to easily view and analyze collected data from these malware samples.
+
+#
+
+# Reverse Engineering
+
+- Process of analyzing the structure of hardware or software to reveal more about how it functions.
+- Java is easily decomplied back into source code.
+- Attempt to identify malware by finding strings to use as a signature for rule based detection.
+
+Malware writers often obfuscate the code before it is assembled or complied to prevent analysis
+
+
+Disassembler:
+- Computer program that translates machine language into assembly language.
+
+Machine Code:
+- Binary code executed by the processor, typically represented as 2 hex digits for each byte.
+
+File Signature (Magic Number):
+- First two bytes of binary header that indicates its file type.
+- Hackers can put .exe at the end of a .png file, but the magic number will always tell what type of file it is.
+
+- When reading first two bytes of Windows portable executable file (EXE  DLL  SYS  DRV  COM), it will always start with 4D 5A in HEX, MZ in ASCII or TV in Base64 encoding.
+
+Assembly code: 
+- Native processor instructions used to implement the program
+
+Decomplier:
+- Software that translates binary or low level machine language code into higher level code.
+
+High-level Code:
+- Real or Pseudocode in human readable form that makes it easier to identify functions, variables, and programming logic used in the code.
+- C, Java
+
+Program Packer:
+- Method of compression in which executable is mostly compressed and part that isn't compressed contains code to decompress the executable.
+- type of self-extracting archive
+
+## String
+
+- Any Sequence of encoded charawcters that appears within executable file.
+- If malware contain string with function called InternetOpenUrl,  another string that is a URL probably attempts to download something from that web address.
+- Tool: dump all strings with over 3 characters in ASCII or Unicode encoding to a text file or to your screen to analyze.
+
+#
+
+
+# Malware Exploitation
+
+Exploit Technique:
+- Specific method by which malware code infects a target host.
+- Fileless techniques: Avoid detection by signature based security software.
+
+1. Dropper or downloader
+- Run lightweight shell code on your system
+- Trick user into clicking on something or running the code, and that way, they are infecting their own machine.
+
+2. Maintain Access
+- Malware is on the system, will install stage downloader, download something like remote access Trojan. 
+
+
+3. Strength Access
+- Use remote access tool, start looking around and identify and infect other system.
+- System that have higher values (Servers or Domain Controller)
+
+
+4. Actions on Objectives
+- Copying/Stealing files
+- Encryping files 
+
+
+5. Concealment
+- Maintain their tool access, might start hiding themself, covering their track/ deleting logs.
+
+
+Dropper:
+- Malware designed to install or run other types of malware embedded in a payload on infected host.
+
+Downloader:
+- Code that connects to internet to retrieve additional tools after initial infection by a droppper.
+
+Shellcode:
+- Any lightweight code designed to run an exploit on the target which may include any type of code format from scripting language to binary code.
+
+Code injection:
+- Exploit techni that runs malicious code with the identification number of legitimate process.
+
+Living off the Land:
+- Exploit techni that uses standard system tools and packages to perform intrusions
+
+
+# Behavior Analysis
+
+Sysinternals:
+- Suite of tools designed to assist with troubleshooting issues with Windows and many of the tools are suited to investigating security issues.
+
+System Idle (PID 0)/ System (PID 4)
+- Kewrnel level binaries that are used  as parent of the first user-mode process (Session Manager SubSystem - smss.exe)
+
+Client Server Runtime SubSystem (csrss.exe)
+- Manage low level Windows functions and it is normal to see several of these running (as long as they are launched from %SystemRoot%\System32 and have no parent)
+
+WININIT (wininit.exe)
+- Manage drivers and services and should only have a single instance running as process
+
+Services.exe 
+- Host nonboot drivers and background services and should only have one instance running as a child of wininit.exe
+- Services will be started by the SYSTEM, LOCAL SERVICE or NETWORK SERVICE accounts.
+
+Local Security  Authority SubSystem (lsass.exe)
+- Handles authentication and authorization services for system and should have a single instance running as child of wininit.exe
+
+WINLOGON (winlogon.exe)
+- Manage access to the user desktop and should have only one instance for each user session with Desktop Window Manager (dwm.exe) as a child process in modern versions of Windows.
+
+USERINIT (userinit.exe)
+- Set up the shell (typically explorer.exe) and then quits, so you should only see this process briefly after log-on.
+
+Explorer (Explorer.exe)
+- Typcial user shell launched with the user's account privilieges rather than SYSTEMS's which is likely to be the parent for all processes started by logged on user.
+
+```
+Single idle and system PIDs
+One wininit.exe
+One services.exe others should be children of services.exe or svchost.exe (just a wrapper)
+System services should be digitally signed
+Services should be launched by either the SYSTEM, LOCAL SERVICE, or NETWORK SERVICE accounts
+One lsass.exe
+One winlogon.exe
+Userinit.exe should not persist
+Explorer.exe file manager and parent process
+```
+
+Found a suspicious process? Check the following:
+
+```
+Read/write file access
+Launch location
+Obfuscated/compressed
+Parent process
+Try killing it
+Network traffic
+Sysinternal Process Explorer
+Tasklist command
+Sysinternals Autoruns
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
