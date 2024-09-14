@@ -162,4 +162,25 @@ Based on this rule, which of the following malicious packets would this IDS aler
 
 # Quiz 9
 
-1.
+1. Jamario, a security analyst at Dion Training Solutions, received an email with the subject line "Your account is blocked by the administrator" which was flagged by the company's email security gateway. Suspicious of the email's origin, Jamario decides to conduct an email header analysis to verify the legitimacy of the email. In conducting an email header analysis, what should Jamario prioritize to verify the email's validity?
+
+- Authentication Result for sender authorization.
+
+  - The "Authentication-Results" in the email header provide crucial information regarding the sender's domain and whether the message passed various authentication checks, which is vital in determining the email's legitimacy.
+
+
+2. You just received a notification that your company's email servers have been blacklisted due to reports of spam originating from your domain. What information do you need to start investigating the source of the spam emails?
+
+- Full email heawder from one of the spam messages
+  - You should first request a copy of one of the spam messages that include the full email header. By reading through the full headers of one of the messages, you can determine where the email originated from, whether it was from your email system or if it was external, and if it was a spoofed email or a legitimate email. Once this information has been analyzed, you can then continue your analysis further based on those findings, whether that be analyzing your email server, the firewalls, or other areas of concern.
+
+
+3. Jamario, a security analyst at Dion Training Solutions, is investigating a potential impersonation attack where an employee received a request to transfer funds. Which of the following is the MOST effective step Jamario should take to examine and confirm the legitimacy of the email?
+
+- Verify the email's internet header for origin clues.
+  - The internet header includes critical information such as the originating IP address and the path the email took, which can be instrumental in spotting impersonation or spoofing attempts.
+
+#
+
+# Quiz 10
+
