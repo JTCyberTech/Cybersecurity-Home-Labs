@@ -385,15 +385,66 @@ Yara
 - Multi-platform program running on Windows  Linux  Mac OS X for identifying classifying and describing malware samples.
 
 
+#
+
+# Email IoCs
+
+Business Email Compromise (BEC)
+- An impersonation attack in which the attacker gains controls of an employee's account and uses it to convince other employees to perform fraudulent actions.
+
+Forwarding
+- When a phishing email is formattewd to appeawr as if it has come as part of a reply or forward chain.
+
+#
+
+# Email Header Analysis
+
+Email internet header:
+- Record of email servers involved in transferring an email message from a sender to a recipient.
+
+Attackers exploit the fact that there are actually three sender address fields in an email.
+- Display From Header: friendly name with anything we want to put in there.
+- Envelope From: Various label hidden from mail client.
+- Received From/By: List of MTAs that processed email.
 
 
+#
+
+# Email Content Analysis
+
+- Attacker must also craft a sort of payload to complete the exploit when victim opens a message.
+
+Multipurpose Internet Mail Extensions (MIME)
+- Allows a body of email to support different formats such as HTML, rich text format (RTF), binary data, encoded as Base64 ASCII characters, attachments.
+
+Malicious Payload: Exploit:
+- Message data that contains scripts or objects that target some vuln in the mail client.
+
+Malicious Payload: Attachment:
+- Massage that contain file attachment in the hope that the user will execute or open it.
+
+## Embedded Links:
+
+- A link comprising a friendly string plus the URL or shortened URL to hide the identity of the real target.
 
 
+#
 
+# Email Server Security
 
+- Spoofing attacks can be mitigated by configuring mitigated by configurating authentication for email server systems.
 
+## Sender Policy Framewaork (SPF)
 
+- DNS record identifying hosts authorized to send mail for domain with only one being allowaed per domain.
 
+## DomainKeys Identified Mail (DKIM)
+
+- Provides cryptographic authentication mechanism for mail utilizing public key published as a DNS record.
+
+## Domain Based Message Authentication Reporting and Conformance (DMARC)
+
+- Framework for ensuring proper application of SPF and DKIM utilizing a policy published as a DNS record.
 
 
 
