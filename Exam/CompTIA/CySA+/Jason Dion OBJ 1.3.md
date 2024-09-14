@@ -148,8 +148,29 @@ Reverse Proxy:
 - Prevent web-based exploits and vulnerabilities like SQLi, XMLi, Cross-site scripting (XSS) attacks.
 
 
+#
 
+# Intrusion Detection System (IDS) 
 
+- Software/Hardware system that scans  audits  monitors the security infrastructure for signs of attacks in progress.
+- IPS = IDS that can actively block an attack.
+
+Three common software that can config IDS or IPS:
+- Snort
+- Zeek (Bro)
+- Security Onion
+
+Snort:
+- Open Source software available for Windows and Selected Linux that can operate IDS or IPS mode.
+- Use Oinkcode that gives you all the latest security threats.
+
+Zeek:
+- Open Source IDS for Linux platforms that contains a scripting engine which can be used to act on significant events (notice) by generating alert or implementing some sort of shunning mechanism.
+
+Security Onion:
+- Open Source Linux platform for security monitoring, incident response, threat hunting that bundles Snort, Suricata, Zeek, Wireshark, NetworkMiner.
+
+#
 
 
 
