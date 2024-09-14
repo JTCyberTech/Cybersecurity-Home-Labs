@@ -135,3 +135,31 @@ Based on this rule, which of the following malicious packets would this IDS aler
 - An inbound malicious TCP packet
 
   - The rule header is set to alert only on TCP packets based on the first line of this IDS rule. The flow condition is set as "to_client,established", which means that only inbound traffic will be analyzed against this rule and only inbound traffic for connections that are already established. Therefore, this rule will alert on an inbound malicious TCP packet only when the packet matches all the conditions listed in this rule. This rule is an example of a Snort IDS rule. For the exam, you do not need to be able to create your own IDS rules, but you should be able to read them and pick out data.
+
+#
+
+# Quiz 8
+
+1. Which technique would provide the largest increase in security on a network with ICS, SCADA, or IoT devices?
+
+- User and entity behavior analytics
+  - Traditional cybersecurity tools struggle to detect threats in environments with ICS, SCADA, and IoT devices due to their proprietary or unpatchable operating systems. User and entity behavior analytics (UEBA) offer a solution by analyzing normal behavior and detecting deviations, leveraging advanced techniques like AI and machine learning. Conversely, traditional antivirus tools are incompatible and ineffective for these devices, while host-based IDS/IPS and endpoint protection platforms may face compatibility issues and overhead in such environments.
+
+2. You are conducting an investigation on a suspected compromise. You have noticed several files that you don't recognize. How can you quickly and effectively check if the files have been infected with malware?
+
+- Submit the files to an Open Source Intelligence provider like VirusTotal
+
+  - The best option is to submit them to an open-source intelligence provider like VirusTotal. VirusTotal allows you to quickly analyze suspicious files and URLs to detect types of malware. It then automatically shares them with the security community, as well. Disassembly and static analysis would require a higher level of knowledge and more time to complete. Running the Strings tool can help identify text if the code is not encoded in a specific way within the malware, but you have to know what you are looking for, such as a malware signature.
+
+3. Your company just launched a new invoicing website for use by your five largest vendors. You are the cybersecurity analyst and have been receiving numerous phone calls that the webpage is timing out and the website overall is performing slowly. You have noticed that the website received three million requests in just 24 hours and the service has now become unavailable for use. What do you recommend should be implemented to restore and maintain the availability of the new invoicing system?
+
+- Allowlisting
+
+  - By implementing allowlisting of the authorized IP addresses for the five largest vendors, they will be the only ones who will access the webserver. This can be done by creating rules in the Access Control List (ACL) to deny ALL other users except these five vendors, thereby dropping a large number of requests from any other IP addresses, such as those from an attacker. Based on the scenario's description, it appears like the system is under some form of denial of service attack.
+
+ 
+#
+
+# Quiz 9
+
+1.
