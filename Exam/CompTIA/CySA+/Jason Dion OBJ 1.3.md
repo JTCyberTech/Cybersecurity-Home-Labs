@@ -366,12 +366,23 @@ Tasklist command
 Sysinternals Autoruns
 ```
 
+# 
 
+# Endpoint Detection and Response
 
+- Endpoint detection and response require tuning to reduce false positives.
 
+## VirusTotal (Virustotal.com)
 
+- Inspects items with over 70 antivirus scanners and URL/domain blacklisting services, in addition to a myriad of tools to extract signals from studied content.
 
+#
 
+Malware Attribute Enumeration and Charactization (MAEC) Scheme
+- Standardized language for sharing structured information about malware that is complementary to STIX and TAXII to improve the automated sharing of threat intelligence.
+
+Yara
+- Multi-platform program running on Windows  Linux  Mac OS X for identifying classifying and describing malware samples.
 
 
 
