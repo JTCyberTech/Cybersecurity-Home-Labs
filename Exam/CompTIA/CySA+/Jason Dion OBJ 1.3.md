@@ -104,9 +104,41 @@ Migitation for DGA:
 Secure Recursive DNS Resolver
 - Allow one trusted DNS server to communicate with other trusted DNS server to search for IP address and return it to client.
 
+#
+
+# Proxy Logs
+
+Proxy server:
+- Act as a gateway between you and internet.
+- Intermediary server that separates end users from websites they are trying to browse.
+
+Forward Proxy: 
+- Server that mediates the communication between client and another server, can filter or modify communications and provides caching services to improve performance.
+- Go from me > Proxy Server > website I want to connect.
+
+2 ways to classify proxies:
+- Non-Transparent
+- Transparent
+
+Non-Transparent Proxy:
+- Server that redirects request and responses for clients config with proxy address and port.
+
+Transparent Proxy (Forced or Intercepting Proxy):
+- Server that redirect requests and responses without client being explicity config to use it.
+- Used to make sure your employees aren't turning off your proxy.
+
+Proxy log are very similar to Window Firewall logs.
 
 
-
+Reverse Proxy:
+- Type of proxy server that protects servers from direct protects servers from direct contact with client request.
+- Provide for protocol specific inbound traffic.
+- Get request from internet > Proxy server > Proxy create appropriate request to internal server (mail server or web server) > external client.
+  - External client never directly touches your server, only touches proxy server
+  - Help protect things from malicious traffics.
+ 
+- Logs from reverse proxy:
+  - Can be analyzed for indicators of attack or compromise (malicious code in HTTP request header/URLs)
 
 
 
