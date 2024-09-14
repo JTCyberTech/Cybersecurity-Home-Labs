@@ -100,9 +100,44 @@ CloudFlare or Akamai:
 - Solution to implement Blackhole and Sinkhole
 - Large ISPs that specialized in DDoS mitagation service.
 
+#
+
+# Port Security
+
+- The blocking of unauthorized application service ports on hosts and firewalls, or the physcial/remote access ports used to allow a host to communicate on local network.
+
+Best practices to secure Network Appliances:
+- Use ACLs to restrict access to designated host devices.
+- Monitor number of designated interfaces
+- Deny Internet access for remote management
 
 
+Three Types of Port Security:
+- Physical Port Security
+- MAC Filtering
+- Network Access Control (NAC)
 
+Physical Port Security:
+- Physical Access to switch ports and switch hardware should be restricted to authorized staff.
+
+MAC Filter:
+- Applying Access control list to a switch or access point so that only clients with approved MAC addresses can connect to it.
+
+Network Access Control (NAC)
+- Collective Protocol  policies  hardware that authenticate and authorize access to a network at the device level.
+
+#
+
+# Network Access Control Configuration
+
+NAC 
+- Provides means to authenticate users and evaluate device integrity before a connection is permitted.
+
+802.1X
+- Standard for encapsulating EAP (Extensible Authentication Protocol) communication over a LAN or wireless LAN and provies port-based authentication
+
+Port-based NAC:
+- Switch or router that performs some sort of authentication of the attached device before activating port.
 
 
 
