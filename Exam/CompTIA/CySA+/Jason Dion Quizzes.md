@@ -90,4 +90,48 @@
 
 # Quiz 7
 
-1.
+1. Jamario, a security analyst at Dion Training Solutions, has recently set up a Security Onion sensor to monitor the network segment that handles the company's critical data. After configuring the sensor to sniff the network traffic, Jamario observes a series of Snort alerts indicating repeated outbound SSH attempts to an unrecognized external IP address. Which of the following options BEST describes what Jamario should do next after observing the Snort alerts on Security Onion?
+
+- Analyze the traffic content and the triggered IDS rule to assess the situation and take appropriate action.
+
+  - Jamario needs to validate the threat by examining the content and understanding the rule logic before proceeding with a response.
+ 
+2. Evaluate the following log entry:
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Jan 11 05:52:56 lx1 kernel: iptables INPUT drop IN=eth0 OUT= MAC=00:15:5d:01:ca:55:00:15:5d:01:ca:ad:08:00 SRC=10.1.0.102 DST=10.1.0.10 LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=3988 DF PROTO=TCP SPT=2583 DPT=23 WINDOW=64240 RES=0x00 SYN URGP=0
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+- The packet was blocked inbound to the network'
+
+  - Firewall log formats will vary by vendors, but this example is a commonly used format from the Linux iptable firewall tool. This log starts with the date and time of the event and provides some key pieces of information. For example, the word "drop" shows the action this log entry recorded. In this case, the firewall dropped a packet due to an ACL rule being applied. Also, you can see that the packet was detected on the inbound connection over eth0, so we know that packets are being scanned and blocked when they are headed inbound to the network.
+
+3. You are reviewing a rule within your organization's IDS. You see the following output:
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any
+msg: “BROWSER-IE Microsoft Internet Explorer
+CacheSize exploit attempt”;
+flow: to_client,established;
+file_data;
+
+    content:"recordset"; offset:14; depth:9;
+    content:".CacheSize"; distance:0; within:100;
+    pcre:"/CacheSize\s*=\s*/";
+    byte_test:10,>,0x3ffffffe,0,relative,string;
+
+max-detect-ips drop, service http;
+reference:cve,2016-8077;
+classtype: attempted-user;
+sid:65535;rev:1;
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Based on this rule, which of the following malicious packets would this IDS alert on?
+
+- An inbound malicious TCP packet
+
+  - The rule header is set to alert only on TCP packets based on the first line of this IDS rule. The flow condition is set as "to_client,established", which means that only inbound traffic will be analyzed against this rule and only inbound traffic for connections that are already established. Therefore, this rule will alert on an inbound malicious TCP packet only when the packet matches all the conditions listed in this rule. This rule is an example of a Snort IDS rule. For the exam, you do not need to be able to create your own IDS rules, but you should be able to read them and pick out data.
