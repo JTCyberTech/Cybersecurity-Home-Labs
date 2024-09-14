@@ -139,7 +139,19 @@ NAC
 Port-based NAC:
 - Switch or router that performs some sort of authentication of the attached device before activating port.
 
+#
 
+# Blocklist and Allowlist
 
+Software Restriction Policies (SRP)
+- Create an allow list file for different system locations where your executable and scripts are allowed to be launched from.
 
+AppLocker:
+- Used to improve the configuration options and defaults of the SRP
+
+Windows Defender Application Control (WDAC)
+- Allows to create a code integrity policy, and this can be used on its own or in conjuction with AppLocker.
+
+Configuration Management
+- Allows for having a process in place of how we're going to update all of our block lists and our allow lists for any of those changes.
 
