@@ -235,17 +235,132 @@ Container security:
 ## Network Architecture
 
 - Defines structure of a network.
+- on-premises, cloud, hybrid
 
+## On-premises
 
+- Composed of routers, switches, security devices, cablings
+- Network security soluition:
+  - Firewalls
+  - IPS/IDS
+  - Content filtering and caching
+  - Network Access Control
+  - Network Scanners
+  - Unified Threat Management (UTM)
+ 
+## Cloud  
 
+- The use of cloud computing requires a different approach to network security.
+- SaaS or PaaS, vendors handle network security issues by including language in your contract
+- IaaS; AWS, Microsoft Azure, Google: provides more access to infrastructure, only need to handle some network security config yourself.
 
+## Hybrid
 
+- Combine on-prem and cloud networking.
+- Need to secure each environment separately and in coordination.
 
+#
 
+# Security Zones
 
+## Network Segmentation
 
+Network Border Firewall:
+- 3 network interfaces, connecting 3 different security zones 
+  - interface 1 connects to internet or another untrusted network.
+  - interface 2 connects to Org's intranet zone; divides into endpoint network, wireless network, guest network, data center network
+  - interface 3 connects to the DMZ, where you place system that must accept connections from the outside world; mail and web servers
+ 
+## Zero Trust
 
+- System gains no trust based solely upon network location.
 
+Extranet: 
+- Intranet segments extended to business partners
+
+Honeynet:
+- Decoy network designed to attract attackers.
+
+Ad Hoc Network:
+- Temporary network that may bypass security control
+
+East West Traffic:
+- Network traffic between systems located in data center.
+
+North South Traffic:
+- Network traffic between systems in the data center and systems on the internet.\
+
+# VLAN and network segmentation
+
+- Used to connect people who are on differnt part of network to each other and separate them from other users.
+
+VLANs extend broadcast domain
+- Users on same VLAN will be able to directly contact each other as if they were connected to the same switch
+- Layer 2
+
+Configuring VLANS
+- Enable VLAN trunking allowing switches in different locawtions on the network to carry the same VLANs
+- Assign swaitchports to VLANs
+
+#
+
+# Zero-Trust Networking 
+
+Approaches to security place trust in individuals rather than networks.
+- Identity and Access Management (IAM) platforms are the foundation of zero trust approaches.
+- SIEM and SOAR platforms facilitate monitoring.
+
+Cloud Access Security Brokers (CASB) enfore security policies in the cloud
+- Allow to create a set of coherent security policies in central location then automatically apply those policies to cloud services used by Org.
+- Allow to monitor use of those cloud services, watching for indications of unauthorized activity.
+
+Endpoint Detection and Response (EDR)
+- remediate endpoint security issues.
+
+Geofencing
+- Alerts when device leaves an area.
+
+#
+
+# Secure Access Service Edge (SASE)
+
+Network security arhitecture are shifting awsay from permeter focus.
+- Zero-Trust Network Access (ZTNA)
+- Secure Access Service Edge (SASE)
+
+ZTNA:
+- No user or device should ever be granted access to resources based solely upon their location on network.
+- Zero Trust relies on strong authentication and identity management practices.
+- Medium term objective
+
+SASE:
+- Delivers fully integrated network with ZTNA
+- long term goal.
+
+SASE Component:
+- Software defined Netwoking (SDN)
+- Zero trust Network Access (ZTNA)
+- Cloud access security broker (CASBs)
+- Firewall as Service (FWaaS)
+
+#
+
+# Software-Defined Networking (SDN)
+
+- Technology that allows network admin to treat the functionality and implementation detail of a network as separate and distinct function
+- Separates the control plane from the data plane.
+- Makes the network programmable.
+- Disadv: increase network complexity; need a strong access control.
+
+SDN Security Benefits:
+- Allows granular network config
+- Facilitates faster response to security incidents.
+
+Control Plane:
+- Responsible for making routing and switching decisions, determine how data flows around network.
+
+Data Plane:
+- Responsible for carrying out the instruction of the control plane.
 
 
 
