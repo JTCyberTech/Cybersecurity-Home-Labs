@@ -547,14 +547,125 @@ Five Goals achieve by using Cryptography:
   - Digital Signatures provide Non-repudiation
   - Only possible with Asymmetric Cryptography.
 
+Trust Models:
+- Personal Knowledge
+- Web of Trust (WOT)
+- Public Key Infrastructure (PKI)
+
+Web of Trust:
+- Recognize simply isn't possible for you to personally meet everyone that you want to exchange message with.
+- Relies on indirect relationships; LinkedIn, Third party level connection.
+- Participants digitally sign the public keys of people they know personally.
+
+Web of Trust Issues:
+- Decentralized approach, makes it difficult to manange
+- High barrier to entry for new people.
+- Requires technical knowledge on behalf of user.
+
+#
+
+## Public Key Infrastructure (PKI)
+
+Builds upon the Web of Trust
+- Solves many of the practical issues associated with Web of Trust by introducing the concept of certificate authorities.
+- Rely on the trust the participants have in highly trusted centralized service providers.
+  - Provider = Certificate Authories form basis of PKI
+ 
+Certificate Authories (CA)
+- Trusted third party Org
+- Verify identity of individuals or Org then issue digital certificates containing:
+  -  identity info and copy of subject's public key.
+
+Digital Certificates:
+- identity cards of the digital world.
+- Approach Certificate Authority to obtain
+- CA will ask to prove your identity for different standard for different individul/Org.
+  - Verify ownership of Domain name
+- CA satisfied by the proof, then provide CA with your public encryption keyt over secure channel.
+  - CA uses this info to create digital certificate that contain info about your identity and public key.
+  - CA digitally sign the certificate.
+
+#
+
+## TLS and SSL
+
+Transport Layer Security (TLS)
+- Uses CA's Certificate to facilitate securew communication over public networks.
+
+Example of TLS: Two systems follow when they wish to set up an encryptin session protected by TLS.
+- Client sends a request to server asking server initiate a secure session. This request includes list of cipher suites supported by client
+- One server receives that request from client, it analyze the list of cipher suites that client proposes and compares it to list of algorithms support by server.
+- Send a message back to client with two pieces of information:
+  - Tells client which cipher suites it would like to use for communication.
+  - Server sends the client the server's digital certificate, contain server's public encryption key.
+- When Client receive the server's digital certicate, client check what CA isses the certificate and uses the CA's public key to verify the signature on the certificate
+- When Client satisfied with server's identity, client creates  random encryption key called session key (symmetric key used for this one communication session)
+- Client uses server's public key to encrypt the session key and send that encrypted key to server.
+- Server will use their own private key to decrypt the session key.
+- When session is closed, session key is destroy.
 
 
+Exam Tips: 
+- TLS is only a protocol that uses other cryptographic algorithms
+- TLS is not a cryptographic algorithm itself.
+- Can't encrypt something with TLS
+- Can use TLS to apply other encryption algorithm.
+- Session key = Ephemeral Keys
 
+Secure Socket Layer (SSL)
+- Insecure predecessor to TLS
 
+#
 
+# Sensitive Data Protection
 
+Data Classification Policies:
+- Assign info into categories; classifications that determines storage, handling, access requirements
+- Sensitivity of info, Criticality of info
 
+Classification Levels:
 
+![image](https://github.com/user-attachments/assets/4b92a2ba-b682-4ebb-9b16-2b3aab7d8729)
+
+#
+
+## Personally Identifiable Information (PII)
+
+- Traceable to specific person
+
+Protected Health Information (PHI)
+- Covered by medical record; HIPAA
+
+Payment Card Information (PCI)
+- Coverd by PCI DSS; Credit card and debit card numbers
+
+#
+
+## Data Loss Prevention (DLP)
+
+Provide tech that helps Org enforce info handling policies and procedure to prevent data loss and theft.
+- Search system for stores of sensitive information that might be unsecured.
+- Monitorw network traffic for potential attempts to remove sensitive info from Org.
+
+Host-Based DLP
+- Uses software agent installed on single system
+- Search that system for presence of sensitive info; SSN, credit card numbers
+- Can secure it by removing it or encrypting it.
+
+Network-Based DLP
+- Monitor outbound network traffic watching transmission contain unencrypted sensitive info
+- Block those transmission
+- Block transmission that violate Org's policies or might encrypt it (email)
+
+Pattern Matching:
+- Recognizes known pattern of sensitive info: SSN
+- Trigger if they see terms: Top secret, business confidential.
+
+Watermarking:
+- System or admin apply electronic tags to sensitive doc
+- DLP system monitors systems and networks for unencrypted content containing those tags.
+
+DLP can also operate as cloud based managed security services
 
 
 
