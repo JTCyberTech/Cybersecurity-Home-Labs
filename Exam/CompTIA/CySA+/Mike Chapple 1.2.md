@@ -67,8 +67,9 @@ Karma Toolkit:
 - Search for legit network in area
 - Create an evil twin network, build fake websites to capture credential from user of the evil twin network.
 
-
 #
+
+# Host-Related
 
 ## Processor Consumption
 
@@ -131,13 +132,64 @@ User account review might detect accounts and suddenly have new unauthorized pri
 - Watch for the presence of unauthorized scheduled tasks on system.
 - Attacker can use job scheduling mechanisms to maintain a persistent presence on system to evade detection.
 
+#
 
+# Application-Related
 
+Applications may show signs of malicious activity.
+- Watch for unauthorized application accounts and privileges.
 
+#
 
+## Anomalous Activity
 
+### Unexpect Outputs
 
+Can be SQLi or memory overflow.
+  - If application normally retrieves one record from database at a time, that establishes baseline of activity.
+  - If that application suddenly retrieves entire database table > IoC 
 
+### Unexpect Outbound communications
+  - If application is meant for internal use only, suddenly communicating to system located around the world.
+
+#
+
+## Service Interruption
+
+Service disruptions may be the result of compromise
+- Can be result from DoS
+- Misstep from intrusion, accidentally took down a service, drawing unwantewd attention.
+
+#
+
+## Application Logs
+
+Augment Security Information from networks, endpoints and other sources.
+
+#
+
+# Other
+
+## Obfuscated Links
+
+Link that won't appear on the content filters block list, but redirect to malicious site.
+- Content filters often block emails and webpages containing links to known malicious sites.  
+- Attacker try to bypass content filters by using obfuscated links
+
+URL Redirection
+- Replacing URLs with shorter links
+- Modern content filter detect URL redirection.
+
+#
+
+## Social Engineering
+
+- Authority
+- Intimidation
+- Consensus: herd mentality
+- Scarcity
+- Urgency
+- Familiarity
 
 
 
