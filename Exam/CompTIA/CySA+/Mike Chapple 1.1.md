@@ -380,6 +380,167 @@ Triple A:
 
 
 
+False Acceptance
+- System misidentify you as authorization user
+- Measured by False Acceptance Rate (FAR)
+
+False Rejection
+- System fail to recognize authorized user
+- Measured by False Rejection Rate (FRR)
+
+Crossover Error Rate:
+- Admin tune the system to have equal false acceptance and false rejection rates.
+
+Password Authentication Protocol (PAP)
+- Does not use any encryption for protection
+
+Challenge Handshake Authentication Protocol (CHAP)
+- Alternatikve to PAP but with more protection
+- Use hash value for response for the password instead of checking if password is the same.
+
+#
+
+## Multifactor Authentifcation (MFA)
+
+Authentication Factors:
+- Something you know
+- Something you are
+- Something you have
+
+Combine Authentication/Multi Authenication:
+- Use two or more techniques for authentication.
+
+#
+
+## Single Sign On
+
+Authentication system that shares a single authentication session across multiple systems, avoiding asking user to log in mutli times.
+
+#
+
+## Federated Identity Management
+
+- Individual may have accounts across multiple systems
+- Federated identity management systems share identity information
+- This reduces number of individual identities a user must have.
+
+Example of Federated Identity:
+- Google Federation
+- Facebook Login
+- Twitter Login
+
+Shibboleth:
+- Designed to work in federated situations
+- For students and facilities.
+
+#
+
+## Passwordless Authentication
+
+Replaces passwords with more secure authentication techniques.
+- No need password, relies on Biometrics or cryptographic keys.
+- Cryptographic keys: Randomly generated string of characters used to authenticate users, stored on stored device or USB security token.
+- Generally one factor approaches rely single authentication mechanism.
+- **Passwordless approach doesn't mean multi-factor authetication**.
+
+#
+
+## Privileged Access Management (PAM)
+
+Solutions safeguard administrative Accounts.
+- Monitor privileged Users.
+
+Password Valuting 
+- Store Admin passwords
+- Nobody knows the actual password for the previlieged accounts.
+- User logs in privileged acc > logs in the password vault > password vaults logs into target system.
+
+Command Proxying:
+- Eliminates needs for direct server access
+
+Monitoring:
+- Logs admin user activity.
+
+Credential Management:
+- Rotates passwords and access keys
+
+Provides emergency access workflow:
+- Some cases, user needs to bypass privilieged account manager and access system directly withj admin right.
+
+#
+
+## Cloud Access Security Brokers
+
+Use of cloud services makes it difficult to track sensitivew information.
+
+Issue of using cloud services:
+- Service Use: employees may use cloud services without the knowledge of or approval from IT and security teams.
+  - Can transfer sensitive info into the cloud account without knowing.
+- Service Configuration: Employees might config security settings that violate Oeg security policies.
+  - Employee using an approved cloud storage service might share a file with personal email or make file public.
+ 
+Cloud Access Security Brokers (CASB)
+- Enforce security policies across cloud services.
+- Tech solution that insert themselves between end user and cloud services and inject security controls enforce Org's security policy.
+- Allow IT team enforce internal requirements for access control, authentication, encryption, firewall, malware protection, monitoring, DLP, Content filtering.
+
+CASB Soltions:
+- On Premises CASB: Intercepts network traffic headed to cloud services.
+- Cloud-Based CASB: Uses APIs to interact with cloud services.
+
+CASB imporatant roles:
+- Provides visibility into cloud use, provide Org's technology team insights into how employees/users using cloud.
+- Offers Data Loss Prevention (DLP) capabilities, extends Org's DLP policies into cloud by examining data placed into cloud and monitoring sensitive data for DLP violations.
+- Injects encryption into the cloud, encryption before data reaches the cloud services and handling key management.
+  - Config CASB to intercept and encrypt all files heading to cloud then transparently decrypt data return from cloud.
+  - Provide end user with seamless experience, decrease breach possibility.
+
+#
+
+# Encryption
+
+Cryptography:
+- Use of mathematical algorithm to transform info into an encryption form that is not readable by unauthorized individuals.
+
+Two Basic operation for Cryptoagraphy:
+- Encryption: Convert info from plaintext form into ciphertext
+- Decryption: Perform reverse transformation, using algorithm to transform encryption information back into plaintext.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
