@@ -362,6 +362,50 @@ Control Plane:
 Data Plane:
 - Responsible for carrying out the instruction of the control plane.
 
+#
+
+# Identity and Access Management
+
+- Identification: Individual makes claim about their identity. Person doesn't have any proof at this point. (Can be making a false claim)
+- Authentication: During authentication step, the individual proves their identity
+- Authorization: Prove that you are allowed to enter the system.
+
+Concept in digital world example:
+- Identification: Identify ourselves using a username.
+- Authentication: Password.
+- Authorization: Access control list.
+
+Triple A:
+- Authentication, Authorization, Accounting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
