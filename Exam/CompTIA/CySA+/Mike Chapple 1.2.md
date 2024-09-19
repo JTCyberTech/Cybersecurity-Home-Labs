@@ -1,4 +1,4 @@
-# Indicators of Malicious Activity
+# Given a scenario, analyze indicators of potentially malicious activity
 
 # Network-Related (Network Symptoms)
 
