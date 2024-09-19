@@ -420,6 +420,8 @@ Authentication system that shares a single authentication session across multipl
 
 ## Federated Identity Management
 
+FIM = Federated Identity Management
+
 - Individual may have accounts across multiple systems
 - Federated identity management systems share identity information
 - This reduces number of individual identities a user must have.
