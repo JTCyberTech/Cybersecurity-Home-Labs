@@ -1,3 +1,5 @@
+# Explain the importance of system and network architecture concepts in security operations.
+
 # Operating System Security
 
 ## Goals of Information Security
