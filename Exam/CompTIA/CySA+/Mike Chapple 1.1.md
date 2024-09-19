@@ -508,14 +508,44 @@ Two Basic operation for Cryptoagraphy:
 - Encryption: Convert info from plaintext form into ciphertext
 - Decryption: Perform reverse transformation, using algorithm to transform encryption information back into plaintext.
 
+Symmetric Encryption:
+- Shared Secret Encryptoin Algorithm.
+- Encryption and Decryption use same secret key.
+- Shared secret key = password to a message.
+- 3 people that wants to communicate, needs 3 keys.
+- Formula for computing the number of symmetric keys required for a group to communicate:
+  - n(n-1)/2
+- Get too large, too many keys when number of people gets bigger. (Unmanagable; 10000 people = 50 mil keys)
+
+![image](https://github.com/user-attachments/assets/2f3874aa-8472-4b9b-a810-7bf35283aef7)
 
 
+Asymmetric Encryption:
+- Public key cryptography
+- Encryption and Decryption use different keys from the same pair.
+- Solve the unmanagable key distribution problem by using keypairs.
+- Each users gets 2 keys:
+  - Public key: freely distributed to anyone that wants to communicate.
+  - Private key: Kept secret
+- Anything encrypted with one key from a pair can be decrypted with other key from same pair.
+- Sender would encrypt with recipient's public key; Publicity known.
+- Recipient use their own private key to decrypt.
+- Slower than symmetric cryptography
+
+Exam Tip: Keys used to encrypt  and decrypt using asymmetrtic cryptography must be from the same pair.
 
 
+![image](https://github.com/user-attachments/assets/07771b1d-19d8-45e5-9b49-a5a60b3b657d)
 
 
-
-
+Five Goals achieve by using Cryptography:
+- Confidentiality: No unauthorized access for Data at Rest, Data in Transit, Data in Use.
+- Integrity: No unauthorized change
+- Authentication: Proof of identity claim
+- Obfuscation: Hide sensitive data
+- Non-Repudiation: Reciption of message can prove to an independent third party that the message actually came from alleged sender, Verification of Origin.
+  - Digital Signatures provide Non-repudiation
+  - Only possible with Asymmetric Cryptography.
 
 
 
