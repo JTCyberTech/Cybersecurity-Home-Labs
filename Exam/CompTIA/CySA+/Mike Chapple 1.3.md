@@ -269,5 +269,9 @@ Provies domain owners with ability to specify SPF and DKIM policies for their do
 
 
 
+# Note:
 
+- DMARC: stops spoofing email-based attacks on a domain.
+- Digital Signature: sender uses his own private key to sign.
+- SMTP: used to transport email between servers.
 
