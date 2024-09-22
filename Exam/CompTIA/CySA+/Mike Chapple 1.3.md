@@ -44,6 +44,14 @@ Geofencing:
 - `tcpdump -n -i eth0 'tcp port 22'` = capture all traffic with port 22 SSH
 - built on libpcap library.
 
+#
+
+## Log Analysis/Correlation: SIEM (Security Information and Event  Management)
+
+SIEM interface:
+- Intuitive web based interface allows quickly search thru various logs SIEM aggregate.
+- Almost always easiest/fastest way to run queries against your security info.
+
 
 #
 
@@ -262,52 +270,27 @@ PowerShell:
 Python:
 - General-purpose programming language
 
+SQL: 
+- Directly retrieve info from table
+
+Scripts: 
+- `grep`: search files for patterns
+- `grep -v` filter out what you put.
+- `>` = Out redirection: Sends output to a file.
+- `|` = Pipe: Sends output to another commands
 
 
+Regular Expressions `[]`:
+- Allow pattern matching 
 
+![image](https://github.com/user-attachments/assets/9d818e91-8fa9-4453-a13d-55ed469f85ed)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#
 
 # Note:
 
 - DMARC: stops spoofing email-based attacks on a domain.
 - Digital Signature: sender uses his own private key to sign.
 - SMTP: used to transport email between servers.
-
+- An Application Programming Interface (API) is the connecting factor between two software applications so that they can exchange data.
+- PowerShell is a Windows CLI that can be used to automate tasks using scripts.
