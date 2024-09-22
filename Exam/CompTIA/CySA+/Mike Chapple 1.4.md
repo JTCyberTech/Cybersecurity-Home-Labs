@@ -152,4 +152,6 @@ Three criteria to evaluate threat intelligence source:
 
 
 
-
+Note:
+- SIEMs: have a live dashboard that that turns information into charts as they aggregate and correlate data and alert on anomalies.
+- SOAR: best assists with the automation of security workflows by automating routine work.
