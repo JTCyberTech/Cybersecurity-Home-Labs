@@ -144,6 +144,102 @@ Cukcoo Features:
 
 Performs analysis of submitted malware files
 
+#
+
+## Email Analysis
+
+SMTP: has very little built in security.
+- Unencrypted email is prone to eavesdropping attacks
+
+Digital Signatures:
+- Use asymmetric cryptography to achieve integrity, authentication, non-repudiation.
+- Signed Message Recipients knows:
+  - Owner of public key is the person who signed the message (authentication).
+  - The message was not altered after being signed (integrity).
+  - The recipient can prove these facts to a third party (non-repudiation).
+- Digitally signing messasges does not provide confidentiality.
+ 
+Use of Digital Signatures depends Two important concepts:
+- Hash functions are collision resistant. (can't have the same hash value)
+- Anything encrypted with one key from an asymmetric key pair may only be decrypted with the other key from that pair.
+  - Private key = encryption, Public key = Decryption.
+
+![image](https://github.com/user-attachments/assets/ce08956f-623f-4c49-9136-98308b3c04a8)
+
+
+
+### Impersonation
+
+- Anyone can forge an email message impersonating the sender of their choice.
+
+#
+
+### Sender Policy Framework (SPF)
+
+Provides domain owners with ability to list servers that are authorized to send mail from domain.
+- Create a DNS record that lists the servers that is allowed to send email for domain.
+- Those records are called SPF records
+
+SPF = important tool:
+- Helps to prevent forged email
+- Doesn't prevent tampering email.
+
+![image](https://github.com/user-attachments/assets/bcf2d721-4c8b-42cd-b60e-405f80abb11f)
+
+### DomainKeys Identified Mail (DKIM)
+
+Provides email authentication by allowing mail servers to digitally sign legitimate outbound email messages.
+- Uses Public/Private Key Pairs
+- Public keys are published thru DNS.
+- Private key is kept secret.
+
+![image](https://github.com/user-attachments/assets/5a21dc7c-25df-42f7-96f1-7372d4474730)
+
+Dkim=pass: means the mail server that received this message verified the DKIM signature.
+
+Valuable Tool:
+- Protect email, used to combat spam/phish that sends spoofed email using domain names belong to someone else.
+
+### Domain-based Message Authentication, Reporting and Conformance (DMARC)
+
+Provies domain owners with ability to specify SPF and DKIM policies for their domains.
+
+
+![image](https://github.com/user-attachments/assets/0982181b-a2ae-469d-94ca-f8866d535c9a)
+
+- v=DMARC1: version 1 of DMARC being used.
+- p=reject: policy that linkedin wants people to apply to email that they receive that does not pass DKIM and SPF checks. Reject those emails. (Can be set to Quarantine or None)
+- rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; = DMARC feedback should be sent.
+- pct=100": specification that policy should apply to 100% of email sent from the domain.
+
+### Header
+
+- Might be asked to analyze email header on CySA+ exam.
+
+![image](https://github.com/user-attachments/assets/81bdb458-b733-4168-b564-78dedfc50279)
+
+![image](https://github.com/user-attachments/assets/ed5695c2-2b6c-49e3-9f09-2715c67d4b3c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
