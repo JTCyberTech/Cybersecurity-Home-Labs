@@ -220,9 +220,22 @@ Provies domain owners with ability to specify SPF and DKIM policies for their do
 
 ![image](https://github.com/user-attachments/assets/ed5695c2-2b6c-49e3-9f09-2715c67d4b3c)
 
+#
 
+## User Behavior Analysis
 
+### Abnormal Account activity
 
+- Unusual network location logins.
+  - Users who always login in HR network, logging in guest network.
+- Unusal time-of-day logins: mail clerk logging into system in middle of night.
+- Deivations from normal behaviors: users accessing files that they don't normally access.
+- Deivations in volume of data transferred: bulk downloading of sensitive info
+
+### Impossible Travel
+
+- Logon from strange geographic locations, user connecting from both home office and remote location in Eastern Europe at the same time.
+- Risky logins.
 
 
 
