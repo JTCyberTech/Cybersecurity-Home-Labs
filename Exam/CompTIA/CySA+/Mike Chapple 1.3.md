@@ -237,6 +237,42 @@ Provies domain owners with ability to specify SPF and DKIM policies for their do
 - Logon from strange geographic locations, user connecting from both home office and remote location in Eastern Europe at the same time.
 - Risky logins.
 
+#
+
+## Programming Languages/Scripting
+
+Difference between API request and Web request:
+- Web users request webpages
+- API users request actions of information.
+- API responses comes in machines-readable format; XML or JSON
+
+Shell Environments: 
+- Provides command line access.
+
+Script:
+- Pre written code, to execute OS commands.
+- Series of automated tasks.
+
+SSH (Secure Shell):
+- Secure Linux Shell on TCP port 22
+
+PowerShell:
+- Windows Automation Language
+
+Python:
+- General-purpose programming language
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
