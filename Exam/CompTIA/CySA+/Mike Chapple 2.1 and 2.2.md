@@ -2,7 +2,7 @@
 
 # Creating a vulnerability Management Program
 
-# What is Vulnerability Management?
+## What is Vulnerability Management?
 
 - Complexity of Modern Software: Modern software, like the Linux kernel, contains millions of lines of code, making it prone to vulnerabilities.
 - Vulnerability Management Process: This involves scanning systems for vulnerabilities, applying patches, tracking remediation, and reporting results.
@@ -43,7 +43,7 @@ Industry Frameworks:
 
 #
 
-# Identify Scan Target
+## Identify Scan Target
 
 - Develop Requirements: Start by understanding the reasons behind your vulnerability management program, whether it's for security improvement, regulatory compliance, or corporate policy.
 - Asset Inventory: Ensure you have a reliable asset inventory. This can come from existing asset management tools or a lightweight network scan.
@@ -59,7 +59,7 @@ After having Asset Inventory, need:
 
 #
 
-# Scan Frequency
+## Scan Frequency
 
 After Asset Inventory to develop a list of systems you like to scan, need to figure out how often you like to scan them.
 
@@ -79,19 +79,19 @@ Licensing issues:
 
 # Network Mapping
 
-# Network Scanning
+## Network Scanning
 
 - Network Mapping: It's essential for maintaining situational awareness of systems and devices on a network, especially in large organizations.
 - Tools: Nmap is the most common network mapping tool, used to scan IP addresses and identify open ports. Angry IP Scanner is another tool mentioned, though less popular.
 - Purpose: Network mapping helps in detecting rogue systems and provides a glimpse of network activity, despite some systems ignoring unsolicited connection attempts.
 
-## Angry IP Scanner
+### Angry IP Scanner
 
 Performs Port scans form Windows Mac Linux systems.
 
 #
 
-# Install Nmap On Windows
+## Install Nmap On Windows
 
 - Introduction to Nmap: Nmap is a popular, open-source network mapping tool that has been around for over 20 years. It's widely used in the security and networking communities and is regularly updated.
 
@@ -126,7 +126,7 @@ Verification: Open a command prompt and type nmap -V to verify the installation.
 
 #
 
-# Run and interpret a Simple Nmap Scan
+## Run and interpret a Simple Nmap Scan
 
 - **Nmap Scan Results:**
   - Nmap provides a list of detected ports with state information.
@@ -156,7 +156,7 @@ Verification: Open a command prompt and type nmap -V to verify the installation.
    
 #
 
-# Host Discovery with Nmap
+## Host Discovery with Nmap
 
 - **Host Discovery Techniques:** Nmap uses various techniques to determine if an address is active before performing a port scan.
   - **ICMP Echo Request:** Similar to the ping command, it quickly checks if an IP address is active.
@@ -184,7 +184,7 @@ Verification: Open a command prompt and type nmap -V to verify the installation.
 
 #
 
-# Operate Systema Fingerprinting
+## Operate Systema Fingerprinting
 
 - **Introduction to Nmap’s Operating System Detection:**
   - Nmap can perform fingerprinting of target systems to guess the operating system.
@@ -208,33 +208,189 @@ Verification: Open a command prompt and type nmap -V to verify the installation.
   - OS detection is generally accurate but results should be taken with a grain of salt.
   - Works better on local networks compared to long-distance scans.
 
+#
+
+## Service Version Detection
+
+Service Version Detection:
+- Guesseds the service version running on open port.
+- Activate service version detection with `-sV` flag.
+
+#
+
+# Configuring and Executing Vulnerability Scans
+
+## Security baseline Scanning
+
+Security baseline Scanning provides a picture of current state of your security environment.
+- Understanding current state providdes realistic view of current level of risk facing the Org
+- Understanding the state of the Org's security provides us with measurement stick we can use to evaluate our progress.
+
+Use Baseline scans to identify the highest priorities for remediations.
+- Compare future scans to baseline to meawsure progress.
+
+#
+
+## Scan Configuration
+
+**Setting Up a New Scan:**
+- Click the "New Scan" button in Nessus.
+- Choose from a series of templates or select "advanced scan" for custom settings.
+- Enter basic information like the scan name (e.g., "Mike's Scan") and targets (e.g., IP addresses or network ranges).
+
+**Configuring Scan Scope:**
+- Enter system names, IP addresses, or network ranges in the targets box.
+- Option to upload a file with a list of systems from an asset management tool.
+
+**Organizing Scans:**
+- Create a series of scans based on data sensitivity (e.g., confidential, sensitive, highly sensitive).
+- Set different schedules for each system group.
+
+**Scheduling and Notifications:**
+- Configure the scan to run at specific intervals (e.g., daily).
+- Set up email notifications to receive scan reports.
+
+**Discovery Options:**
+- Configure network pings to determine if a system is alive.
+- Handle devices like printers and network systems that might react negatively to scans.
+
+**Port Scanning:**
+- Set specific network ports and protocols for scanning.
+- Default settings include commonly used ports, but custom ports can be configured.
+
+**Assessment Settings:**
+- Set scan sensitivity level (e.g., normal accuracy to balance false alarms and real vulnerabilities).
+- Option to override normal accuracy for more detailed reporting.
+
+**Advanced Settings:**
+- Enable safe checks to avoid disrupting systems in a production environment.
+- Adjust performance settings to stop scanning unresponsive hosts and slow down scans during network congestion.
+
+**Plugins Tab:**
+- Nessus uses plugins to perform vulnerability checks.
+- Customize the scan by enabling or disabling plugins based on the types of systems in the network (e.g., disable AIX, Cisco, Debian Linux plugins if not relevant).
+
+**Performance Optimization:**
+- Disabling irrelevant plugins improves scan performance by reducing scan time.
+- Create custom templates for reusable scan settings.
+
+#
+
+## Scan Perspective
+
+**Importance of Scan Perspective:**
+- The scanner’s location on the network relative to the systems being scanned is crucial.
+
+**Different Network Locations:**
+
+- **DMZ (Demilitarized Zone):**
+  - Scanner in the DMZ has unrestricted access to the web server.
+  - Provides the clearest picture of vulnerabilities as it bypasses the firewall.
+
+- **Internal Network:**
+  - Scanner’s traffic must pass through the firewall.
+  - Firewall may drop connection attempts and filter traffic, potentially missing some vulnerabilities.
+
+- **Internet:**
+  - Scanner’s traffic is subject to strict firewall rules for inbound traffic.
+  - Provides the attacker's view, showing vulnerabilities visible from outside.
+
+**Server-Based vs. Agent-Based Scans:**
+
+- **Server-Based Scans:**
+  - Scanner reaches out over the network to probe systems.
+
+- **Agent-Based Scans:**
+  - Security agent installed on each server probes deeply into configurations.
+  - Reports vulnerabilities back to the central management system.
+  - Some organizations avoid this due to increased complexity.
+
+**Credentialed Scanning:**
+- Scanner uses provided credentials to log onto remote systems.
+- Allows for deeper inspection without installing agents.
+- Important to use read-only accounts to avoid unintended changes.
+
+**Best Practices:**
+- Mix different perspectives in scanning to get a comprehensive view.
+- Use DMZ for detailed vulnerability insights.
+- Use internet perspective for understanding external threats.
+- Consider agent-based or credentialed scanning for deeper insights.
+
+#
+
+## Scanner Maintenance
+
+- Scan Engine Updates: Software updates to the scanner itself that fix bugs and add new features
+- Plugin Updates: Vuln feed updates that provide the scanner with information about current vulnerabilities.
 
 
+**Regular Updates:**
+- Vulnerability scanners require regular updates to maintain effectiveness.
+- There are two types of updates: scanner engine updates (infrequent) and vulnerability feed updates (frequent).
 
+**Configuring Updates in Nessus:**
+- Navigate to the settings option in Nessus to view and configure updates.
+- You can see the current version of the scan engine and the last update time for plugins.
+- Options to configure automatic updates for both the scan engine and plugins.
+- Update frequency can be set (e.g., daily) and an update server can be specified.
 
+**User Permissions:**
+- Managing user permissions on the scanner is crucial.
+- Configure user accounts and set permissions, such as read-only access or limiting scan capabilities.
+- Adjust permissions based on the specific needs of your environment.
 
+**Practical Example:**
+- The video demonstrates how to configure Nessus to automatically update itself daily.
+- Shows how to manage user permissions and configure user accounts in Nessus.
 
+#
 
+## Vulnerability Scanning Tools
 
+- Greenbone OpenVAS: Open source alternative to Nessus for people who does not have budget for commerical scanner.
+- Arachni: open source tool that performs web application security tests
+- Nikto: open source alternative
 
+Basically:
+- Neesus and OpenVAS: General purpose vulnerability scanners.
+- arachni and Nikto: Open Source web app vulnerability scanners.
 
+#
 
+## Passive Vulnerability Scanning 
 
+###Active Scanning:
 
+- Probes systems for issues
 
+Active Scawnning Drawbacks:
+- Can be detected by admins
+- May accidentally exploit vulnerabilities
+- Will miss some vuln due to firewall settings, network segmentation, IPS deployments.
 
+### Passive Scanning
 
+- Observes network traffic
 
+Passive scanning supplements, rather than replaces active scanning.
 
+#
 
+# Exam Note:
 
-
-
-
-
-
-
-
-
-
-
+- Normally the frequency of scanning won't affect the cost of those scans. The organization has normally already made an investment in the scanning technology.
+- The operating system is not necessarily a major factor in deciding whether a device should be scanned.
+- Sales team requests are not a common source of requirements for developing a vulnerability management program.
+- The Nmap -sV flag performs scans with service version detection and version information.
+- Nmap requires root privileges to run OS detection.
+- There is no ICMP reply request. There is an ICMP echo reply that is used to test for connectivity issues.
+- Nmap scans a network to determine what hosts and services are running.
+- The filtered port state is the result of Nmap being unable to find out if a port is open or closed due to a filter or a port block.
+- On macOS, the Privacy & Security preferences can be set to allow applications to be downloaded from identified developers.
+- Zenmap is a GUI for nmap.
+- Snort is an intrusion detection and prevention system, not a vulnerability scanner.
+- The vulnerability scanner uses the feed to learn about new vulnerabilities, and those should be updated at least daily.
+- Placing the scanner on the screened subnet provides the most complete picture of vulnerabilities present on a public web server.
+- The plug-ins settings in vulnerability scanners should be modified to limit the tests performed by vulnerability scanners to only those that affect the installed OS.
+- Passive vulnerability scanners do not probe. They monitor the network and report on outdated OS and applications.
+- Nikto is a web vulnerability scanner and does not perform general purpose vulnerability scans.
