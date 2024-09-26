@@ -1,3 +1,36 @@
+# SCAP
+
+Purpose of SCAP:
+- SCAP (Security Content Automation Protocol) aims to create a consistent language and format for discussing security issues.
+- Led by the National Institute for Standards and Technology (NIST).
+
+Components of SCAP:
+- **Common Vulnerability Scoring System (CVSS):**
+  - Provides a consistent way to evaluate the severity of security vulnerabilities.
+  - Widely used in vulnerability scanning products and reports.
+  
+- **Common Configuration Enumeration (CCE):**
+  - Offers a consistent language for sharing system configuration information.
+  
+- **Common Platform Enumeration (CPE):**
+  - Provides a common language for product names and versions.
+  
+- **Common Vulnerabilities and Exposures (CVE):**
+  - Describes vulnerabilities in products using a standardized language.
+  
+- **Extensible Configuration Checklist Description Format (XCCDF):**
+  - Creates and shares checklists and the results of processing those checklists.
+  
+- **Open Vulnerability and Assessment Language (OVAL):**
+  - Describes testing procedures in a programmatic fashion.
+
+### Importance of SCAP:
+- Helps in automating vulnerability activities by ensuring systems "speak the same language."
+- Reduces ambiguity and confusion in security terminology.
+
+
+
+
 # CVSS 
 
 - **Common Vulnerability Scoring System (CVSS):**
