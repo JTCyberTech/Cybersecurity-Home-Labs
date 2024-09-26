@@ -712,6 +712,48 @@ Interconnected Networks:
 
 ## Prevent SQLi
 
+# Prevent SQL Injection
+
+SQL Injection Attacks:
+- Exploit the reliance of dynamic web applications on underlying databases.
+  - Example: A web application retrieves unencrypted user passwords from a database for authentication.
+- SQL (Structured Query Language) is used by relational databases to create, update, delete, and retrieve data.
+
+How SQL Injection Works:
+- A web application sends a SQL query to the database to retrieve a user's password.
+
+- Example Query:
+```sql SELECT username, password FROM users WHERE username = 'mchapple'; ```
+
+- An attacker can alter the query by entering malicious input in the username field.
+
+**Malicious Input Example:**
+
+```mchapple'; DROP TABLE users; --```
+
+- This input sends two separate SQL commands and a comment to the database:
+  - Retrieve the password.
+  - Change the password stored in the database.
+ 
+Defense Techniques:
+
+- Input Validation:
+ - Ensure user input is in an appropriate format.
+ - Example: Input should never contain a single quote.
+ - Always perform validation on the server side to prevent attackers from bypassing checks.
+
+Parameterized Queries:
+- Use stored procedures where SQL statements are stored on the server in a pre-compiled format.
+- Input is plugged in after the SQL is already processed, preventing SQL injection attacks.
+
+Key Takeaways:
+- SQL injection attacks exploit database queries to manipulate data.
+- Input validation and parameterized queries are effective techniques to prevent these attacks.
+
+
+
+
+
 
 
 
