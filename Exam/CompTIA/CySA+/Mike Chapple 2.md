@@ -776,3 +776,20 @@ Key Takeaways:
 - The plug-ins settings in vulnerability scanners should be modified to limit the tests performed by vulnerability scanners to only those that affect the installed OS.
 - Passive vulnerability scanners do not probe. They monitor the network and report on outdated OS and applications.
 - Nikto is a web vulnerability scanner and does not perform general purpose vulnerability scans.
+
+## Software Security Isues
+
+Which of these is not a basic mitigation strategy to reduce the likelihood of successful privilege escalation attacks? 
+- Fail-open: a protection strategy where a device does not perform any security filtering when it fails. This is not a strategy to prevent privilege escalation attacks.
+
+Which of these is an ineffective defense against client-side XSRF attacks?
+- Network segmentation: in physical form means each segment is isolated from other network segments, and in virtual form means VLANs are used to logically separate the network into functional subnets. However, network segmentation is ineffective against client-side XSRF attacks, which are on-path browser-based attacks on individual hosts with multiple browser tabs opened and logged into and with authentications crossing over browser tabs.
+
+Which one of these tools is not an interception proxy?
+- RStudio is an integrated development Environment (IDE) for the R interpretive language for statistical analysis.
+
+
+
+
+
+
