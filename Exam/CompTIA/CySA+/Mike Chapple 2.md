@@ -665,48 +665,54 @@ Interconnected Networks:
 
 - **Top 10 Web Application Security Issues:**
 
-  1. **Broken Access Controls**
+  1. **Broken Access Controls** - Allows Unauthorized Access
      - Occurs when developers fail to check backend authorization.
      - Includes insecure direct object references.
 
-  2. **Cryptographic Failures**
+  2. **Cryptographic Failures** - Allows Access to Sensitive Data
      - Exposure of sensitive information due to poorly configured cryptography.
      - Examples: Unencrypted customer files, failure to implement HTTPS.
 
-  3. **Injection Vulnerabilities**
+  3. **Injection Vulnerabilities** - Insert Unwanted code
      - Attackers insert code into a request, tricking the website to execute it.
      - Common example: SQL injection attacks.
 
-  4. **Insecure Design**
+  4. **Insecure Design** - Fails to meet security requirements
      - Security issues from the initial creation of code.
      - Includes insufficient threat modeling and failure to follow best practices.
 
-  5. **Security Misconfiguration**
+  5. **Security Misconfiguration** - Occurs in many possiblew locations
      - Errors in the security settings of web servers, application servers, etc.
      - Requires regular monitoring and patching of components.
 
-  6. **Vulnerable and Outdated Components**
+  6. **Vulnerable and Outdated Components** - Can jeopardize Application Security
      - Use of components with known vulnerabilities.
      - Administrators must apply security patches promptly.
 
-  7. **Identification and Authentication Failures**
+  7. **Identification and Authentication Failures** - Exploit Session management
      - Flaws in the mechanisms that provide user authentication.
      - Example: Session hijacking.
 
-  8. **Software and Data Integrity Failures**
+  8. **Software and Data Integrity Failures** - Allows insertion of insecure code
      - Lack of appropriate verification checks in the software pipeline.
      - Can lead to corrupted or malicious updates.
 
-  9. **Security Logging and Monitoring Failures**
+  9. **Security Logging and Monitoring Failures** - Can deprive analyst of needed data
      - Applications failing to create detailed log records.
      - Crucial for security investigations and troubleshooting.
 
-  10. **Server-Side Request Forgery (SSRF)**
+  10. **Server-Side Request Forgery (SSRF)** - Tricks servers into requesting URLs
       - Attackers trick web servers into retrieving unvalidated URLs.
 
 - **Additional Resources:**
   - SANS Institute: Top 25 Most Dangerous Software Errors.
   - Center for Internet Security’s system design recommendations and security benchmarks.
+ 
+#
+
+## Prevent SQLi
+
+
 
 
 
