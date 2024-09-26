@@ -245,14 +245,14 @@ SSL and TLS Issues:
   - SSL is fundamentally broken and insecure.
   - Use at least TLS 1.2.
 
-Insecure Cipher Suites:
-- TLS provides a framework for encryption.
-- Ensure servers support only secure Cipher Suites.
+- Insecure Cipher Suites:
+  - TLS provides a framework for encryption.
+  - Ensure servers support only secure Cipher Suites.
 
-Digital Certificates:
-- Certificates should not be expired.
-- Must be signed by a reputable certificate authority.
-- Must match the server names.
+- Digital Certificates:
+  - Certificates should not be expired.
+  - Must be signed by a reputable certificate authority.
+  - Must match the server names.
 
 
 Example of SSL Issues:
