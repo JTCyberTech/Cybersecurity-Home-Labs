@@ -140,3 +140,61 @@ Components of SCAP:
 - **Address Root Causes:**
   - Prevent vulnerabilities by addressing root causes, such as providing developer training or creating standard libraries.
   - It’s more effective to stop vulnerabilities before they enter the environment than to remediate existing ones.
+
+# 
+
+# Common Vulnerabilities
+
+## Server Vulnerabilities
+
+
+Make this into markdown for my github so i can copy and paste:
+
+Importance of Hands-On Experience:
+
+-  Practical hands-on experience is crucial for passing the exam. 
+-  Run vulnerability scans in a test environment and interpret the results. 
+ 
+Common Issues in Scan Reports:
+
+- Out-of-Date Software: 
+    - Missing patches on operating systems, applications, or firmware. 
+    - Keeping devices patched is essential to avoid security vulnerabilities. 
+
+
+Unsupported Operating Systems:
+- Running outdated OS versions poses high security risks. 
+- Example: Windows Server 2003 no longer supported by Microsoft since 2015. 
+
+
+
+Buffer Overflow Vulnerabilities:
+
+- Occur due to improper memory management. 
+- Integer Overflow: 
+    - A specific type of buffer overflow using an integer variable. 
+    - Example: Vulnerability in Mozilla Firefox allowing arbitrary code execution. 
+
+- Privilege Escalation: 
+   - Attackers exploit vulnerabilities to gain administrative privileges. 
+
+
+
+Insecure Protocols:
+
+- Systems using protocols that exchange sensitive information in clear text. 
+- Example: Remote management service accepting unencrypted credentials. 
+- Solution: Apply encryption to prevent plain text logins. 
+
+
+Debugging Modes:
+
+- Servers configured with debugging modes can leak sensitive information. 
+- Example: Microsoft ASP.NET package providing detailed error messages. 
+- Solution: Disable debugging mode on production servers. 
+
+
+Critical Skills for Cybersecurity Analysts:
+
+- Understanding the nature of vulnerabilities. 
+- Assessing vulnerabilities and developing remediation plans.
