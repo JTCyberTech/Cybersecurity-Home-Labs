@@ -198,3 +198,79 @@ Critical Skills for Cybersecurity Analysts:
 
 - Understanding the nature of vulnerabilities. 
 - Assessing vulnerabilities and developing remediation plans.
+
+#
+
+## Endpoint Vulnerabilities
+
+Endpoint Configuration:
+
+- Endpoints should be more locked down than servers.
+- Common issues include missing security patches and outdated signature files for security tools.
+
+User Behavior:
+
+- Users often decline software updates to avoid reboots, leading to missing security patches.
+- Allowing users to install their own software adds complexity and increases security risks.
+
+Non-Computer Endpoints:
+
+- Security updates and vulnerabilities also apply to smartphones, tablets, and other devices.
+
+Patch Management:
+
+- Effective endpoint patch management is crucial.
+- Automatic updates can resolve many vulnerabilities.
+
+Example of Vulnerability Scan:
+
+- Unpatched endpoints often show numerous critical vulnerabilities, mostly due to missing Microsoft security updates.
+- Enabling automatic updates can address these issues.
+
+Key Takeaway:
+
+- Proper care and management of endpoints are essential for maintaining good security.
+
+#
+
+## Network Vulnerabilities
+
+
+Common Network Vulnerabilities:
+- Failure to apply encryption to sensitive data.
+- Misconfigurations in handling encryption.
+
+SSL and TLS Issues:
+- Outdated Protocols:
+  - SSL is fundamentally broken and insecure.
+  - Use at least TLS 1.2.
+
+Insecure Cipher Suites:
+- TLS provides a framework for encryption.
+- Ensure servers support only secure Cipher Suites.
+
+Digital Certificates:
+- Certificates should not be expired.
+- Must be signed by a reputable certificate authority.
+- Must match the server names.
+
+
+Example of SSL Issues:
+- Untrusted SSL certificate.
+- Use of self-signed certificates.
+- Supporting SSL Version 2 and 3.
+- Weak Cipher Suites.
+- POODLE vulnerability.
+- Weak hashing algorithm for certificate signing.
+
+VPN Encryption Settings:
+- Ensure VPN devices support strong encryption protocols.
+- Regularly patch VPN devices and network appliances.
+
+Domain Name Service (DNS) Vulnerabilities:
+- DNS servers accepting queries from unknown outsiders.
+- Patch DNS servers with recent security updates.
+
+Interconnected Networks:
+- Understand vulnerability management of interconnected networks.
+- Use firewalls and protections to limit exposure.
