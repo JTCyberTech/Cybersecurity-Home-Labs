@@ -659,6 +659,54 @@ Interconnected Networks:
 
 ## OWASP Top 10 
 
+- **OWASP Top 10 Overview**
+  - The OWASP Top 10 is a list of the top web security vulnerabilities.
+  - The current version was developed in 2021.
+
+- **Top 10 Web Application Security Issues:**
+
+  1. **Broken Access Controls**
+     - Occurs when developers fail to check backend authorization.
+     - Includes insecure direct object references.
+
+  2. **Cryptographic Failures**
+     - Exposure of sensitive information due to poorly configured cryptography.
+     - Examples: Unencrypted customer files, failure to implement HTTPS.
+
+  3. **Injection Vulnerabilities**
+     - Attackers insert code into a request, tricking the website to execute it.
+     - Common example: SQL injection attacks.
+
+  4. **Insecure Design**
+     - Security issues from the initial creation of code.
+     - Includes insufficient threat modeling and failure to follow best practices.
+
+  5. **Security Misconfiguration**
+     - Errors in the security settings of web servers, application servers, etc.
+     - Requires regular monitoring and patching of components.
+
+  6. **Vulnerable and Outdated Components**
+     - Use of components with known vulnerabilities.
+     - Administrators must apply security patches promptly.
+
+  7. **Identification and Authentication Failures**
+     - Flaws in the mechanisms that provide user authentication.
+     - Example: Session hijacking.
+
+  8. **Software and Data Integrity Failures**
+     - Lack of appropriate verification checks in the software pipeline.
+     - Can lead to corrupted or malicious updates.
+
+  9. **Security Logging and Monitoring Failures**
+     - Applications failing to create detailed log records.
+     - Crucial for security investigations and troubleshooting.
+
+  10. **Server-Side Request Forgery (SSRF)**
+      - Attackers trick web servers into retrieving unvalidated URLs.
+
+- **Additional Resources:**
+  - SANS Institute: Top 25 Most Dangerous Software Errors.
+  - Center for Internet Security’s system design recommendations and security benchmarks.
 
 
 
