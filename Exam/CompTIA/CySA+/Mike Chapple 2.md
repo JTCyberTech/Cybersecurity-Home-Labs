@@ -1143,6 +1143,43 @@ What character is essential in input for a SQL injection attack?
 What dataset would an attacker modify to perform a data poisoning attack?
 - Training dataset:  used in machine learning to build and teach the model the parameters. An attacker would modify the training dataset to perform a data poisoning attack.
 
+Which of these allows attackers to execute commands on a server through a web-based interface?
+- Web shells: Web shells allow attackers to execute commands on a server through a web-based interface.
+
+Alan is analyzing his web server logs and sees several strange entries that contain strings similar to "../../" in URL requests. What type of attack was attempted against his server?
+- Directory traversal: Navigation references like../../ can indicate attempted directory traversal attacks. Using this method, an attacker can move up and down the directory structure, searching for unsecured files. Where allowed, directory traversals can allow attackers to bypass normal access controls and view sensitive files stored on the web server.
+
+Which of these is not one of the OWASP Top Ten vulnerabilities?
+- Social engineering: The OWASP Top Ten is related to web security best practices for application developers. Social engineering is a means by which the social engineer gets someone to perform an action or disclose information.
+
+What condition occurs when a software package fails to release memory that it reserved for use?
+- Memory leak: A memory leak occurs when a software package fails to release memory that is reserved for use. This could result in resource exhaustion, and the application may fail and need a reboot.
+
+Which type of object must a hacker typically access to engage in a session hijacking attack?
+- Cookie: Cookies are small pieces of content that can track users between website visits and across different websites.
+
+Which type of attack seeks to write data to areas of memory reserved for other purposes?
+- Buffer overflow: Buffer overflow attacks seek to write data to areas of memory reserved for other purposes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
