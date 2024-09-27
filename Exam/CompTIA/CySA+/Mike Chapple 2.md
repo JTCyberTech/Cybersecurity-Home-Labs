@@ -736,13 +736,13 @@ How SQL Injection Works:
 Defense Techniques:
 
 - Input Validation:
- - Ensure user input is in an appropriate format.
- - Example: Input should never contain a single quote.
- - Always perform validation on the server side to prevent attackers from bypassing checks.
+  - Ensure user input is in an appropriate format.
+  - Example: Input should never contain a single quote.
+  - Always perform validation on the server side to prevent attackers from bypassing checks.
 
-Parameterized Queries:
-- Use stored procedures where SQL statements are stored on the server in a pre-compiled format.
-- Input is plugged in after the SQL is already processed, preventing SQL injection attacks.
+- Parameterized Queries:
+  - Use stored procedures where SQL statements are stored on the server in a pre-compiled format.
+  - Input is plugged in after the SQL is already processed, preventing SQL injection attacks.
 
 Key Takeaways:
 - SQL injection attacks exploit database queries to manipulate data.
