@@ -766,7 +766,7 @@ Common Scenarios:
 
 Solution to XSS Attacks:
 - Input Validation: Ensuring that user input is safe and does not include scripting tags.
-- HTML Tags: Understanding how HTML tags work (e.g., <b>, <i>, <a>, <script>).
+- HTML Tags: Understanding how HTML tags work ```(e.g., <b>, <i>, <a>, <script>).```
 - Legitimate Use of Scripts: Scripts are legitimate when written by the website creator but can be malicious if injected by an attacker.
 
 Types of XSS Attacks:
