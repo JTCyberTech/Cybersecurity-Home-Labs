@@ -748,6 +748,33 @@ Key Takeaways:
 - SQL injection attacks exploit database queries to manipulate data.
 - Input validation and parameterized queries are effective techniques to prevent these attacks.
 
+#
+
+## Understand Cross-site Scripting
+
+Definition of Cross-Site Scripting (XSS):
+- XSS attacks trick a user's web browser into executing a malicious script.
+- The attack can be stored on a site and executed when a victim visits the page.
+
+Conditions for XSS Attacks:
+- The website must have reflected or stored input.
+- The input must be unvalidated, allowing the attacker to embed script commands.
+
+Common Scenarios:
+- Reflected input often occurs on message boards, user profiles, and other content submission areas.
+- Attackers can slip in scripting tags that execute when viewed by another user.
+
+Solution to XSS Attacks:
+- Input Validation: Ensuring that user input is safe and does not include scripting tags.
+- HTML Tags: Understanding how HTML tags work (e.g., <b>, <i>, <a>, <script>).
+- Legitimate Use of Scripts: Scripts are legitimate when written by the website creator but can be malicious if injected by an attacker.
+
+Types of XSS Attacks:
+- Stored (Persistent) XSS: Attack code is stored on a remote server and executed when a victim accesses it.
+- Reflected XSS: Attack code is included in a link, executed immediately when the link is clicked.
+
+Example Scenario:
+- An online auction site allowing HTML in listings can be exploited if it doesn't validate input, leading to malicious scripts running in users' browsers.
 
 
 
