@@ -817,6 +817,111 @@ Mitigation Strategies:
 - Principle of Least Privilege: Service accounts should have the minimum privileges necessary for code execution.
 - Preventive Controls: Use data execution prevention and address space layout randomization technologies to prevent privilege escalation attacks.
 
+#
+
+## Directory Traversal
+
+Attacks allows an attacker to manipulate web server's file structure.
+
+- Definition: Directory traversal attacks manipulate the file system structure on a web server to access unauthorized files.
+
+File System Characteristics:
+- Single period (.) references the current directory.
+- Double periods (..) reference the directory one level up.
+
+Attack Mechanism:
+- Uses navigation references (../) to move up and down the directory structure.
+- Targets unsecured files by manipulating file requests.
+
+Example Attack:
+- Demonstrated using WebGoat and ZAP tools.
+- Modified file request to access `tomcat-users.xml` instead of the intended `ThreadSafetyProblem.html`.
+
+Risks:
+- Bypasses normal access controls.
+- Allows viewing of sensitive files stored on the web server.
+
+Defense Strategies:
+- Input Validation: Prevent inclusion of periods in user requests.
+- File System Access Controls: Restrict web server user's ability to read sensitive files.
+
+#
+
+## File Inclusion
+
+- **File Inclusion Attacks:**
+  - Execute code contained within a file, allowing attackers to run arbitrary code on a web server.
+  - Two types: Local File Inclusion (LFI) and Remote File Inclusion (RFI).
+
+- **Local File Inclusion (LFI):**
+  - Executes code stored in a file located on the web server.
+  - Similar to directory traversal attacks.
+  - Example: Using a URL to execute a file like `attack.exe` stored in the uploads directory on a Windows server.
+
+- **Remote File Inclusion (RFI):**
+  - Executes code stored on a remote server.
+  - More dangerous as attackers can control the code directly without storing it on the local server.
+  - Example: Using a URL to execute an attack link stored on a remote server.
+
+- **Exploitation:**
+  - Attackers often upload a Web Shell to the server to execute commands and view results via the browser.
+  - Web Shells use HTTP/HTTPS ports, making their traffic harder to detect by security tools.
+  - Attackers may repair the initial vulnerability to prevent discovery by others or security teams.
+
+#
+
+## Oveflow Attacks
+
+- **Buffer Overflow Basics:**
+  - Occurs when user input exceeds the memory buffer allocated by the developer.
+  - Can lead to unexpected behavior as excess data spills into adjacent memory areas.
+
+- **Example Demonstration:**
+    - Inputs a 4,097 digit room number to exploit the vulnerability.
+
+- **Steps in the Demonstration:**
+  - Enters name and room number in the web application.
+  - Uses Zap proxy to intercept and review the request.
+  - Observes hidden fields containing user data in the web application.
+  - Attempts a buffer overflow by submitting an excessively long room number.
+  - Successfully retrieves data of all hotel guests, demonstrating the attack.
+
+- **Type of Overflow:**
+  - The specific attack shown is an integer overflow.
+
+- **Mitigation:**
+  - Simple input validation, such as limiting room numbers to three or four digits, can prevent such attacks.
+
+#
+
+## Cookie and Attachments
+
+- **Web Cookies Overview:**
+  - Small pieces of content that track users between website visits and across different websites.
+  - Stored in user browsers by websites to track a single user or retain information between sessions.
+
+- **Privacy Risks:**
+  - Cookies can track activity across multiple websites, potentially de-anonymizing users.
+  - Particularly concerning for cookies used by advertising networks across many sites.
+
+- **User Control Over Cookies:**
+  - Users can manage cookies through browser settings.
+  - Example shown using Chrome:
+    - **Allow Sites to Save and Read Cookie Data:** Enabled by default; necessary for many websites to function.
+    - **Clear Cookies and Site Data When You Quit Chrome:** Discards all cookies each time the browser is closed; enhances security but is inconvenient.
+    - **Block Third-Party Cookies:** Prevents websites from accessing cookies created by other sites; commonly used for advertising.
+
+- **Managing Cookies in Chrome:**
+  - Access Chrome Settings > Privacy and Security > Site Settings > Cookies and Site Data.
+  - Options to view and manage cookies for individual websites.
+  - Example sites visited: LinkedIn, Microsoft, The New York Times, The Washington Post.
+  - Ability to see, explore, and remove cookies from specific sites.
+
+- **Security Professional's Role:**
+  - Explain the risks associated with cookies to end users.
+  - Be knowledgeable about privacy settings for cookie management and their impact.
+
+
 
 
 
