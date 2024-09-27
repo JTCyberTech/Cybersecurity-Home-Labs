@@ -1134,6 +1134,21 @@ Which of these is an ineffective defense against client-side XSRF attacks?
 Which one of these tools is not an interception proxy?
 - RStudio is an integrated development Environment (IDE) for the R interpretive language for statistical analysis.
 
+_____ consist of shared code objects that perform related functions.
+- Libraries: Programming libraries consist of shared code objects that perform related functions.
+
+What character is essential in input for a SQL injection attack?
+- `'`: Single quotes are essential in input for a SQL injection attack because they allow the attacker to escape the built-in SQL query.
+
+What dataset would an attacker modify to perform a data poisoning attack?
+- Training dataset:  used in machine learning to build and teach the model the parameters. An attacker would modify the training dataset to perform a data poisoning attack.
+
+
+
+
+
+
+
 
 
 
