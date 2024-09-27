@@ -755,9 +755,11 @@ Key Takeaways:
 Definition of Cross-Site Scripting (XSS):
 - XSS attacks trick a user's web browser into executing a malicious script.
 - The attack can be stored on a site and executed when a victim visits the page.
+- When victim visit the site, victim's browser unknowingly downaloads and runs the code.
 
 Conditions for XSS Attacks:
 - The website must have reflected or stored input.
+  - There must be opportunity where attackers can provide text to site that will be displayed to other users.
 - The input must be unvalidated, allowing the attacker to embed script commands.
 
 Common Scenarios:
@@ -776,8 +778,44 @@ Types of XSS Attacks:
 Example Scenario:
 - An online auction site allowing HTML in listings can be exploited if it doesn't validate input, leading to malicious scripts running in users' browsers.
 
+#
 
+## Request Forgery
 
+Terminology:
+- Cross-site request forgery (CSRF) is also known as XSRF or Sea surf.
+
+Attack Mechanism:
+- CSRF attacks exploit the fact that users often have multiple sites open and authenticated sessions persist across tabs
+- Attackers trick a user's browser into sending unauthorized requests to another site without the user's knowledge.
+
+Example Scenario:
+- If a user is logged into multiple sites (e.g., LinkedIn, Wikipedia, Bank of America), an attacker can use one site to make unauthorized requests to another.
+- This can be done by embedding a fake image tag in a webpage that executes a command, such as transferring funds from the user's account to the attacker's account.
+
+Defense Mechanisms:
+- Use cryptographically strong tokens in each exchange between authenticated users and the website.
+- Avoid using HTTP GET requests for actions that can change the state of the server.
+- Advise users to log out after using a site and implement automatic logouts after a short idle period.
+
+Server-Side Request Forgery (SSRF):
+- SSRF is a variant that targets the server, tricking it into retrieving malicious commands or destinations from what it believes is a trusted source.
+
+#
+
+## Privilege Escalation
+
+Gain Admin Access
+
+- Definition: Privilege escalation attacks transform normal user accounts into accounts with administrative rights.
+- Risks: These attacks are particularly dangerous on systems with external exposures, allowing internet-based control of a server.
+- Common Causes: Often arise from buffer overflow issues or other security vulnerabilities in code that allow arbitrary code execution.
+
+Mitigation Strategies:
+- Input Validation: Perform strict input validation to ensure inputs are in the expected format and length.
+- System Updates: Ensure operating systems, platforms, and applications are current and have the latest security patches.
+- Principle of Least Privilege: Service accounts should have the minimum privileges necessary for code execution.
+- Preventive Controls: Use data execution prevention and address space layout randomization technologies to prevent privilege escalation attacks.
 
 
 
