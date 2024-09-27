@@ -712,8 +712,6 @@ Interconnected Networks:
 
 ## Prevent SQLi
 
-# Prevent SQL Injection
-
 SQL Injection Attacks:
 - Exploit the reliance of dynamic web applications on underlying databases.
   - Example: A web application retrieves unencrypted user passwords from a database for authentication.
