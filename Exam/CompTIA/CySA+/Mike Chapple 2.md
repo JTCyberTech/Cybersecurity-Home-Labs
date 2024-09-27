@@ -921,7 +921,185 @@ Defense Strategies:
   - Explain the risks associated with cookies to end users.
   - Be knowledgeable about privacy settings for cookie management and their impact.
 
+#
 
+## Session Hijacking
+
+- **Web Application Authentication:**
+  - Cookies are used to maintain user sessions after login.
+  - Some web applications use guessable cookie values, which is a security flaw.
+
+- **Demonstration of Cookie Guessing:**
+  - Example using WebGoat and Zap web proxy.
+  - Two accounts are used to demonstrate cookie value patterns.
+  - The cookie value starts with a common number and ends with a text value derived from the username.
+
+- **Technique for Guessing Cookies:**
+  - Reverse the username letters and add one value to each letter to guess the cookie.
+  - Demonstrated logging in as another user (Alice) using the guessed cookie value.
+
+- **Security Implications:**
+  - Cookies can be vulnerable to session replay attacks.
+  - Attackers can eavesdrop and steal cookie values to impersonate users.
+
+- **Mitigation Strategies:**
+  - Use random, non-guessable cookie values.
+  - Configure cookies with the secure attribute to ensure they are sent over encrypted connections.
+
+#
+
+## Race Conditions
+
+- **Definition of Race Conditions:**
+  - A race condition is a dangerous security flaw that occurs when the proper functioning of a security control depends on the timing of activities performed by the computer or the user.
+  - If the timing doesn't occur as expected, the software may behave unexpectedly, causing significant security vulnerabilities.
+
+- **Example: Time of Check to Time of Use (TOCTOU) Vulnerability:**
+  - **Scenario:** An ATM machine dispensing cash.
+  - **Steps:**
+    1. User inserts an ATM card and enters a PIN.
+    2. The machine verifies the PIN and checks the available account balance.
+    3. The user requests an amount of money.
+    4. The machine dispenses the money if it's less than the available balance that it previously checked.
+  - **Issue:** If two users access the same account simultaneously, both machines may dispense money based on the same balance, leading to an overdrawn account.
+
+- **Solution to TOCTOU Vulnerability:**
+  - Implement a lock that prevents two users from accessing the same account at the same time.
+  - The first user to access the account locks it, preventing the second user from starting a transaction until the first transaction completes.
+
+- **Impact on Application Security:**
+  - Race conditions can significantly impact application security.
+  - Developers must understand these security risks and plan their code to avoid such issues.
+
+#
+
+## Memory Vulnerabilities
+
+- **Memory Isolation:** Importance of isolating memory used by different processes to prevent unauthorized access or alterations.
+
+- **Memory Overflows:** Attackers can exploit overflow vulnerabilities to overwrite memory contents and execute malicious code with administrative privileges.
+
+- **Resource Exhaustion:** Systems can consume all available memory, storage, or processing time, leading to crashes. Memory leaks are a common example.
+
+- **Memory Leaks:** Occur when applications fail to return unused memory to the operating system, eventually consuming all available memory and causing system crashes.
+
+- **Memory Pointers:** Pointers store addresses of other memory locations. Issues arise if pointers are empty (NULL value), leading to NULL pointer exceptions that can crash programs or bypass security controls.
+
+- **DLL Injection:** Attack technique where malicious DLLs are inserted into memory, tricking applications into using them and compromising system security.
+
+- **Security Implications:** These vulnerabilities can impact the confidentiality, integrity, and availability of systems and information.
+
+- **Collaboration:** Security professionals should work with developers and system engineers to ensure proper memory management and mitigate these vulnerabilities.
+
+#
+
+## Code Execution Attacks
+
+- **Definition:** Code execution attacks exploit vulnerabilities in a system, allowing attackers to run commands on that system.
+
+- **Common Entry Points:**
+  - Public-facing web servers (e.g., ports 80 and 443).
+  - Vulnerabilities in web server software (e.g., Apache, Microsoft IIS).
+
+- **Types of Code Execution:**
+  - **Arbitrary Code Execution:** Attackers run commands of their choice.
+  - **Remote Code Execution:** Attackers execute code from a remote system.
+
+- **Potential Actions by Attackers:**
+  - Install malicious code.
+  - Join the system to a botnet.
+  - Steal sensitive information.
+  - Create accounts for later access.
+
+- **Protection Measures:**
+  - **Limit Permissions:** Run application services with restricted accounts following the principle of least privilege.
+  - **Apply Security Updates:** Regularly patch operating systems and applications to fix known vulnerabilities.
+
+- **Example:**
+  - Microsoft released a security bulletin in March 2020 for a remote code execution vulnerability in the SMB protocol, with an available patch to correct it.
+
+#
+
+## Data Poisoning
+
+- **Definition:** Data poisoning attacks manipulate training datasets to create inaccurate machine learning models.
+
+- **Purpose of Machine Learning:**
+  - Apply computer science and statistics to uncover knowledge in data.
+  - Analyze data to find trends, categorize records, and improve business efficiency.
+
+- **Training Datasets:**
+  - Used to generate models for future predictions.
+  - If compromised, can lead to faulty models and poor business decisions.
+
+- **Attack Method:**
+  - Attackers modify or influence the creation of training datasets.
+  - This manipulation leads to inaccurate models.
+
+- **Protection Measures:**
+  - Ensure training datasets are protected from integrity attacks.
+  - Analysts should be vigilant in safeguarding the data used for training models.
+
+#
+
+## Third party Code
+
+- **Definition and Usage:**
+  - Third-party code refers to software libraries created by others to improve development efficiency.
+  - Developers use these libraries to avoid writing code from scratch for common functions.
+
+- **Examples:**
+  - In R programming, libraries like `tidyverse`, `stringr`, and `lubridate` are used for data tidying, string manipulation, and date manipulation, respectively.
+  - The `ggplot2` library is used to create graphs with simple commands.
+
+- **Software Development Kits (SDKs):**
+  - SDKs are collections of software libraries, documentation, examples, and utilities to help developers.
+  - Example: Facebook's SDK for iOS developers includes components for analytics, ads, identity management, and more.
+
+- **Application Programming Interfaces (APIs):**
+  - APIs allow developers to interact with services over the internet.
+  - Example: Twitter's API enables developers to read and post tweets programmatically.
+
+- **Security Considerations:**
+  - Outsourced code should undergo the same level of testing as internally developed code.
+  - Security teams must be aware of dependencies and stay vigilant about security updates.
+
+#
+
+## Interception Proxies
+
+- **Interception Proxies Overview:**
+  - Used during penetration testing of web applications.
+  - Intercept and manipulate HTTP requests before they reach the web server.
+
+- **Normal Web Use:**
+  - User's web browser creates HTTP requests and sends them to web servers.
+  - Web servers reply with the requested information.
+
+- **Penetration Testing:**
+  - Testers manipulate HTTP requests to include malicious content.
+  - Websites are not designed to handle these malicious requests.
+
+- **Role of Interception Proxies:**
+  - Intercept requests from the tester’s browser.
+  - Allow manipulation of requests before sending them to the server.
+
+- **Example Tool: Zed Attack Proxy (ZAP):**
+  - Created by the Open Web Application Security Project (OWASP).
+  - Open-source and available for multiple operating systems.
+
+- **Using ZAP:**
+  - Configured to run with a web browser (example shown with Chrome).
+  - Intercepts all web requests, performing a man-in-the-middle attack.
+  - Displays HTTP requests and responses in the ZAP console.
+
+- **Manipulating Requests with ZAP:**
+  - Example shown with LinkedIn and Google websites.
+  - Intercepted Google search query and modified it before sending to the server.
+  - Demonstrated how to change search terms and see the manipulated results.
+
+- **Other Interception Proxies:**
+  - ZAP, Burp Suite, and Vega are mentioned as popular interception proxies.
 
 
 
