@@ -537,7 +537,40 @@ Removing names and identification numbers is usually all that is necessary to de
 - FALSE: You can often combine seemingly innocuous fields to uniquely identify an individual.
 
 Database normalization should ALWAYS be used to improve database security.
-- FALSE:
+- FALSE: The database community has an active and healthy debate about how closely database designers should follow the normal forms.
+
+Which character is commonly used in URL encoding to indicate the replacement of a special character?
+- %: The % character is commonly used in URL encoding to indicate the replacement of a special character.
+
+What protocol may be used to secure passwords in transit to a web application?
+- TLS: TLS is an Internet protocol that provides end-to-end encryption on data sent between systems and may be used to secure web application passwords.
+    - MS-CHAPv2: MS-CHAP v1 & v2 are authentication protocols that do not provide security for web application passwords.
+
+Which of these technologies is an example of a parameterized query?
+- Stored procedure: A stored procedure is an example of a parameterized query.
+
+Which input validation approach works to exclude prohibited input?
+- Unapproved list: The unapproved list works to exclude prohibited input.
+
+Which data obfuscation technique is intended to be reversible?
+- Tokenization: In tokenization, sensitive values are replaced with a unique identifier using a lookup table.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
