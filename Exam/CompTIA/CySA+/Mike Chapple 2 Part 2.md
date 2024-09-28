@@ -1107,50 +1107,7 @@ Which of these is not a standard risk treatment option?
 - Initiation: Initiation is not one of the risk treatment options.
 
 What is the correct formula for computing the annualized loss expectancy?
+- ALE = SLE * ARO: Annualized loss expectancy (ALE) equals a single loss expectancy multiplied by an annualized rate of occurrence.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
+What two factors are used to evaluate a risk?
+- Likelihood and impact: Likelihood is the probability that a risk will occur. Impact is the amount of expected damage. These are the two criteria used to evaluate risks.
