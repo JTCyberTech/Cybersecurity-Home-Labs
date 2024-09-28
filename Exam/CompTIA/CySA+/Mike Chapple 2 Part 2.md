@@ -266,6 +266,26 @@
 
 ## Input Validation 
 
+- **User Input Vulnerability:** Any application accepting user input is susceptible to exploitation.
+
+- **Types of Attacks:** User input can contain code for attacks like SQL injection and cross-site scripting.
+
+- **Input Validation Importance:** Essential for protecting against input-based attacks by filtering user input to ensure it doesn't contain malicious or unexpected values.
+
+- **Two Approaches to Input Validation:**
+  - **Approved List (Whitelisting):**
+    - Specifies exact allowed input types.
+    - Example: Ensuring a year of birth is a four-digit number within a reasonable range.
+  
+  - **Unapproved List (Blacklisting):**
+    - Specifies input types that are not allowed.
+    - Example: Prohibiting HTML tags to prevent cross-site scripting or SQL keywords to prevent injection attacks.
+
+- **Effectiveness:**
+  - Approved list is more powerful but not always practical.
+  - Unapproved list is more flexible but less effective as it’s hard to describe all malicious input types.
+
+- **Server-Side Validation:** Critical to perform input validation on the server, not in the client’s browser, to prevent users from bypassing the validation.
 
 
 # Quiz
@@ -296,6 +316,25 @@ Which component of a change management program includes final testing that the s
 - Release management: During release management, the quality assurance team tests the code and verifies that it meets the requirements, and implements the change described in the RFC.
 
 ## Secure Coding Practices
+
+Developers wishing to sign their code must have a _____.
+- digital certificate: Developers wishing to sign their code must have a digital certificate. Developers would sign their code using their private key.
+
+What Java clause is critical for error handling?
+- Try...Catch: The Java clause Try...Catch is critical for error handling.
+
+Removing names and identification numbers is usually all that is necessary to deidentify a dataset.
+- FALSE: You can often combine seemingly innocuous fields to uniquely identify an individual.
+
+Database normalization should ALWAYS be used to improve database security.
+- 
+
+
+
+
+ 
+
+
 
 
 
