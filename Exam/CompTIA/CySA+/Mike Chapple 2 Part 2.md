@@ -863,22 +863,138 @@
 
 ## Risk Assessment
 
+- **Definition of Risk Assessment:**
+  - Process of identifying and prioritizing risks based on their likelihood and impact.
+
+- **Key Terminology:**
+  - **Threat:** External force jeopardizing security (e.g., hacking, natural disasters).
+  - **Threat Vector:** Method used by an attacker to reach the target (e.g., social engineering).
+  - **Vulnerability:** Weakness in security controls that can be exploited.
+  - **Risk:** Combination of a threat and a vulnerability.
+
+- **Risk Assessment Process:**
+  - Identify risks with both a vulnerability and a corresponding threat.
+  - Rank risks based on two factors: likelihood and impact.
+
+- **Likelihood:**
+  - Probability that a risk will occur (e.g., higher earthquake probability in California than Wisconsin).
+
+- **Impact:**
+  - Amount of damage if the risk materializes (e.g., earthquake causing more damage than a rainstorm).
+
+- **Assessment Techniques:**
+  - **Qualitative Techniques:** Use subjective judgment, categorizing risks as low, medium, or high.
+  - **Quantitative Techniques:** Use objective numeric ratings to assess likelihood and impact.
+
+- **Qualitative Risk Assessment Chart:**
+  - Rates likelihood and impact as low, medium, or high.
+  - Categorizes overall risk based on these ratings (e.g., high-probability, high-impact risk is high overall).
+
 #
 
 ## Quantitative Risk Assessment
 
+- **Quantitative Risk Management:** Uses numeric data to make informed decisions about risk.
+  - **Asset Value (AV):** Estimated value in dollars of an asset.
+    - **Original Cost Technique:** Uses purchase invoices to determine asset value.
+    - **Depreciating Cost Technique:** Reduces asset value over time based on its useful life.
+    - **Replacement Cost Technique:** Uses current market prices to determine the cost of replacing an asset.
+
+  - **Exposure Factor (EF):** Estimates the percentage of an asset that will be damaged if a risk materializes.
+  - **Single Loss Expectancy (SLE):** Actual damage expected if a risk occurs once.
+    - **Formula:** SLE = Asset Value (AV) × Exposure Factor (EF)
+  
+  - **Annualized Rate of Occurrence (ARO):** Number of times a risk is expected to occur each year.
+  - **Annualized Loss Expectancy (ALE):** Amount of money expected to be lost each year from a specific risk.
+    - **Formula:** ALE = Single Loss Expectancy (SLE) × Annualized Rate of Occurrence (ARO)
+
+  - **Mean Time to Failure (MTTF):** Average time expected before a non-repairable asset fails.
+  - **Mean Time Between Failures (MTBF):** Average time between failures of a repairable asset.
+  - **Mean Time to Repair (MTTR):** Average time an asset will be out of service for repair.
 #
 
 ## Risk Treatment Options
 
+- **Risk Management Process:**
+  - Systematically analyze potential responses to each risk.
+  - Implement strategies to control risks appropriately.
+
+- **Four Basic Risk Treatment Options:**
+  - **Risk Avoidance:** Change business practices to eliminate the risk.
+    - **Example:** Relocate a data center to avoid flood risk.
+  
+  - **Risk Transference:** Shift the impact of risk to another organization.
+    - **Example:** Purchase insurance (e.g., cybersecurity insurance).
+  
+  - **Risk Mitigation:** Reduce the likelihood or impact of a risk.
+    - **Example:** Install flood control systems to protect a data center.
+  
+  - **Risk Acceptance:** Accept the risk after a thoughtful analysis.
+    - **Example:** Continue operations in a flood-prone area due to cost constraints.
+
+- **Risk Profile:**
+  - Combination of risks affecting an organization.
+  - **Inherent Risk:** Initial level of risk before controls.
+  - **Residual Risk:** Risk remaining after controls are applied.
+  - **Control Risk:** New risks introduced by implementing controls.
+
+- **Risk Appetite:**
+  - The level of risk an organization is willing to accept.
+  - **Goal:** Ensure residual and control risks are below the organization's risk appetite.
 #
 
 ## Risk Management Frameworks
 
+- **Risk Management Frameworks:** Proven techniques for performing enterprise risk management.
+  - **NIST Framework:** Widely used, developed by the National Institute of Standards and Technology (NIST), detailed in Special Publication 800-37.
+
+- **Preparation:**
+  - Gather technology architecture information: reference models, technical details, business process info, system boundaries.
+  - Collect organization-specific information: laws, regulations, policies, strategy, priorities, resources, supply chain info.
+
+- **Six Steps of NIST Risk Management:**
+  1. **Categorize Information System:** Assess the system and the information it handles.
+  2. **Select Security Controls:** Choose controls based on the system’s categorization.
+  3. **Implement Controls:** Put the selected controls into action.
+  4. **Assess Controls:** Evaluate if controls are correctly implemented and effective.
+  5. **Authorize System:** Formal authorization of the system’s operation, accepting any remaining risks.
+  6. **Monitor Controls:** Continuously monitor the controls for effectiveness and respond to changes.
+ 
 #
 
 ## Risk Visibility and Reporting
 
+- **Risk Management Tools:** Cybersecurity teams use various tools for risk identification, assessment, and management.
+  - **Risk Register:**
+    - Centralized document tracking information about each risk.
+    - May be used organization-wide or for specific projects/domains.
+    - Also known as risk logs.
+    - Typically includes:
+      - Description of each risk.
+      - Categorization scheme.
+      - Risk assessment results (probability and impact).
+      - Risk rating (probability × impact).
+      - Actions taken for risk management.
+  
+  - **Example:** Educause risk register for higher education IT organizations.
+    - Includes risk statements, possible causes, and impact.
+    - Risk rating example: Likelihood (3) × Impact (2) = Risk score (6).
+
+  - **Sources for Risk Register:**
+    - Formal risk assessments.
+    - Audit findings.
+    - IT or planning team inputs.
+    - Third-party threat intelligence.
+
+- **Threat Intelligence:**
+  - Important for maintaining visibility into risks.
+  - Can be shared through vendors or consortia.
+  - Helps monitor risk trends and create blacklists.
+
+- **Communication with Leaders:**
+  - Risk registers might be too detailed for business leaders.
+  - Use risk matrices or heat maps for summarizing risks.
+  - Helps leaders focus on significant risks quickly.
 
 #
 
