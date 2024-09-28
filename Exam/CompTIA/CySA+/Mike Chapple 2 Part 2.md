@@ -682,7 +682,7 @@ Which language would be a target for a decompiler during reverse engineering?
 - C++: C++ would be a target for a decompiler during reverse engineering.
 
 Which kind of testing checks for unexpected side effects of a code change?
-- Regression:
+- Regression: Regression testing checks for unexpected side effects of a code change.
     - Stress testing: Stress testing is another term for load testing and is used to simulate real activity on the system to verify that it is able to handle the maximum expected load.
     - Beta testing: Beta testing is performed by a group of consumers.
     - UAT: User Acceptance Testing (UAT) is usually the final phase in software testing where end-users use the software with real world transactions.
