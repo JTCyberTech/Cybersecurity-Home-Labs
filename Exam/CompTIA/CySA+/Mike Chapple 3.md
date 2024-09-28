@@ -497,61 +497,387 @@
 
 ## Conducting Investigations
 
+- Types of Investigations:
+  - **Operational/Administrative Investigations:** Focus on resolving issues related to the organization’s technology infrastructure (e.g., server errors, network congestion). Aim to restore normal operations and conduct root cause analysis.
+  - **Criminal Investigations:** Conducted by government agencies to investigate violations of criminal law. Use the highest standard of evidence: beyond a reasonable doubt.
+  - **Civil Investigations:** Investigate non-criminal offenses involving disputes between parties (e.g., contract disputes, employment law violations). Use a lower standard of evidence: preponderance of the evidence.
+  - **Regulatory Investigations:** Conducted by government agencies or independent regulators to investigate violations of administrative law or industry standards. Use the appropriate standard of evidence based on the case type.
+
+- Operational Investigations:
+  - Aim to resolve technical issues and restore normal operations.
+  - Conduct root cause analysis to prevent future issues.
+
+- Criminal Investigations:
+  - Conducted by government agencies.
+  - Aim to investigate violations of criminal law.
+  - Use the highest standard of evidence: beyond a reasonable doubt.
+
+- Civil Investigations:
+  - Investigate non-criminal disputes between parties.
+  - Use a lower standard of evidence: preponderance of the evidence.
+
+- Regulatory Investigations:
+  - Conducted by government agencies or independent regulators.
+  - Investigate violations of administrative law or industry standards.
+  - Use the appropriate standard of evidence based on the case type.
+
+- Interviews vs. Interrogations:
+  - **Interviews:** Voluntary questioning to gather valuable information.
+  - **Interrogations:** Questioning hostile subjects without consent, conducted by trained law enforcement officials.
+
 #
 
 ## Evidence Types
+
+- Types of Evidence:
+  - **Real Evidence:** Tangible objects presented in court (e.g., a bloody knife in a criminal case or computer equipment in digital crimes).
+  - **Documentary Evidence:** Written or digital information used to demonstrate facts (e.g., contracts, computer logs).
+    - **Authentication:** Must be verified as legitimate.
+    - **Best Evidence Rule:** Original documents are superior to copies.
+    - **Parol Evidence Rule:** Written agreements are assumed to be the entire agreement unless modified in writing.
+  - **Testimonial Evidence:** Information provided by a witness in court.
+    - **Direct Evidence:** Witness describes their direct observations.
+    - **Expert Opinion Evidence:** Experts interpret facts based on their expertise.
+
+- Legal Rules for Evidence:
+  - **Authentication:** Ensures the legitimacy of documentary evidence.
+  - **Best Evidence Rule:** Prefers original documents over copies.
+  - **Parol Evidence Rule:** Written contracts are considered complete and cannot be verbally modified.
+
+- Testimonial Evidence:
+  - **Direct Evidence:** Witnesses provide firsthand accounts.
+  - **Expert Opinion Evidence:** Experts draw conclusions from evidence.
+  - **Hearsay Rule:** Witnesses cannot testify about what others told them outside of court, with some exceptions.
+
+- Application in Cybersecurity:
+  - **Real Evidence:** Could include physical computer hardware.
+  - **Documentary Evidence:** Might involve digital logs and records.
+  - **Testimonial Evidence:** Cybersecurity experts may provide direct or expert testimony.
 
 #
 
 ## Introduction to Forensics
 
+- Digital Forensics Goal: Collect, preserve, analyze, and interpret digital evidence artifacts to support investigations.
+
+- Types of Evidence: Includes data from smartphones, laptops, and network traffic logs.
+
+- Guiding Principle: Investigators must avoid actions that alter evidence, similar to wearing gloves at a crime scene to avoid contamination.
+
+- Volatility of Evidence: Digital evidence varies in permanence. Hard drives are less volatile than RAM, so more volatile evidence should be gathered first.
+
+- Evidence Collection Order:
+  1. Network traffic
+  2. Memory contents
+  3. System configuration and process information
+  4. Files (temporary files first)
+  5. Logs
+  6. Archived records
+
+- Time Sensitivity: Accurate timestamps are crucial. Investigators should record the current time from a reliable source and compare it to the device’s time (time offset).
+
+- Non-Digital Evidence: Video recordings and witness statements can also be valuable.
+
+- Resource Tracking: Track time and expenses for proper billing and resource management in investigations.
+
 #
 
 ## Syestem and File Forensics
+
+- Digital Evidence Sources: Computers, mobile devices, and digital media are common sources.
+
+- Principle of Evidence Collection: Never alter the evidence to avoid misinterpretation.
+
+- Working with Evidence: Forensic analysts create copies or images of physical evidence to avoid tampering.
+
+- Use of Write Blockers: Devices that prevent any data from being written to the evidence during analysis.
+
+- Hashing:
+  - **Definition:** A unique signature of a file created using a mathematical algorithm.
+  - **Purpose:** Demonstrates that evidence hasn’t been altered.
+  - **Example:** Small changes in text result in completely different hash values.
+
+- File Metadata: Includes details about the file’s creation, storage, and modification history.
+
+- Additional Data Collection: Screenshots, system memory, process table, and system configuration can also be collected.
+
+- Specialized Discipline: Only trained professionals should perform forensic investigations to avoid damaging evidence.
 
 #
 
 ## File Carving
 
+- File Deletion: Deleting a file using operating system commands doesn’t remove the file’s data; it only deletes the reference, leaving the data in unallocated disk space.
+
+- File Carving: This technique allows recovery of files from unallocated space on a hard disk image, useful in forensic investigations.
+
+- Bulk Extractor Tool:
+  - **Usage:** A widely used file carving utility in the security community.
+  - **Commands:**
+    - `-o` option: Selects an output directory (e.g., `extracted_data`).
+    - `-S jpeg_carve_mode=2`: Extracts JPEG images.
+    - Disk image input: Uses a disk image file (e.g., `disk_image.dd`).
+  - **Output:** Stores extracted data in the specified directory, including text files and a directory for carved JPEG files.
+
+- Example Outputs:
+  - `url.txt`: Contains URLs found on the disk image.
+  - `windows.txt`: Lists Windows files retrieved from the disk image.
+  - `jpeg_carved Directory`: Stores successfully restored JPEG files.
+
+- File Recovery: Sometimes file names are found, but actual files may be unrecoverable if data has been overwritten.
+
+- Forensic Importance: File carving is crucial for recovering temporary data stored during security incidents.
+
+- Additional Tool: WinHex – A Windows utility for low-level data editing in forensics and data recovery.
+
 #
 
 ## Creating Forensic Images
+
+- Connecting and Imaging a Drive:
+  - Use a write blocker to connect the drive.
+  - Utilize disk acquisition tools to create a snapshot of the drive.
+  - On Linux, use the `dd` utility to create images:
+    - **Command:** `sudo dd if=/dev/sdf of=myImage.img status=progress`
+    - This command creates an image file and shows progress.
+  - Compute hash values for authenticity:
+    - Use `md5sum myImage.img` for MD5 hash.
+    - Use `shaum myImage.img` for SHA hash.
+  - Print and store hash values with the image for chain of custody.
+
+- Using FTK Imager on Windows:
+  - Open FTK Imager and add the drive.
+  - Right-click the drive and select “Export Disk Image.”
+  - Choose the raw image format (dd).
+  - Provide case information, destination, and start the image creation.
+  - FTK Imager computes MD5 and SHA hash values during the process.
+  - It also creates a directory listing for the image.
+
+- Post-Image Creation:
+  - Use the created images for forensic analysis with any forensic utility.
+  - Maintain chain of custody and evidence log with hash values and case information.
 
 #
 
 ## Digital Forensics ToolKits
 
+- Digital Forensics Workstation:
+  - Requires a system with substantial RAM and a powerful CPU for computational tasks.
+  - Needs ample onboard hard disk space for intermediate analysis storage.
+
+- Forensic Software:
+  - Essential tools include EnCase, FTK, or Autopsy for robust forensic analysis.
+  - Cryptographic tools like `md5sum` and `shaum` for hashing and encryption.
+
+- Log Viewers:
+  - Necessary for processing log files from various enterprise infrastructure components.
+
+- Storage and Media:
+  - Large removable media drives for storing drive images and forensic evidence.
+  - Drives should be wiped clean before each use.
+
+- Write Blockers and Adapters:
+  - Write blockers to prevent accidental evidence corruption.
+  - A variety of drive adapters, connectors, and cables for different devices.
+
+- Documentation:
+  - Include incident response plan, chain of custody forms, incident forms, and contact lists.
+
+- Miscellaneous Items:
+  - Office supplies, cameras for photographic and video evidence, crime scene tape, evidence bags, and tamper-proof seals.
+
 #
 
 ## Operating System Analysis
 
+- Live Analysis:
+  - Interaction with a live system to collect volatile information.
+  - Memory dumps are crucial for capturing the current contents of RAM.
+
+- Memory Dump:
+  - Use tools like FTK Imager to create memory dumps.
+  - Store the memory capture file for offline analysis.
+
+- Swap and Page Files:
+  - Operating systems may write data from memory to disk, creating swap and page files.
+  - These files can be useful for forensic analysis.
+
+- Sysinternals Suite:
+  - A collection of Windows utilities useful for forensic analysts.
+  - Originally developed by Winternals, now maintained by Microsoft.
+
+- Key Sysinternals Tools:
+  - **AccessEnum:** Shows permissions assigned to users and groups.
+ 
 #
 
 ## Password Forensics
+
+- Password Cracking in Forensics:
+  - Cybersecurity analysts use password cracking tools to retrieve passwords from password files during forensic analysis.
+  - Password files contain password hashes, not plain text passwords, to enhance security.
+
+- Password Storage:
+  - On Linux systems, password files contain user credentials as hashes.
+  - Hashes are computed using a one-way function and stored in a shadow password file, which is highly restricted.
+
+- Hash Functions:
+  - Hash functions convert variable-length input into fixed-length output.
+  - Key properties: collision-resistant, irreversible, and any input change produces a different output.
+  - Collisions can occur due to the birthday problem.
+
+- Types of Password Attacks:
+  - **Brute Force Attacks:** Guess all possible combinations; effective against short passwords.
+  - **Dictionary Attacks:** Use common words to guess passwords.
+  - **Hybrid Attacks:** Combine dictionary attacks with common variations (e.g., adding numbers).
+  - **Rainbow Table Attacks:** Use precomputed hashes of common passwords to save computational steps.
+
+- Practical Demonstration:
+  - The instructor demonstrates adding user accounts with different password complexities on a Linux server.
+  - Uses the `unshadow` command to combine password and shadow files for analysis.
+  - Utilizes "John the Ripper" tool to crack passwords, showing effectiveness against simple and common passwords.
+
+- Security Recommendations:
+  - Ensure strong hashing algorithms and safeguard password files.
+  - Use multi-factor authentication for enhanced security.
 
 #
 
 ## Network Forensics
 
+- Network Forensics Overview:
+  - Forensic investigators analyze communications sent and received by targeted systems.
+  - Network transmissions are digital, consisting of ones and zeros sent over various media (copper wire, fiber optics, wireless).
+
+- Media Types and Eavesdropping:
+  - Copper and fiber optic cables can be tapped.
+  - Wireless signals can be intercepted.
+  - Switches and routers can be compromised to eavesdrop on communications.
+
+- Tools for Network Forensics:
+  - **Protocol Analyzers (e.g., Wireshark):**
+    - Conduct full packet capture, grabbing every bit seen on a network.
+    - Reconstruct packets to exchange data between systems.
+    - Provide detailed information like timestamps, source/destination IP addresses, protocols, and packet contents.
+
+- Challenges with Full Packet Capture:
+  - Requires massive amounts of storage.
+  - Filters can save relevant information if known in advance.
+
+- NetFlow Data:
+  - Captures high-level information about communications (source/destination IPs, ports, timestamps, data amount).
+  - Similar to phone call records on a telephone bill.
+  - Useful for understanding "who talked to whom" without storing full packet details.
+
+- Other Data Formats:
+  - **S Flow and IPFIX:** Provide similar data to NetFlow, depending on network device support.
+  - **Bandwidth Monitors:** Offer insights into network utilization and traffic on different links.
+
 #
 
 ## Software Forensics
+
+- Definition and Uses:
+  - Software forensics involves analyzing software code to render expert opinions.
+  - Two major uses:
+    - Resolving intellectual property disputes.
+    - Identifying the origins of malware.
+
+- Intellectual Property Disputes:
+  - Common in civil disputes.
+  - Example: A developer moves to a competitor, and the original company accuses the competitor of stealing code.
+  - Forensic experts analyze the code to determine if the new features were independently developed or copied.
+
+- Malware Identification:
+  - Analyzing malicious code to compare it with known malware.
+  - Example: UK, Canada, and US cybersecurity agencies released a report in 2020 accusing Russian Intelligence of hacking COVID-19 vaccine development efforts.
+  - The report included code snippets to identify the Russian activity, dubbed Cozy Bear.
+  - Publicly available signatures can be used to frame others, so they should be used cautiously.
+
+- Email Header Analysis:
+  - Email headers contain technical information useful for forensic analysis.
+  - Example: Analyzing email headers in Gmail to see the path and technical details of the message.
+  - Tools like MxToolbox parser can simplify the analysis of email headers.
+
+- Application Metadata:
+  - Web servers and other applications generate metadata useful for forensic analysis.
 
 #
 
 ## Mobile Device Forensics
 
+- Mobile Devices as Evidence:
+  - Mobile devices contain a wealth of evidence, including emails, texts, voicemails, cloud-stored files, and GPS tracking data.
+  - **Metadata Importance:** Metadata generated by mobile devices can provide significant insights.
+  - **Encryption Challenges:** Strong encryption used by manufacturers protects private data, making forensic analysis difficult.
+  - **Law Enforcement Insight:** Many devices are encrypted, limiting successful forensic analysis. However, some devices remain unencrypted or lack passcode protection, making them accessible.
+  - **Specialized Tools Required:** Forensic analysis of mobile devices requires specialized tools and expertise.
+  - **Niche Field:** Mobile device forensics is a specialized area, and expert help is often necessary for effective analysis.
+
 #
 
 ## Embedded Device Forensics
+
+- Definition of Embedded Devices: Special-purpose computer systems found in everyday objects and industrial settings, containing both hardware and software.
+
+- Data Collection: Embedded devices collect large amounts of information valuable for forensic investigations.
+
+- Examples of Embedded Devices:
+  - **Cars:** Contain numerous embedded systems for various functions, such as climate control and GPS navigation. GPS data can be used to track a vehicle’s location over time.
+  - **Homes:** Include security systems, smart thermostats, and smart lights, all of which can provide data on presence and movement within a building.
+  - **Smart Home Assistants:** Devices like Amazon Echo and Google Home collect audio data and send it to the cloud for processing.
+
+- Forensic Value: Information from embedded devices can help determine factors like location, presence, and even time of death.
+
+- Case Example: In Bentonville, Arkansas, investigators used data from an Amazon Echo device in a murder investigation to gather background sounds relevant to the crime.
 
 #
 
 ## Chain of Custody
 
+- Chain of Custody Definition: The chain of custody, also known as the chain of evidence, ensures evidence has not been tampered with during collection, analysis, or storage.
+
+- Importance: Critical for maintaining the authenticity of evidence, especially in court or formal settings.
+
+- Initial Collection:
+  - Place evidence in an evidence storage bag.
+  - Label with date, time, location, collector’s name, and contents.
+  - Seal with a tamper-resistant seal.
+
+- Evidence Log:
+  - Accompanies each piece of evidence.
+  - Records events like collection, transfer, storage, and opening/resealing.
+  - Must include the name of the person, date, time, purpose, and nature of the action.
+
+- Breach of Chain of Custody:
+  - Failure to maintain the evidence log can lead to a breach.
+  - Evidence may become inadmissible in court if a satisfactory chain of custody is not proven.
+
 #
 
 ## Edisovery and Evidence Production
+
+- Electronic Discovery Process:
+  - **Preservation:**
+    - Issuance of a legal hold to preserve records relevant to potential litigation.
+    - Suspension of automated processes that might destroy relevant data, especially log entries.
+  - **Collection:**
+    - Initiated by the legal team when deemed necessary.
+    - Involves gathering documents from file servers, individual computers, email servers, enterprise systems, etc.
+    - Utilization of electronic discovery management products for collection and organization.
+  - **Production:**
+    - Presentation of collected records to the other side in a legal dispute.
+    - Attorneys review records for relevance and legal privileges.
+    - Creation of an electronic file containing all relevant records for sharing.
+
+- Role of Cybersecurity Professionals:
+  - Support preservation by ensuring relevant logs are not purged.
+  - Assist in the collection of electronic records across various systems.
+  - Provide technical assistance throughout the e-discovery process.
+
+- Common Outcomes:
+  - Most litigation holds do not progress beyond preservation and collection.
+  - Actual production of evidence is rare unless the organization frequently faces litigation.
 
 #
 
