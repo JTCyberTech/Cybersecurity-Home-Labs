@@ -498,6 +498,124 @@
   - Redacts sensitive information by replacing it with blank values.
   - **Example:** Masking Social Security numbers with Xs.
 
+#
+
+# Software Quality Assurance
+
+## Software Testing
+
+- **Model Validation and Verification:**
+  - **Model Validation:** Ensures the software meets original business requirements. Answers the question, "Are we building the right software?"
+  - **Software Verification:** Conducted throughout development to ensure the software functions correctly. Answers the question, "Are we building the software right?"
+
+- **Stress/Load Testing:**
+  - Simulates real-world activity on the system to ensure it can handle maximum expected load.
+  - Tests continue increasing load until system failure to determine maximum capacity.
+
+- **User Acceptance Testing (UAT):**
+  - Final phase of testing where end users evaluate the software in a testing environment.
+  - Focuses on usability and ensures the software is intuitive for end users.
+  - Often referred to as beta testing.
+
+- **Regression Testing:**
+  - Conducted before releasing modifications to verify changes don't have unintended side effects.
+  - Uses sets of inputs to compare the original system and modified code to ensure consistent behavior.
+
+#
+
+## Code Security Tests
+
+- **Code Security Tests:**
+  - Move beyond functional requirements to check for security flaws.
+  - Complement code reviews by using technology to assist in code inspection.
+
+- **Types of Code Testing:**
+  - **Static Tests:**
+    - Use specialized software to examine code for common defects without executing it.
+    - Automated equivalent of a code review.
+  - **Dynamic Tests:**
+    - Execute the code, supply inputs, and verify outputs.
+    - Closest to real-world operations, providing confidence in software functionality.
+
+- **Synthetic Transactions:**
+  - Scripted sets of inputs and instructions with known expected outputs.
+  - Used in dynamic tests for regression testing to verify code functionality across various tests.
+
+- **Importance of Multiple Testing Methods:**
+  - Static tests identify defects not covered by synthetic transactions.
+  - Dynamic tests find defects in functionality that static tests can't foresee.
+  - Code reviews by skilled developers can catch deficiencies missed by automated tests.
+
+#
+
+## Fuzzing
+
+- **Definition of Fuzzing:**
+  - Fuzz testing, or fuzzing, is a software testing technique that provides various valid and invalid inputs to software to make it enter unpredictable states or disclose confidential information.
+
+- **Types of Fuzzing:**
+  - **Generation Fuzzing:** Generates input values from a specification.
+  - **Mutation Fuzzing:** Analyzes real input and modifies those values.
+
+- **Example Tool:**
+  - **Zed Application Proxy (ZAP)** from OWASP is used for fuzz testing.
+  - Demonstration involves using ZAP to visit Wikipedia, spider the site, and perform fuzz testing on an API page.
+
+- **Steps in the Example:**
+  1. **Spidering the Website:** ZAP discovers URLs on Wikipedia.
+  2. **Selecting a Target:** Chooses `api.php` page and examines the request.
+  3. **Fuzz Testing:** Highlights a parameter (`action=mobileview`), adds various payloads (e.g., `fullview`, `desktopview`, `admin`), and runs the fuzzer.
+  4. **Results:** ZAP sends multiple requests with different inputs and displays the responses.
+
+- **Important Notes:**
+  - Fuzz testing can be seen as an offensive hacking technique; only perform with permission from the application owner.
+  - Fuzz testing automates testing variations to see how software responds, aiming to identify security vulnerabilities.
+
+# 
+
+## Reverse Engineering Software
+
+- **Reverse Engineering Purpose:** Reverse engineering aims to uncover how software functions by working backward from the end product.
+
+- **Software Development:** Software is created using various programming languages like Python, Ruby, Java, R, C++, etc.
+
+- **Source Code:** The code written by developers is known as source code and is somewhat readable by humans.
+
+- **Interpreted vs. Compiled Languages:**
+  - **Interpreted Languages:** Languages like R, Python, and Ruby use an interpreter to convert source code into machine language during execution.
+  - **Compiled Languages:** Languages like C, C++, and Java are compiled into binary code (executable files) before execution.
+
+- **Reverse Engineering Techniques:**
+  - **Interpreted Languages:** Easier to reverse engineer as you can view the source code directly.
+  - **Compiled Languages:** More challenging as you only have the binary executable file.
+    - **Sandbox Environment:** Run the software in an isolated, instrumented environment to observe its behavior.
+    - **Decompiler:** Use specialized software to convert binary code back into source code, though this is often difficult and inaccurate.
+
+- **Software Integrity Verification:**
+  - **Fingerprinting:** Uses cryptographic hashes to verify if software has been tampered with.
+  - **Hashing Function:** Create a fingerprint of known good software and store it securely. Later, recompute the hash to check for changes.
+  - **File Integrity Monitoring:** Tools like Tripwire use this principle to ensure software integrity.
+
+#
+
+## Reverse Engineering Hardware
+
+- **Reverse engineering hardware** requires advanced skills and sophisticated equipment.
+  - The logic controlling hardware is embedded in integrated circuits and firmware, making it difficult to analyze without specialized instruments.
+
+- **Common use case:** Companies reverse engineer competitors' products to understand their functionality and gain a competitive advantage.
+
+- **Documentation:** Teams should obtain original equipment manufacturer (OEM) documentation to aid in the reverse engineering process.
+
+- **Security risks:** Sophisticated attackers may tamper with hardware to circumvent security controls.
+  - **Example:** NSA intercepted Cisco hardware shipments and inserted eavesdropping equipment.
+
+- **Source authenticity:** Organizations should verify hardware integrity to ensure it hasn't been tampered with before use.
+  - Federal government uses "trusted foundries" for sensitive hardware manufacturing, ensuring rigorous security assessments and strong security controls throughout the manufacturing process.
+
+
+#
+
 # Quiz
 
 ## More Cybersecurity Tools
@@ -554,6 +672,36 @@ Which input validation approach works to exclude prohibited input?
 
 Which data obfuscation technique is intended to be reversible?
 - Tokenization: In tokenization, sensitive values are replaced with a unique identifier using a lookup table.
+
+## Software Quality Assurance
+
+What type of organization does the U.S. government use when developing sensitive hardware?
+- Trusted foundry: The U.S. government uses a trusted foundry when developing sensitive hardware. Trusted foundries are certified to produce sensitive hardware.
+
+Which language would be a target for a decompiler during reverse engineering?
+- C++: C++ would be a target for a decompiler during reverse engineering.
+
+Which kind of testing checks for unexpected side effects of a code change?
+- Regression:
+    - Stress testing: Stress testing is another term for load testing and is used to simulate real activity on the system to verify that it is able to handle the maximum expected load.
+    - Beta testing: Beta testing is performed by a group of consumers.
+    - UAT: User Acceptance Testing (UAT) is usually the final phase in software testing where end-users use the software with real world transactions.
+
+_____ is usually the final stage in code testing.
+- UAT: User Acceptance Testing (UAT) is usually the final phase in software testing.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
