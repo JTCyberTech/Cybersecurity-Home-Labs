@@ -2,71 +2,67 @@
 
 ## Building an Incident Response Program
 
-# Incident Response Plan Overview
+- Importance of Incident Response Plan
+   - **Cybersecurity incidents** are inevitable despite preventive measures.
+   - A **structured incident response plan** is crucial for effective crisis management.
 
-## Importance of Incident Response Plan
-- **Cybersecurity incidents** are inevitable despite preventive measures.
-- A **structured incident response plan** is crucial for effective crisis management.
+- NIST Standard
+   - The incident response process follows the **NIST Computer Security Incident Handling Guide (NIST SP 800-61)**.
+   - This guide is a widely used standard in the cybersecurity field.
 
-## NIST Standard
-- The incident response process follows the **NIST Computer Security Incident Handling Guide (NIST SP 800-61)**.
-- This guide is a widely used standard in the cybersecurity field.
+- Elements of an Incident Response Plan
+   - **Statement of Purpose:**
+      - Reasons for creating the plan.
+      - Scope of the plan (e.g., cybersecurity incidents, sensitive information loss).
 
-## Elements of an Incident Response Plan
-1. **Statement of Purpose:**
-   - Reasons for creating the plan.
-   - Scope of the plan (e.g., cybersecurity incidents, sensitive information loss).
+   - **Strategies and Goals:**
+      - Prioritization of containment over evidence preservation if necessary.
 
-2. **Strategies and Goals:**
-   - Prioritization of containment over evidence preservation if necessary.
+   - **Responsibility and Authority:**
+      - Clear roles and responsibilities for incident handling.
 
-3. **Responsibility and Authority:**
-   - Clear roles and responsibilities for incident handling.
+   - **Communication:**
+      - **Internal team communication.**
+      - Communication with other organizational groups and third parties.
 
-4. **Communication:**
-   - **Internal team communication.**
-   - Communication with other organizational groups and third parties.
+   - **Senior Management Approval:**
+      - Ensures authority for taking necessary actions during incidents.
 
-5. **Senior Management Approval:**
-   - Ensures authority for taking necessary actions during incidents.
+- Preparation and Documentation
+   - **Prior planning and documentation** are essential for effective incident response.
+   - Avoiding a "seat-of-the-pants" approach to incident handling.
 
-## Preparation and Documentation
-- **Prior planning and documentation** are essential for effective incident response.
-- Avoiding a "seat-of-the-pants" approach to incident handling.
-
-## Consulting NIST SP 800-61
-- Use **NIST SP 800-61** as a guide for developing the plan.
-- Review incident response plans from other organizations for reference.
+- Consulting NIST SP 800-61
+   - Use **NIST SP 800-61** as a guide for developing the plan.
+   - Review incident response plans from other organizations for reference.
 
 #
 
 ## Creating an Incident Response Teawm
 
-# Incident Response Team Overview
+- Importance of the Incident Response Team
+   - **Essential** for handling security incidents.
+   - Should be **available 24/7** with primary and backup personnel.
 
-## Importance of the Incident Response Team
-- **Essential** for handling security incidents.
-- Should be **available 24/7** with primary and backup personnel.
+- Team Composition
+   - Include **management**, **cybersecurity personnel**, **technical subject matter experts** (e.g., DBAs, developers, system engineers, virtualization experts).
+   - **Legal counsel**, **public affairs**, **marketing staff**, **human resources**, and **physical security team members**.
 
-## Team Composition
-- Include **management**, **cybersecurity personnel**, **technical subject matter experts** (e.g., DBAs, developers, system engineers, virtualization experts).
-- **Legal counsel**, **public affairs**, **marketing staff**, **human resources**, and **physical security team members**.
+- Team Activation
+   - Not all members need to be activated for every incident.
+   - Representatives should be **trained and ready** to participate before an incident occurs.
 
-## Team Activation
-- Not all members need to be activated for every incident.
-- Representatives should be **trained and ready** to participate before an incident occurs.
+- Regular Training and Testing
+   - Provide the team with **Incident Response plan documentation**.
+   - Conduct **regular training and testing** to ensure readiness and effective teamwork.
 
-## Regular Training and Testing
-- Provide the team with **Incident Response plan documentation**.
-- Conduct **regular training and testing** to ensure readiness and effective teamwork.
+- External Incident Response Providers
+   - Consider retaining **external providers** for capabilities your team lacks (e.g., forensic investigations).
+   - **Plan and negotiate contracts** in advance, not during an incident.
 
-## External Incident Response Providers
-- Consider retaining **external providers** for capabilities your team lacks (e.g., forensic investigations).
-- **Plan and negotiate contracts** in advance, not during an incident.
-
-## Preparation and Planning
-- **Design and train** your team in advance.
-- Ensure the team is **ready to respond** effectively to cybersecurity incidents.
+- Preparation and Planning
+   - **Design and train** your team in advance.
+   - Ensure the team is **ready to respond** effectively to cybersecurity incidents.
 
 #
 
