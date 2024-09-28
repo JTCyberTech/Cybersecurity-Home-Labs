@@ -68,124 +68,167 @@
 
 ## Incident Communications Plan
 
-# Communication Plan in Incident Response
+- Importance of Communication Plan
+   - A critical component of the incident response plan, covering both **internal** and **external communications**.
 
-## Importance of Communication Plan
-- A critical component of the incident response plan, covering both **internal** and **external communications**.
+- Internal Communications
+   - Ensures appropriate people within the organization are informed at the right time with the right information.
 
-## Internal Communications
-- Ensures appropriate people within the organization are informed at the right time with the right information.
+- External Communications
+   - **Limit communication** of sensitive information to trusted parties.
+   - Involve the **public relations team** for communications with customers, media, or the general public.
+   - Avoid **unauthorized leaks** to prevent media exposure and alerting attackers.
 
-## External Communications
-- **Limit communication** of sensitive information to trusted parties.
-- Involve the **public relations team** for communications with customers, media, or the general public.
-- Avoid **unauthorized leaks** to prevent media exposure and alerting attackers.
+- Legal Obligations
+   - Generally, no legal obligation to report incidents to law enforcement unless there's a **safety threat** or **specific legal requirement**.
+   - Reporting to law enforcement can make details public and requires higher standards of evidence gathering.
+   - **Legal team** should guide on laws and regulations requiring notification.
 
-## Legal Obligations
-- Generally, no legal obligation to report incidents to law enforcement unless there's a **safety threat** or **specific legal requirement**.
-- Reporting to law enforcement can make details public and requires higher standards of evidence gathering.
-- **Legal team** should guide on laws and regulations requiring notification.
+- Privacy Laws:
+   - Most states require timely notification of individuals if personal information is compromised.
 
-## Privacy Laws
-- Most states require timely notification of individuals if personal information is compromised.
-
-## Communication Plan Details
-- Specify **who to communicate with** during an incident.
-- Describe **how to communicate**, ensuring secure communication paths are in place.
-- Use **confidential mechanisms** to share information with trusted employees and third parties.
+- Communication Plan Details
+   - Specify **who to communicate with** during an incident.
+   - Describe **how to communicate**, ensuring secure communication paths are in place.
+   - Use **confidential mechanisms** to share information with trusted employees and third parties.
 
 #
 
 ## Incident Identification
 
-# Key Aspects of Incident Response
+- Perpetual Monitoring
+   - Incident response involves **continuous monitoring** for signs of security incidents.
 
-## Perpetual Monitoring
-- Incident response involves **continuous monitoring** for signs of security incidents.
+- Key Data Sources
+   - **Intrusion detection/prevention systems**, **firewalls**, **authentication systems**, **system/file integrity monitoring**, **vulnerability scanners**, **system event logs**, **NetFlow records**, and **anti-malware packages**.
 
-## Key Data Sources
-- **Intrusion detection/prevention systems**, **firewalls**, **authentication systems**, **system/file integrity monitoring**, **vulnerability scanners**, **system event logs**, **NetFlow records**, and **anti-malware packages**.
+- Role of SIEM Systems
+   - **SIEM (Security Information and Event Management)** systems centralize log data and assist in analysis, detecting incidents based on rules and algorithms.
 
-## Role of SIEM Systems
-- **SIEM (Security Information and Event Management)** systems centralize log data and assist in analysis, detecting incidents based on rules and algorithms.
+- External Incident Reports
+   - Sometimes incidents are identified by **external sources** like customers or employees noticing unusual activity.
 
-## External Incident Reports
-- Sometimes incidents are identified by **external sources** like customers or employees noticing unusual activity.
+- First Responder Responsibilities
+   - The first person to identify an incident should act **quickly to contain damage**, often by isolating compromised systems.
 
-## First Responder Responsibilities
-- The first person to identify an incident should act **quickly to contain damage**, often by isolating compromised systems.
+- Containment Techniques
+   - **Quarantine systems** by removing them from the network while keeping them running to preserve evidence.
 
-## Containment Techniques
-- **Quarantine systems** by removing them from the network while keeping them running to preserve evidence.
+- Integration with Threat Intelligence
+   - Strong **threat intelligence programs** help in rapid and effective incident identification.
 
-## Integration with Threat Intelligence
-- Strong **threat intelligence programs** help in rapid and effective incident identification.
-
-## Counterintelligence
-- Programs designed to thwart adversaries' intelligence-gathering efforts by **denying access** or **feeding misinformation**.
+- Counterintelligence
+   - Programs designed to thwart adversaries' intelligence-gathering efforts by **denying access** or **feeding misinformation**.
 
 #
 
 ## Escalation and Notification
 
-# Incident Response Actions and Processes
+- First Responder Mode
+   - Security professionals should immediately **isolate affected systems** and contain damage when a potential incident is detected.
 
-## First Responder Mode
-- Security professionals should immediately **isolate affected systems** and contain damage when a potential incident is detected.
+- Escalation and Notification Process
+   - **Evaluate Severity:** Assess the incident's potential impact on the organization.
+   - **Escalate Incident:** Move the incident to an appropriate level of incident response.
+   - **Notify Stakeholders:** Inform management and other stakeholders about the incident and the path to resolution.
 
-## Escalation and Notification Process
-- **Evaluate Severity:** Assess the incident's potential impact on the organization.
-- **Escalate Incident:** Move the incident to an appropriate level of incident response.
-- **Notify Stakeholders:** Inform management and other stakeholders about the incident and the path to resolution.
+- Triaging Process
+   - Identify the potential impact of the incident using the organization's incident response procedures.
+     - **Low Impact Incidents:** Minimal or no potential to affect confidentiality, integrity, or availability. Typically resolved by first responders without additional resources.
+     - **Moderate Impact Incidents:** Likely to significantly impact security posture. Triggers partial or full activation of the incident response team and prompt notification of management.
+     - **High Impact Incidents:** May cause critical damage. Justifies an immediate, full response with senior executives notified and the entire incident response team mobilized.
 
-## Triaging Process
-- Identify the potential impact of the incident using the organization's incident response procedures.
-  - **Low Impact Incidents:** Minimal or no potential to affect confidentiality, integrity, or availability. Typically resolved by first responders without additional resources.
-  - **Moderate Impact Incidents:** Likely to significantly impact security posture. Triggers partial or full activation of the incident response team and prompt notification of management.
-  - **High Impact Incidents:** May cause critical damage. Justifies an immediate, full response with senior executives notified and the entire incident response team mobilized.
-
-## Notification and Escalation Process
-- Must be **clearly thought out** with appropriate tools in place.
-  - **Access to Contact Information:** First responders should have access to the cell phone numbers of anyone who may need to be notified.
-  - **Technology Solutions:** Organizations may use technology solutions to **automate team responses**.
+- Notification and Escalation Process
+   - Must be **clearly thought out** with appropriate tools in place.
+     - **Access to Contact Information:** First responders should have access to the cell phone numbers of anyone who may need to be notified.
+     - **Technology Solutions:** Organizations may use technology solutions to **automate team responses**.
 
 #
 
 ## Mitigation
 
-# Transition from Isolation to Mitigation
+- Transition from Isolation to Mitigation
+   - The incident response team moves from **initial isolation and quarantine** to full incident mitigation.
 
-## Transition from Isolation to Mitigation
-- The incident response team moves from **initial isolation and quarantine** to full incident mitigation.
+- Goals of Mitigation
+   - **Control the damage and loss** by performing a range of containment activities.
 
-## Goals of Mitigation
-- **Control the damage and loss** by performing a range of containment activities.
+- Criteria for Containment Strategy
+   - **Potential for damage** and theft of resources.
+   - Need for **evidence preservation**.
+   - Impact on **service availability**.
+   - **Time and resources** required for implementation.
+   - **Expected effectiveness** of the strategy.
+   - Duration the solution will **remain in place**.
 
-## Criteria for Containment Strategy
-- **Potential for damage** and theft of resources.
-- Need for **evidence preservation**.
-- Impact on **service availability**.
-- **Time and resources** required for implementation.
-- **Expected effectiveness** of the strategy.
-- Duration the solution will **remain in place**.
+- Balancing Needs
+   - Select a containment strategy that **balances business needs** with security objectives.
 
-## Balancing Needs
-- Select a containment strategy that **balances business needs** with security objectives.
+- Attacker Awareness
+   - Be aware that **attackers may detect containment actions** and react by speeding up activities or destroying evidence.
 
-## Attacker Awareness
-- Be aware that **attackers may detect containment actions** and react by speeding up activities or destroying evidence.
-
-## Semi-Stable State
-- At the end of containment, the organization should be in a **semi-stable state**, ready to move to recovery and reconstitution.
+- Semi-Stable State
+   - At the end of containment, the organization should be in a **semi-stable state**, ready to move to recovery and reconstitution.
 
 #
 
 ## Containment Techniques
 
+- Transition to Active Response Phase
+  - Move from detection and analysis to containment, eradication, and recovery.
+  - Shift from passive to active response actions.
+
+- Containment Priorities
+  - Limit future activity of the attacker.
+  - Protect confidentiality, integrity, and availability of systems.
+
+- Primary Containment Activities
+  - **Segmentation:**
+    - Divide networks into logical segments.
+    - Create a quarantine VLAN for compromised systems.
+    - Set up access controls to prevent communication with other systems.
+  - **Isolation:**
+    - Move compromised systems to a network disconnected from the main network.
+    - Systems may still communicate with each other and the internet.
+  - **Removal:**
+    - Completely disconnect impacted systems from any network.
+    - Prevents communication with other systems and the internet.
+    - Alerts attacker to detection but stops further damage.
+
+- Decision Making
+  - Use professional judgment to choose the appropriate containment strategy.
+  - Balance investigation needs, damage prevention, and business activity disruption.
 
 #
 
 ## Incident Eradication and Recovery
+
+- Goals of Eradication and Recovery:
+  - **Eradication:** Remove all traces of the incident from systems and networks.
+  - **Recovery:** Restore normal business operations.
+
+- Eradication Steps:
+  - Secure compromised user accounts.
+  - Secure configurations of compromised systems or network devices.
+  - Rebuild or re-image compromised systems to ensure no hidden back doors remain.
+  - Apply missing security patches before bringing systems back online.
+  - Deploy application whitelisting or blacklisting and quarantine technology.
+
+- Recovery Steps:
+  - Restore systems from backups, ensuring vulnerabilities are addressed.
+  - Strengthen access control measures.
+  - Make configuration changes to cybersecurity tools (e.g., firewall rules, mobile device management, data loss prevention, URL filtering).
+  - Update or revoke compromised digital certificates.
+
+- Media Sanitization Techniques (based on NIST guidelines):
+  - **Clearing:** Overwrite sensitive data with new data.
+  - **Purging:** Use advanced techniques like cryptographic functions or degaussing.
+  - **Destroying:** Shred, pulverize, melt, incinerate, or otherwise completely destroy the media.
+
+- Best Practices:
+  - Understand how the system was compromised and address those vulnerabilities.
+  - Use compensating controls if vulnerabilities cannot be fully remediated.
+  - Follow NIST guidelines for secure media sanitization.
 
 #
 
