@@ -1089,8 +1089,30 @@ Companies should always manage bug bounty programs internally.
 
 ## Security Governance 
 
+Chris is recovering from a security incident where the attacker installed malicious software on a server. He is rebuilding the server and restoring it from the backup. The backups are an example of what type of control?
+- Corrective: Corrective controls correct some of the damage caused by an incident. This is the purpose of backups.
+
+Which of the following describes a situation where a company spins off a part of the business?
+- Corporate divestiture: In a corporate divestiture, a company spins off a part of the business.
+
+Security leaders must think as both security leaders and business leaders.
+- TRUE: Security leaders serve as subject matter experts on issues of confidentiality, integrity, and availability. Additionally, they serve as business leaders who understand the broader organization's mission, goals, and objectives.
 
 ## Risk Management
+
+What is the first step in the NIST risk management framework?
+- Categorize information system: The first step is to categorize information system.
+
+Which of these is not a standard risk treatment option?
+- Initiation: Initiation is not one of the risk treatment options.
+
+What is the correct formula for computing the annualized loss expectancy?
+
+
+
+
+
+
 
 
 
