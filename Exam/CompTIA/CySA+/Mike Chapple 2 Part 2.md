@@ -317,10 +317,186 @@
   - Protects against SQL injection attacks as the stored procedure is pre-compiled.
   - Provides flexibility to change the input without altering the query structure.
 
+#
+
+## Authentication and Session Mangement Issues
+
+- **Password Storage:**
+  - Never store user passwords in plain text.
+  - Store passwords in hashed and salted form to prevent theft.
+  - Hashing transforms passwords into irreversible values.
+  - Salting adds a random value to passwords before hashing to protect against rainbow table attacks.
+
+- **Password Encryption in Transit:**
+  - Ensure passwords are encrypted during transmission to prevent eavesdropping.
+  - Use Transport Layer Security (TLS) to encrypt the entire web session.
+  - TLS protects session contents, including user passwords and HTTP headers.
+
+- **Session Cookies:**
+  - Protect HTTP headers containing session cookies to avoid session replay attacks.
 
 
+#
+
+## Output Encoding
+
+- **Definition and Importance:**
+  - Output encoding protects applications from potentially malicious input, such as SQL injection and cross-site scripting attacks.
+  - It replaces dangerous characters with equivalent strings that are safe for the application but produce the same result for the end user.
+
+- **Types of Encoding:**
+  - **HTML Encoding:** Uses ampersand notation for encoding values in web documents.
+  - **URL Encoding:** Uses percent sign notation for encoding values in web addresses.
+
+- **Commonly Encoded Values:**
+  - Less than symbol (`<`): HTML encoded as `&lt;`, URL encoded as `%3C`.
+  - Greater than symbol (`>`): HTML encoded as `&gt;`, URL encoded as `%3E`.
+  - Single quotation mark (`'`): HTML encoded as `&apos;`, URL encoded as `%27`.
+  - Double quotation mark (`"`): HTML encoded as `&quot;`, URL encoded as `%28`.
+  - Forward slash (`/`): HTML encoded as `&#x2F;`, URL encoded as `%2F`.
+  - Ampersand (`&`): HTML encoded as `&amp;`, URL encoded as `%26`.
+  - Percent sign (`%`): HTML encoded as `&#x25;`, URL encoded as `%25`.
+
+- **Best Practices:**
+  - Do not attempt to perform encoding manually due to the complexity and number of values that need protection.
+  - Use a secure, trusted encoding library to automatically validate and encode all potentially dangerous values.
+
+- **Example Demonstration:**
+  - The video demonstrates output encoding using the Bing search engine to show how an SQL injection attempt is encoded in the URL.
+  - The single quote character in the SQL injection attempt is re-encoded as `%27`.
+
+- **Key Takeaway:**
+  - Encoding is crucial for protecting web applications from malicious inputs. Always use a trusted library for encoding to ensure comprehensive protection.
+
+#
+
+## Error and Exception Handling
+
+- **Importance of Error Handling:**
+  - Prevents software from entering unpredictable states due to invalid user input or errors.
+  - Critical for maintaining software security and preventing vulnerabilities like buffer overflows.
+
+- **State Transition Model:**
+  - **Example:** A simple program calculating sales tax has three states: awaiting input, calculating tax, and displaying output.
+  - Unpredictable states occur when unexpected input (e.g., a word instead of a number) is received.
+
+- **Exception Handling:**
+  - Provides explicit instructions for handling errors, preventing unpredictable states.
+  - **Example:** Modifying software to display an error message for invalid input.
+
+- **Implementation in Java:**
+  - Uses the Try-Catch model.
+  - **Example:** Handling division by zero errors by enclosing the division statement in a try clause and using a catch clause to report errors.
+
+- **Best Practices:**
+  - Think through potential errors in your code.
+  - Provide explicit instructions for handling those errors to write more secure code.
+
+#
+
+## Code Signing
+
+- **Purpose of Code Signing:**
+  - Demonstrates that applications come from a legitimate source.
+  - Uses digital signatures to provide non-repudiation.
+
+- **Process of Code Signing:**
+  - Developers obtain a digital certificate from a trusted certificate authority.
+  - Use the private key associated with the digital certificate to create a digital signature.
+  - Release the signed code to users.
+
+- **Validation by Operating System:**
+  - The OS checks if the public key in the developer's digital certificate correctly decrypts the digital signature.
+  - Verifies that the hash in the digital signature matches the downloaded code.
+  - Ensures the code has not been tampered with.
+
+- **Trust Verification:**
+  - The OS checks if it trusts the developer who signed the code.
+  - **Example:** A warning message appears if the code is not digitally signed, indicating the developer cannot be verified.
+
+- **Benefits of Code Signing:**
+  - Shows that the code originated from the developer and was not tampered with.
+  - Helps users determine which software they can trust.
+
+#
+
+## Database Security
+
+- **Importance of Database Security:**
+  - Databases contain sensitive and critical business information.
+  - Security professionals must collaborate with database administrators to protect data against confidentiality, integrity, and availability threats.
+
+- **Database Normalization:**
+  - Normalization improves database design and has security advantages.
+  - **First Normal Form:** Separate tables for different sets of related data, primary key for each table, no multivalued fields, uniform number of fields in records.
+  - **Second Normal Form:** Includes first normal form requirements; non-primary key fields must be facts about the entire primary key.
+  - **Third Normal Form:** Includes first and second normal form requirements; restricts relationships between non-key fields.
+
+- **Encryption:**
+  - Strong encryption should protect sensitive data at rest in databases.
+  - Prevents unauthorized access to sensitive information even if the database is accessed.
+
+- **Obfuscation and Camouflage:**
+  - Avoid obvious naming conventions for sensitive databases (e.g., avoid names like "credit card database").
+  - Use strategic naming to not directly point attackers to sensitive information.
+
+- **Database Activity Monitoring (DAM):**
+  - Monitors all database requests, especially by administrative users.
+  - Flags suspicious activity for review or intervention.
+
+- **Stored Procedures:**
+  - Store query text on the database server, allowing applications to provide arguments instead of the entire SQL command.
+  - Effective control against SQL injection attacks.
 
 
+#
+
+## Data De-identification
+
+- **Definition of De-identification:**
+  - Process of removing identifying information from data sets when not needed for business requirements.
+
+- **Examples of Identifiers to Remove:**
+  - Names, Social Security numbers, and other obvious identifiers.
+
+- **Challenges with Simple De-identification:**
+  - Combining innocuous fields (e.g., zip code, date of birth, gender) can still uniquely identify individuals.
+  - Carnegie Mellon study: 87% of people in the U.S. can be uniquely identified using these three fields together.
+
+- **Need for Anonymization:**
+  - Beyond de-identification, data should be anonymized to prevent identification of individuals.
+  - HIPAA standards provide a rigorous process for anonymizing data.
+
+- **HIPAA Anonymization Methods:**
+  - **Statistical Analysis:** Statisticians validate that the data set is unlikely to disclose individual identities.
+  - **Safe Harbor Approach:** Eliminates 18 data elements that might reveal an individual's identity (e.g., Social Security numbers, email addresses, date of birth, zip code).
+
+- **Key Takeaway:**
+  - Carefully consider and implement appropriate steps for data de-identification and anonymization to protect privacy.
+
+#
+
+## Data Obfuscation
+
+- **Data Obfuscation Definition:**
+  - Transforming data into a format where the original information can't be retrieved.
+
+- **Hash Functions:**
+  - One-way functions used to transform data values into hash values.
+  - **Major flaw:** Vulnerable to Rainbow Table Attacks where attackers use precomputed hash values to identify original data.
+
+- **Salting:**
+  - Combines text with a randomly chosen value before hashing.
+  - Increases security by making pre-computation of hashes impossible, preventing Rainbow Table Attacks.
+
+- **Tokenization:**
+  - Replaces sensitive values with unique identifiers using a lookup table.
+  - **Example:** Replacing student IDs with randomly generated numbers.
+  - Important to keep the lookup table secure.
+
+- **Masking:**
+  - Redacts sensitive information by replacing it with blank values.
+  - **Example:** Masking Social Security numbers with Xs.
 
 # Quiz
 
