@@ -1110,6 +1110,11 @@ Defense Strategies:
 - **Definition and Importance:**
   - Industrial Control Systems (ICS) are crucial for managing industrial processes efficiently.
   - They are used in various sectors like manufacturing, power plants, wastewater treatment, and more.
+ 
+- ICS Deployments
+  - Building automation systems
+  - Workflow automation systems
+  - Process automation systems
 
 - **Types of ICS:**
   - **Supervisory Control and Data Acquisition (SCADA):**
@@ -1132,6 +1137,68 @@ Defense Strategies:
 
 - **Operational Technology (OT):**
   - A broad category that includes ICS as a major component for managing operations.
+
+#
+
+## Internet of Things
+
+- **Embedded Systems in Daily Life:**
+  - Embedded computer systems are now part of everyday life, known as the Internet of Things (IoT).
+  - Examples include smart televisions, smart garage doors, and smart sprinkler systems.
+
+- **Evolution of Embedded Device Technology:**
+  - Began with network-connected gaming consoles and printers.
+  - Expanded to wireless connectivity for multiplayer gaming and wireless printing.
+  - Led to the proliferation of smart devices in homes and garages, including smart cars.
+
+- **Security Challenges of IoT Devices:**
+  - Difficulty in updating software due to lack of displays or keyboards.
+  - Potential for outdated software running on smart devices.
+  - IoT devices share wireless networks with personal productivity devices, posing security risks.
+  - Connection to cloud services for command and control can create pathways for external attackers.
+
+- **Real-World IoT Attacks:**
+  - 2015 attack on a Jeep by security researchers, demonstrating remote control over vehicle systems.
+  - Attackers were able to manipulate the car's systems from 10 miles away.
+
+- **IoT Applications Beyond Home Automation:**
+  - Wearable devices for fitness and medical monitoring.
+  - Surveillance systems with audio, video, and motion detection.
+  - IoT in hospitals, medical systems, aircraft, drones, utility smart meters, and more.
+
+#
+
+## Embedded Systems 
+
+- **Definition and Examples:**
+  - Embedded systems are full computer systems embedded inside larger systems.
+  - Examples include office printers, cameras, modern cars, aircraft, and drones.
+
+- **Key Technologies:**
+  - **Systems on a Chip (SoC):**
+    - Entire embedded systems packaged onto a single chip.
+    - Components typically include a microprocessor, memory, clock, power management, and wireless network interfaces.
+    - Examples: Raspberry Pi, Arduinos.
+    - Field-Programmable Gate Arrays (FPGAs) allow reprogramming of hardware.
+    - IBM's eFUSE technology allows reprogramming of computer chips to bypass defective subsystems.
+
+  - **Real-time Operating Systems (RTOS):**
+    - Provide a secure, reliable environment for processing IoT code.
+    - Designed to handle high-priority tasks in real-time.
+    - Critical for IoT systems that drive high-value processes or affect human safety.
+
+- **Challenges and Constraints:**
+  - Embedded systems often operate with limited power, compute capacity, and network capacity.
+  - They may use specialized networks like Controller Area Network (CAN Bus) for communication.
+  - Running cryptography can be difficult due to limited resources.
+  - Patching embedded systems can be challenging.
+  - Authentication practices need careful assessment to ensure security.
+
+- **Applications:**
+  - Embedded systems are used in various domains, including industrial, mechanical, home, and transportation systems.
+  - Examples include smart devices, semi-autonomous vehicles, and modern aircraft.
+
+#
 
 
 
@@ -1193,25 +1260,16 @@ Which type of object must a hacker typically access to engage in a session hijac
 Which type of attack seeks to write data to areas of memory reserved for other purposes?
 - Buffer overflow: Buffer overflow attacks seek to write data to areas of memory reserved for other purposes.
 
+## Specialized Technology Vulnerabilities
 
+What type of system is used to gather information from remote sensors via telemetry?
+- SCADA: SCADA is used to gather information from remote sensors via telemetry.
 
+Embedded systems often suffer from limited access to power, compute capabilities, and network capacity.
+- TRUE: Power, compute capabilities, and network capacity are three constraints of embedded systems.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Smart devices often connect back to cloud services for command and control.
+- TRUE: Smart devices are computer controlled and network connected. It is true that smart devices often connect back to cloud services for command and control.
 
 
 
