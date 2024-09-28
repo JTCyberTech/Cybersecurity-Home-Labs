@@ -885,13 +885,88 @@
 
 ## Business Continunity Planning
 
+- Definition and Importance:
+  - Business continuity planning involves activities to keep a business running during adversity.
+  - Adversity can range from minor incidents (e.g., system failure) to major disasters (e.g., earthquakes, tornadoes).
+  - It’s also known as Continuity of Operations Planning (COOP).
+
+- Core Security Concept:
+  - Business continuity is crucial for achieving the security objective of availability.
+  - It supports the three main objectives of information security: confidentiality, integrity, and availability.
+
+- Scope Definition:
+  - Teams should define the scope of their business continuity plan early on.
+  - Key questions include: What business activities and systems will be covered? What types of controls will be considered?
+
+- Business Impact Assessment (BIA):
+  - A BIA helps in making prioritization decisions.
+  - It identifies mission-essential functions and traces them to critical IT systems.
+  - The assessment includes identifying potential risks and conducting a risk assessment.
+
+- Prioritization and Control Selection:
+  - The BIA results in a prioritized list of risks.
+  - Planners use this list to select controls that mitigate risks within acceptable expense limits.
+  - Example: Investing in a $50,000 flood prevention system to reduce hurricane damage risk.
+
+- Cloud-Centric Environment:
+  - Business continuity planning in cloud environments involves collaboration between service providers and customers.
+  - Risks can be mitigated by service providers (e.g., building flood prevention systems) or by customers (e.g., replicating services across data centers).
+
 #
 
 ## Business Continunity Controls
 
+- Redundancy in Systems:
+  - Ensuring systems are designed to continue operating despite the failure of a single component.
+  - Example: Replacing a single web server with a clustered farm of servers to avoid a single point of failure.
+
+- Single Point of Failure Analysis:
+  - Identifying and removing single points of failure in systems.
+  - Example: Replacing a single firewall with a pair of high-availability firewalls.
+
+- Network Redundancy:
+  - Introducing redundancy in internal and external network connections to maintain service if one link fails.
+
+- Cost-Benefit Analysis:
+  - Balancing the cost of addressing single points of failure with the potential benefits.
+
+- Comprehensive IT Contingency Planning:
+  - Considering various risks beyond single points of failure, such as vendor bankruptcy, utility service failures, and capacity issues.
+
+- Personnel Succession Planning:
+  - Identifying essential team members and their potential successors.
+  - Providing professional development opportunities for successors to ensure smooth transitions.
+
 #
 
 ## High avilaibility and Fault Tolerance 
+
+- High Availability (HA):
+  - Uses multiple systems to protect against failures.
+  - Example: Cluster of web servers or a pair of firewalls.
+  - Geographic dispersal to protect against facility damage.
+
+- Fault Tolerance (FT):
+  - Makes a single system resilient to technical failures.
+  - Example: Dual power supplies in servers.
+
+- Load Balancing:
+  - Spreads the burden of providing a service across multiple systems.
+  - Different from HA but often used together.
+
+- Common Points of Failure:
+  - **Power Supply:**
+    - Dual power supplies, separate power sources, UPS, and generators.
+  - **Storage Media:**
+    - RAID technologies (mirroring and striping with parity).
+    - RAID is not a backup strategy; regular data backups are necessary.
+  - **Networking:**
+    - Redundancy with multiple internet service providers and NIC teaming.
+    - Multi-path approaches for critical network paths.
+
+- Diversity in Environment:
+  - Use diverse technologies and vendors to avoid simultaneous failures.
+  - Diversify cryptography and other security controls.
 
 #
 
@@ -899,25 +974,176 @@
 
 ## Disaster Recovery
 
+- Definition: Disaster recovery is a subset of business continuity activities designed to restore normal operations quickly after a disruption.
+- Triggers: Can be activated by natural disasters (e.g., hurricanes) or man-made disasters (e.g., ransomware attacks).
+- Initial Response: Focuses on containing damage and restoring immediate capacity, which may involve:
+  - Activating alternate processing facilities
+  - Containing physical damage
+  - Engaging emergency contractors
+
+- Staffing: Employees may take on temporary roles different from their usual duties; flexibility is crucial.
+- Communication: Secure, reliable communication mechanisms are essential for:
+  - Activating the disaster recovery process
+  - Regular status updates
+  - Ad hoc tactical communications
+
+- Assessment Phase: Post-initial response, the focus shifts to:
+  - Triage damage
+  - Implement functional recovery plans
+  - Intermediate steps for temporary restoration
+
+- Recovery Metrics:
+  - **Recovery Time Objective (RTO):** Targeted time to restore service after disruption.
+  - **Recovery Point Objective (RPO):** Maximum acceptable data loss period.
+  - **Recovery Service Level (RSL):** Percentage of service that must be available during a disaster.
+
+- Execution: Plan execution involves restoring operations in an orderly fashion.
+- Training and Awareness: Regular training and awareness programs are critical to ensure all personnel are prepared for their roles in disaster recovery.
+
 #
 
 ## Backups
+
+- Importance of Backups:
+  - Essential for disaster recovery and data protection.
+  - Critical for businesses reliant on data, such as proprietary designs or customer lists.
+
+- Backup Methods:
+  - **Manual Copying:** Simple but error-prone.
+  - **Tape Backups:** Traditional method, still common but unwieldy.
+  - **Disk-to-Disk Backups:** Modern method, often using separate facilities for disaster protection.
+  - **Cloud Backups:** Provides geographic diversity and additional protection from cloud providers.
+
+- Types of Backups:
+  - **Full Backups:** Complete copy of all data.
+  - **Snapshots:** Quick full backups using hardware platform capabilities.
+  - **Differential Backups:** Copies data changed since the last full backup.
+  - **Incremental Backups:** Copies data changed since the last full or incremental backup.
+
+- Restoration Process:
+  - **Differential Backup Strategy:** Restore the last full backup and the most recent differential backup.
+  - **Incremental Backup Strategy:** Restore the last full backup and all incremental backups in sequence.
 
 #
 
 ## Restoring Backups
 
+- Common Reasons for Restoring Backups:
+  - Correcting human or technical errors.
+  - Restoring accidentally deleted files.
+  - Recovering crashed servers.
+
+- Disaster Recovery Planning:
+  - Prioritize restoring the most important services first.
+  - Focus on crucial business processes before less important services.
+
+- Non-Persistence Goal:
+  - Back up critical data, not entire systems.
+  - Use infrastructure as code to rebuild servers and recover data.
+
+- Partial System Restorations:
+  - Revert to a known state or last known good configuration to fix configuration errors.
+
+- Live Boot Media:
+  - Use USB drives with live boot media to recover data from storage media without using the device’s operating system.
+  - Boot a server or endpoint system from an operating system on a USB drive.
+  - Recover data from the device’s storage media without using the device’s operating system.
+
+
 #
 
 ## Disaster Recovery Sites
+
+- Disaster Recovery Sites: Alternate processing facilities for use when the primary site is unavailable.
+  - **Hot Sites:** 
+    - Fully operational data centers.
+    - Ready to run with all necessary equipment and data.
+    - Can be activated immediately, often automatically.
+    - High cost, similar to running the primary data center.
+  - **Cold Sites:** 
+    - Essentially empty data centers.
+    - Have core infrastructure but lack servers and data.
+    - Lower cost but require significant time to activate (weeks or months).
+  - **Warm Sites:** 
+    - Have necessary hardware and software but not running in parallel.
+    - Moderate cost and activation time (hours or days).
+
+- Offsite Storage:
+  - Used for storing business data backups.
+  - Provides geographic redundancy to protect against localized disasters.
+  - Backups can be transported physically or digitally (site replication).
+
+- Backup Storage Formats:
+  - **Online Backups:** Available for immediate restoration, higher cost.
+  - **Offline Backups:** Require manual intervention, lower cost.
+
+- Alternate Business Processes:
+  - Organizations may use alternate processes, like paper-based systems, during extended downtime.
 
 #
 
 ## Testing BC/DR Plans
 
+- Purpose of Disaster Recovery Testing:
+  - Validates that the disaster recovery (DR) plan functions correctly.
+  - Identifies necessary updates due to technology or business process changes.
+
+- Types of Disaster Recovery Testing:
+  - **Read-throughs (Checklist Reviews):**
+    - Simplest form of DR testing.
+    - Staff review the current plan and provide feedback on updates.
+  - **Walkthroughs (Tabletop Exercises):**
+    - Team reviews the plan together.
+    - More effective as it allows discussion and collaboration.
+  - **Simulations:**
+    - Team discusses how they would respond to a specific emergency scenario.
+    - Involves designing a simulated emergency situation.
+  - **Parallel Tests:**
+    - Activates the DR plan and runs the DR environment in parallel to the primary site.
+    - Does not switch operations to the backup environment.
+  - **Full Interruption Tests:**
+    - Most effective but potentially disruptive.
+    - Shuts down the primary environment and operates out of the DR environment.
+    - Highlights deficiencies but may affect normal operations.
+
+- Testing Strategy:
+  - Organizations often use a combination of different test types.
+  - Regular read-throughs and walkthroughs supplemented with periodic simulations and parallel tests.
+  - Each test type offers different advantages to prepare for actual disasters.
+
 #
 
 ## After-Action Reports
+
+- Purpose of After-Action Reports:
+  - Create a formal record of the incident.
+  - Document circumstances surrounding the event.
+  - Identify opportunities for future improvement.
+
+- Importance:
+  - Facilitate recognition of lessons learned.
+  - Allow continuous improvement of processes.
+  - Should be written after every activation of business continuity or disaster recovery plans.
+
+- Content of After-Action Reports:
+  - **Executive Summary:** 
+    - Brief overview of the event and major findings.
+    - Written for an audience that may only read this section.
+  - **Background Information:** 
+    - Details about the operating environment and external factors.
+  - **Detailed Summary of Facts:** 
+    - Explanation of what happened.
+    - Key questions: Who, What, When, Why, Where, and How.
+  - **Lessons Learned:** 
+    - Performance evaluation: what went well and what didn’t.
+    - Suggestions for improvement.
+  - **Next Steps:** 
+    - Clear outline of actions based on lessons learned.
+    - Assign responsibilities and timelines for implementing changes.
+
+- Continuous Improvement:
+  - Ensures the organization learns from each incident.
+  - Helps in refining disaster recovery and business continuity processes.
 
 #
 
