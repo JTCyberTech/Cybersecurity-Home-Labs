@@ -1074,7 +1074,21 @@ _____ is usually the final stage in code testing.
 
 ## Threat Modeling
 
+Which attack surface management activities identify any systems or devices with public exposure by scanning IP addresses belonging to the organization?
+- Edge discovery scanning: Edge discovery scanning identifies any systems or devices with public exposure by scanning IP addresses belonging to the organization.
+
+What kind of attacks attempt to deny responsibility for an action?
+- Repudiation: A repudiation attack attempts to deny responsibility for an action, and may blame a third party.
+
+What approach to threat identification begins with a listing of all resources owned by the organization?
+- Asset-focused:In an asset-focused approach to threat identification, an organization goes through their assets one-by-one and considers possible threats to each.
+
+Companies should always manage bug bounty programs internally.
+- FALSE: Organizations deploying a bug bounty program typically do so with the assistance of a vendor.
+
+
 ## Security Governance 
+
 
 ## Risk Management
 
