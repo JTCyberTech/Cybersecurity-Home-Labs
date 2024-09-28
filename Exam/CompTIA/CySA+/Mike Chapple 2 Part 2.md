@@ -287,6 +287,40 @@
 
 - **Server-Side Validation:** Critical to perform input validation on the server, not in the client’s browser, to prevent users from bypassing the validation.
 
+#
+
+## Parameterized Queries 
+
+- **Definition and Purpose:**
+  - Parameterized queries protect applications against SQL injection attacks by preventing direct SQL code from being sent to the database server.
+  - They improve database performance by using pre-compiled query templates.
+
+- **How It Works:**
+  - The client sends arguments to the server, which inserts them into a pre-compiled query template.
+  - This method ensures that user input cannot alter the underlying SQL statement.
+
+- **Example Demonstration:**
+  - The instructor uses Azure Data Studio to access a SQL server database.
+  - A table called "Customers" is queried to show all customers in Texas.
+  - The query is written as: `SELECT * FROM Customers WHERE State = 'Texas'`.
+
+- **Stored Procedure Creation:**
+  - A stored procedure named `spCustomerState` is created to handle the query.
+  - The procedure takes one argument, `State`, which is a text argument.
+  - The query template is modified to use the `@state` argument instead of hardcoding the state value.
+
+- **Execution of Stored Procedure:**
+  - The stored procedure is executed using the `EXEC` command with the state argument.
+  - Examples include retrieving customers from Texas, California, and New Jersey.
+
+- **Benefits:**
+  - Protects against SQL injection attacks as the stored procedure is pre-compiled.
+  - Provides flexibility to change the input without altering the query structure.
+
+
+
+
+
 
 # Quiz
 
@@ -327,7 +361,7 @@ Removing names and identification numbers is usually all that is necessary to de
 - FALSE: You can often combine seemingly innocuous fields to uniquely identify an individual.
 
 Database normalization should ALWAYS be used to improve database security.
-- 
+- FALSE:
 
 
 
