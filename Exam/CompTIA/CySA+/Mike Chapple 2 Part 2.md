@@ -613,6 +613,272 @@
 - **Source authenticity:** Organizations should verify hardware integrity to ensure it hasn't been tampered with before use.
   - Federal government uses "trusted foundries" for sensitive hardware manufacturing, ensuring rigorous security assessments and strong security controls throughout the manufacturing process.
 
+#
+
+# Threat Modeling
+
+## Threat Research
+
+- **Purpose of Threat Intelligence:** Helps understand the environment and defend against adversaries' attacks.
+
+- **Threat Research:** Uses threat intelligence to understand adversaries' motivations and capabilities.
+
+- **Reputational Threat Research:**
+  - Identifies actors with a history of malicious activity.
+  - Uses past defense mechanisms to block future attempts from known malicious sources.
+  - Assigns reputations to objects to prevent repeat access from untrustworthy sources.
+
+- **Behavioral Threat Research:**
+  - Identifies unusual behaviors resembling past attackers.
+  - Detects patterns even from new IP addresses or sources.
+
+- **Combined Approach:** Using both reputational and behavioral research provides a powerful threat recognition program.
+
+#
+
+## Identify Threats
+
+- **Importance of Structured Approach:** 
+  - Avoids haphazard identification of threats, ensuring nothing is left out.
+
+- **Three Structured Approaches:**
+  - **Asset-Focused Approach:**
+    - Uses the organization's asset inventory.
+    - Identifies threats to each asset individually.
+    - **Example:** Threat to web presence like severing a fiber optic cable.
+  
+  - **Threat-Focused Approach:**
+    - Lists all possible threats and their impact on systems.
+    - Considers a wide spectrum of threats from various sources (hackers, contractors, rogue employees).
+    - Understands adversaries' capabilities.
+  
+  - **Service-Focused Approach:**
+    - Commonly used by service providers.
+    - Identifies threats to each service interface (e.g., API interfaces).
+
+- **First Step in Threat Modeling:** Identifying all threats is crucial for implementing security controls.
+
+#
+
+## Understand Attacks
+
+- **STRIDE Model:**
+  - **Spoofing:** Falsified identity information to gain access. **Countermeasure:** Strong authentication.
+  - **Tampering:** Unauthorized changes to systems or data. **Example:** Hacking a database to change grades.
+  - **Repudiation:** Denying responsibility for an action. **Countermeasure:** Digital signatures.
+  - **Information Disclosure:** Stealing and disclosing confidential information.
+  - **Denial of Service (DoS):** Depriving legitimate users of access to systems.
+  - **Elevation of Privilege:** Transforming a normal user account into an administrative one.
+
+- **System Diagram:**
+  - Useful for determining and evaluating potential attacks.
+  - **Example:** E-commerce website diagram showing data flows and firewall boundaries.
+
+- **Reduction Analysis:**
+  - Breaking down a system into smaller components for thorough security reviews.
+
+- **Key Concepts:**
+  - **Attack Surface:** Total systems and services exposed to potential attack.
+  - **Attack Vector:** Means used by an attacker to gain access (e.g., email, web traffic).
+
+#
+
+## Threat Modeling
+
+- **Purpose of Threat Modeling:**
+  - Provides valuable information about threats and attack types.
+  - Helps identify vulnerabilities and evolve controls.
+
+- **Key Factors in Threat Modeling:**
+  - **Adversary Capabilities:** Understand the sophistication and tools of potential attackers.
+  - **Attack Surface and Vectors:** Identify the total attack surface and potential attack vectors.
+  - **Threat Prioritization:** Assess the impact and likelihood of threats to prioritize them.
+
+- **Technology Perspective:**
+  - Conduct periodic reviews of security infrastructure.
+  - **Example:** Repeated data theft issues may indicate a need for better data protection controls like DLP systems.
+
+- **Software Development Concerns:**
+  - Conduct threat modeling for both internal use and customer security.
+  - Address deficiencies that may affect customer security by changing software architecture.
+
+- **Organizational Process Adaptation:**
+  - Adapt technology and processes based on threat model results.
+  - **Example:** Enhance security of direct deposit forms and change business practices to confirm changes with employees.
+
+- **Overall Lesson:**
+  - Threat modeling should inform the entire security program and may require adjustments to business operations.
+
+#
+
+## Attack Surface Management
+
+- **Definition of Attack Surface:**
+  - Combination of all systems and services exposed to attackers.
+  - Includes border firewalls, public web servers, traveling laptops, and mobile devices.
+
+- **Activities for Managing Attack Surface:**
+  - **Edge Discovery Scanning:** Identifies systems or devices with public exposure by scanning IP addresses.
+  - **Passive Discovery Techniques:** Monitors inbound and outbound traffic to detect devices missed by other scans.
+  - **Security Control Testing:** Verifies that security controls are functioning properly.
+  - **Penetration Testing and Adversary Emulation:** Emulates attacker actions to discover security control flaws.
+
+- **Outcome of Discovery and Testing:**
+  - Use results to make changes that improve security.
+  - **Attack Surface Reduction:** Reduces the number of ways potential adversaries might attack the organization.`
+
+#
+
+## Bug Bounty
+
+- **Purpose of Bug Bounty Programs:**
+  - Allows organizations to open their systems to inspection by security researchers.
+  - Encourages attackers to report vulnerabilities responsibly.
+
+- **Operation of Bug Bounty Programs:**
+  - Often managed by specialized vendors.
+  - Vendors design, implement, and operate these programs.
+  - Programs can be fully-managed or semi-managed.
+
+- **Benefits of Bug Bounty Programs:**
+  - Channels efforts of attackers into legal and legitimate activities.
+  - Helps organizations learn from attacker activities and harden their systems.
+  - Increases the robustness of the enterprise’s defensive posture.
+
+- **Examples of Bug Bounty Success:**
+  - Google paid over $100,000 to a researcher for discovering a serious vulnerability in Pixel phones (2018).
+  - The US Department of Defense's "Hack the Army" program identified almost 150 vulnerabilities and paid out about $100,000 in rewards (2020).
+
+- **Types of Bug Bounty Programs:**
+  - **Fully-Managed:** Vendor validates reports and provides complete analysis.
+  - **Semi-Managed:** Vendor hands off responsibility to the customer earlier in the vulnerability management lifecycle.
+
+- **Key Takeaways:**
+  - Bug bounty programs align the interests of organizations and attackers.
+  - They are effective at uncovering previously unknown vulnerabilities.
+  - Organizations must follow up on reports and remediate issues to benefit fully.
+
+#
+
+# Security Governance
+
+## Align Security with the Business
+
+- **Dual Role of Security Leaders:**
+  - Security professionals must balance their roles as both security experts and business leaders.
+  - They need to understand the organization’s mission, strategic, and tactical objectives.
+
+- **Balancing Security and Business Needs:**
+  - Security controls should manage risks without hindering business operations.
+  - Important to design a control environment that balances security and other business considerations.
+
+- **Exam Tip:**
+  - Be mindful of questions that might trick you into making decisions solely from a security perspective, which could negatively impact the business.
+
+- **Proposing New Security Controls:**
+  - Present a business case justifying the investment in new security controls.
+  - Consider the impact on users and the return on investment.
+
+- **Administrative Responsibilities:**
+  - Security leaders also manage budgets, conduct performance reviews, counsel employees, and contribute to strategic planning.
+  - These tasks help maintain a connection to the broader organization and support its mission.
+
+- **Key Goals of Information Security:**
+  - Confidentiality, integrity, and availability should always be considered when making security decisions.
+
+#
+
+## Organizational Processes
+
+- **Alignment with Business Functions:**
+  - Information security must align with other organizational functions, including human resources and financial budgets.
+
+- **Governance Processes:**
+  - Involves aligning with governance processes at various levels.
+  - May include an information governance committee with senior leaders.
+  - Could involve a risk management committee managing organizational risks.
+  - In non-profits, governance is often overseen by a board of directors or trustees.
+
+- **Security Leaders' Responsibilities:**
+  - Ensure governance bodies understand security risks and controls.
+  - Inform governing groups of serious security incidents.
+  - Review audit results that include security considerations.
+
+- **Acquisitions and Divestitures:**
+  - Security professionals must evaluate and integrate security controls during acquisitions.
+  - Address redundancies and ensure system compatibility.
+  - During divestitures, ensure new organizations have adequate security controls and cut security ties with the parent company.
+
+- **Tailoring Security Governance:**
+  - There is no one-size-fits-all model; security governance must be tailored to the specific context of the organization.
+
+#
+
+## Security Roles and Responsibilities
+
+- **Chief Information Security Officer (CISO):**
+  - The senior information security leader in an organization.
+  - May also be titled Director of Information Security or Chief Security Officer.
+  - Reporting structure varies: reports to either the Chief Information Officer or risk management/audit function.
+
+- **Team Composition:**
+  - Led by the CISO.
+  - Team size varies based on organization size, business nature, and assigned responsibilities.
+  - Includes security generalists and specialists in areas like incident response, network security, identity and access management, and security awareness.
+
+- **Guiding Principles:**
+  - **Due Care:** Security professionals must fulfill legal responsibilities and professional standards, exercising a reasonable level of care.
+  - **Due Diligence:** Security professionals should investigate risks associated with situations, ensuring security controls meet organizational objectives.
+
+#
+
+## Security Control Selection
+
+- **Security Controls Purpose:**
+  - **Preventive Controls:** Stop security issues from occurring (e.g., firewalls).
+  - **Detective Controls:** Identify potential security breaches (e.g., intrusion detection systems).
+  - **Corrective Controls:** Remediate security issues that have occurred (e.g., restoring information from backups).
+  - **Responsive Controls:** Initiate incident response (e.g., automatic notifications to police).
+
+- **Mechanisms of Action:**
+  - **Technical Controls:** Use technology to achieve security objectives (e.g., firewalls, encryption, antivirus software).
+  - **Operational Controls:** Processes managed by individuals (e.g., user access reviews, log monitoring).
+  - **Managerial Controls:** Focus on risk management processes (e.g., regular risk assessments, security planning).
+
+- **Defense in Depth Principle:**
+  - Applying multiple overlapping controls to achieve the same objective to ensure security even if one control fails.
+
+- **Examples and Analogies:**
+  - Home security analogy: Locks, alarms, cameras, and neighbor assistance as various security controls.
+
+- **Categories of Security Controls:**
+  - **Preventive:** Block unwanted network traffic.
+  - **Detective:** Search for signs of network breaches.
+  - **Corrective:** Restore information from backups.
+  - **Responsive:** Notify authorities of intrusions.
+
+#
+
+# Risk Management
+
+## Risk Assessment
+
+#
+
+## Quantitative Risk Assessment
+
+#
+
+## Risk Treatment Options
+
+#
+
+## Risk Management Frameworks
+
+#
+
+## Risk Visibility and Reporting
+
 
 #
 
@@ -690,7 +956,11 @@ Which kind of testing checks for unexpected side effects of a code change?
 _____ is usually the final stage in code testing.
 - UAT: User Acceptance Testing (UAT) is usually the final phase in software testing.
 
+## Threat Modeling
 
+## Security Governance 
+
+## Risk Management
 
 
 
