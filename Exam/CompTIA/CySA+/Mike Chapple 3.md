@@ -1197,9 +1197,16 @@ Which of these is not a core feature of the Diamond Model?
 What do the columns in the ATT&CK matrix represent?
 - Tactics: The columns in the ATT&CK matrix represent tactics which are the attacker's ultimate objectives in carrying out the attack.
 
-
-
 ## Incident Investigation 
+
+Which type of Service Organization Controls audit is designed for public consumption?
+- SOC 3: SOC 3 provides high-level, public reporting of confidentiality, integrity, and availability controls.
+
+SIEMs apply artificial intelligence techniques to log entries.
+- TRUE: SIEMs apply artificial intelligence techniques to log entries.
+
+Which of these syslog severity levels equates to an emergency?
+- 0: A syslog severity level of 0 equates to an emergency.
 
 ## Forensic Techniques
 
