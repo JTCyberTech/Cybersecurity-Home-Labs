@@ -1151,7 +1151,53 @@
 
 ## Incident Response Program
 
+You should rebuild any system that may have been compromised during a security incident.?
+- TRUE: You should rebuild any system that may have been compromised during a security incident.
+
+What should responders do after containing an incident?
+- Begin a triaging process: A triaging process rates incident severity and identifies the potential impact of the incident.
+
+During an incident response, what is the highest priority of first responders?
+Contain the damage: During an incident response, the highest priority of first responders is containing the damage.
+
+What containment strategy moves compromised systems to a separate VLAN attached to the enterprise network?
+- Segmentation: When you divide networks into logical segments, grouped by types of users or systems, you have performed segmentation.
+      - Isolation: When you move compromised systems to a network that is completely disconnected from the rest of the network, you have performed isolation. That is not the case in this scenario.
+
+Which one of the following is not a suggested criteria for evaluating containment strategies?
+- identity of the attacker: The identity of the attacker is not normally very relevant to determining how to contain an incident.
+
+During which incident response exercises are team members asked to review their role in the plan individually?
+- Read-through: During a read-through, IR team members are asked to review their roles in the plan individually.
+
+Which of these is not one of the incident response plan elements?
+- Board approval: Board approval is not one of the incident response plan elements. Incident response plans are normally approved by senior management, not the Board.
+
+Who is the most effective person to lead a lessons learned review?
+- an independent facilitator: The most effective person to lead a lessons learned review is an independent facilitator. This individual is impartial and trained to lead constructive conversations.
+
+You are normally required to report security incidents to law enforcement if you believe a law may have been violated.?
+- FALSE: While you may believe a law has been violated, you do not typically have an obligation to report this to law enforcement.
+
+Which one of the following individuals would not normally be found on the incident response team?
+- CEO: The CEO would not normally be part of an incident response team. They should be informed of serious incidents but would not normally directly participate.
+
 ## Attack Frameworks
+
+Which of these provides guidance on testing the security of physical locations, human interactions, and communications?
+- OSSTMM: The Open Source Security Testing Methodology Manual (OSSTMM) provides guidance on testing the security of physical locations, human interactions, and communications.
+
+What company developed the Cyber Kill Chain?
+- Lockheed Martin: Lockheed Martin developed the Cyber Kill Chain.
+
+Which of these is not a core feature of the Diamond Model?
+- Exploit: Exploit is not a core feature of the Diamond Model.
+      - Infrastructure: The infrastructure is one of the core features of the Diamond Model.
+
+What do the columns in the ATT&CK matrix represent?
+- Tactics: The columns in the ATT&CK matrix represent tactics which are the attacker's ultimate objectives in carrying out the attack.
+
+
 
 ## Incident Investigation 
 
